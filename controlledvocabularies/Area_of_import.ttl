@@ -1,0 +1,17 @@
+@prefix properties: <https://purl.archive.org/cbam/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix vocabulary: <https://purl.archive.org/cbam/Area_of_import/> .
+
+vocabulary:Area_of_import a rdfs:Class ;
+    rdfs:label "Area of import" .
+
+vocabulary:EU a vocabulary:Area_of_import ;
+    rdfs:label "EU by means of Customs import declaration" ;
+    properties:code "EU" ;
+    properties:validity_date "1/1/23" .
+
+vocabulary:EUOTH a vocabulary:Area_of_import ;
+    rdfs:label "EU by other means" ;
+    properties:code "EUOTH" ;
+    properties:validity_date "1/1/23" .
+

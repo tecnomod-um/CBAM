@@ -1,0 +1,22 @@
+@prefix properties: <https://purl.archive.org/cbam/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix vocabulary: <https://purl.archive.org/cbam/Goods_Document/> .
+
+vocabulary:Goods_Document a rdfs:Class ;
+    rdfs:label "Goods Document" .
+
+vocabulary:1 a vocabulary:Goods_Document ;
+    rdfs:label "Indirect Representative agreement in accordance with Article 32 of Regulation (EU) 2023/956" ;
+    properties:code "1" ;
+    properties:validity_date "1/1/23" .
+
+vocabulary:2 a vocabulary:Goods_Document ;
+    rdfs:label "Recommended Communication from Operators of installations cf Annex IV of Implementing Regulation 2023/XXXX" ;
+    properties:code "2" ;
+    properties:validity_date "1/1/23" .
+
+vocabulary:3 a vocabulary:Goods_Document ;
+    rdfs:label "Other" ;
+    properties:code "3" ;
+    properties:validity_date "1/1/23" .
+

@@ -1,0 +1,232 @@
+@prefix properties: <https://purl.archive.org/cbam/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix vocabulary: <https://purl.archive.org/cbam/Production_Method/> .
+
+vocabulary:Production_Method a rdfs:Class ;
+    rdfs:label "Production Method" .
+
+vocabulary:P01 a vocabulary:Production_Method ;
+    rdfs:label "Calcined clay" ;
+    properties:code "P01" ;
+    properties:validity_date "25/9/23" .
+
+vocabulary:P02 a vocabulary:Production_Method ;
+    rdfs:label "Cement clinker" ;
+    properties:code "P02" ;
+    properties:validity_date "25/9/23" .
+
+vocabulary:P03 a vocabulary:Production_Method ;
+    rdfs:label "Cement" ;
+    properties:code "P03" ;
+    properties:validity_date "25/9/23" .
+
+vocabulary:P04 a vocabulary:Production_Method ;
+    rdfs:label "Aluminuous cement" ;
+    properties:code "P04" ;
+    properties:validity_date "25/9/23" .
+
+vocabulary:P05 a vocabulary:Production_Method ;
+    rdfs:label "Sintered ore" ;
+    properties:code "P05" ;
+    properties:validity_date "25/9/23" .
+
+vocabulary:P08 a vocabulary:Production_Method ;
+    rdfs:label "Electricity" ;
+    properties:code "P08" ;
+    properties:validity_date "25/9/23" .
+
+vocabulary:P09 a vocabulary:Production_Method ;
+    rdfs:label "Steam reforming" ;
+    properties:code "P09" ;
+    properties:validity_date "25/9/23" .
+
+vocabulary:P10 a vocabulary:Production_Method ;
+    rdfs:label "Partial oxidation" ;
+    properties:code "P10" ;
+    properties:validity_date "25/9/23" .
+
+vocabulary:P11 a vocabulary:Production_Method ;
+    rdfs:label "Other fuel-based hydrogen production" ;
+    properties:code "P11" ;
+    properties:validity_date "25/9/23" .
+
+vocabulary:P12 a vocabulary:Production_Method ;
+    rdfs:label "Electrolysis of water" ;
+    properties:code "P12" ;
+    properties:validity_date "25/9/23" .
+
+vocabulary:P13 a vocabulary:Production_Method ;
+    rdfs:label "Electrolysis of water (other energy sources)" ;
+    properties:code "P13" ;
+    properties:validity_date "25/9/23" .
+
+vocabulary:P14 a vocabulary:Production_Method ;
+    rdfs:label "Chlor-Alkali electrolysis" ;
+    properties:code "P14" ;
+    properties:validity_date "25/9/23" .
+
+vocabulary:P15 a vocabulary:Production_Method ;
+    rdfs:label "Production of chlorates" ;
+    properties:code "P15" ;
+    properties:validity_date "25/9/23" .
+
+vocabulary:P16 a vocabulary:Production_Method ;
+    rdfs:label "Other production routes" ;
+    properties:code "P16" ;
+    properties:validity_date "25/9/23" .
+
+vocabulary:P17 a vocabulary:Production_Method ;
+    rdfs:label "Nitric acid" ;
+    properties:code "P17" ;
+    properties:validity_date "25/9/23" .
+
+vocabulary:P19 a vocabulary:Production_Method ;
+    rdfs:label "Haber-Bosch process with steam reforming of natural gas or biogas" ;
+    properties:code "P19" ;
+    properties:validity_date "25/9/23" .
+
+vocabulary:P20 a vocabulary:Production_Method ;
+    rdfs:label "Haber-Bosch process with gasification of coal or other fuels" ;
+    properties:code "P20" ;
+    properties:validity_date "25/9/23" .
+
+vocabulary:P21 a vocabulary:Production_Method ;
+    rdfs:label "Other production routes" ;
+    properties:code "P21" ;
+    properties:validity_date "25/9/23" .
+
+vocabulary:P22 a vocabulary:Production_Method ;
+    rdfs:label "Mixed fertilisers" ;
+    properties:code "P22" ;
+    properties:validity_date "25/9/23" .
+
+vocabulary:P23 a vocabulary:Production_Method ;
+    rdfs:label "Urea" ;
+    properties:code "P23" ;
+    properties:validity_date "25/9/23" .
+
+vocabulary:P24 a vocabulary:Production_Method ;
+    rdfs:label "Blast furnace route" ;
+    properties:code "P24" ;
+    properties:validity_date "25/9/23" .
+
+vocabulary:P25 a vocabulary:Production_Method ;
+    rdfs:label "Smelting reduction" ;
+    properties:code "P25" ;
+    properties:validity_date "25/9/23" .
+
+vocabulary:P26 a vocabulary:Production_Method ;
+    rdfs:label "Other production routes" ;
+    properties:code "P26" ;
+    properties:validity_date "25/9/23" .
+
+vocabulary:P27 a vocabulary:Production_Method ;
+    rdfs:label "Nickel Pig Iron production" ;
+    properties:code "P27" ;
+    properties:validity_date "25/9/23" .
+
+vocabulary:P28 a vocabulary:Production_Method ;
+    rdfs:label "Nickel Pig Iron production" ;
+    properties:code "P28" ;
+    properties:validity_date "25/9/23" .
+
+vocabulary:P29 a vocabulary:Production_Method ;
+    rdfs:label "Ferro-nickel (FeNi)" ;
+    properties:code "P29" ;
+    properties:validity_date "25/9/23" .
+
+vocabulary:P30 a vocabulary:Production_Method ;
+    rdfs:label "Ferro-chromium (FeCr)" ;
+    properties:code "P30" ;
+    properties:validity_date "25/9/23" .
+
+vocabulary:P31 a vocabulary:Production_Method ;
+    rdfs:label "Ferro-manganese (FeMn)" ;
+    properties:code "P31" ;
+    properties:validity_date "25/9/23" .
+
+vocabulary:P32 a vocabulary:Production_Method ;
+    rdfs:label "Production of Direct reduced Iron (using hydrogen)" ;
+    properties:code "P32" ;
+    properties:validity_date "25/9/23" .
+
+vocabulary:P33 a vocabulary:Production_Method ;
+    rdfs:label "DRI (Direct reduced iron)" ;
+    properties:code "P33" ;
+    properties:validity_date "25/9/23" .
+
+vocabulary:P34 a vocabulary:Production_Method ;
+    rdfs:label "Iron or steel products" ;
+    properties:code "P34" ;
+    properties:validity_date "25/9/23" .
+
+vocabulary:P35 a vocabulary:Production_Method ;
+    rdfs:label "Basic oxigen steel making" ;
+    properties:code "P35" ;
+    properties:validity_date "25/9/23" .
+
+vocabulary:P36 a vocabulary:Production_Method ;
+    rdfs:label "Basic oxigen steel making (incl. Blast furnace)" ;
+    properties:code "P36" ;
+    properties:validity_date "25/9/23" .
+
+vocabulary:P37 a vocabulary:Production_Method ;
+    rdfs:label "Basic oxigen steel making (incl. Melting reduction)" ;
+    properties:code "P37" ;
+    properties:validity_date "25/9/23" .
+
+vocabulary:P38 a vocabulary:Production_Method ;
+    rdfs:label "Electric arc furnace" ;
+    properties:code "P38" ;
+    properties:validity_date "25/9/23" .
+
+vocabulary:P39 a vocabulary:Production_Method ;
+    rdfs:label "Electric arc furnace (alloy steels))" ;
+    properties:code "P39" ;
+    properties:validity_date "25/9/23" .
+
+vocabulary:P40 a vocabulary:Production_Method ;
+    rdfs:label "Electric arc furnace (carbon steel, from direct reduced iron)" ;
+    properties:code "P40" ;
+    properties:validity_date "25/9/23" .
+
+vocabulary:P41 a vocabulary:Production_Method ;
+    rdfs:label "Electric arc furnace (general)" ;
+    properties:code "P41" ;
+    properties:validity_date "25/9/23" .
+
+vocabulary:P42 a vocabulary:Production_Method ;
+    rdfs:label "Primary (electrolytic) smelting" ;
+    properties:code "P42" ;
+    properties:validity_date "25/9/23" .
+
+vocabulary:P43 a vocabulary:Production_Method ;
+    rdfs:label "Secondary melting (recycling)" ;
+    properties:code "P43" ;
+    properties:validity_date "25/9/23" .
+
+vocabulary:P44 a vocabulary:Production_Method ;
+    rdfs:label "Mix of primary and secondary production" ;
+    properties:code "P44" ;
+    properties:validity_date "25/9/23" .
+
+vocabulary:P45 a vocabulary:Production_Method ;
+    rdfs:label "Aluminium products" ;
+    properties:code "P45" ;
+    properties:validity_date "25/9/23" .
+
+vocabulary:P46 a vocabulary:Production_Method ;
+    rdfs:label "Integrated production with primary smelting" ;
+    properties:code "P46" ;
+    properties:validity_date "25/9/23" .
+
+vocabulary:P47 a vocabulary:Production_Method ;
+    rdfs:label "Integrated production with secondary melting" ;
+    properties:code "P47" ;
+    properties:validity_date "25/9/23" .
+
+vocabulary:P48 a vocabulary:Production_Method ;
+    rdfs:label "Integrated with mixed primary and secondary production" ;
+    properties:code "P48" ;
+    properties:validity_date "25/9/23" .
+

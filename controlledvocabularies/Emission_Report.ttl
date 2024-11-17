@@ -1,0 +1,32 @@
+@prefix properties: <https://purl.archive.org/cbam/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix vocabulary: <https://purl.archive.org/cbam/Emission_Report/> .
+
+vocabulary:Emission_Report a rdfs:Class ;
+    rdfs:label "Emission Report" .
+
+vocabulary:TED01 a vocabulary:Emission_Report ;
+    rdfs:label "Annual installation report" ;
+    properties:code "TED01" ;
+    properties:validity_date "1/1/23" .
+
+vocabulary:TED02 a vocabulary:Emission_Report ;
+    rdfs:label "Annual installation emissions report" ;
+    properties:code "TED02" ;
+    properties:validity_date "1/1/23" .
+
+vocabulary:TED03 a vocabulary:Emission_Report ;
+    rdfs:label "Calculated emissions for the reported goods" ;
+    properties:code "TED03" ;
+    properties:validity_date "1/1/23" .
+
+vocabulary:TED04 a vocabulary:Emission_Report ;
+    rdfs:label "Legal reference to NA emissions framework" ;
+    properties:code "TED04" ;
+    properties:validity_date "1/1/23" .
+
+vocabulary:TED05 a vocabulary:Emission_Report ;
+    rdfs:label "Other" ;
+    properties:code "TED05" ;
+    properties:validity_date "1/1/23" .
+

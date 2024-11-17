@@ -1,0 +1,17 @@
+@prefix properties: <https://purl.archive.org/cbam/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix vocabulary: <https://purl.archive.org/cbam/Electricity_Determination/> .
+
+vocabulary:Electricity_Determination a rdfs:Class ;
+    rdfs:label "Electricity Determination" .
+
+vocabulary:1 a vocabulary:Electricity_Determination ;
+    rdfs:label "Actual data" ;
+    properties:code "1" ;
+    properties:validity_date "1/1/23" .
+
+vocabulary:2 a vocabulary:Electricity_Determination ;
+    rdfs:label "Default values" ;
+    properties:code "2" ;
+    properties:validity_date "1/1/23" .
+

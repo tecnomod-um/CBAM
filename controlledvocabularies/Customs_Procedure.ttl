@@ -1,0 +1,78 @@
+@prefix properties: <https://purl.archive.org/cbam/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix vocabulary: <https://purl.archive.org/cbam/Customs_Procedure/> .
+
+vocabulary:Customs_Procedure a rdfs:Class ;
+    rdfs:label "Customs Procedure" .
+
+vocabulary:1 a vocabulary:Customs_Procedure ;
+    rdfs:label "Release for free circulation of goods",
+        "Release for free circulation of goods " ;
+    properties:code "1" ;
+    properties:procedure_status "previous",
+        "requested" ;
+    properties:validity_date "1/1/23" .
+
+vocabulary:40 a vocabulary:Customs_Procedure ;
+    rdfs:label " Simultaneous release for free circulation and home use of goods" ;
+    properties:code "40" ;
+    properties:procedure_status "previous",
+        "requested" ;
+    properties:validity_date "1/1/23" .
+
+vocabulary:42 a vocabulary:Customs_Procedure ;
+    rdfs:label " Simultaneous release for free circulation and home use of goods which are the subject of a VAT-exempt supply to another Member State and, when applicable, an excise-duty suspension" ;
+    properties:code "42" ;
+    properties:procedure_status "previous",
+        "requested" ;
+    properties:validity_date "1/1/23" .
+
+vocabulary:43 a vocabulary:Customs_Procedure ;
+    rdfs:label "Simultaneous release for free circulation and home use of goods subject to specific measures connected with the collection of an amount during the transitional period following the accession of new Member States." ;
+    properties:code "43" ;
+    properties:procedure_status "requested" ;
+    properties:validity_date "1/1/23" .
+
+vocabulary:44 a vocabulary:Customs_Procedure ;
+    rdfs:label "End use " ;
+    properties:code "44" ;
+    properties:procedure_status "requested" ;
+    properties:validity_date "1/1/23" .
+
+vocabulary:45 a vocabulary:Customs_Procedure ;
+    rdfs:label "Release of goods for free circulation and partial entry for home use for either VAT or excise duties and their placing in a warehouse other than customs warehouses." ;
+    properties:code "45" ;
+    properties:procedure_status "previous",
+        "requested" ;
+    properties:validity_date "1/1/23" .
+
+vocabulary:46 a vocabulary:Customs_Procedure ;
+    rdfs:label "Import of processed products obtained from equivalent goods under the outward- processing procedure before exportation of goods they are replacing. " ;
+    properties:code "46" ;
+    properties:procedure_status "requested" ;
+    properties:validity_date "1/1/23" .
+
+vocabulary:48 a vocabulary:Customs_Procedure ;
+    rdfs:label "Entry for home use with simultaneous release for free circulation of replacement products under outward processing prior to the export of the defective goods." ;
+    properties:code "48" ;
+    properties:procedure_status "requested" ;
+    properties:validity_date "1/1/23" .
+
+vocabulary:51 a vocabulary:Customs_Procedure ;
+    rdfs:label "Inward processing procedure (suspension system)." ;
+    properties:code "51" ;
+    properties:procedure_status "previous" ;
+    properties:validity_date "1/1/23" .
+
+vocabulary:54 a vocabulary:Customs_Procedure ;
+    rdfs:label "Inward processing (suspension system) in another Member State (without their being released for free circulation in that Member State)" ;
+    properties:code "54" ;
+    properties:procedure_status "previous" ;
+    properties:validity_date "1/1/23" .
+
+vocabulary:7 a vocabulary:Customs_Procedure ;
+    rdfs:label "Release of goods for free circulation simultaneously placed under a warehousing" ;
+    properties:code "7" ;
+    properties:procedure_status "requested" ;
+    properties:validity_date "1/1/23" .
+

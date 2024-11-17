@@ -1,0 +1,886 @@
+@prefix cbam: <https://purl.archive.org/cbam/> .
+@prefix geonames: <https://www.geonames.org/ontology#> .
+@prefix geonames_data: <https://sws.geonames.org/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+cbam:Currency a rdfs:Class ;
+    rdfs:label "Currency" .
+
+cbam:AED a cbam:Currency ;
+    cbam:currencyCode "AED" ;
+    cbam:currencyName "Dirham" ;
+    geonames:geonamesID geonames_data:290557 .
+
+cbam:AFN a cbam:Currency ;
+    cbam:currencyCode "AFN" ;
+    cbam:currencyName "Afghani" ;
+    geonames:geonamesID geonames_data:1149361 .
+
+cbam:ALL a cbam:Currency ;
+    cbam:currencyCode "ALL" ;
+    cbam:currencyName "Lek" ;
+    geonames:geonamesID geonames_data:783754 .
+
+cbam:AMD a cbam:Currency ;
+    cbam:currencyCode "AMD" ;
+    cbam:currencyName "Dram" ;
+    geonames:geonamesID geonames_data:174982 .
+
+cbam:ANG a cbam:Currency ;
+    cbam:currencyCode "ANG" ;
+    cbam:currencyName "Guilder" ;
+    geonames:geonamesID geonames_data:7609695,
+        geonames_data:7626836,
+        geonames_data:8505032 .
+
+cbam:AOA a cbam:Currency ;
+    cbam:currencyCode "AOA" ;
+    cbam:currencyName "Kwanza" ;
+    geonames:geonamesID geonames_data:3351879 .
+
+cbam:ARS a cbam:Currency ;
+    cbam:currencyCode "ARS" ;
+    cbam:currencyName "Peso" ;
+    geonames:geonamesID geonames_data:3865483 .
+
+cbam:AUD a cbam:Currency ;
+    cbam:currencyCode "AUD" ;
+    cbam:currencyName "Dollar" ;
+    geonames:geonamesID geonames_data:1547314,
+        geonames_data:1547376,
+        geonames_data:2077456,
+        geonames_data:2078138,
+        geonames_data:2110297,
+        geonames_data:2110425,
+        geonames_data:2155115,
+        geonames_data:4030945 .
+
+cbam:AWG a cbam:Currency ;
+    cbam:currencyCode "AWG" ;
+    cbam:currencyName "Guilder" ;
+    geonames:geonamesID geonames_data:3577279 .
+
+cbam:AZN a cbam:Currency ;
+    cbam:currencyCode "AZN" ;
+    cbam:currencyName "Manat" ;
+    geonames:geonamesID geonames_data:587116 .
+
+cbam:BAM a cbam:Currency ;
+    cbam:currencyCode "BAM" ;
+    cbam:currencyName "Marka" ;
+    geonames:geonamesID geonames_data:3277605 .
+
+cbam:BBD a cbam:Currency ;
+    cbam:currencyCode "BBD" ;
+    cbam:currencyName "Dollar" ;
+    geonames:geonamesID geonames_data:3374084 .
+
+cbam:BDT a cbam:Currency ;
+    cbam:currencyCode "BDT" ;
+    cbam:currencyName "Taka" ;
+    geonames:geonamesID geonames_data:1210997 .
+
+cbam:BGN a cbam:Currency ;
+    cbam:currencyCode "BGN" ;
+    cbam:currencyName "Lev" ;
+    geonames:geonamesID geonames_data:732800 .
+
+cbam:BHD a cbam:Currency ;
+    cbam:currencyCode "BHD" ;
+    cbam:currencyName "Dinar" ;
+    geonames:geonamesID geonames_data:290291 .
+
+cbam:BIF a cbam:Currency ;
+    cbam:currencyCode "BIF" ;
+    cbam:currencyName "Franc" ;
+    geonames:geonamesID geonames_data:433561 .
+
+cbam:BMD a cbam:Currency ;
+    cbam:currencyCode "BMD" ;
+    cbam:currencyName "Dollar" ;
+    geonames:geonamesID geonames_data:3573345 .
+
+cbam:BND a cbam:Currency ;
+    cbam:currencyCode "BND" ;
+    cbam:currencyName "Dollar" ;
+    geonames:geonamesID geonames_data:1820814 .
+
+cbam:BOB a cbam:Currency ;
+    cbam:currencyCode "BOB" ;
+    cbam:currencyName "Boliviano" ;
+    geonames:geonamesID geonames_data:3923057 .
+
+cbam:BRL a cbam:Currency ;
+    cbam:currencyCode "BRL" ;
+    cbam:currencyName "Real" ;
+    geonames:geonamesID geonames_data:3469034 .
+
+cbam:BSD a cbam:Currency ;
+    cbam:currencyCode "BSD" ;
+    cbam:currencyName "Dollar" ;
+    geonames:geonamesID geonames_data:3572887 .
+
+cbam:BTN a cbam:Currency ;
+    cbam:currencyCode "BTN" ;
+    cbam:currencyName "Ngultrum" ;
+    geonames:geonamesID geonames_data:1252634 .
+
+cbam:BWP a cbam:Currency ;
+    cbam:currencyCode "BWP" ;
+    cbam:currencyName "Pula" ;
+    geonames:geonamesID geonames_data:933860 .
+
+cbam:BYN a cbam:Currency ;
+    cbam:currencyCode "BYN" ;
+    cbam:currencyName "Belarusian ruble" ;
+    geonames:geonamesID geonames_data:630336 .
+
+cbam:BZD a cbam:Currency ;
+    cbam:currencyCode "BZD" ;
+    cbam:currencyName "Dollar" ;
+    geonames:geonamesID geonames_data:3582678 .
+
+cbam:CAD a cbam:Currency ;
+    cbam:currencyCode "CAD" ;
+    cbam:currencyName "Dollar" ;
+    geonames:geonamesID geonames_data:6251999 .
+
+cbam:CDF a cbam:Currency ;
+    cbam:currencyCode "CDF" ;
+    cbam:currencyName "Franc" ;
+    geonames:geonamesID geonames_data:203312 .
+
+cbam:CHF a cbam:Currency ;
+    cbam:currencyCode "CHF" ;
+    cbam:currencyName "Franc" ;
+    geonames:geonamesID geonames_data:2658434,
+        geonames_data:3042058 .
+
+cbam:CLP a cbam:Currency ;
+    cbam:currencyCode "CLP" ;
+    cbam:currencyName "Peso" ;
+    geonames:geonamesID geonames_data:3895114 .
+
+cbam:CNY a cbam:Currency ;
+    cbam:currencyCode "CNY" ;
+    cbam:currencyName "Yuan Renminbi" ;
+    geonames:geonamesID geonames_data:1814991 .
+
+cbam:COP a cbam:Currency ;
+    cbam:currencyCode "COP" ;
+    cbam:currencyName "Peso" ;
+    geonames:geonamesID geonames_data:3686110 .
+
+cbam:CRC a cbam:Currency ;
+    cbam:currencyCode "CRC" ;
+    cbam:currencyName "Colon" ;
+    geonames:geonamesID geonames_data:3624060 .
+
+cbam:CUP a cbam:Currency ;
+    cbam:currencyCode "CUP" ;
+    cbam:currencyName "Peso" ;
+    geonames:geonamesID geonames_data:3562981 .
+
+cbam:CVE a cbam:Currency ;
+    cbam:currencyCode "CVE" ;
+    cbam:currencyName "Escudo" ;
+    geonames:geonamesID geonames_data:3374766 .
+
+cbam:CZK a cbam:Currency ;
+    cbam:currencyCode "CZK" ;
+    cbam:currencyName "Koruna" ;
+    geonames:geonamesID geonames_data:3077311 .
+
+cbam:DJF a cbam:Currency ;
+    cbam:currencyCode "DJF" ;
+    cbam:currencyName "Franc" ;
+    geonames:geonamesID geonames_data:223816 .
+
+cbam:DKK a cbam:Currency ;
+    cbam:currencyCode "DKK" ;
+    cbam:currencyName "Krone" ;
+    geonames:geonamesID geonames_data:2622320,
+        geonames_data:2623032,
+        geonames_data:3425505 .
+
+cbam:DOP a cbam:Currency ;
+    cbam:currencyCode "DOP" ;
+    cbam:currencyName "Peso" ;
+    geonames:geonamesID geonames_data:3508796 .
+
+cbam:DZD a cbam:Currency ;
+    cbam:currencyCode "DZD" ;
+    cbam:currencyName "Dinar" ;
+    geonames:geonamesID geonames_data:2589581 .
+
+cbam:EGP a cbam:Currency ;
+    cbam:currencyCode "EGP" ;
+    cbam:currencyName "Pound" ;
+    geonames:geonamesID geonames_data:357994 .
+
+cbam:ERN a cbam:Currency ;
+    cbam:currencyCode "ERN" ;
+    cbam:currencyName "Nakfa" ;
+    geonames:geonamesID geonames_data:338010 .
+
+cbam:ETB a cbam:Currency ;
+    cbam:currencyCode "ETB" ;
+    cbam:currencyName "Birr" ;
+    geonames:geonamesID geonames_data:337996 .
+
+cbam:EUR a cbam:Currency ;
+    cbam:currencyCode "EUR" ;
+    cbam:currencyName "Euro" ;
+    geonames:geonamesID geonames_data:1024031,
+        geonames_data:146669,
+        geonames_data:1546748,
+        geonames_data:2264397,
+        geonames_data:2510769,
+        geonames_data:2562770,
+        geonames_data:2750405,
+        geonames_data:2782113,
+        geonames_data:2802361,
+        geonames_data:2921044,
+        geonames_data:2960313,
+        geonames_data:2963597,
+        geonames_data:2993457,
+        geonames_data:3017382,
+        geonames_data:3041565,
+        geonames_data:3057568,
+        geonames_data:3164670,
+        geonames_data:3168068,
+        geonames_data:3175395,
+        geonames_data:3190538,
+        geonames_data:3194884,
+        geonames_data:3202326,
+        geonames_data:3381670,
+        geonames_data:3424932,
+        geonames_data:3570311,
+        geonames_data:3578421,
+        geonames_data:3578476,
+        geonames_data:3579143,
+        geonames_data:390903,
+        geonames_data:453733,
+        geonames_data:458258,
+        geonames_data:597427,
+        geonames_data:660013,
+        geonames_data:661882,
+        geonames_data:831053,
+        geonames_data:935317 .
+
+cbam:ExchangeRate a rdf:Property .
+
+cbam:FJD a cbam:Currency ;
+    cbam:currencyCode "FJD" ;
+    cbam:currencyName "Dollar" ;
+    geonames:geonamesID geonames_data:2205218 .
+
+cbam:FKP a cbam:Currency ;
+    cbam:currencyCode "FKP" ;
+    cbam:currencyName "Pound" ;
+    geonames:geonamesID geonames_data:3474414 .
+
+cbam:GBP a cbam:Currency ;
+    cbam:currencyCode "GBP" ;
+    cbam:currencyName "Pound" ;
+    geonames:geonamesID geonames_data:2635167,
+        geonames_data:3042142,
+        geonames_data:3042225,
+        geonames_data:3042362,
+        geonames_data:3474415 .
+
+cbam:GEL a cbam:Currency ;
+    cbam:currencyCode "GEL" ;
+    cbam:currencyName "Lari" ;
+    geonames:geonamesID geonames_data:614540 .
+
+cbam:GHS a cbam:Currency ;
+    cbam:currencyCode "GHS" ;
+    cbam:currencyName "Cedi" ;
+    geonames:geonamesID geonames_data:2300660 .
+
+cbam:GIP a cbam:Currency ;
+    cbam:currencyCode "GIP" ;
+    cbam:currencyName "Pound" ;
+    geonames:geonamesID geonames_data:2411586 .
+
+cbam:GMD a cbam:Currency ;
+    cbam:currencyCode "GMD" ;
+    cbam:currencyName "Dalasi" ;
+    geonames:geonamesID geonames_data:2413451 .
+
+cbam:GNF a cbam:Currency ;
+    cbam:currencyCode "GNF" ;
+    cbam:currencyName "Franc" ;
+    geonames:geonamesID geonames_data:2420477 .
+
+cbam:GTQ a cbam:Currency ;
+    cbam:currencyCode "GTQ" ;
+    cbam:currencyName "Quetzal" ;
+    geonames:geonamesID geonames_data:3595528 .
+
+cbam:GYD a cbam:Currency ;
+    cbam:currencyCode "GYD" ;
+    cbam:currencyName "Dollar" ;
+    geonames:geonamesID geonames_data:3378535 .
+
+cbam:HKD a cbam:Currency ;
+    cbam:currencyCode "HKD" ;
+    cbam:currencyName "Dollar" ;
+    geonames:geonamesID geonames_data:1819730 .
+
+cbam:HNL a cbam:Currency ;
+    cbam:currencyCode "HNL" ;
+    cbam:currencyName "Lempira" ;
+    geonames:geonamesID geonames_data:3608932 .
+
+cbam:HTG a cbam:Currency ;
+    cbam:currencyCode "HTG" ;
+    cbam:currencyName "Gourde" ;
+    geonames:geonamesID geonames_data:3723988 .
+
+cbam:HUF a cbam:Currency ;
+    cbam:currencyCode "HUF" ;
+    cbam:currencyName "Forint" ;
+    geonames:geonamesID geonames_data:719819 .
+
+cbam:IDR a cbam:Currency ;
+    cbam:currencyCode "IDR" ;
+    cbam:currencyName "Rupiah" ;
+    geonames:geonamesID geonames_data:1643084 .
+
+cbam:ILS a cbam:Currency ;
+    cbam:currencyCode "ILS" ;
+    cbam:currencyName "Shekel" ;
+    geonames:geonamesID geonames_data:294640,
+        geonames_data:6254930 .
+
+cbam:INR a cbam:Currency ;
+    cbam:currencyCode "INR" ;
+    cbam:currencyName "Rupee" ;
+    geonames:geonamesID geonames_data:1269750 .
+
+cbam:IQD a cbam:Currency ;
+    cbam:currencyCode "IQD" ;
+    cbam:currencyName "Dinar" ;
+    geonames:geonamesID geonames_data:99237 .
+
+cbam:IRR a cbam:Currency ;
+    cbam:currencyCode "IRR" ;
+    cbam:currencyName "Rial" ;
+    geonames:geonamesID geonames_data:130758 .
+
+cbam:ISK a cbam:Currency ;
+    cbam:currencyCode "ISK" ;
+    cbam:currencyName "Krona" ;
+    geonames:geonamesID geonames_data:2629691 .
+
+cbam:JMD a cbam:Currency ;
+    cbam:currencyCode "JMD" ;
+    cbam:currencyName "Dollar" ;
+    geonames:geonamesID geonames_data:3489940 .
+
+cbam:JOD a cbam:Currency ;
+    cbam:currencyCode "JOD" ;
+    cbam:currencyName "Dinar" ;
+    geonames:geonamesID geonames_data:248816 .
+
+cbam:JPY a cbam:Currency ;
+    cbam:currencyCode "JPY" ;
+    cbam:currencyName "Yen" ;
+    geonames:geonamesID geonames_data:1861060 .
+
+cbam:KES a cbam:Currency ;
+    cbam:currencyCode "KES" ;
+    cbam:currencyName "Shilling" ;
+    geonames:geonamesID geonames_data:192950 .
+
+cbam:KGS a cbam:Currency ;
+    cbam:currencyCode "KGS" ;
+    cbam:currencyName "Som" ;
+    geonames:geonamesID geonames_data:1527747 .
+
+cbam:KHR a cbam:Currency ;
+    cbam:currencyCode "KHR" ;
+    cbam:currencyName "Riels" ;
+    geonames:geonamesID geonames_data:1831722 .
+
+cbam:KMF a cbam:Currency ;
+    cbam:currencyCode "KMF" ;
+    cbam:currencyName "Franc" ;
+    geonames:geonamesID geonames_data:921929 .
+
+cbam:KPW a cbam:Currency ;
+    cbam:currencyCode "KPW" ;
+    cbam:currencyName "Won" ;
+    geonames:geonamesID geonames_data:1873107 .
+
+cbam:KRW a cbam:Currency ;
+    cbam:currencyCode "KRW" ;
+    cbam:currencyName "Won" ;
+    geonames:geonamesID geonames_data:1835841 .
+
+cbam:KWD a cbam:Currency ;
+    cbam:currencyCode "KWD" ;
+    cbam:currencyName "Dinar" ;
+    geonames:geonamesID geonames_data:285570 .
+
+cbam:KYD a cbam:Currency ;
+    cbam:currencyCode "KYD" ;
+    cbam:currencyName "Dollar" ;
+    geonames:geonamesID geonames_data:3580718 .
+
+cbam:KZT a cbam:Currency ;
+    cbam:currencyCode "KZT" ;
+    cbam:currencyName "Tenge" ;
+    geonames:geonamesID geonames_data:1522867 .
+
+cbam:LAK a cbam:Currency ;
+    cbam:currencyCode "LAK" ;
+    cbam:currencyName "Kip" ;
+    geonames:geonamesID geonames_data:1655842 .
+
+cbam:LBP a cbam:Currency ;
+    cbam:currencyCode "LBP" ;
+    cbam:currencyName "Pound" ;
+    geonames:geonamesID geonames_data:272103 .
+
+cbam:LKR a cbam:Currency ;
+    cbam:currencyCode "LKR" ;
+    cbam:currencyName "Rupee" ;
+    geonames:geonamesID geonames_data:1227603 .
+
+cbam:LRD a cbam:Currency ;
+    cbam:currencyCode "LRD" ;
+    cbam:currencyName "Dollar" ;
+    geonames:geonamesID geonames_data:2275384 .
+
+cbam:LSL a cbam:Currency ;
+    cbam:currencyCode "LSL" ;
+    cbam:currencyName "Loti" ;
+    geonames:geonamesID geonames_data:932692 .
+
+cbam:LYD a cbam:Currency ;
+    cbam:currencyCode "LYD" ;
+    cbam:currencyName "Dinar" ;
+    geonames:geonamesID geonames_data:2215636 .
+
+cbam:MAD a cbam:Currency ;
+    cbam:currencyCode "MAD" ;
+    cbam:currencyName "Dirham" ;
+    geonames:geonamesID geonames_data:2461445,
+        geonames_data:2542007 .
+
+cbam:MDL a cbam:Currency ;
+    cbam:currencyCode "MDL" ;
+    cbam:currencyName "Leu" ;
+    geonames:geonamesID geonames_data:617790 .
+
+cbam:MGA a cbam:Currency ;
+    cbam:currencyCode "MGA" ;
+    cbam:currencyName "Ariary" ;
+    geonames:geonamesID geonames_data:1062947 .
+
+cbam:MKD a cbam:Currency ;
+    cbam:currencyCode "MKD" ;
+    cbam:currencyName "Denar" ;
+    geonames:geonamesID geonames_data:718075 .
+
+cbam:MMK a cbam:Currency ;
+    cbam:currencyCode "MMK" ;
+    cbam:currencyName "Kyat" ;
+    geonames:geonamesID geonames_data:1327865 .
+
+cbam:MNT a cbam:Currency ;
+    cbam:currencyCode "MNT" ;
+    cbam:currencyName "Tugrik" ;
+    geonames:geonamesID geonames_data:2029969 .
+
+cbam:MOP a cbam:Currency ;
+    cbam:currencyCode "MOP" ;
+    cbam:currencyName "Pataca" ;
+    geonames:geonamesID geonames_data:1821275 .
+
+cbam:MRU a cbam:Currency ;
+    cbam:currencyCode "MRU" ;
+    cbam:currencyName "Ouguiya" ;
+    geonames:geonamesID geonames_data:2378080 .
+
+cbam:MUR a cbam:Currency ;
+    cbam:currencyCode "MUR" ;
+    cbam:currencyName "Rupee" ;
+    geonames:geonamesID geonames_data:934292 .
+
+cbam:MVR a cbam:Currency ;
+    cbam:currencyCode "MVR" ;
+    cbam:currencyName "Rufiyaa" ;
+    geonames:geonamesID geonames_data:1282028 .
+
+cbam:MWK a cbam:Currency ;
+    cbam:currencyCode "MWK" ;
+    cbam:currencyName "Kwacha" ;
+    geonames:geonamesID geonames_data:927384 .
+
+cbam:MXN a cbam:Currency ;
+    cbam:currencyCode "MXN" ;
+    cbam:currencyName "Peso" ;
+    geonames:geonamesID geonames_data:3996063 .
+
+cbam:MYR a cbam:Currency ;
+    cbam:currencyCode "MYR" ;
+    cbam:currencyName "Ringgit" ;
+    geonames:geonamesID geonames_data:1733045 .
+
+cbam:MZN a cbam:Currency ;
+    cbam:currencyCode "MZN" ;
+    cbam:currencyName "Metical" ;
+    geonames:geonamesID geonames_data:1036973 .
+
+cbam:NAD a cbam:Currency ;
+    cbam:currencyCode "NAD" ;
+    cbam:currencyName "Dollar" ;
+    geonames:geonamesID geonames_data:3355338 .
+
+cbam:NGN a cbam:Currency ;
+    cbam:currencyCode "NGN" ;
+    cbam:currencyName "Naira" ;
+    geonames:geonamesID geonames_data:2328926 .
+
+cbam:NIO a cbam:Currency ;
+    cbam:currencyCode "NIO" ;
+    cbam:currencyName "Cordoba" ;
+    geonames:geonamesID geonames_data:3617476 .
+
+cbam:NOK a cbam:Currency ;
+    cbam:currencyCode "NOK" ;
+    cbam:currencyName "Krone" ;
+    geonames:geonamesID geonames_data:3144096,
+        geonames_data:3371123,
+        geonames_data:607072 .
+
+cbam:NPR a cbam:Currency ;
+    cbam:currencyCode "NPR" ;
+    cbam:currencyName "Rupee" ;
+    geonames:geonamesID geonames_data:1282988 .
+
+cbam:NZD a cbam:Currency ;
+    cbam:currencyCode "NZD" ;
+    cbam:currencyName "Dollar" ;
+    geonames:geonamesID geonames_data:1899402,
+        geonames_data:2186224,
+        geonames_data:4030699,
+        geonames_data:4031074,
+        geonames_data:4036232 .
+
+cbam:OMR a cbam:Currency ;
+    cbam:currencyCode "OMR" ;
+    cbam:currencyName "Rial" ;
+    geonames:geonamesID geonames_data:286963 .
+
+cbam:PAB a cbam:Currency ;
+    cbam:currencyCode "PAB" ;
+    cbam:currencyName "Balboa" ;
+    geonames:geonamesID geonames_data:3703430 .
+
+cbam:PEN a cbam:Currency ;
+    cbam:currencyCode "PEN" ;
+    cbam:currencyName "Sol" ;
+    geonames:geonamesID geonames_data:3932488 .
+
+cbam:PGK a cbam:Currency ;
+    cbam:currencyCode "PGK" ;
+    cbam:currencyName "Kina" ;
+    geonames:geonamesID geonames_data:2088628 .
+
+cbam:PHP a cbam:Currency ;
+    cbam:currencyCode "PHP" ;
+    cbam:currencyName "Peso" ;
+    geonames:geonamesID geonames_data:1694008 .
+
+cbam:PKR a cbam:Currency ;
+    cbam:currencyCode "PKR" ;
+    cbam:currencyName "Rupee" ;
+    geonames:geonamesID geonames_data:1168579 .
+
+cbam:PLN a cbam:Currency ;
+    cbam:currencyCode "PLN" ;
+    cbam:currencyName "Zloty" ;
+    geonames:geonamesID geonames_data:798544 .
+
+cbam:PYG a cbam:Currency ;
+    cbam:currencyCode "PYG" ;
+    cbam:currencyName "Guarani" ;
+    geonames:geonamesID geonames_data:3437598 .
+
+cbam:QAR a cbam:Currency ;
+    cbam:currencyCode "QAR" ;
+    cbam:currencyName "Rial" ;
+    geonames:geonamesID geonames_data:289688 .
+
+cbam:RON a cbam:Currency ;
+    cbam:currencyCode "RON" ;
+    cbam:currencyName "Leu" ;
+    geonames:geonamesID geonames_data:798549 .
+
+cbam:RSD a cbam:Currency ;
+    cbam:currencyCode "RSD" ;
+    cbam:currencyName "Dinar" ;
+    geonames:geonamesID geonames_data:6290252,
+        geonames_data:8505033 .
+
+cbam:RUB a cbam:Currency ;
+    cbam:currencyCode "RUB" ;
+    cbam:currencyName "Ruble" ;
+    geonames:geonamesID geonames_data:2017370 .
+
+cbam:RWF a cbam:Currency ;
+    cbam:currencyCode "RWF" ;
+    cbam:currencyName "Franc" ;
+    geonames:geonamesID geonames_data:49518 .
+
+cbam:SAR a cbam:Currency ;
+    cbam:currencyCode "SAR" ;
+    cbam:currencyName "Rial" ;
+    geonames:geonamesID geonames_data:102358 .
+
+cbam:SBD a cbam:Currency ;
+    cbam:currencyCode "SBD" ;
+    cbam:currencyName "Dollar" ;
+    geonames:geonamesID geonames_data:2103350 .
+
+cbam:SCR a cbam:Currency ;
+    cbam:currencyCode "SCR" ;
+    cbam:currencyName "Rupee" ;
+    geonames:geonamesID geonames_data:241170 .
+
+cbam:SDG a cbam:Currency ;
+    cbam:currencyCode "SDG" ;
+    cbam:currencyName "Pound" ;
+    geonames:geonamesID geonames_data:366755 .
+
+cbam:SEK a cbam:Currency ;
+    cbam:currencyCode "SEK" ;
+    cbam:currencyName "Krona" ;
+    geonames:geonamesID geonames_data:2661886 .
+
+cbam:SGD a cbam:Currency ;
+    cbam:currencyCode "SGD" ;
+    cbam:currencyName "Dollar" ;
+    geonames:geonamesID geonames_data:1880251 .
+
+cbam:SHP a cbam:Currency ;
+    cbam:currencyCode "SHP" ;
+    cbam:currencyName "Pound" ;
+    geonames:geonamesID geonames_data:3370751 .
+
+cbam:SLL a cbam:Currency ;
+    cbam:currencyCode "SLL" ;
+    cbam:currencyName "Leone" ;
+    geonames:geonamesID geonames_data:2403846 .
+
+cbam:SOS a cbam:Currency ;
+    cbam:currencyCode "SOS" ;
+    cbam:currencyName "Shilling" ;
+    geonames:geonamesID geonames_data:51537 .
+
+cbam:SRD a cbam:Currency ;
+    cbam:currencyCode "SRD" ;
+    cbam:currencyName "Dollar" ;
+    geonames:geonamesID geonames_data:3382998 .
+
+cbam:SSP a cbam:Currency ;
+    cbam:currencyCode "SSP" ;
+    cbam:currencyName "Pound" ;
+    geonames:geonamesID geonames_data:7909807 .
+
+cbam:STN a cbam:Currency ;
+    cbam:currencyCode "STN" ;
+    cbam:currencyName "Dobra" ;
+    geonames:geonamesID geonames_data:2410758 .
+
+cbam:SYP a cbam:Currency ;
+    cbam:currencyCode "SYP" ;
+    cbam:currencyName "Pound" ;
+    geonames:geonamesID geonames_data:163843 .
+
+cbam:SZL a cbam:Currency ;
+    cbam:currencyCode "SZL" ;
+    cbam:currencyName "Lilangeni" ;
+    geonames:geonamesID geonames_data:934841 .
+
+cbam:THB a cbam:Currency ;
+    cbam:currencyCode "THB" ;
+    cbam:currencyName "Baht" ;
+    geonames:geonamesID geonames_data:1605651 .
+
+cbam:TJS a cbam:Currency ;
+    cbam:currencyCode "TJS" ;
+    cbam:currencyName "Somoni" ;
+    geonames:geonamesID geonames_data:1220409 .
+
+cbam:TMT a cbam:Currency ;
+    cbam:currencyCode "TMT" ;
+    cbam:currencyName "Manat" ;
+    geonames:geonamesID geonames_data:1218197 .
+
+cbam:TND a cbam:Currency ;
+    cbam:currencyCode "TND" ;
+    cbam:currencyName "Dinar" ;
+    geonames:geonamesID geonames_data:2464461 .
+
+cbam:TOP a cbam:Currency ;
+    cbam:currencyCode "TOP" ;
+    cbam:currencyName "Pa'anga" ;
+    geonames:geonamesID geonames_data:4032283 .
+
+cbam:TRY a cbam:Currency ;
+    cbam:currencyCode "TRY" ;
+    cbam:currencyName "Lira" ;
+    geonames:geonamesID geonames_data:298795 .
+
+cbam:TTD a cbam:Currency ;
+    cbam:currencyCode "TTD" ;
+    cbam:currencyName "Dollar" ;
+    geonames:geonamesID geonames_data:3573591 .
+
+cbam:TWD a cbam:Currency ;
+    cbam:currencyCode "TWD" ;
+    cbam:currencyName "Dollar" ;
+    geonames:geonamesID geonames_data:1668284 .
+
+cbam:TZS a cbam:Currency ;
+    cbam:currencyCode "TZS" ;
+    cbam:currencyName "Shilling" ;
+    geonames:geonamesID geonames_data:149590 .
+
+cbam:UAH a cbam:Currency ;
+    cbam:currencyCode "UAH" ;
+    cbam:currencyName "Hryvnia" ;
+    geonames:geonamesID geonames_data:690791 .
+
+cbam:UGX a cbam:Currency ;
+    cbam:currencyCode "UGX" ;
+    cbam:currencyName "Shilling" ;
+    geonames:geonamesID geonames_data:226074 .
+
+cbam:USD a cbam:Currency ;
+    cbam:currencyCode "USD" ;
+    cbam:currencyName "Dollar" ;
+    geonames:geonamesID geonames_data:1282588,
+        geonames_data:1559582,
+        geonames_data:1966436,
+        geonames_data:2080185,
+        geonames_data:2081918,
+        geonames_data:3576916,
+        geonames_data:3577718,
+        geonames_data:3585968,
+        geonames_data:3658394,
+        geonames_data:4041468,
+        geonames_data:4043988,
+        geonames_data:4566966,
+        geonames_data:4796775,
+        geonames_data:5854968,
+        geonames_data:5880801,
+        geonames_data:6252001,
+        geonames_data:7626844 .
+
+cbam:UYU a cbam:Currency ;
+    cbam:currencyCode "UYU" ;
+    cbam:currencyName "Peso" ;
+    geonames:geonamesID geonames_data:3439705 .
+
+cbam:UZS a cbam:Currency ;
+    cbam:currencyCode "UZS" ;
+    cbam:currencyName "Som" ;
+    geonames:geonamesID geonames_data:1512440 .
+
+cbam:VES a cbam:Currency ;
+    cbam:currencyCode "VES" ;
+    cbam:currencyName "Bolivar Soberano" ;
+    geonames:geonamesID geonames_data:3625428 .
+
+cbam:VND a cbam:Currency ;
+    cbam:currencyCode "VND" ;
+    cbam:currencyName "Dong" ;
+    geonames:geonamesID geonames_data:1562822 .
+
+cbam:VUV a cbam:Currency ;
+    cbam:currencyCode "VUV" ;
+    cbam:currencyName "Vatu" ;
+    geonames:geonamesID geonames_data:2134431 .
+
+cbam:WST a cbam:Currency ;
+    cbam:currencyCode "WST" ;
+    cbam:currencyName "Tala" ;
+    geonames:geonamesID geonames_data:4034894 .
+
+cbam:XAF a cbam:Currency ;
+    cbam:currencyCode "XAF" ;
+    cbam:currencyName "Franc" ;
+    geonames:geonamesID geonames_data:2233387,
+        geonames_data:2260494,
+        geonames_data:2309096,
+        geonames_data:239880,
+        geonames_data:2400553,
+        geonames_data:2434508 .
+
+cbam:XCD a cbam:Currency ;
+    cbam:currencyCode "XCD" ;
+    cbam:currencyName "Dollar" ;
+    geonames:geonamesID geonames_data:3573511,
+        geonames_data:3575174,
+        geonames_data:3575830,
+        geonames_data:3576396,
+        geonames_data:3576468,
+        geonames_data:3577815,
+        geonames_data:3578097,
+        geonames_data:3580239 .
+
+cbam:XOF a cbam:Currency ;
+    cbam:currencyCode "XOF" ;
+    cbam:currencyName "Franc" ;
+    geonames:geonamesID geonames_data:2245662,
+        geonames_data:2287781,
+        geonames_data:2361809,
+        geonames_data:2363686,
+        geonames_data:2372248,
+        geonames_data:2395170,
+        geonames_data:2440476,
+        geonames_data:2453866 .
+
+cbam:XPF a cbam:Currency ;
+    cbam:currencyCode "XPF" ;
+    cbam:currencyName "Franc" ;
+    geonames:geonamesID geonames_data:2139685,
+        geonames_data:4030656,
+        geonames_data:4034749 .
+
+cbam:YER a cbam:Currency ;
+    cbam:currencyCode "YER" ;
+    cbam:currencyName "Rial" ;
+    geonames:geonamesID geonames_data:69543 .
+
+cbam:ZAR a cbam:Currency ;
+    cbam:currencyCode "ZAR" ;
+    cbam:currencyName "Rand" ;
+    geonames:geonamesID geonames_data:953987 .
+
+cbam:ZMW a cbam:Currency ;
+    cbam:currencyCode "ZMW" ;
+    cbam:currencyName "Kwacha" ;
+    geonames:geonamesID geonames_data:895949 .
+
+cbam:ZWL a cbam:Currency ;
+    cbam:currencyCode "ZWL" ;
+    cbam:currencyName "Dollar" ;
+    geonames:geonamesID geonames_data:878675 .
+
+cbam:currencyCode a rdf:Property .
+
+cbam:currencyName a rdf:Property .
+
+cbam:validity_date a rdf:Property .
+
+geonames:geonamesID a rdf:Property .
+

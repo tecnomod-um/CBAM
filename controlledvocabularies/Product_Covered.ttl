@@ -1,0 +1,17 @@
+@prefix properties: <https://purl.archive.org/cbam/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix vocabulary: <https://purl.archive.org/cbam/Product_Covered/> .
+
+vocabulary:Product_Covered a rdfs:Class ;
+    rdfs:label "Product Covered" .
+
+vocabulary:TPC01 a vocabulary:Product_Covered ;
+    rdfs:label "Actual product" ;
+    properties:code "TPC01" ;
+    properties:validity_date "1/1/23" .
+
+vocabulary:TPC02 a vocabulary:Product_Covered ;
+    rdfs:label "Other materials" ;
+    properties:code "TPC02" ;
+    properties:validity_date "1/1/23" .
+

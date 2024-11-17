@@ -1,0 +1,32 @@
+@prefix properties: <https://purl.archive.org/cbam/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix vocabulary: <https://purl.archive.org/cbam/Parameter_Value_Type/> .
+
+vocabulary:Parameter_Value_Type a rdfs:Class ;
+    rdfs:label "Parameter Value Type" .
+
+vocabulary:1 a vocabulary:Parameter_Value_Type ;
+    rdfs:label "Number" ;
+    properties:code "1" ;
+    properties:validity_date "1/1/23" .
+
+vocabulary:2 a vocabulary:Parameter_Value_Type ;
+    rdfs:label "Percentage" ;
+    properties:code "2" ;
+    properties:validity_date "1/1/23" .
+
+vocabulary:3 a vocabulary:Parameter_Value_Type ;
+    rdfs:label "String" ;
+    properties:code "3" ;
+    properties:validity_date "1/1/23" .
+
+vocabulary:4 a vocabulary:Parameter_Value_Type ;
+    rdfs:label "Range" ;
+    properties:code "4" ;
+    properties:validity_date "1/1/23" .
+
+vocabulary:5 a vocabulary:Parameter_Value_Type ;
+    rdfs:label "Range of percentage" ;
+    properties:code "5" ;
+    properties:validity_date "1/1/23" .
+

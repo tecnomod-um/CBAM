@@ -1,0 +1,27 @@
+@prefix properties: <https://purl.archive.org/cbam/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix vocabulary: <https://purl.archive.org/cbam/Reporting_period/> .
+
+vocabulary:Reporting_period a rdfs:Class ;
+    rdfs:label "Reporting period" .
+
+vocabulary:Q1 a vocabulary:Reporting_period ;
+    rdfs:label "Quarter 1" ;
+    properties:code "Q1" ;
+    properties:validity_date "1/1/23" .
+
+vocabulary:Q2 a vocabulary:Reporting_period ;
+    rdfs:label "Quarter 2" ;
+    properties:code "Q2" ;
+    properties:validity_date "1/1/23" .
+
+vocabulary:Q3 a vocabulary:Reporting_period ;
+    rdfs:label "Quarter 3" ;
+    properties:code "Q3" ;
+    properties:validity_date "1/1/23" .
+
+vocabulary:Q4 a vocabulary:Reporting_period ;
+    rdfs:label "Quarter 4" ;
+    properties:code "Q4" ;
+    properties:validity_date "1/1/23" .
+

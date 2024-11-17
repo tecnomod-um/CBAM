@@ -1,0 +1,17 @@
+@prefix properties: <https://purl.archive.org/cbam/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix vocabulary: <https://purl.archive.org/cbam/Reporting_Rule/> .
+
+vocabulary:Reporting_Rule a rdfs:Class ;
+    rdfs:label "Reporting Rule" .
+
+vocabulary:TOM01 a vocabulary:Reporting_Rule ;
+    rdfs:label "Commission rules" ;
+    properties:code "TOM01" ;
+    properties:validity_date "1/1/23" .
+
+vocabulary:TOM02 a vocabulary:Reporting_Rule ;
+    rdfs:label "Other" ;
+    properties:code "TOM02" ;
+    properties:validity_date "1/1/23" .
+

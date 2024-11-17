@@ -1,0 +1,22 @@
+@prefix properties: <https://purl.archive.org/cbam/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix vocabulary: <https://purl.archive.org/cbam/Source_of_electricity/> .
+
+vocabulary:Source_of_electricity a rdfs:Class ;
+    rdfs:label "Source of electricity" .
+
+vocabulary:SOE01 a vocabulary:Source_of_electricity ;
+    rdfs:label "Direct technical link to electricity generator" ;
+    properties:code "SOE01" ;
+    properties:validity_date "1/1/23" .
+
+vocabulary:SOE02 a vocabulary:Source_of_electricity ;
+    rdfs:label "(Bilateral) power purchase agreement" ;
+    properties:code "SOE02" ;
+    properties:validity_date "1/1/23" .
+
+vocabulary:SOE03 a vocabulary:Source_of_electricity ;
+    rdfs:label "Received from the grid" ;
+    properties:code "SOE03" ;
+    properties:validity_date "1/1/23" .
+

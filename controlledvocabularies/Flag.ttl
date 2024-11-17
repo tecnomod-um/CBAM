@@ -1,0 +1,15 @@
+@prefix properties: <https://purl.archive.org/cbam/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix vocabulary: <https://purl.archive.org/cbam/Flag/> .
+
+vocabulary:Flag a rdfs:Class ;
+    rdfs:label "Flag" .
+
+vocabulary:0 a vocabulary:Flag ;
+    rdfs:label "FALSO" ;
+    properties:code "0" .
+
+vocabulary:1 a vocabulary:Flag ;
+    rdfs:label "VERDADERO" ;
+    properties:code "1" .
+

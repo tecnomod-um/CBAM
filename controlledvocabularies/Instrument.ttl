@@ -1,0 +1,32 @@
+@prefix properties: <https://purl.archive.org/cbam/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix vocabulary: <https://purl.archive.org/cbam/Instrument/> .
+
+vocabulary:Instrument a rdfs:Class ;
+    rdfs:label "Instrument" .
+
+vocabulary:1 a vocabulary:Instrument ;
+    rdfs:label "Carbon tax" ;
+    properties:code "1" ;
+    properties:validity_date "1/1/23" .
+
+vocabulary:2 a vocabulary:Instrument ;
+    rdfs:label "Carbon levy" ;
+    properties:code "2" ;
+    properties:validity_date "1/1/23" .
+
+vocabulary:3 a vocabulary:Instrument ;
+    rdfs:label "Carbon fee" ;
+    properties:code "3" ;
+    properties:validity_date "1/1/23" .
+
+vocabulary:4 a vocabulary:Instrument ;
+    rdfs:label "Emission allowances under a greenhouse gas emissions trading system in the context of a national ETS" ;
+    properties:code "4" ;
+    properties:validity_date "1/1/23" .
+
+vocabulary:5 a vocabulary:Instrument ;
+    rdfs:label "Emission allowances under a greenhouse gas emissions trading system in the context of a regional ETS" ;
+    properties:code "5" ;
+    properties:validity_date "1/1/23" .
+

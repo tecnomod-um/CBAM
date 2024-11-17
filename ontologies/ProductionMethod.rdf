@@ -1,0 +1,567 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://purl.archive.org/cbam/Production_Method#"
+     xml:base="https://purl.archive.org/cbam/Production_Method"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:properties="https://purl.archive.org/cbam/">
+    <owl:Ontology rdf:about="https://purl.archive.org/cbam/Production_Method"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://purl.archive.org/cbam/code -->
+
+    <owl:AnnotationProperty rdf:about="https://purl.archive.org/cbam/code"/>
+    
+
+
+    <!-- https://purl.archive.org/cbam/validity_date -->
+
+    <owl:AnnotationProperty rdf:about="https://purl.archive.org/cbam/validity_date"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://purl.archive.org/cbam/Production_Method/P01 -->
+
+    <owl:Class rdf:about="https://purl.archive.org/cbam/Production_Method/P01">
+        <rdfs:subClassOf rdf:resource="https://purl.archive.org/cbam/Production_Method/Production_Method"/>
+        <rdfs:label>Calcined clay</rdfs:label>
+        <properties:code>P01</properties:code>
+        <properties:validity_date>25/9/23</properties:validity_date>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.archive.org/cbam/Production_Method/P02 -->
+
+    <owl:Class rdf:about="https://purl.archive.org/cbam/Production_Method/P02">
+        <rdfs:subClassOf rdf:resource="https://purl.archive.org/cbam/Production_Method/Production_Method"/>
+        <rdfs:label>Cement clinker</rdfs:label>
+        <rdfs:label>https://purl.archive.org/cbam/Production_Method/P02</rdfs:label>
+        <properties:code>P02</properties:code>
+        <properties:validity_date>25/9/23</properties:validity_date>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.archive.org/cbam/Production_Method/P03 -->
+
+    <owl:Class rdf:about="https://purl.archive.org/cbam/Production_Method/P03">
+        <rdfs:subClassOf rdf:resource="https://purl.archive.org/cbam/Production_Method/Production_Method"/>
+        <rdfs:label>Cement</rdfs:label>
+        <properties:code>P03</properties:code>
+        <properties:validity_date>25/9/23</properties:validity_date>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.archive.org/cbam/Production_Method/P04 -->
+
+    <owl:Class rdf:about="https://purl.archive.org/cbam/Production_Method/P04">
+        <rdfs:subClassOf rdf:resource="https://purl.archive.org/cbam/Production_Method/Production_Method"/>
+        <rdfs:label>Aluminuous cement</rdfs:label>
+        <properties:code>P04</properties:code>
+        <properties:validity_date>25/9/23</properties:validity_date>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.archive.org/cbam/Production_Method/P05 -->
+
+    <owl:Class rdf:about="https://purl.archive.org/cbam/Production_Method/P05">
+        <rdfs:subClassOf rdf:resource="https://purl.archive.org/cbam/Production_Method/Production_Method"/>
+        <rdfs:label>Sintered ore</rdfs:label>
+        <rdfs:label>https://purl.archive.org/cbam/Production_Method/P05</rdfs:label>
+        <properties:code>P05</properties:code>
+        <properties:validity_date>25/9/23</properties:validity_date>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.archive.org/cbam/Production_Method/P08 -->
+
+    <owl:Class rdf:about="https://purl.archive.org/cbam/Production_Method/P08">
+        <rdfs:subClassOf rdf:resource="https://purl.archive.org/cbam/Production_Method/Production_Method"/>
+        <rdfs:label>Electricity</rdfs:label>
+        <properties:code>P08</properties:code>
+        <properties:validity_date>25/9/23</properties:validity_date>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.archive.org/cbam/Production_Method/P09 -->
+
+    <owl:Class rdf:about="https://purl.archive.org/cbam/Production_Method/P09">
+        <rdfs:subClassOf rdf:resource="https://purl.archive.org/cbam/Production_Method/Production_Method"/>
+        <rdfs:label>Steam reforming</rdfs:label>
+        <properties:code>P09</properties:code>
+        <properties:validity_date>25/9/23</properties:validity_date>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.archive.org/cbam/Production_Method/P10 -->
+
+    <owl:Class rdf:about="https://purl.archive.org/cbam/Production_Method/P10">
+        <rdfs:subClassOf rdf:resource="https://purl.archive.org/cbam/Production_Method/Production_Method"/>
+        <rdfs:label>Partial oxidation</rdfs:label>
+        <properties:code>P10</properties:code>
+        <properties:validity_date>25/9/23</properties:validity_date>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.archive.org/cbam/Production_Method/P11 -->
+
+    <owl:Class rdf:about="https://purl.archive.org/cbam/Production_Method/P11">
+        <rdfs:subClassOf rdf:resource="https://purl.archive.org/cbam/Production_Method/Production_Method"/>
+        <rdfs:label>Other fuel-based hydrogen production</rdfs:label>
+        <properties:code>P11</properties:code>
+        <properties:validity_date>25/9/23</properties:validity_date>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.archive.org/cbam/Production_Method/P12 -->
+
+    <owl:Class rdf:about="https://purl.archive.org/cbam/Production_Method/P12">
+        <rdfs:subClassOf rdf:resource="https://purl.archive.org/cbam/Production_Method/Production_Method"/>
+        <rdfs:label>Electrolysis of water</rdfs:label>
+        <properties:code>P12</properties:code>
+        <properties:validity_date>25/9/23</properties:validity_date>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.archive.org/cbam/Production_Method/P13 -->
+
+    <owl:Class rdf:about="https://purl.archive.org/cbam/Production_Method/P13">
+        <rdfs:subClassOf rdf:resource="https://purl.archive.org/cbam/Production_Method/Production_Method"/>
+        <rdfs:label>Electrolysis of water (other energy sources)</rdfs:label>
+        <rdfs:label>https://purl.archive.org/cbam/Production_Method/P13</rdfs:label>
+        <properties:code>P13</properties:code>
+        <properties:validity_date>25/9/23</properties:validity_date>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.archive.org/cbam/Production_Method/P14 -->
+
+    <owl:Class rdf:about="https://purl.archive.org/cbam/Production_Method/P14">
+        <rdfs:subClassOf rdf:resource="https://purl.archive.org/cbam/Production_Method/Production_Method"/>
+        <rdfs:label>Chlor-Alkali electrolysis</rdfs:label>
+        <properties:code>P14</properties:code>
+        <properties:validity_date>25/9/23</properties:validity_date>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.archive.org/cbam/Production_Method/P15 -->
+
+    <owl:Class rdf:about="https://purl.archive.org/cbam/Production_Method/P15">
+        <rdfs:subClassOf rdf:resource="https://purl.archive.org/cbam/Production_Method/Production_Method"/>
+        <rdfs:label>Production of chlorates</rdfs:label>
+        <properties:code>P15</properties:code>
+        <properties:validity_date>25/9/23</properties:validity_date>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.archive.org/cbam/Production_Method/P16 -->
+
+    <owl:Class rdf:about="https://purl.archive.org/cbam/Production_Method/P16">
+        <rdfs:subClassOf rdf:resource="https://purl.archive.org/cbam/Production_Method/Production_Method"/>
+        <rdfs:label>Other production routes</rdfs:label>
+        <properties:code>P16</properties:code>
+        <properties:validity_date>25/9/23</properties:validity_date>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.archive.org/cbam/Production_Method/P17 -->
+
+    <owl:Class rdf:about="https://purl.archive.org/cbam/Production_Method/P17">
+        <rdfs:subClassOf rdf:resource="https://purl.archive.org/cbam/Production_Method/Production_Method"/>
+        <rdfs:label>Nitric acid</rdfs:label>
+        <rdfs:label>https://purl.archive.org/cbam/Production_Method/P17</rdfs:label>
+        <properties:code>P17</properties:code>
+        <properties:validity_date>25/9/23</properties:validity_date>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.archive.org/cbam/Production_Method/P19 -->
+
+    <owl:Class rdf:about="https://purl.archive.org/cbam/Production_Method/P19">
+        <rdfs:subClassOf rdf:resource="https://purl.archive.org/cbam/Production_Method/Production_Method"/>
+        <rdfs:label>Haber-Bosch process with steam reforming of natural gas or biogas</rdfs:label>
+        <properties:code>P19</properties:code>
+        <properties:validity_date>25/9/23</properties:validity_date>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.archive.org/cbam/Production_Method/P20 -->
+
+    <owl:Class rdf:about="https://purl.archive.org/cbam/Production_Method/P20">
+        <rdfs:subClassOf rdf:resource="https://purl.archive.org/cbam/Production_Method/Production_Method"/>
+        <rdfs:label>Haber-Bosch process with gasification of coal or other fuels</rdfs:label>
+        <properties:code>P20</properties:code>
+        <properties:validity_date>25/9/23</properties:validity_date>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.archive.org/cbam/Production_Method/P21 -->
+
+    <owl:Class rdf:about="https://purl.archive.org/cbam/Production_Method/P21">
+        <rdfs:subClassOf rdf:resource="https://purl.archive.org/cbam/Production_Method/Production_Method"/>
+        <rdfs:label>Other production routes</rdfs:label>
+        <properties:code>P21</properties:code>
+        <properties:validity_date>25/9/23</properties:validity_date>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.archive.org/cbam/Production_Method/P22 -->
+
+    <owl:Class rdf:about="https://purl.archive.org/cbam/Production_Method/P22">
+        <rdfs:subClassOf rdf:resource="https://purl.archive.org/cbam/Production_Method/Production_Method"/>
+        <rdfs:label>Mixed fertilisers</rdfs:label>
+        <properties:code>P22</properties:code>
+        <properties:validity_date>25/9/23</properties:validity_date>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.archive.org/cbam/Production_Method/P23 -->
+
+    <owl:Class rdf:about="https://purl.archive.org/cbam/Production_Method/P23">
+        <rdfs:subClassOf rdf:resource="https://purl.archive.org/cbam/Production_Method/Production_Method"/>
+        <rdfs:label>Urea</rdfs:label>
+        <properties:code>P23</properties:code>
+        <properties:validity_date>25/9/23</properties:validity_date>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.archive.org/cbam/Production_Method/P24 -->
+
+    <owl:Class rdf:about="https://purl.archive.org/cbam/Production_Method/P24">
+        <rdfs:subClassOf rdf:resource="https://purl.archive.org/cbam/Production_Method/Production_Method"/>
+        <rdfs:label>Blast furnace route</rdfs:label>
+        <properties:code>P24</properties:code>
+        <properties:validity_date>25/9/23</properties:validity_date>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.archive.org/cbam/Production_Method/P25 -->
+
+    <owl:Class rdf:about="https://purl.archive.org/cbam/Production_Method/P25">
+        <rdfs:subClassOf rdf:resource="https://purl.archive.org/cbam/Production_Method/Production_Method"/>
+        <rdfs:label>Smelting reduction</rdfs:label>
+        <rdfs:label>https://purl.archive.org/cbam/Production_Method/P25</rdfs:label>
+        <properties:code>P25</properties:code>
+        <properties:validity_date>25/9/23</properties:validity_date>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.archive.org/cbam/Production_Method/P26 -->
+
+    <owl:Class rdf:about="https://purl.archive.org/cbam/Production_Method/P26">
+        <rdfs:subClassOf rdf:resource="https://purl.archive.org/cbam/Production_Method/Production_Method"/>
+        <rdfs:label>Other production routes</rdfs:label>
+        <properties:code>P26</properties:code>
+        <properties:validity_date>25/9/23</properties:validity_date>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.archive.org/cbam/Production_Method/P27 -->
+
+    <owl:Class rdf:about="https://purl.archive.org/cbam/Production_Method/P27">
+        <rdfs:subClassOf rdf:resource="https://purl.archive.org/cbam/Production_Method/Production_Method"/>
+        <rdfs:label>Nickel Pig Iron production</rdfs:label>
+        <rdfs:label>https://purl.archive.org/cbam/Production_Method/P27</rdfs:label>
+        <properties:code>P27</properties:code>
+        <properties:validity_date>25/9/23</properties:validity_date>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.archive.org/cbam/Production_Method/P28 -->
+
+    <owl:Class rdf:about="https://purl.archive.org/cbam/Production_Method/P28">
+        <rdfs:subClassOf rdf:resource="https://purl.archive.org/cbam/Production_Method/Production_Method"/>
+        <rdfs:label>Nickel Pig Iron production</rdfs:label>
+        <rdfs:label>https://purl.archive.org/cbam/Production_Method/P28</rdfs:label>
+        <properties:code>P28</properties:code>
+        <properties:validity_date>25/9/23</properties:validity_date>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.archive.org/cbam/Production_Method/P29 -->
+
+    <owl:Class rdf:about="https://purl.archive.org/cbam/Production_Method/P29">
+        <rdfs:subClassOf rdf:resource="https://purl.archive.org/cbam/Production_Method/Production_Method"/>
+        <rdfs:label>Ferro-nickel (FeNi)</rdfs:label>
+        <rdfs:label>https://purl.archive.org/cbam/Production_Method/P29</rdfs:label>
+        <properties:code>P29</properties:code>
+        <properties:validity_date>25/9/23</properties:validity_date>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.archive.org/cbam/Production_Method/P30 -->
+
+    <owl:Class rdf:about="https://purl.archive.org/cbam/Production_Method/P30">
+        <rdfs:subClassOf rdf:resource="https://purl.archive.org/cbam/Production_Method/Production_Method"/>
+        <rdfs:label>Ferro-chromium (FeCr)</rdfs:label>
+        <properties:code>P30</properties:code>
+        <properties:validity_date>25/9/23</properties:validity_date>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.archive.org/cbam/Production_Method/P31 -->
+
+    <owl:Class rdf:about="https://purl.archive.org/cbam/Production_Method/P31">
+        <rdfs:subClassOf rdf:resource="https://purl.archive.org/cbam/Production_Method/Production_Method"/>
+        <rdfs:label>Ferro-manganese (FeMn)</rdfs:label>
+        <properties:code>P31</properties:code>
+        <properties:validity_date>25/9/23</properties:validity_date>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.archive.org/cbam/Production_Method/P32 -->
+
+    <owl:Class rdf:about="https://purl.archive.org/cbam/Production_Method/P32">
+        <rdfs:subClassOf rdf:resource="https://purl.archive.org/cbam/Production_Method/Production_Method"/>
+        <rdfs:label>Production of Direct reduced Iron (using hydrogen)</rdfs:label>
+        <properties:code>P32</properties:code>
+        <properties:validity_date>25/9/23</properties:validity_date>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.archive.org/cbam/Production_Method/P33 -->
+
+    <owl:Class rdf:about="https://purl.archive.org/cbam/Production_Method/P33">
+        <rdfs:subClassOf rdf:resource="https://purl.archive.org/cbam/Production_Method/Production_Method"/>
+        <rdfs:label>DRI (Direct reduced iron)</rdfs:label>
+        <rdfs:label>https://purl.archive.org/cbam/Production_Method/P33</rdfs:label>
+        <properties:code>P33</properties:code>
+        <properties:validity_date>25/9/23</properties:validity_date>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.archive.org/cbam/Production_Method/P34 -->
+
+    <owl:Class rdf:about="https://purl.archive.org/cbam/Production_Method/P34">
+        <rdfs:subClassOf rdf:resource="https://purl.archive.org/cbam/Production_Method/Production_Method"/>
+        <rdfs:label>Iron or steel products</rdfs:label>
+        <properties:code>P34</properties:code>
+        <properties:validity_date>25/9/23</properties:validity_date>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.archive.org/cbam/Production_Method/P35 -->
+
+    <owl:Class rdf:about="https://purl.archive.org/cbam/Production_Method/P35">
+        <rdfs:subClassOf rdf:resource="https://purl.archive.org/cbam/Production_Method/Production_Method"/>
+        <rdfs:label>Basic oxigen steel making</rdfs:label>
+        <properties:code>P35</properties:code>
+        <properties:validity_date>25/9/23</properties:validity_date>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.archive.org/cbam/Production_Method/P36 -->
+
+    <owl:Class rdf:about="https://purl.archive.org/cbam/Production_Method/P36">
+        <rdfs:subClassOf rdf:resource="https://purl.archive.org/cbam/Production_Method/Production_Method"/>
+        <rdfs:label>Basic oxigen steel making (incl. Blast furnace)</rdfs:label>
+        <properties:code>P36</properties:code>
+        <properties:validity_date>25/9/23</properties:validity_date>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.archive.org/cbam/Production_Method/P37 -->
+
+    <owl:Class rdf:about="https://purl.archive.org/cbam/Production_Method/P37">
+        <rdfs:subClassOf rdf:resource="https://purl.archive.org/cbam/Production_Method/Production_Method"/>
+        <rdfs:label>Basic oxigen steel making (incl. Melting reduction)</rdfs:label>
+        <properties:code>P37</properties:code>
+        <properties:validity_date>25/9/23</properties:validity_date>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.archive.org/cbam/Production_Method/P38 -->
+
+    <owl:Class rdf:about="https://purl.archive.org/cbam/Production_Method/P38">
+        <rdfs:subClassOf rdf:resource="https://purl.archive.org/cbam/Production_Method/Production_Method"/>
+        <rdfs:label>Electric arc furnace</rdfs:label>
+        <rdfs:label>https://purl.archive.org/cbam/Production_Method/P38</rdfs:label>
+        <properties:code>P38</properties:code>
+        <properties:validity_date>25/9/23</properties:validity_date>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.archive.org/cbam/Production_Method/P39 -->
+
+    <owl:Class rdf:about="https://purl.archive.org/cbam/Production_Method/P39">
+        <rdfs:subClassOf rdf:resource="https://purl.archive.org/cbam/Production_Method/Production_Method"/>
+        <rdfs:label>Electric arc furnace (alloy steels))</rdfs:label>
+        <properties:code>P39</properties:code>
+        <properties:validity_date>25/9/23</properties:validity_date>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.archive.org/cbam/Production_Method/P40 -->
+
+    <owl:Class rdf:about="https://purl.archive.org/cbam/Production_Method/P40">
+        <rdfs:subClassOf rdf:resource="https://purl.archive.org/cbam/Production_Method/Production_Method"/>
+        <rdfs:label>Electric arc furnace (carbon steel, from direct reduced iron)</rdfs:label>
+        <rdfs:label>https://purl.archive.org/cbam/Production_Method/P40</rdfs:label>
+        <properties:code>P40</properties:code>
+        <properties:validity_date>25/9/23</properties:validity_date>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.archive.org/cbam/Production_Method/P41 -->
+
+    <owl:Class rdf:about="https://purl.archive.org/cbam/Production_Method/P41">
+        <rdfs:subClassOf rdf:resource="https://purl.archive.org/cbam/Production_Method/Production_Method"/>
+        <rdfs:label>Electric arc furnace (general)</rdfs:label>
+        <properties:code>P41</properties:code>
+        <properties:validity_date>25/9/23</properties:validity_date>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.archive.org/cbam/Production_Method/P42 -->
+
+    <owl:Class rdf:about="https://purl.archive.org/cbam/Production_Method/P42">
+        <rdfs:subClassOf rdf:resource="https://purl.archive.org/cbam/Production_Method/Production_Method"/>
+        <rdfs:label>Primary (electrolytic) smelting</rdfs:label>
+        <rdfs:label>https://purl.archive.org/cbam/Production_Method/P42</rdfs:label>
+        <properties:code>P42</properties:code>
+        <properties:validity_date>25/9/23</properties:validity_date>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.archive.org/cbam/Production_Method/P43 -->
+
+    <owl:Class rdf:about="https://purl.archive.org/cbam/Production_Method/P43">
+        <rdfs:subClassOf rdf:resource="https://purl.archive.org/cbam/Production_Method/Production_Method"/>
+        <rdfs:label>Secondary melting (recycling)</rdfs:label>
+        <properties:code>P43</properties:code>
+        <properties:validity_date>25/9/23</properties:validity_date>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.archive.org/cbam/Production_Method/P44 -->
+
+    <owl:Class rdf:about="https://purl.archive.org/cbam/Production_Method/P44">
+        <rdfs:subClassOf rdf:resource="https://purl.archive.org/cbam/Production_Method/Production_Method"/>
+        <rdfs:label>Mix of primary and secondary production</rdfs:label>
+        <properties:code>P44</properties:code>
+        <properties:validity_date>25/9/23</properties:validity_date>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.archive.org/cbam/Production_Method/P45 -->
+
+    <owl:Class rdf:about="https://purl.archive.org/cbam/Production_Method/P45">
+        <rdfs:subClassOf rdf:resource="https://purl.archive.org/cbam/Production_Method/Production_Method"/>
+        <rdfs:label>Aluminium products</rdfs:label>
+        <properties:code>P45</properties:code>
+        <properties:validity_date>25/9/23</properties:validity_date>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.archive.org/cbam/Production_Method/P46 -->
+
+    <owl:Class rdf:about="https://purl.archive.org/cbam/Production_Method/P46">
+        <rdfs:subClassOf rdf:resource="https://purl.archive.org/cbam/Production_Method/Production_Method"/>
+        <rdfs:label>Integrated production with primary smelting</rdfs:label>
+        <properties:code>P46</properties:code>
+        <properties:validity_date>25/9/23</properties:validity_date>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.archive.org/cbam/Production_Method/P47 -->
+
+    <owl:Class rdf:about="https://purl.archive.org/cbam/Production_Method/P47">
+        <rdfs:subClassOf rdf:resource="https://purl.archive.org/cbam/Production_Method/Production_Method"/>
+        <rdfs:label>Integrated production with secondary melting</rdfs:label>
+        <rdfs:label>https://purl.archive.org/cbam/Production_Method/P47</rdfs:label>
+        <properties:code>P47</properties:code>
+        <properties:validity_date>25/9/23</properties:validity_date>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.archive.org/cbam/Production_Method/P48 -->
+
+    <owl:Class rdf:about="https://purl.archive.org/cbam/Production_Method/P48">
+        <rdfs:subClassOf rdf:resource="https://purl.archive.org/cbam/Production_Method/Production_Method"/>
+        <rdfs:label>Integrated with mixed primary and secondary production</rdfs:label>
+        <properties:code>P48</properties:code>
+        <properties:validity_date>25/9/23</properties:validity_date>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.archive.org/cbam/Production_Method/Production_Method -->
+
+    <owl:Class rdf:about="https://purl.archive.org/cbam/Production_Method/Production_Method">
+        <rdfs:label>Production Method</rdfs:label>
+        <rdfs:label>https://purl.archive.org/cbam/Production_Method/Production_Method</rdfs:label>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi -->
+

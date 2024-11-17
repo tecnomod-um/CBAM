@@ -1,0 +1,922 @@
+@prefix cbam: <https://purl.archive.org/cbam/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+cbam:ExchangeRate a rdf:Property,
+        rdfs:Class ;
+    rdfs:label "ExchangeRate" .
+
+cbam:ExchangeRate_AED_EUR_22_9_23 a cbam:ExchangeRate ;
+    cbam:destination_currency cbam:EUR ;
+    cbam:rate "0,259332" ;
+    cbam:source_currency cbam:AED ;
+    cbam:validity_rate "22/9/23" .
+
+cbam:ExchangeRate_AFN_EUR_22_9_23 a cbam:ExchangeRate ;
+    cbam:destination_currency cbam:EUR ;
+    cbam:rate "0,010588" ;
+    cbam:source_currency cbam:AFN ;
+    cbam:validity_rate "22/9/23" .
+
+cbam:ExchangeRate_ALL_EUR_22_9_23 a cbam:ExchangeRate ;
+    cbam:destination_currency cbam:EUR ;
+    cbam:rate "0,008405" ;
+    cbam:source_currency cbam:ALL ;
+    cbam:validity_rate "22/9/23" .
+
+cbam:ExchangeRate_AMD_EUR_22_9_23 a cbam:ExchangeRate ;
+    cbam:destination_currency cbam:EUR ;
+    cbam:rate "0,002184" ;
+    cbam:source_currency cbam:AMD ;
+    cbam:validity_rate "22/9/23" .
+
+cbam:ExchangeRate_ANG_EUR_22_9_23 a cbam:ExchangeRate ;
+    cbam:destination_currency cbam:EUR ;
+    cbam:rate "0,005290" ;
+    cbam:source_currency cbam:ANG ;
+    cbam:validity_rate "22/9/23" .
+
+cbam:ExchangeRate_AOA_EUR_22_9_23 a cbam:ExchangeRate ;
+    cbam:destination_currency cbam:EUR ;
+    cbam:rate "0,002067" ;
+    cbam:source_currency cbam:AOA ;
+    cbam:validity_rate "22/9/23" .
+
+cbam:ExchangeRate_ARS_EUR_22_9_23 a cbam:ExchangeRate ;
+    cbam:destination_currency cbam:EUR ;
+    cbam:rate "0,007301" ;
+    cbam:source_currency cbam:ARS ;
+    cbam:validity_rate "22/9/23" .
+
+cbam:ExchangeRate_AUD_EUR_22_9_23 a cbam:ExchangeRate ;
+    cbam:destination_currency cbam:EUR ;
+    cbam:rate "0,659326" ;
+    cbam:source_currency cbam:AUD ;
+    cbam:validity_rate "22/9/23" .
+
+cbam:ExchangeRate_AWG_EUR_22_9_23 a cbam:ExchangeRate ;
+    cbam:destination_currency cbam:EUR ;
+    cbam:rate "0,005318" ;
+    cbam:source_currency cbam:AWG ;
+    cbam:validity_rate "22/9/23" .
+
+cbam:ExchangeRate_AZN_EUR_22_9_23 a cbam:ExchangeRate ;
+    cbam:destination_currency cbam:EUR ;
+    cbam:rate "0,558847" ;
+    cbam:source_currency cbam:AZN ;
+    cbam:validity_rate "22/9/23" .
+
+cbam:ExchangeRate_BAM_EUR_22_9_23 a cbam:ExchangeRate ;
+    cbam:destination_currency cbam:EUR ;
+    cbam:rate "0,511292" ;
+    cbam:source_currency cbam:BAM ;
+    cbam:validity_rate "22/9/23" .
+
+cbam:ExchangeRate_BBD_EUR_22_9_23 a cbam:ExchangeRate ;
+    cbam:destination_currency cbam:EUR ;
+    cbam:rate "0,472672" ;
+    cbam:source_currency cbam:BBD ;
+    cbam:validity_rate "22/9/23" .
+
+cbam:ExchangeRate_BDT_EUR_22_9_23 a cbam:ExchangeRate ;
+    cbam:destination_currency cbam:EUR ;
+    cbam:rate "0,010168" ;
+    cbam:source_currency cbam:BDT ;
+    cbam:validity_rate "22/9/23" .
+
+cbam:ExchangeRate_BGN_EUR_22_9_23 a cbam:ExchangeRate ;
+    cbam:destination_currency cbam:EUR ;
+    cbam:rate "0,511300" ;
+    cbam:source_currency cbam:BGN ;
+    cbam:validity_rate "22/9/23" .
+
+cbam:ExchangeRate_BHD_EUR_22_9_23 a cbam:ExchangeRate ;
+    cbam:destination_currency cbam:EUR ;
+    cbam:rate "2,529724" ;
+    cbam:source_currency cbam:BHD ;
+    cbam:validity_rate "22/9/23" .
+
+cbam:ExchangeRate_BIF_EUR_22_9_23 a cbam:ExchangeRate ;
+    cbam:destination_currency cbam:EUR ;
+    cbam:rate "0,000467" ;
+    cbam:source_currency cbam:BIF ;
+    cbam:validity_rate "22/9/23" .
+
+cbam:ExchangeRate_BMD_EUR_22_9_23 a cbam:ExchangeRate ;
+    cbam:destination_currency cbam:EUR ;
+    cbam:rate "0,949523" ;
+    cbam:source_currency cbam:BMD ;
+    cbam:validity_rate "22/9/23" .
+
+cbam:ExchangeRate_BND_EUR_22_9_23 a cbam:ExchangeRate ;
+    cbam:destination_currency cbam:EUR ;
+    cbam:rate "0,688440" ;
+    cbam:source_currency cbam:BND ;
+    cbam:validity_rate "22/9/23" .
+
+cbam:ExchangeRate_BOB_EUR_22_9_23 a cbam:ExchangeRate ;
+    cbam:destination_currency cbam:EUR ;
+    cbam:rate "0,137422" ;
+    cbam:source_currency cbam:BOB ;
+    cbam:validity_rate "22/9/23" .
+
+cbam:ExchangeRate_BRL_EUR_22_9_23 a cbam:ExchangeRate ;
+    cbam:destination_currency cbam:EUR ;
+    cbam:rate "0,183827" ;
+    cbam:source_currency cbam:BRL ;
+    cbam:validity_rate "22/9/23" .
+
+cbam:ExchangeRate_BSD_EUR_22_9_23 a cbam:ExchangeRate ;
+    cbam:destination_currency cbam:EUR ;
+    cbam:rate "0,946119" ;
+    cbam:source_currency cbam:BSD ;
+    cbam:validity_rate "22/9/23" .
+
+cbam:ExchangeRate_BTN_EUR_22_9_23 a cbam:ExchangeRate ;
+    cbam:destination_currency cbam:EUR ;
+    cbam:rate "0,012099" ;
+    cbam:source_currency cbam:BTN ;
+    cbam:validity_rate "22/9/23" .
+
+cbam:ExchangeRate_BYN_EUR_22_9_23 a cbam:ExchangeRate ;
+    cbam:destination_currency cbam:EUR ;
+    cbam:rate "0,361873" ;
+    cbam:source_currency cbam:BYN ;
+    cbam:validity_rate "22/9/23" .
+
+cbam:ExchangeRate_BZD_EUR_22_9_23 a cbam:ExchangeRate ;
+    cbam:destination_currency cbam:EUR ;
+    cbam:rate "0,475971" ;
+    cbam:source_currency cbam:BZD ;
+    cbam:validity_rate "22/9/23" .
+
+cbam:ExchangeRate_CAD_EUR_22_9_23 a cbam:ExchangeRate ;
+    cbam:destination_currency cbam:EUR ;
+    cbam:rate "0,730194" ;
+    cbam:source_currency cbam:CAD ;
+    cbam:validity_rate "22/9/23" .
+
+cbam:ExchangeRate_CDF_EUR_22_9_23 a cbam:ExchangeRate ;
+    cbam:destination_currency cbam:EUR ;
+    cbam:rate "0,000474" ;
+    cbam:source_currency cbam:CDF ;
+    cbam:validity_rate "22/9/23" .
+
+cbam:ExchangeRate_CHF_EUR_22_9_23 a cbam:ExchangeRate ;
+    cbam:destination_currency cbam:EUR ;
+    cbam:rate "0,995322" ;
+    cbam:source_currency cbam:CHF ;
+    cbam:validity_rate "22/9/23" .
+
+cbam:ExchangeRate_CLP_EUR_22_9_23 a cbam:ExchangeRate ;
+    cbam:destination_currency cbam:EUR ;
+    cbam:rate "0,001090" ;
+    cbam:source_currency cbam:CLP ;
+    cbam:validity_rate "22/9/23" .
+
+cbam:ExchangeRate_CNY_EUR_22_9_23 a cbam:ExchangeRate ;
+    cbam:destination_currency cbam:EUR ;
+    cbam:rate "0,141267" ;
+    cbam:source_currency cbam:CNY ;
+    cbam:validity_rate "22/9/23" .
+
+cbam:ExchangeRate_COP_EUR_22_9_23 a cbam:ExchangeRate ;
+    cbam:destination_currency cbam:EUR ;
+    cbam:rate "0,000224" ;
+    cbam:source_currency cbam:COP ;
+    cbam:validity_rate "22/9/23" .
+
+cbam:ExchangeRate_CRC_EUR_22_9_23 a cbam:ExchangeRate ;
+    cbam:destination_currency cbam:EUR ;
+    cbam:rate "0,001473" ;
+    cbam:source_currency cbam:CRC ;
+    cbam:validity_rate "22/9/23" .
+
+cbam:ExchangeRate_CUP_EUR_22_9_23 a cbam:ExchangeRate ;
+    cbam:destination_currency cbam:EUR ;
+    cbam:rate "0,039659" ;
+    cbam:source_currency cbam:CUP ;
+    cbam:validity_rate "22/9/23" .
+
+cbam:ExchangeRate_CVE_EUR_22_9_23 a cbam:ExchangeRate ;
+    cbam:destination_currency cbam:EUR ;
+    cbam:rate "0,009069" ;
+    cbam:source_currency cbam:CVE ;
+    cbam:validity_rate "22/9/23" .
+
+cbam:ExchangeRate_CZK_EUR_22_9_23 a cbam:ExchangeRate ;
+    cbam:destination_currency cbam:EUR ;
+    cbam:rate "0,040707" ;
+    cbam:source_currency cbam:CZK ;
+    cbam:validity_rate "22/9/23" .
+
+cbam:ExchangeRate_DJF_EUR_22_9_23 a cbam:ExchangeRate ;
+    cbam:destination_currency cbam:EUR ;
+    cbam:rate "0,005315" ;
+    cbam:source_currency cbam:DJF ;
+    cbam:validity_rate "22/9/23" .
+
+cbam:ExchangeRate_DKK_EUR_22_9_23 a cbam:ExchangeRate ;
+    cbam:destination_currency cbam:EUR ;
+    cbam:rate "0,134416" ;
+    cbam:source_currency cbam:DKK ;
+    cbam:validity_rate "22/9/23" .
+
+cbam:ExchangeRate_DOP_EUR_22_9_23 a cbam:ExchangeRate ;
+    cbam:destination_currency cbam:EUR ;
+    cbam:rate "0,017217" ;
+    cbam:source_currency cbam:DOP ;
+    cbam:validity_rate "22/9/23" .
+
+cbam:ExchangeRate_DZD_EUR_22_9_23 a cbam:ExchangeRate ;
+    cbam:destination_currency cbam:EUR ;
+    cbam:rate "0,006687" ;
+    cbam:source_currency cbam:DZD ;
+    cbam:validity_rate "22/9/23" .
+
+cbam:ExchangeRate_EGP_EUR_22_9_23 a cbam:ExchangeRate ;
+    cbam:destination_currency cbam:EUR ;
+    cbam:rate "0,049238" ;
+    cbam:source_currency cbam:EGP ;
+    cbam:validity_rate "22/9/23" .
+
+cbam:ExchangeRate_ERN_EUR_22_9_23 a cbam:ExchangeRate ;
+    cbam:destination_currency cbam:EUR ;
+    cbam:rate "0,062160" ;
+    cbam:source_currency cbam:ERN ;
+    cbam:validity_rate "22/9/23" .
+
+cbam:ExchangeRate_ETB_EUR_22_9_23 a cbam:ExchangeRate ;
+    cbam:destination_currency cbam:EUR ;
+    cbam:rate "0,018167" ;
+    cbam:source_currency cbam:ETB ;
+    cbam:validity_rate "22/9/23" .
+
+cbam:ExchangeRate_EUR_EUR_6_12_23 a cbam:ExchangeRate ;
+    cbam:destination_currency cbam:EUR ;
+    cbam:rate "1,000000" ;
+    cbam:source_currency cbam:EUR ;
+    cbam:validity_rate "6/12/23" .
+
+cbam:ExchangeRate_FJD_EUR_22_9_23 a cbam:ExchangeRate ;
+    cbam:destination_currency cbam:EUR ;
+    cbam:rate "2,319271" ;
+    cbam:source_currency cbam:FJD ;
+    cbam:validity_rate "22/9/23" .
+
+cbam:ExchangeRate_FKP_EUR_22_9_23 a cbam:ExchangeRate ;
+    cbam:destination_currency cbam:EUR ;
+    cbam:rate "1,172663" ;
+    cbam:source_currency cbam:FKP ;
+    cbam:validity_rate "22/9/23" .
+
+cbam:ExchangeRate_GBP_EUR_22_9_23 a cbam:ExchangeRate ;
+    cbam:destination_currency cbam:EUR ;
+    cbam:rate "1,172663" ;
+    cbam:source_currency cbam:GBP ;
+    cbam:validity_rate "22/9/23" .
+
+cbam:ExchangeRate_GEL_EUR_22_9_23 a cbam:ExchangeRate ;
+    cbam:destination_currency cbam:EUR ;
+    cbam:rate "0,325850" ;
+    cbam:source_currency cbam:GEL ;
+    cbam:validity_rate "22/9/23" .
+
+cbam:ExchangeRate_GHS_EUR_22_9_23 a cbam:ExchangeRate ;
+    cbam:destination_currency cbam:EUR ;
+    cbam:rate "0,113358" ;
+    cbam:source_currency cbam:GHS ;
+    cbam:validity_rate "22/9/23" .
+
+cbam:ExchangeRate_GIP_EUR_22_9_23 a cbam:ExchangeRate ;
+    cbam:destination_currency cbam:EUR ;
+    cbam:rate "1,172663" ;
+    cbam:source_currency cbam:GIP ;
+    cbam:validity_rate "22/9/23" .
+
+cbam:ExchangeRate_GMD_EUR_22_9_23 a cbam:ExchangeRate ;
+    cbam:destination_currency cbam:EUR ;
+    cbam:rate "0,016819" ;
+    cbam:source_currency cbam:GMD ;
+    cbam:validity_rate "22/9/23" .
+
+cbam:ExchangeRate_GNF_EUR_22_9_23 a cbam:ExchangeRate ;
+    cbam:destination_currency cbam:EUR ;
+    cbam:rate "0,000110" ;
+    cbam:source_currency cbam:GNF ;
+    cbam:validity_rate "22/9/23" .
+
+cbam:ExchangeRate_GTQ_EUR_22_9_23 a cbam:ExchangeRate ;
+    cbam:destination_currency cbam:EUR ;
+    cbam:rate "0,122830" ;
+    cbam:source_currency cbam:GTQ ;
+    cbam:validity_rate "22/9/23" .
+
+cbam:ExchangeRate_GYD_EUR_22_9_23 a cbam:ExchangeRate ;
+    cbam:destination_currency cbam:EUR ;
+    cbam:rate "0,004550" ;
+    cbam:source_currency cbam:GYD ;
+    cbam:validity_rate "22/9/23" .
+
+cbam:ExchangeRate_HKD_EUR_22_9_23 a cbam:ExchangeRate ;
+    cbam:destination_currency cbam:EUR ;
+    cbam:rate "0,121284" ;
+    cbam:source_currency cbam:HKD ;
+    cbam:validity_rate "22/9/23" .
+
+cbam:ExchangeRate_HNL_EUR_22_9_23 a cbam:ExchangeRate ;
+    cbam:destination_currency cbam:EUR ;
+    cbam:rate "0,038761" ;
+    cbam:source_currency cbam:HNL ;
+    cbam:validity_rate "22/9/23" .
+
+cbam:ExchangeRate_HTG_EUR_22_9_23 a cbam:ExchangeRate ;
+    cbam:destination_currency cbam:EUR ;
+    cbam:rate "0,008190" ;
+    cbam:source_currency cbam:HTG ;
+    cbam:validity_rate "22/9/23" .
+
+cbam:ExchangeRate_HUF_EUR_22_9_23 a cbam:ExchangeRate ;
+    cbam:destination_currency cbam:EUR ;
+    cbam:rate "0,002556" ;
+    cbam:source_currency cbam:HUF ;
+    cbam:validity_rate "22/9/23" .
+
+cbam:ExchangeRate_IDR_EUR_22_9_23 a cbam:ExchangeRate ;
+    cbam:destination_currency cbam:EUR ;
+    cbam:rate "0,000064" ;
+    cbam:source_currency cbam:IDR ;
+    cbam:validity_rate "22/9/23" .
+
+cbam:ExchangeRate_ILS_EUR_22_9_23 a cbam:ExchangeRate ;
+    cbam:destination_currency cbam:EUR ;
+    cbam:rate "0,282925" ;
+    cbam:source_currency cbam:ILS ;
+    cbam:validity_rate "22/9/23" .
+
+cbam:ExchangeRate_INR_EUR_22_9_23 a cbam:ExchangeRate ;
+    cbam:destination_currency cbam:EUR ;
+    cbam:rate "0,012094" ;
+    cbam:source_currency cbam:INR ;
+    cbam:validity_rate "22/9/23" .
+
+cbam:ExchangeRate_IQD_EUR_22_9_23 a cbam:ExchangeRate ;
+    cbam:destination_currency cbam:EUR ;
+    cbam:rate "0,000655" ;
+    cbam:source_currency cbam:IQD ;
+    cbam:validity_rate "22/9/23" .
+
+cbam:ExchangeRate_IRR_EUR_22_9_23 a cbam:ExchangeRate ;
+    cbam:destination_currency cbam:EUR ;
+    cbam:rate "0,000023" ;
+    cbam:source_currency cbam:IRR ;
+    cbam:validity_rate "22/9/23" .
+
+cbam:ExchangeRate_ISK_EUR_22_9_23 a cbam:ExchangeRate ;
+    cbam:destination_currency cbam:EUR ;
+    cbam:rate "0,007030" ;
+    cbam:source_currency cbam:ISK ;
+    cbam:validity_rate "22/9/23" .
+
+cbam:ExchangeRate_JMD_EUR_22_9_23 a cbam:ExchangeRate ;
+    cbam:destination_currency cbam:EUR ;
+    cbam:rate "0,006226" ;
+    cbam:source_currency cbam:JMD ;
+    cbam:validity_rate "22/9/23" .
+
+cbam:ExchangeRate_JOD_EUR_22_9_23 a cbam:ExchangeRate ;
+    cbam:destination_currency cbam:EUR ;
+    cbam:rate "1,343616" ;
+    cbam:source_currency cbam:JOD ;
+    cbam:validity_rate "22/9/23" .
+
+cbam:ExchangeRate_JPY_EUR_22_9_23 a cbam:ExchangeRate ;
+    cbam:destination_currency cbam:EUR ;
+    cbam:rate "0,007245" ;
+    cbam:source_currency cbam:JPY ;
+    cbam:validity_rate "22/9/23" .
+
+cbam:ExchangeRate_KES_EUR_22_9_23 a cbam:ExchangeRate ;
+    cbam:destination_currency cbam:EUR ;
+    cbam:rate "0,008040" ;
+    cbam:source_currency cbam:KES ;
+    cbam:validity_rate "22/9/23" .
+
+cbam:ExchangeRate_KGS_EUR_22_9_23 a cbam:ExchangeRate ;
+    cbam:destination_currency cbam:EUR ;
+    cbam:rate "0,011298" ;
+    cbam:source_currency cbam:KGS ;
+    cbam:validity_rate "22/9/23" .
+
+cbam:ExchangeRate_KHR_EUR_22_9_23 a cbam:ExchangeRate ;
+    cbam:destination_currency cbam:EUR ;
+    cbam:rate "0,000231" ;
+    cbam:source_currency cbam:KHR ;
+    cbam:validity_rate "22/9/23" .
+
+cbam:ExchangeRate_KMF_EUR_22_9_23 a cbam:ExchangeRate ;
+    cbam:destination_currency cbam:EUR ;
+    cbam:rate "0,002033" ;
+    cbam:source_currency cbam:KMF ;
+    cbam:validity_rate "22/9/23" .
+
+cbam:ExchangeRate_KRW_EUR_22_9_23 a cbam:ExchangeRate ;
+    cbam:destination_currency cbam:EUR ;
+    cbam:rate "0,000736" ;
+    cbam:source_currency cbam:KRW ;
+    cbam:validity_rate "22/9/23" .
+
+cbam:ExchangeRate_KWD_EUR_22_9_23 a cbam:ExchangeRate ;
+    cbam:destination_currency cbam:EUR ;
+    cbam:rate "3,101929" ;
+    cbam:source_currency cbam:KWD ;
+    cbam:validity_rate "22/9/23" .
+
+cbam:ExchangeRate_KYD_EUR_22_9_23 a cbam:ExchangeRate ;
+    cbam:destination_currency cbam:EUR ;
+    cbam:rate "1,139601" ;
+    cbam:source_currency cbam:KYD ;
+    cbam:validity_rate "22/9/23" .
+
+cbam:ExchangeRate_KZT_EUR_22_9_23 a cbam:ExchangeRate ;
+    cbam:destination_currency cbam:EUR ;
+    cbam:rate "0,002067" ;
+    cbam:source_currency cbam:KZT ;
+    cbam:validity_rate "22/9/23" .
+
+cbam:ExchangeRate_LAK_EUR_22_9_23 a cbam:ExchangeRate ;
+    cbam:destination_currency cbam:EUR ;
+    cbam:rate "0,000066" ;
+    cbam:source_currency cbam:LAK ;
+    cbam:validity_rate "22/9/23" .
+
+cbam:ExchangeRate_LBP_EUR_22_9_23 a cbam:ExchangeRate ;
+    cbam:destination_currency cbam:EUR ;
+    cbam:rate "0,000630" ;
+    cbam:source_currency cbam:LBP ;
+    cbam:validity_rate "22/9/23" .
+
+cbam:ExchangeRate_LKR_EUR_22_9_23 a cbam:ExchangeRate ;
+    cbam:destination_currency cbam:EUR ;
+    cbam:rate "0,002915" ;
+    cbam:source_currency cbam:LKR ;
+    cbam:validity_rate "22/9/23" .
+
+cbam:ExchangeRate_LRD_EUR_22_9_23 a cbam:ExchangeRate ;
+    cbam:destination_currency cbam:EUR ;
+    cbam:rate "0,006213" ;
+    cbam:source_currency cbam:LRD ;
+    cbam:validity_rate "22/9/23" .
+
+cbam:ExchangeRate_LSL_EUR_22_9_23 a cbam:ExchangeRate ;
+    cbam:destination_currency cbam:EUR ;
+    cbam:rate "0,058148" ;
+    cbam:source_currency cbam:LSL ;
+    cbam:validity_rate "22/9/23" .
+
+cbam:ExchangeRate_LYD_EUR_22_9_23 a cbam:ExchangeRate ;
+    cbam:destination_currency cbam:EUR ;
+    cbam:rate "0,197834" ;
+    cbam:source_currency cbam:LYD ;
+    cbam:validity_rate "22/9/23" .
+
+cbam:ExchangeRate_MAD_EUR_22_9_23 a cbam:ExchangeRate ;
+    cbam:destination_currency cbam:EUR ;
+    cbam:rate "0,093588" ;
+    cbam:source_currency cbam:MAD ;
+    cbam:validity_rate "22/9/23" .
+
+cbam:ExchangeRate_MDL_EUR_22_9_23 a cbam:ExchangeRate ;
+    cbam:destination_currency cbam:EUR ;
+    cbam:rate "0,050331" ;
+    cbam:source_currency cbam:MDL ;
+    cbam:validity_rate "22/9/23" .
+
+cbam:ExchangeRate_MGA_EUR_22_9_23 a cbam:ExchangeRate ;
+    cbam:destination_currency cbam:EUR ;
+    cbam:rate "0,000232" ;
+    cbam:source_currency cbam:MGA ;
+    cbam:validity_rate "22/9/23" .
+
+cbam:ExchangeRate_MKD_EUR_22_9_23 a cbam:ExchangeRate ;
+    cbam:destination_currency cbam:EUR ;
+    cbam:rate "0,016228" ;
+    cbam:source_currency cbam:MKD ;
+    cbam:validity_rate "22/9/23" .
+
+cbam:ExchangeRate_MMK_EUR_22_9_23 a cbam:ExchangeRate ;
+    cbam:destination_currency cbam:EUR ;
+    cbam:rate "0,000493" ;
+    cbam:source_currency cbam:MMK ;
+    cbam:validity_rate "22/9/23" .
+
+cbam:ExchangeRate_MNT_EUR_22_9_23 a cbam:ExchangeRate ;
+    cbam:destination_currency cbam:EUR ;
+    cbam:rate "0,000301" ;
+    cbam:source_currency cbam:MNT ;
+    cbam:validity_rate "22/9/23" .
+
+cbam:ExchangeRate_MOP_EUR_22_9_23 a cbam:ExchangeRate ;
+    cbam:destination_currency cbam:EUR ;
+    cbam:rate "0,117719" ;
+    cbam:source_currency cbam:MOP ;
+    cbam:validity_rate "22/9/23" .
+
+cbam:ExchangeRate_MRU_EUR_22_9_23 a cbam:ExchangeRate ;
+    cbam:destination_currency cbam:EUR ;
+    cbam:rate "0,025775" ;
+    cbam:source_currency cbam:MRU ;
+    cbam:validity_rate "22/9/23" .
+
+cbam:ExchangeRate_MUR_EUR_22_9_23 a cbam:ExchangeRate ;
+    cbam:destination_currency cbam:EUR ;
+    cbam:rate "0,021509" ;
+    cbam:source_currency cbam:MUR ;
+    cbam:validity_rate "22/9/23" .
+
+cbam:ExchangeRate_MVR_EUR_22_9_23 a cbam:ExchangeRate ;
+    cbam:destination_currency cbam:EUR ;
+    cbam:rate "0,061867" ;
+    cbam:source_currency cbam:MVR ;
+    cbam:validity_rate "22/9/23" .
+
+cbam:ExchangeRate_MWK_EUR_22_9_23 a cbam:ExchangeRate ;
+    cbam:destination_currency cbam:EUR ;
+    cbam:rate "0,000985" ;
+    cbam:source_currency cbam:MWK ;
+    cbam:validity_rate "22/9/23" .
+
+cbam:ExchangeRate_MXN_EUR_22_9_23 a cbam:ExchangeRate ;
+    cbam:destination_currency cbam:EUR ;
+    cbam:rate "0,047199" ;
+    cbam:source_currency cbam:MXN ;
+    cbam:validity_rate "22/9/23" .
+
+cbam:ExchangeRate_MYR_EUR_22_9_23 a cbam:ExchangeRate ;
+    cbam:destination_currency cbam:EUR ;
+    cbam:rate "0,216081" ;
+    cbam:source_currency cbam:MYR ;
+    cbam:validity_rate "22/9/23" .
+
+cbam:ExchangeRate_MZN_EUR_22_9_23 a cbam:ExchangeRate ;
+    cbam:destination_currency cbam:EUR ;
+    cbam:rate "0,014918" ;
+    cbam:source_currency cbam:MZN ;
+    cbam:validity_rate "22/9/23" .
+
+cbam:ExchangeRate_NAD_EUR_22_9_23 a cbam:ExchangeRate ;
+    cbam:destination_currency cbam:EUR ;
+    cbam:rate "0,058159" ;
+    cbam:source_currency cbam:NAD ;
+    cbam:validity_rate "22/9/23" .
+
+cbam:ExchangeRate_NGN_EUR_22_9_23 a cbam:ExchangeRate ;
+    cbam:destination_currency cbam:EUR ;
+    cbam:rate "0,002243" ;
+    cbam:source_currency cbam:NGN ;
+    cbam:validity_rate "22/9/23" .
+
+cbam:ExchangeRate_NIO_EUR_22_9_23 a cbam:ExchangeRate ;
+    cbam:destination_currency cbam:EUR ;
+    cbam:rate "0,026532" ;
+    cbam:source_currency cbam:NIO ;
+    cbam:validity_rate "22/9/23" .
+
+cbam:ExchangeRate_NOK_EUR_22_9_23 a cbam:ExchangeRate ;
+    cbam:destination_currency cbam:EUR ;
+    cbam:rate "0,098984" ;
+    cbam:source_currency cbam:NOK ;
+    cbam:validity_rate "22/9/23" .
+
+cbam:ExchangeRate_NPR_EUR_22_9_23 a cbam:ExchangeRate ;
+    cbam:destination_currency cbam:EUR ;
+    cbam:rate "0,007533" ;
+    cbam:source_currency cbam:NPR ;
+    cbam:validity_rate "22/9/23" .
+
+cbam:ExchangeRate_NZD_EUR_22_9_23 a cbam:ExchangeRate ;
+    cbam:destination_currency cbam:EUR ;
+    cbam:rate "0,603064" ;
+    cbam:source_currency cbam:NZD ;
+    cbam:validity_rate "22/9/23" .
+
+cbam:ExchangeRate_OMR_EUR_22_9_23 a cbam:ExchangeRate ;
+    cbam:destination_currency cbam:EUR ;
+    cbam:rate "2,474819" ;
+    cbam:source_currency cbam:OMR ;
+    cbam:validity_rate "22/9/23" .
+
+cbam:ExchangeRate_PAB_EUR_22_9_23 a cbam:ExchangeRate ;
+    cbam:destination_currency cbam:EUR ;
+    cbam:rate "0,949668" ;
+    cbam:source_currency cbam:PAB ;
+    cbam:validity_rate "22/9/23" .
+
+cbam:ExchangeRate_PEN_EUR_22_9_23 a cbam:ExchangeRate ;
+    cbam:destination_currency cbam:EUR ;
+    cbam:rate "0,243297" ;
+    cbam:source_currency cbam:PEN ;
+    cbam:validity_rate "22/9/23" .
+
+cbam:ExchangeRate_PHP_EUR_22_9_23 a cbam:ExchangeRate ;
+    cbam:destination_currency cbam:EUR ;
+    cbam:rate "0,017448" ;
+    cbam:source_currency cbam:PHP ;
+    cbam:validity_rate "22/9/23" .
+
+cbam:ExchangeRate_PKR_EUR_22_9_23 a cbam:ExchangeRate ;
+    cbam:destination_currency cbam:EUR ;
+    cbam:rate "0,004633" ;
+    cbam:source_currency cbam:PKR ;
+    cbam:validity_rate "22/9/23" .
+
+cbam:ExchangeRate_PLN_EUR_22_9_23 a cbam:ExchangeRate ;
+    cbam:destination_currency cbam:EUR ;
+    cbam:rate "0,213397" ;
+    cbam:source_currency cbam:PLN ;
+    cbam:validity_rate "22/9/23" .
+
+cbam:ExchangeRate_PYG_EUR_22_9_23 a cbam:ExchangeRate ;
+    cbam:destination_currency cbam:EUR ;
+    cbam:rate "0,000136" ;
+    cbam:source_currency cbam:PYG ;
+    cbam:validity_rate "22/9/23" .
+
+cbam:ExchangeRate_QAR_EUR_22_9_23 a cbam:ExchangeRate ;
+    cbam:destination_currency cbam:EUR ;
+    cbam:rate "0,261647" ;
+    cbam:source_currency cbam:QAR ;
+    cbam:validity_rate "22/9/23" .
+
+cbam:ExchangeRate_RON_EUR_22_9_23 a cbam:ExchangeRate ;
+    cbam:destination_currency cbam:EUR ;
+    cbam:rate "0,202786" ;
+    cbam:source_currency cbam:RON ;
+    cbam:validity_rate "22/9/23" .
+
+cbam:ExchangeRate_RSD_EUR_22_9_23 a cbam:ExchangeRate ;
+    cbam:destination_currency cbam:EUR ;
+    cbam:rate "0,008514" ;
+    cbam:source_currency cbam:RSD ;
+    cbam:validity_rate "22/9/23" .
+
+cbam:ExchangeRate_RUB_EUR_6_12_23 a cbam:ExchangeRate ;
+    cbam:destination_currency cbam:EUR ;
+    cbam:rate "0,011474" ;
+    cbam:source_currency cbam:RUB ;
+    cbam:validity_rate "6/12/23" .
+
+cbam:ExchangeRate_RWF_EUR_22_9_23 a cbam:ExchangeRate ;
+    cbam:destination_currency cbam:EUR ;
+    cbam:rate "0,000921" ;
+    cbam:source_currency cbam:RWF ;
+    cbam:validity_rate "22/9/23" .
+
+cbam:ExchangeRate_SAR_EUR_22_9_23 a cbam:ExchangeRate ;
+    cbam:destination_currency cbam:EUR ;
+    cbam:rate "0,253233" ;
+    cbam:source_currency cbam:SAR ;
+    cbam:validity_rate "22/9/23" .
+
+cbam:ExchangeRate_SBD_EUR_22_9_23 a cbam:ExchangeRate ;
+    cbam:destination_currency cbam:EUR ;
+    cbam:rate "8,585902" ;
+    cbam:source_currency cbam:SBD ;
+    cbam:validity_rate "22/9/23" .
+
+cbam:ExchangeRate_SCR_EUR_22_9_23 a cbam:ExchangeRate ;
+    cbam:destination_currency cbam:EUR ;
+    cbam:rate "0,066565" ;
+    cbam:source_currency cbam:SCR ;
+    cbam:validity_rate "22/9/23" .
+
+cbam:ExchangeRate_SDG_EUR_22_9_23 a cbam:ExchangeRate ;
+    cbam:destination_currency cbam:EUR ;
+    cbam:rate "0,001727" ;
+    cbam:source_currency cbam:SDG ;
+    cbam:validity_rate "22/9/23" .
+
+cbam:ExchangeRate_SEK_EUR_22_9_23 a cbam:ExchangeRate ;
+    cbam:destination_currency cbam:EUR ;
+    cbam:rate "0,094077" ;
+    cbam:source_currency cbam:SEK ;
+    cbam:validity_rate "22/9/23" .
+
+cbam:ExchangeRate_SGD_EUR_22_9_23 a cbam:ExchangeRate ;
+    cbam:destination_currency cbam:EUR ;
+    cbam:rate "0,689085" ;
+    cbam:source_currency cbam:SGD ;
+    cbam:validity_rate "22/9/23" .
+
+cbam:ExchangeRate_SHP_EUR_22_9_23 a cbam:ExchangeRate ;
+    cbam:destination_currency cbam:EUR ;
+    cbam:rate "1,172663" ;
+    cbam:source_currency cbam:SHP ;
+    cbam:validity_rate "22/9/23" .
+
+cbam:ExchangeRate_SLE_EUR_22_9_23 a cbam:ExchangeRate ;
+    cbam:destination_currency cbam:EUR ;
+    cbam:rate "0,066376" ;
+    cbam:source_currency cbam:SLE ;
+    cbam:validity_rate "22/9/23" .
+
+cbam:ExchangeRate_SRD_EUR_22_9_23 a cbam:ExchangeRate ;
+    cbam:destination_currency cbam:EUR ;
+    cbam:rate "0,038368" ;
+    cbam:source_currency cbam:SRD ;
+    cbam:validity_rate "22/9/23" .
+
+cbam:ExchangeRate_SSP_EUR_22_9_23 a cbam:ExchangeRate ;
+    cbam:destination_currency cbam:EUR ;
+    cbam:rate "0,001762" ;
+    cbam:source_currency cbam:SSP ;
+    cbam:validity_rate "22/9/23" .
+
+cbam:ExchangeRate_STN_EUR_22_9_23 a cbam:ExchangeRate ;
+    cbam:destination_currency cbam:EUR ;
+    cbam:rate "0,040816" ;
+    cbam:source_currency cbam:STN ;
+    cbam:validity_rate "22/9/23" .
+
+cbam:ExchangeRate_SVC_EUR_22_9_23 a cbam:ExchangeRate ;
+    cbam:destination_currency cbam:EUR ;
+    cbam:rate "0,108533" ;
+    cbam:source_currency cbam:SVC ;
+    cbam:validity_rate "22/9/23" .
+
+cbam:ExchangeRate_SYP_EUR_22_9_23 a cbam:ExchangeRate ;
+    cbam:destination_currency cbam:EUR ;
+    cbam:rate "0,000340" ;
+    cbam:source_currency cbam:SYP ;
+    cbam:validity_rate "22/9/23" .
+
+cbam:ExchangeRate_SZL_EUR_22_9_23 a cbam:ExchangeRate ;
+    cbam:destination_currency cbam:EUR ;
+    cbam:rate "0,058158" ;
+    cbam:source_currency cbam:SZL ;
+    cbam:validity_rate "22/9/23" .
+
+cbam:ExchangeRate_THB_EUR_22_9_23 a cbam:ExchangeRate ;
+    cbam:destination_currency cbam:EUR ;
+    cbam:rate "0,027132" ;
+    cbam:source_currency cbam:THB ;
+    cbam:validity_rate "22/9/23" .
+
+cbam:ExchangeRate_TJS_EUR_22_9_23 a cbam:ExchangeRate ;
+    cbam:destination_currency cbam:EUR ;
+    cbam:rate "0,085955" ;
+    cbam:source_currency cbam:TJS ;
+    cbam:validity_rate "22/9/23" .
+
+cbam:ExchangeRate_TMT_EUR_22_9_23 a cbam:ExchangeRate ;
+    cbam:destination_currency cbam:EUR ;
+    cbam:rate "0,271223" ;
+    cbam:source_currency cbam:TMT ;
+    cbam:validity_rate "22/9/23" .
+
+cbam:ExchangeRate_TND_EUR_22_9_23 a cbam:ExchangeRate ;
+    cbam:destination_currency cbam:EUR ;
+    cbam:rate "0,309489" ;
+    cbam:source_currency cbam:TND ;
+    cbam:validity_rate "22/9/23" .
+
+cbam:ExchangeRate_TOP_EUR_22_9_23 a cbam:ExchangeRate ;
+    cbam:destination_currency cbam:EUR ;
+    cbam:rate "2,461236" ;
+    cbam:source_currency cbam:TOP ;
+    cbam:validity_rate "22/9/23" .
+
+cbam:ExchangeRate_TRY_EUR_22_9_23 a cbam:ExchangeRate ;
+    cbam:destination_currency cbam:EUR ;
+    cbam:rate "0,057442" ;
+    cbam:source_currency cbam:TRY ;
+    cbam:validity_rate "22/9/23" .
+
+cbam:ExchangeRate_TTD_EUR_22_9_23 a cbam:ExchangeRate ;
+    cbam:destination_currency cbam:EUR ;
+    cbam:rate "0,136460" ;
+    cbam:source_currency cbam:TTD ;
+    cbam:validity_rate "22/9/23" .
+
+cbam:ExchangeRate_TWD_EUR_22_9_23 a cbam:ExchangeRate ;
+    cbam:destination_currency cbam:EUR ;
+    cbam:rate "0,031897" ;
+    cbam:source_currency cbam:TWD ;
+    cbam:validity_rate "22/9/23" .
+
+cbam:ExchangeRate_TZS_EUR_22_9_23 a cbam:ExchangeRate ;
+    cbam:destination_currency cbam:EUR ;
+    cbam:rate "0,000413" ;
+    cbam:source_currency cbam:TZS ;
+    cbam:validity_rate "22/9/23" .
+
+cbam:ExchangeRate_UAH_EUR_22_9_23 a cbam:ExchangeRate ;
+    cbam:destination_currency cbam:EUR ;
+    cbam:rate "0,029395" ;
+    cbam:source_currency cbam:UAH ;
+    cbam:validity_rate "22/9/23" .
+
+cbam:ExchangeRate_UGX_EUR_22_9_23 a cbam:ExchangeRate ;
+    cbam:destination_currency cbam:EUR ;
+    cbam:rate "0,000257" ;
+    cbam:source_currency cbam:UGX ;
+    cbam:validity_rate "22/9/23" .
+
+cbam:ExchangeRate_USD_EUR_22_9_23 a cbam:ExchangeRate ;
+    cbam:destination_currency cbam:EUR ;
+    cbam:rate "0,949668" ;
+    cbam:source_currency cbam:USD ;
+    cbam:validity_rate "22/9/23" .
+
+cbam:ExchangeRate_UYU_EUR_22_9_23 a cbam:ExchangeRate ;
+    cbam:destination_currency cbam:EUR ;
+    cbam:rate "0,023064" ;
+    cbam:source_currency cbam:UYU ;
+    cbam:validity_rate "22/9/23" .
+
+cbam:ExchangeRate_UZS_EUR_22_9_23 a cbam:ExchangeRate ;
+    cbam:destination_currency cbam:EUR ;
+    cbam:rate "0,000086" ;
+    cbam:source_currency cbam:UZS ;
+    cbam:validity_rate "22/9/23" .
+
+cbam:ExchangeRate_VES_EUR_22_9_23 a cbam:ExchangeRate ;
+    cbam:destination_currency cbam:EUR ;
+    cbam:rate "0,131364" ;
+    cbam:source_currency cbam:VES ;
+    cbam:validity_rate "22/9/23" .
+
+cbam:ExchangeRate_VND_EUR_22_9_23 a cbam:ExchangeRate ;
+    cbam:destination_currency cbam:EUR ;
+    cbam:rate "0,000040" ;
+    cbam:source_currency cbam:VND ;
+    cbam:validity_rate "22/9/23" .
+
+cbam:ExchangeRate_VUV_EUR_22_9_23 a cbam:ExchangeRate ;
+    cbam:destination_currency cbam:EUR ;
+    cbam:rate "0,008091" ;
+    cbam:source_currency cbam:VUV ;
+    cbam:validity_rate "22/9/23" .
+
+cbam:ExchangeRate_WST_EUR_22_9_23 a cbam:ExchangeRate ;
+    cbam:destination_currency cbam:EUR ;
+    cbam:rate "2,828214" ;
+    cbam:source_currency cbam:WST ;
+    cbam:validity_rate "22/9/23" .
+
+cbam:ExchangeRate_XAF_EUR_22_9_23 a cbam:ExchangeRate ;
+    cbam:destination_currency cbam:EUR ;
+    cbam:rate "0,001524" ;
+    cbam:source_currency cbam:XAF ;
+    cbam:validity_rate "22/9/23" .
+
+cbam:ExchangeRate_XCD_EUR_22_9_23 a cbam:ExchangeRate ;
+    cbam:destination_currency cbam:EUR ;
+    cbam:rate "0,351396" ;
+    cbam:source_currency cbam:XCD ;
+    cbam:validity_rate "22/9/23" .
+
+cbam:ExchangeRate_XOF_EUR_22_9_23 a cbam:ExchangeRate ;
+    cbam:destination_currency cbam:EUR ;
+    cbam:rate "0,001524" ;
+    cbam:source_currency cbam:XOF ;
+    cbam:validity_rate "22/9/23" .
+
+cbam:ExchangeRate_XPF_EUR_22_9_23 a cbam:ExchangeRate ;
+    cbam:destination_currency cbam:EUR ;
+    cbam:rate "0,119332" ;
+    cbam:source_currency cbam:XPF ;
+    cbam:validity_rate "22/9/23" .
+
+cbam:ExchangeRate_YER_EUR_6_12_23 a cbam:ExchangeRate ;
+    cbam:destination_currency cbam:EUR ;
+    cbam:rate "0,003387" ;
+    cbam:source_currency cbam:YER ;
+    cbam:validity_rate "6/12/23" .
+
+cbam:ExchangeRate_ZAR_EUR_22_9_23 a cbam:ExchangeRate ;
+    cbam:destination_currency cbam:EUR ;
+    cbam:rate "0,058110" ;
+    cbam:source_currency cbam:ZAR ;
+    cbam:validity_rate "22/9/23" .
+
+cbam:ExchangeRate_ZMW_EUR_22_9_23 a cbam:ExchangeRate ;
+    cbam:destination_currency cbam:EUR ;
+    cbam:rate "0,055805" ;
+    cbam:source_currency cbam:ZMW ;
+    cbam:validity_rate "22/9/23" .
+
+cbam:ExchangeRate_ZWL_EUR_22_9_23 a cbam:ExchangeRate ;
+    cbam:destination_currency cbam:EUR ;
+    cbam:rate "0,002451" ;
+    cbam:source_currency cbam:ZWL ;
+    cbam:validity_rate "22/9/23" .
+
+cbam:currencyCode a rdf:Property .
+
+cbam:currencyName a rdf:Property .
+
+cbam:validity_date a rdf:Property .
+
+<https://www.geonames.org/ontology#geonamesID> a rdf:Property .
+

@@ -1,0 +1,22 @@
+@prefix properties: <https://purl.archive.org/cbam/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix vocabulary: <https://purl.archive.org/cbam/Role/> .
+
+vocabulary:Role a rdfs:Class ;
+    rdfs:label "Role" .
+
+vocabulary:1 a vocabulary:Role ;
+    rdfs:label "Importer for all Goods" ;
+    properties:code "1" ;
+    properties:validity_date "1/1/23" .
+
+vocabulary:2 a vocabulary:Role ;
+    rdfs:label "Representative for all Goods" ;
+    properties:code "2" ;
+    properties:validity_date "1/1/23" .
+
+vocabulary:3 a vocabulary:Role ;
+    rdfs:label "Importer for some Goods / Representative for some Goods" ;
+    properties:code "3" ;
+    properties:validity_date "1/1/23" .
+
