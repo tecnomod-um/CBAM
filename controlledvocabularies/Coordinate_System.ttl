@@ -1,17 +1,469 @@
-@prefix properties: <https://purl.archive.org/cbam/> .
+@prefix : <https://purl.org/cbam/Coordinate_System/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix vocabulary: <https://purl.archive.org/cbam/Coordinate_System/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix properties: <https://purl.org/cbam/> .
+@prefix vocabulary: <https://purl.org/cbam/Coordinate_System/> .
+@base <https://purl.org/cbam/Coordinate_System/> .
 
-vocabulary:Coordinate_System a rdfs:Class ;
-    rdfs:label "Coordinate System" .
+<https://purl.org/cbam/Coordinate_System/> rdf:type owl:Ontology ;
+                                            owl:versionIRI <https://purl.org/cbam/Coordinate_System/1.0> ;
+                                            dcterms:abstract "The type of coordinates (GPS/GNSS) Code List in the CBAM Report" ;
+                                            dcterms:accessRights "This ontology is licensed under the Creative Commons Attribution-NonCommercial 4.0 International License (CC BY-NC 4.0). It allows non-commercial use, sharing, and adaptation of the ontology, as long as users provide clear credit to the creator by citing the ontology's title, creator, and license information. Commercial use is strictly prohibited." ;
+                                            dcterms:bibliographicCitation "OK4I - Ontologies and Knowledge Graphs for Industry, July 15–19, 2024, Enschede, Netherlands - <https://www.utwente.nl/en/eemcs/fois2024/resources/papers/duque-et-al-ontology-network-for-the-standardization-of-the-eu-cbam-report-data.pdf>" ;
+                                            dcterms:contributor [ foaf:name "Astrid Duque Ramos"
+                                                                ] ,
+                                                                [ foaf:name "Jesualdo Tomás Fernández Breis"
+                                                                ] ;
+                                            dcterms:created "01/06/2024"^^rdfs:Literal ;
+                                            dcterms:creator [ foaf:name "Jesualdo Tomás Fernández Breis"
+                                                            ] ;
+                                            dcterms:description "This ontology represents the code list for the 'Type of Coordinate System' as defined by the Carbon Border Adjustment Mechanism (CBAM) Report. The type of coordinates (GPS/GNSS)." ;
+                                            dcterms:hasVersion "<https://purl.org/cbam/Coordinate_System/1.0>"^^xsd:anyURI ;
+                                            dcterms:issued "21/11/2024"^^xsd:date ;
+                                            dcterms:license "<http://creativecommons.org/licenses/by/4.0/>" ;
+                                            dcterms:modified "21/11/2024"^^xsd:date ;
+                                            dcterms:publisher "Siemens Energy" ;
+                                            dcterms:source "Report Structure ver 18.0.xlsx  <https://taxation-customs.ec.europa.eu/carbon-border-adjustment-mechanism_en#where-to-report>" ;
+                                            dcterms:title "Type of Coordinates" ;
+                                            vann:preferredNamespacePrefix "<https://purl.org/cbam/Coordinate_System/>" ;
+                                            vann:preferredNamespaceUri "<https://purl.org/cbam/Coordinate_System/>" .
 
-vocabulary:1 a vocabulary:Coordinate_System ;
-    rdfs:label "GPS" ;
-    properties:code "1" ;
-    properties:validity_date "1/1/23" .
+#################################################################
+#    Annotation properties
+#################################################################
 
-vocabulary:2 a vocabulary:Coordinate_System ;
-    rdfs:label "GNSS" ;
-    properties:code "2" ;
-    properties:validity_date "1/1/23" .
+###  http://purl.org/dc/dcam/rangeIncludes
+<http://purl.org/dc/dcam/rangeIncludes> rdf:type owl:AnnotationProperty .
 
+
+###  http://purl.org/dc/elements/1.1/contributor
+dc:contributor rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/creator
+dc:creator rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/date
+dc:date rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/description
+dc:description rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/identifier
+dc:identifier rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/language
+dc:language rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/publisher
+dc:publisher rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/relation
+dc:relation rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/rights
+dc:rights rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/source
+dc:source rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/subject
+dc:subject rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/title
+dc:title rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/type
+dc:type rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/abstract
+dcterms:abstract rdf:type owl:AnnotationProperty ;
+                 rdfs:subPropertyOf dc:description ,
+                                    dcterms:description .
+
+
+###  http://purl.org/dc/terms/accessRights
+dcterms:accessRights rdf:type owl:AnnotationProperty ;
+                     rdfs:subPropertyOf dc:rights ,
+                                        dcterms:rights .
+
+
+###  http://purl.org/dc/terms/alternative
+dcterms:alternative rdf:type owl:AnnotationProperty ;
+                    rdfs:subPropertyOf dc:title ;
+                    rdfs:range rdfs:Literal .
+
+
+###  http://purl.org/dc/terms/available
+dcterms:available rdf:type owl:AnnotationProperty ;
+                  rdfs:subPropertyOf dc:date ;
+                  rdfs:range rdfs:Literal .
+
+
+###  http://purl.org/dc/terms/bibliographicCitation
+dcterms:bibliographicCitation rdf:type owl:AnnotationProperty ;
+                              rdfs:subPropertyOf dc:identifier ;
+                              rdfs:range rdfs:Literal .
+
+
+###  http://purl.org/dc/terms/conformsTo
+dcterms:conformsTo rdf:type owl:AnnotationProperty ;
+                   rdfs:subPropertyOf dc:relation ,
+                                      dcterms:relation .
+
+
+###  http://purl.org/dc/terms/contributor
+dcterms:contributor rdf:type owl:AnnotationProperty ;
+                    rdfs:subPropertyOf dc:contributor .
+
+
+###  http://purl.org/dc/terms/created
+dcterms:created rdf:type owl:AnnotationProperty ;
+                rdfs:subPropertyOf dc:date ;
+                rdfs:range rdfs:Literal .
+
+
+###  http://purl.org/dc/terms/creator
+dcterms:creator rdf:type owl:AnnotationProperty ;
+                rdfs:subPropertyOf dc:creator ,
+                                   dcterms:contributor .
+
+
+###  http://purl.org/dc/terms/date
+dcterms:date rdf:type owl:AnnotationProperty ;
+             rdfs:subPropertyOf dc:date ;
+             rdfs:range rdfs:Literal .
+
+
+###  http://purl.org/dc/terms/dateAccepted
+dcterms:dateAccepted rdf:type owl:AnnotationProperty ;
+                     rdfs:subPropertyOf dc:date ;
+                     rdfs:range rdfs:Literal .
+
+
+###  http://purl.org/dc/terms/dateCopyrighted
+dcterms:dateCopyrighted rdf:type owl:AnnotationProperty ;
+                        rdfs:subPropertyOf dc:date ;
+                        rdfs:range rdfs:Literal .
+
+
+###  http://purl.org/dc/terms/dateSubmitted
+dcterms:dateSubmitted rdf:type owl:AnnotationProperty ;
+                      rdfs:subPropertyOf dc:date ;
+                      rdfs:range rdfs:Literal .
+
+
+###  http://purl.org/dc/terms/description
+dcterms:description rdf:type owl:AnnotationProperty ;
+                    rdfs:subPropertyOf dc:description .
+
+
+###  http://purl.org/dc/terms/hasFormat
+dcterms:hasFormat rdf:type owl:AnnotationProperty ;
+                  rdfs:subPropertyOf dc:relation ,
+                                     dcterms:relation .
+
+
+###  http://purl.org/dc/terms/hasPart
+dcterms:hasPart rdf:type owl:AnnotationProperty ;
+                rdfs:subPropertyOf dc:relation ,
+                                   dcterms:relation .
+
+
+###  http://purl.org/dc/terms/hasVersion
+dcterms:hasVersion rdf:type owl:AnnotationProperty ;
+                   rdfs:subPropertyOf dc:relation ,
+                                      dcterms:relation .
+
+
+###  http://purl.org/dc/terms/identifier
+dcterms:identifier rdf:type owl:AnnotationProperty ;
+                   rdfs:subPropertyOf dc:identifier ;
+                   rdfs:range rdfs:Literal .
+
+
+###  http://purl.org/dc/terms/isFormatOf
+dcterms:isFormatOf rdf:type owl:AnnotationProperty ;
+                   rdfs:subPropertyOf dc:relation ,
+                                      dcterms:relation .
+
+
+###  http://purl.org/dc/terms/isPartOf
+dcterms:isPartOf rdf:type owl:AnnotationProperty ;
+                 rdfs:subPropertyOf dc:relation ,
+                                    dcterms:relation .
+
+
+###  http://purl.org/dc/terms/isReferencedBy
+dcterms:isReferencedBy rdf:type owl:AnnotationProperty ;
+                       rdfs:subPropertyOf dc:relation ,
+                                          dcterms:relation .
+
+
+###  http://purl.org/dc/terms/isReplacedBy
+dcterms:isReplacedBy rdf:type owl:AnnotationProperty ;
+                     rdfs:subPropertyOf dc:relation ,
+                                        dcterms:relation .
+
+
+###  http://purl.org/dc/terms/isRequiredBy
+dcterms:isRequiredBy rdf:type owl:AnnotationProperty ;
+                     rdfs:subPropertyOf dc:relation ,
+                                        dcterms:relation .
+
+
+###  http://purl.org/dc/terms/isVersionOf
+dcterms:isVersionOf rdf:type owl:AnnotationProperty ;
+                    rdfs:subPropertyOf dc:relation ,
+                                       dcterms:relation .
+
+
+###  http://purl.org/dc/terms/issued
+dcterms:issued rdf:type owl:AnnotationProperty ;
+               rdfs:subPropertyOf dc:date ;
+               rdfs:range rdfs:Literal .
+
+
+###  http://purl.org/dc/terms/language
+dcterms:language rdf:type owl:AnnotationProperty ;
+                 rdfs:subPropertyOf dc:language .
+
+
+###  http://purl.org/dc/terms/license
+dcterms:license rdf:type owl:AnnotationProperty ;
+                rdfs:subPropertyOf dc:rights ,
+                                   dcterms:rights .
+
+
+###  http://purl.org/dc/terms/modified
+dcterms:modified rdf:type owl:AnnotationProperty ;
+                 rdfs:subPropertyOf dc:date ;
+                 rdfs:range rdfs:Literal .
+
+
+###  http://purl.org/dc/terms/publisher
+dcterms:publisher rdf:type owl:AnnotationProperty ;
+                  rdfs:subPropertyOf dc:publisher .
+
+
+###  http://purl.org/dc/terms/references
+dcterms:references rdf:type owl:AnnotationProperty ;
+                   rdfs:subPropertyOf dc:relation ,
+                                      dcterms:relation .
+
+
+###  http://purl.org/dc/terms/relation
+dcterms:relation rdf:type owl:AnnotationProperty ;
+                 rdfs:subPropertyOf dc:relation .
+
+
+###  http://purl.org/dc/terms/replaces
+dcterms:replaces rdf:type owl:AnnotationProperty ;
+                 rdfs:subPropertyOf dc:relation ,
+                                    dcterms:relation .
+
+
+###  http://purl.org/dc/terms/requires
+dcterms:requires rdf:type owl:AnnotationProperty ;
+                 rdfs:subPropertyOf dc:relation ,
+                                    dcterms:relation .
+
+
+###  http://purl.org/dc/terms/rights
+dcterms:rights rdf:type owl:AnnotationProperty ;
+               rdfs:subPropertyOf dc:rights .
+
+
+###  http://purl.org/dc/terms/source
+dcterms:source rdf:type owl:AnnotationProperty ;
+               rdfs:subPropertyOf dc:source ,
+                                  dcterms:relation .
+
+
+###  http://purl.org/dc/terms/subject
+dcterms:subject rdf:type owl:AnnotationProperty ;
+                rdfs:subPropertyOf dc:subject .
+
+
+###  http://purl.org/dc/terms/tableOfContents
+dcterms:tableOfContents rdf:type owl:AnnotationProperty ;
+                        rdfs:subPropertyOf dc:description ,
+                                           dcterms:description .
+
+
+###  http://purl.org/dc/terms/title
+dcterms:title rdf:type owl:AnnotationProperty ;
+              rdfs:subPropertyOf dc:title ;
+              rdfs:range rdfs:Literal .
+
+
+###  http://purl.org/dc/terms/type
+dcterms:type rdf:type owl:AnnotationProperty ;
+             rdfs:subPropertyOf dc:type .
+
+
+###  http://purl.org/dc/terms/valid
+dcterms:valid rdf:type owl:AnnotationProperty ;
+              rdfs:subPropertyOf dc:date ;
+              rdfs:range rdfs:Literal .
+
+
+###  http://purl.org/vocab/vann/preferredNamespacePrefix
+vann:preferredNamespacePrefix rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespaceUri
+vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
+
+
+###  http://xmlns.com/foaf/0.1/maker
+foaf:maker rdf:type owl:AnnotationProperty .
+
+
+###  http://xmlns.com/foaf/0.1/name
+foaf:name rdf:type owl:AnnotationProperty .
+
+
+###  http://xmlns.com/foaf/0.1/workInfohomePage
+foaf:workInfohomePage rdf:type owl:AnnotationProperty .
+
+
+###  https://purl.org/cbam/code
+properties:code rdf:type owl:AnnotationProperty .
+
+
+###  https://purl.org/cbam/validity_date
+properties:validity_date rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Datatypes
+#################################################################
+
+###  http://www.w3.org/2001/XMLSchema#date
+xsd:date rdf:type rdfs:Datatype .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://purl.org/dc/terms/alternative
+dcterms:alternative rdf:type owl:DatatypeProperty ;
+                    rdfs:subPropertyOf dcterms:title .
+
+
+###  http://purl.org/dc/terms/available
+dcterms:available rdf:type owl:DatatypeProperty ;
+                  rdfs:subPropertyOf dcterms:date .
+
+
+###  http://purl.org/dc/terms/bibliographicCitation
+dcterms:bibliographicCitation rdf:type owl:DatatypeProperty ;
+                              rdfs:subPropertyOf dcterms:identifier .
+
+
+###  http://purl.org/dc/terms/created
+dcterms:created rdf:type owl:DatatypeProperty ;
+                rdfs:subPropertyOf dcterms:date .
+
+
+###  http://purl.org/dc/terms/date
+dcterms:date rdf:type owl:DatatypeProperty .
+
+
+###  http://purl.org/dc/terms/dateAccepted
+dcterms:dateAccepted rdf:type owl:DatatypeProperty ;
+                     rdfs:subPropertyOf dcterms:date .
+
+
+###  http://purl.org/dc/terms/dateCopyrighted
+dcterms:dateCopyrighted rdf:type owl:DatatypeProperty ;
+                        rdfs:subPropertyOf dcterms:date .
+
+
+###  http://purl.org/dc/terms/dateSubmitted
+dcterms:dateSubmitted rdf:type owl:DatatypeProperty ;
+                      rdfs:subPropertyOf dcterms:date .
+
+
+###  http://purl.org/dc/terms/identifier
+dcterms:identifier rdf:type owl:DatatypeProperty .
+
+
+###  http://purl.org/dc/terms/issued
+dcterms:issued rdf:type owl:DatatypeProperty ;
+               rdfs:subPropertyOf dcterms:date .
+
+
+###  http://purl.org/dc/terms/modified
+dcterms:modified rdf:type owl:DatatypeProperty ;
+                 rdfs:subPropertyOf dcterms:date .
+
+
+###  http://purl.org/dc/terms/title
+dcterms:title rdf:type owl:DatatypeProperty .
+
+
+###  http://purl.org/dc/terms/valid
+dcterms:valid rdf:type owl:DatatypeProperty ;
+              rdfs:subPropertyOf dcterms:date .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  https://purl.org/cbam/Coordinate_System/Coordinate_System
+vocabulary:Coordinate_System rdf:type owl:Class ;
+                             rdfs:comment "The type of coordinates (GPS/GNSS) as defined by the Carbon Border Adjustment Mechanism (CBAM) Report" ;
+                             rdfs:label "Coordinate System" .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  https://purl.org/cbam/Coordinate_System/1
+<https://purl.org/cbam/Coordinate_System/1> rdf:type owl:NamedIndividual ,
+                                                     vocabulary:Coordinate_System ;
+                                            rdfs:label "GPS" ;
+                                            properties:code "1" ;
+                                            properties:validity_date "1/1/23" .
+
+
+###  https://purl.org/cbam/Coordinate_System/2
+<https://purl.org/cbam/Coordinate_System/2> rdf:type owl:NamedIndividual ,
+                                                     vocabulary:Coordinate_System ;
+                                            rdfs:label "GNSS" ;
+                                            properties:code "2" ;
+                                            properties:validity_date "1/1/23" .
+
+
+[ foaf:name "Jesualdo Tomás Fernández Breis"
+] .
+
+###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi

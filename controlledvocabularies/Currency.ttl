@@ -1,886 +1,1704 @@
-@prefix cbam: <https://purl.archive.org/cbam/> .
+@prefix : <https://purl.org/cbam/Currency/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix cbam: <https://purl.org/cbam/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix geonames: <https://www.geonames.org/ontology#> .
 @prefix geonames_data: <https://sws.geonames.org/> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-
-cbam:Currency a rdfs:Class ;
-    rdfs:label "Currency" .
-
-cbam:AED a cbam:Currency ;
-    cbam:currencyCode "AED" ;
-    cbam:currencyName "Dirham" ;
-    geonames:geonamesID geonames_data:290557 .
-
-cbam:AFN a cbam:Currency ;
-    cbam:currencyCode "AFN" ;
-    cbam:currencyName "Afghani" ;
-    geonames:geonamesID geonames_data:1149361 .
-
-cbam:ALL a cbam:Currency ;
-    cbam:currencyCode "ALL" ;
-    cbam:currencyName "Lek" ;
-    geonames:geonamesID geonames_data:783754 .
-
-cbam:AMD a cbam:Currency ;
-    cbam:currencyCode "AMD" ;
-    cbam:currencyName "Dram" ;
-    geonames:geonamesID geonames_data:174982 .
-
-cbam:ANG a cbam:Currency ;
-    cbam:currencyCode "ANG" ;
-    cbam:currencyName "Guilder" ;
-    geonames:geonamesID geonames_data:7609695,
-        geonames_data:7626836,
-        geonames_data:8505032 .
-
-cbam:AOA a cbam:Currency ;
-    cbam:currencyCode "AOA" ;
-    cbam:currencyName "Kwanza" ;
-    geonames:geonamesID geonames_data:3351879 .
-
-cbam:ARS a cbam:Currency ;
-    cbam:currencyCode "ARS" ;
-    cbam:currencyName "Peso" ;
-    geonames:geonamesID geonames_data:3865483 .
-
-cbam:AUD a cbam:Currency ;
-    cbam:currencyCode "AUD" ;
-    cbam:currencyName "Dollar" ;
-    geonames:geonamesID geonames_data:1547314,
-        geonames_data:1547376,
-        geonames_data:2077456,
-        geonames_data:2078138,
-        geonames_data:2110297,
-        geonames_data:2110425,
-        geonames_data:2155115,
-        geonames_data:4030945 .
-
-cbam:AWG a cbam:Currency ;
-    cbam:currencyCode "AWG" ;
-    cbam:currencyName "Guilder" ;
-    geonames:geonamesID geonames_data:3577279 .
-
-cbam:AZN a cbam:Currency ;
-    cbam:currencyCode "AZN" ;
-    cbam:currencyName "Manat" ;
-    geonames:geonamesID geonames_data:587116 .
-
-cbam:BAM a cbam:Currency ;
-    cbam:currencyCode "BAM" ;
-    cbam:currencyName "Marka" ;
-    geonames:geonamesID geonames_data:3277605 .
-
-cbam:BBD a cbam:Currency ;
-    cbam:currencyCode "BBD" ;
-    cbam:currencyName "Dollar" ;
-    geonames:geonamesID geonames_data:3374084 .
-
-cbam:BDT a cbam:Currency ;
-    cbam:currencyCode "BDT" ;
-    cbam:currencyName "Taka" ;
-    geonames:geonamesID geonames_data:1210997 .
-
-cbam:BGN a cbam:Currency ;
-    cbam:currencyCode "BGN" ;
-    cbam:currencyName "Lev" ;
-    geonames:geonamesID geonames_data:732800 .
-
-cbam:BHD a cbam:Currency ;
-    cbam:currencyCode "BHD" ;
-    cbam:currencyName "Dinar" ;
-    geonames:geonamesID geonames_data:290291 .
-
-cbam:BIF a cbam:Currency ;
-    cbam:currencyCode "BIF" ;
-    cbam:currencyName "Franc" ;
-    geonames:geonamesID geonames_data:433561 .
-
-cbam:BMD a cbam:Currency ;
-    cbam:currencyCode "BMD" ;
-    cbam:currencyName "Dollar" ;
-    geonames:geonamesID geonames_data:3573345 .
-
-cbam:BND a cbam:Currency ;
-    cbam:currencyCode "BND" ;
-    cbam:currencyName "Dollar" ;
-    geonames:geonamesID geonames_data:1820814 .
-
-cbam:BOB a cbam:Currency ;
-    cbam:currencyCode "BOB" ;
-    cbam:currencyName "Boliviano" ;
-    geonames:geonamesID geonames_data:3923057 .
-
-cbam:BRL a cbam:Currency ;
-    cbam:currencyCode "BRL" ;
-    cbam:currencyName "Real" ;
-    geonames:geonamesID geonames_data:3469034 .
-
-cbam:BSD a cbam:Currency ;
-    cbam:currencyCode "BSD" ;
-    cbam:currencyName "Dollar" ;
-    geonames:geonamesID geonames_data:3572887 .
-
-cbam:BTN a cbam:Currency ;
-    cbam:currencyCode "BTN" ;
-    cbam:currencyName "Ngultrum" ;
-    geonames:geonamesID geonames_data:1252634 .
-
-cbam:BWP a cbam:Currency ;
-    cbam:currencyCode "BWP" ;
-    cbam:currencyName "Pula" ;
-    geonames:geonamesID geonames_data:933860 .
-
-cbam:BYN a cbam:Currency ;
-    cbam:currencyCode "BYN" ;
-    cbam:currencyName "Belarusian ruble" ;
-    geonames:geonamesID geonames_data:630336 .
-
-cbam:BZD a cbam:Currency ;
-    cbam:currencyCode "BZD" ;
-    cbam:currencyName "Dollar" ;
-    geonames:geonamesID geonames_data:3582678 .
-
-cbam:CAD a cbam:Currency ;
-    cbam:currencyCode "CAD" ;
-    cbam:currencyName "Dollar" ;
-    geonames:geonamesID geonames_data:6251999 .
-
-cbam:CDF a cbam:Currency ;
-    cbam:currencyCode "CDF" ;
-    cbam:currencyName "Franc" ;
-    geonames:geonamesID geonames_data:203312 .
-
-cbam:CHF a cbam:Currency ;
-    cbam:currencyCode "CHF" ;
-    cbam:currencyName "Franc" ;
-    geonames:geonamesID geonames_data:2658434,
-        geonames_data:3042058 .
-
-cbam:CLP a cbam:Currency ;
-    cbam:currencyCode "CLP" ;
-    cbam:currencyName "Peso" ;
-    geonames:geonamesID geonames_data:3895114 .
-
-cbam:CNY a cbam:Currency ;
-    cbam:currencyCode "CNY" ;
-    cbam:currencyName "Yuan Renminbi" ;
-    geonames:geonamesID geonames_data:1814991 .
-
-cbam:COP a cbam:Currency ;
-    cbam:currencyCode "COP" ;
-    cbam:currencyName "Peso" ;
-    geonames:geonamesID geonames_data:3686110 .
-
-cbam:CRC a cbam:Currency ;
-    cbam:currencyCode "CRC" ;
-    cbam:currencyName "Colon" ;
-    geonames:geonamesID geonames_data:3624060 .
-
-cbam:CUP a cbam:Currency ;
-    cbam:currencyCode "CUP" ;
-    cbam:currencyName "Peso" ;
-    geonames:geonamesID geonames_data:3562981 .
-
-cbam:CVE a cbam:Currency ;
-    cbam:currencyCode "CVE" ;
-    cbam:currencyName "Escudo" ;
-    geonames:geonamesID geonames_data:3374766 .
-
-cbam:CZK a cbam:Currency ;
-    cbam:currencyCode "CZK" ;
-    cbam:currencyName "Koruna" ;
-    geonames:geonamesID geonames_data:3077311 .
-
-cbam:DJF a cbam:Currency ;
-    cbam:currencyCode "DJF" ;
-    cbam:currencyName "Franc" ;
-    geonames:geonamesID geonames_data:223816 .
-
-cbam:DKK a cbam:Currency ;
-    cbam:currencyCode "DKK" ;
-    cbam:currencyName "Krone" ;
-    geonames:geonamesID geonames_data:2622320,
-        geonames_data:2623032,
-        geonames_data:3425505 .
-
-cbam:DOP a cbam:Currency ;
-    cbam:currencyCode "DOP" ;
-    cbam:currencyName "Peso" ;
-    geonames:geonamesID geonames_data:3508796 .
-
-cbam:DZD a cbam:Currency ;
-    cbam:currencyCode "DZD" ;
-    cbam:currencyName "Dinar" ;
-    geonames:geonamesID geonames_data:2589581 .
-
-cbam:EGP a cbam:Currency ;
-    cbam:currencyCode "EGP" ;
-    cbam:currencyName "Pound" ;
-    geonames:geonamesID geonames_data:357994 .
-
-cbam:ERN a cbam:Currency ;
-    cbam:currencyCode "ERN" ;
-    cbam:currencyName "Nakfa" ;
-    geonames:geonamesID geonames_data:338010 .
-
-cbam:ETB a cbam:Currency ;
-    cbam:currencyCode "ETB" ;
-    cbam:currencyName "Birr" ;
-    geonames:geonamesID geonames_data:337996 .
-
-cbam:EUR a cbam:Currency ;
-    cbam:currencyCode "EUR" ;
-    cbam:currencyName "Euro" ;
-    geonames:geonamesID geonames_data:1024031,
-        geonames_data:146669,
-        geonames_data:1546748,
-        geonames_data:2264397,
-        geonames_data:2510769,
-        geonames_data:2562770,
-        geonames_data:2750405,
-        geonames_data:2782113,
-        geonames_data:2802361,
-        geonames_data:2921044,
-        geonames_data:2960313,
-        geonames_data:2963597,
-        geonames_data:2993457,
-        geonames_data:3017382,
-        geonames_data:3041565,
-        geonames_data:3057568,
-        geonames_data:3164670,
-        geonames_data:3168068,
-        geonames_data:3175395,
-        geonames_data:3190538,
-        geonames_data:3194884,
-        geonames_data:3202326,
-        geonames_data:3381670,
-        geonames_data:3424932,
-        geonames_data:3570311,
-        geonames_data:3578421,
-        geonames_data:3578476,
-        geonames_data:3579143,
-        geonames_data:390903,
-        geonames_data:453733,
-        geonames_data:458258,
-        geonames_data:597427,
-        geonames_data:660013,
-        geonames_data:661882,
-        geonames_data:831053,
-        geonames_data:935317 .
-
-cbam:ExchangeRate a rdf:Property .
-
-cbam:FJD a cbam:Currency ;
-    cbam:currencyCode "FJD" ;
-    cbam:currencyName "Dollar" ;
-    geonames:geonamesID geonames_data:2205218 .
-
-cbam:FKP a cbam:Currency ;
-    cbam:currencyCode "FKP" ;
-    cbam:currencyName "Pound" ;
-    geonames:geonamesID geonames_data:3474414 .
-
-cbam:GBP a cbam:Currency ;
-    cbam:currencyCode "GBP" ;
-    cbam:currencyName "Pound" ;
-    geonames:geonamesID geonames_data:2635167,
-        geonames_data:3042142,
-        geonames_data:3042225,
-        geonames_data:3042362,
-        geonames_data:3474415 .
-
-cbam:GEL a cbam:Currency ;
-    cbam:currencyCode "GEL" ;
-    cbam:currencyName "Lari" ;
-    geonames:geonamesID geonames_data:614540 .
-
-cbam:GHS a cbam:Currency ;
-    cbam:currencyCode "GHS" ;
-    cbam:currencyName "Cedi" ;
-    geonames:geonamesID geonames_data:2300660 .
-
-cbam:GIP a cbam:Currency ;
-    cbam:currencyCode "GIP" ;
-    cbam:currencyName "Pound" ;
-    geonames:geonamesID geonames_data:2411586 .
-
-cbam:GMD a cbam:Currency ;
-    cbam:currencyCode "GMD" ;
-    cbam:currencyName "Dalasi" ;
-    geonames:geonamesID geonames_data:2413451 .
-
-cbam:GNF a cbam:Currency ;
-    cbam:currencyCode "GNF" ;
-    cbam:currencyName "Franc" ;
-    geonames:geonamesID geonames_data:2420477 .
-
-cbam:GTQ a cbam:Currency ;
-    cbam:currencyCode "GTQ" ;
-    cbam:currencyName "Quetzal" ;
-    geonames:geonamesID geonames_data:3595528 .
-
-cbam:GYD a cbam:Currency ;
-    cbam:currencyCode "GYD" ;
-    cbam:currencyName "Dollar" ;
-    geonames:geonamesID geonames_data:3378535 .
-
-cbam:HKD a cbam:Currency ;
-    cbam:currencyCode "HKD" ;
-    cbam:currencyName "Dollar" ;
-    geonames:geonamesID geonames_data:1819730 .
-
-cbam:HNL a cbam:Currency ;
-    cbam:currencyCode "HNL" ;
-    cbam:currencyName "Lempira" ;
-    geonames:geonamesID geonames_data:3608932 .
-
-cbam:HTG a cbam:Currency ;
-    cbam:currencyCode "HTG" ;
-    cbam:currencyName "Gourde" ;
-    geonames:geonamesID geonames_data:3723988 .
-
-cbam:HUF a cbam:Currency ;
-    cbam:currencyCode "HUF" ;
-    cbam:currencyName "Forint" ;
-    geonames:geonamesID geonames_data:719819 .
-
-cbam:IDR a cbam:Currency ;
-    cbam:currencyCode "IDR" ;
-    cbam:currencyName "Rupiah" ;
-    geonames:geonamesID geonames_data:1643084 .
-
-cbam:ILS a cbam:Currency ;
-    cbam:currencyCode "ILS" ;
-    cbam:currencyName "Shekel" ;
-    geonames:geonamesID geonames_data:294640,
-        geonames_data:6254930 .
-
-cbam:INR a cbam:Currency ;
-    cbam:currencyCode "INR" ;
-    cbam:currencyName "Rupee" ;
-    geonames:geonamesID geonames_data:1269750 .
-
-cbam:IQD a cbam:Currency ;
-    cbam:currencyCode "IQD" ;
-    cbam:currencyName "Dinar" ;
-    geonames:geonamesID geonames_data:99237 .
-
-cbam:IRR a cbam:Currency ;
-    cbam:currencyCode "IRR" ;
-    cbam:currencyName "Rial" ;
-    geonames:geonamesID geonames_data:130758 .
-
-cbam:ISK a cbam:Currency ;
-    cbam:currencyCode "ISK" ;
-    cbam:currencyName "Krona" ;
-    geonames:geonamesID geonames_data:2629691 .
-
-cbam:JMD a cbam:Currency ;
-    cbam:currencyCode "JMD" ;
-    cbam:currencyName "Dollar" ;
-    geonames:geonamesID geonames_data:3489940 .
-
-cbam:JOD a cbam:Currency ;
-    cbam:currencyCode "JOD" ;
-    cbam:currencyName "Dinar" ;
-    geonames:geonamesID geonames_data:248816 .
-
-cbam:JPY a cbam:Currency ;
-    cbam:currencyCode "JPY" ;
-    cbam:currencyName "Yen" ;
-    geonames:geonamesID geonames_data:1861060 .
-
-cbam:KES a cbam:Currency ;
-    cbam:currencyCode "KES" ;
-    cbam:currencyName "Shilling" ;
-    geonames:geonamesID geonames_data:192950 .
-
-cbam:KGS a cbam:Currency ;
-    cbam:currencyCode "KGS" ;
-    cbam:currencyName "Som" ;
-    geonames:geonamesID geonames_data:1527747 .
-
-cbam:KHR a cbam:Currency ;
-    cbam:currencyCode "KHR" ;
-    cbam:currencyName "Riels" ;
-    geonames:geonamesID geonames_data:1831722 .
-
-cbam:KMF a cbam:Currency ;
-    cbam:currencyCode "KMF" ;
-    cbam:currencyName "Franc" ;
-    geonames:geonamesID geonames_data:921929 .
-
-cbam:KPW a cbam:Currency ;
-    cbam:currencyCode "KPW" ;
-    cbam:currencyName "Won" ;
-    geonames:geonamesID geonames_data:1873107 .
-
-cbam:KRW a cbam:Currency ;
-    cbam:currencyCode "KRW" ;
-    cbam:currencyName "Won" ;
-    geonames:geonamesID geonames_data:1835841 .
-
-cbam:KWD a cbam:Currency ;
-    cbam:currencyCode "KWD" ;
-    cbam:currencyName "Dinar" ;
-    geonames:geonamesID geonames_data:285570 .
-
-cbam:KYD a cbam:Currency ;
-    cbam:currencyCode "KYD" ;
-    cbam:currencyName "Dollar" ;
-    geonames:geonamesID geonames_data:3580718 .
-
-cbam:KZT a cbam:Currency ;
-    cbam:currencyCode "KZT" ;
-    cbam:currencyName "Tenge" ;
-    geonames:geonamesID geonames_data:1522867 .
-
-cbam:LAK a cbam:Currency ;
-    cbam:currencyCode "LAK" ;
-    cbam:currencyName "Kip" ;
-    geonames:geonamesID geonames_data:1655842 .
-
-cbam:LBP a cbam:Currency ;
-    cbam:currencyCode "LBP" ;
-    cbam:currencyName "Pound" ;
-    geonames:geonamesID geonames_data:272103 .
-
-cbam:LKR a cbam:Currency ;
-    cbam:currencyCode "LKR" ;
-    cbam:currencyName "Rupee" ;
-    geonames:geonamesID geonames_data:1227603 .
-
-cbam:LRD a cbam:Currency ;
-    cbam:currencyCode "LRD" ;
-    cbam:currencyName "Dollar" ;
-    geonames:geonamesID geonames_data:2275384 .
-
-cbam:LSL a cbam:Currency ;
-    cbam:currencyCode "LSL" ;
-    cbam:currencyName "Loti" ;
-    geonames:geonamesID geonames_data:932692 .
-
-cbam:LYD a cbam:Currency ;
-    cbam:currencyCode "LYD" ;
-    cbam:currencyName "Dinar" ;
-    geonames:geonamesID geonames_data:2215636 .
-
-cbam:MAD a cbam:Currency ;
-    cbam:currencyCode "MAD" ;
-    cbam:currencyName "Dirham" ;
-    geonames:geonamesID geonames_data:2461445,
-        geonames_data:2542007 .
-
-cbam:MDL a cbam:Currency ;
-    cbam:currencyCode "MDL" ;
-    cbam:currencyName "Leu" ;
-    geonames:geonamesID geonames_data:617790 .
-
-cbam:MGA a cbam:Currency ;
-    cbam:currencyCode "MGA" ;
-    cbam:currencyName "Ariary" ;
-    geonames:geonamesID geonames_data:1062947 .
-
-cbam:MKD a cbam:Currency ;
-    cbam:currencyCode "MKD" ;
-    cbam:currencyName "Denar" ;
-    geonames:geonamesID geonames_data:718075 .
-
-cbam:MMK a cbam:Currency ;
-    cbam:currencyCode "MMK" ;
-    cbam:currencyName "Kyat" ;
-    geonames:geonamesID geonames_data:1327865 .
-
-cbam:MNT a cbam:Currency ;
-    cbam:currencyCode "MNT" ;
-    cbam:currencyName "Tugrik" ;
-    geonames:geonamesID geonames_data:2029969 .
-
-cbam:MOP a cbam:Currency ;
-    cbam:currencyCode "MOP" ;
-    cbam:currencyName "Pataca" ;
-    geonames:geonamesID geonames_data:1821275 .
-
-cbam:MRU a cbam:Currency ;
-    cbam:currencyCode "MRU" ;
-    cbam:currencyName "Ouguiya" ;
-    geonames:geonamesID geonames_data:2378080 .
-
-cbam:MUR a cbam:Currency ;
-    cbam:currencyCode "MUR" ;
-    cbam:currencyName "Rupee" ;
-    geonames:geonamesID geonames_data:934292 .
-
-cbam:MVR a cbam:Currency ;
-    cbam:currencyCode "MVR" ;
-    cbam:currencyName "Rufiyaa" ;
-    geonames:geonamesID geonames_data:1282028 .
-
-cbam:MWK a cbam:Currency ;
-    cbam:currencyCode "MWK" ;
-    cbam:currencyName "Kwacha" ;
-    geonames:geonamesID geonames_data:927384 .
-
-cbam:MXN a cbam:Currency ;
-    cbam:currencyCode "MXN" ;
-    cbam:currencyName "Peso" ;
-    geonames:geonamesID geonames_data:3996063 .
-
-cbam:MYR a cbam:Currency ;
-    cbam:currencyCode "MYR" ;
-    cbam:currencyName "Ringgit" ;
-    geonames:geonamesID geonames_data:1733045 .
-
-cbam:MZN a cbam:Currency ;
-    cbam:currencyCode "MZN" ;
-    cbam:currencyName "Metical" ;
-    geonames:geonamesID geonames_data:1036973 .
-
-cbam:NAD a cbam:Currency ;
-    cbam:currencyCode "NAD" ;
-    cbam:currencyName "Dollar" ;
-    geonames:geonamesID geonames_data:3355338 .
-
-cbam:NGN a cbam:Currency ;
-    cbam:currencyCode "NGN" ;
-    cbam:currencyName "Naira" ;
-    geonames:geonamesID geonames_data:2328926 .
-
-cbam:NIO a cbam:Currency ;
-    cbam:currencyCode "NIO" ;
-    cbam:currencyName "Cordoba" ;
-    geonames:geonamesID geonames_data:3617476 .
-
-cbam:NOK a cbam:Currency ;
-    cbam:currencyCode "NOK" ;
-    cbam:currencyName "Krone" ;
-    geonames:geonamesID geonames_data:3144096,
-        geonames_data:3371123,
-        geonames_data:607072 .
-
-cbam:NPR a cbam:Currency ;
-    cbam:currencyCode "NPR" ;
-    cbam:currencyName "Rupee" ;
-    geonames:geonamesID geonames_data:1282988 .
-
-cbam:NZD a cbam:Currency ;
-    cbam:currencyCode "NZD" ;
-    cbam:currencyName "Dollar" ;
-    geonames:geonamesID geonames_data:1899402,
-        geonames_data:2186224,
-        geonames_data:4030699,
-        geonames_data:4031074,
-        geonames_data:4036232 .
-
-cbam:OMR a cbam:Currency ;
-    cbam:currencyCode "OMR" ;
-    cbam:currencyName "Rial" ;
-    geonames:geonamesID geonames_data:286963 .
-
-cbam:PAB a cbam:Currency ;
-    cbam:currencyCode "PAB" ;
-    cbam:currencyName "Balboa" ;
-    geonames:geonamesID geonames_data:3703430 .
-
-cbam:PEN a cbam:Currency ;
-    cbam:currencyCode "PEN" ;
-    cbam:currencyName "Sol" ;
-    geonames:geonamesID geonames_data:3932488 .
-
-cbam:PGK a cbam:Currency ;
-    cbam:currencyCode "PGK" ;
-    cbam:currencyName "Kina" ;
-    geonames:geonamesID geonames_data:2088628 .
-
-cbam:PHP a cbam:Currency ;
-    cbam:currencyCode "PHP" ;
-    cbam:currencyName "Peso" ;
-    geonames:geonamesID geonames_data:1694008 .
-
-cbam:PKR a cbam:Currency ;
-    cbam:currencyCode "PKR" ;
-    cbam:currencyName "Rupee" ;
-    geonames:geonamesID geonames_data:1168579 .
-
-cbam:PLN a cbam:Currency ;
-    cbam:currencyCode "PLN" ;
-    cbam:currencyName "Zloty" ;
-    geonames:geonamesID geonames_data:798544 .
-
-cbam:PYG a cbam:Currency ;
-    cbam:currencyCode "PYG" ;
-    cbam:currencyName "Guarani" ;
-    geonames:geonamesID geonames_data:3437598 .
-
-cbam:QAR a cbam:Currency ;
-    cbam:currencyCode "QAR" ;
-    cbam:currencyName "Rial" ;
-    geonames:geonamesID geonames_data:289688 .
-
-cbam:RON a cbam:Currency ;
-    cbam:currencyCode "RON" ;
-    cbam:currencyName "Leu" ;
-    geonames:geonamesID geonames_data:798549 .
-
-cbam:RSD a cbam:Currency ;
-    cbam:currencyCode "RSD" ;
-    cbam:currencyName "Dinar" ;
-    geonames:geonamesID geonames_data:6290252,
-        geonames_data:8505033 .
-
-cbam:RUB a cbam:Currency ;
-    cbam:currencyCode "RUB" ;
-    cbam:currencyName "Ruble" ;
-    geonames:geonamesID geonames_data:2017370 .
-
-cbam:RWF a cbam:Currency ;
-    cbam:currencyCode "RWF" ;
-    cbam:currencyName "Franc" ;
-    geonames:geonamesID geonames_data:49518 .
-
-cbam:SAR a cbam:Currency ;
-    cbam:currencyCode "SAR" ;
-    cbam:currencyName "Rial" ;
-    geonames:geonamesID geonames_data:102358 .
-
-cbam:SBD a cbam:Currency ;
-    cbam:currencyCode "SBD" ;
-    cbam:currencyName "Dollar" ;
-    geonames:geonamesID geonames_data:2103350 .
-
-cbam:SCR a cbam:Currency ;
-    cbam:currencyCode "SCR" ;
-    cbam:currencyName "Rupee" ;
-    geonames:geonamesID geonames_data:241170 .
-
-cbam:SDG a cbam:Currency ;
-    cbam:currencyCode "SDG" ;
-    cbam:currencyName "Pound" ;
-    geonames:geonamesID geonames_data:366755 .
-
-cbam:SEK a cbam:Currency ;
-    cbam:currencyCode "SEK" ;
-    cbam:currencyName "Krona" ;
-    geonames:geonamesID geonames_data:2661886 .
-
-cbam:SGD a cbam:Currency ;
-    cbam:currencyCode "SGD" ;
-    cbam:currencyName "Dollar" ;
-    geonames:geonamesID geonames_data:1880251 .
-
-cbam:SHP a cbam:Currency ;
-    cbam:currencyCode "SHP" ;
-    cbam:currencyName "Pound" ;
-    geonames:geonamesID geonames_data:3370751 .
-
-cbam:SLL a cbam:Currency ;
-    cbam:currencyCode "SLL" ;
-    cbam:currencyName "Leone" ;
-    geonames:geonamesID geonames_data:2403846 .
-
-cbam:SOS a cbam:Currency ;
-    cbam:currencyCode "SOS" ;
-    cbam:currencyName "Shilling" ;
-    geonames:geonamesID geonames_data:51537 .
-
-cbam:SRD a cbam:Currency ;
-    cbam:currencyCode "SRD" ;
-    cbam:currencyName "Dollar" ;
-    geonames:geonamesID geonames_data:3382998 .
-
-cbam:SSP a cbam:Currency ;
-    cbam:currencyCode "SSP" ;
-    cbam:currencyName "Pound" ;
-    geonames:geonamesID geonames_data:7909807 .
-
-cbam:STN a cbam:Currency ;
-    cbam:currencyCode "STN" ;
-    cbam:currencyName "Dobra" ;
-    geonames:geonamesID geonames_data:2410758 .
-
-cbam:SYP a cbam:Currency ;
-    cbam:currencyCode "SYP" ;
-    cbam:currencyName "Pound" ;
-    geonames:geonamesID geonames_data:163843 .
-
-cbam:SZL a cbam:Currency ;
-    cbam:currencyCode "SZL" ;
-    cbam:currencyName "Lilangeni" ;
-    geonames:geonamesID geonames_data:934841 .
-
-cbam:THB a cbam:Currency ;
-    cbam:currencyCode "THB" ;
-    cbam:currencyName "Baht" ;
-    geonames:geonamesID geonames_data:1605651 .
-
-cbam:TJS a cbam:Currency ;
-    cbam:currencyCode "TJS" ;
-    cbam:currencyName "Somoni" ;
-    geonames:geonamesID geonames_data:1220409 .
-
-cbam:TMT a cbam:Currency ;
-    cbam:currencyCode "TMT" ;
-    cbam:currencyName "Manat" ;
-    geonames:geonamesID geonames_data:1218197 .
-
-cbam:TND a cbam:Currency ;
-    cbam:currencyCode "TND" ;
-    cbam:currencyName "Dinar" ;
-    geonames:geonamesID geonames_data:2464461 .
-
-cbam:TOP a cbam:Currency ;
-    cbam:currencyCode "TOP" ;
-    cbam:currencyName "Pa'anga" ;
-    geonames:geonamesID geonames_data:4032283 .
-
-cbam:TRY a cbam:Currency ;
-    cbam:currencyCode "TRY" ;
-    cbam:currencyName "Lira" ;
-    geonames:geonamesID geonames_data:298795 .
-
-cbam:TTD a cbam:Currency ;
-    cbam:currencyCode "TTD" ;
-    cbam:currencyName "Dollar" ;
-    geonames:geonamesID geonames_data:3573591 .
-
-cbam:TWD a cbam:Currency ;
-    cbam:currencyCode "TWD" ;
-    cbam:currencyName "Dollar" ;
-    geonames:geonamesID geonames_data:1668284 .
-
-cbam:TZS a cbam:Currency ;
-    cbam:currencyCode "TZS" ;
-    cbam:currencyName "Shilling" ;
-    geonames:geonamesID geonames_data:149590 .
-
-cbam:UAH a cbam:Currency ;
-    cbam:currencyCode "UAH" ;
-    cbam:currencyName "Hryvnia" ;
-    geonames:geonamesID geonames_data:690791 .
-
-cbam:UGX a cbam:Currency ;
-    cbam:currencyCode "UGX" ;
-    cbam:currencyName "Shilling" ;
-    geonames:geonamesID geonames_data:226074 .
-
-cbam:USD a cbam:Currency ;
-    cbam:currencyCode "USD" ;
-    cbam:currencyName "Dollar" ;
-    geonames:geonamesID geonames_data:1282588,
-        geonames_data:1559582,
-        geonames_data:1966436,
-        geonames_data:2080185,
-        geonames_data:2081918,
-        geonames_data:3576916,
-        geonames_data:3577718,
-        geonames_data:3585968,
-        geonames_data:3658394,
-        geonames_data:4041468,
-        geonames_data:4043988,
-        geonames_data:4566966,
-        geonames_data:4796775,
-        geonames_data:5854968,
-        geonames_data:5880801,
-        geonames_data:6252001,
-        geonames_data:7626844 .
-
-cbam:UYU a cbam:Currency ;
-    cbam:currencyCode "UYU" ;
-    cbam:currencyName "Peso" ;
-    geonames:geonamesID geonames_data:3439705 .
-
-cbam:UZS a cbam:Currency ;
-    cbam:currencyCode "UZS" ;
-    cbam:currencyName "Som" ;
-    geonames:geonamesID geonames_data:1512440 .
-
-cbam:VES a cbam:Currency ;
-    cbam:currencyCode "VES" ;
-    cbam:currencyName "Bolivar Soberano" ;
-    geonames:geonamesID geonames_data:3625428 .
-
-cbam:VND a cbam:Currency ;
-    cbam:currencyCode "VND" ;
-    cbam:currencyName "Dong" ;
-    geonames:geonamesID geonames_data:1562822 .
-
-cbam:VUV a cbam:Currency ;
-    cbam:currencyCode "VUV" ;
-    cbam:currencyName "Vatu" ;
-    geonames:geonamesID geonames_data:2134431 .
-
-cbam:WST a cbam:Currency ;
-    cbam:currencyCode "WST" ;
-    cbam:currencyName "Tala" ;
-    geonames:geonamesID geonames_data:4034894 .
-
-cbam:XAF a cbam:Currency ;
-    cbam:currencyCode "XAF" ;
-    cbam:currencyName "Franc" ;
-    geonames:geonamesID geonames_data:2233387,
-        geonames_data:2260494,
-        geonames_data:2309096,
-        geonames_data:239880,
-        geonames_data:2400553,
-        geonames_data:2434508 .
-
-cbam:XCD a cbam:Currency ;
-    cbam:currencyCode "XCD" ;
-    cbam:currencyName "Dollar" ;
-    geonames:geonamesID geonames_data:3573511,
-        geonames_data:3575174,
-        geonames_data:3575830,
-        geonames_data:3576396,
-        geonames_data:3576468,
-        geonames_data:3577815,
-        geonames_data:3578097,
-        geonames_data:3580239 .
-
-cbam:XOF a cbam:Currency ;
-    cbam:currencyCode "XOF" ;
-    cbam:currencyName "Franc" ;
-    geonames:geonamesID geonames_data:2245662,
-        geonames_data:2287781,
-        geonames_data:2361809,
-        geonames_data:2363686,
-        geonames_data:2372248,
-        geonames_data:2395170,
-        geonames_data:2440476,
-        geonames_data:2453866 .
-
-cbam:XPF a cbam:Currency ;
-    cbam:currencyCode "XPF" ;
-    cbam:currencyName "Franc" ;
-    geonames:geonamesID geonames_data:2139685,
-        geonames_data:4030656,
-        geonames_data:4034749 .
-
-cbam:YER a cbam:Currency ;
-    cbam:currencyCode "YER" ;
-    cbam:currencyName "Rial" ;
-    geonames:geonamesID geonames_data:69543 .
-
-cbam:ZAR a cbam:Currency ;
-    cbam:currencyCode "ZAR" ;
-    cbam:currencyName "Rand" ;
-    geonames:geonamesID geonames_data:953987 .
-
-cbam:ZMW a cbam:Currency ;
-    cbam:currencyCode "ZMW" ;
-    cbam:currencyName "Kwacha" ;
-    geonames:geonamesID geonames_data:895949 .
-
-cbam:ZWL a cbam:Currency ;
-    cbam:currencyCode "ZWL" ;
-    cbam:currencyName "Dollar" ;
-    geonames:geonamesID geonames_data:878675 .
-
-cbam:currencyCode a rdf:Property .
-
-cbam:currencyName a rdf:Property .
-
-cbam:validity_date a rdf:Property .
-
-geonames:geonamesID a rdf:Property .
+@base <https://purl.org/cbam/Currency/> .
 
+<https://purl.org/cbam/Currency/> rdf:type owl:Ontology ;
+                                   owl:versionIRI <https://purl.org/cbam/Currency/1.0> ;
+                                   <http://purl.org/dc/terms/abstract> "The Currency Code List in the CBAM Report" ;
+                                   <http://purl.org/dc/terms/accessRights> "This ontology is licensed under the Creative Commons Attribution-NonCommercial 4.0 International License (CC BY-NC 4.0). It allows non-commercial use, sharing, and adaptation of the ontology, as long as users provide clear credit to the creator by citing the ontology's title, creator, and license information. Commercial use is strictly prohibited." ;
+                                   <http://purl.org/dc/terms/bibliographicCitation> "OK4I - Ontologies and Knowledge Graphs for Industry, July 15–19, 2024, Enschede, Netherlands - <https://www.utwente.nl/en/eemcs/fois2024/resources/papers/duque-et-al-ontology-network-for-the-standardization-of-the-eu-cbam-report-data.pdf>" ;
+                                   <http://purl.org/dc/terms/contributor> [ <http://xmlns.com/foaf/0.1/name> "Jesualdo Tomás Fernández Breis"
+                                                                          ] ,
+                                                                          [ <http://xmlns.com/foaf/0.1/name> "Astrid Duque Ramos"
+                                                                          ] ;
+                                   <http://purl.org/dc/terms/created> "01/06/2024"^^rdfs:Literal ;
+                                   <http://purl.org/dc/terms/creator> [ <http://xmlns.com/foaf/0.1/name> "Jesualdo Tomás Fernández Breis"
+                                                                      ] ;
+                                   <http://purl.org/dc/terms/description> "This ontology represents the code list for the 'Currency' as defined by the Carbon Border Adjustment Mechanism (CBAM) Report. The type of coordinates (GPS/GNSS)." ;
+                                   <http://purl.org/dc/terms/hasVersion> "<https://purl.org/cbam/Currency/1.0>"^^xsd:anyURI ;
+                                   <http://purl.org/dc/terms/issued> "21/11/2024"^^xsd:date ;
+                                   <http://purl.org/dc/terms/license> "<http://creativecommons.org/licenses/by/4.0/>" ;
+                                   <http://purl.org/dc/terms/modified> "21/11/2024"^^xsd:date ;
+                                   <http://purl.org/dc/terms/publisher> "Siemens Energy" ;
+                                   <http://purl.org/dc/terms/source> "Report Structure ver 18.0.xlsx  <https://taxation-customs.ec.europa.eu/carbon-border-adjustment-mechanism_en#where-to-report>" ;
+                                   <http://purl.org/dc/terms/title> "Currency"^^rdfs:Literal ;
+                                   <http://purl.org/vocab/vann/preferredNamespacePrefix> "<https://purl.org/cbam/Currency/>" ;
+                                   <http://purl.org/vocab/vann/preferredNamespaceUri> "<https://purl.org/cbam/Currency/>" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/dcam/rangeIncludes
+<http://purl.org/dc/dcam/rangeIncludes> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/abstract
+<http://purl.org/dc/terms/abstract> rdf:type owl:AnnotationProperty ;
+                                    rdfs:subPropertyOf <http://purl.org/dc/terms/description> .
+
+
+###  http://purl.org/dc/terms/accessRights
+<http://purl.org/dc/terms/accessRights> rdf:type owl:AnnotationProperty ;
+                                        rdfs:subPropertyOf <http://purl.org/dc/terms/rights> .
+
+
+###  http://purl.org/dc/terms/alternative
+<http://purl.org/dc/terms/alternative> rdf:type owl:AnnotationProperty ;
+                                       rdfs:range rdfs:Literal .
+
+
+###  http://purl.org/dc/terms/available
+<http://purl.org/dc/terms/available> rdf:type owl:AnnotationProperty ;
+                                     rdfs:range rdfs:Literal .
+
+
+###  http://purl.org/dc/terms/bibliographicCitation
+<http://purl.org/dc/terms/bibliographicCitation> rdf:type owl:AnnotationProperty ;
+                                                 rdfs:range rdfs:Literal .
+
+
+###  http://purl.org/dc/terms/conformsTo
+<http://purl.org/dc/terms/conformsTo> rdf:type owl:AnnotationProperty ;
+                                      rdfs:subPropertyOf <http://purl.org/dc/terms/relation> .
+
+
+###  http://purl.org/dc/terms/contributor
+<http://purl.org/dc/terms/contributor> rdf:type owl:AnnotationProperty ;
+                                       rdfs:subPropertyOf <http://purl.org/dc/terms/contributor> .
+
+
+###  http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> rdf:type owl:AnnotationProperty ;
+                                   rdfs:range rdfs:Literal .
+
+
+###  http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> rdf:type owl:AnnotationProperty ;
+                                   rdfs:subPropertyOf <http://purl.org/dc/terms/contributor> ,
+                                                      <http://purl.org/dc/terms/creator> .
+
+
+###  http://purl.org/dc/terms/date
+<http://purl.org/dc/terms/date> rdf:type owl:AnnotationProperty ;
+                                rdfs:range rdfs:Literal .
+
+
+###  http://purl.org/dc/terms/dateAccepted
+<http://purl.org/dc/terms/dateAccepted> rdf:type owl:AnnotationProperty ;
+                                        rdfs:range rdfs:Literal .
+
+
+###  http://purl.org/dc/terms/dateCopyrighted
+<http://purl.org/dc/terms/dateCopyrighted> rdf:type owl:AnnotationProperty ;
+                                           rdfs:range rdfs:Literal .
+
+
+###  http://purl.org/dc/terms/dateSubmitted
+<http://purl.org/dc/terms/dateSubmitted> rdf:type owl:AnnotationProperty ;
+                                         rdfs:range rdfs:Literal .
+
+
+###  http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> rdf:type owl:AnnotationProperty ;
+                                       rdfs:subPropertyOf <http://purl.org/dc/terms/description> .
+
+
+###  http://purl.org/dc/terms/hasFormat
+<http://purl.org/dc/terms/hasFormat> rdf:type owl:AnnotationProperty ;
+                                     rdfs:subPropertyOf <http://purl.org/dc/terms/relation> .
+
+
+###  http://purl.org/dc/terms/hasPart
+<http://purl.org/dc/terms/hasPart> rdf:type owl:AnnotationProperty ;
+                                   rdfs:subPropertyOf <http://purl.org/dc/terms/relation> .
+
+
+###  http://purl.org/dc/terms/hasVersion
+<http://purl.org/dc/terms/hasVersion> rdf:type owl:AnnotationProperty ;
+                                      rdfs:subPropertyOf <http://purl.org/dc/terms/relation> .
+
+
+###  http://purl.org/dc/terms/identifier
+<http://purl.org/dc/terms/identifier> rdf:type owl:AnnotationProperty ;
+                                      rdfs:range rdfs:Literal .
+
+
+###  http://purl.org/dc/terms/isFormatOf
+<http://purl.org/dc/terms/isFormatOf> rdf:type owl:AnnotationProperty ;
+                                      rdfs:subPropertyOf <http://purl.org/dc/terms/relation> .
+
+
+###  http://purl.org/dc/terms/isPartOf
+<http://purl.org/dc/terms/isPartOf> rdf:type owl:AnnotationProperty ;
+                                    rdfs:subPropertyOf <http://purl.org/dc/terms/relation> .
+
+
+###  http://purl.org/dc/terms/isReferencedBy
+<http://purl.org/dc/terms/isReferencedBy> rdf:type owl:AnnotationProperty ;
+                                          rdfs:subPropertyOf <http://purl.org/dc/terms/relation> .
+
+
+###  http://purl.org/dc/terms/isReplacedBy
+<http://purl.org/dc/terms/isReplacedBy> rdf:type owl:AnnotationProperty ;
+                                        rdfs:subPropertyOf <http://purl.org/dc/terms/relation> .
+
+
+###  http://purl.org/dc/terms/isRequiredBy
+<http://purl.org/dc/terms/isRequiredBy> rdf:type owl:AnnotationProperty ;
+                                        rdfs:subPropertyOf <http://purl.org/dc/terms/relation> .
+
+
+###  http://purl.org/dc/terms/isVersionOf
+<http://purl.org/dc/terms/isVersionOf> rdf:type owl:AnnotationProperty ;
+                                       rdfs:subPropertyOf <http://purl.org/dc/terms/relation> .
+
+
+###  http://purl.org/dc/terms/issued
+<http://purl.org/dc/terms/issued> rdf:type owl:AnnotationProperty ;
+                                  rdfs:range rdfs:Literal .
+
+
+###  http://purl.org/dc/terms/language
+<http://purl.org/dc/terms/language> rdf:type owl:AnnotationProperty ;
+                                    rdfs:subPropertyOf <http://purl.org/dc/terms/language> .
+
+
+###  http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> rdf:type owl:AnnotationProperty ;
+                                   rdfs:subPropertyOf <http://purl.org/dc/terms/rights> .
+
+
+###  http://purl.org/dc/terms/modified
+<http://purl.org/dc/terms/modified> rdf:type owl:AnnotationProperty ;
+                                    rdfs:range rdfs:Literal .
+
+
+###  http://purl.org/dc/terms/publisher
+<http://purl.org/dc/terms/publisher> rdf:type owl:AnnotationProperty ;
+                                     rdfs:subPropertyOf <http://purl.org/dc/terms/publisher> .
+
+
+###  http://purl.org/dc/terms/references
+<http://purl.org/dc/terms/references> rdf:type owl:AnnotationProperty ;
+                                      rdfs:subPropertyOf <http://purl.org/dc/terms/relation> .
+
+
+###  http://purl.org/dc/terms/relation
+<http://purl.org/dc/terms/relation> rdf:type owl:AnnotationProperty ;
+                                    rdfs:subPropertyOf <http://purl.org/dc/terms/relation> .
+
+
+###  http://purl.org/dc/terms/replaces
+<http://purl.org/dc/terms/replaces> rdf:type owl:AnnotationProperty ;
+                                    rdfs:subPropertyOf <http://purl.org/dc/terms/relation> .
+
+
+###  http://purl.org/dc/terms/requires
+<http://purl.org/dc/terms/requires> rdf:type owl:AnnotationProperty ;
+                                    rdfs:subPropertyOf <http://purl.org/dc/terms/relation> .
+
+
+###  http://purl.org/dc/terms/rights
+<http://purl.org/dc/terms/rights> rdf:type owl:AnnotationProperty ;
+                                  rdfs:subPropertyOf <http://purl.org/dc/terms/rights> .
+
+
+###  http://purl.org/dc/terms/source
+<http://purl.org/dc/terms/source> rdf:type owl:AnnotationProperty ;
+                                  rdfs:subPropertyOf <http://purl.org/dc/terms/relation> ,
+                                                     <http://purl.org/dc/terms/source> .
+
+
+###  http://purl.org/dc/terms/subject
+<http://purl.org/dc/terms/subject> rdf:type owl:AnnotationProperty ;
+                                   rdfs:subPropertyOf <http://purl.org/dc/terms/subject> .
+
+
+###  http://purl.org/dc/terms/tableOfContents
+<http://purl.org/dc/terms/tableOfContents> rdf:type owl:AnnotationProperty ;
+                                           rdfs:subPropertyOf <http://purl.org/dc/terms/description> .
+
+
+###  http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> rdf:type owl:AnnotationProperty ;
+                                 rdfs:range rdfs:Literal .
+
+
+###  http://purl.org/dc/terms/type
+<http://purl.org/dc/terms/type> rdf:type owl:AnnotationProperty ;
+                                rdfs:subPropertyOf <http://purl.org/dc/terms/type> .
+
+
+###  http://purl.org/dc/terms/valid
+<http://purl.org/dc/terms/valid> rdf:type owl:AnnotationProperty ;
+                                 rdfs:range rdfs:Literal .
+
+
+###  http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> rdf:type owl:AnnotationProperty .
+
+
+###  http://xmlns.com/foaf/0.1/maker
+<http://xmlns.com/foaf/0.1/maker> rdf:type owl:AnnotationProperty .
+
+
+###  http://xmlns.com/foaf/0.1/name
+<http://xmlns.com/foaf/0.1/name> rdf:type owl:AnnotationProperty .
+
+
+###  http://xmlns.com/foaf/0.1/workInfohomePage
+<http://xmlns.com/foaf/0.1/workInfohomePage> rdf:type owl:AnnotationProperty .
+
+
+###  https://purl.org/cbam/code
+cbam:code rdf:type owl:AnnotationProperty .
+
+
+###  https://purl.org/cbam/currencyCode
+cbam:currencyCode rdf:type owl:AnnotationProperty .
+
+
+###  https://purl.org/cbam/currencyName
+cbam:currencyName rdf:type owl:AnnotationProperty .
+
+
+###  https://purl.org/cbam/validity_date
+cbam:validity_date rdf:type owl:AnnotationProperty .
+
+
+###  https://www.geonames.org/ontology#geonamesID
+geonames:geonamesID rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Datatypes
+#################################################################
+
+###  http://www.w3.org/2001/XMLSchema#date
+xsd:date rdf:type rdfs:Datatype .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://purl.org/dc/terms/alternative
+<http://purl.org/dc/terms/alternative> rdf:type owl:DatatypeProperty ;
+                                       rdfs:subPropertyOf <http://purl.org/dc/terms/title> .
+
+
+###  http://purl.org/dc/terms/available
+<http://purl.org/dc/terms/available> rdf:type owl:DatatypeProperty ;
+                                     rdfs:subPropertyOf <http://purl.org/dc/terms/date> .
+
+
+###  http://purl.org/dc/terms/bibliographicCitation
+<http://purl.org/dc/terms/bibliographicCitation> rdf:type owl:DatatypeProperty ;
+                                                 rdfs:subPropertyOf <http://purl.org/dc/terms/identifier> .
+
+
+###  http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> rdf:type owl:DatatypeProperty ;
+                                   rdfs:subPropertyOf <http://purl.org/dc/terms/date> .
+
+
+###  http://purl.org/dc/terms/date
+<http://purl.org/dc/terms/date> rdf:type owl:DatatypeProperty ;
+                                rdfs:subPropertyOf <http://purl.org/dc/terms/date> .
+
+
+###  http://purl.org/dc/terms/dateAccepted
+<http://purl.org/dc/terms/dateAccepted> rdf:type owl:DatatypeProperty ;
+                                        rdfs:subPropertyOf <http://purl.org/dc/terms/date> .
+
+
+###  http://purl.org/dc/terms/dateCopyrighted
+<http://purl.org/dc/terms/dateCopyrighted> rdf:type owl:DatatypeProperty ;
+                                           rdfs:subPropertyOf <http://purl.org/dc/terms/date> .
+
+
+###  http://purl.org/dc/terms/dateSubmitted
+<http://purl.org/dc/terms/dateSubmitted> rdf:type owl:DatatypeProperty ;
+                                         rdfs:subPropertyOf <http://purl.org/dc/terms/date> .
+
+
+###  http://purl.org/dc/terms/identifier
+<http://purl.org/dc/terms/identifier> rdf:type owl:DatatypeProperty ;
+                                      rdfs:subPropertyOf <http://purl.org/dc/terms/identifier> .
+
+
+###  http://purl.org/dc/terms/issued
+<http://purl.org/dc/terms/issued> rdf:type owl:DatatypeProperty ;
+                                  rdfs:subPropertyOf <http://purl.org/dc/terms/date> .
+
+
+###  http://purl.org/dc/terms/modified
+<http://purl.org/dc/terms/modified> rdf:type owl:DatatypeProperty ;
+                                    rdfs:subPropertyOf <http://purl.org/dc/terms/date> .
+
+
+###  http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> rdf:type owl:DatatypeProperty ;
+                                 rdfs:subPropertyOf <http://purl.org/dc/terms/title> .
+
+
+###  http://purl.org/dc/terms/valid
+<http://purl.org/dc/terms/valid> rdf:type owl:DatatypeProperty ;
+                                 rdfs:subPropertyOf <http://purl.org/dc/terms/date> .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  https://purl.org/cbam/Currency
+cbam:Currency rdf:type owl:Class ;
+              rdfs:label "Currency" .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  https://purl.org/cbam/AED
+cbam:AED rdf:type owl:NamedIndividual ,
+                  cbam:Currency ;
+         cbam:currencyCode "AED" ;
+         cbam:currencyName "Dirham" ;
+         geonames:geonamesID <https://sws.geonames.org/290557> .
+
+
+###  https://purl.org/cbam/AFN
+cbam:AFN rdf:type owl:NamedIndividual ,
+                  cbam:Currency ;
+         cbam:currencyCode "AFN" ;
+         cbam:currencyName "Afghani" ;
+         geonames:geonamesID <https://sws.geonames.org/1149361> .
+
+
+###  https://purl.org/cbam/ALL
+cbam:ALL rdf:type owl:NamedIndividual ,
+                  cbam:Currency ;
+         cbam:currencyCode "ALL" ;
+         cbam:currencyName "Lek" ;
+         geonames:geonamesID <https://sws.geonames.org/783754> .
+
+
+###  https://purl.org/cbam/AMD
+cbam:AMD rdf:type owl:NamedIndividual ,
+                  cbam:Currency ;
+         cbam:currencyCode "AMD" ;
+         cbam:currencyName "Dram" ;
+         geonames:geonamesID <https://sws.geonames.org/174982> .
+
+
+###  https://purl.org/cbam/ANG
+cbam:ANG rdf:type owl:NamedIndividual ,
+                  cbam:Currency ;
+         cbam:currencyCode "ANG" ;
+         cbam:currencyName "Guilder" ;
+         geonames:geonamesID <https://sws.geonames.org/7609695> ,
+                             <https://sws.geonames.org/7626836> ,
+                             <https://sws.geonames.org/8505032> .
+
+
+###  https://purl.org/cbam/AOA
+cbam:AOA rdf:type owl:NamedIndividual ,
+                  cbam:Currency ;
+         cbam:currencyCode "AOA" ;
+         cbam:currencyName "Kwanza" ;
+         geonames:geonamesID <https://sws.geonames.org/3351879> .
+
+
+###  https://purl.org/cbam/ARS
+cbam:ARS rdf:type owl:NamedIndividual ,
+                  cbam:Currency ;
+         cbam:currencyCode "ARS" ;
+         cbam:currencyName "Peso" ;
+         geonames:geonamesID <https://sws.geonames.org/3865483> .
+
+
+###  https://purl.org/cbam/AUD
+cbam:AUD rdf:type owl:NamedIndividual ,
+                  cbam:Currency ;
+         cbam:currencyCode "AUD" ;
+         cbam:currencyName "Dollar" ;
+         geonames:geonamesID <https://sws.geonames.org/1547314> ,
+                             <https://sws.geonames.org/1547376> ,
+                             <https://sws.geonames.org/2077456> ,
+                             <https://sws.geonames.org/2078138> ,
+                             <https://sws.geonames.org/2110297> ,
+                             <https://sws.geonames.org/2110425> ,
+                             <https://sws.geonames.org/2155115> ,
+                             <https://sws.geonames.org/4030945> .
+
+
+###  https://purl.org/cbam/AWG
+cbam:AWG rdf:type owl:NamedIndividual ,
+                  cbam:Currency ;
+         cbam:currencyCode "AWG" ;
+         cbam:currencyName "Guilder" ;
+         geonames:geonamesID <https://sws.geonames.org/3577279> .
+
+
+###  https://purl.org/cbam/AZN
+cbam:AZN rdf:type owl:NamedIndividual ,
+                  cbam:Currency ;
+         cbam:currencyCode "AZN" ;
+         cbam:currencyName "Manat" ;
+         geonames:geonamesID <https://sws.geonames.org/587116> .
+
+
+###  https://purl.org/cbam/BAM
+cbam:BAM rdf:type owl:NamedIndividual ,
+                  cbam:Currency ;
+         cbam:currencyCode "BAM" ;
+         cbam:currencyName "Marka" ;
+         geonames:geonamesID <https://sws.geonames.org/3277605> .
+
+
+###  https://purl.org/cbam/BBD
+cbam:BBD rdf:type owl:NamedIndividual ,
+                  cbam:Currency ;
+         cbam:currencyCode "BBD" ;
+         cbam:currencyName "Dollar" ;
+         geonames:geonamesID <https://sws.geonames.org/3374084> .
+
+
+###  https://purl.org/cbam/BDT
+cbam:BDT rdf:type owl:NamedIndividual ,
+                  cbam:Currency ;
+         cbam:currencyCode "BDT" ;
+         cbam:currencyName "Taka" ;
+         geonames:geonamesID <https://sws.geonames.org/1210997> .
+
+
+###  https://purl.org/cbam/BGN
+cbam:BGN rdf:type owl:NamedIndividual ,
+                  cbam:Currency ;
+         cbam:currencyCode "BGN" ;
+         cbam:currencyName "Lev" ;
+         geonames:geonamesID <https://sws.geonames.org/732800> .
+
+
+###  https://purl.org/cbam/BHD
+cbam:BHD rdf:type owl:NamedIndividual ,
+                  cbam:Currency ;
+         cbam:currencyCode "BHD" ;
+         cbam:currencyName "Dinar" ;
+         geonames:geonamesID <https://sws.geonames.org/290291> .
+
+
+###  https://purl.org/cbam/BIF
+cbam:BIF rdf:type owl:NamedIndividual ,
+                  cbam:Currency ;
+         cbam:currencyCode "BIF" ;
+         cbam:currencyName "Franc" ;
+         geonames:geonamesID <https://sws.geonames.org/433561> .
+
+
+###  https://purl.org/cbam/BMD
+cbam:BMD rdf:type owl:NamedIndividual ,
+                  cbam:Currency ;
+         cbam:currencyCode "BMD" ;
+         cbam:currencyName "Dollar" ;
+         geonames:geonamesID <https://sws.geonames.org/3573345> .
+
+
+###  https://purl.org/cbam/BND
+cbam:BND rdf:type owl:NamedIndividual ,
+                  cbam:Currency ;
+         cbam:currencyCode "BND" ;
+         cbam:currencyName "Dollar" ;
+         geonames:geonamesID <https://sws.geonames.org/1820814> .
+
+
+###  https://purl.org/cbam/BOB
+cbam:BOB rdf:type owl:NamedIndividual ,
+                  cbam:Currency ;
+         cbam:currencyCode "BOB" ;
+         cbam:currencyName "Boliviano" ;
+         geonames:geonamesID <https://sws.geonames.org/3923057> .
+
+
+###  https://purl.org/cbam/BRL
+cbam:BRL rdf:type owl:NamedIndividual ,
+                  cbam:Currency ;
+         cbam:currencyCode "BRL" ;
+         cbam:currencyName "Real" ;
+         geonames:geonamesID <https://sws.geonames.org/3469034> .
+
+
+###  https://purl.org/cbam/BSD
+cbam:BSD rdf:type owl:NamedIndividual ,
+                  cbam:Currency ;
+         cbam:currencyCode "BSD" ;
+         cbam:currencyName "Dollar" ;
+         geonames:geonamesID <https://sws.geonames.org/3572887> .
+
+
+###  https://purl.org/cbam/BTN
+cbam:BTN rdf:type owl:NamedIndividual ,
+                  cbam:Currency ;
+         cbam:currencyCode "BTN" ;
+         cbam:currencyName "Ngultrum" ;
+         geonames:geonamesID <https://sws.geonames.org/1252634> .
+
+
+###  https://purl.org/cbam/BWP
+cbam:BWP rdf:type owl:NamedIndividual ,
+                  cbam:Currency ;
+         cbam:currencyCode "BWP" ;
+         cbam:currencyName "Pula" ;
+         geonames:geonamesID <https://sws.geonames.org/933860> .
+
+
+###  https://purl.org/cbam/BYN
+cbam:BYN rdf:type owl:NamedIndividual ,
+                  cbam:Currency ;
+         cbam:currencyCode "BYN" ;
+         cbam:currencyName "Belarusian ruble" ;
+         geonames:geonamesID <https://sws.geonames.org/630336> .
+
+
+###  https://purl.org/cbam/BZD
+cbam:BZD rdf:type owl:NamedIndividual ,
+                  cbam:Currency ;
+         cbam:currencyCode "BZD" ;
+         cbam:currencyName "Dollar" ;
+         geonames:geonamesID <https://sws.geonames.org/3582678> .
+
+
+###  https://purl.org/cbam/CAD
+cbam:CAD rdf:type owl:NamedIndividual ,
+                  cbam:Currency ;
+         cbam:currencyCode "CAD" ;
+         cbam:currencyName "Dollar" ;
+         geonames:geonamesID <https://sws.geonames.org/6251999> .
+
+
+###  https://purl.org/cbam/CDF
+cbam:CDF rdf:type owl:NamedIndividual ,
+                  cbam:Currency ;
+         cbam:currencyCode "CDF" ;
+         cbam:currencyName "Franc" ;
+         geonames:geonamesID <https://sws.geonames.org/203312> .
+
+
+###  https://purl.org/cbam/CHF
+cbam:CHF rdf:type owl:NamedIndividual ,
+                  cbam:Currency ;
+         cbam:currencyCode "CHF" ;
+         cbam:currencyName "Franc" ;
+         geonames:geonamesID <https://sws.geonames.org/2658434> ,
+                             <https://sws.geonames.org/3042058> .
+
+
+###  https://purl.org/cbam/CLP
+cbam:CLP rdf:type owl:NamedIndividual ,
+                  cbam:Currency ;
+         cbam:currencyCode "CLP" ;
+         cbam:currencyName "Peso" ;
+         geonames:geonamesID <https://sws.geonames.org/3895114> .
+
+
+###  https://purl.org/cbam/CNY
+cbam:CNY rdf:type owl:NamedIndividual ,
+                  cbam:Currency ;
+         cbam:currencyCode "CNY" ;
+         cbam:currencyName "Yuan Renminbi" ;
+         geonames:geonamesID <https://sws.geonames.org/1814991> .
+
+
+###  https://purl.org/cbam/COP
+cbam:COP rdf:type owl:NamedIndividual ,
+                  cbam:Currency ;
+         cbam:currencyCode "COP" ;
+         cbam:currencyName "Peso" ;
+         geonames:geonamesID <https://sws.geonames.org/3686110> .
+
+
+###  https://purl.org/cbam/CRC
+cbam:CRC rdf:type owl:NamedIndividual ,
+                  cbam:Currency ;
+         cbam:currencyCode "CRC" ;
+         cbam:currencyName "Colon" ;
+         geonames:geonamesID <https://sws.geonames.org/3624060> .
+
+
+###  https://purl.org/cbam/CUP
+cbam:CUP rdf:type owl:NamedIndividual ,
+                  cbam:Currency ;
+         cbam:currencyCode "CUP" ;
+         cbam:currencyName "Peso" ;
+         geonames:geonamesID <https://sws.geonames.org/3562981> .
+
+
+###  https://purl.org/cbam/CVE
+cbam:CVE rdf:type owl:NamedIndividual ,
+                  cbam:Currency ;
+         cbam:currencyCode "CVE" ;
+         cbam:currencyName "Escudo" ;
+         geonames:geonamesID <https://sws.geonames.org/3374766> .
+
+
+###  https://purl.org/cbam/CZK
+cbam:CZK rdf:type owl:NamedIndividual ,
+                  cbam:Currency ;
+         cbam:currencyCode "CZK" ;
+         cbam:currencyName "Koruna" ;
+         geonames:geonamesID <https://sws.geonames.org/3077311> .
+
+
+###  https://purl.org/cbam/DJF
+cbam:DJF rdf:type owl:NamedIndividual ,
+                  cbam:Currency ;
+         cbam:currencyCode "DJF" ;
+         cbam:currencyName "Franc" ;
+         geonames:geonamesID <https://sws.geonames.org/223816> .
+
+
+###  https://purl.org/cbam/DKK
+cbam:DKK rdf:type owl:NamedIndividual ,
+                  cbam:Currency ;
+         cbam:currencyCode "DKK" ;
+         cbam:currencyName "Krone" ;
+         geonames:geonamesID <https://sws.geonames.org/2622320> ,
+                             <https://sws.geonames.org/2623032> ,
+                             <https://sws.geonames.org/3425505> .
+
+
+###  https://purl.org/cbam/DOP
+cbam:DOP rdf:type owl:NamedIndividual ,
+                  cbam:Currency ;
+         cbam:currencyCode "DOP" ;
+         cbam:currencyName "Peso" ;
+         geonames:geonamesID <https://sws.geonames.org/3508796> .
+
+
+###  https://purl.org/cbam/DZD
+cbam:DZD rdf:type owl:NamedIndividual ,
+                  cbam:Currency ;
+         cbam:currencyCode "DZD" ;
+         cbam:currencyName "Dinar" ;
+         geonames:geonamesID <https://sws.geonames.org/2589581> .
+
+
+###  https://purl.org/cbam/EGP
+cbam:EGP rdf:type owl:NamedIndividual ,
+                  cbam:Currency ;
+         cbam:currencyCode "EGP" ;
+         cbam:currencyName "Pound" ;
+         geonames:geonamesID <https://sws.geonames.org/357994> .
+
+
+###  https://purl.org/cbam/ERN
+cbam:ERN rdf:type owl:NamedIndividual ,
+                  cbam:Currency ;
+         cbam:currencyCode "ERN" ;
+         cbam:currencyName "Nakfa" ;
+         geonames:geonamesID <https://sws.geonames.org/338010> .
+
+
+###  https://purl.org/cbam/ETB
+cbam:ETB rdf:type owl:NamedIndividual ,
+                  cbam:Currency ;
+         cbam:currencyCode "ETB" ;
+         cbam:currencyName "Birr" ;
+         geonames:geonamesID <https://sws.geonames.org/337996> .
+
+
+###  https://purl.org/cbam/EUR
+cbam:EUR rdf:type owl:NamedIndividual ,
+                  cbam:Currency ;
+         cbam:currencyCode "EUR" ;
+         cbam:currencyName "Euro" ;
+         geonames:geonamesID <https://sws.geonames.org/1024031> ,
+                             <https://sws.geonames.org/146669> ,
+                             <https://sws.geonames.org/1546748> ,
+                             <https://sws.geonames.org/2264397> ,
+                             <https://sws.geonames.org/2510769> ,
+                             <https://sws.geonames.org/2562770> ,
+                             <https://sws.geonames.org/2750405> ,
+                             <https://sws.geonames.org/2782113> ,
+                             <https://sws.geonames.org/2802361> ,
+                             <https://sws.geonames.org/2921044> ,
+                             <https://sws.geonames.org/2960313> ,
+                             <https://sws.geonames.org/2963597> ,
+                             <https://sws.geonames.org/2993457> ,
+                             <https://sws.geonames.org/3017382> ,
+                             <https://sws.geonames.org/3041565> ,
+                             <https://sws.geonames.org/3057568> ,
+                             <https://sws.geonames.org/3164670> ,
+                             <https://sws.geonames.org/3168068> ,
+                             <https://sws.geonames.org/3175395> ,
+                             <https://sws.geonames.org/3190538> ,
+                             <https://sws.geonames.org/3194884> ,
+                             <https://sws.geonames.org/3202326> ,
+                             <https://sws.geonames.org/3381670> ,
+                             <https://sws.geonames.org/3424932> ,
+                             <https://sws.geonames.org/3570311> ,
+                             <https://sws.geonames.org/3578421> ,
+                             <https://sws.geonames.org/3578476> ,
+                             <https://sws.geonames.org/3579143> ,
+                             <https://sws.geonames.org/390903> ,
+                             <https://sws.geonames.org/453733> ,
+                             <https://sws.geonames.org/458258> ,
+                             <https://sws.geonames.org/597427> ,
+                             <https://sws.geonames.org/660013> ,
+                             <https://sws.geonames.org/661882> ,
+                             <https://sws.geonames.org/831053> ,
+                             <https://sws.geonames.org/935317> .
+
+
+###  https://purl.org/cbam/FJD
+cbam:FJD rdf:type owl:NamedIndividual ,
+                  cbam:Currency ;
+         cbam:currencyCode "FJD" ;
+         cbam:currencyName "Dollar" ;
+         geonames:geonamesID <https://sws.geonames.org/2205218> .
+
+
+###  https://purl.org/cbam/FKP
+cbam:FKP rdf:type owl:NamedIndividual ,
+                  cbam:Currency ;
+         cbam:currencyCode "FKP" ;
+         cbam:currencyName "Pound" ;
+         geonames:geonamesID <https://sws.geonames.org/3474414> .
+
+
+###  https://purl.org/cbam/GBP
+cbam:GBP rdf:type owl:NamedIndividual ,
+                  cbam:Currency ;
+         cbam:currencyCode "GBP" ;
+         cbam:currencyName "Pound" ;
+         geonames:geonamesID <https://sws.geonames.org/2635167> ,
+                             <https://sws.geonames.org/3042142> ,
+                             <https://sws.geonames.org/3042225> ,
+                             <https://sws.geonames.org/3042362> ,
+                             <https://sws.geonames.org/3474415> .
+
+
+###  https://purl.org/cbam/GEL
+cbam:GEL rdf:type owl:NamedIndividual ,
+                  cbam:Currency ;
+         cbam:currencyCode "GEL" ;
+         cbam:currencyName "Lari" ;
+         geonames:geonamesID <https://sws.geonames.org/614540> .
+
+
+###  https://purl.org/cbam/GHS
+cbam:GHS rdf:type owl:NamedIndividual ,
+                  cbam:Currency ;
+         cbam:currencyCode "GHS" ;
+         cbam:currencyName "Cedi" ;
+         geonames:geonamesID <https://sws.geonames.org/2300660> .
+
+
+###  https://purl.org/cbam/GIP
+cbam:GIP rdf:type owl:NamedIndividual ,
+                  cbam:Currency ;
+         cbam:currencyCode "GIP" ;
+         cbam:currencyName "Pound" ;
+         geonames:geonamesID <https://sws.geonames.org/2411586> .
+
+
+###  https://purl.org/cbam/GMD
+cbam:GMD rdf:type owl:NamedIndividual ,
+                  cbam:Currency ;
+         cbam:currencyCode "GMD" ;
+         cbam:currencyName "Dalasi" ;
+         geonames:geonamesID <https://sws.geonames.org/2413451> .
+
+
+###  https://purl.org/cbam/GNF
+cbam:GNF rdf:type owl:NamedIndividual ,
+                  cbam:Currency ;
+         cbam:currencyCode "GNF" ;
+         cbam:currencyName "Franc" ;
+         geonames:geonamesID <https://sws.geonames.org/2420477> .
+
+
+###  https://purl.org/cbam/GTQ
+cbam:GTQ rdf:type owl:NamedIndividual ,
+                  cbam:Currency ;
+         cbam:currencyCode "GTQ" ;
+         cbam:currencyName "Quetzal" ;
+         geonames:geonamesID <https://sws.geonames.org/3595528> .
+
+
+###  https://purl.org/cbam/GYD
+cbam:GYD rdf:type owl:NamedIndividual ,
+                  cbam:Currency ;
+         cbam:currencyCode "GYD" ;
+         cbam:currencyName "Dollar" ;
+         geonames:geonamesID <https://sws.geonames.org/3378535> .
+
+
+###  https://purl.org/cbam/HKD
+cbam:HKD rdf:type owl:NamedIndividual ,
+                  cbam:Currency ;
+         cbam:currencyCode "HKD" ;
+         cbam:currencyName "Dollar" ;
+         geonames:geonamesID <https://sws.geonames.org/1819730> .
+
+
+###  https://purl.org/cbam/HNL
+cbam:HNL rdf:type owl:NamedIndividual ,
+                  cbam:Currency ;
+         cbam:currencyCode "HNL" ;
+         cbam:currencyName "Lempira" ;
+         geonames:geonamesID <https://sws.geonames.org/3608932> .
+
+
+###  https://purl.org/cbam/HTG
+cbam:HTG rdf:type owl:NamedIndividual ,
+                  cbam:Currency ;
+         cbam:currencyCode "HTG" ;
+         cbam:currencyName "Gourde" ;
+         geonames:geonamesID <https://sws.geonames.org/3723988> .
+
+
+###  https://purl.org/cbam/HUF
+cbam:HUF rdf:type owl:NamedIndividual ,
+                  cbam:Currency ;
+         cbam:currencyCode "HUF" ;
+         cbam:currencyName "Forint" ;
+         geonames:geonamesID <https://sws.geonames.org/719819> .
+
+
+###  https://purl.org/cbam/IDR
+cbam:IDR rdf:type owl:NamedIndividual ,
+                  cbam:Currency ;
+         cbam:currencyCode "IDR" ;
+         cbam:currencyName "Rupiah" ;
+         geonames:geonamesID <https://sws.geonames.org/1643084> .
+
+
+###  https://purl.org/cbam/ILS
+cbam:ILS rdf:type owl:NamedIndividual ,
+                  cbam:Currency ;
+         cbam:currencyCode "ILS" ;
+         cbam:currencyName "Shekel" ;
+         geonames:geonamesID <https://sws.geonames.org/294640> ,
+                             <https://sws.geonames.org/6254930> .
+
+
+###  https://purl.org/cbam/INR
+cbam:INR rdf:type owl:NamedIndividual ,
+                  cbam:Currency ;
+         cbam:currencyCode "INR" ;
+         cbam:currencyName "Rupee" ;
+         geonames:geonamesID <https://sws.geonames.org/1269750> .
+
+
+###  https://purl.org/cbam/IQD
+cbam:IQD rdf:type owl:NamedIndividual ,
+                  cbam:Currency ;
+         cbam:currencyCode "IQD" ;
+         cbam:currencyName "Dinar" ;
+         geonames:geonamesID <https://sws.geonames.org/99237> .
+
+
+###  https://purl.org/cbam/IRR
+cbam:IRR rdf:type owl:NamedIndividual ,
+                  cbam:Currency ;
+         cbam:currencyCode "IRR" ;
+         cbam:currencyName "Rial" ;
+         geonames:geonamesID <https://sws.geonames.org/130758> .
+
+
+###  https://purl.org/cbam/ISK
+cbam:ISK rdf:type owl:NamedIndividual ,
+                  cbam:Currency ;
+         cbam:currencyCode "ISK" ;
+         cbam:currencyName "Krona" ;
+         geonames:geonamesID <https://sws.geonames.org/2629691> .
+
+
+###  https://purl.org/cbam/JMD
+cbam:JMD rdf:type owl:NamedIndividual ,
+                  cbam:Currency ;
+         cbam:currencyCode "JMD" ;
+         cbam:currencyName "Dollar" ;
+         geonames:geonamesID <https://sws.geonames.org/3489940> .
+
+
+###  https://purl.org/cbam/JOD
+cbam:JOD rdf:type owl:NamedIndividual ,
+                  cbam:Currency ;
+         cbam:currencyCode "JOD" ;
+         cbam:currencyName "Dinar" ;
+         geonames:geonamesID <https://sws.geonames.org/248816> .
+
+
+###  https://purl.org/cbam/JPY
+cbam:JPY rdf:type owl:NamedIndividual ,
+                  cbam:Currency ;
+         cbam:currencyCode "JPY" ;
+         cbam:currencyName "Yen" ;
+         geonames:geonamesID <https://sws.geonames.org/1861060> .
+
+
+###  https://purl.org/cbam/KES
+cbam:KES rdf:type owl:NamedIndividual ,
+                  cbam:Currency ;
+         cbam:currencyCode "KES" ;
+         cbam:currencyName "Shilling" ;
+         geonames:geonamesID <https://sws.geonames.org/192950> .
+
+
+###  https://purl.org/cbam/KGS
+cbam:KGS rdf:type owl:NamedIndividual ,
+                  cbam:Currency ;
+         cbam:currencyCode "KGS" ;
+         cbam:currencyName "Som" ;
+         geonames:geonamesID <https://sws.geonames.org/1527747> .
+
+
+###  https://purl.org/cbam/KHR
+cbam:KHR rdf:type owl:NamedIndividual ,
+                  cbam:Currency ;
+         cbam:currencyCode "KHR" ;
+         cbam:currencyName "Riels" ;
+         geonames:geonamesID <https://sws.geonames.org/1831722> .
+
+
+###  https://purl.org/cbam/KMF
+cbam:KMF rdf:type owl:NamedIndividual ,
+                  cbam:Currency ;
+         cbam:currencyCode "KMF" ;
+         cbam:currencyName "Franc" ;
+         geonames:geonamesID <https://sws.geonames.org/921929> .
+
+
+###  https://purl.org/cbam/KPW
+cbam:KPW rdf:type owl:NamedIndividual ,
+                  cbam:Currency ;
+         cbam:currencyCode "KPW" ;
+         cbam:currencyName "Won" ;
+         geonames:geonamesID <https://sws.geonames.org/1873107> .
+
+
+###  https://purl.org/cbam/KRW
+cbam:KRW rdf:type owl:NamedIndividual ,
+                  cbam:Currency ;
+         cbam:currencyCode "KRW" ;
+         cbam:currencyName "Won" ;
+         geonames:geonamesID <https://sws.geonames.org/1835841> .
+
+
+###  https://purl.org/cbam/KWD
+cbam:KWD rdf:type owl:NamedIndividual ,
+                  cbam:Currency ;
+         cbam:currencyCode "KWD" ;
+         cbam:currencyName "Dinar" ;
+         geonames:geonamesID <https://sws.geonames.org/285570> .
+
+
+###  https://purl.org/cbam/KYD
+cbam:KYD rdf:type owl:NamedIndividual ,
+                  cbam:Currency ;
+         cbam:currencyCode "KYD" ;
+         cbam:currencyName "Dollar" ;
+         geonames:geonamesID <https://sws.geonames.org/3580718> .
+
+
+###  https://purl.org/cbam/KZT
+cbam:KZT rdf:type owl:NamedIndividual ,
+                  cbam:Currency ;
+         cbam:currencyCode "KZT" ;
+         cbam:currencyName "Tenge" ;
+         geonames:geonamesID <https://sws.geonames.org/1522867> .
+
+
+###  https://purl.org/cbam/LAK
+cbam:LAK rdf:type owl:NamedIndividual ,
+                  cbam:Currency ;
+         cbam:currencyCode "LAK" ;
+         cbam:currencyName "Kip" ;
+         geonames:geonamesID <https://sws.geonames.org/1655842> .
+
+
+###  https://purl.org/cbam/LBP
+cbam:LBP rdf:type owl:NamedIndividual ,
+                  cbam:Currency ;
+         cbam:currencyCode "LBP" ;
+         cbam:currencyName "Pound" ;
+         geonames:geonamesID <https://sws.geonames.org/272103> .
+
+
+###  https://purl.org/cbam/LKR
+cbam:LKR rdf:type owl:NamedIndividual ,
+                  cbam:Currency ;
+         cbam:currencyCode "LKR" ;
+         cbam:currencyName "Rupee" ;
+         geonames:geonamesID <https://sws.geonames.org/1227603> .
+
+
+###  https://purl.org/cbam/LRD
+cbam:LRD rdf:type owl:NamedIndividual ,
+                  cbam:Currency ;
+         cbam:currencyCode "LRD" ;
+         cbam:currencyName "Dollar" ;
+         geonames:geonamesID <https://sws.geonames.org/2275384> .
+
+
+###  https://purl.org/cbam/LSL
+cbam:LSL rdf:type owl:NamedIndividual ,
+                  cbam:Currency ;
+         cbam:currencyCode "LSL" ;
+         cbam:currencyName "Loti" ;
+         geonames:geonamesID <https://sws.geonames.org/932692> .
+
+
+###  https://purl.org/cbam/LYD
+cbam:LYD rdf:type owl:NamedIndividual ,
+                  cbam:Currency ;
+         cbam:currencyCode "LYD" ;
+         cbam:currencyName "Dinar" ;
+         geonames:geonamesID <https://sws.geonames.org/2215636> .
+
+
+###  https://purl.org/cbam/MAD
+cbam:MAD rdf:type owl:NamedIndividual ,
+                  cbam:Currency ;
+         cbam:currencyCode "MAD" ;
+         cbam:currencyName "Dirham" ;
+         geonames:geonamesID <https://sws.geonames.org/2461445> ,
+                             <https://sws.geonames.org/2542007> .
+
+
+###  https://purl.org/cbam/MDL
+cbam:MDL rdf:type owl:NamedIndividual ,
+                  cbam:Currency ;
+         cbam:currencyCode "MDL" ;
+         cbam:currencyName "Leu" ;
+         geonames:geonamesID <https://sws.geonames.org/617790> .
+
+
+###  https://purl.org/cbam/MGA
+cbam:MGA rdf:type owl:NamedIndividual ,
+                  cbam:Currency ;
+         cbam:currencyCode "MGA" ;
+         cbam:currencyName "Ariary" ;
+         geonames:geonamesID <https://sws.geonames.org/1062947> .
+
+
+###  https://purl.org/cbam/MKD
+cbam:MKD rdf:type owl:NamedIndividual ,
+                  cbam:Currency ;
+         cbam:currencyCode "MKD" ;
+         cbam:currencyName "Denar" ;
+         geonames:geonamesID <https://sws.geonames.org/718075> .
+
+
+###  https://purl.org/cbam/MMK
+cbam:MMK rdf:type owl:NamedIndividual ,
+                  cbam:Currency ;
+         cbam:currencyCode "MMK" ;
+         cbam:currencyName "Kyat" ;
+         geonames:geonamesID <https://sws.geonames.org/1327865> .
+
+
+###  https://purl.org/cbam/MNT
+cbam:MNT rdf:type owl:NamedIndividual ,
+                  cbam:Currency ;
+         cbam:currencyCode "MNT" ;
+         cbam:currencyName "Tugrik" ;
+         geonames:geonamesID <https://sws.geonames.org/2029969> .
+
+
+###  https://purl.org/cbam/MOP
+cbam:MOP rdf:type owl:NamedIndividual ,
+                  cbam:Currency ;
+         cbam:currencyCode "MOP" ;
+         cbam:currencyName "Pataca" ;
+         geonames:geonamesID <https://sws.geonames.org/1821275> .
+
+
+###  https://purl.org/cbam/MRU
+cbam:MRU rdf:type owl:NamedIndividual ,
+                  cbam:Currency ;
+         cbam:currencyCode "MRU" ;
+         cbam:currencyName "Ouguiya" ;
+         geonames:geonamesID <https://sws.geonames.org/2378080> .
+
+
+###  https://purl.org/cbam/MUR
+cbam:MUR rdf:type owl:NamedIndividual ,
+                  cbam:Currency ;
+         cbam:currencyCode "MUR" ;
+         cbam:currencyName "Rupee" ;
+         geonames:geonamesID <https://sws.geonames.org/934292> .
+
+
+###  https://purl.org/cbam/MVR
+cbam:MVR rdf:type owl:NamedIndividual ,
+                  cbam:Currency ;
+         cbam:currencyCode "MVR" ;
+         cbam:currencyName "Rufiyaa" ;
+         geonames:geonamesID <https://sws.geonames.org/1282028> .
+
+
+###  https://purl.org/cbam/MWK
+cbam:MWK rdf:type owl:NamedIndividual ,
+                  cbam:Currency ;
+         cbam:currencyCode "MWK" ;
+         cbam:currencyName "Kwacha" ;
+         geonames:geonamesID <https://sws.geonames.org/927384> .
+
+
+###  https://purl.org/cbam/MXN
+cbam:MXN rdf:type owl:NamedIndividual ,
+                  cbam:Currency ;
+         cbam:currencyCode "MXN" ;
+         cbam:currencyName "Peso" ;
+         geonames:geonamesID <https://sws.geonames.org/3996063> .
+
+
+###  https://purl.org/cbam/MYR
+cbam:MYR rdf:type owl:NamedIndividual ,
+                  cbam:Currency ;
+         cbam:currencyCode "MYR" ;
+         cbam:currencyName "Ringgit" ;
+         geonames:geonamesID <https://sws.geonames.org/1733045> .
+
+
+###  https://purl.org/cbam/MZN
+cbam:MZN rdf:type owl:NamedIndividual ,
+                  cbam:Currency ;
+         cbam:currencyCode "MZN" ;
+         cbam:currencyName "Metical" ;
+         geonames:geonamesID <https://sws.geonames.org/1036973> .
+
+
+###  https://purl.org/cbam/NAD
+cbam:NAD rdf:type owl:NamedIndividual ,
+                  cbam:Currency ;
+         cbam:currencyCode "NAD" ;
+         cbam:currencyName "Dollar" ;
+         geonames:geonamesID <https://sws.geonames.org/3355338> .
+
+
+###  https://purl.org/cbam/NGN
+cbam:NGN rdf:type owl:NamedIndividual ,
+                  cbam:Currency ;
+         cbam:currencyCode "NGN" ;
+         cbam:currencyName "Naira" ;
+         geonames:geonamesID <https://sws.geonames.org/2328926> .
+
+
+###  https://purl.org/cbam/NIO
+cbam:NIO rdf:type owl:NamedIndividual ,
+                  cbam:Currency ;
+         cbam:currencyCode "NIO" ;
+         cbam:currencyName "Cordoba" ;
+         geonames:geonamesID <https://sws.geonames.org/3617476> .
+
+
+###  https://purl.org/cbam/NOK
+cbam:NOK rdf:type owl:NamedIndividual ,
+                  cbam:Currency ;
+         cbam:currencyCode "NOK" ;
+         cbam:currencyName "Krone" ;
+         geonames:geonamesID <https://sws.geonames.org/3144096> ,
+                             <https://sws.geonames.org/3371123> ,
+                             <https://sws.geonames.org/607072> .
+
+
+###  https://purl.org/cbam/NPR
+cbam:NPR rdf:type owl:NamedIndividual ,
+                  cbam:Currency ;
+         cbam:currencyCode "NPR" ;
+         cbam:currencyName "Rupee" ;
+         geonames:geonamesID <https://sws.geonames.org/1282988> .
+
+
+###  https://purl.org/cbam/NZD
+cbam:NZD rdf:type owl:NamedIndividual ,
+                  cbam:Currency ;
+         cbam:currencyCode "NZD" ;
+         cbam:currencyName "Dollar" ;
+         geonames:geonamesID <https://sws.geonames.org/1899402> ,
+                             <https://sws.geonames.org/2186224> ,
+                             <https://sws.geonames.org/4030699> ,
+                             <https://sws.geonames.org/4031074> ,
+                             <https://sws.geonames.org/4036232> .
+
+
+###  https://purl.org/cbam/OMR
+cbam:OMR rdf:type owl:NamedIndividual ,
+                  cbam:Currency ;
+         cbam:currencyCode "OMR" ;
+         cbam:currencyName "Rial" ;
+         geonames:geonamesID <https://sws.geonames.org/286963> .
+
+
+###  https://purl.org/cbam/PAB
+cbam:PAB rdf:type owl:NamedIndividual ,
+                  cbam:Currency ;
+         cbam:currencyCode "PAB" ;
+         cbam:currencyName "Balboa" ;
+         geonames:geonamesID <https://sws.geonames.org/3703430> .
+
+
+###  https://purl.org/cbam/PEN
+cbam:PEN rdf:type owl:NamedIndividual ,
+                  cbam:Currency ;
+         cbam:currencyCode "PEN" ;
+         cbam:currencyName "Sol" ;
+         geonames:geonamesID <https://sws.geonames.org/3932488> .
+
+
+###  https://purl.org/cbam/PGK
+cbam:PGK rdf:type owl:NamedIndividual ,
+                  cbam:Currency ;
+         cbam:currencyCode "PGK" ;
+         cbam:currencyName "Kina" ;
+         geonames:geonamesID <https://sws.geonames.org/2088628> .
+
+
+###  https://purl.org/cbam/PHP
+cbam:PHP rdf:type owl:NamedIndividual ,
+                  cbam:Currency ;
+         cbam:currencyCode "PHP" ;
+         cbam:currencyName "Peso" ;
+         geonames:geonamesID <https://sws.geonames.org/1694008> .
+
+
+###  https://purl.org/cbam/PKR
+cbam:PKR rdf:type owl:NamedIndividual ,
+                  cbam:Currency ;
+         cbam:currencyCode "PKR" ;
+         cbam:currencyName "Rupee" ;
+         geonames:geonamesID <https://sws.geonames.org/1168579> .
+
+
+###  https://purl.org/cbam/PLN
+cbam:PLN rdf:type owl:NamedIndividual ,
+                  cbam:Currency ;
+         cbam:currencyCode "PLN" ;
+         cbam:currencyName "Zloty" ;
+         geonames:geonamesID <https://sws.geonames.org/798544> .
+
+
+###  https://purl.org/cbam/PYG
+cbam:PYG rdf:type owl:NamedIndividual ,
+                  cbam:Currency ;
+         cbam:currencyCode "PYG" ;
+         cbam:currencyName "Guarani" ;
+         geonames:geonamesID <https://sws.geonames.org/3437598> .
+
+
+###  https://purl.org/cbam/QAR
+cbam:QAR rdf:type owl:NamedIndividual ,
+                  cbam:Currency ;
+         cbam:currencyCode "QAR" ;
+         cbam:currencyName "Rial" ;
+         geonames:geonamesID <https://sws.geonames.org/289688> .
+
+
+###  https://purl.org/cbam/RON
+cbam:RON rdf:type owl:NamedIndividual ,
+                  cbam:Currency ;
+         cbam:currencyCode "RON" ;
+         cbam:currencyName "Leu" ;
+         geonames:geonamesID <https://sws.geonames.org/798549> .
+
+
+###  https://purl.org/cbam/RSD
+cbam:RSD rdf:type owl:NamedIndividual ,
+                  cbam:Currency ;
+         cbam:currencyCode "RSD" ;
+         cbam:currencyName "Dinar" ;
+         geonames:geonamesID <https://sws.geonames.org/6290252> ,
+                             <https://sws.geonames.org/8505033> .
+
+
+###  https://purl.org/cbam/RUB
+cbam:RUB rdf:type owl:NamedIndividual ,
+                  cbam:Currency ;
+         cbam:currencyCode "RUB" ;
+         cbam:currencyName "Ruble" ;
+         geonames:geonamesID <https://sws.geonames.org/2017370> .
+
+
+###  https://purl.org/cbam/RWF
+cbam:RWF rdf:type owl:NamedIndividual ,
+                  cbam:Currency ;
+         cbam:currencyCode "RWF" ;
+         cbam:currencyName "Franc" ;
+         geonames:geonamesID <https://sws.geonames.org/49518> .
+
+
+###  https://purl.org/cbam/SAR
+cbam:SAR rdf:type owl:NamedIndividual ,
+                  cbam:Currency ;
+         cbam:currencyCode "SAR" ;
+         cbam:currencyName "Rial" ;
+         geonames:geonamesID <https://sws.geonames.org/102358> .
+
+
+###  https://purl.org/cbam/SBD
+cbam:SBD rdf:type owl:NamedIndividual ,
+                  cbam:Currency ;
+         cbam:currencyCode "SBD" ;
+         cbam:currencyName "Dollar" ;
+         geonames:geonamesID <https://sws.geonames.org/2103350> .
+
+
+###  https://purl.org/cbam/SCR
+cbam:SCR rdf:type owl:NamedIndividual ,
+                  cbam:Currency ;
+         cbam:currencyCode "SCR" ;
+         cbam:currencyName "Rupee" ;
+         geonames:geonamesID <https://sws.geonames.org/241170> .
+
+
+###  https://purl.org/cbam/SDG
+cbam:SDG rdf:type owl:NamedIndividual ,
+                  cbam:Currency ;
+         cbam:currencyCode "SDG" ;
+         cbam:currencyName "Pound" ;
+         geonames:geonamesID <https://sws.geonames.org/366755> .
+
+
+###  https://purl.org/cbam/SEK
+cbam:SEK rdf:type owl:NamedIndividual ,
+                  cbam:Currency ;
+         cbam:currencyCode "SEK" ;
+         cbam:currencyName "Krona" ;
+         geonames:geonamesID <https://sws.geonames.org/2661886> .
+
+
+###  https://purl.org/cbam/SGD
+cbam:SGD rdf:type owl:NamedIndividual ,
+                  cbam:Currency ;
+         cbam:currencyCode "SGD" ;
+         cbam:currencyName "Dollar" ;
+         geonames:geonamesID <https://sws.geonames.org/1880251> .
+
+
+###  https://purl.org/cbam/SHP
+cbam:SHP rdf:type owl:NamedIndividual ,
+                  cbam:Currency ;
+         cbam:currencyCode "SHP" ;
+         cbam:currencyName "Pound" ;
+         geonames:geonamesID <https://sws.geonames.org/3370751> .
+
+
+###  https://purl.org/cbam/SLL
+cbam:SLL rdf:type owl:NamedIndividual ,
+                  cbam:Currency ;
+         cbam:currencyCode "SLL" ;
+         cbam:currencyName "Leone" ;
+         geonames:geonamesID <https://sws.geonames.org/2403846> .
+
+
+###  https://purl.org/cbam/SOS
+cbam:SOS rdf:type owl:NamedIndividual ,
+                  cbam:Currency ;
+         cbam:currencyCode "SOS" ;
+         cbam:currencyName "Shilling" ;
+         geonames:geonamesID <https://sws.geonames.org/51537> .
+
+
+###  https://purl.org/cbam/SRD
+cbam:SRD rdf:type owl:NamedIndividual ,
+                  cbam:Currency ;
+         cbam:currencyCode "SRD" ;
+         cbam:currencyName "Dollar" ;
+         geonames:geonamesID <https://sws.geonames.org/3382998> .
+
+
+###  https://purl.org/cbam/SSP
+cbam:SSP rdf:type owl:NamedIndividual ,
+                  cbam:Currency ;
+         cbam:currencyCode "SSP" ;
+         cbam:currencyName "Pound" ;
+         geonames:geonamesID <https://sws.geonames.org/7909807> .
+
+
+###  https://purl.org/cbam/STN
+cbam:STN rdf:type owl:NamedIndividual ,
+                  cbam:Currency ;
+         cbam:currencyCode "STN" ;
+         cbam:currencyName "Dobra" ;
+         geonames:geonamesID <https://sws.geonames.org/2410758> .
+
+
+###  https://purl.org/cbam/SYP
+cbam:SYP rdf:type owl:NamedIndividual ,
+                  cbam:Currency ;
+         cbam:currencyCode "SYP" ;
+         cbam:currencyName "Pound" ;
+         geonames:geonamesID <https://sws.geonames.org/163843> .
+
+
+###  https://purl.org/cbam/SZL
+cbam:SZL rdf:type owl:NamedIndividual ,
+                  cbam:Currency ;
+         cbam:currencyCode "SZL" ;
+         cbam:currencyName "Lilangeni" ;
+         geonames:geonamesID <https://sws.geonames.org/934841> .
+
+
+###  https://purl.org/cbam/THB
+cbam:THB rdf:type owl:NamedIndividual ,
+                  cbam:Currency ;
+         cbam:currencyCode "THB" ;
+         cbam:currencyName "Baht" ;
+         geonames:geonamesID <https://sws.geonames.org/1605651> .
+
+
+###  https://purl.org/cbam/TJS
+cbam:TJS rdf:type owl:NamedIndividual ,
+                  cbam:Currency ;
+         cbam:currencyCode "TJS" ;
+         cbam:currencyName "Somoni" ;
+         geonames:geonamesID <https://sws.geonames.org/1220409> .
+
+
+###  https://purl.org/cbam/TMT
+cbam:TMT rdf:type owl:NamedIndividual ,
+                  cbam:Currency ;
+         cbam:currencyCode "TMT" ;
+         cbam:currencyName "Manat" ;
+         geonames:geonamesID <https://sws.geonames.org/1218197> .
+
+
+###  https://purl.org/cbam/TND
+cbam:TND rdf:type owl:NamedIndividual ,
+                  cbam:Currency ;
+         cbam:currencyCode "TND" ;
+         cbam:currencyName "Dinar" ;
+         geonames:geonamesID <https://sws.geonames.org/2464461> .
+
+
+###  https://purl.org/cbam/TOP
+cbam:TOP rdf:type owl:NamedIndividual ,
+                  cbam:Currency ;
+         cbam:currencyCode "TOP" ;
+         cbam:currencyName "Pa'anga" ;
+         geonames:geonamesID <https://sws.geonames.org/4032283> .
+
+
+###  https://purl.org/cbam/TRY
+cbam:TRY rdf:type owl:NamedIndividual ,
+                  cbam:Currency ;
+         cbam:currencyCode "TRY" ;
+         cbam:currencyName "Lira" ;
+         geonames:geonamesID <https://sws.geonames.org/298795> .
+
+
+###  https://purl.org/cbam/TTD
+cbam:TTD rdf:type owl:NamedIndividual ,
+                  cbam:Currency ;
+         cbam:currencyCode "TTD" ;
+         cbam:currencyName "Dollar" ;
+         geonames:geonamesID <https://sws.geonames.org/3573591> .
+
+
+###  https://purl.org/cbam/TWD
+cbam:TWD rdf:type owl:NamedIndividual ,
+                  cbam:Currency ;
+         cbam:currencyCode "TWD" ;
+         cbam:currencyName "Dollar" ;
+         geonames:geonamesID <https://sws.geonames.org/1668284> .
+
+
+###  https://purl.org/cbam/TZS
+cbam:TZS rdf:type owl:NamedIndividual ,
+                  cbam:Currency ;
+         cbam:currencyCode "TZS" ;
+         cbam:currencyName "Shilling" ;
+         geonames:geonamesID <https://sws.geonames.org/149590> .
+
+
+###  https://purl.org/cbam/UAH
+cbam:UAH rdf:type owl:NamedIndividual ,
+                  cbam:Currency ;
+         cbam:currencyCode "UAH" ;
+         cbam:currencyName "Hryvnia" ;
+         geonames:geonamesID <https://sws.geonames.org/690791> .
+
+
+###  https://purl.org/cbam/UGX
+cbam:UGX rdf:type owl:NamedIndividual ,
+                  cbam:Currency ;
+         cbam:currencyCode "UGX" ;
+         cbam:currencyName "Shilling" ;
+         geonames:geonamesID <https://sws.geonames.org/226074> .
+
+
+###  https://purl.org/cbam/USD
+cbam:USD rdf:type owl:NamedIndividual ,
+                  cbam:Currency ;
+         cbam:currencyCode "USD" ;
+         cbam:currencyName "Dollar" ;
+         geonames:geonamesID <https://sws.geonames.org/1282588> ,
+                             <https://sws.geonames.org/1559582> ,
+                             <https://sws.geonames.org/1966436> ,
+                             <https://sws.geonames.org/2080185> ,
+                             <https://sws.geonames.org/2081918> ,
+                             <https://sws.geonames.org/3576916> ,
+                             <https://sws.geonames.org/3577718> ,
+                             <https://sws.geonames.org/3585968> ,
+                             <https://sws.geonames.org/3658394> ,
+                             <https://sws.geonames.org/4041468> ,
+                             <https://sws.geonames.org/4043988> ,
+                             <https://sws.geonames.org/4566966> ,
+                             <https://sws.geonames.org/4796775> ,
+                             <https://sws.geonames.org/5854968> ,
+                             <https://sws.geonames.org/5880801> ,
+                             <https://sws.geonames.org/6252001> ,
+                             <https://sws.geonames.org/7626844> .
+
+
+###  https://purl.org/cbam/UYU
+cbam:UYU rdf:type owl:NamedIndividual ,
+                  cbam:Currency ;
+         cbam:currencyCode "UYU" ;
+         cbam:currencyName "Peso" ;
+         geonames:geonamesID <https://sws.geonames.org/3439705> .
+
+
+###  https://purl.org/cbam/UZS
+cbam:UZS rdf:type owl:NamedIndividual ,
+                  cbam:Currency ;
+         cbam:currencyCode "UZS" ;
+         cbam:currencyName "Som" ;
+         geonames:geonamesID <https://sws.geonames.org/1512440> .
+
+
+###  https://purl.org/cbam/VES
+cbam:VES rdf:type owl:NamedIndividual ,
+                  cbam:Currency ;
+         cbam:currencyCode "VES" ;
+         cbam:currencyName "Bolivar Soberano" ;
+         geonames:geonamesID <https://sws.geonames.org/3625428> .
+
+
+###  https://purl.org/cbam/VND
+cbam:VND rdf:type owl:NamedIndividual ,
+                  cbam:Currency ;
+         cbam:currencyCode "VND" ;
+         cbam:currencyName "Dong" ;
+         geonames:geonamesID <https://sws.geonames.org/1562822> .
+
+
+###  https://purl.org/cbam/VUV
+cbam:VUV rdf:type owl:NamedIndividual ,
+                  cbam:Currency ;
+         cbam:currencyCode "VUV" ;
+         cbam:currencyName "Vatu" ;
+         geonames:geonamesID <https://sws.geonames.org/2134431> .
+
+
+###  https://purl.org/cbam/WST
+cbam:WST rdf:type owl:NamedIndividual ,
+                  cbam:Currency ;
+         cbam:currencyCode "WST" ;
+         cbam:currencyName "Tala" ;
+         geonames:geonamesID <https://sws.geonames.org/4034894> .
+
+
+###  https://purl.org/cbam/XAF
+cbam:XAF rdf:type owl:NamedIndividual ,
+                  cbam:Currency ;
+         cbam:currencyCode "XAF" ;
+         cbam:currencyName "Franc" ;
+         geonames:geonamesID <https://sws.geonames.org/2233387> ,
+                             <https://sws.geonames.org/2260494> ,
+                             <https://sws.geonames.org/2309096> ,
+                             <https://sws.geonames.org/239880> ,
+                             <https://sws.geonames.org/2400553> ,
+                             <https://sws.geonames.org/2434508> .
+
+
+###  https://purl.org/cbam/XCD
+cbam:XCD rdf:type owl:NamedIndividual ,
+                  cbam:Currency ;
+         cbam:currencyCode "XCD" ;
+         cbam:currencyName "Dollar" ;
+         geonames:geonamesID <https://sws.geonames.org/3573511> ,
+                             <https://sws.geonames.org/3575174> ,
+                             <https://sws.geonames.org/3575830> ,
+                             <https://sws.geonames.org/3576396> ,
+                             <https://sws.geonames.org/3576468> ,
+                             <https://sws.geonames.org/3577815> ,
+                             <https://sws.geonames.org/3578097> ,
+                             <https://sws.geonames.org/3580239> .
+
+
+###  https://purl.org/cbam/XOF
+cbam:XOF rdf:type owl:NamedIndividual ,
+                  cbam:Currency ;
+         cbam:currencyCode "XOF" ;
+         cbam:currencyName "Franc" ;
+         geonames:geonamesID <https://sws.geonames.org/2245662> ,
+                             <https://sws.geonames.org/2287781> ,
+                             <https://sws.geonames.org/2361809> ,
+                             <https://sws.geonames.org/2363686> ,
+                             <https://sws.geonames.org/2372248> ,
+                             <https://sws.geonames.org/2395170> ,
+                             <https://sws.geonames.org/2440476> ,
+                             <https://sws.geonames.org/2453866> .
+
+
+###  https://purl.org/cbam/XPF
+cbam:XPF rdf:type owl:NamedIndividual ,
+                  cbam:Currency ;
+         cbam:currencyCode "XPF" ;
+         cbam:currencyName "Franc" ;
+         geonames:geonamesID <https://sws.geonames.org/2139685> ,
+                             <https://sws.geonames.org/4030656> ,
+                             <https://sws.geonames.org/4034749> .
+
+
+###  https://purl.org/cbam/YER
+cbam:YER rdf:type owl:NamedIndividual ,
+                  cbam:Currency ;
+         cbam:currencyCode "YER" ;
+         cbam:currencyName "Rial" ;
+         geonames:geonamesID <https://sws.geonames.org/69543> .
+
+
+###  https://purl.org/cbam/ZAR
+cbam:ZAR rdf:type owl:NamedIndividual ,
+                  cbam:Currency ;
+         cbam:currencyCode "ZAR" ;
+         cbam:currencyName "Rand" ;
+         geonames:geonamesID <https://sws.geonames.org/953987> .
+
+
+###  https://purl.org/cbam/ZMW
+cbam:ZMW rdf:type owl:NamedIndividual ,
+                  cbam:Currency ;
+         cbam:currencyCode "ZMW" ;
+         cbam:currencyName "Kwacha" ;
+         geonames:geonamesID <https://sws.geonames.org/895949> .
+
+
+###  https://purl.org/cbam/ZWL
+cbam:ZWL rdf:type owl:NamedIndividual ,
+                  cbam:Currency ;
+         cbam:currencyCode "ZWL" ;
+         cbam:currencyName "Dollar" ;
+         geonames:geonamesID <https://sws.geonames.org/878675> .
+
+
+###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi

@@ -1,22 +1,394 @@
-@prefix properties: <https://purl.archive.org/cbam/> .
+@prefix : <https://purl.org/cbam/Role/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix vocabulary: <https://purl.archive.org/cbam/Role/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix properties: <https://purl.org/cbam/> .
+@prefix vocabulary: <https://purl.org/cbam/Role/> .
+@base <https://purl.org/cbam/Role/> .
 
-vocabulary:Role a rdfs:Class ;
-    rdfs:label "Role" .
+<https://purl.org/cbam/Role/> rdf:type owl:Ontology ;
+                               owl:versionIRI <https://purl.org/cbam/Role/1.0> ;
+                               dcterms:abstract "The Role Code List in the CBAM Report" ;
+                               dcterms:accessRights "This ontology is licensed under the Creative Commons Attribution-NonCommercial 4.0 International License (CC BY-NC 4.0). It allows non-commercial use, sharing, and adaptation of the ontology, as long as users provide clear credit to the creator by citing the ontology's title, creator, and license information. Commercial use is strictly prohibited." ;
+                               dcterms:bibliographicCitation "OK4I - Ontologies and Knowledge Graphs for Industry, July 15–19, 2024, Enschede, Netherlands - <https://www.utwente.nl/en/eemcs/fois2024/resources/papers/duque-et-al-ontology-network-for-the-standardization-of-the-eu-cbam-report-data.pdf>" ;
+                               dcterms:contributor [ foaf:name "Jesualdo Tomás Fernández Breis"
+                                                   ] ,
+                                                   [ foaf:name "Astrid Duque Ramos"
+                                                   ] ;
+                               dcterms:created "01/06/2024"^^rdfs:Literal ;
+                               dcterms:creator [ foaf:name "Jesualdo Tomás Fernández Breis"
+                                               ] ;
+                               dcterms:description "This ontology represents the code list for the 'Role' as defined by the Carbon Border Adjustment Mechanism (CBAM) Report." ;
+                               dcterms:hasVersion "<https://purl.org/cbam/Role/1.0>"^^xsd:anyURI ;
+                               dcterms:issued "21/11/2024"^^xsd:date ;
+                               dcterms:license "<http://creativecommons.org/licenses/by/4.0/>" ;
+                               dcterms:modified "21/11/2024"^^xsd:date ;
+                               dcterms:publisher "Siemens Energy" ;
+                               dcterms:source "Report Structure ver 18.0.xlsx  <https://taxation-customs.ec.europa.eu/carbon-border-adjustment-mechanism_en#where-to-report>" ;
+                               dcterms:title "Role"^^rdfs:Literal ;
+                               vann:preferredNamespacePrefix "<https://purl.org/cbam/Role/>" ;
+                               vann:preferredNamespaceUri "<https://purl.org/cbam/Role/>" .
 
-vocabulary:1 a vocabulary:Role ;
-    rdfs:label "Importer for all Goods" ;
-    properties:code "1" ;
-    properties:validity_date "1/1/23" .
+#################################################################
+#    Annotation properties
+#################################################################
 
-vocabulary:2 a vocabulary:Role ;
-    rdfs:label "Representative for all Goods" ;
-    properties:code "2" ;
-    properties:validity_date "1/1/23" .
+###  http://purl.org/dc/dcam/rangeIncludes
+<http://purl.org/dc/dcam/rangeIncludes> rdf:type owl:AnnotationProperty .
 
-vocabulary:3 a vocabulary:Role ;
-    rdfs:label "Importer for some Goods / Representative for some Goods" ;
-    properties:code "3" ;
-    properties:validity_date "1/1/23" .
 
+###  http://purl.org/dc/terms/abstract
+dcterms:abstract rdf:type owl:AnnotationProperty ;
+                 rdfs:subPropertyOf dcterms:description .
+
+
+###  http://purl.org/dc/terms/accessRights
+dcterms:accessRights rdf:type owl:AnnotationProperty ;
+                     rdfs:subPropertyOf dcterms:rights .
+
+
+###  http://purl.org/dc/terms/alternative
+dcterms:alternative rdf:type owl:AnnotationProperty ;
+                    rdfs:range rdfs:Literal .
+
+
+###  http://purl.org/dc/terms/available
+dcterms:available rdf:type owl:AnnotationProperty ;
+                  rdfs:range rdfs:Literal .
+
+
+###  http://purl.org/dc/terms/bibliographicCitation
+dcterms:bibliographicCitation rdf:type owl:AnnotationProperty ;
+                              rdfs:range rdfs:Literal .
+
+
+###  http://purl.org/dc/terms/conformsTo
+dcterms:conformsTo rdf:type owl:AnnotationProperty ;
+                   rdfs:subPropertyOf dcterms:relation .
+
+
+###  http://purl.org/dc/terms/contributor
+dcterms:contributor rdf:type owl:AnnotationProperty ;
+                    rdfs:subPropertyOf dcterms:contributor .
+
+
+###  http://purl.org/dc/terms/created
+dcterms:created rdf:type owl:AnnotationProperty ;
+                rdfs:range rdfs:Literal .
+
+
+###  http://purl.org/dc/terms/creator
+dcterms:creator rdf:type owl:AnnotationProperty ;
+                rdfs:subPropertyOf dcterms:contributor ,
+                                   dcterms:creator .
+
+
+###  http://purl.org/dc/terms/date
+dcterms:date rdf:type owl:AnnotationProperty ;
+             rdfs:range rdfs:Literal .
+
+
+###  http://purl.org/dc/terms/dateAccepted
+dcterms:dateAccepted rdf:type owl:AnnotationProperty ;
+                     rdfs:range rdfs:Literal .
+
+
+###  http://purl.org/dc/terms/dateCopyrighted
+dcterms:dateCopyrighted rdf:type owl:AnnotationProperty ;
+                        rdfs:range rdfs:Literal .
+
+
+###  http://purl.org/dc/terms/dateSubmitted
+dcterms:dateSubmitted rdf:type owl:AnnotationProperty ;
+                      rdfs:range rdfs:Literal .
+
+
+###  http://purl.org/dc/terms/description
+dcterms:description rdf:type owl:AnnotationProperty ;
+                    rdfs:subPropertyOf dcterms:description .
+
+
+###  http://purl.org/dc/terms/hasFormat
+dcterms:hasFormat rdf:type owl:AnnotationProperty ;
+                  rdfs:subPropertyOf dcterms:relation .
+
+
+###  http://purl.org/dc/terms/hasPart
+dcterms:hasPart rdf:type owl:AnnotationProperty ;
+                rdfs:subPropertyOf dcterms:relation .
+
+
+###  http://purl.org/dc/terms/hasVersion
+dcterms:hasVersion rdf:type owl:AnnotationProperty ;
+                   rdfs:subPropertyOf dcterms:relation .
+
+
+###  http://purl.org/dc/terms/identifier
+dcterms:identifier rdf:type owl:AnnotationProperty ;
+                   rdfs:range rdfs:Literal .
+
+
+###  http://purl.org/dc/terms/isFormatOf
+dcterms:isFormatOf rdf:type owl:AnnotationProperty ;
+                   rdfs:subPropertyOf dcterms:relation .
+
+
+###  http://purl.org/dc/terms/isPartOf
+dcterms:isPartOf rdf:type owl:AnnotationProperty ;
+                 rdfs:subPropertyOf dcterms:relation .
+
+
+###  http://purl.org/dc/terms/isReferencedBy
+dcterms:isReferencedBy rdf:type owl:AnnotationProperty ;
+                       rdfs:subPropertyOf dcterms:relation .
+
+
+###  http://purl.org/dc/terms/isReplacedBy
+dcterms:isReplacedBy rdf:type owl:AnnotationProperty ;
+                     rdfs:subPropertyOf dcterms:relation .
+
+
+###  http://purl.org/dc/terms/isRequiredBy
+dcterms:isRequiredBy rdf:type owl:AnnotationProperty ;
+                     rdfs:subPropertyOf dcterms:relation .
+
+
+###  http://purl.org/dc/terms/isVersionOf
+dcterms:isVersionOf rdf:type owl:AnnotationProperty ;
+                    rdfs:subPropertyOf dcterms:relation .
+
+
+###  http://purl.org/dc/terms/issued
+dcterms:issued rdf:type owl:AnnotationProperty ;
+               rdfs:range rdfs:Literal .
+
+
+###  http://purl.org/dc/terms/language
+dcterms:language rdf:type owl:AnnotationProperty ;
+                 rdfs:subPropertyOf dcterms:language .
+
+
+###  http://purl.org/dc/terms/license
+dcterms:license rdf:type owl:AnnotationProperty ;
+                rdfs:subPropertyOf dcterms:rights .
+
+
+###  http://purl.org/dc/terms/modified
+dcterms:modified rdf:type owl:AnnotationProperty ;
+                 rdfs:range rdfs:Literal .
+
+
+###  http://purl.org/dc/terms/publisher
+dcterms:publisher rdf:type owl:AnnotationProperty ;
+                  rdfs:subPropertyOf dcterms:publisher .
+
+
+###  http://purl.org/dc/terms/references
+dcterms:references rdf:type owl:AnnotationProperty ;
+                   rdfs:subPropertyOf dcterms:relation .
+
+
+###  http://purl.org/dc/terms/relation
+dcterms:relation rdf:type owl:AnnotationProperty ;
+                 rdfs:subPropertyOf dcterms:relation .
+
+
+###  http://purl.org/dc/terms/replaces
+dcterms:replaces rdf:type owl:AnnotationProperty ;
+                 rdfs:subPropertyOf dcterms:relation .
+
+
+###  http://purl.org/dc/terms/requires
+dcterms:requires rdf:type owl:AnnotationProperty ;
+                 rdfs:subPropertyOf dcterms:relation .
+
+
+###  http://purl.org/dc/terms/rights
+dcterms:rights rdf:type owl:AnnotationProperty ;
+               rdfs:subPropertyOf dcterms:rights .
+
+
+###  http://purl.org/dc/terms/source
+dcterms:source rdf:type owl:AnnotationProperty ;
+               rdfs:subPropertyOf dcterms:relation ,
+                                  dcterms:source .
+
+
+###  http://purl.org/dc/terms/subject
+dcterms:subject rdf:type owl:AnnotationProperty ;
+                rdfs:subPropertyOf dcterms:subject .
+
+
+###  http://purl.org/dc/terms/tableOfContents
+dcterms:tableOfContents rdf:type owl:AnnotationProperty ;
+                        rdfs:subPropertyOf dcterms:description .
+
+
+###  http://purl.org/dc/terms/title
+dcterms:title rdf:type owl:AnnotationProperty ;
+              rdfs:range rdfs:Literal .
+
+
+###  http://purl.org/dc/terms/type
+dcterms:type rdf:type owl:AnnotationProperty ;
+             rdfs:subPropertyOf dcterms:type .
+
+
+###  http://purl.org/dc/terms/valid
+dcterms:valid rdf:type owl:AnnotationProperty ;
+              rdfs:range rdfs:Literal .
+
+
+###  http://purl.org/vocab/vann/preferredNamespacePrefix
+vann:preferredNamespacePrefix rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespaceUri
+vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
+
+
+###  http://xmlns.com/foaf/0.1/maker
+foaf:maker rdf:type owl:AnnotationProperty .
+
+
+###  http://xmlns.com/foaf/0.1/name
+foaf:name rdf:type owl:AnnotationProperty .
+
+
+###  http://xmlns.com/foaf/0.1/workInfohomePage
+foaf:workInfohomePage rdf:type owl:AnnotationProperty .
+
+
+###  https://purl.org/cbam/code
+properties:code rdf:type owl:AnnotationProperty .
+
+
+###  https://purl.org/cbam/validity_date
+properties:validity_date rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Datatypes
+#################################################################
+
+###  http://www.w3.org/2001/XMLSchema#date
+xsd:date rdf:type rdfs:Datatype .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://purl.org/dc/terms/alternative
+dcterms:alternative rdf:type owl:DatatypeProperty ;
+                    rdfs:subPropertyOf dcterms:title .
+
+
+###  http://purl.org/dc/terms/available
+dcterms:available rdf:type owl:DatatypeProperty ;
+                  rdfs:subPropertyOf dcterms:date .
+
+
+###  http://purl.org/dc/terms/bibliographicCitation
+dcterms:bibliographicCitation rdf:type owl:DatatypeProperty ;
+                              rdfs:subPropertyOf dcterms:identifier .
+
+
+###  http://purl.org/dc/terms/created
+dcterms:created rdf:type owl:DatatypeProperty ;
+                rdfs:subPropertyOf dcterms:date .
+
+
+###  http://purl.org/dc/terms/date
+dcterms:date rdf:type owl:DatatypeProperty ;
+             rdfs:subPropertyOf dcterms:date .
+
+
+###  http://purl.org/dc/terms/dateAccepted
+dcterms:dateAccepted rdf:type owl:DatatypeProperty ;
+                     rdfs:subPropertyOf dcterms:date .
+
+
+###  http://purl.org/dc/terms/dateCopyrighted
+dcterms:dateCopyrighted rdf:type owl:DatatypeProperty ;
+                        rdfs:subPropertyOf dcterms:date .
+
+
+###  http://purl.org/dc/terms/dateSubmitted
+dcterms:dateSubmitted rdf:type owl:DatatypeProperty ;
+                      rdfs:subPropertyOf dcterms:date .
+
+
+###  http://purl.org/dc/terms/identifier
+dcterms:identifier rdf:type owl:DatatypeProperty ;
+                   rdfs:subPropertyOf dcterms:identifier .
+
+
+###  http://purl.org/dc/terms/issued
+dcterms:issued rdf:type owl:DatatypeProperty ;
+               rdfs:subPropertyOf dcterms:date .
+
+
+###  http://purl.org/dc/terms/modified
+dcterms:modified rdf:type owl:DatatypeProperty ;
+                 rdfs:subPropertyOf dcterms:date .
+
+
+###  http://purl.org/dc/terms/title
+dcterms:title rdf:type owl:DatatypeProperty ;
+              rdfs:subPropertyOf dcterms:title .
+
+
+###  http://purl.org/dc/terms/valid
+dcterms:valid rdf:type owl:DatatypeProperty ;
+              rdfs:subPropertyOf dcterms:date .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  https://purl.org/cbam/Role/Role
+vocabulary:Role rdf:type owl:Class ;
+                rdfs:comment "Specifies the role of the declarant in the context of customs declarations. Indicates whether the declarant is acting as the importer or as an indirect customs representative." ;
+                rdfs:label "Role" .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  https://purl.org/cbam/Role/1
+<https://purl.org/cbam/Role/1> rdf:type owl:NamedIndividual ,
+                                        vocabulary:Role ;
+                               rdfs:label "Importer for all Goods" ;
+                               properties:code "1" ;
+                               properties:validity_date "1/1/23" .
+
+
+###  https://purl.org/cbam/Role/2
+<https://purl.org/cbam/Role/2> rdf:type owl:NamedIndividual ,
+                                        vocabulary:Role ;
+                               rdfs:label "Representative for all Goods" ;
+                               properties:code "2" ;
+                               properties:validity_date "1/1/23" .
+
+
+###  https://purl.org/cbam/Role/3
+<https://purl.org/cbam/Role/3> rdf:type owl:NamedIndividual ,
+                                        vocabulary:Role ;
+                               rdfs:label "Importer for some Goods / Representative for some Goods" ;
+                               properties:code "3" ;
+                               properties:validity_date "1/1/23" .
+
+
+###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi

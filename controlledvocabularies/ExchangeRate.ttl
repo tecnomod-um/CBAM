@@ -1,922 +1,1746 @@
-@prefix cbam: <https://purl.archive.org/cbam/> .
+@prefix : <https://purl.org/cbam/Exchange_Rate/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix cbam: <https://purl.org/cbam/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix properties: <https://purl.org/cbam/> .
+@prefix vocabulary: <https://purl.org/cbam/Exchange_Rate/> .
+@base <https://purl.org/cbam/Exchange_Rate/> .
 
-cbam:ExchangeRate a rdf:Property,
-        rdfs:Class ;
-    rdfs:label "ExchangeRate" .
-
-cbam:ExchangeRate_AED_EUR_22_9_23 a cbam:ExchangeRate ;
-    cbam:destination_currency cbam:EUR ;
-    cbam:rate "0,259332" ;
-    cbam:source_currency cbam:AED ;
-    cbam:validity_rate "22/9/23" .
-
-cbam:ExchangeRate_AFN_EUR_22_9_23 a cbam:ExchangeRate ;
-    cbam:destination_currency cbam:EUR ;
-    cbam:rate "0,010588" ;
-    cbam:source_currency cbam:AFN ;
-    cbam:validity_rate "22/9/23" .
-
-cbam:ExchangeRate_ALL_EUR_22_9_23 a cbam:ExchangeRate ;
-    cbam:destination_currency cbam:EUR ;
-    cbam:rate "0,008405" ;
-    cbam:source_currency cbam:ALL ;
-    cbam:validity_rate "22/9/23" .
-
-cbam:ExchangeRate_AMD_EUR_22_9_23 a cbam:ExchangeRate ;
-    cbam:destination_currency cbam:EUR ;
-    cbam:rate "0,002184" ;
-    cbam:source_currency cbam:AMD ;
-    cbam:validity_rate "22/9/23" .
-
-cbam:ExchangeRate_ANG_EUR_22_9_23 a cbam:ExchangeRate ;
-    cbam:destination_currency cbam:EUR ;
-    cbam:rate "0,005290" ;
-    cbam:source_currency cbam:ANG ;
-    cbam:validity_rate "22/9/23" .
-
-cbam:ExchangeRate_AOA_EUR_22_9_23 a cbam:ExchangeRate ;
-    cbam:destination_currency cbam:EUR ;
-    cbam:rate "0,002067" ;
-    cbam:source_currency cbam:AOA ;
-    cbam:validity_rate "22/9/23" .
-
-cbam:ExchangeRate_ARS_EUR_22_9_23 a cbam:ExchangeRate ;
-    cbam:destination_currency cbam:EUR ;
-    cbam:rate "0,007301" ;
-    cbam:source_currency cbam:ARS ;
-    cbam:validity_rate "22/9/23" .
-
-cbam:ExchangeRate_AUD_EUR_22_9_23 a cbam:ExchangeRate ;
-    cbam:destination_currency cbam:EUR ;
-    cbam:rate "0,659326" ;
-    cbam:source_currency cbam:AUD ;
-    cbam:validity_rate "22/9/23" .
-
-cbam:ExchangeRate_AWG_EUR_22_9_23 a cbam:ExchangeRate ;
-    cbam:destination_currency cbam:EUR ;
-    cbam:rate "0,005318" ;
-    cbam:source_currency cbam:AWG ;
-    cbam:validity_rate "22/9/23" .
-
-cbam:ExchangeRate_AZN_EUR_22_9_23 a cbam:ExchangeRate ;
-    cbam:destination_currency cbam:EUR ;
-    cbam:rate "0,558847" ;
-    cbam:source_currency cbam:AZN ;
-    cbam:validity_rate "22/9/23" .
-
-cbam:ExchangeRate_BAM_EUR_22_9_23 a cbam:ExchangeRate ;
-    cbam:destination_currency cbam:EUR ;
-    cbam:rate "0,511292" ;
-    cbam:source_currency cbam:BAM ;
-    cbam:validity_rate "22/9/23" .
-
-cbam:ExchangeRate_BBD_EUR_22_9_23 a cbam:ExchangeRate ;
-    cbam:destination_currency cbam:EUR ;
-    cbam:rate "0,472672" ;
-    cbam:source_currency cbam:BBD ;
-    cbam:validity_rate "22/9/23" .
-
-cbam:ExchangeRate_BDT_EUR_22_9_23 a cbam:ExchangeRate ;
-    cbam:destination_currency cbam:EUR ;
-    cbam:rate "0,010168" ;
-    cbam:source_currency cbam:BDT ;
-    cbam:validity_rate "22/9/23" .
-
-cbam:ExchangeRate_BGN_EUR_22_9_23 a cbam:ExchangeRate ;
-    cbam:destination_currency cbam:EUR ;
-    cbam:rate "0,511300" ;
-    cbam:source_currency cbam:BGN ;
-    cbam:validity_rate "22/9/23" .
-
-cbam:ExchangeRate_BHD_EUR_22_9_23 a cbam:ExchangeRate ;
-    cbam:destination_currency cbam:EUR ;
-    cbam:rate "2,529724" ;
-    cbam:source_currency cbam:BHD ;
-    cbam:validity_rate "22/9/23" .
-
-cbam:ExchangeRate_BIF_EUR_22_9_23 a cbam:ExchangeRate ;
-    cbam:destination_currency cbam:EUR ;
-    cbam:rate "0,000467" ;
-    cbam:source_currency cbam:BIF ;
-    cbam:validity_rate "22/9/23" .
-
-cbam:ExchangeRate_BMD_EUR_22_9_23 a cbam:ExchangeRate ;
-    cbam:destination_currency cbam:EUR ;
-    cbam:rate "0,949523" ;
-    cbam:source_currency cbam:BMD ;
-    cbam:validity_rate "22/9/23" .
-
-cbam:ExchangeRate_BND_EUR_22_9_23 a cbam:ExchangeRate ;
-    cbam:destination_currency cbam:EUR ;
-    cbam:rate "0,688440" ;
-    cbam:source_currency cbam:BND ;
-    cbam:validity_rate "22/9/23" .
-
-cbam:ExchangeRate_BOB_EUR_22_9_23 a cbam:ExchangeRate ;
-    cbam:destination_currency cbam:EUR ;
-    cbam:rate "0,137422" ;
-    cbam:source_currency cbam:BOB ;
-    cbam:validity_rate "22/9/23" .
-
-cbam:ExchangeRate_BRL_EUR_22_9_23 a cbam:ExchangeRate ;
-    cbam:destination_currency cbam:EUR ;
-    cbam:rate "0,183827" ;
-    cbam:source_currency cbam:BRL ;
-    cbam:validity_rate "22/9/23" .
-
-cbam:ExchangeRate_BSD_EUR_22_9_23 a cbam:ExchangeRate ;
-    cbam:destination_currency cbam:EUR ;
-    cbam:rate "0,946119" ;
-    cbam:source_currency cbam:BSD ;
-    cbam:validity_rate "22/9/23" .
-
-cbam:ExchangeRate_BTN_EUR_22_9_23 a cbam:ExchangeRate ;
-    cbam:destination_currency cbam:EUR ;
-    cbam:rate "0,012099" ;
-    cbam:source_currency cbam:BTN ;
-    cbam:validity_rate "22/9/23" .
-
-cbam:ExchangeRate_BYN_EUR_22_9_23 a cbam:ExchangeRate ;
-    cbam:destination_currency cbam:EUR ;
-    cbam:rate "0,361873" ;
-    cbam:source_currency cbam:BYN ;
-    cbam:validity_rate "22/9/23" .
-
-cbam:ExchangeRate_BZD_EUR_22_9_23 a cbam:ExchangeRate ;
-    cbam:destination_currency cbam:EUR ;
-    cbam:rate "0,475971" ;
-    cbam:source_currency cbam:BZD ;
-    cbam:validity_rate "22/9/23" .
-
-cbam:ExchangeRate_CAD_EUR_22_9_23 a cbam:ExchangeRate ;
-    cbam:destination_currency cbam:EUR ;
-    cbam:rate "0,730194" ;
-    cbam:source_currency cbam:CAD ;
-    cbam:validity_rate "22/9/23" .
-
-cbam:ExchangeRate_CDF_EUR_22_9_23 a cbam:ExchangeRate ;
-    cbam:destination_currency cbam:EUR ;
-    cbam:rate "0,000474" ;
-    cbam:source_currency cbam:CDF ;
-    cbam:validity_rate "22/9/23" .
-
-cbam:ExchangeRate_CHF_EUR_22_9_23 a cbam:ExchangeRate ;
-    cbam:destination_currency cbam:EUR ;
-    cbam:rate "0,995322" ;
-    cbam:source_currency cbam:CHF ;
-    cbam:validity_rate "22/9/23" .
-
-cbam:ExchangeRate_CLP_EUR_22_9_23 a cbam:ExchangeRate ;
-    cbam:destination_currency cbam:EUR ;
-    cbam:rate "0,001090" ;
-    cbam:source_currency cbam:CLP ;
-    cbam:validity_rate "22/9/23" .
-
-cbam:ExchangeRate_CNY_EUR_22_9_23 a cbam:ExchangeRate ;
-    cbam:destination_currency cbam:EUR ;
-    cbam:rate "0,141267" ;
-    cbam:source_currency cbam:CNY ;
-    cbam:validity_rate "22/9/23" .
-
-cbam:ExchangeRate_COP_EUR_22_9_23 a cbam:ExchangeRate ;
-    cbam:destination_currency cbam:EUR ;
-    cbam:rate "0,000224" ;
-    cbam:source_currency cbam:COP ;
-    cbam:validity_rate "22/9/23" .
-
-cbam:ExchangeRate_CRC_EUR_22_9_23 a cbam:ExchangeRate ;
-    cbam:destination_currency cbam:EUR ;
-    cbam:rate "0,001473" ;
-    cbam:source_currency cbam:CRC ;
-    cbam:validity_rate "22/9/23" .
-
-cbam:ExchangeRate_CUP_EUR_22_9_23 a cbam:ExchangeRate ;
-    cbam:destination_currency cbam:EUR ;
-    cbam:rate "0,039659" ;
-    cbam:source_currency cbam:CUP ;
-    cbam:validity_rate "22/9/23" .
-
-cbam:ExchangeRate_CVE_EUR_22_9_23 a cbam:ExchangeRate ;
-    cbam:destination_currency cbam:EUR ;
-    cbam:rate "0,009069" ;
-    cbam:source_currency cbam:CVE ;
-    cbam:validity_rate "22/9/23" .
-
-cbam:ExchangeRate_CZK_EUR_22_9_23 a cbam:ExchangeRate ;
-    cbam:destination_currency cbam:EUR ;
-    cbam:rate "0,040707" ;
-    cbam:source_currency cbam:CZK ;
-    cbam:validity_rate "22/9/23" .
-
-cbam:ExchangeRate_DJF_EUR_22_9_23 a cbam:ExchangeRate ;
-    cbam:destination_currency cbam:EUR ;
-    cbam:rate "0,005315" ;
-    cbam:source_currency cbam:DJF ;
-    cbam:validity_rate "22/9/23" .
-
-cbam:ExchangeRate_DKK_EUR_22_9_23 a cbam:ExchangeRate ;
-    cbam:destination_currency cbam:EUR ;
-    cbam:rate "0,134416" ;
-    cbam:source_currency cbam:DKK ;
-    cbam:validity_rate "22/9/23" .
-
-cbam:ExchangeRate_DOP_EUR_22_9_23 a cbam:ExchangeRate ;
-    cbam:destination_currency cbam:EUR ;
-    cbam:rate "0,017217" ;
-    cbam:source_currency cbam:DOP ;
-    cbam:validity_rate "22/9/23" .
-
-cbam:ExchangeRate_DZD_EUR_22_9_23 a cbam:ExchangeRate ;
-    cbam:destination_currency cbam:EUR ;
-    cbam:rate "0,006687" ;
-    cbam:source_currency cbam:DZD ;
-    cbam:validity_rate "22/9/23" .
-
-cbam:ExchangeRate_EGP_EUR_22_9_23 a cbam:ExchangeRate ;
-    cbam:destination_currency cbam:EUR ;
-    cbam:rate "0,049238" ;
-    cbam:source_currency cbam:EGP ;
-    cbam:validity_rate "22/9/23" .
-
-cbam:ExchangeRate_ERN_EUR_22_9_23 a cbam:ExchangeRate ;
-    cbam:destination_currency cbam:EUR ;
-    cbam:rate "0,062160" ;
-    cbam:source_currency cbam:ERN ;
-    cbam:validity_rate "22/9/23" .
-
-cbam:ExchangeRate_ETB_EUR_22_9_23 a cbam:ExchangeRate ;
-    cbam:destination_currency cbam:EUR ;
-    cbam:rate "0,018167" ;
-    cbam:source_currency cbam:ETB ;
-    cbam:validity_rate "22/9/23" .
-
-cbam:ExchangeRate_EUR_EUR_6_12_23 a cbam:ExchangeRate ;
-    cbam:destination_currency cbam:EUR ;
-    cbam:rate "1,000000" ;
-    cbam:source_currency cbam:EUR ;
-    cbam:validity_rate "6/12/23" .
-
-cbam:ExchangeRate_FJD_EUR_22_9_23 a cbam:ExchangeRate ;
-    cbam:destination_currency cbam:EUR ;
-    cbam:rate "2,319271" ;
-    cbam:source_currency cbam:FJD ;
-    cbam:validity_rate "22/9/23" .
-
-cbam:ExchangeRate_FKP_EUR_22_9_23 a cbam:ExchangeRate ;
-    cbam:destination_currency cbam:EUR ;
-    cbam:rate "1,172663" ;
-    cbam:source_currency cbam:FKP ;
-    cbam:validity_rate "22/9/23" .
-
-cbam:ExchangeRate_GBP_EUR_22_9_23 a cbam:ExchangeRate ;
-    cbam:destination_currency cbam:EUR ;
-    cbam:rate "1,172663" ;
-    cbam:source_currency cbam:GBP ;
-    cbam:validity_rate "22/9/23" .
-
-cbam:ExchangeRate_GEL_EUR_22_9_23 a cbam:ExchangeRate ;
-    cbam:destination_currency cbam:EUR ;
-    cbam:rate "0,325850" ;
-    cbam:source_currency cbam:GEL ;
-    cbam:validity_rate "22/9/23" .
-
-cbam:ExchangeRate_GHS_EUR_22_9_23 a cbam:ExchangeRate ;
-    cbam:destination_currency cbam:EUR ;
-    cbam:rate "0,113358" ;
-    cbam:source_currency cbam:GHS ;
-    cbam:validity_rate "22/9/23" .
-
-cbam:ExchangeRate_GIP_EUR_22_9_23 a cbam:ExchangeRate ;
-    cbam:destination_currency cbam:EUR ;
-    cbam:rate "1,172663" ;
-    cbam:source_currency cbam:GIP ;
-    cbam:validity_rate "22/9/23" .
-
-cbam:ExchangeRate_GMD_EUR_22_9_23 a cbam:ExchangeRate ;
-    cbam:destination_currency cbam:EUR ;
-    cbam:rate "0,016819" ;
-    cbam:source_currency cbam:GMD ;
-    cbam:validity_rate "22/9/23" .
-
-cbam:ExchangeRate_GNF_EUR_22_9_23 a cbam:ExchangeRate ;
-    cbam:destination_currency cbam:EUR ;
-    cbam:rate "0,000110" ;
-    cbam:source_currency cbam:GNF ;
-    cbam:validity_rate "22/9/23" .
-
-cbam:ExchangeRate_GTQ_EUR_22_9_23 a cbam:ExchangeRate ;
-    cbam:destination_currency cbam:EUR ;
-    cbam:rate "0,122830" ;
-    cbam:source_currency cbam:GTQ ;
-    cbam:validity_rate "22/9/23" .
-
-cbam:ExchangeRate_GYD_EUR_22_9_23 a cbam:ExchangeRate ;
-    cbam:destination_currency cbam:EUR ;
-    cbam:rate "0,004550" ;
-    cbam:source_currency cbam:GYD ;
-    cbam:validity_rate "22/9/23" .
-
-cbam:ExchangeRate_HKD_EUR_22_9_23 a cbam:ExchangeRate ;
-    cbam:destination_currency cbam:EUR ;
-    cbam:rate "0,121284" ;
-    cbam:source_currency cbam:HKD ;
-    cbam:validity_rate "22/9/23" .
-
-cbam:ExchangeRate_HNL_EUR_22_9_23 a cbam:ExchangeRate ;
-    cbam:destination_currency cbam:EUR ;
-    cbam:rate "0,038761" ;
-    cbam:source_currency cbam:HNL ;
-    cbam:validity_rate "22/9/23" .
-
-cbam:ExchangeRate_HTG_EUR_22_9_23 a cbam:ExchangeRate ;
-    cbam:destination_currency cbam:EUR ;
-    cbam:rate "0,008190" ;
-    cbam:source_currency cbam:HTG ;
-    cbam:validity_rate "22/9/23" .
-
-cbam:ExchangeRate_HUF_EUR_22_9_23 a cbam:ExchangeRate ;
-    cbam:destination_currency cbam:EUR ;
-    cbam:rate "0,002556" ;
-    cbam:source_currency cbam:HUF ;
-    cbam:validity_rate "22/9/23" .
-
-cbam:ExchangeRate_IDR_EUR_22_9_23 a cbam:ExchangeRate ;
-    cbam:destination_currency cbam:EUR ;
-    cbam:rate "0,000064" ;
-    cbam:source_currency cbam:IDR ;
-    cbam:validity_rate "22/9/23" .
-
-cbam:ExchangeRate_ILS_EUR_22_9_23 a cbam:ExchangeRate ;
-    cbam:destination_currency cbam:EUR ;
-    cbam:rate "0,282925" ;
-    cbam:source_currency cbam:ILS ;
-    cbam:validity_rate "22/9/23" .
-
-cbam:ExchangeRate_INR_EUR_22_9_23 a cbam:ExchangeRate ;
-    cbam:destination_currency cbam:EUR ;
-    cbam:rate "0,012094" ;
-    cbam:source_currency cbam:INR ;
-    cbam:validity_rate "22/9/23" .
-
-cbam:ExchangeRate_IQD_EUR_22_9_23 a cbam:ExchangeRate ;
-    cbam:destination_currency cbam:EUR ;
-    cbam:rate "0,000655" ;
-    cbam:source_currency cbam:IQD ;
-    cbam:validity_rate "22/9/23" .
-
-cbam:ExchangeRate_IRR_EUR_22_9_23 a cbam:ExchangeRate ;
-    cbam:destination_currency cbam:EUR ;
-    cbam:rate "0,000023" ;
-    cbam:source_currency cbam:IRR ;
-    cbam:validity_rate "22/9/23" .
-
-cbam:ExchangeRate_ISK_EUR_22_9_23 a cbam:ExchangeRate ;
-    cbam:destination_currency cbam:EUR ;
-    cbam:rate "0,007030" ;
-    cbam:source_currency cbam:ISK ;
-    cbam:validity_rate "22/9/23" .
-
-cbam:ExchangeRate_JMD_EUR_22_9_23 a cbam:ExchangeRate ;
-    cbam:destination_currency cbam:EUR ;
-    cbam:rate "0,006226" ;
-    cbam:source_currency cbam:JMD ;
-    cbam:validity_rate "22/9/23" .
-
-cbam:ExchangeRate_JOD_EUR_22_9_23 a cbam:ExchangeRate ;
-    cbam:destination_currency cbam:EUR ;
-    cbam:rate "1,343616" ;
-    cbam:source_currency cbam:JOD ;
-    cbam:validity_rate "22/9/23" .
-
-cbam:ExchangeRate_JPY_EUR_22_9_23 a cbam:ExchangeRate ;
-    cbam:destination_currency cbam:EUR ;
-    cbam:rate "0,007245" ;
-    cbam:source_currency cbam:JPY ;
-    cbam:validity_rate "22/9/23" .
-
-cbam:ExchangeRate_KES_EUR_22_9_23 a cbam:ExchangeRate ;
-    cbam:destination_currency cbam:EUR ;
-    cbam:rate "0,008040" ;
-    cbam:source_currency cbam:KES ;
-    cbam:validity_rate "22/9/23" .
-
-cbam:ExchangeRate_KGS_EUR_22_9_23 a cbam:ExchangeRate ;
-    cbam:destination_currency cbam:EUR ;
-    cbam:rate "0,011298" ;
-    cbam:source_currency cbam:KGS ;
-    cbam:validity_rate "22/9/23" .
-
-cbam:ExchangeRate_KHR_EUR_22_9_23 a cbam:ExchangeRate ;
-    cbam:destination_currency cbam:EUR ;
-    cbam:rate "0,000231" ;
-    cbam:source_currency cbam:KHR ;
-    cbam:validity_rate "22/9/23" .
-
-cbam:ExchangeRate_KMF_EUR_22_9_23 a cbam:ExchangeRate ;
-    cbam:destination_currency cbam:EUR ;
-    cbam:rate "0,002033" ;
-    cbam:source_currency cbam:KMF ;
-    cbam:validity_rate "22/9/23" .
-
-cbam:ExchangeRate_KRW_EUR_22_9_23 a cbam:ExchangeRate ;
-    cbam:destination_currency cbam:EUR ;
-    cbam:rate "0,000736" ;
-    cbam:source_currency cbam:KRW ;
-    cbam:validity_rate "22/9/23" .
-
-cbam:ExchangeRate_KWD_EUR_22_9_23 a cbam:ExchangeRate ;
-    cbam:destination_currency cbam:EUR ;
-    cbam:rate "3,101929" ;
-    cbam:source_currency cbam:KWD ;
-    cbam:validity_rate "22/9/23" .
-
-cbam:ExchangeRate_KYD_EUR_22_9_23 a cbam:ExchangeRate ;
-    cbam:destination_currency cbam:EUR ;
-    cbam:rate "1,139601" ;
-    cbam:source_currency cbam:KYD ;
-    cbam:validity_rate "22/9/23" .
-
-cbam:ExchangeRate_KZT_EUR_22_9_23 a cbam:ExchangeRate ;
-    cbam:destination_currency cbam:EUR ;
-    cbam:rate "0,002067" ;
-    cbam:source_currency cbam:KZT ;
-    cbam:validity_rate "22/9/23" .
-
-cbam:ExchangeRate_LAK_EUR_22_9_23 a cbam:ExchangeRate ;
-    cbam:destination_currency cbam:EUR ;
-    cbam:rate "0,000066" ;
-    cbam:source_currency cbam:LAK ;
-    cbam:validity_rate "22/9/23" .
-
-cbam:ExchangeRate_LBP_EUR_22_9_23 a cbam:ExchangeRate ;
-    cbam:destination_currency cbam:EUR ;
-    cbam:rate "0,000630" ;
-    cbam:source_currency cbam:LBP ;
-    cbam:validity_rate "22/9/23" .
-
-cbam:ExchangeRate_LKR_EUR_22_9_23 a cbam:ExchangeRate ;
-    cbam:destination_currency cbam:EUR ;
-    cbam:rate "0,002915" ;
-    cbam:source_currency cbam:LKR ;
-    cbam:validity_rate "22/9/23" .
-
-cbam:ExchangeRate_LRD_EUR_22_9_23 a cbam:ExchangeRate ;
-    cbam:destination_currency cbam:EUR ;
-    cbam:rate "0,006213" ;
-    cbam:source_currency cbam:LRD ;
-    cbam:validity_rate "22/9/23" .
-
-cbam:ExchangeRate_LSL_EUR_22_9_23 a cbam:ExchangeRate ;
-    cbam:destination_currency cbam:EUR ;
-    cbam:rate "0,058148" ;
-    cbam:source_currency cbam:LSL ;
-    cbam:validity_rate "22/9/23" .
-
-cbam:ExchangeRate_LYD_EUR_22_9_23 a cbam:ExchangeRate ;
-    cbam:destination_currency cbam:EUR ;
-    cbam:rate "0,197834" ;
-    cbam:source_currency cbam:LYD ;
-    cbam:validity_rate "22/9/23" .
-
-cbam:ExchangeRate_MAD_EUR_22_9_23 a cbam:ExchangeRate ;
-    cbam:destination_currency cbam:EUR ;
-    cbam:rate "0,093588" ;
-    cbam:source_currency cbam:MAD ;
-    cbam:validity_rate "22/9/23" .
-
-cbam:ExchangeRate_MDL_EUR_22_9_23 a cbam:ExchangeRate ;
-    cbam:destination_currency cbam:EUR ;
-    cbam:rate "0,050331" ;
-    cbam:source_currency cbam:MDL ;
-    cbam:validity_rate "22/9/23" .
-
-cbam:ExchangeRate_MGA_EUR_22_9_23 a cbam:ExchangeRate ;
-    cbam:destination_currency cbam:EUR ;
-    cbam:rate "0,000232" ;
-    cbam:source_currency cbam:MGA ;
-    cbam:validity_rate "22/9/23" .
-
-cbam:ExchangeRate_MKD_EUR_22_9_23 a cbam:ExchangeRate ;
-    cbam:destination_currency cbam:EUR ;
-    cbam:rate "0,016228" ;
-    cbam:source_currency cbam:MKD ;
-    cbam:validity_rate "22/9/23" .
-
-cbam:ExchangeRate_MMK_EUR_22_9_23 a cbam:ExchangeRate ;
-    cbam:destination_currency cbam:EUR ;
-    cbam:rate "0,000493" ;
-    cbam:source_currency cbam:MMK ;
-    cbam:validity_rate "22/9/23" .
-
-cbam:ExchangeRate_MNT_EUR_22_9_23 a cbam:ExchangeRate ;
-    cbam:destination_currency cbam:EUR ;
-    cbam:rate "0,000301" ;
-    cbam:source_currency cbam:MNT ;
-    cbam:validity_rate "22/9/23" .
-
-cbam:ExchangeRate_MOP_EUR_22_9_23 a cbam:ExchangeRate ;
-    cbam:destination_currency cbam:EUR ;
-    cbam:rate "0,117719" ;
-    cbam:source_currency cbam:MOP ;
-    cbam:validity_rate "22/9/23" .
-
-cbam:ExchangeRate_MRU_EUR_22_9_23 a cbam:ExchangeRate ;
-    cbam:destination_currency cbam:EUR ;
-    cbam:rate "0,025775" ;
-    cbam:source_currency cbam:MRU ;
-    cbam:validity_rate "22/9/23" .
-
-cbam:ExchangeRate_MUR_EUR_22_9_23 a cbam:ExchangeRate ;
-    cbam:destination_currency cbam:EUR ;
-    cbam:rate "0,021509" ;
-    cbam:source_currency cbam:MUR ;
-    cbam:validity_rate "22/9/23" .
-
-cbam:ExchangeRate_MVR_EUR_22_9_23 a cbam:ExchangeRate ;
-    cbam:destination_currency cbam:EUR ;
-    cbam:rate "0,061867" ;
-    cbam:source_currency cbam:MVR ;
-    cbam:validity_rate "22/9/23" .
-
-cbam:ExchangeRate_MWK_EUR_22_9_23 a cbam:ExchangeRate ;
-    cbam:destination_currency cbam:EUR ;
-    cbam:rate "0,000985" ;
-    cbam:source_currency cbam:MWK ;
-    cbam:validity_rate "22/9/23" .
-
-cbam:ExchangeRate_MXN_EUR_22_9_23 a cbam:ExchangeRate ;
-    cbam:destination_currency cbam:EUR ;
-    cbam:rate "0,047199" ;
-    cbam:source_currency cbam:MXN ;
-    cbam:validity_rate "22/9/23" .
-
-cbam:ExchangeRate_MYR_EUR_22_9_23 a cbam:ExchangeRate ;
-    cbam:destination_currency cbam:EUR ;
-    cbam:rate "0,216081" ;
-    cbam:source_currency cbam:MYR ;
-    cbam:validity_rate "22/9/23" .
-
-cbam:ExchangeRate_MZN_EUR_22_9_23 a cbam:ExchangeRate ;
-    cbam:destination_currency cbam:EUR ;
-    cbam:rate "0,014918" ;
-    cbam:source_currency cbam:MZN ;
-    cbam:validity_rate "22/9/23" .
-
-cbam:ExchangeRate_NAD_EUR_22_9_23 a cbam:ExchangeRate ;
-    cbam:destination_currency cbam:EUR ;
-    cbam:rate "0,058159" ;
-    cbam:source_currency cbam:NAD ;
-    cbam:validity_rate "22/9/23" .
-
-cbam:ExchangeRate_NGN_EUR_22_9_23 a cbam:ExchangeRate ;
-    cbam:destination_currency cbam:EUR ;
-    cbam:rate "0,002243" ;
-    cbam:source_currency cbam:NGN ;
-    cbam:validity_rate "22/9/23" .
-
-cbam:ExchangeRate_NIO_EUR_22_9_23 a cbam:ExchangeRate ;
-    cbam:destination_currency cbam:EUR ;
-    cbam:rate "0,026532" ;
-    cbam:source_currency cbam:NIO ;
-    cbam:validity_rate "22/9/23" .
-
-cbam:ExchangeRate_NOK_EUR_22_9_23 a cbam:ExchangeRate ;
-    cbam:destination_currency cbam:EUR ;
-    cbam:rate "0,098984" ;
-    cbam:source_currency cbam:NOK ;
-    cbam:validity_rate "22/9/23" .
-
-cbam:ExchangeRate_NPR_EUR_22_9_23 a cbam:ExchangeRate ;
-    cbam:destination_currency cbam:EUR ;
-    cbam:rate "0,007533" ;
-    cbam:source_currency cbam:NPR ;
-    cbam:validity_rate "22/9/23" .
-
-cbam:ExchangeRate_NZD_EUR_22_9_23 a cbam:ExchangeRate ;
-    cbam:destination_currency cbam:EUR ;
-    cbam:rate "0,603064" ;
-    cbam:source_currency cbam:NZD ;
-    cbam:validity_rate "22/9/23" .
-
-cbam:ExchangeRate_OMR_EUR_22_9_23 a cbam:ExchangeRate ;
-    cbam:destination_currency cbam:EUR ;
-    cbam:rate "2,474819" ;
-    cbam:source_currency cbam:OMR ;
-    cbam:validity_rate "22/9/23" .
-
-cbam:ExchangeRate_PAB_EUR_22_9_23 a cbam:ExchangeRate ;
-    cbam:destination_currency cbam:EUR ;
-    cbam:rate "0,949668" ;
-    cbam:source_currency cbam:PAB ;
-    cbam:validity_rate "22/9/23" .
-
-cbam:ExchangeRate_PEN_EUR_22_9_23 a cbam:ExchangeRate ;
-    cbam:destination_currency cbam:EUR ;
-    cbam:rate "0,243297" ;
-    cbam:source_currency cbam:PEN ;
-    cbam:validity_rate "22/9/23" .
-
-cbam:ExchangeRate_PHP_EUR_22_9_23 a cbam:ExchangeRate ;
-    cbam:destination_currency cbam:EUR ;
-    cbam:rate "0,017448" ;
-    cbam:source_currency cbam:PHP ;
-    cbam:validity_rate "22/9/23" .
-
-cbam:ExchangeRate_PKR_EUR_22_9_23 a cbam:ExchangeRate ;
-    cbam:destination_currency cbam:EUR ;
-    cbam:rate "0,004633" ;
-    cbam:source_currency cbam:PKR ;
-    cbam:validity_rate "22/9/23" .
-
-cbam:ExchangeRate_PLN_EUR_22_9_23 a cbam:ExchangeRate ;
-    cbam:destination_currency cbam:EUR ;
-    cbam:rate "0,213397" ;
-    cbam:source_currency cbam:PLN ;
-    cbam:validity_rate "22/9/23" .
-
-cbam:ExchangeRate_PYG_EUR_22_9_23 a cbam:ExchangeRate ;
-    cbam:destination_currency cbam:EUR ;
-    cbam:rate "0,000136" ;
-    cbam:source_currency cbam:PYG ;
-    cbam:validity_rate "22/9/23" .
-
-cbam:ExchangeRate_QAR_EUR_22_9_23 a cbam:ExchangeRate ;
-    cbam:destination_currency cbam:EUR ;
-    cbam:rate "0,261647" ;
-    cbam:source_currency cbam:QAR ;
-    cbam:validity_rate "22/9/23" .
-
-cbam:ExchangeRate_RON_EUR_22_9_23 a cbam:ExchangeRate ;
-    cbam:destination_currency cbam:EUR ;
-    cbam:rate "0,202786" ;
-    cbam:source_currency cbam:RON ;
-    cbam:validity_rate "22/9/23" .
-
-cbam:ExchangeRate_RSD_EUR_22_9_23 a cbam:ExchangeRate ;
-    cbam:destination_currency cbam:EUR ;
-    cbam:rate "0,008514" ;
-    cbam:source_currency cbam:RSD ;
-    cbam:validity_rate "22/9/23" .
-
-cbam:ExchangeRate_RUB_EUR_6_12_23 a cbam:ExchangeRate ;
-    cbam:destination_currency cbam:EUR ;
-    cbam:rate "0,011474" ;
-    cbam:source_currency cbam:RUB ;
-    cbam:validity_rate "6/12/23" .
-
-cbam:ExchangeRate_RWF_EUR_22_9_23 a cbam:ExchangeRate ;
-    cbam:destination_currency cbam:EUR ;
-    cbam:rate "0,000921" ;
-    cbam:source_currency cbam:RWF ;
-    cbam:validity_rate "22/9/23" .
-
-cbam:ExchangeRate_SAR_EUR_22_9_23 a cbam:ExchangeRate ;
-    cbam:destination_currency cbam:EUR ;
-    cbam:rate "0,253233" ;
-    cbam:source_currency cbam:SAR ;
-    cbam:validity_rate "22/9/23" .
-
-cbam:ExchangeRate_SBD_EUR_22_9_23 a cbam:ExchangeRate ;
-    cbam:destination_currency cbam:EUR ;
-    cbam:rate "8,585902" ;
-    cbam:source_currency cbam:SBD ;
-    cbam:validity_rate "22/9/23" .
-
-cbam:ExchangeRate_SCR_EUR_22_9_23 a cbam:ExchangeRate ;
-    cbam:destination_currency cbam:EUR ;
-    cbam:rate "0,066565" ;
-    cbam:source_currency cbam:SCR ;
-    cbam:validity_rate "22/9/23" .
-
-cbam:ExchangeRate_SDG_EUR_22_9_23 a cbam:ExchangeRate ;
-    cbam:destination_currency cbam:EUR ;
-    cbam:rate "0,001727" ;
-    cbam:source_currency cbam:SDG ;
-    cbam:validity_rate "22/9/23" .
-
-cbam:ExchangeRate_SEK_EUR_22_9_23 a cbam:ExchangeRate ;
-    cbam:destination_currency cbam:EUR ;
-    cbam:rate "0,094077" ;
-    cbam:source_currency cbam:SEK ;
-    cbam:validity_rate "22/9/23" .
-
-cbam:ExchangeRate_SGD_EUR_22_9_23 a cbam:ExchangeRate ;
-    cbam:destination_currency cbam:EUR ;
-    cbam:rate "0,689085" ;
-    cbam:source_currency cbam:SGD ;
-    cbam:validity_rate "22/9/23" .
-
-cbam:ExchangeRate_SHP_EUR_22_9_23 a cbam:ExchangeRate ;
-    cbam:destination_currency cbam:EUR ;
-    cbam:rate "1,172663" ;
-    cbam:source_currency cbam:SHP ;
-    cbam:validity_rate "22/9/23" .
-
-cbam:ExchangeRate_SLE_EUR_22_9_23 a cbam:ExchangeRate ;
-    cbam:destination_currency cbam:EUR ;
-    cbam:rate "0,066376" ;
-    cbam:source_currency cbam:SLE ;
-    cbam:validity_rate "22/9/23" .
-
-cbam:ExchangeRate_SRD_EUR_22_9_23 a cbam:ExchangeRate ;
-    cbam:destination_currency cbam:EUR ;
-    cbam:rate "0,038368" ;
-    cbam:source_currency cbam:SRD ;
-    cbam:validity_rate "22/9/23" .
-
-cbam:ExchangeRate_SSP_EUR_22_9_23 a cbam:ExchangeRate ;
-    cbam:destination_currency cbam:EUR ;
-    cbam:rate "0,001762" ;
-    cbam:source_currency cbam:SSP ;
-    cbam:validity_rate "22/9/23" .
-
-cbam:ExchangeRate_STN_EUR_22_9_23 a cbam:ExchangeRate ;
-    cbam:destination_currency cbam:EUR ;
-    cbam:rate "0,040816" ;
-    cbam:source_currency cbam:STN ;
-    cbam:validity_rate "22/9/23" .
-
-cbam:ExchangeRate_SVC_EUR_22_9_23 a cbam:ExchangeRate ;
-    cbam:destination_currency cbam:EUR ;
-    cbam:rate "0,108533" ;
-    cbam:source_currency cbam:SVC ;
-    cbam:validity_rate "22/9/23" .
-
-cbam:ExchangeRate_SYP_EUR_22_9_23 a cbam:ExchangeRate ;
-    cbam:destination_currency cbam:EUR ;
-    cbam:rate "0,000340" ;
-    cbam:source_currency cbam:SYP ;
-    cbam:validity_rate "22/9/23" .
-
-cbam:ExchangeRate_SZL_EUR_22_9_23 a cbam:ExchangeRate ;
-    cbam:destination_currency cbam:EUR ;
-    cbam:rate "0,058158" ;
-    cbam:source_currency cbam:SZL ;
-    cbam:validity_rate "22/9/23" .
-
-cbam:ExchangeRate_THB_EUR_22_9_23 a cbam:ExchangeRate ;
-    cbam:destination_currency cbam:EUR ;
-    cbam:rate "0,027132" ;
-    cbam:source_currency cbam:THB ;
-    cbam:validity_rate "22/9/23" .
-
-cbam:ExchangeRate_TJS_EUR_22_9_23 a cbam:ExchangeRate ;
-    cbam:destination_currency cbam:EUR ;
-    cbam:rate "0,085955" ;
-    cbam:source_currency cbam:TJS ;
-    cbam:validity_rate "22/9/23" .
-
-cbam:ExchangeRate_TMT_EUR_22_9_23 a cbam:ExchangeRate ;
-    cbam:destination_currency cbam:EUR ;
-    cbam:rate "0,271223" ;
-    cbam:source_currency cbam:TMT ;
-    cbam:validity_rate "22/9/23" .
-
-cbam:ExchangeRate_TND_EUR_22_9_23 a cbam:ExchangeRate ;
-    cbam:destination_currency cbam:EUR ;
-    cbam:rate "0,309489" ;
-    cbam:source_currency cbam:TND ;
-    cbam:validity_rate "22/9/23" .
-
-cbam:ExchangeRate_TOP_EUR_22_9_23 a cbam:ExchangeRate ;
-    cbam:destination_currency cbam:EUR ;
-    cbam:rate "2,461236" ;
-    cbam:source_currency cbam:TOP ;
-    cbam:validity_rate "22/9/23" .
-
-cbam:ExchangeRate_TRY_EUR_22_9_23 a cbam:ExchangeRate ;
-    cbam:destination_currency cbam:EUR ;
-    cbam:rate "0,057442" ;
-    cbam:source_currency cbam:TRY ;
-    cbam:validity_rate "22/9/23" .
-
-cbam:ExchangeRate_TTD_EUR_22_9_23 a cbam:ExchangeRate ;
-    cbam:destination_currency cbam:EUR ;
-    cbam:rate "0,136460" ;
-    cbam:source_currency cbam:TTD ;
-    cbam:validity_rate "22/9/23" .
-
-cbam:ExchangeRate_TWD_EUR_22_9_23 a cbam:ExchangeRate ;
-    cbam:destination_currency cbam:EUR ;
-    cbam:rate "0,031897" ;
-    cbam:source_currency cbam:TWD ;
-    cbam:validity_rate "22/9/23" .
-
-cbam:ExchangeRate_TZS_EUR_22_9_23 a cbam:ExchangeRate ;
-    cbam:destination_currency cbam:EUR ;
-    cbam:rate "0,000413" ;
-    cbam:source_currency cbam:TZS ;
-    cbam:validity_rate "22/9/23" .
-
-cbam:ExchangeRate_UAH_EUR_22_9_23 a cbam:ExchangeRate ;
-    cbam:destination_currency cbam:EUR ;
-    cbam:rate "0,029395" ;
-    cbam:source_currency cbam:UAH ;
-    cbam:validity_rate "22/9/23" .
-
-cbam:ExchangeRate_UGX_EUR_22_9_23 a cbam:ExchangeRate ;
-    cbam:destination_currency cbam:EUR ;
-    cbam:rate "0,000257" ;
-    cbam:source_currency cbam:UGX ;
-    cbam:validity_rate "22/9/23" .
-
-cbam:ExchangeRate_USD_EUR_22_9_23 a cbam:ExchangeRate ;
-    cbam:destination_currency cbam:EUR ;
-    cbam:rate "0,949668" ;
-    cbam:source_currency cbam:USD ;
-    cbam:validity_rate "22/9/23" .
-
-cbam:ExchangeRate_UYU_EUR_22_9_23 a cbam:ExchangeRate ;
-    cbam:destination_currency cbam:EUR ;
-    cbam:rate "0,023064" ;
-    cbam:source_currency cbam:UYU ;
-    cbam:validity_rate "22/9/23" .
-
-cbam:ExchangeRate_UZS_EUR_22_9_23 a cbam:ExchangeRate ;
-    cbam:destination_currency cbam:EUR ;
-    cbam:rate "0,000086" ;
-    cbam:source_currency cbam:UZS ;
-    cbam:validity_rate "22/9/23" .
-
-cbam:ExchangeRate_VES_EUR_22_9_23 a cbam:ExchangeRate ;
-    cbam:destination_currency cbam:EUR ;
-    cbam:rate "0,131364" ;
-    cbam:source_currency cbam:VES ;
-    cbam:validity_rate "22/9/23" .
-
-cbam:ExchangeRate_VND_EUR_22_9_23 a cbam:ExchangeRate ;
-    cbam:destination_currency cbam:EUR ;
-    cbam:rate "0,000040" ;
-    cbam:source_currency cbam:VND ;
-    cbam:validity_rate "22/9/23" .
-
-cbam:ExchangeRate_VUV_EUR_22_9_23 a cbam:ExchangeRate ;
-    cbam:destination_currency cbam:EUR ;
-    cbam:rate "0,008091" ;
-    cbam:source_currency cbam:VUV ;
-    cbam:validity_rate "22/9/23" .
-
-cbam:ExchangeRate_WST_EUR_22_9_23 a cbam:ExchangeRate ;
-    cbam:destination_currency cbam:EUR ;
-    cbam:rate "2,828214" ;
-    cbam:source_currency cbam:WST ;
-    cbam:validity_rate "22/9/23" .
-
-cbam:ExchangeRate_XAF_EUR_22_9_23 a cbam:ExchangeRate ;
-    cbam:destination_currency cbam:EUR ;
-    cbam:rate "0,001524" ;
-    cbam:source_currency cbam:XAF ;
-    cbam:validity_rate "22/9/23" .
-
-cbam:ExchangeRate_XCD_EUR_22_9_23 a cbam:ExchangeRate ;
-    cbam:destination_currency cbam:EUR ;
-    cbam:rate "0,351396" ;
-    cbam:source_currency cbam:XCD ;
-    cbam:validity_rate "22/9/23" .
-
-cbam:ExchangeRate_XOF_EUR_22_9_23 a cbam:ExchangeRate ;
-    cbam:destination_currency cbam:EUR ;
-    cbam:rate "0,001524" ;
-    cbam:source_currency cbam:XOF ;
-    cbam:validity_rate "22/9/23" .
-
-cbam:ExchangeRate_XPF_EUR_22_9_23 a cbam:ExchangeRate ;
-    cbam:destination_currency cbam:EUR ;
-    cbam:rate "0,119332" ;
-    cbam:source_currency cbam:XPF ;
-    cbam:validity_rate "22/9/23" .
-
-cbam:ExchangeRate_YER_EUR_6_12_23 a cbam:ExchangeRate ;
-    cbam:destination_currency cbam:EUR ;
-    cbam:rate "0,003387" ;
-    cbam:source_currency cbam:YER ;
-    cbam:validity_rate "6/12/23" .
-
-cbam:ExchangeRate_ZAR_EUR_22_9_23 a cbam:ExchangeRate ;
-    cbam:destination_currency cbam:EUR ;
-    cbam:rate "0,058110" ;
-    cbam:source_currency cbam:ZAR ;
-    cbam:validity_rate "22/9/23" .
-
-cbam:ExchangeRate_ZMW_EUR_22_9_23 a cbam:ExchangeRate ;
-    cbam:destination_currency cbam:EUR ;
-    cbam:rate "0,055805" ;
-    cbam:source_currency cbam:ZMW ;
-    cbam:validity_rate "22/9/23" .
-
-cbam:ExchangeRate_ZWL_EUR_22_9_23 a cbam:ExchangeRate ;
-    cbam:destination_currency cbam:EUR ;
-    cbam:rate "0,002451" ;
-    cbam:source_currency cbam:ZWL ;
-    cbam:validity_rate "22/9/23" .
-
-cbam:currencyCode a rdf:Property .
-
-cbam:currencyName a rdf:Property .
-
-cbam:validity_date a rdf:Property .
-
-<https://www.geonames.org/ontology#geonamesID> a rdf:Property .
+<https://purl.org/cbam/Exchange_Rate/> rdf:type owl:Ontology ;
+                                        owl:versionIRI <https://purl.org/cbam/Exchange_Rate/1.0> ;
+                                        dcterms:abstract "The Exchange Rate Code List in the CBAM Report" ;
+                                        dcterms:accessRights "This ontology is licensed under the Creative Commons Attribution-NonCommercial 4.0 International License (CC BY-NC 4.0). It allows non-commercial use, sharing, and adaptation of the ontology, as long as users provide clear credit to the creator by citing the ontology's title, creator, and license information. Commercial use is strictly prohibited." ;
+                                        dcterms:bibliographicCitation "OK4I - Ontologies and Knowledge Graphs for Industry, July 15–19, 2024, Enschede, Netherlands - <https://www.utwente.nl/en/eemcs/fois2024/resources/papers/duque-et-al-ontology-network-for-the-standardization-of-the-eu-cbam-report-data.pdf>" ;
+                                        dcterms:contributor [ foaf:name "Astrid Duque Ramos"
+                                                            ] ,
+                                                            [ foaf:name "Jesualdo Tomás Fernández Breis"
+                                                            ] ;
+                                        dcterms:created "01/06/2024"^^rdfs:Literal ;
+                                        dcterms:creator [ foaf:name "Jesualdo Tomás Fernández Breis"
+                                                        ] ;
+                                        dcterms:description "This ontology represents the code list for the 'Exchange Rate' as defined by the Carbon Border Adjustment Mechanism (CBAM) Report." ;
+                                        dcterms:hasVersion "<https://purl.org/cbam/Exchange_Rate/1.0>"^^xsd:anyURI ;
+                                        dcterms:issued "21/11/2024"^^xsd:date ;
+                                        dcterms:license "<http://creativecommons.org/licenses/by/4.0/>" ;
+                                        dcterms:modified "21/11/2024"^^xsd:date ;
+                                        dcterms:publisher "Siemens Energy" ;
+                                        dcterms:source "Report Structure ver 18.0.xlsx  <https://taxation-customs.ec.europa.eu/carbon-border-adjustment-mechanism_en#where-to-report>" ;
+                                        dcterms:title "Exchange Rate"^^rdfs:Literal ;
+                                        vann:preferredNamespacePrefix "<https://purl.org/cbam/Exchange_Rate/>" ;
+                                        vann:preferredNamespaceUri "<https://purl.org/cbam/Exchange_Rate/>" .
 
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/dcam/rangeIncludes
+<http://purl.org/dc/dcam/rangeIncludes> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/abstract
+dcterms:abstract rdf:type owl:AnnotationProperty ;
+                 rdfs:subPropertyOf dcterms:description .
+
+
+###  http://purl.org/dc/terms/accessRights
+dcterms:accessRights rdf:type owl:AnnotationProperty ;
+                     rdfs:subPropertyOf dcterms:rights .
+
+
+###  http://purl.org/dc/terms/alternative
+dcterms:alternative rdf:type owl:AnnotationProperty ;
+                    rdfs:range rdfs:Literal .
+
+
+###  http://purl.org/dc/terms/available
+dcterms:available rdf:type owl:AnnotationProperty ;
+                  rdfs:range rdfs:Literal .
+
+
+###  http://purl.org/dc/terms/bibliographicCitation
+dcterms:bibliographicCitation rdf:type owl:AnnotationProperty ;
+                              rdfs:range rdfs:Literal .
+
+
+###  http://purl.org/dc/terms/conformsTo
+dcterms:conformsTo rdf:type owl:AnnotationProperty ;
+                   rdfs:subPropertyOf dcterms:relation .
+
+
+###  http://purl.org/dc/terms/contributor
+dcterms:contributor rdf:type owl:AnnotationProperty ;
+                    rdfs:subPropertyOf dcterms:contributor .
+
+
+###  http://purl.org/dc/terms/created
+dcterms:created rdf:type owl:AnnotationProperty ;
+                rdfs:range rdfs:Literal .
+
+
+###  http://purl.org/dc/terms/creator
+dcterms:creator rdf:type owl:AnnotationProperty ;
+                rdfs:subPropertyOf dcterms:contributor ,
+                                   dcterms:creator .
+
+
+###  http://purl.org/dc/terms/date
+dcterms:date rdf:type owl:AnnotationProperty ;
+             rdfs:range rdfs:Literal .
+
+
+###  http://purl.org/dc/terms/dateAccepted
+dcterms:dateAccepted rdf:type owl:AnnotationProperty ;
+                     rdfs:range rdfs:Literal .
+
+
+###  http://purl.org/dc/terms/dateCopyrighted
+dcterms:dateCopyrighted rdf:type owl:AnnotationProperty ;
+                        rdfs:range rdfs:Literal .
+
+
+###  http://purl.org/dc/terms/dateSubmitted
+dcterms:dateSubmitted rdf:type owl:AnnotationProperty ;
+                      rdfs:range rdfs:Literal .
+
+
+###  http://purl.org/dc/terms/description
+dcterms:description rdf:type owl:AnnotationProperty ;
+                    rdfs:subPropertyOf dcterms:description .
+
+
+###  http://purl.org/dc/terms/hasFormat
+dcterms:hasFormat rdf:type owl:AnnotationProperty ;
+                  rdfs:subPropertyOf dcterms:relation .
+
+
+###  http://purl.org/dc/terms/hasPart
+dcterms:hasPart rdf:type owl:AnnotationProperty ;
+                rdfs:subPropertyOf dcterms:relation .
+
+
+###  http://purl.org/dc/terms/hasVersion
+dcterms:hasVersion rdf:type owl:AnnotationProperty ;
+                   rdfs:subPropertyOf dcterms:relation .
+
+
+###  http://purl.org/dc/terms/identifier
+dcterms:identifier rdf:type owl:AnnotationProperty ;
+                   rdfs:range rdfs:Literal .
+
+
+###  http://purl.org/dc/terms/isFormatOf
+dcterms:isFormatOf rdf:type owl:AnnotationProperty ;
+                   rdfs:subPropertyOf dcterms:relation .
+
+
+###  http://purl.org/dc/terms/isPartOf
+dcterms:isPartOf rdf:type owl:AnnotationProperty ;
+                 rdfs:subPropertyOf dcterms:relation .
+
+
+###  http://purl.org/dc/terms/isReferencedBy
+dcterms:isReferencedBy rdf:type owl:AnnotationProperty ;
+                       rdfs:subPropertyOf dcterms:relation .
+
+
+###  http://purl.org/dc/terms/isReplacedBy
+dcterms:isReplacedBy rdf:type owl:AnnotationProperty ;
+                     rdfs:subPropertyOf dcterms:relation .
+
+
+###  http://purl.org/dc/terms/isRequiredBy
+dcterms:isRequiredBy rdf:type owl:AnnotationProperty ;
+                     rdfs:subPropertyOf dcterms:relation .
+
+
+###  http://purl.org/dc/terms/isVersionOf
+dcterms:isVersionOf rdf:type owl:AnnotationProperty ;
+                    rdfs:subPropertyOf dcterms:relation .
+
+
+###  http://purl.org/dc/terms/issued
+dcterms:issued rdf:type owl:AnnotationProperty ;
+               rdfs:range rdfs:Literal .
+
+
+###  http://purl.org/dc/terms/language
+dcterms:language rdf:type owl:AnnotationProperty ;
+                 rdfs:subPropertyOf dcterms:language .
+
+
+###  http://purl.org/dc/terms/license
+dcterms:license rdf:type owl:AnnotationProperty ;
+                rdfs:subPropertyOf dcterms:rights .
+
+
+###  http://purl.org/dc/terms/modified
+dcterms:modified rdf:type owl:AnnotationProperty ;
+                 rdfs:range rdfs:Literal .
+
+
+###  http://purl.org/dc/terms/publisher
+dcterms:publisher rdf:type owl:AnnotationProperty ;
+                  rdfs:subPropertyOf dcterms:publisher .
+
+
+###  http://purl.org/dc/terms/references
+dcterms:references rdf:type owl:AnnotationProperty ;
+                   rdfs:subPropertyOf dcterms:relation .
+
+
+###  http://purl.org/dc/terms/relation
+dcterms:relation rdf:type owl:AnnotationProperty ;
+                 rdfs:subPropertyOf dcterms:relation .
+
+
+###  http://purl.org/dc/terms/replaces
+dcterms:replaces rdf:type owl:AnnotationProperty ;
+                 rdfs:subPropertyOf dcterms:relation .
+
+
+###  http://purl.org/dc/terms/requires
+dcterms:requires rdf:type owl:AnnotationProperty ;
+                 rdfs:subPropertyOf dcterms:relation .
+
+
+###  http://purl.org/dc/terms/rights
+dcterms:rights rdf:type owl:AnnotationProperty ;
+               rdfs:subPropertyOf dcterms:rights .
+
+
+###  http://purl.org/dc/terms/source
+dcterms:source rdf:type owl:AnnotationProperty ;
+               rdfs:subPropertyOf dcterms:relation ,
+                                  dcterms:source .
+
+
+###  http://purl.org/dc/terms/subject
+dcterms:subject rdf:type owl:AnnotationProperty ;
+                rdfs:subPropertyOf dcterms:subject .
+
+
+###  http://purl.org/dc/terms/tableOfContents
+dcterms:tableOfContents rdf:type owl:AnnotationProperty ;
+                        rdfs:subPropertyOf dcterms:description .
+
+
+###  http://purl.org/dc/terms/title
+dcterms:title rdf:type owl:AnnotationProperty ;
+              rdfs:range rdfs:Literal .
+
+
+###  http://purl.org/dc/terms/type
+dcterms:type rdf:type owl:AnnotationProperty ;
+             rdfs:subPropertyOf dcterms:type .
+
+
+###  http://purl.org/dc/terms/valid
+dcterms:valid rdf:type owl:AnnotationProperty ;
+              rdfs:range rdfs:Literal .
+
+
+###  http://purl.org/vocab/vann/preferredNamespacePrefix
+vann:preferredNamespacePrefix rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespaceUri
+vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
+
+
+###  http://xmlns.com/foaf/0.1/maker
+foaf:maker rdf:type owl:AnnotationProperty .
+
+
+###  http://xmlns.com/foaf/0.1/name
+foaf:name rdf:type owl:AnnotationProperty .
+
+
+###  http://xmlns.com/foaf/0.1/workInfohomePage
+foaf:workInfohomePage rdf:type owl:AnnotationProperty .
+
+
+###  https://purl.org/cbam/code
+properties:code rdf:type owl:AnnotationProperty .
+
+
+###  https://purl.org/cbam/destination_currency
+properties:destination_currency rdf:type owl:AnnotationProperty .
+
+
+###  https://purl.org/cbam/rate
+properties:rate rdf:type owl:AnnotationProperty .
+
+
+###  https://purl.org/cbam/source_currency
+properties:source_currency rdf:type owl:AnnotationProperty .
+
+
+###  https://purl.org/cbam/validity_date
+properties:validity_date rdf:type owl:AnnotationProperty .
+
+
+###  https://purl.org/cbam/validity_rate
+properties:validity_rate rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Datatypes
+#################################################################
+
+###  http://www.w3.org/2001/XMLSchema#date
+xsd:date rdf:type rdfs:Datatype .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://purl.org/dc/terms/alternative
+dcterms:alternative rdf:type owl:DatatypeProperty ;
+                    rdfs:subPropertyOf dcterms:title .
+
+
+###  http://purl.org/dc/terms/available
+dcterms:available rdf:type owl:DatatypeProperty ;
+                  rdfs:subPropertyOf dcterms:date .
+
+
+###  http://purl.org/dc/terms/bibliographicCitation
+dcterms:bibliographicCitation rdf:type owl:DatatypeProperty ;
+                              rdfs:subPropertyOf dcterms:identifier .
+
+
+###  http://purl.org/dc/terms/created
+dcterms:created rdf:type owl:DatatypeProperty ;
+                rdfs:subPropertyOf dcterms:date .
+
+
+###  http://purl.org/dc/terms/date
+dcterms:date rdf:type owl:DatatypeProperty ;
+             rdfs:subPropertyOf dcterms:date .
+
+
+###  http://purl.org/dc/terms/dateAccepted
+dcterms:dateAccepted rdf:type owl:DatatypeProperty ;
+                     rdfs:subPropertyOf dcterms:date .
+
+
+###  http://purl.org/dc/terms/dateCopyrighted
+dcterms:dateCopyrighted rdf:type owl:DatatypeProperty ;
+                        rdfs:subPropertyOf dcterms:date .
+
+
+###  http://purl.org/dc/terms/dateSubmitted
+dcterms:dateSubmitted rdf:type owl:DatatypeProperty ;
+                      rdfs:subPropertyOf dcterms:date .
+
+
+###  http://purl.org/dc/terms/identifier
+dcterms:identifier rdf:type owl:DatatypeProperty ;
+                   rdfs:subPropertyOf dcterms:identifier .
+
+
+###  http://purl.org/dc/terms/issued
+dcterms:issued rdf:type owl:DatatypeProperty ;
+               rdfs:subPropertyOf dcterms:date .
+
+
+###  http://purl.org/dc/terms/modified
+dcterms:modified rdf:type owl:DatatypeProperty ;
+                 rdfs:subPropertyOf dcterms:date .
+
+
+###  http://purl.org/dc/terms/title
+dcterms:title rdf:type owl:DatatypeProperty ;
+              rdfs:subPropertyOf dcterms:title .
+
+
+###  http://purl.org/dc/terms/valid
+dcterms:valid rdf:type owl:DatatypeProperty ;
+              rdfs:subPropertyOf dcterms:date .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  https://purl.org/cbam/ExchangeRate
+properties:ExchangeRate rdf:type owl:Class ;
+                        rdfs:comment "The exchange rate of the currency related to EURO. This is a baseline exchange rate defined by the EU commission." ;
+                        rdfs:label "ExchangeRate" .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  https://purl.org/cbam/ExchangeRate_AED_EUR_22_9_23
+properties:ExchangeRate_AED_EUR_22_9_23 rdf:type owl:NamedIndividual ,
+                                                 properties:ExchangeRate ;
+                                        properties:destination_currency properties:EUR ;
+                                        properties:rate "0,259332" ;
+                                        properties:source_currency properties:AED ;
+                                        properties:validity_rate "22/9/23" .
+
+
+###  https://purl.org/cbam/ExchangeRate_AFN_EUR_22_9_23
+properties:ExchangeRate_AFN_EUR_22_9_23 rdf:type owl:NamedIndividual ,
+                                                 properties:ExchangeRate ;
+                                        properties:destination_currency properties:EUR ;
+                                        properties:rate "0,010588" ;
+                                        properties:source_currency properties:AFN ;
+                                        properties:validity_rate "22/9/23" .
+
+
+###  https://purl.org/cbam/ExchangeRate_ALL_EUR_22_9_23
+properties:ExchangeRate_ALL_EUR_22_9_23 rdf:type owl:NamedIndividual ,
+                                                 properties:ExchangeRate ;
+                                        properties:destination_currency properties:EUR ;
+                                        properties:rate "0,008405" ;
+                                        properties:source_currency properties:ALL ;
+                                        properties:validity_rate "22/9/23" .
+
+
+###  https://purl.org/cbam/ExchangeRate_AMD_EUR_22_9_23
+properties:ExchangeRate_AMD_EUR_22_9_23 rdf:type owl:NamedIndividual ,
+                                                 properties:ExchangeRate ;
+                                        properties:destination_currency properties:EUR ;
+                                        properties:rate "0,002184" ;
+                                        properties:source_currency properties:AMD ;
+                                        properties:validity_rate "22/9/23" .
+
+
+###  https://purl.org/cbam/ExchangeRate_ANG_EUR_22_9_23
+properties:ExchangeRate_ANG_EUR_22_9_23 rdf:type owl:NamedIndividual ,
+                                                 properties:ExchangeRate ;
+                                        properties:destination_currency properties:EUR ;
+                                        properties:rate "0,005290" ;
+                                        properties:source_currency properties:ANG ;
+                                        properties:validity_rate "22/9/23" .
+
+
+###  https://purl.org/cbam/ExchangeRate_AOA_EUR_22_9_23
+properties:ExchangeRate_AOA_EUR_22_9_23 rdf:type owl:NamedIndividual ,
+                                                 properties:ExchangeRate ;
+                                        properties:destination_currency properties:EUR ;
+                                        properties:rate "0,002067" ;
+                                        properties:source_currency properties:AOA ;
+                                        properties:validity_rate "22/9/23" .
+
+
+###  https://purl.org/cbam/ExchangeRate_ARS_EUR_22_9_23
+properties:ExchangeRate_ARS_EUR_22_9_23 rdf:type owl:NamedIndividual ,
+                                                 properties:ExchangeRate ;
+                                        properties:destination_currency properties:EUR ;
+                                        properties:rate "0,007301" ;
+                                        properties:source_currency properties:ARS ;
+                                        properties:validity_rate "22/9/23" .
+
+
+###  https://purl.org/cbam/ExchangeRate_AUD_EUR_22_9_23
+properties:ExchangeRate_AUD_EUR_22_9_23 rdf:type owl:NamedIndividual ,
+                                                 properties:ExchangeRate ;
+                                        properties:destination_currency properties:EUR ;
+                                        properties:rate "0,659326" ;
+                                        properties:source_currency properties:AUD ;
+                                        properties:validity_rate "22/9/23" .
+
+
+###  https://purl.org/cbam/ExchangeRate_AWG_EUR_22_9_23
+properties:ExchangeRate_AWG_EUR_22_9_23 rdf:type owl:NamedIndividual ,
+                                                 properties:ExchangeRate ;
+                                        properties:destination_currency properties:EUR ;
+                                        properties:rate "0,005318" ;
+                                        properties:source_currency properties:AWG ;
+                                        properties:validity_rate "22/9/23" .
+
+
+###  https://purl.org/cbam/ExchangeRate_AZN_EUR_22_9_23
+properties:ExchangeRate_AZN_EUR_22_9_23 rdf:type owl:NamedIndividual ,
+                                                 properties:ExchangeRate ;
+                                        properties:destination_currency properties:EUR ;
+                                        properties:rate "0,558847" ;
+                                        properties:source_currency properties:AZN ;
+                                        properties:validity_rate "22/9/23" .
+
+
+###  https://purl.org/cbam/ExchangeRate_BAM_EUR_22_9_23
+properties:ExchangeRate_BAM_EUR_22_9_23 rdf:type owl:NamedIndividual ,
+                                                 properties:ExchangeRate ;
+                                        properties:destination_currency properties:EUR ;
+                                        properties:rate "0,511292" ;
+                                        properties:source_currency properties:BAM ;
+                                        properties:validity_rate "22/9/23" .
+
+
+###  https://purl.org/cbam/ExchangeRate_BBD_EUR_22_9_23
+properties:ExchangeRate_BBD_EUR_22_9_23 rdf:type owl:NamedIndividual ,
+                                                 properties:ExchangeRate ;
+                                        properties:destination_currency properties:EUR ;
+                                        properties:rate "0,472672" ;
+                                        properties:source_currency properties:BBD ;
+                                        properties:validity_rate "22/9/23" .
+
+
+###  https://purl.org/cbam/ExchangeRate_BDT_EUR_22_9_23
+properties:ExchangeRate_BDT_EUR_22_9_23 rdf:type owl:NamedIndividual ,
+                                                 properties:ExchangeRate ;
+                                        properties:destination_currency properties:EUR ;
+                                        properties:rate "0,010168" ;
+                                        properties:source_currency properties:BDT ;
+                                        properties:validity_rate "22/9/23" .
+
+
+###  https://purl.org/cbam/ExchangeRate_BGN_EUR_22_9_23
+properties:ExchangeRate_BGN_EUR_22_9_23 rdf:type owl:NamedIndividual ,
+                                                 properties:ExchangeRate ;
+                                        properties:destination_currency properties:EUR ;
+                                        properties:rate "0,511300" ;
+                                        properties:source_currency properties:BGN ;
+                                        properties:validity_rate "22/9/23" .
+
+
+###  https://purl.org/cbam/ExchangeRate_BHD_EUR_22_9_23
+properties:ExchangeRate_BHD_EUR_22_9_23 rdf:type owl:NamedIndividual ,
+                                                 properties:ExchangeRate ;
+                                        properties:destination_currency properties:EUR ;
+                                        properties:rate "2,529724" ;
+                                        properties:source_currency properties:BHD ;
+                                        properties:validity_rate "22/9/23" .
+
+
+###  https://purl.org/cbam/ExchangeRate_BIF_EUR_22_9_23
+properties:ExchangeRate_BIF_EUR_22_9_23 rdf:type owl:NamedIndividual ,
+                                                 properties:ExchangeRate ;
+                                        properties:destination_currency properties:EUR ;
+                                        properties:rate "0,000467" ;
+                                        properties:source_currency properties:BIF ;
+                                        properties:validity_rate "22/9/23" .
+
+
+###  https://purl.org/cbam/ExchangeRate_BMD_EUR_22_9_23
+properties:ExchangeRate_BMD_EUR_22_9_23 rdf:type owl:NamedIndividual ,
+                                                 properties:ExchangeRate ;
+                                        properties:destination_currency properties:EUR ;
+                                        properties:rate "0,949523" ;
+                                        properties:source_currency properties:BMD ;
+                                        properties:validity_rate "22/9/23" .
+
+
+###  https://purl.org/cbam/ExchangeRate_BND_EUR_22_9_23
+properties:ExchangeRate_BND_EUR_22_9_23 rdf:type owl:NamedIndividual ,
+                                                 properties:ExchangeRate ;
+                                        properties:destination_currency properties:EUR ;
+                                        properties:rate "0,688440" ;
+                                        properties:source_currency properties:BND ;
+                                        properties:validity_rate "22/9/23" .
+
+
+###  https://purl.org/cbam/ExchangeRate_BOB_EUR_22_9_23
+properties:ExchangeRate_BOB_EUR_22_9_23 rdf:type owl:NamedIndividual ,
+                                                 properties:ExchangeRate ;
+                                        properties:destination_currency properties:EUR ;
+                                        properties:rate "0,137422" ;
+                                        properties:source_currency properties:BOB ;
+                                        properties:validity_rate "22/9/23" .
+
+
+###  https://purl.org/cbam/ExchangeRate_BRL_EUR_22_9_23
+properties:ExchangeRate_BRL_EUR_22_9_23 rdf:type owl:NamedIndividual ,
+                                                 properties:ExchangeRate ;
+                                        properties:destination_currency properties:EUR ;
+                                        properties:rate "0,183827" ;
+                                        properties:source_currency properties:BRL ;
+                                        properties:validity_rate "22/9/23" .
+
+
+###  https://purl.org/cbam/ExchangeRate_BSD_EUR_22_9_23
+properties:ExchangeRate_BSD_EUR_22_9_23 rdf:type owl:NamedIndividual ,
+                                                 properties:ExchangeRate ;
+                                        properties:destination_currency properties:EUR ;
+                                        properties:rate "0,946119" ;
+                                        properties:source_currency properties:BSD ;
+                                        properties:validity_rate "22/9/23" .
+
+
+###  https://purl.org/cbam/ExchangeRate_BTN_EUR_22_9_23
+properties:ExchangeRate_BTN_EUR_22_9_23 rdf:type owl:NamedIndividual ,
+                                                 properties:ExchangeRate ;
+                                        properties:destination_currency properties:EUR ;
+                                        properties:rate "0,012099" ;
+                                        properties:source_currency properties:BTN ;
+                                        properties:validity_rate "22/9/23" .
+
+
+###  https://purl.org/cbam/ExchangeRate_BYN_EUR_22_9_23
+properties:ExchangeRate_BYN_EUR_22_9_23 rdf:type owl:NamedIndividual ,
+                                                 properties:ExchangeRate ;
+                                        properties:destination_currency properties:EUR ;
+                                        properties:rate "0,361873" ;
+                                        properties:source_currency properties:BYN ;
+                                        properties:validity_rate "22/9/23" .
+
+
+###  https://purl.org/cbam/ExchangeRate_BZD_EUR_22_9_23
+properties:ExchangeRate_BZD_EUR_22_9_23 rdf:type owl:NamedIndividual ,
+                                                 properties:ExchangeRate ;
+                                        properties:destination_currency properties:EUR ;
+                                        properties:rate "0,475971" ;
+                                        properties:source_currency properties:BZD ;
+                                        properties:validity_rate "22/9/23" .
+
+
+###  https://purl.org/cbam/ExchangeRate_CAD_EUR_22_9_23
+properties:ExchangeRate_CAD_EUR_22_9_23 rdf:type owl:NamedIndividual ,
+                                                 properties:ExchangeRate ;
+                                        properties:destination_currency properties:EUR ;
+                                        properties:rate "0,730194" ;
+                                        properties:source_currency properties:CAD ;
+                                        properties:validity_rate "22/9/23" .
+
+
+###  https://purl.org/cbam/ExchangeRate_CDF_EUR_22_9_23
+properties:ExchangeRate_CDF_EUR_22_9_23 rdf:type owl:NamedIndividual ,
+                                                 properties:ExchangeRate ;
+                                        properties:destination_currency properties:EUR ;
+                                        properties:rate "0,000474" ;
+                                        properties:source_currency properties:CDF ;
+                                        properties:validity_rate "22/9/23" .
+
+
+###  https://purl.org/cbam/ExchangeRate_CHF_EUR_22_9_23
+properties:ExchangeRate_CHF_EUR_22_9_23 rdf:type owl:NamedIndividual ,
+                                                 properties:ExchangeRate ;
+                                        properties:destination_currency properties:EUR ;
+                                        properties:rate "0,995322" ;
+                                        properties:source_currency properties:CHF ;
+                                        properties:validity_rate "22/9/23" .
+
+
+###  https://purl.org/cbam/ExchangeRate_CLP_EUR_22_9_23
+properties:ExchangeRate_CLP_EUR_22_9_23 rdf:type owl:NamedIndividual ,
+                                                 properties:ExchangeRate ;
+                                        properties:destination_currency properties:EUR ;
+                                        properties:rate "0,001090" ;
+                                        properties:source_currency properties:CLP ;
+                                        properties:validity_rate "22/9/23" .
+
+
+###  https://purl.org/cbam/ExchangeRate_CNY_EUR_22_9_23
+properties:ExchangeRate_CNY_EUR_22_9_23 rdf:type owl:NamedIndividual ,
+                                                 properties:ExchangeRate ;
+                                        properties:destination_currency properties:EUR ;
+                                        properties:rate "0,141267" ;
+                                        properties:source_currency properties:CNY ;
+                                        properties:validity_rate "22/9/23" .
+
+
+###  https://purl.org/cbam/ExchangeRate_COP_EUR_22_9_23
+properties:ExchangeRate_COP_EUR_22_9_23 rdf:type owl:NamedIndividual ,
+                                                 properties:ExchangeRate ;
+                                        properties:destination_currency properties:EUR ;
+                                        properties:rate "0,000224" ;
+                                        properties:source_currency properties:COP ;
+                                        properties:validity_rate "22/9/23" .
+
+
+###  https://purl.org/cbam/ExchangeRate_CRC_EUR_22_9_23
+properties:ExchangeRate_CRC_EUR_22_9_23 rdf:type owl:NamedIndividual ,
+                                                 properties:ExchangeRate ;
+                                        properties:destination_currency properties:EUR ;
+                                        properties:rate "0,001473" ;
+                                        properties:source_currency properties:CRC ;
+                                        properties:validity_rate "22/9/23" .
+
+
+###  https://purl.org/cbam/ExchangeRate_CUP_EUR_22_9_23
+properties:ExchangeRate_CUP_EUR_22_9_23 rdf:type owl:NamedIndividual ,
+                                                 properties:ExchangeRate ;
+                                        properties:destination_currency properties:EUR ;
+                                        properties:rate "0,039659" ;
+                                        properties:source_currency properties:CUP ;
+                                        properties:validity_rate "22/9/23" .
+
+
+###  https://purl.org/cbam/ExchangeRate_CVE_EUR_22_9_23
+properties:ExchangeRate_CVE_EUR_22_9_23 rdf:type owl:NamedIndividual ,
+                                                 properties:ExchangeRate ;
+                                        properties:destination_currency properties:EUR ;
+                                        properties:rate "0,009069" ;
+                                        properties:source_currency properties:CVE ;
+                                        properties:validity_rate "22/9/23" .
+
+
+###  https://purl.org/cbam/ExchangeRate_CZK_EUR_22_9_23
+properties:ExchangeRate_CZK_EUR_22_9_23 rdf:type owl:NamedIndividual ,
+                                                 properties:ExchangeRate ;
+                                        properties:destination_currency properties:EUR ;
+                                        properties:rate "0,040707" ;
+                                        properties:source_currency properties:CZK ;
+                                        properties:validity_rate "22/9/23" .
+
+
+###  https://purl.org/cbam/ExchangeRate_DJF_EUR_22_9_23
+properties:ExchangeRate_DJF_EUR_22_9_23 rdf:type owl:NamedIndividual ,
+                                                 properties:ExchangeRate ;
+                                        properties:destination_currency properties:EUR ;
+                                        properties:rate "0,005315" ;
+                                        properties:source_currency properties:DJF ;
+                                        properties:validity_rate "22/9/23" .
+
+
+###  https://purl.org/cbam/ExchangeRate_DKK_EUR_22_9_23
+properties:ExchangeRate_DKK_EUR_22_9_23 rdf:type owl:NamedIndividual ,
+                                                 properties:ExchangeRate ;
+                                        properties:destination_currency properties:EUR ;
+                                        properties:rate "0,134416" ;
+                                        properties:source_currency properties:DKK ;
+                                        properties:validity_rate "22/9/23" .
+
+
+###  https://purl.org/cbam/ExchangeRate_DOP_EUR_22_9_23
+properties:ExchangeRate_DOP_EUR_22_9_23 rdf:type owl:NamedIndividual ,
+                                                 properties:ExchangeRate ;
+                                        properties:destination_currency properties:EUR ;
+                                        properties:rate "0,017217" ;
+                                        properties:source_currency properties:DOP ;
+                                        properties:validity_rate "22/9/23" .
+
+
+###  https://purl.org/cbam/ExchangeRate_DZD_EUR_22_9_23
+properties:ExchangeRate_DZD_EUR_22_9_23 rdf:type owl:NamedIndividual ,
+                                                 properties:ExchangeRate ;
+                                        properties:destination_currency properties:EUR ;
+                                        properties:rate "0,006687" ;
+                                        properties:source_currency properties:DZD ;
+                                        properties:validity_rate "22/9/23" .
+
+
+###  https://purl.org/cbam/ExchangeRate_EGP_EUR_22_9_23
+properties:ExchangeRate_EGP_EUR_22_9_23 rdf:type owl:NamedIndividual ,
+                                                 properties:ExchangeRate ;
+                                        properties:destination_currency properties:EUR ;
+                                        properties:rate "0,049238" ;
+                                        properties:source_currency properties:EGP ;
+                                        properties:validity_rate "22/9/23" .
+
+
+###  https://purl.org/cbam/ExchangeRate_ERN_EUR_22_9_23
+properties:ExchangeRate_ERN_EUR_22_9_23 rdf:type owl:NamedIndividual ,
+                                                 properties:ExchangeRate ;
+                                        properties:destination_currency properties:EUR ;
+                                        properties:rate "0,062160" ;
+                                        properties:source_currency properties:ERN ;
+                                        properties:validity_rate "22/9/23" .
+
+
+###  https://purl.org/cbam/ExchangeRate_ETB_EUR_22_9_23
+properties:ExchangeRate_ETB_EUR_22_9_23 rdf:type owl:NamedIndividual ,
+                                                 properties:ExchangeRate ;
+                                        properties:destination_currency properties:EUR ;
+                                        properties:rate "0,018167" ;
+                                        properties:source_currency properties:ETB ;
+                                        properties:validity_rate "22/9/23" .
+
+
+###  https://purl.org/cbam/ExchangeRate_EUR_EUR_6_12_23
+properties:ExchangeRate_EUR_EUR_6_12_23 rdf:type owl:NamedIndividual ,
+                                                 properties:ExchangeRate ;
+                                        properties:destination_currency properties:EUR ;
+                                        properties:rate "1,000000" ;
+                                        properties:source_currency properties:EUR ;
+                                        properties:validity_rate "6/12/23" .
+
+
+###  https://purl.org/cbam/ExchangeRate_FJD_EUR_22_9_23
+properties:ExchangeRate_FJD_EUR_22_9_23 rdf:type owl:NamedIndividual ,
+                                                 properties:ExchangeRate ;
+                                        properties:destination_currency properties:EUR ;
+                                        properties:rate "2,319271" ;
+                                        properties:source_currency properties:FJD ;
+                                        properties:validity_rate "22/9/23" .
+
+
+###  https://purl.org/cbam/ExchangeRate_FKP_EUR_22_9_23
+properties:ExchangeRate_FKP_EUR_22_9_23 rdf:type owl:NamedIndividual ,
+                                                 properties:ExchangeRate ;
+                                        properties:destination_currency properties:EUR ;
+                                        properties:rate "1,172663" ;
+                                        properties:source_currency properties:FKP ;
+                                        properties:validity_rate "22/9/23" .
+
+
+###  https://purl.org/cbam/ExchangeRate_GBP_EUR_22_9_23
+properties:ExchangeRate_GBP_EUR_22_9_23 rdf:type owl:NamedIndividual ,
+                                                 properties:ExchangeRate ;
+                                        properties:destination_currency properties:EUR ;
+                                        properties:rate "1,172663" ;
+                                        properties:source_currency properties:GBP ;
+                                        properties:validity_rate "22/9/23" .
+
+
+###  https://purl.org/cbam/ExchangeRate_GEL_EUR_22_9_23
+properties:ExchangeRate_GEL_EUR_22_9_23 rdf:type owl:NamedIndividual ,
+                                                 properties:ExchangeRate ;
+                                        properties:destination_currency properties:EUR ;
+                                        properties:rate "0,325850" ;
+                                        properties:source_currency properties:GEL ;
+                                        properties:validity_rate "22/9/23" .
+
+
+###  https://purl.org/cbam/ExchangeRate_GHS_EUR_22_9_23
+properties:ExchangeRate_GHS_EUR_22_9_23 rdf:type owl:NamedIndividual ,
+                                                 properties:ExchangeRate ;
+                                        properties:destination_currency properties:EUR ;
+                                        properties:rate "0,113358" ;
+                                        properties:source_currency properties:GHS ;
+                                        properties:validity_rate "22/9/23" .
+
+
+###  https://purl.org/cbam/ExchangeRate_GIP_EUR_22_9_23
+properties:ExchangeRate_GIP_EUR_22_9_23 rdf:type owl:NamedIndividual ,
+                                                 properties:ExchangeRate ;
+                                        properties:destination_currency properties:EUR ;
+                                        properties:rate "1,172663" ;
+                                        properties:source_currency properties:GIP ;
+                                        properties:validity_rate "22/9/23" .
+
+
+###  https://purl.org/cbam/ExchangeRate_GMD_EUR_22_9_23
+properties:ExchangeRate_GMD_EUR_22_9_23 rdf:type owl:NamedIndividual ,
+                                                 properties:ExchangeRate ;
+                                        properties:destination_currency properties:EUR ;
+                                        properties:rate "0,016819" ;
+                                        properties:source_currency properties:GMD ;
+                                        properties:validity_rate "22/9/23" .
+
+
+###  https://purl.org/cbam/ExchangeRate_GNF_EUR_22_9_23
+properties:ExchangeRate_GNF_EUR_22_9_23 rdf:type owl:NamedIndividual ,
+                                                 properties:ExchangeRate ;
+                                        properties:destination_currency properties:EUR ;
+                                        properties:rate "0,000110" ;
+                                        properties:source_currency properties:GNF ;
+                                        properties:validity_rate "22/9/23" .
+
+
+###  https://purl.org/cbam/ExchangeRate_GTQ_EUR_22_9_23
+properties:ExchangeRate_GTQ_EUR_22_9_23 rdf:type owl:NamedIndividual ,
+                                                 properties:ExchangeRate ;
+                                        properties:destination_currency properties:EUR ;
+                                        properties:rate "0,122830" ;
+                                        properties:source_currency properties:GTQ ;
+                                        properties:validity_rate "22/9/23" .
+
+
+###  https://purl.org/cbam/ExchangeRate_GYD_EUR_22_9_23
+properties:ExchangeRate_GYD_EUR_22_9_23 rdf:type owl:NamedIndividual ,
+                                                 properties:ExchangeRate ;
+                                        properties:destination_currency properties:EUR ;
+                                        properties:rate "0,004550" ;
+                                        properties:source_currency properties:GYD ;
+                                        properties:validity_rate "22/9/23" .
+
+
+###  https://purl.org/cbam/ExchangeRate_HKD_EUR_22_9_23
+properties:ExchangeRate_HKD_EUR_22_9_23 rdf:type owl:NamedIndividual ,
+                                                 properties:ExchangeRate ;
+                                        properties:destination_currency properties:EUR ;
+                                        properties:rate "0,121284" ;
+                                        properties:source_currency properties:HKD ;
+                                        properties:validity_rate "22/9/23" .
+
+
+###  https://purl.org/cbam/ExchangeRate_HNL_EUR_22_9_23
+properties:ExchangeRate_HNL_EUR_22_9_23 rdf:type owl:NamedIndividual ,
+                                                 properties:ExchangeRate ;
+                                        properties:destination_currency properties:EUR ;
+                                        properties:rate "0,038761" ;
+                                        properties:source_currency properties:HNL ;
+                                        properties:validity_rate "22/9/23" .
+
+
+###  https://purl.org/cbam/ExchangeRate_HTG_EUR_22_9_23
+properties:ExchangeRate_HTG_EUR_22_9_23 rdf:type owl:NamedIndividual ,
+                                                 properties:ExchangeRate ;
+                                        properties:destination_currency properties:EUR ;
+                                        properties:rate "0,008190" ;
+                                        properties:source_currency properties:HTG ;
+                                        properties:validity_rate "22/9/23" .
+
+
+###  https://purl.org/cbam/ExchangeRate_HUF_EUR_22_9_23
+properties:ExchangeRate_HUF_EUR_22_9_23 rdf:type owl:NamedIndividual ,
+                                                 properties:ExchangeRate ;
+                                        properties:destination_currency properties:EUR ;
+                                        properties:rate "0,002556" ;
+                                        properties:source_currency properties:HUF ;
+                                        properties:validity_rate "22/9/23" .
+
+
+###  https://purl.org/cbam/ExchangeRate_IDR_EUR_22_9_23
+properties:ExchangeRate_IDR_EUR_22_9_23 rdf:type owl:NamedIndividual ,
+                                                 properties:ExchangeRate ;
+                                        properties:destination_currency properties:EUR ;
+                                        properties:rate "0,000064" ;
+                                        properties:source_currency properties:IDR ;
+                                        properties:validity_rate "22/9/23" .
+
+
+###  https://purl.org/cbam/ExchangeRate_ILS_EUR_22_9_23
+properties:ExchangeRate_ILS_EUR_22_9_23 rdf:type owl:NamedIndividual ,
+                                                 properties:ExchangeRate ;
+                                        properties:destination_currency properties:EUR ;
+                                        properties:rate "0,282925" ;
+                                        properties:source_currency properties:ILS ;
+                                        properties:validity_rate "22/9/23" .
+
+
+###  https://purl.org/cbam/ExchangeRate_INR_EUR_22_9_23
+properties:ExchangeRate_INR_EUR_22_9_23 rdf:type owl:NamedIndividual ,
+                                                 properties:ExchangeRate ;
+                                        properties:destination_currency properties:EUR ;
+                                        properties:rate "0,012094" ;
+                                        properties:source_currency properties:INR ;
+                                        properties:validity_rate "22/9/23" .
+
+
+###  https://purl.org/cbam/ExchangeRate_IQD_EUR_22_9_23
+properties:ExchangeRate_IQD_EUR_22_9_23 rdf:type owl:NamedIndividual ,
+                                                 properties:ExchangeRate ;
+                                        properties:destination_currency properties:EUR ;
+                                        properties:rate "0,000655" ;
+                                        properties:source_currency properties:IQD ;
+                                        properties:validity_rate "22/9/23" .
+
+
+###  https://purl.org/cbam/ExchangeRate_IRR_EUR_22_9_23
+properties:ExchangeRate_IRR_EUR_22_9_23 rdf:type owl:NamedIndividual ,
+                                                 properties:ExchangeRate ;
+                                        properties:destination_currency properties:EUR ;
+                                        properties:rate "0,000023" ;
+                                        properties:source_currency properties:IRR ;
+                                        properties:validity_rate "22/9/23" .
+
+
+###  https://purl.org/cbam/ExchangeRate_ISK_EUR_22_9_23
+properties:ExchangeRate_ISK_EUR_22_9_23 rdf:type owl:NamedIndividual ,
+                                                 properties:ExchangeRate ;
+                                        properties:destination_currency properties:EUR ;
+                                        properties:rate "0,007030" ;
+                                        properties:source_currency properties:ISK ;
+                                        properties:validity_rate "22/9/23" .
+
+
+###  https://purl.org/cbam/ExchangeRate_JMD_EUR_22_9_23
+properties:ExchangeRate_JMD_EUR_22_9_23 rdf:type owl:NamedIndividual ,
+                                                 properties:ExchangeRate ;
+                                        properties:destination_currency properties:EUR ;
+                                        properties:rate "0,006226" ;
+                                        properties:source_currency properties:JMD ;
+                                        properties:validity_rate "22/9/23" .
+
+
+###  https://purl.org/cbam/ExchangeRate_JOD_EUR_22_9_23
+properties:ExchangeRate_JOD_EUR_22_9_23 rdf:type owl:NamedIndividual ,
+                                                 properties:ExchangeRate ;
+                                        properties:destination_currency properties:EUR ;
+                                        properties:rate "1,343616" ;
+                                        properties:source_currency properties:JOD ;
+                                        properties:validity_rate "22/9/23" .
+
+
+###  https://purl.org/cbam/ExchangeRate_JPY_EUR_22_9_23
+properties:ExchangeRate_JPY_EUR_22_9_23 rdf:type owl:NamedIndividual ,
+                                                 properties:ExchangeRate ;
+                                        properties:destination_currency properties:EUR ;
+                                        properties:rate "0,007245" ;
+                                        properties:source_currency properties:JPY ;
+                                        properties:validity_rate "22/9/23" .
+
+
+###  https://purl.org/cbam/ExchangeRate_KES_EUR_22_9_23
+properties:ExchangeRate_KES_EUR_22_9_23 rdf:type owl:NamedIndividual ,
+                                                 properties:ExchangeRate ;
+                                        properties:destination_currency properties:EUR ;
+                                        properties:rate "0,008040" ;
+                                        properties:source_currency properties:KES ;
+                                        properties:validity_rate "22/9/23" .
+
+
+###  https://purl.org/cbam/ExchangeRate_KGS_EUR_22_9_23
+properties:ExchangeRate_KGS_EUR_22_9_23 rdf:type owl:NamedIndividual ,
+                                                 properties:ExchangeRate ;
+                                        properties:destination_currency properties:EUR ;
+                                        properties:rate "0,011298" ;
+                                        properties:source_currency properties:KGS ;
+                                        properties:validity_rate "22/9/23" .
+
+
+###  https://purl.org/cbam/ExchangeRate_KHR_EUR_22_9_23
+properties:ExchangeRate_KHR_EUR_22_9_23 rdf:type owl:NamedIndividual ,
+                                                 properties:ExchangeRate ;
+                                        properties:destination_currency properties:EUR ;
+                                        properties:rate "0,000231" ;
+                                        properties:source_currency properties:KHR ;
+                                        properties:validity_rate "22/9/23" .
+
+
+###  https://purl.org/cbam/ExchangeRate_KMF_EUR_22_9_23
+properties:ExchangeRate_KMF_EUR_22_9_23 rdf:type owl:NamedIndividual ,
+                                                 properties:ExchangeRate ;
+                                        properties:destination_currency properties:EUR ;
+                                        properties:rate "0,002033" ;
+                                        properties:source_currency properties:KMF ;
+                                        properties:validity_rate "22/9/23" .
+
+
+###  https://purl.org/cbam/ExchangeRate_KRW_EUR_22_9_23
+properties:ExchangeRate_KRW_EUR_22_9_23 rdf:type owl:NamedIndividual ,
+                                                 properties:ExchangeRate ;
+                                        properties:destination_currency properties:EUR ;
+                                        properties:rate "0,000736" ;
+                                        properties:source_currency properties:KRW ;
+                                        properties:validity_rate "22/9/23" .
+
+
+###  https://purl.org/cbam/ExchangeRate_KWD_EUR_22_9_23
+properties:ExchangeRate_KWD_EUR_22_9_23 rdf:type owl:NamedIndividual ,
+                                                 properties:ExchangeRate ;
+                                        properties:destination_currency properties:EUR ;
+                                        properties:rate "3,101929" ;
+                                        properties:source_currency properties:KWD ;
+                                        properties:validity_rate "22/9/23" .
+
+
+###  https://purl.org/cbam/ExchangeRate_KYD_EUR_22_9_23
+properties:ExchangeRate_KYD_EUR_22_9_23 rdf:type owl:NamedIndividual ,
+                                                 properties:ExchangeRate ;
+                                        properties:destination_currency properties:EUR ;
+                                        properties:rate "1,139601" ;
+                                        properties:source_currency properties:KYD ;
+                                        properties:validity_rate "22/9/23" .
+
+
+###  https://purl.org/cbam/ExchangeRate_KZT_EUR_22_9_23
+properties:ExchangeRate_KZT_EUR_22_9_23 rdf:type owl:NamedIndividual ,
+                                                 properties:ExchangeRate ;
+                                        properties:destination_currency properties:EUR ;
+                                        properties:rate "0,002067" ;
+                                        properties:source_currency properties:KZT ;
+                                        properties:validity_rate "22/9/23" .
+
+
+###  https://purl.org/cbam/ExchangeRate_LAK_EUR_22_9_23
+properties:ExchangeRate_LAK_EUR_22_9_23 rdf:type owl:NamedIndividual ,
+                                                 properties:ExchangeRate ;
+                                        properties:destination_currency properties:EUR ;
+                                        properties:rate "0,000066" ;
+                                        properties:source_currency properties:LAK ;
+                                        properties:validity_rate "22/9/23" .
+
+
+###  https://purl.org/cbam/ExchangeRate_LBP_EUR_22_9_23
+properties:ExchangeRate_LBP_EUR_22_9_23 rdf:type owl:NamedIndividual ,
+                                                 properties:ExchangeRate ;
+                                        properties:destination_currency properties:EUR ;
+                                        properties:rate "0,000630" ;
+                                        properties:source_currency properties:LBP ;
+                                        properties:validity_rate "22/9/23" .
+
+
+###  https://purl.org/cbam/ExchangeRate_LKR_EUR_22_9_23
+properties:ExchangeRate_LKR_EUR_22_9_23 rdf:type owl:NamedIndividual ,
+                                                 properties:ExchangeRate ;
+                                        properties:destination_currency properties:EUR ;
+                                        properties:rate "0,002915" ;
+                                        properties:source_currency properties:LKR ;
+                                        properties:validity_rate "22/9/23" .
+
+
+###  https://purl.org/cbam/ExchangeRate_LRD_EUR_22_9_23
+properties:ExchangeRate_LRD_EUR_22_9_23 rdf:type owl:NamedIndividual ,
+                                                 properties:ExchangeRate ;
+                                        properties:destination_currency properties:EUR ;
+                                        properties:rate "0,006213" ;
+                                        properties:source_currency properties:LRD ;
+                                        properties:validity_rate "22/9/23" .
+
+
+###  https://purl.org/cbam/ExchangeRate_LSL_EUR_22_9_23
+properties:ExchangeRate_LSL_EUR_22_9_23 rdf:type owl:NamedIndividual ,
+                                                 properties:ExchangeRate ;
+                                        properties:destination_currency properties:EUR ;
+                                        properties:rate "0,058148" ;
+                                        properties:source_currency properties:LSL ;
+                                        properties:validity_rate "22/9/23" .
+
+
+###  https://purl.org/cbam/ExchangeRate_LYD_EUR_22_9_23
+properties:ExchangeRate_LYD_EUR_22_9_23 rdf:type owl:NamedIndividual ,
+                                                 properties:ExchangeRate ;
+                                        properties:destination_currency properties:EUR ;
+                                        properties:rate "0,197834" ;
+                                        properties:source_currency properties:LYD ;
+                                        properties:validity_rate "22/9/23" .
+
+
+###  https://purl.org/cbam/ExchangeRate_MAD_EUR_22_9_23
+properties:ExchangeRate_MAD_EUR_22_9_23 rdf:type owl:NamedIndividual ,
+                                                 properties:ExchangeRate ;
+                                        properties:destination_currency properties:EUR ;
+                                        properties:rate "0,093588" ;
+                                        properties:source_currency properties:MAD ;
+                                        properties:validity_rate "22/9/23" .
+
+
+###  https://purl.org/cbam/ExchangeRate_MDL_EUR_22_9_23
+properties:ExchangeRate_MDL_EUR_22_9_23 rdf:type owl:NamedIndividual ,
+                                                 properties:ExchangeRate ;
+                                        properties:destination_currency properties:EUR ;
+                                        properties:rate "0,050331" ;
+                                        properties:source_currency properties:MDL ;
+                                        properties:validity_rate "22/9/23" .
+
+
+###  https://purl.org/cbam/ExchangeRate_MGA_EUR_22_9_23
+properties:ExchangeRate_MGA_EUR_22_9_23 rdf:type owl:NamedIndividual ,
+                                                 properties:ExchangeRate ;
+                                        properties:destination_currency properties:EUR ;
+                                        properties:rate "0,000232" ;
+                                        properties:source_currency properties:MGA ;
+                                        properties:validity_rate "22/9/23" .
+
+
+###  https://purl.org/cbam/ExchangeRate_MKD_EUR_22_9_23
+properties:ExchangeRate_MKD_EUR_22_9_23 rdf:type owl:NamedIndividual ,
+                                                 properties:ExchangeRate ;
+                                        properties:destination_currency properties:EUR ;
+                                        properties:rate "0,016228" ;
+                                        properties:source_currency properties:MKD ;
+                                        properties:validity_rate "22/9/23" .
+
+
+###  https://purl.org/cbam/ExchangeRate_MMK_EUR_22_9_23
+properties:ExchangeRate_MMK_EUR_22_9_23 rdf:type owl:NamedIndividual ,
+                                                 properties:ExchangeRate ;
+                                        properties:destination_currency properties:EUR ;
+                                        properties:rate "0,000493" ;
+                                        properties:source_currency properties:MMK ;
+                                        properties:validity_rate "22/9/23" .
+
+
+###  https://purl.org/cbam/ExchangeRate_MNT_EUR_22_9_23
+properties:ExchangeRate_MNT_EUR_22_9_23 rdf:type owl:NamedIndividual ,
+                                                 properties:ExchangeRate ;
+                                        properties:destination_currency properties:EUR ;
+                                        properties:rate "0,000301" ;
+                                        properties:source_currency properties:MNT ;
+                                        properties:validity_rate "22/9/23" .
+
+
+###  https://purl.org/cbam/ExchangeRate_MOP_EUR_22_9_23
+properties:ExchangeRate_MOP_EUR_22_9_23 rdf:type owl:NamedIndividual ,
+                                                 properties:ExchangeRate ;
+                                        properties:destination_currency properties:EUR ;
+                                        properties:rate "0,117719" ;
+                                        properties:source_currency properties:MOP ;
+                                        properties:validity_rate "22/9/23" .
+
+
+###  https://purl.org/cbam/ExchangeRate_MRU_EUR_22_9_23
+properties:ExchangeRate_MRU_EUR_22_9_23 rdf:type owl:NamedIndividual ,
+                                                 properties:ExchangeRate ;
+                                        properties:destination_currency properties:EUR ;
+                                        properties:rate "0,025775" ;
+                                        properties:source_currency properties:MRU ;
+                                        properties:validity_rate "22/9/23" .
+
+
+###  https://purl.org/cbam/ExchangeRate_MUR_EUR_22_9_23
+properties:ExchangeRate_MUR_EUR_22_9_23 rdf:type owl:NamedIndividual ,
+                                                 properties:ExchangeRate ;
+                                        properties:destination_currency properties:EUR ;
+                                        properties:rate "0,021509" ;
+                                        properties:source_currency properties:MUR ;
+                                        properties:validity_rate "22/9/23" .
+
+
+###  https://purl.org/cbam/ExchangeRate_MVR_EUR_22_9_23
+properties:ExchangeRate_MVR_EUR_22_9_23 rdf:type owl:NamedIndividual ,
+                                                 properties:ExchangeRate ;
+                                        properties:destination_currency properties:EUR ;
+                                        properties:rate "0,061867" ;
+                                        properties:source_currency properties:MVR ;
+                                        properties:validity_rate "22/9/23" .
+
+
+###  https://purl.org/cbam/ExchangeRate_MWK_EUR_22_9_23
+properties:ExchangeRate_MWK_EUR_22_9_23 rdf:type owl:NamedIndividual ,
+                                                 properties:ExchangeRate ;
+                                        properties:destination_currency properties:EUR ;
+                                        properties:rate "0,000985" ;
+                                        properties:source_currency properties:MWK ;
+                                        properties:validity_rate "22/9/23" .
+
+
+###  https://purl.org/cbam/ExchangeRate_MXN_EUR_22_9_23
+properties:ExchangeRate_MXN_EUR_22_9_23 rdf:type owl:NamedIndividual ,
+                                                 properties:ExchangeRate ;
+                                        properties:destination_currency properties:EUR ;
+                                        properties:rate "0,047199" ;
+                                        properties:source_currency properties:MXN ;
+                                        properties:validity_rate "22/9/23" .
+
+
+###  https://purl.org/cbam/ExchangeRate_MYR_EUR_22_9_23
+properties:ExchangeRate_MYR_EUR_22_9_23 rdf:type owl:NamedIndividual ,
+                                                 properties:ExchangeRate ;
+                                        properties:destination_currency properties:EUR ;
+                                        properties:rate "0,216081" ;
+                                        properties:source_currency properties:MYR ;
+                                        properties:validity_rate "22/9/23" .
+
+
+###  https://purl.org/cbam/ExchangeRate_MZN_EUR_22_9_23
+properties:ExchangeRate_MZN_EUR_22_9_23 rdf:type owl:NamedIndividual ,
+                                                 properties:ExchangeRate ;
+                                        properties:destination_currency properties:EUR ;
+                                        properties:rate "0,014918" ;
+                                        properties:source_currency properties:MZN ;
+                                        properties:validity_rate "22/9/23" .
+
+
+###  https://purl.org/cbam/ExchangeRate_NAD_EUR_22_9_23
+properties:ExchangeRate_NAD_EUR_22_9_23 rdf:type owl:NamedIndividual ,
+                                                 properties:ExchangeRate ;
+                                        properties:destination_currency properties:EUR ;
+                                        properties:rate "0,058159" ;
+                                        properties:source_currency properties:NAD ;
+                                        properties:validity_rate "22/9/23" .
+
+
+###  https://purl.org/cbam/ExchangeRate_NGN_EUR_22_9_23
+properties:ExchangeRate_NGN_EUR_22_9_23 rdf:type owl:NamedIndividual ,
+                                                 properties:ExchangeRate ;
+                                        properties:destination_currency properties:EUR ;
+                                        properties:rate "0,002243" ;
+                                        properties:source_currency properties:NGN ;
+                                        properties:validity_rate "22/9/23" .
+
+
+###  https://purl.org/cbam/ExchangeRate_NIO_EUR_22_9_23
+properties:ExchangeRate_NIO_EUR_22_9_23 rdf:type owl:NamedIndividual ,
+                                                 properties:ExchangeRate ;
+                                        properties:destination_currency properties:EUR ;
+                                        properties:rate "0,026532" ;
+                                        properties:source_currency properties:NIO ;
+                                        properties:validity_rate "22/9/23" .
+
+
+###  https://purl.org/cbam/ExchangeRate_NOK_EUR_22_9_23
+properties:ExchangeRate_NOK_EUR_22_9_23 rdf:type owl:NamedIndividual ,
+                                                 properties:ExchangeRate ;
+                                        properties:destination_currency properties:EUR ;
+                                        properties:rate "0,098984" ;
+                                        properties:source_currency properties:NOK ;
+                                        properties:validity_rate "22/9/23" .
+
+
+###  https://purl.org/cbam/ExchangeRate_NPR_EUR_22_9_23
+properties:ExchangeRate_NPR_EUR_22_9_23 rdf:type owl:NamedIndividual ,
+                                                 properties:ExchangeRate ;
+                                        properties:destination_currency properties:EUR ;
+                                        properties:rate "0,007533" ;
+                                        properties:source_currency properties:NPR ;
+                                        properties:validity_rate "22/9/23" .
+
+
+###  https://purl.org/cbam/ExchangeRate_NZD_EUR_22_9_23
+properties:ExchangeRate_NZD_EUR_22_9_23 rdf:type owl:NamedIndividual ,
+                                                 properties:ExchangeRate ;
+                                        properties:destination_currency properties:EUR ;
+                                        properties:rate "0,603064" ;
+                                        properties:source_currency properties:NZD ;
+                                        properties:validity_rate "22/9/23" .
+
+
+###  https://purl.org/cbam/ExchangeRate_OMR_EUR_22_9_23
+properties:ExchangeRate_OMR_EUR_22_9_23 rdf:type owl:NamedIndividual ,
+                                                 properties:ExchangeRate ;
+                                        properties:destination_currency properties:EUR ;
+                                        properties:rate "2,474819" ;
+                                        properties:source_currency properties:OMR ;
+                                        properties:validity_rate "22/9/23" .
+
+
+###  https://purl.org/cbam/ExchangeRate_PAB_EUR_22_9_23
+properties:ExchangeRate_PAB_EUR_22_9_23 rdf:type owl:NamedIndividual ,
+                                                 properties:ExchangeRate ;
+                                        properties:destination_currency properties:EUR ;
+                                        properties:rate "0,949668" ;
+                                        properties:source_currency properties:PAB ;
+                                        properties:validity_rate "22/9/23" .
+
+
+###  https://purl.org/cbam/ExchangeRate_PEN_EUR_22_9_23
+properties:ExchangeRate_PEN_EUR_22_9_23 rdf:type owl:NamedIndividual ,
+                                                 properties:ExchangeRate ;
+                                        properties:destination_currency properties:EUR ;
+                                        properties:rate "0,243297" ;
+                                        properties:source_currency properties:PEN ;
+                                        properties:validity_rate "22/9/23" .
+
+
+###  https://purl.org/cbam/ExchangeRate_PHP_EUR_22_9_23
+properties:ExchangeRate_PHP_EUR_22_9_23 rdf:type owl:NamedIndividual ,
+                                                 properties:ExchangeRate ;
+                                        properties:destination_currency properties:EUR ;
+                                        properties:rate "0,017448" ;
+                                        properties:source_currency properties:PHP ;
+                                        properties:validity_rate "22/9/23" .
+
+
+###  https://purl.org/cbam/ExchangeRate_PKR_EUR_22_9_23
+properties:ExchangeRate_PKR_EUR_22_9_23 rdf:type owl:NamedIndividual ,
+                                                 properties:ExchangeRate ;
+                                        properties:destination_currency properties:EUR ;
+                                        properties:rate "0,004633" ;
+                                        properties:source_currency properties:PKR ;
+                                        properties:validity_rate "22/9/23" .
+
+
+###  https://purl.org/cbam/ExchangeRate_PLN_EUR_22_9_23
+properties:ExchangeRate_PLN_EUR_22_9_23 rdf:type owl:NamedIndividual ,
+                                                 properties:ExchangeRate ;
+                                        properties:destination_currency properties:EUR ;
+                                        properties:rate "0,213397" ;
+                                        properties:source_currency properties:PLN ;
+                                        properties:validity_rate "22/9/23" .
+
+
+###  https://purl.org/cbam/ExchangeRate_PYG_EUR_22_9_23
+properties:ExchangeRate_PYG_EUR_22_9_23 rdf:type owl:NamedIndividual ,
+                                                 properties:ExchangeRate ;
+                                        properties:destination_currency properties:EUR ;
+                                        properties:rate "0,000136" ;
+                                        properties:source_currency properties:PYG ;
+                                        properties:validity_rate "22/9/23" .
+
+
+###  https://purl.org/cbam/ExchangeRate_QAR_EUR_22_9_23
+properties:ExchangeRate_QAR_EUR_22_9_23 rdf:type owl:NamedIndividual ,
+                                                 properties:ExchangeRate ;
+                                        properties:destination_currency properties:EUR ;
+                                        properties:rate "0,261647" ;
+                                        properties:source_currency properties:QAR ;
+                                        properties:validity_rate "22/9/23" .
+
+
+###  https://purl.org/cbam/ExchangeRate_RON_EUR_22_9_23
+properties:ExchangeRate_RON_EUR_22_9_23 rdf:type owl:NamedIndividual ,
+                                                 properties:ExchangeRate ;
+                                        properties:destination_currency properties:EUR ;
+                                        properties:rate "0,202786" ;
+                                        properties:source_currency properties:RON ;
+                                        properties:validity_rate "22/9/23" .
+
+
+###  https://purl.org/cbam/ExchangeRate_RSD_EUR_22_9_23
+properties:ExchangeRate_RSD_EUR_22_9_23 rdf:type owl:NamedIndividual ,
+                                                 properties:ExchangeRate ;
+                                        properties:destination_currency properties:EUR ;
+                                        properties:rate "0,008514" ;
+                                        properties:source_currency properties:RSD ;
+                                        properties:validity_rate "22/9/23" .
+
+
+###  https://purl.org/cbam/ExchangeRate_RUB_EUR_6_12_23
+properties:ExchangeRate_RUB_EUR_6_12_23 rdf:type owl:NamedIndividual ,
+                                                 properties:ExchangeRate ;
+                                        properties:destination_currency properties:EUR ;
+                                        properties:rate "0,011474" ;
+                                        properties:source_currency properties:RUB ;
+                                        properties:validity_rate "6/12/23" .
+
+
+###  https://purl.org/cbam/ExchangeRate_RWF_EUR_22_9_23
+properties:ExchangeRate_RWF_EUR_22_9_23 rdf:type owl:NamedIndividual ,
+                                                 properties:ExchangeRate ;
+                                        properties:destination_currency properties:EUR ;
+                                        properties:rate "0,000921" ;
+                                        properties:source_currency properties:RWF ;
+                                        properties:validity_rate "22/9/23" .
+
+
+###  https://purl.org/cbam/ExchangeRate_SAR_EUR_22_9_23
+properties:ExchangeRate_SAR_EUR_22_9_23 rdf:type owl:NamedIndividual ,
+                                                 properties:ExchangeRate ;
+                                        properties:destination_currency properties:EUR ;
+                                        properties:rate "0,253233" ;
+                                        properties:source_currency properties:SAR ;
+                                        properties:validity_rate "22/9/23" .
+
+
+###  https://purl.org/cbam/ExchangeRate_SBD_EUR_22_9_23
+properties:ExchangeRate_SBD_EUR_22_9_23 rdf:type owl:NamedIndividual ,
+                                                 properties:ExchangeRate ;
+                                        properties:destination_currency properties:EUR ;
+                                        properties:rate "8,585902" ;
+                                        properties:source_currency properties:SBD ;
+                                        properties:validity_rate "22/9/23" .
+
+
+###  https://purl.org/cbam/ExchangeRate_SCR_EUR_22_9_23
+properties:ExchangeRate_SCR_EUR_22_9_23 rdf:type owl:NamedIndividual ,
+                                                 properties:ExchangeRate ;
+                                        properties:destination_currency properties:EUR ;
+                                        properties:rate "0,066565" ;
+                                        properties:source_currency properties:SCR ;
+                                        properties:validity_rate "22/9/23" .
+
+
+###  https://purl.org/cbam/ExchangeRate_SDG_EUR_22_9_23
+properties:ExchangeRate_SDG_EUR_22_9_23 rdf:type owl:NamedIndividual ,
+                                                 properties:ExchangeRate ;
+                                        properties:destination_currency properties:EUR ;
+                                        properties:rate "0,001727" ;
+                                        properties:source_currency properties:SDG ;
+                                        properties:validity_rate "22/9/23" .
+
+
+###  https://purl.org/cbam/ExchangeRate_SEK_EUR_22_9_23
+properties:ExchangeRate_SEK_EUR_22_9_23 rdf:type owl:NamedIndividual ,
+                                                 properties:ExchangeRate ;
+                                        properties:destination_currency properties:EUR ;
+                                        properties:rate "0,094077" ;
+                                        properties:source_currency properties:SEK ;
+                                        properties:validity_rate "22/9/23" .
+
+
+###  https://purl.org/cbam/ExchangeRate_SGD_EUR_22_9_23
+properties:ExchangeRate_SGD_EUR_22_9_23 rdf:type owl:NamedIndividual ,
+                                                 properties:ExchangeRate ;
+                                        properties:destination_currency properties:EUR ;
+                                        properties:rate "0,689085" ;
+                                        properties:source_currency properties:SGD ;
+                                        properties:validity_rate "22/9/23" .
+
+
+###  https://purl.org/cbam/ExchangeRate_SHP_EUR_22_9_23
+properties:ExchangeRate_SHP_EUR_22_9_23 rdf:type owl:NamedIndividual ,
+                                                 properties:ExchangeRate ;
+                                        properties:destination_currency properties:EUR ;
+                                        properties:rate "1,172663" ;
+                                        properties:source_currency properties:SHP ;
+                                        properties:validity_rate "22/9/23" .
+
+
+###  https://purl.org/cbam/ExchangeRate_SLE_EUR_22_9_23
+properties:ExchangeRate_SLE_EUR_22_9_23 rdf:type owl:NamedIndividual ,
+                                                 properties:ExchangeRate ;
+                                        properties:destination_currency properties:EUR ;
+                                        properties:rate "0,066376" ;
+                                        properties:source_currency properties:SLE ;
+                                        properties:validity_rate "22/9/23" .
+
+
+###  https://purl.org/cbam/ExchangeRate_SRD_EUR_22_9_23
+properties:ExchangeRate_SRD_EUR_22_9_23 rdf:type owl:NamedIndividual ,
+                                                 properties:ExchangeRate ;
+                                        properties:destination_currency properties:EUR ;
+                                        properties:rate "0,038368" ;
+                                        properties:source_currency properties:SRD ;
+                                        properties:validity_rate "22/9/23" .
+
+
+###  https://purl.org/cbam/ExchangeRate_SSP_EUR_22_9_23
+properties:ExchangeRate_SSP_EUR_22_9_23 rdf:type owl:NamedIndividual ,
+                                                 properties:ExchangeRate ;
+                                        properties:destination_currency properties:EUR ;
+                                        properties:rate "0,001762" ;
+                                        properties:source_currency properties:SSP ;
+                                        properties:validity_rate "22/9/23" .
+
+
+###  https://purl.org/cbam/ExchangeRate_STN_EUR_22_9_23
+properties:ExchangeRate_STN_EUR_22_9_23 rdf:type owl:NamedIndividual ,
+                                                 properties:ExchangeRate ;
+                                        properties:destination_currency properties:EUR ;
+                                        properties:rate "0,040816" ;
+                                        properties:source_currency properties:STN ;
+                                        properties:validity_rate "22/9/23" .
+
+
+###  https://purl.org/cbam/ExchangeRate_SVC_EUR_22_9_23
+properties:ExchangeRate_SVC_EUR_22_9_23 rdf:type owl:NamedIndividual ,
+                                                 properties:ExchangeRate ;
+                                        properties:destination_currency properties:EUR ;
+                                        properties:rate "0,108533" ;
+                                        properties:source_currency properties:SVC ;
+                                        properties:validity_rate "22/9/23" .
+
+
+###  https://purl.org/cbam/ExchangeRate_SYP_EUR_22_9_23
+properties:ExchangeRate_SYP_EUR_22_9_23 rdf:type owl:NamedIndividual ,
+                                                 properties:ExchangeRate ;
+                                        properties:destination_currency properties:EUR ;
+                                        properties:rate "0,000340" ;
+                                        properties:source_currency properties:SYP ;
+                                        properties:validity_rate "22/9/23" .
+
+
+###  https://purl.org/cbam/ExchangeRate_SZL_EUR_22_9_23
+properties:ExchangeRate_SZL_EUR_22_9_23 rdf:type owl:NamedIndividual ,
+                                                 properties:ExchangeRate ;
+                                        properties:destination_currency properties:EUR ;
+                                        properties:rate "0,058158" ;
+                                        properties:source_currency properties:SZL ;
+                                        properties:validity_rate "22/9/23" .
+
+
+###  https://purl.org/cbam/ExchangeRate_THB_EUR_22_9_23
+properties:ExchangeRate_THB_EUR_22_9_23 rdf:type owl:NamedIndividual ,
+                                                 properties:ExchangeRate ;
+                                        properties:destination_currency properties:EUR ;
+                                        properties:rate "0,027132" ;
+                                        properties:source_currency properties:THB ;
+                                        properties:validity_rate "22/9/23" .
+
+
+###  https://purl.org/cbam/ExchangeRate_TJS_EUR_22_9_23
+properties:ExchangeRate_TJS_EUR_22_9_23 rdf:type owl:NamedIndividual ,
+                                                 properties:ExchangeRate ;
+                                        properties:destination_currency properties:EUR ;
+                                        properties:rate "0,085955" ;
+                                        properties:source_currency properties:TJS ;
+                                        properties:validity_rate "22/9/23" .
+
+
+###  https://purl.org/cbam/ExchangeRate_TMT_EUR_22_9_23
+properties:ExchangeRate_TMT_EUR_22_9_23 rdf:type owl:NamedIndividual ,
+                                                 properties:ExchangeRate ;
+                                        properties:destination_currency properties:EUR ;
+                                        properties:rate "0,271223" ;
+                                        properties:source_currency properties:TMT ;
+                                        properties:validity_rate "22/9/23" .
+
+
+###  https://purl.org/cbam/ExchangeRate_TND_EUR_22_9_23
+properties:ExchangeRate_TND_EUR_22_9_23 rdf:type owl:NamedIndividual ,
+                                                 properties:ExchangeRate ;
+                                        properties:destination_currency properties:EUR ;
+                                        properties:rate "0,309489" ;
+                                        properties:source_currency properties:TND ;
+                                        properties:validity_rate "22/9/23" .
+
+
+###  https://purl.org/cbam/ExchangeRate_TOP_EUR_22_9_23
+properties:ExchangeRate_TOP_EUR_22_9_23 rdf:type owl:NamedIndividual ,
+                                                 properties:ExchangeRate ;
+                                        properties:destination_currency properties:EUR ;
+                                        properties:rate "2,461236" ;
+                                        properties:source_currency properties:TOP ;
+                                        properties:validity_rate "22/9/23" .
+
+
+###  https://purl.org/cbam/ExchangeRate_TRY_EUR_22_9_23
+properties:ExchangeRate_TRY_EUR_22_9_23 rdf:type owl:NamedIndividual ,
+                                                 properties:ExchangeRate ;
+                                        properties:destination_currency properties:EUR ;
+                                        properties:rate "0,057442" ;
+                                        properties:source_currency properties:TRY ;
+                                        properties:validity_rate "22/9/23" .
+
+
+###  https://purl.org/cbam/ExchangeRate_TTD_EUR_22_9_23
+properties:ExchangeRate_TTD_EUR_22_9_23 rdf:type owl:NamedIndividual ,
+                                                 properties:ExchangeRate ;
+                                        properties:destination_currency properties:EUR ;
+                                        properties:rate "0,136460" ;
+                                        properties:source_currency properties:TTD ;
+                                        properties:validity_rate "22/9/23" .
+
+
+###  https://purl.org/cbam/ExchangeRate_TWD_EUR_22_9_23
+properties:ExchangeRate_TWD_EUR_22_9_23 rdf:type owl:NamedIndividual ,
+                                                 properties:ExchangeRate ;
+                                        properties:destination_currency properties:EUR ;
+                                        properties:rate "0,031897" ;
+                                        properties:source_currency properties:TWD ;
+                                        properties:validity_rate "22/9/23" .
+
+
+###  https://purl.org/cbam/ExchangeRate_TZS_EUR_22_9_23
+properties:ExchangeRate_TZS_EUR_22_9_23 rdf:type owl:NamedIndividual ,
+                                                 properties:ExchangeRate ;
+                                        properties:destination_currency properties:EUR ;
+                                        properties:rate "0,000413" ;
+                                        properties:source_currency properties:TZS ;
+                                        properties:validity_rate "22/9/23" .
+
+
+###  https://purl.org/cbam/ExchangeRate_UAH_EUR_22_9_23
+properties:ExchangeRate_UAH_EUR_22_9_23 rdf:type owl:NamedIndividual ,
+                                                 properties:ExchangeRate ;
+                                        properties:destination_currency properties:EUR ;
+                                        properties:rate "0,029395" ;
+                                        properties:source_currency properties:UAH ;
+                                        properties:validity_rate "22/9/23" .
+
+
+###  https://purl.org/cbam/ExchangeRate_UGX_EUR_22_9_23
+properties:ExchangeRate_UGX_EUR_22_9_23 rdf:type owl:NamedIndividual ,
+                                                 properties:ExchangeRate ;
+                                        properties:destination_currency properties:EUR ;
+                                        properties:rate "0,000257" ;
+                                        properties:source_currency properties:UGX ;
+                                        properties:validity_rate "22/9/23" .
+
+
+###  https://purl.org/cbam/ExchangeRate_USD_EUR_22_9_23
+properties:ExchangeRate_USD_EUR_22_9_23 rdf:type owl:NamedIndividual ,
+                                                 properties:ExchangeRate ;
+                                        properties:destination_currency properties:EUR ;
+                                        properties:rate "0,949668" ;
+                                        properties:source_currency properties:USD ;
+                                        properties:validity_rate "22/9/23" .
+
+
+###  https://purl.org/cbam/ExchangeRate_UYU_EUR_22_9_23
+properties:ExchangeRate_UYU_EUR_22_9_23 rdf:type owl:NamedIndividual ,
+                                                 properties:ExchangeRate ;
+                                        properties:destination_currency properties:EUR ;
+                                        properties:rate "0,023064" ;
+                                        properties:source_currency properties:UYU ;
+                                        properties:validity_rate "22/9/23" .
+
+
+###  https://purl.org/cbam/ExchangeRate_UZS_EUR_22_9_23
+properties:ExchangeRate_UZS_EUR_22_9_23 rdf:type owl:NamedIndividual ,
+                                                 properties:ExchangeRate ;
+                                        properties:destination_currency properties:EUR ;
+                                        properties:rate "0,000086" ;
+                                        properties:source_currency properties:UZS ;
+                                        properties:validity_rate "22/9/23" .
+
+
+###  https://purl.org/cbam/ExchangeRate_VES_EUR_22_9_23
+properties:ExchangeRate_VES_EUR_22_9_23 rdf:type owl:NamedIndividual ,
+                                                 properties:ExchangeRate ;
+                                        properties:destination_currency properties:EUR ;
+                                        properties:rate "0,131364" ;
+                                        properties:source_currency properties:VES ;
+                                        properties:validity_rate "22/9/23" .
+
+
+###  https://purl.org/cbam/ExchangeRate_VND_EUR_22_9_23
+properties:ExchangeRate_VND_EUR_22_9_23 rdf:type owl:NamedIndividual ,
+                                                 properties:ExchangeRate ;
+                                        properties:destination_currency properties:EUR ;
+                                        properties:rate "0,000040" ;
+                                        properties:source_currency properties:VND ;
+                                        properties:validity_rate "22/9/23" .
+
+
+###  https://purl.org/cbam/ExchangeRate_VUV_EUR_22_9_23
+properties:ExchangeRate_VUV_EUR_22_9_23 rdf:type owl:NamedIndividual ,
+                                                 properties:ExchangeRate ;
+                                        properties:destination_currency properties:EUR ;
+                                        properties:rate "0,008091" ;
+                                        properties:source_currency properties:VUV ;
+                                        properties:validity_rate "22/9/23" .
+
+
+###  https://purl.org/cbam/ExchangeRate_WST_EUR_22_9_23
+properties:ExchangeRate_WST_EUR_22_9_23 rdf:type owl:NamedIndividual ,
+                                                 properties:ExchangeRate ;
+                                        properties:destination_currency properties:EUR ;
+                                        properties:rate "2,828214" ;
+                                        properties:source_currency properties:WST ;
+                                        properties:validity_rate "22/9/23" .
+
+
+###  https://purl.org/cbam/ExchangeRate_XAF_EUR_22_9_23
+properties:ExchangeRate_XAF_EUR_22_9_23 rdf:type owl:NamedIndividual ,
+                                                 properties:ExchangeRate ;
+                                        properties:destination_currency properties:EUR ;
+                                        properties:rate "0,001524" ;
+                                        properties:source_currency properties:XAF ;
+                                        properties:validity_rate "22/9/23" .
+
+
+###  https://purl.org/cbam/ExchangeRate_XCD_EUR_22_9_23
+properties:ExchangeRate_XCD_EUR_22_9_23 rdf:type owl:NamedIndividual ,
+                                                 properties:ExchangeRate ;
+                                        properties:destination_currency properties:EUR ;
+                                        properties:rate "0,351396" ;
+                                        properties:source_currency properties:XCD ;
+                                        properties:validity_rate "22/9/23" .
+
+
+###  https://purl.org/cbam/ExchangeRate_XOF_EUR_22_9_23
+properties:ExchangeRate_XOF_EUR_22_9_23 rdf:type owl:NamedIndividual ,
+                                                 properties:ExchangeRate ;
+                                        properties:destination_currency properties:EUR ;
+                                        properties:rate "0,001524" ;
+                                        properties:source_currency properties:XOF ;
+                                        properties:validity_rate "22/9/23" .
+
+
+###  https://purl.org/cbam/ExchangeRate_XPF_EUR_22_9_23
+properties:ExchangeRate_XPF_EUR_22_9_23 rdf:type owl:NamedIndividual ,
+                                                 properties:ExchangeRate ;
+                                        properties:destination_currency properties:EUR ;
+                                        properties:rate "0,119332" ;
+                                        properties:source_currency properties:XPF ;
+                                        properties:validity_rate "22/9/23" .
+
+
+###  https://purl.org/cbam/ExchangeRate_YER_EUR_6_12_23
+properties:ExchangeRate_YER_EUR_6_12_23 rdf:type owl:NamedIndividual ,
+                                                 properties:ExchangeRate ;
+                                        properties:destination_currency properties:EUR ;
+                                        properties:rate "0,003387" ;
+                                        properties:source_currency properties:YER ;
+                                        properties:validity_rate "6/12/23" .
+
+
+###  https://purl.org/cbam/ExchangeRate_ZAR_EUR_22_9_23
+properties:ExchangeRate_ZAR_EUR_22_9_23 rdf:type owl:NamedIndividual ,
+                                                 properties:ExchangeRate ;
+                                        properties:destination_currency properties:EUR ;
+                                        properties:rate "0,058110" ;
+                                        properties:source_currency properties:ZAR ;
+                                        properties:validity_rate "22/9/23" .
+
+
+###  https://purl.org/cbam/ExchangeRate_ZMW_EUR_22_9_23
+properties:ExchangeRate_ZMW_EUR_22_9_23 rdf:type owl:NamedIndividual ,
+                                                 properties:ExchangeRate ;
+                                        properties:destination_currency properties:EUR ;
+                                        properties:rate "0,055805" ;
+                                        properties:source_currency properties:ZMW ;
+                                        properties:validity_rate "22/9/23" .
+
+
+###  https://purl.org/cbam/ExchangeRate_ZWL_EUR_22_9_23
+properties:ExchangeRate_ZWL_EUR_22_9_23 rdf:type owl:NamedIndividual ,
+                                                 properties:ExchangeRate ;
+                                        properties:destination_currency properties:EUR ;
+                                        properties:rate "0,002451" ;
+                                        properties:source_currency properties:ZWL ;
+                                        properties:validity_rate "22/9/23" .
+
+
+###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi

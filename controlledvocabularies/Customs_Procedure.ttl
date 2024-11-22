@@ -1,78 +1,478 @@
-@prefix properties: <https://purl.archive.org/cbam/> .
+@prefix : <https://purl.org/cbam/Customs_Procedure/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix vocabulary: <https://purl.archive.org/cbam/Customs_Procedure/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix properties: <https://purl.org/cbam/> .
+@prefix vocabulary: <https://purl.org/cbam/Customs_Procedure/> .
+@base <https://purl.org/cbam/Customs_Procedure/> .
 
-vocabulary:Customs_Procedure a rdfs:Class ;
-    rdfs:label "Customs Procedure" .
+<https://purl.org/cbam/Customs_Procedure/> rdf:type owl:Ontology ;
+                                            owl:versionIRI <https://purl.org/cbam/Customs_Procedure/1.0> ;
+                                            dcterms:abstract "The Customs Procedure Code List in the CBAM Report" ;
+                                            dcterms:accessRights "This ontology is licensed under the Creative Commons Attribution-NonCommercial 4.0 International License (CC BY-NC 4.0). It allows non-commercial use, sharing, and adaptation of the ontology, as long as users provide clear credit to the creator by citing the ontology's title, creator, and license information. Commercial use is strictly prohibited." ;
+                                            dcterms:bibliographicCitation "OK4I - Ontologies and Knowledge Graphs for Industry, July 15–19, 2024, Enschede, Netherlands - <https://www.utwente.nl/en/eemcs/fois2024/resources/papers/duque-et-al-ontology-network-for-the-standardization-of-the-eu-cbam-report-data.pdf>" ;
+                                            dcterms:contributor [ foaf:name "Jesualdo Tomás Fernández Breis"
+                                                                ] ,
+                                                                [ foaf:name "Astrid Duque Ramos"
+                                                                ] ;
+                                            dcterms:created "01/06/2024"^^rdfs:Literal ;
+                                            dcterms:creator [ foaf:name "Jesualdo Tomás Fernández Breis"
+                                                            ] ;
+                                            dcterms:description "This ontology represents the code list for the 'Customs Procedure' as defined by the Carbon Border Adjustment Mechanism (CBAM) Report." ;
+                                            dcterms:hasVersion "<https://purl.org/cbam/Customs_Procedure/1.0>"^^xsd:anyURI ;
+                                            dcterms:issued "21/11/2024"^^xsd:date ;
+                                            dcterms:license "<http://creativecommons.org/licenses/by/4.0/>" ;
+                                            dcterms:modified "21/11/2024"^^xsd:date ;
+                                            dcterms:publisher "Siemens Energy" ;
+                                            dcterms:source "Report Structure ver 18.0.xlsx  <https://taxation-customs.ec.europa.eu/carbon-border-adjustment-mechanism_en#where-to-report>" ;
+                                            dcterms:title "Customs Procedure"^^rdfs:Literal ;
+                                            vann:preferredNamespacePrefix "<https://purl.org/cbam/Customs_Procedure/>" ;
+                                            vann:preferredNamespaceUri "<https://purl.org/cbam/Customs_Procedure/>" .
 
-vocabulary:1 a vocabulary:Customs_Procedure ;
-    rdfs:label "Release for free circulation of goods",
-        "Release for free circulation of goods " ;
-    properties:code "1" ;
-    properties:procedure_status "previous",
-        "requested" ;
-    properties:validity_date "1/1/23" .
+#################################################################
+#    Annotation properties
+#################################################################
 
-vocabulary:40 a vocabulary:Customs_Procedure ;
-    rdfs:label " Simultaneous release for free circulation and home use of goods" ;
-    properties:code "40" ;
-    properties:procedure_status "previous",
-        "requested" ;
-    properties:validity_date "1/1/23" .
+###  http://purl.org/dc/dcam/rangeIncludes
+<http://purl.org/dc/dcam/rangeIncludes> rdf:type owl:AnnotationProperty .
 
-vocabulary:42 a vocabulary:Customs_Procedure ;
-    rdfs:label " Simultaneous release for free circulation and home use of goods which are the subject of a VAT-exempt supply to another Member State and, when applicable, an excise-duty suspension" ;
-    properties:code "42" ;
-    properties:procedure_status "previous",
-        "requested" ;
-    properties:validity_date "1/1/23" .
 
-vocabulary:43 a vocabulary:Customs_Procedure ;
-    rdfs:label "Simultaneous release for free circulation and home use of goods subject to specific measures connected with the collection of an amount during the transitional period following the accession of new Member States." ;
-    properties:code "43" ;
-    properties:procedure_status "requested" ;
-    properties:validity_date "1/1/23" .
+###  http://purl.org/dc/terms/abstract
+dcterms:abstract rdf:type owl:AnnotationProperty ;
+                 rdfs:subPropertyOf dcterms:description .
 
-vocabulary:44 a vocabulary:Customs_Procedure ;
-    rdfs:label "End use " ;
-    properties:code "44" ;
-    properties:procedure_status "requested" ;
-    properties:validity_date "1/1/23" .
 
-vocabulary:45 a vocabulary:Customs_Procedure ;
-    rdfs:label "Release of goods for free circulation and partial entry for home use for either VAT or excise duties and their placing in a warehouse other than customs warehouses." ;
-    properties:code "45" ;
-    properties:procedure_status "previous",
-        "requested" ;
-    properties:validity_date "1/1/23" .
+###  http://purl.org/dc/terms/accessRights
+dcterms:accessRights rdf:type owl:AnnotationProperty ;
+                     rdfs:subPropertyOf dcterms:rights .
 
-vocabulary:46 a vocabulary:Customs_Procedure ;
-    rdfs:label "Import of processed products obtained from equivalent goods under the outward- processing procedure before exportation of goods they are replacing. " ;
-    properties:code "46" ;
-    properties:procedure_status "requested" ;
-    properties:validity_date "1/1/23" .
 
-vocabulary:48 a vocabulary:Customs_Procedure ;
-    rdfs:label "Entry for home use with simultaneous release for free circulation of replacement products under outward processing prior to the export of the defective goods." ;
-    properties:code "48" ;
-    properties:procedure_status "requested" ;
-    properties:validity_date "1/1/23" .
+###  http://purl.org/dc/terms/alternative
+dcterms:alternative rdf:type owl:AnnotationProperty ;
+                    rdfs:range rdfs:Literal .
 
-vocabulary:51 a vocabulary:Customs_Procedure ;
-    rdfs:label "Inward processing procedure (suspension system)." ;
-    properties:code "51" ;
-    properties:procedure_status "previous" ;
-    properties:validity_date "1/1/23" .
 
-vocabulary:54 a vocabulary:Customs_Procedure ;
-    rdfs:label "Inward processing (suspension system) in another Member State (without their being released for free circulation in that Member State)" ;
-    properties:code "54" ;
-    properties:procedure_status "previous" ;
-    properties:validity_date "1/1/23" .
+###  http://purl.org/dc/terms/available
+dcterms:available rdf:type owl:AnnotationProperty ;
+                  rdfs:range rdfs:Literal .
 
-vocabulary:7 a vocabulary:Customs_Procedure ;
-    rdfs:label "Release of goods for free circulation simultaneously placed under a warehousing" ;
-    properties:code "7" ;
-    properties:procedure_status "requested" ;
-    properties:validity_date "1/1/23" .
 
+###  http://purl.org/dc/terms/bibliographicCitation
+dcterms:bibliographicCitation rdf:type owl:AnnotationProperty ;
+                              rdfs:range rdfs:Literal .
+
+
+###  http://purl.org/dc/terms/conformsTo
+dcterms:conformsTo rdf:type owl:AnnotationProperty ;
+                   rdfs:subPropertyOf dcterms:relation .
+
+
+###  http://purl.org/dc/terms/contributor
+dcterms:contributor rdf:type owl:AnnotationProperty ;
+                    rdfs:subPropertyOf dcterms:contributor .
+
+
+###  http://purl.org/dc/terms/created
+dcterms:created rdf:type owl:AnnotationProperty ;
+                rdfs:range rdfs:Literal .
+
+
+###  http://purl.org/dc/terms/creator
+dcterms:creator rdf:type owl:AnnotationProperty ;
+                rdfs:subPropertyOf dcterms:contributor ,
+                                   dcterms:creator .
+
+
+###  http://purl.org/dc/terms/date
+dcterms:date rdf:type owl:AnnotationProperty ;
+             rdfs:range rdfs:Literal .
+
+
+###  http://purl.org/dc/terms/dateAccepted
+dcterms:dateAccepted rdf:type owl:AnnotationProperty ;
+                     rdfs:range rdfs:Literal .
+
+
+###  http://purl.org/dc/terms/dateCopyrighted
+dcterms:dateCopyrighted rdf:type owl:AnnotationProperty ;
+                        rdfs:range rdfs:Literal .
+
+
+###  http://purl.org/dc/terms/dateSubmitted
+dcterms:dateSubmitted rdf:type owl:AnnotationProperty ;
+                      rdfs:range rdfs:Literal .
+
+
+###  http://purl.org/dc/terms/description
+dcterms:description rdf:type owl:AnnotationProperty ;
+                    rdfs:subPropertyOf dcterms:description .
+
+
+###  http://purl.org/dc/terms/hasFormat
+dcterms:hasFormat rdf:type owl:AnnotationProperty ;
+                  rdfs:subPropertyOf dcterms:relation .
+
+
+###  http://purl.org/dc/terms/hasPart
+dcterms:hasPart rdf:type owl:AnnotationProperty ;
+                rdfs:subPropertyOf dcterms:relation .
+
+
+###  http://purl.org/dc/terms/hasVersion
+dcterms:hasVersion rdf:type owl:AnnotationProperty ;
+                   rdfs:subPropertyOf dcterms:relation .
+
+
+###  http://purl.org/dc/terms/identifier
+dcterms:identifier rdf:type owl:AnnotationProperty ;
+                   rdfs:range rdfs:Literal .
+
+
+###  http://purl.org/dc/terms/isFormatOf
+dcterms:isFormatOf rdf:type owl:AnnotationProperty ;
+                   rdfs:subPropertyOf dcterms:relation .
+
+
+###  http://purl.org/dc/terms/isPartOf
+dcterms:isPartOf rdf:type owl:AnnotationProperty ;
+                 rdfs:subPropertyOf dcterms:relation .
+
+
+###  http://purl.org/dc/terms/isReferencedBy
+dcterms:isReferencedBy rdf:type owl:AnnotationProperty ;
+                       rdfs:subPropertyOf dcterms:relation .
+
+
+###  http://purl.org/dc/terms/isReplacedBy
+dcterms:isReplacedBy rdf:type owl:AnnotationProperty ;
+                     rdfs:subPropertyOf dcterms:relation .
+
+
+###  http://purl.org/dc/terms/isRequiredBy
+dcterms:isRequiredBy rdf:type owl:AnnotationProperty ;
+                     rdfs:subPropertyOf dcterms:relation .
+
+
+###  http://purl.org/dc/terms/isVersionOf
+dcterms:isVersionOf rdf:type owl:AnnotationProperty ;
+                    rdfs:subPropertyOf dcterms:relation .
+
+
+###  http://purl.org/dc/terms/issued
+dcterms:issued rdf:type owl:AnnotationProperty ;
+               rdfs:range rdfs:Literal .
+
+
+###  http://purl.org/dc/terms/language
+dcterms:language rdf:type owl:AnnotationProperty ;
+                 rdfs:subPropertyOf dcterms:language .
+
+
+###  http://purl.org/dc/terms/license
+dcterms:license rdf:type owl:AnnotationProperty ;
+                rdfs:subPropertyOf dcterms:rights .
+
+
+###  http://purl.org/dc/terms/modified
+dcterms:modified rdf:type owl:AnnotationProperty ;
+                 rdfs:range rdfs:Literal .
+
+
+###  http://purl.org/dc/terms/publisher
+dcterms:publisher rdf:type owl:AnnotationProperty ;
+                  rdfs:subPropertyOf dcterms:publisher .
+
+
+###  http://purl.org/dc/terms/references
+dcterms:references rdf:type owl:AnnotationProperty ;
+                   rdfs:subPropertyOf dcterms:relation .
+
+
+###  http://purl.org/dc/terms/relation
+dcterms:relation rdf:type owl:AnnotationProperty ;
+                 rdfs:subPropertyOf dcterms:relation .
+
+
+###  http://purl.org/dc/terms/replaces
+dcterms:replaces rdf:type owl:AnnotationProperty ;
+                 rdfs:subPropertyOf dcterms:relation .
+
+
+###  http://purl.org/dc/terms/requires
+dcterms:requires rdf:type owl:AnnotationProperty ;
+                 rdfs:subPropertyOf dcterms:relation .
+
+
+###  http://purl.org/dc/terms/rights
+dcterms:rights rdf:type owl:AnnotationProperty ;
+               rdfs:subPropertyOf dcterms:rights .
+
+
+###  http://purl.org/dc/terms/source
+dcterms:source rdf:type owl:AnnotationProperty ;
+               rdfs:subPropertyOf dcterms:relation ,
+                                  dcterms:source .
+
+
+###  http://purl.org/dc/terms/subject
+dcterms:subject rdf:type owl:AnnotationProperty ;
+                rdfs:subPropertyOf dcterms:subject .
+
+
+###  http://purl.org/dc/terms/tableOfContents
+dcterms:tableOfContents rdf:type owl:AnnotationProperty ;
+                        rdfs:subPropertyOf dcterms:description .
+
+
+###  http://purl.org/dc/terms/title
+dcterms:title rdf:type owl:AnnotationProperty ;
+              rdfs:range rdfs:Literal .
+
+
+###  http://purl.org/dc/terms/type
+dcterms:type rdf:type owl:AnnotationProperty ;
+             rdfs:subPropertyOf dcterms:type .
+
+
+###  http://purl.org/dc/terms/valid
+dcterms:valid rdf:type owl:AnnotationProperty ;
+              rdfs:range rdfs:Literal .
+
+
+###  http://purl.org/vocab/vann/preferredNamespacePrefix
+vann:preferredNamespacePrefix rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespaceUri
+vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
+
+
+###  http://xmlns.com/foaf/0.1/maker
+foaf:maker rdf:type owl:AnnotationProperty .
+
+
+###  http://xmlns.com/foaf/0.1/name
+foaf:name rdf:type owl:AnnotationProperty .
+
+
+###  http://xmlns.com/foaf/0.1/workInfohomePage
+foaf:workInfohomePage rdf:type owl:AnnotationProperty .
+
+
+###  https://purl.org/cbam/code
+properties:code rdf:type owl:AnnotationProperty .
+
+
+###  https://purl.org/cbam/procedure_status
+properties:procedure_status rdf:type owl:AnnotationProperty .
+
+
+###  https://purl.org/cbam/validity_date
+properties:validity_date rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Datatypes
+#################################################################
+
+###  http://www.w3.org/2001/XMLSchema#date
+xsd:date rdf:type rdfs:Datatype .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://purl.org/dc/terms/alternative
+dcterms:alternative rdf:type owl:DatatypeProperty ;
+                    rdfs:subPropertyOf dcterms:title .
+
+
+###  http://purl.org/dc/terms/available
+dcterms:available rdf:type owl:DatatypeProperty ;
+                  rdfs:subPropertyOf dcterms:date .
+
+
+###  http://purl.org/dc/terms/bibliographicCitation
+dcterms:bibliographicCitation rdf:type owl:DatatypeProperty ;
+                              rdfs:subPropertyOf dcterms:identifier .
+
+
+###  http://purl.org/dc/terms/created
+dcterms:created rdf:type owl:DatatypeProperty ;
+                rdfs:subPropertyOf dcterms:date .
+
+
+###  http://purl.org/dc/terms/date
+dcterms:date rdf:type owl:DatatypeProperty ;
+             rdfs:subPropertyOf dcterms:date .
+
+
+###  http://purl.org/dc/terms/dateAccepted
+dcterms:dateAccepted rdf:type owl:DatatypeProperty ;
+                     rdfs:subPropertyOf dcterms:date .
+
+
+###  http://purl.org/dc/terms/dateCopyrighted
+dcterms:dateCopyrighted rdf:type owl:DatatypeProperty ;
+                        rdfs:subPropertyOf dcterms:date .
+
+
+###  http://purl.org/dc/terms/dateSubmitted
+dcterms:dateSubmitted rdf:type owl:DatatypeProperty ;
+                      rdfs:subPropertyOf dcterms:date .
+
+
+###  http://purl.org/dc/terms/identifier
+dcterms:identifier rdf:type owl:DatatypeProperty ;
+                   rdfs:subPropertyOf dcterms:identifier .
+
+
+###  http://purl.org/dc/terms/issued
+dcterms:issued rdf:type owl:DatatypeProperty ;
+               rdfs:subPropertyOf dcterms:date .
+
+
+###  http://purl.org/dc/terms/modified
+dcterms:modified rdf:type owl:DatatypeProperty ;
+                 rdfs:subPropertyOf dcterms:date .
+
+
+###  http://purl.org/dc/terms/title
+dcterms:title rdf:type owl:DatatypeProperty ;
+              rdfs:subPropertyOf dcterms:title .
+
+
+###  http://purl.org/dc/terms/valid
+dcterms:valid rdf:type owl:DatatypeProperty ;
+              rdfs:subPropertyOf dcterms:date .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  https://purl.org/cbam/Customs_Procedure/Customs_Procedure
+vocabulary:Customs_Procedure rdf:type owl:Class ;
+                             rdfs:comment "Identifies the customs procedure applied to goods, essential for categorizing transactions and ensuring compliance with CBAM regulations." ;
+                             rdfs:label "Customs Procedure" .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  https://purl.org/cbam/Customs_Procedure/1
+<https://purl.org/cbam/Customs_Procedure/1> rdf:type owl:NamedIndividual ,
+                                                     vocabulary:Customs_Procedure ;
+                                            rdfs:label "Release for free circulation of goods" ,
+                                                       "Release for free circulation of goods " ;
+                                            properties:code "1" ;
+                                            properties:procedure_status "previous" ,
+                                                                        "requested" ;
+                                            properties:validity_date "1/1/23" .
+
+
+###  https://purl.org/cbam/Customs_Procedure/40
+<https://purl.org/cbam/Customs_Procedure/40> rdf:type owl:NamedIndividual ,
+                                                      vocabulary:Customs_Procedure ;
+                                             rdfs:label " Simultaneous release for free circulation and home use of goods" ;
+                                             properties:code "40" ;
+                                             properties:procedure_status "previous" ,
+                                                                         "requested" ;
+                                             properties:validity_date "1/1/23" .
+
+
+###  https://purl.org/cbam/Customs_Procedure/42
+<https://purl.org/cbam/Customs_Procedure/42> rdf:type owl:NamedIndividual ,
+                                                      vocabulary:Customs_Procedure ;
+                                             rdfs:label " Simultaneous release for free circulation and home use of goods which are the subject of a VAT-exempt supply to another Member State and, when applicable, an excise-duty suspension" ;
+                                             properties:code "42" ;
+                                             properties:procedure_status "previous" ,
+                                                                         "requested" ;
+                                             properties:validity_date "1/1/23" .
+
+
+###  https://purl.org/cbam/Customs_Procedure/43
+<https://purl.org/cbam/Customs_Procedure/43> rdf:type owl:NamedIndividual ,
+                                                      vocabulary:Customs_Procedure ;
+                                             rdfs:label "Simultaneous release for free circulation and home use of goods subject to specific measures connected with the collection of an amount during the transitional period following the accession of new Member States." ;
+                                             properties:code "43" ;
+                                             properties:procedure_status "requested" ;
+                                             properties:validity_date "1/1/23" .
+
+
+###  https://purl.org/cbam/Customs_Procedure/44
+<https://purl.org/cbam/Customs_Procedure/44> rdf:type owl:NamedIndividual ,
+                                                      vocabulary:Customs_Procedure ;
+                                             rdfs:label "End use " ;
+                                             properties:code "44" ;
+                                             properties:procedure_status "requested" ;
+                                             properties:validity_date "1/1/23" .
+
+
+###  https://purl.org/cbam/Customs_Procedure/45
+<https://purl.org/cbam/Customs_Procedure/45> rdf:type owl:NamedIndividual ,
+                                                      vocabulary:Customs_Procedure ;
+                                             rdfs:label "Release of goods for free circulation and partial entry for home use for either VAT or excise duties and their placing in a warehouse other than customs warehouses." ;
+                                             properties:code "45" ;
+                                             properties:procedure_status "previous" ,
+                                                                         "requested" ;
+                                             properties:validity_date "1/1/23" .
+
+
+###  https://purl.org/cbam/Customs_Procedure/46
+<https://purl.org/cbam/Customs_Procedure/46> rdf:type owl:NamedIndividual ,
+                                                      vocabulary:Customs_Procedure ;
+                                             rdfs:label "Import of processed products obtained from equivalent goods under the outward- processing procedure before exportation of goods they are replacing. " ;
+                                             properties:code "46" ;
+                                             properties:procedure_status "requested" ;
+                                             properties:validity_date "1/1/23" .
+
+
+###  https://purl.org/cbam/Customs_Procedure/48
+<https://purl.org/cbam/Customs_Procedure/48> rdf:type owl:NamedIndividual ,
+                                                      vocabulary:Customs_Procedure ;
+                                             rdfs:label "Entry for home use with simultaneous release for free circulation of replacement products under outward processing prior to the export of the defective goods." ;
+                                             properties:code "48" ;
+                                             properties:procedure_status "requested" ;
+                                             properties:validity_date "1/1/23" .
+
+
+###  https://purl.org/cbam/Customs_Procedure/51
+<https://purl.org/cbam/Customs_Procedure/51> rdf:type owl:NamedIndividual ,
+                                                      vocabulary:Customs_Procedure ;
+                                             rdfs:label "Inward processing procedure (suspension system)." ;
+                                             properties:code "51" ;
+                                             properties:procedure_status "previous" ;
+                                             properties:validity_date "1/1/23" .
+
+
+###  https://purl.org/cbam/Customs_Procedure/54
+<https://purl.org/cbam/Customs_Procedure/54> rdf:type owl:NamedIndividual ,
+                                                      vocabulary:Customs_Procedure ;
+                                             rdfs:label "Inward processing (suspension system) in another Member State (without their being released for free circulation in that Member State)" ;
+                                             properties:code "54" ;
+                                             properties:procedure_status "previous" ;
+                                             properties:validity_date "1/1/23" .
+
+
+###  https://purl.org/cbam/Customs_Procedure/7
+<https://purl.org/cbam/Customs_Procedure/7> rdf:type owl:NamedIndividual ,
+                                                     vocabulary:Customs_Procedure ;
+                                            rdfs:label "Release of goods for free circulation simultaneously placed under a warehousing" ;
+                                            properties:code "7" ;
+                                            properties:procedure_status "requested" ;
+                                            properties:validity_date "1/1/23" .
+
+
+###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi
