@@ -25,8 +25,27 @@
                                      owl:versionIRI <https://purl.org/cbam/cbamreport/1.0> ;
                                      owl:imports <http://www.w3.org/2006/vcard/ns> ,
                                                  org: ,
-                                                 properties:cbam_goods_mapping ,
+                                                 <https://purl.org/cbam/Area_of_import/1.0> ,
                                                  <https://purl.org/cbam/CN/> ,
+                                                 <https://purl.org/cbam/Coordinate_System/1.0> ,
+                                                 <https://purl.org/cbam/Country/1.0> ,
+                                                 <https://purl.org/cbam/CountryPlus/1.0> ,
+                                                 <https://purl.org/cbam/Currency/1.0> ,
+                                                 <https://purl.org/cbam/Customs_Procedure/1.0> ,
+                                                 <https://purl.org/cbam/Electricity_Determination/1.0> ,
+                                                 <https://purl.org/cbam/Emission_Report/1.0> ,
+                                                 <https://purl.org/cbam/Exchange_Rate/1.0> ,
+                                                 <https://purl.org/cbam/Flag/1.0> ,
+                                                 <https://purl.org/cbam/Goods_Document/1.0> ,
+                                                 <https://purl.org/cbam/Instrument/1.0> ,
+                                                 <https://purl.org/cbam/Parameter_Value_Type/1.0> ,
+                                                 <https://purl.org/cbam/Product_Covered/1.0> ,
+                                                 <https://purl.org/cbam/Production_Method/1.0> ,
+                                                 <https://purl.org/cbam/Reporting_Rule/1.0> ,
+                                                 <https://purl.org/cbam/Reporting_period/1.0> ,
+                                                 <https://purl.org/cbam/Role/1.0> ,
+                                                 <https://purl.org/cbam/Source_of_electricity/1.0> ,
+                                                 <https://purl.org/cbam/cbam_goods/1.0> ,
                                                  <https://purl.org/cbam/emissionsqualifyingparameters/> ;
                                      dcterms:abstract "The Carbon Boarder Adjustment Mechanism report Ontology" ;
                                      dcterms:accessRights "This ontology is licensed under the Creative Commons Attribution-NonCommercial 4.0 International License (CC BY-NC 4.0). It allows non-commercial use, sharing, and adaptation of the ontology, as long as users provide clear credit to the creator by citing the ontology's title, creator, and license information. Commercial use is strictly prohibited." ;
@@ -362,8 +381,7 @@ xsd:string owl:equivalentClass rdfs:Literal .
 
 ###  https://purl.org/cbamreport#isSubjectTo
 :isSubjectTo rdf:type owl:ObjectProperty ;
-             rdfs:domain <http://schema.org/Product> ;
-             rdfs:range :Instrument .
+             rdfs:domain <http://schema.org/Product> .
 
 
 ###  https://purl.org/cbamreport/acquiredIn
@@ -704,7 +722,6 @@ cbamreport:city rdf:type owl:DatatypeProperty ;
 
 ###  https://purl.org/cbamreport/countryofOrigin
 cbamreport:countryofOrigin rdf:type owl:DatatypeProperty ;
-                           rdfs:domain cbamreport:Country ;
                            rdfs:range xsd:string ;
                            rdfs:comment "This is an entity to declare the Country of Origin of the CBAM Good." ;
                            rdfs:label "countryofOrigin" .
@@ -1053,23 +1070,19 @@ cbamreport:year rdf:type owl:DatatypeProperty ;
 
 
 ###  https://www.geonames.org/ontology#countryCode
-ontology:countryCode rdf:type owl:DatatypeProperty ;
-                     rdfs:label "countryCode" .
+ontology:countryCode rdf:type owl:DatatypeProperty .
 
 
 ###  https://www.geonames.org/ontology#geonamesID
-ontology:geonamesID rdf:type owl:DatatypeProperty ;
-                    rdfs:label "geonamesID" .
+ontology:geonamesID rdf:type owl:DatatypeProperty .
 
 
 ###  https://www.geonames.org/ontology#lat
-ontology:lat rdf:type owl:DatatypeProperty ;
-             rdfs:label "lat" .
+ontology:lat rdf:type owl:DatatypeProperty .
 
 
 ###  https://www.geonames.org/ontology#long
-ontology:long rdf:type owl:DatatypeProperty ;
-              rdfs:label "long" .
+ontology:long rdf:type owl:DatatypeProperty .
 
 
 #################################################################
@@ -4190,51 +4203,56 @@ properties:ReportingPeriod_Q4 rdf:type owl:Class ;
 
 ###  https://purl.org/cbamreport#BasedExclPfcEmissions
 :BasedExclPfcEmissions rdf:type owl:Class ;
-                       rdfs:subClassOf <https://purl.org/cbamrepor#GreenHouseGasEmissions> .
-
-
-###  https://purl.org/cbamreport#Instrument
-:Instrument rdf:type owl:Class .
+                       rdfs:subClassOf <https://purl.org/cbamrepor#GreenHouseGasEmissions> ;
+                       rdfs:label "BasedExclPfcEmissions" .
 
 
 ###  https://purl.org/cbamreport#MeasurementBasedEmissions
 :MeasurementBasedEmissions rdf:type owl:Class ;
-                           rdfs:subClassOf <https://purl.org/cbamrepor#GreenHouseGasEmissions> .
+                           rdfs:subClassOf <https://purl.org/cbamrepor#GreenHouseGasEmissions> ;
+                           rdfs:label "MeasurementBasedEmissions" .
 
 
 ###  https://purl.org/cbamreport#OtherEmissions
 :OtherEmissions rdf:type owl:Class ;
-                rdfs:subClassOf <https://purl.org/cbamrepor#GreenHouseGasEmissions> .
+                rdfs:subClassOf <https://purl.org/cbamrepor#GreenHouseGasEmissions> ;
+                rdfs:label "OtherEmissions" .
 
 
 ###  https://purl.org/cbamreport#Representative
-:Representative rdf:type owl:Class .
+:Representative rdf:type owl:Class ;
+                rdfs:label "Representative" .
 
 
 ###  https://purl.org/cbamreport#TotalDirectEmissions
 :TotalDirectEmissions rdf:type owl:Class ;
                       rdfs:subClassOf <https://purl.org/cbamrepor#GreenHouseGasEmissions> ,
-                                      :TotalEmissions .
+                                      :TotalEmissions ;
+                      rdfs:label "TotalDirectEmissions" .
 
 
 ###  https://purl.org/cbamreport#TotalEmissions
 :TotalEmissions rdf:type owl:Class ;
-                rdfs:subClassOf <https://purl.org/cbamrepor#GreenHouseGasEmissions> .
+                rdfs:subClassOf <https://purl.org/cbamrepor#GreenHouseGasEmissions> ;
+                rdfs:label "TotalEmissions" .
 
 
 ###  https://purl.org/cbamreport#TotalIndirectEmissions
 :TotalIndirectEmissions rdf:type owl:Class ;
                         rdfs:subClassOf <https://purl.org/cbamrepor#GreenHouseGasEmissions> ,
-                                        :TotalEmissions .
+                                        :TotalEmissions ;
+                        rdfs:label "TotalIndirectEmissions" .
 
 
 ###  https://purl.org/cbamreport#TotalPfcEmissions
 :TotalPfcEmissions rdf:type owl:Class ;
-                   rdfs:subClassOf <https://purl.org/cbamrepor#GreenHouseGasEmissions> .
+                   rdfs:subClassOf <https://purl.org/cbamrepor#GreenHouseGasEmissions> ;
+                   rdfs:label "TotalPfcEmissions" .
 
 
 ###  https://purl.org/cbamreport#Unlocode
-:Unlocode rdf:type owl:Class .
+:Unlocode rdf:type owl:Class ;
+          rdfs:label "Unlocode" .
 
 
 ###  https://purl.org/cbamreport/Actual_data
@@ -4247,10 +4265,6 @@ cbamreport:Actual_data rdf:type owl:Class ;
 ###  https://purl.org/cbamreport/Address
 cbamreport:Address rdf:type owl:Class ;
                    rdfs:subClassOf [ rdf:type owl:Restriction ;
-                                     owl:onProperty cbamreport:isLocatedIn ;
-                                     owl:someValuesFrom cbamreport:Country
-                                   ] ,
-                                   [ rdf:type owl:Restriction ;
                                      owl:onProperty cbamreport:city ;
                                      owl:someValuesFrom xsd:string
                                    ] ,
@@ -4280,12 +4294,6 @@ cbamreport:Address rdf:type owl:Class ;
                                    ] ;
                    rdfs:comment "This element is used to hold the Address" ;
                    rdfs:label "Address" .
-
-
-###  https://purl.org/cbamreport/AreaOfImport
-cbamreport:AreaOfImport rdf:type owl:Class ;
-                        rdfs:comment "The area where the CBAM Good was imported. Two possible values: EU by means of Customs import declaration and EU by other means" ;
-                        rdfs:label "AreaOfImport" .
 
 
 ###  https://purl.org/cbamreport/Attachments
@@ -4422,17 +4430,13 @@ cbamreport:CompetentAuthority rdf:type owl:Class ;
 
 
 ###  https://purl.org/cbamreport/Contact
-cbamreport:Contact rdf:type owl:Class .
+cbamreport:Contact rdf:type owl:Class ;
+                   rdfs:label "Contact" .
 
 
 ###  https://purl.org/cbamreport/Coordinates
 cbamreport:Coordinates rdf:type owl:Class ;
                        rdfs:label "Coordinates" .
-
-
-###  https://purl.org/cbamreport/Country
-cbamreport:Country rdf:type owl:Class ;
-                   rdfs:label "Country" .
 
 
 ###  https://purl.org/cbamreport/Declarant
@@ -4499,18 +4503,6 @@ cbamreport:EmmisionsQualilfyingParameters rdf:type owl:Class ;
                                           rdfs:label "EmmisionsQualilfyingParameters" .
 
 
-###  https://purl.org/cbamreport/ExchangeRate
-cbamreport:ExchangeRate rdf:type owl:Class ;
-                        rdfs:comment "The exchange rate of the currency related to EURO. This is a baseline exchange rate defined by the EU commission." ;
-                        rdfs:label "ExchangeRate" .
-
-
-###  https://purl.org/cbamreport/ExchangeRateToEuro
-cbamreport:ExchangeRateToEuro rdf:type owl:Class ;
-                              rdfs:subClassOf cbamreport:ExchangeRate ;
-                              rdfs:label "ExchangeRateToEuro" .
-
-
 ###  https://purl.org/cbamreport/GlobalisationTime
 cbamreport:GlobalisationTime rdf:type owl:Class ;
                              rdfs:label "GlobalisationTime" .
@@ -4535,10 +4527,6 @@ cbamreport:GoodsEmissions rdf:type owl:Class ;
 ###  https://purl.org/cbamreport/GoodsImported
 cbamreport:GoodsImported rdf:type owl:Class ;
                          rdfs:subClassOf cbamreport:Goods ,
-                                         [ rdf:type owl:Restriction ;
-                                           owl:onProperty cbamreport:isImportedFrom ;
-                                           owl:someValuesFrom cbamreport:AreaOfImport
-                                         ] ,
                                          [ rdf:type owl:Restriction ;
                                            owl:onProperty cbamreport:isProduceBy ;
                                            owl:someValuesFrom cbamreport:Installation
@@ -4647,13 +4635,6 @@ cbamreport:MeasureUnitForEmissions rdf:type owl:Class ;
                                    rdfs:label "MeasureUnitForEmissions" .
 
 
-###  https://purl.org/cbamreport/MemberStateCountry
-cbamreport:MemberStateCountry rdf:type owl:Class ;
-                              rdfs:subClassOf cbamreport:Country ;
-                              owl:disjointWith cbamreport:ThirdCountry ;
-                              rdfs:label "MemberStateCountry" .
-
-
 ###  https://purl.org/cbamreport/Operator
 cbamreport:Operator rdf:type owl:Class ;
                     rdfs:subClassOf org:organization ;
@@ -4702,11 +4683,6 @@ cbamreport:ReportingMethodology rdf:type owl:Class ;
                                 rdfs:label "ReportingMethodology" .
 
 
-###  https://purl.org/cbamreport/ReportingPeriod
-cbamreport:ReportingPeriod rdf:type owl:Class ;
-                           rdfs:label "ReportingPeriod" .
-
-
 ###  https://purl.org/cbamreport/Representative
 cbamreport:Representative rdf:type owl:Class ;
                           rdfs:subClassOf org:organization ;
@@ -4745,12 +4721,6 @@ cbamreport:SteellMill rdf:type owl:Class ;
 ###  https://purl.org/cbamreport/SupportingDocumentsForGoods
 cbamreport:SupportingDocumentsForGoods rdf:type owl:Class ;
                                        rdfs:label "SupportingDocumentsForGoods" .
-
-
-###  https://purl.org/cbamreport/ThirdCountry
-cbamreport:ThirdCountry rdf:type owl:Class ;
-                        rdfs:subClassOf cbamreport:Country ;
-                        rdfs:label "ThirdCountry" .
 
 
 ###  https://purl.org/cbamreport/TotalEmissions
@@ -4797,11 +4767,6 @@ cbamreport:TypeOfInstrument rdf:type owl:Class ;
 ###  https://purl.org/cbamreport/#org:organizationRepresentative
 <https://purl.org/cbamreport/#org:organizationRepresentative> rdf:type owl:Class ;
                                                               rdfs:subClassOf org:organization .
-
-
-###  https://purl.org/emissionsqualifyingparameters#Carbon_content_of_iron_or_steel
-emissionsqualifyingparameters:Carbon_content_of_iron_or_steel rdf:type owl:Class ;
-                                                              rdfs:label "Carbon_content_of_iron_or_steel" .
 
 
 #################################################################
@@ -6647,6 +6612,18 @@ properties:ReportingPeriod rdfs:comment "The Quarter of the year. This is a CBAM
 
 cbamreport:Authorisation rdfs:comment "The Authorisation related to the inward processing" ;
                          rdfs:label "Authorisation" .
+
+
+ontology:countryCode rdfs:label "countryCode" .
+
+
+ontology:geonamesID rdfs:label "geonamesID" .
+
+
+ontology:lat rdfs:label "lat" .
+
+
+ontology:long rdfs:label "long" .
 
 
 #################################################################
