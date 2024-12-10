@@ -300,34 +300,8 @@ foaf:name rdf:type owl:AnnotationProperty ;
 ###  http://xmlns.com/foaf/0.1/workInfohomePage
 foaf:workInfohomePage rdf:type owl:AnnotationProperty .
 
-
-###  https://purl.org/cbam/cn10_code
-properties:cn10_code rdf:type owl:AnnotationProperty .
-
-
-###  https://purl.org/cbam/cn6_code
-properties:cn6_code rdf:type owl:AnnotationProperty .
-
-
-###  https://purl.org/cbam/cn8_code
-properties:cn8_code rdf:type owl:AnnotationProperty .
-
-
-###  https://purl.org/cbam/cn_code
-properties:cn_code rdf:type owl:AnnotationProperty .
-
-
 ###  https://purl.org/cbam/code
 properties:code rdf:type owl:AnnotationProperty .
-
-
-###  https://purl.org/cbam/hs6_code
-properties:hs6_code rdf:type owl:AnnotationProperty .
-
-
-###  https://purl.org/cbam/hs8_code
-properties:hs8_code rdf:type owl:AnnotationProperty .
-
 
 ###  https://purl.org/cbam/procedure_status
 properties:procedure_status rdf:type owl:AnnotationProperty .
@@ -335,15 +309,6 @@ properties:procedure_status rdf:type owl:AnnotationProperty .
 
 ###  https://purl.org/cbam/validity_date
 properties:validity_date rdf:type owl:AnnotationProperty .
-
-
-###  https://purl.org/cbam//code
-<https://purl.org/cbam//code> rdf:type owl:AnnotationProperty .
-
-
-###  https://purl.org/cbam//validity_date
-<https://purl.org/cbam//validity_date> rdf:type owl:AnnotationProperty .
-
 
 #################################################################
 #    Datatypes
@@ -1115,43 +1080,6 @@ properties:EU_Member_State rdf:type owl:Class ;
 ###  https://purl.org/cbam/EU_Third_Country
 properties:EU_Third_Country rdf:type owl:Class ;
                             rdfs:label "EU_Third_Country" .
-
-
-###  https://purl.org/cbam/ReportingPeriod
-properties:ReportingPeriod rdf:type owl:Class .
-
-
-###  https://purl.org/cbam/ReportingPeriod_Q1
-properties:ReportingPeriod_Q1 rdf:type owl:Class ;
-                              rdfs:subClassOf properties:ReportingPeriod ;
-                              rdfs:label "ReportingPeriod_Q1" ;
-                              properties:code "Q1" ;
-                              properties:validity_date "1/1/23" .
-
-
-###  https://purl.org/cbam/ReportingPeriod_Q2
-properties:ReportingPeriod_Q2 rdf:type owl:Class ;
-                              rdfs:subClassOf properties:ReportingPeriod ;
-                              rdfs:label "ReportingPeriod_Q2" ;
-                              properties:code "Q2" ;
-                              properties:validity_date "1/1/23" .
-
-
-###  https://purl.org/cbam/ReportingPeriod_Q3
-properties:ReportingPeriod_Q3 rdf:type owl:Class ;
-                              rdfs:subClassOf properties:ReportingPeriod ;
-                              rdfs:label "ReportingPeriod_Q3" ;
-                              properties:code "Q3" ;
-                              properties:validity_date "1/1/23" .
-
-
-###  https://purl.org/cbam/ReportingPeriod_Q4
-properties:ReportingPeriod_Q4 rdf:type owl:Class ;
-                              rdfs:subClassOf properties:ReportingPeriod ;
-                              rdfs:label "ReportingPeriod_Q4" ;
-                              properties:code "Q4" ;
-                              properties:validity_date "1/1/23" .
-
 
 ###  https://purl.org/cbam/Area_of_import/Area_of_import
 <https://purl.org/cbam/Area_of_import/Area_of_import> rdf:type owl:Class ;
@@ -4694,15 +4622,6 @@ cbamreport:RequestedProcedure rdf:type owl:Class ;
                               rdfs:comment "The Customs Requested Procedure." ;
                               rdfs:label "RequestedProcedure" .
 
-
-###  https://purl.org/cbamreport/Role
-cbamreport:Role rdf:type owl:Class ;
-                rdfs:comment """If Role = \"Importer for all goods\" then 'Header/Importer' = M and 'Goods Imported/Importer' cannot be used
-Else if Role = 'Representative for all goods' then 'Header/Representative' = M and Goods Imported/Representative' cannot be used
-Else if Role = 'Importer for some goods / Representative for some goods' then 'Header/Importer' cannot be used AND 'Header/Representative' cannot be used AND 'Goods Imported/Importer' = M and 'Goods Imported/Representative' = M.""" ;
-                rdfs:label "Role" .
-
-
 ###  https://purl.org/cbamreport/Signature
 cbamreport:Signature rdf:type owl:Class ;
                      rdfs:comment "here are two types of signatures in the CBAM Report. The first one is related to the information in the report. The Declarant must confirm that the information in the CBAM report is accurate and complete. The second is only applicable if the type of applicable rules selected is not CBAM-specific. In this case, the Declarant must confirm that the used applicable rules are comparable to the CBAM applicable rules" ;
@@ -6602,9 +6521,6 @@ cbamreport:IN01 rdf:type owl:NamedIndividual ,
 #################################################################
 #    Annotations
 #################################################################
-
-<file:/Users/astriduquer/Documents/UMU/SIEMENSENERGY/SIEMENS-2/CO2/PYTHONPROGRAMS/IncludeRDFLABELSAutomatically/IncludeRDFLABELSAutomatically/OntologiesLabeled/N7cf61418d8a74fb3995410d8aab1000a> rdfs:label "N7cf61418d8a74fb3995410d8aab1000a" .
-
 
 properties:ReportingPeriod rdfs:comment "The Quarter of the year. This is a CBAM Local List that contains the Quarters of a year (Quarter1, Quarter2, Quarter3, Quarter 4)." ;
                            rdfs:label "ReportingPeriod" .
