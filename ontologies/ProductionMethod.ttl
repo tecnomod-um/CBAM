@@ -24,14 +24,14 @@
                                                                 ] ,
                                                                 [ foaf:name "Jesualdo Tomás Fernández Breis"
                                                                 ] ;
-                                            dcterms:created "01/06/2024"^^rdfs:Literal ;
+                                            dcterms:created "2024-06-01"^^rdfs:Literal ;
                                             dcterms:creator [ foaf:name "Astrid Duque Ramos"
                                                             ] ;
                                             dcterms:description "This ontology represents the code list for the 'Production Method' as defined by the Carbon Border Adjustment Mechanism (CBAM) Report." ;
                                             dcterms:hasVersion "<https://purl.org/cbam/Production_Method/1.0>"^^xsd:anyURI ;
-                                            dcterms:issued "21/11/2024"^^xsd:date ;
+                                            dcterms:issued "2024-11-21"^^xsd:date ;
                                             dcterms:license "<http://creativecommons.org/licenses/by/4.0/>" ;
-                                            dcterms:modified "21/11/2024"^^xsd:date ;
+                                            dcterms:modified "2024-11-21"^^xsd:date ;
                                             dcterms:publisher "Siemens Energy" ;
                                             dcterms:source "Report Structure ver 18.0.xlsx  <https://taxation-customs.ec.europa.eu/carbon-border-adjustment-mechanism_en#where-to-report>" ;
                                             dcterms:title "Production Method"^^rdfs:Literal ;
