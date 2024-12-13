@@ -1,0 +1,111 @@
+prefixes:
+ #Prefix for ontologies
+  fun: "http://functions.com/"
+  param: "http://functions.com/parameters#"
+  rr: "http://www.w3.org/ns/r2rml#"
+  rdf: "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  rdfs: "http://www.w3.org/2000/01/rdf-schema#"
+  void: "http://rdfs.org/ns/void#"
+  dc: "http://purl.org/dc/terms/"
+  foaf: "http://xmlns.com/foaf/0.1/"
+  rml: "http://semweb.mmlab.be/ns/rml#"
+  ql: "http://semweb.mmlab.be/ns/ql#"
+  schema: "http://schema.org/"
+  xsd: "http://www.w3.org/2001/XMLSchema#"
+  ontology-se-cbam: "https://siemens-energy.com/cbam/"
+  ontology-se-cbam-cn: "https://ontology.siemens-energy.com/cbam/CN/"
+  ontology-se-cbam-cbamreport: "https://ontology.siemens-energy.com/cbam/cbamreport/"
+  ontology-se-cbam-country: "https://ontology.siemens-energy.com/cbam/CountryPlus/"
+  ontology-se-cbam-currency: "https://ontology.siemens-energy.com/cbam/currency/"
+  ontology-se-cbam-cbam-goods: "https://ontology.siemens-energy.com/cbam/cbam_goods/"
+  ontology-se-cbam-MIC: "https://ontology.siemens-energy.com/cbam/MICOntology/"
+  ontology-geonames: "https://www.geonames.org/ontology#"
+  ontology-se-cbam-customs-procedures: "https://ontology.siemens-energy.com/cbam/Customs_Procedure/"
+  ontology-se-cbam-suppliers: "https://wwww.ontology.siemens-energy.com/SupplierOntology/"
+  #Prefix for data
+  se-cbam: "https://data.siemens-energy.com/cbam#"
+  se-cbam-cn: "https://data.siemens-energy.com/cbam/CN#"
+  se-cbam-cbamreport: "https://data.siemens-energy.com/cbam/cbamreport#"
+  se-cbam-country: "https://data.siemens-energy.com/cbam/CountryPlus#"
+  se-cbam-currency: "https://data.siemens-energy.com/cbam/currency#"
+  se-cbam-cbam-goods: "https://data.siemens-energy.com/cbam/cbam_goods#"
+  se-cbam-MIC: "https://data.siemens-energy.com/cbam/MICOntology#"
+  se-cbam-customs-procedures: "https://ontology.siemens-energy.com/cbam/Customs_Procedure/"
+  se-cbam-suppliers: "https://www.data.siemens-energy.com/SupplierOntology/"
+
+mappings:
+  customsClearanceMapping:
+    sources:
+      - ['${mic_path}~csv']
+    s: se-cbam-cbamreport:Importation_$(position_system_id)  # se-cbam-MIC:CustomsClearance_$(position_system_id)
+    po:
+      - [a, ontology-se-cbam-cbamreport:Importation] 
+      - [ontology-se-cbam-MIC:positionSystemID, {"value": $("position_system_id"), "datatype": "xsd:string"}] #ID
+      - [ontology-se-cbam-MIC:materialNumberID, {"value": $("material_number"), "datatype": "xsd:string"}] #OtherID     
+      - [ontology-se-cbam-MIC:periodValue, {"value": $("period"), "datatype": "xsd:gYearMonth"}] # period for report - Reporting Period
+      - [ontology-se-cbam-MIC:atfNumber, {"value": $("atf_number"), "datatype": "xsd:string"}]
+      - [ontology-se-cbam-MIC:customsClearanceOfficeNumber, {"value": $("customs_clearance_office"), "datatype": "xsd:string"}]
+      - [ontology-se-cbam-MIC:countryOfDispatch, {"value": $("country_of_dispatch"), "datatype": "xsd:string"}]
+      - [ontology-se-cbam-MIC:documentNumber, {"value": $("document_number"), "datatype": "xsd:string"}]
+      - [ontology-se-cbam-MIC:customsClearanceDate, {"value": $("customs_clearance_date"), "datatype": "xsd:date"}]
+      - [ontology-se-cbam-currency:currencyCode, {"value": $("currency"), "datatype": "xsd:string"}]
+      - [ontology-se-cbam-MIC:invoiceNumber, {"value": $("invoice_number"), "datatype": "xsd:string"}]
+      - [ontology-se-cbam-MIC:invoiceDate, {"value": $("invoice_date"), "datatype": "xsd:date"}]
+      - [ontology-geonames:countryCode, {"value": $("country_of_origin"), "datatype": "xsd:string"}]
+      - [ontology-se-cbam-MIC:procedureCode, {"value": $("procedure_code"), "datatype": "xsd:string"}]
+      - [ontology-se-cbam-MIC:requestedProcedure, {"value": $("requested_procedure"), "datatype": "xsd:string"}]
+      - [ontology-se-cbam-MIC:previousProcedure, {"value": $("previous_procedure"), "datatype": "xsd:string"}]
+      - [ontology-se-cbam-MIC:countryOfOrigin, {"value": $("country_of_origin"), "datatype": "xsd:string"}]
+      - [ontology-se-cbam-cbamreport:import, se-cbam-cbamreport:Article_$(position_system_id)]
+      - [ontology-se-cbam-MIC:othercustomsClearanceDate, {"value": $("customs_clearance_date.1"), "datatype": "xsd:date"}]
+      - [ontology-se-cbam-MIC:articleNumber, {"value": $("article_number"), "datatype": "xsd:string"}]
+      - [ontology-se-cbam-MIC:articleDescription, {"value": $("article_description"), "datatype": "xsd:string"}]
+      - [ontology-se-cbam-MIC:cnCode, {"value": $("cn"), "datatype": "xsd:string"}]
+      - [ontology-se-cbam-MIC:VATBase, {"value": $("vat_base"), "datatype": "xsd:decimal"}]
+      - [ontology-se-cbam-MIC:VATAmount, {"value": $("vat_amount"), "datatype": "xsd:decimal"}]
+      - [ontology-se-cbam-MIC:currencyCodeVAT, {"value": $("currency_vat"), "datatype": "xsd:string"}]
+      - [ontology-se-cbam-MIC:customsDutyBase, {"value": $("customs_duty_base"), "datatype": "xsd:decimal"}]
+      - [ontology-se-cbam-MIC:customDutyAmount, {"value": $("customs_duty_amount"), "datatype": "xsd:decimal"}]
+      - [ontology-se-cbam-MIC:currencyCodeDuty, {"value": $("currency_duty"), "datatype": "xsd:string"}]
+      - [ontology-se-cbam-MIC:weightValue, {"value": $("own_mass"), "datatype": "xsd:decimal"}]                  
+  Product1mapping: 
+    sources:
+      - ['${mic_path}~csv']
+    s: se-cbam-cbamreport:Article_$(position_system_id)_$("article_number")_$("cn")_$("supplier_number")_$("material_number")
+    po: 
+      - [a, schema:Product]
+      - [ontology-se-cbam-cbamreport:isimportedIn, se-cbam-cbamreport:Importation_$(position_system_id)]
+      - [ontology-se-cbam-MIC:articleNumber, {"value": $("article_number"), "datatype": "xsd:string"}]
+      - [ontology-se-cbam-MIC:materialNumberID, {"value": $("material_number"), "datatype": "xsd:string"}] #OtherID  
+      - [ontology-se-cbam-MIC:articleDescription, {"value": $("article_description"), "datatype": "xsd:string"}]
+      - [ontology-se-cbam-MIC:cnCode, {"value": $("cn"), "datatype": "xsd:integer"}]
+      - [ontology-se-cbam-cbamreport:hasWeight, {"value": $("own_mass"), "datatype": "xsd:decimal"}]
+      - [ontology-se-cbam-MIC:quantity, {"value": $("quantity"), "datatype": "xsd:decimal"}]
+      - [ontology-se-cbam-cn:cnCode, se-cbam-cn:CN_$("cn")]
+      
+  cnMapping: #Para extraer el codigo 8 del CN tendriamos que crear el cn_iri en el csv
+    sources:
+      - ['${mic_path}~csv']
+    s: se-cbam-cn:CN_$("cn")
+    po:
+      - [a, ontology-se-cbam-cn:CN]
+      - [ontology-se-cbam-cn:cnCode, {"value": $("cn"), "datatype": "xsd:integer"}]
+
+  ProcedureMapping: # esta tengo unas dudas porque el valor no viene en el dato sino en el encabezado de la tabla
+    sources:
+      - ['${mic_path}~csv']
+    s: se-cbam-customs-procedures:Procedure_$(position_system_id)
+    po:
+      - [a, ontology-se-cbam-customs-procedures:Customs_Procedure_$("cn")]
+      - [ontology-se-cbam-customs-procedures:procedureCode, {"value": $("procedure_code"), "datatype": "xsd:integer"}]
+      - [ontology-se-cbam-customs-procedures:requestedProcedure, {"value": $("requested_procedure"), "datatype": "xsd:integer"}]
+      - [ontology-se-cbam-customs-procedures:previousProcedure, {"value": $("previous_procedure"), "datatype": "xsd:integer"}]
+
+  SuppliersMapping:
+    sources:
+      - ['${mic_path}~csv']
+    s: se-cbam-MIC:Supplier_$("supplier_number")
+    po:
+      - [a, ontology-se-cbam-MIC:Supplier]
+      - [foaf:name, {"value": $("supplier_name"), "datatype": "xsd:string"}]
+      - [ontology-se-cbam-MIC:supplierNumber, {"value": $("supplier_number"), "datatype": "xsd:string"}]
