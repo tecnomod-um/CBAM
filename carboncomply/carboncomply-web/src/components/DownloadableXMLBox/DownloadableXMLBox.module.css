@@ -1,0 +1,26 @@
+.BoxStyle {
+  /*max-width: 40rem;
+  min-width: 40rem;
+  max-height: 30rem;*/
+  min-height: 15vh;
+  min-width: 40vw;
+  border-style: solid;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: content-box;
+};
+
+.ListStyle {
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+}
+
+
+.XMLViewerStyle {
+  max-height: 70vh;
+  min-height: 15vh;
+  margin-left: 1em;
+  overflow-y: auto;
+  text-align: left;
+}

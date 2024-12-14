@@ -1,0 +1,33 @@
+prefix schema: <http://schema.org/>
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+prefix ontology-se-cbam-cbamreport: <https://ontology.siemens-energy.com/cbam/cbamreport/>
+prefix ontology-se-cbam-cn: <https://ontology.siemens-energy.com/cbam/CN/>
+prefix foaf: <http://xmlns.com/foaf/0.1/>
+
+select
+   ?cnCode
+   ?installationName
+   (str(?directEmissions_dt) as ?directEmissions)
+   (str(?indirectEmissions_dt) as ?indirectEmissions)
+   (str(?totalEmissions_dt) as ?totalEmissions)
+   ?totalEmissionsUnit
+   (str(?carbonCost_dt) as ?carbonCost)
+where {
+   ?product  rdf:type schema:Product ;
+      ontology-se-cbam-cbamreport:hasCNCode ?cn ;
+      ontology-se-cbam-cbamreport:isManufacturedIn ?installation ;
+      ontology-se-cbam-cbamreport:generate ?emissions ;
+      ontology-se-cbam-cbamreport:hasCarbonCharge ?carbonPrice .
+
+   ?cn ontology-se-cbam-cn:cn_code ?cnCode .
+   ?installation foaf:name ?installationName .
+
+   ?emissions rdf:type ontology-se-cbam-cbamreport:GreenHouseGasEmissions ;
+      ontology-se-cbam-cbamreport:total_Direct_Indirect_Embedded_Emission ?totalEmissions_dt ;
+      ontology-se-cbam-cbamreport:DirectEmbeddedEmissions ?directEmissions_dt ;
+      ontology-se-cbam-cbamreport:IndirectEmbeddedEmissions ?indirectEmissions_dt ;
+      ontology-se-cbam-cbamreport:UnitforEmission ?totalEmissionsUnit .
+
+   ?carbonPrice ontology-se-cbam-cbamreport:resultEffectiveCPDue ?carbonCost_dt .
+} order by ?cnCode

@@ -1,0 +1,23 @@
+prefixes:
+ #Prefix for ontologies
+  rr: "http://www.w3.org/ns/r2rml#"
+  rml: "http://semweb.mmlab.be/ns/rml#"
+  fnml: "http://semweb.mmlab.be/ns/fnml#"  
+  rdf: "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  rdfs: "http://www.w3.org/2000/01/rdf-schema#"
+  ontology-se-cbam: "https://siemens-energy.com/cbam/"
+  ontology-se-cbam-cbamreport: "https://ontology.siemens-energy.com/cbam/cbamreport/"
+ #Prefix for data  
+  se-cbam: "https://data.siemens-energy.com/cbam#"
+  se-cbam-cbamreport: "https://data.siemens-energy.com/cbam/cbamreport#"
+
+mappings:  
+  communicationReportMapping:
+    sources:
+      - ['${reporting_period_path}~csv']
+    s: se-cbam-cbamreport:CommunicationReport_$(communication_report_id)
+    po:
+      - [a, ontology-se-cbam-cbamreport:Report]
+      - [ontology-se-cbam-cbamreport:hasID, {"value": $(communication_report_id), "datatype": "xsd:string"} ]
+      - [ontology-se-cbam-cbamreport:hasReportingPeriodStart, {"value": $("reporting_period_start"), "datatype": "xsd:date"}]
+      - [ontology-se-cbam-cbamreport:hasReportingPeriodEnd, {"value": $("reporting_period_end"), "datatype": "xsd:date"}]
