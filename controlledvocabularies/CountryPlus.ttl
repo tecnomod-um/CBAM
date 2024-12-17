@@ -4,7 +4,7 @@
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix bibo: <http://purl.org/ontology/bibo/> .
-@prefix cbam: <https://ontology.siemens-energy.com/cbam/> .
+@prefix cbam: <https://purl.org/cbam/> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -22,10 +22,12 @@
                                       owl:versionIRI <https://purl.org/cbam/CountryPlus/1.0> ;
                                       dcterms:abstract "The Country Code List in the CBAM Report extended with geonames ontology" ;
                                       dcterms:accessRights "This ontology is licensed under the Creative Commons Attribution-NonCommercial 4.0 International License (CC BY-NC 4.0). It allows non-commercial use, sharing, and adaptation of the ontology, as long as users provide clear credit to the creator by citing the ontology's title, creator, and license information. Commercial use is strictly prohibited." ;
-                                      dcterms:bibliographicCitation "OK4I - Ontologies and Knowledge Graphs for Industry, July 15–19, 2024, Enschede, Netherlands - <https://www.utwente.nl/en/eemcs/fois2024/resources/papers/duque-et-al-ontology-network-for-the-standardization-of-the-eu-cbam-report-data.pdf>" ;
-                                      dcterms:contributor [ foaf:name "Astrid Duque Ramos"
-                                                          ] ,
-                                                          [ foaf:name "Jesualdo Tomás Fernández Breis"
+                                      dcterms:contributor [ foaf:name "Alexander Garcia Castro" ,
+                                                                      "Andreas Nissen" ,
+                                                                      "Astrid Duque Ramos" ,
+                                                                      "Francisco Abad" ,
+                                                                      "Jesualdo Tomás Fernández Breis" ,
+                                                                      "Lars Rathgeb"
                                                           ] ;
                                       dcterms:created "2024-06-01"^^rdfs:Literal ;
                                       dcterms:creator [ foaf:name "Jesualdo Tomás Fernández Breis"
@@ -45,210 +47,56 @@
 #    Annotation properties
 #################################################################
 
-###  http://purl.org/dc/dcam/rangeIncludes
-<http://purl.org/dc/dcam/rangeIncludes> rdf:type owl:AnnotationProperty .
-
-
 ###  http://purl.org/dc/terms/abstract
-dcterms:abstract rdf:type owl:AnnotationProperty ;
-                 rdfs:subPropertyOf dcterms:description .
+dcterms:abstract rdf:type owl:AnnotationProperty .
 
 
 ###  http://purl.org/dc/terms/accessRights
-dcterms:accessRights rdf:type owl:AnnotationProperty ;
-                     rdfs:subPropertyOf dcterms:rights .
-
-
-###  http://purl.org/dc/terms/alternative
-dcterms:alternative rdf:type owl:AnnotationProperty ;
-                    rdfs:range rdfs:Literal .
-
-
-###  http://purl.org/dc/terms/available
-dcterms:available rdf:type owl:AnnotationProperty ;
-                  rdfs:range rdfs:Literal .
-
-
-###  http://purl.org/dc/terms/bibliographicCitation
-dcterms:bibliographicCitation rdf:type owl:AnnotationProperty ;
-                              rdfs:range rdfs:Literal .
-
-
-###  http://purl.org/dc/terms/conformsTo
-dcterms:conformsTo rdf:type owl:AnnotationProperty ;
-                   rdfs:subPropertyOf dcterms:relation .
+dcterms:accessRights rdf:type owl:AnnotationProperty .
 
 
 ###  http://purl.org/dc/terms/contributor
-dcterms:contributor rdf:type owl:AnnotationProperty ;
-                    rdfs:subPropertyOf dcterms:contributor .
+dcterms:contributor rdf:type owl:AnnotationProperty .
 
 
 ###  http://purl.org/dc/terms/created
-dcterms:created rdf:type owl:AnnotationProperty ;
-                rdfs:range rdfs:Literal .
+dcterms:created rdf:type owl:AnnotationProperty .
 
 
 ###  http://purl.org/dc/terms/creator
-dcterms:creator rdf:type owl:AnnotationProperty ;
-                rdfs:subPropertyOf dcterms:contributor ,
-                                   dcterms:creator .
-
-
-###  http://purl.org/dc/terms/date
-dcterms:date rdf:type owl:AnnotationProperty ;
-             rdfs:range rdfs:Literal .
-
-
-###  http://purl.org/dc/terms/dateAccepted
-dcterms:dateAccepted rdf:type owl:AnnotationProperty ;
-                     rdfs:range rdfs:Literal .
-
-
-###  http://purl.org/dc/terms/dateCopyrighted
-dcterms:dateCopyrighted rdf:type owl:AnnotationProperty ;
-                        rdfs:range rdfs:Literal .
-
-
-###  http://purl.org/dc/terms/dateSubmitted
-dcterms:dateSubmitted rdf:type owl:AnnotationProperty ;
-                      rdfs:range rdfs:Literal .
+dcterms:creator rdf:type owl:AnnotationProperty .
 
 
 ###  http://purl.org/dc/terms/description
-dcterms:description rdf:type owl:AnnotationProperty ;
-                    rdfs:subPropertyOf dcterms:description .
-
-
-###  http://purl.org/dc/terms/hasFormat
-dcterms:hasFormat rdf:type owl:AnnotationProperty ;
-                  rdfs:subPropertyOf dcterms:relation .
-
-
-###  http://purl.org/dc/terms/hasPart
-dcterms:hasPart rdf:type owl:AnnotationProperty ;
-                rdfs:subPropertyOf dcterms:relation .
+dcterms:description rdf:type owl:AnnotationProperty .
 
 
 ###  http://purl.org/dc/terms/hasVersion
-dcterms:hasVersion rdf:type owl:AnnotationProperty ;
-                   rdfs:subPropertyOf dcterms:relation .
-
-
-###  http://purl.org/dc/terms/identifier
-dcterms:identifier rdf:type owl:AnnotationProperty ;
-                   rdfs:range rdfs:Literal .
-
-
-###  http://purl.org/dc/terms/isFormatOf
-dcterms:isFormatOf rdf:type owl:AnnotationProperty ;
-                   rdfs:subPropertyOf dcterms:relation .
-
-
-###  http://purl.org/dc/terms/isPartOf
-dcterms:isPartOf rdf:type owl:AnnotationProperty ;
-                 rdfs:subPropertyOf dcterms:relation .
-
-
-###  http://purl.org/dc/terms/isReferencedBy
-dcterms:isReferencedBy rdf:type owl:AnnotationProperty ;
-                       rdfs:subPropertyOf dcterms:relation .
-
-
-###  http://purl.org/dc/terms/isReplacedBy
-dcterms:isReplacedBy rdf:type owl:AnnotationProperty ;
-                     rdfs:subPropertyOf dcterms:relation .
-
-
-###  http://purl.org/dc/terms/isRequiredBy
-dcterms:isRequiredBy rdf:type owl:AnnotationProperty ;
-                     rdfs:subPropertyOf dcterms:relation .
-
-
-###  http://purl.org/dc/terms/isVersionOf
-dcterms:isVersionOf rdf:type owl:AnnotationProperty ;
-                    rdfs:subPropertyOf dcterms:relation .
+dcterms:hasVersion rdf:type owl:AnnotationProperty .
 
 
 ###  http://purl.org/dc/terms/issued
-dcterms:issued rdf:type owl:AnnotationProperty ;
-               rdfs:range rdfs:Literal .
-
-
-###  http://purl.org/dc/terms/language
-dcterms:language rdf:type owl:AnnotationProperty ;
-                 rdfs:subPropertyOf dcterms:language .
+dcterms:issued rdf:type owl:AnnotationProperty .
 
 
 ###  http://purl.org/dc/terms/license
-dcterms:license rdf:type owl:AnnotationProperty ;
-                rdfs:subPropertyOf dcterms:rights .
+dcterms:license rdf:type owl:AnnotationProperty .
 
 
 ###  http://purl.org/dc/terms/modified
-dcterms:modified rdf:type owl:AnnotationProperty ;
-                 rdfs:range rdfs:Literal .
+dcterms:modified rdf:type owl:AnnotationProperty .
 
 
 ###  http://purl.org/dc/terms/publisher
-dcterms:publisher rdf:type owl:AnnotationProperty ;
-                  rdfs:subPropertyOf dcterms:publisher .
-
-
-###  http://purl.org/dc/terms/references
-dcterms:references rdf:type owl:AnnotationProperty ;
-                   rdfs:subPropertyOf dcterms:relation .
-
-
-###  http://purl.org/dc/terms/relation
-dcterms:relation rdf:type owl:AnnotationProperty ;
-                 rdfs:subPropertyOf dcterms:relation .
-
-
-###  http://purl.org/dc/terms/replaces
-dcterms:replaces rdf:type owl:AnnotationProperty ;
-                 rdfs:subPropertyOf dcterms:relation .
-
-
-###  http://purl.org/dc/terms/requires
-dcterms:requires rdf:type owl:AnnotationProperty ;
-                 rdfs:subPropertyOf dcterms:relation .
-
-
-###  http://purl.org/dc/terms/rights
-dcterms:rights rdf:type owl:AnnotationProperty ;
-               rdfs:subPropertyOf dcterms:rights .
+dcterms:publisher rdf:type owl:AnnotationProperty .
 
 
 ###  http://purl.org/dc/terms/source
-dcterms:source rdf:type owl:AnnotationProperty ;
-               rdfs:subPropertyOf dcterms:relation ,
-                                  dcterms:source .
-
-
-###  http://purl.org/dc/terms/subject
-dcterms:subject rdf:type owl:AnnotationProperty ;
-                rdfs:subPropertyOf dcterms:subject .
-
-
-###  http://purl.org/dc/terms/tableOfContents
-dcterms:tableOfContents rdf:type owl:AnnotationProperty ;
-                        rdfs:subPropertyOf dcterms:description .
+dcterms:source rdf:type owl:AnnotationProperty .
 
 
 ###  http://purl.org/dc/terms/title
-dcterms:title rdf:type owl:AnnotationProperty ;
-              rdfs:range rdfs:Literal .
-
-
-###  http://purl.org/dc/terms/type
-dcterms:type rdf:type owl:AnnotationProperty ;
-             rdfs:subPropertyOf dcterms:type .
-
-
-###  http://purl.org/dc/terms/valid
-dcterms:valid rdf:type owl:AnnotationProperty ;
-              rdfs:range rdfs:Literal .
+dcterms:title rdf:type owl:AnnotationProperty .
 
 
 ###  http://purl.org/vocab/vann/preferredNamespacePrefix
@@ -259,24 +107,8 @@ vann:preferredNamespacePrefix rdf:type owl:AnnotationProperty .
 vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
 
 
-###  http://xmlns.com/foaf/0.1/maker
-foaf:maker rdf:type owl:AnnotationProperty .
-
-
 ###  http://xmlns.com/foaf/0.1/name
 foaf:name rdf:type owl:AnnotationProperty .
-
-
-###  http://xmlns.com/foaf/0.1/workInfohomePage
-foaf:workInfohomePage rdf:type owl:AnnotationProperty .
-
-
-###  https://purl.org/cbam/code
-properties:code rdf:type owl:AnnotationProperty .
-
-
-###  https://purl.org/cbam/validity_date
-properties:validity_date rdf:type owl:AnnotationProperty .
 
 
 #################################################################
@@ -291,89 +123,48 @@ xsd:date rdf:type rdfs:Datatype .
 #    Data properties
 #################################################################
 
-###  http://purl.org/dc/terms/alternative
-dcterms:alternative rdf:type owl:DatatypeProperty ;
-                    rdfs:subPropertyOf dcterms:title .
-
-
-###  http://purl.org/dc/terms/available
-dcterms:available rdf:type owl:DatatypeProperty ;
-                  rdfs:subPropertyOf dcterms:date .
-
-
-###  http://purl.org/dc/terms/bibliographicCitation
-dcterms:bibliographicCitation rdf:type owl:DatatypeProperty ;
-                              rdfs:subPropertyOf dcterms:identifier .
-
-
-###  http://purl.org/dc/terms/created
-dcterms:created rdf:type owl:DatatypeProperty ;
-                rdfs:subPropertyOf dcterms:date .
-
-
-###  http://purl.org/dc/terms/date
-dcterms:date rdf:type owl:DatatypeProperty ;
-             rdfs:subPropertyOf dcterms:date .
-
-
-###  http://purl.org/dc/terms/dateAccepted
-dcterms:dateAccepted rdf:type owl:DatatypeProperty ;
-                     rdfs:subPropertyOf dcterms:date .
-
-
-###  http://purl.org/dc/terms/dateCopyrighted
-dcterms:dateCopyrighted rdf:type owl:DatatypeProperty ;
-                        rdfs:subPropertyOf dcterms:date .
-
-
-###  http://purl.org/dc/terms/dateSubmitted
-dcterms:dateSubmitted rdf:type owl:DatatypeProperty ;
-                      rdfs:subPropertyOf dcterms:date .
-
-
-###  http://purl.org/dc/terms/identifier
-dcterms:identifier rdf:type owl:DatatypeProperty ;
-                   rdfs:subPropertyOf dcterms:identifier .
-
-
-###  http://purl.org/dc/terms/issued
-dcterms:issued rdf:type owl:DatatypeProperty ;
-               rdfs:subPropertyOf dcterms:date .
-
-
-###  http://purl.org/dc/terms/modified
-dcterms:modified rdf:type owl:DatatypeProperty ;
-                 rdfs:subPropertyOf dcterms:date .
-
-
-###  http://purl.org/dc/terms/title
-dcterms:title rdf:type owl:DatatypeProperty ;
-              rdfs:subPropertyOf dcterms:title .
-
-
-###  http://purl.org/dc/terms/valid
-dcterms:valid rdf:type owl:DatatypeProperty ;
-              rdfs:subPropertyOf dcterms:date .
-
-
 ###  https://www.geonames.org/ontology#countryCode
-geonames_ontology:countryCode rdf:type owl:DatatypeProperty .
+geonames_ontology:countryCode rdf:type owl:DatatypeProperty ;
+                              rdfs:label "countryCode" .
 
 
 ###  https://www.geonames.org/ontology#geonamesID
-geonames_ontology:geonamesID rdf:type owl:DatatypeProperty .
+geonames_ontology:geonamesID rdf:type owl:DatatypeProperty ;
+                             rdfs:label "geonamesID" .
 
 
 ###  https://www.geonames.org/ontology#lat
-geonames_ontology:lat rdf:type owl:DatatypeProperty .
+geonames_ontology:lat rdf:type owl:DatatypeProperty ;
+                      rdfs:label "lat" .
 
 
 ###  https://www.geonames.org/ontology#long
-geonames_ontology:long rdf:type owl:DatatypeProperty .
+geonames_ontology:long rdf:type owl:DatatypeProperty ;
+                       rdfs:label "long" .
 
 
 ###  https://www.geonames.org/ontology#name
-geonames_ontology:name rdf:type owl:DatatypeProperty .
+geonames_ontology:name rdf:type owl:DatatypeProperty ;
+                       rdfs:label "name" .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  https://purl.org/cbam/Country
+properties:Country rdf:type owl:Class ;
+                   rdfs:label "Country" .
+
+
+###  https://purl.org/cbam/EU_Member_State
+properties:EU_Member_State rdf:type owl:Class ;
+                           rdfs:label "EU_Member_State" .
+
+
+###  https://purl.org/cbam/EU_Third_Country
+properties:EU_Third_Country rdf:type owl:Class ;
+                            rdfs:label "EU_Third_Country" .
 
 
 #################################################################
@@ -381,7 +172,9 @@ geonames_ontology:name rdf:type owl:DatatypeProperty .
 #################################################################
 
 ###  https://sws.geonames.org/102358
-<https://sws.geonames.org/102358> rdf:type owl:NamedIndividual ;
+<https://sws.geonames.org/102358> rdf:type owl:NamedIndividual ,
+                                           properties:Country ,
+                                           properties:EU_Third_Country ;
                                   geonames_ontology:countryCode "SA" ;
                                   geonames_ontology:geonamesID "102358" ;
                                   geonames_ontology:lat "25" ;
@@ -390,7 +183,9 @@ geonames_ontology:name rdf:type owl:DatatypeProperty .
 
 
 ###  https://sws.geonames.org/1036973
-<https://sws.geonames.org/1036973> rdf:type owl:NamedIndividual ;
+<https://sws.geonames.org/1036973> rdf:type owl:NamedIndividual ,
+                                            properties:Country ,
+                                            properties:EU_Third_Country ;
                                    geonames_ontology:countryCode "MZ" ;
                                    geonames_ontology:geonamesID "1036973" ;
                                    geonames_ontology:lat "-18.25" ;
@@ -399,7 +194,9 @@ geonames_ontology:name rdf:type owl:DatatypeProperty .
 
 
 ###  https://sws.geonames.org/1062947
-<https://sws.geonames.org/1062947> rdf:type owl:NamedIndividual ;
+<https://sws.geonames.org/1062947> rdf:type owl:NamedIndividual ,
+                                            properties:Country ,
+                                            properties:EU_Third_Country ;
                                    geonames_ontology:countryCode "MG" ;
                                    geonames_ontology:geonamesID "1062947" ;
                                    geonames_ontology:lat "-20" ;
@@ -408,7 +205,9 @@ geonames_ontology:name rdf:type owl:DatatypeProperty .
 
 
 ###  https://sws.geonames.org/1149361
-<https://sws.geonames.org/1149361> rdf:type owl:NamedIndividual ;
+<https://sws.geonames.org/1149361> rdf:type owl:NamedIndividual ,
+                                            properties:Country ,
+                                            properties:EU_Third_Country ;
                                    geonames_ontology:countryCode "AF" ;
                                    geonames_ontology:geonamesID "1149361" ;
                                    geonames_ontology:lat "33" ;
@@ -417,7 +216,9 @@ geonames_ontology:name rdf:type owl:DatatypeProperty .
 
 
 ###  https://sws.geonames.org/1168579
-<https://sws.geonames.org/1168579> rdf:type owl:NamedIndividual ;
+<https://sws.geonames.org/1168579> rdf:type owl:NamedIndividual ,
+                                            properties:Country ,
+                                            properties:EU_Third_Country ;
                                    geonames_ontology:countryCode "PK" ;
                                    geonames_ontology:geonamesID "1168579" ;
                                    geonames_ontology:lat "30" ;
@@ -426,7 +227,9 @@ geonames_ontology:name rdf:type owl:DatatypeProperty .
 
 
 ###  https://sws.geonames.org/1210997
-<https://sws.geonames.org/1210997> rdf:type owl:NamedIndividual ;
+<https://sws.geonames.org/1210997> rdf:type owl:NamedIndividual ,
+                                            properties:Country ,
+                                            properties:EU_Third_Country ;
                                    geonames_ontology:countryCode "BD" ;
                                    geonames_ontology:geonamesID "1210997" ;
                                    geonames_ontology:lat "24" ;
@@ -435,7 +238,9 @@ geonames_ontology:name rdf:type owl:DatatypeProperty .
 
 
 ###  https://sws.geonames.org/1218197
-<https://sws.geonames.org/1218197> rdf:type owl:NamedIndividual ;
+<https://sws.geonames.org/1218197> rdf:type owl:NamedIndividual ,
+                                            properties:Country ,
+                                            properties:EU_Third_Country ;
                                    geonames_ontology:countryCode "TM" ;
                                    geonames_ontology:geonamesID "1218197" ;
                                    geonames_ontology:lat "39.75" ;
@@ -444,7 +249,9 @@ geonames_ontology:name rdf:type owl:DatatypeProperty .
 
 
 ###  https://sws.geonames.org/1220409
-<https://sws.geonames.org/1220409> rdf:type owl:NamedIndividual ;
+<https://sws.geonames.org/1220409> rdf:type owl:NamedIndividual ,
+                                            properties:Country ,
+                                            properties:EU_Third_Country ;
                                    geonames_ontology:countryCode "TJ" ;
                                    geonames_ontology:geonamesID "1220409" ;
                                    geonames_ontology:lat "39" ;
@@ -453,7 +260,9 @@ geonames_ontology:name rdf:type owl:DatatypeProperty .
 
 
 ###  https://sws.geonames.org/1227603
-<https://sws.geonames.org/1227603> rdf:type owl:NamedIndividual ;
+<https://sws.geonames.org/1227603> rdf:type owl:NamedIndividual ,
+                                            properties:Country ,
+                                            properties:EU_Third_Country ;
                                    geonames_ontology:countryCode "LK" ;
                                    geonames_ontology:geonamesID "1227603" ;
                                    geonames_ontology:lat "7.75" ;
@@ -462,7 +271,9 @@ geonames_ontology:name rdf:type owl:DatatypeProperty .
 
 
 ###  https://sws.geonames.org/1252634
-<https://sws.geonames.org/1252634> rdf:type owl:NamedIndividual ;
+<https://sws.geonames.org/1252634> rdf:type owl:NamedIndividual ,
+                                            properties:Country ,
+                                            properties:EU_Third_Country ;
                                    geonames_ontology:countryCode "BT" ;
                                    geonames_ontology:geonamesID "1252634" ;
                                    geonames_ontology:lat "27.5" ;
@@ -471,7 +282,9 @@ geonames_ontology:name rdf:type owl:DatatypeProperty .
 
 
 ###  https://sws.geonames.org/1269750
-<https://sws.geonames.org/1269750> rdf:type owl:NamedIndividual ;
+<https://sws.geonames.org/1269750> rdf:type owl:NamedIndividual ,
+                                            properties:Country ,
+                                            properties:EU_Third_Country ;
                                    geonames_ontology:countryCode "IN" ;
                                    geonames_ontology:geonamesID "1269750" ;
                                    geonames_ontology:lat "22" ;
@@ -480,7 +293,9 @@ geonames_ontology:name rdf:type owl:DatatypeProperty .
 
 
 ###  https://sws.geonames.org/1282028
-<https://sws.geonames.org/1282028> rdf:type owl:NamedIndividual ;
+<https://sws.geonames.org/1282028> rdf:type owl:NamedIndividual ,
+                                            properties:Country ,
+                                            properties:EU_Third_Country ;
                                    geonames_ontology:countryCode "MV" ;
                                    geonames_ontology:geonamesID "1282028" ;
                                    geonames_ontology:lat "3.2" ;
@@ -489,7 +304,9 @@ geonames_ontology:name rdf:type owl:DatatypeProperty .
 
 
 ###  https://sws.geonames.org/1282988
-<https://sws.geonames.org/1282988> rdf:type owl:NamedIndividual ;
+<https://sws.geonames.org/1282988> rdf:type owl:NamedIndividual ,
+                                            properties:Country ,
+                                            properties:EU_Third_Country ;
                                    geonames_ontology:countryCode "NP" ;
                                    geonames_ontology:geonamesID "1282988" ;
                                    geonames_ontology:lat "28" ;
@@ -498,7 +315,9 @@ geonames_ontology:name rdf:type owl:DatatypeProperty .
 
 
 ###  https://sws.geonames.org/130758
-<https://sws.geonames.org/130758> rdf:type owl:NamedIndividual ;
+<https://sws.geonames.org/130758> rdf:type owl:NamedIndividual ,
+                                           properties:Country ,
+                                           properties:EU_Third_Country ;
                                   geonames_ontology:countryCode "IR" ;
                                   geonames_ontology:geonamesID "130758" ;
                                   geonames_ontology:lat "32" ;
@@ -507,7 +326,9 @@ geonames_ontology:name rdf:type owl:DatatypeProperty .
 
 
 ###  https://sws.geonames.org/1327865
-<https://sws.geonames.org/1327865> rdf:type owl:NamedIndividual ;
+<https://sws.geonames.org/1327865> rdf:type owl:NamedIndividual ,
+                                            properties:Country ,
+                                            properties:EU_Third_Country ;
                                    geonames_ontology:countryCode "MM" ;
                                    geonames_ontology:geonamesID "1327865" ;
                                    geonames_ontology:lat "21" ;
@@ -516,7 +337,9 @@ geonames_ontology:name rdf:type owl:DatatypeProperty .
 
 
 ###  https://sws.geonames.org/146669
-<https://sws.geonames.org/146669> rdf:type owl:NamedIndividual ;
+<https://sws.geonames.org/146669> rdf:type owl:NamedIndividual ,
+                                           properties:Country ,
+                                           properties:EU_Member_State ;
                                   geonames_ontology:countryCode "CY" ;
                                   geonames_ontology:geonamesID "146669" ;
                                   geonames_ontology:lat "35" ;
@@ -525,7 +348,9 @@ geonames_ontology:name rdf:type owl:DatatypeProperty .
 
 
 ###  https://sws.geonames.org/149590
-<https://sws.geonames.org/149590> rdf:type owl:NamedIndividual ;
+<https://sws.geonames.org/149590> rdf:type owl:NamedIndividual ,
+                                           properties:Country ,
+                                           properties:EU_Third_Country ;
                                   geonames_ontology:countryCode "TZ" ;
                                   geonames_ontology:geonamesID "149590" ;
                                   geonames_ontology:lat "-6" ;
@@ -534,7 +359,9 @@ geonames_ontology:name rdf:type owl:DatatypeProperty .
 
 
 ###  https://sws.geonames.org/1512440
-<https://sws.geonames.org/1512440> rdf:type owl:NamedIndividual ;
+<https://sws.geonames.org/1512440> rdf:type owl:NamedIndividual ,
+                                            properties:Country ,
+                                            properties:EU_Third_Country ;
                                    geonames_ontology:countryCode "UZ" ;
                                    geonames_ontology:geonamesID "1512440" ;
                                    geonames_ontology:lat "4.166.667" ;
@@ -543,7 +370,9 @@ geonames_ontology:name rdf:type owl:DatatypeProperty .
 
 
 ###  https://sws.geonames.org/1522867
-<https://sws.geonames.org/1522867> rdf:type owl:NamedIndividual ;
+<https://sws.geonames.org/1522867> rdf:type owl:NamedIndividual ,
+                                            properties:Country ,
+                                            properties:EU_Third_Country ;
                                    geonames_ontology:countryCode "KZ" ;
                                    geonames_ontology:geonamesID "1522867" ;
                                    geonames_ontology:lat "48" ;
@@ -552,7 +381,9 @@ geonames_ontology:name rdf:type owl:DatatypeProperty .
 
 
 ###  https://sws.geonames.org/1527747
-<https://sws.geonames.org/1527747> rdf:type owl:NamedIndividual ;
+<https://sws.geonames.org/1527747> rdf:type owl:NamedIndividual ,
+                                            properties:Country ,
+                                            properties:EU_Third_Country ;
                                    geonames_ontology:countryCode "KG" ;
                                    geonames_ontology:geonamesID "1527747" ;
                                    geonames_ontology:lat "41.5" ;
@@ -561,7 +392,9 @@ geonames_ontology:name rdf:type owl:DatatypeProperty .
 
 
 ###  https://sws.geonames.org/1546748
-<https://sws.geonames.org/1546748> rdf:type owl:NamedIndividual ;
+<https://sws.geonames.org/1546748> rdf:type owl:NamedIndividual ,
+                                            properties:Country ,
+                                            properties:EU_Third_Country ;
                                    geonames_ontology:countryCode "TF" ;
                                    geonames_ontology:geonamesID "1546748" ;
                                    geonames_ontology:lat "-43" ;
@@ -570,7 +403,9 @@ geonames_ontology:name rdf:type owl:DatatypeProperty .
 
 
 ###  https://sws.geonames.org/1562822
-<https://sws.geonames.org/1562822> rdf:type owl:NamedIndividual ;
+<https://sws.geonames.org/1562822> rdf:type owl:NamedIndividual ,
+                                            properties:Country ,
+                                            properties:EU_Third_Country ;
                                    geonames_ontology:countryCode "VN" ;
                                    geonames_ontology:geonamesID "1562822" ;
                                    geonames_ontology:lat "1.616.667" ;
@@ -579,7 +414,9 @@ geonames_ontology:name rdf:type owl:DatatypeProperty .
 
 
 ###  https://sws.geonames.org/1605651
-<https://sws.geonames.org/1605651> rdf:type owl:NamedIndividual ;
+<https://sws.geonames.org/1605651> rdf:type owl:NamedIndividual ,
+                                            properties:Country ,
+                                            properties:EU_Third_Country ;
                                    geonames_ontology:countryCode "TH" ;
                                    geonames_ontology:geonamesID "1605651" ;
                                    geonames_ontology:lat "15.5" ;
@@ -588,7 +425,9 @@ geonames_ontology:name rdf:type owl:DatatypeProperty .
 
 
 ###  https://sws.geonames.org/163843
-<https://sws.geonames.org/163843> rdf:type owl:NamedIndividual ;
+<https://sws.geonames.org/163843> rdf:type owl:NamedIndividual ,
+                                           properties:Country ,
+                                           properties:EU_Third_Country ;
                                   geonames_ontology:countryCode "SY" ;
                                   geonames_ontology:geonamesID "163843" ;
                                   geonames_ontology:lat "35" ;
@@ -597,7 +436,9 @@ geonames_ontology:name rdf:type owl:DatatypeProperty .
 
 
 ###  https://sws.geonames.org/1643084
-<https://sws.geonames.org/1643084> rdf:type owl:NamedIndividual ;
+<https://sws.geonames.org/1643084> rdf:type owl:NamedIndividual ,
+                                            properties:Country ,
+                                            properties:EU_Third_Country ;
                                    geonames_ontology:countryCode "ID" ;
                                    geonames_ontology:geonamesID "1643084" ;
                                    geonames_ontology:lat "-5" ;
@@ -606,7 +447,9 @@ geonames_ontology:name rdf:type owl:DatatypeProperty .
 
 
 ###  https://sws.geonames.org/1655842
-<https://sws.geonames.org/1655842> rdf:type owl:NamedIndividual ;
+<https://sws.geonames.org/1655842> rdf:type owl:NamedIndividual ,
+                                            properties:Country ,
+                                            properties:EU_Third_Country ;
                                    geonames_ontology:countryCode "LA" ;
                                    geonames_ontology:geonamesID "1655842" ;
                                    geonames_ontology:lat "18" ;
@@ -615,7 +458,9 @@ geonames_ontology:name rdf:type owl:DatatypeProperty .
 
 
 ###  https://sws.geonames.org/1668284
-<https://sws.geonames.org/1668284> rdf:type owl:NamedIndividual ;
+<https://sws.geonames.org/1668284> rdf:type owl:NamedIndividual ,
+                                            properties:Country ,
+                                            properties:EU_Third_Country ;
                                    geonames_ontology:countryCode "TW" ;
                                    geonames_ontology:geonamesID "1668284" ;
                                    geonames_ontology:lat "24" ;
@@ -624,7 +469,9 @@ geonames_ontology:name rdf:type owl:DatatypeProperty .
 
 
 ###  https://sws.geonames.org/1694008
-<https://sws.geonames.org/1694008> rdf:type owl:NamedIndividual ;
+<https://sws.geonames.org/1694008> rdf:type owl:NamedIndividual ,
+                                            properties:Country ,
+                                            properties:EU_Third_Country ;
                                    geonames_ontology:countryCode "PH" ;
                                    geonames_ontology:geonamesID "1694008" ;
                                    geonames_ontology:lat "1.340.882" ;
@@ -633,7 +480,9 @@ geonames_ontology:name rdf:type owl:DatatypeProperty .
 
 
 ###  https://sws.geonames.org/1733045
-<https://sws.geonames.org/1733045> rdf:type owl:NamedIndividual ;
+<https://sws.geonames.org/1733045> rdf:type owl:NamedIndividual ,
+                                            properties:Country ,
+                                            properties:EU_Third_Country ;
                                    geonames_ontology:countryCode "MY" ;
                                    geonames_ontology:geonamesID "1733045" ;
                                    geonames_ontology:lat "2.5" ;
@@ -642,7 +491,9 @@ geonames_ontology:name rdf:type owl:DatatypeProperty .
 
 
 ###  https://sws.geonames.org/174982
-<https://sws.geonames.org/174982> rdf:type owl:NamedIndividual ;
+<https://sws.geonames.org/174982> rdf:type owl:NamedIndividual ,
+                                           properties:Country ,
+                                           properties:EU_Third_Country ;
                                   geonames_ontology:countryCode "AM" ;
                                   geonames_ontology:geonamesID "174982" ;
                                   geonames_ontology:lat "40.25" ;
@@ -651,7 +502,9 @@ geonames_ontology:name rdf:type owl:DatatypeProperty .
 
 
 ###  https://sws.geonames.org/1814991
-<https://sws.geonames.org/1814991> rdf:type owl:NamedIndividual ;
+<https://sws.geonames.org/1814991> rdf:type owl:NamedIndividual ,
+                                            properties:Country ,
+                                            properties:EU_Third_Country ;
                                    geonames_ontology:countryCode "CN" ;
                                    geonames_ontology:geonamesID "1814991" ;
                                    geonames_ontology:lat "35" ;
@@ -660,7 +513,9 @@ geonames_ontology:name rdf:type owl:DatatypeProperty .
 
 
 ###  https://sws.geonames.org/1820814
-<https://sws.geonames.org/1820814> rdf:type owl:NamedIndividual ;
+<https://sws.geonames.org/1820814> rdf:type owl:NamedIndividual ,
+                                            properties:Country ,
+                                            properties:EU_Third_Country ;
                                    geonames_ontology:countryCode "BN" ;
                                    geonames_ontology:geonamesID "1820814" ;
                                    geonames_ontology:lat "4.5" ;
@@ -669,7 +524,9 @@ geonames_ontology:name rdf:type owl:DatatypeProperty .
 
 
 ###  https://sws.geonames.org/1831722
-<https://sws.geonames.org/1831722> rdf:type owl:NamedIndividual ;
+<https://sws.geonames.org/1831722> rdf:type owl:NamedIndividual ,
+                                            properties:Country ,
+                                            properties:EU_Third_Country ;
                                    geonames_ontology:countryCode "KH" ;
                                    geonames_ontology:geonamesID "1831722" ;
                                    geonames_ontology:lat "13" ;
@@ -678,7 +535,9 @@ geonames_ontology:name rdf:type owl:DatatypeProperty .
 
 
 ###  https://sws.geonames.org/1835841
-<https://sws.geonames.org/1835841> rdf:type owl:NamedIndividual ;
+<https://sws.geonames.org/1835841> rdf:type owl:NamedIndividual ,
+                                            properties:Country ,
+                                            properties:EU_Third_Country ;
                                    geonames_ontology:countryCode "KR" ;
                                    geonames_ontology:geonamesID "1835841" ;
                                    geonames_ontology:lat "36.5" ;
@@ -687,7 +546,9 @@ geonames_ontology:name rdf:type owl:DatatypeProperty .
 
 
 ###  https://sws.geonames.org/1861060
-<https://sws.geonames.org/1861060> rdf:type owl:NamedIndividual ;
+<https://sws.geonames.org/1861060> rdf:type owl:NamedIndividual ,
+                                            properties:Country ,
+                                            properties:EU_Third_Country ;
                                    geonames_ontology:countryCode "JP" ;
                                    geonames_ontology:geonamesID "1861060" ;
                                    geonames_ontology:lat "3.568.536" ;
@@ -696,7 +557,9 @@ geonames_ontology:name rdf:type owl:DatatypeProperty .
 
 
 ###  https://sws.geonames.org/1873107
-<https://sws.geonames.org/1873107> rdf:type owl:NamedIndividual ;
+<https://sws.geonames.org/1873107> rdf:type owl:NamedIndividual ,
+                                            properties:Country ,
+                                            properties:EU_Third_Country ;
                                    geonames_ontology:countryCode "KP" ;
                                    geonames_ontology:geonamesID "1873107" ;
                                    geonames_ontology:lat "40" ;
@@ -705,7 +568,9 @@ geonames_ontology:name rdf:type owl:DatatypeProperty .
 
 
 ###  https://sws.geonames.org/1880251
-<https://sws.geonames.org/1880251> rdf:type owl:NamedIndividual ;
+<https://sws.geonames.org/1880251> rdf:type owl:NamedIndividual ,
+                                            properties:Country ,
+                                            properties:EU_Third_Country ;
                                    geonames_ontology:countryCode "SG" ;
                                    geonames_ontology:geonamesID "1880251" ;
                                    geonames_ontology:lat "136.667" ;
@@ -714,7 +579,9 @@ geonames_ontology:name rdf:type owl:DatatypeProperty .
 
 
 ###  https://sws.geonames.org/192950
-<https://sws.geonames.org/192950> rdf:type owl:NamedIndividual ;
+<https://sws.geonames.org/192950> rdf:type owl:NamedIndividual ,
+                                           properties:Country ,
+                                           properties:EU_Third_Country ;
                                   geonames_ontology:countryCode "KE" ;
                                   geonames_ontology:geonamesID "192950" ;
                                   geonames_ontology:lat "1" ;
@@ -723,7 +590,9 @@ geonames_ontology:name rdf:type owl:DatatypeProperty .
 
 
 ###  https://sws.geonames.org/1966436
-<https://sws.geonames.org/1966436> rdf:type owl:NamedIndividual ;
+<https://sws.geonames.org/1966436> rdf:type owl:NamedIndividual ,
+                                            properties:Country ,
+                                            properties:EU_Third_Country ;
                                    geonames_ontology:countryCode "TL" ;
                                    geonames_ontology:geonamesID "1966436" ;
                                    geonames_ontology:lat "-883.333" ;
@@ -732,7 +601,9 @@ geonames_ontology:name rdf:type owl:DatatypeProperty .
 
 
 ###  https://sws.geonames.org/2017370
-<https://sws.geonames.org/2017370> rdf:type owl:NamedIndividual ;
+<https://sws.geonames.org/2017370> rdf:type owl:NamedIndividual ,
+                                            properties:Country ,
+                                            properties:EU_Third_Country ;
                                    geonames_ontology:countryCode "RU" ;
                                    geonames_ontology:geonamesID "2017370" ;
                                    geonames_ontology:lat "60" ;
@@ -741,7 +612,9 @@ geonames_ontology:name rdf:type owl:DatatypeProperty .
 
 
 ###  https://sws.geonames.org/2029969
-<https://sws.geonames.org/2029969> rdf:type owl:NamedIndividual ;
+<https://sws.geonames.org/2029969> rdf:type owl:NamedIndividual ,
+                                            properties:Country ,
+                                            properties:EU_Third_Country ;
                                    geonames_ontology:countryCode "MN" ;
                                    geonames_ontology:geonamesID "2029969" ;
                                    geonames_ontology:lat "46" ;
@@ -750,7 +623,9 @@ geonames_ontology:name rdf:type owl:DatatypeProperty .
 
 
 ###  https://sws.geonames.org/203312
-<https://sws.geonames.org/203312> rdf:type owl:NamedIndividual ;
+<https://sws.geonames.org/203312> rdf:type owl:NamedIndividual ,
+                                           properties:Country ,
+                                           properties:EU_Third_Country ;
                                   geonames_ontology:countryCode "CD" ;
                                   geonames_ontology:geonamesID "203312" ;
                                   geonames_ontology:lat "-2.5" ;
@@ -759,7 +634,9 @@ geonames_ontology:name rdf:type owl:DatatypeProperty .
 
 
 ###  https://sws.geonames.org/2077456
-<https://sws.geonames.org/2077456> rdf:type owl:NamedIndividual ;
+<https://sws.geonames.org/2077456> rdf:type owl:NamedIndividual ,
+                                            properties:Country ,
+                                            properties:EU_Third_Country ;
                                    geonames_ontology:countryCode "AU" ;
                                    geonames_ontology:geonamesID "2077456" ;
                                    geonames_ontology:lat "-25" ;
@@ -768,7 +645,9 @@ geonames_ontology:name rdf:type owl:DatatypeProperty .
 
 
 ###  https://sws.geonames.org/2088628
-<https://sws.geonames.org/2088628> rdf:type owl:NamedIndividual ;
+<https://sws.geonames.org/2088628> rdf:type owl:NamedIndividual ,
+                                            properties:Country ,
+                                            properties:EU_Third_Country ;
                                    geonames_ontology:countryCode "PG" ;
                                    geonames_ontology:geonamesID "2088628" ;
                                    geonames_ontology:lat "-6" ;
@@ -777,7 +656,9 @@ geonames_ontology:name rdf:type owl:DatatypeProperty .
 
 
 ###  https://sws.geonames.org/2103350
-<https://sws.geonames.org/2103350> rdf:type owl:NamedIndividual ;
+<https://sws.geonames.org/2103350> rdf:type owl:NamedIndividual ,
+                                            properties:Country ,
+                                            properties:EU_Third_Country ;
                                    geonames_ontology:countryCode "SB" ;
                                    geonames_ontology:geonamesID "2103350" ;
                                    geonames_ontology:lat "-8" ;
@@ -786,7 +667,9 @@ geonames_ontology:name rdf:type owl:DatatypeProperty .
 
 
 ###  https://sws.geonames.org/2110297
-<https://sws.geonames.org/2110297> rdf:type owl:NamedIndividual ;
+<https://sws.geonames.org/2110297> rdf:type owl:NamedIndividual ,
+                                            properties:Country ,
+                                            properties:EU_Third_Country ;
                                    geonames_ontology:countryCode "TV" ;
                                    geonames_ontology:geonamesID "2110297" ;
                                    geonames_ontology:lat "-851.719" ;
@@ -795,7 +678,9 @@ geonames_ontology:name rdf:type owl:DatatypeProperty .
 
 
 ###  https://sws.geonames.org/2110425
-<https://sws.geonames.org/2110425> rdf:type owl:NamedIndividual ;
+<https://sws.geonames.org/2110425> rdf:type owl:NamedIndividual ,
+                                            properties:Country ,
+                                            properties:EU_Third_Country ;
                                    geonames_ontology:countryCode "NR" ;
                                    geonames_ontology:geonamesID "2110425" ;
                                    geonames_ontology:lat "-0.517" ;
@@ -804,7 +689,9 @@ geonames_ontology:name rdf:type owl:DatatypeProperty .
 
 
 ###  https://sws.geonames.org/2134431
-<https://sws.geonames.org/2134431> rdf:type owl:NamedIndividual ;
+<https://sws.geonames.org/2134431> rdf:type owl:NamedIndividual ,
+                                            properties:Country ,
+                                            properties:EU_Third_Country ;
                                    geonames_ontology:countryCode "VU" ;
                                    geonames_ontology:geonamesID "2134431" ;
                                    geonames_ontology:lat "-163.333" ;
@@ -813,7 +700,9 @@ geonames_ontology:name rdf:type owl:DatatypeProperty .
 
 
 ###  https://sws.geonames.org/2186224
-<https://sws.geonames.org/2186224> rdf:type owl:NamedIndividual ;
+<https://sws.geonames.org/2186224> rdf:type owl:NamedIndividual ,
+                                            properties:Country ,
+                                            properties:EU_Third_Country ;
                                    geonames_ontology:countryCode "NZ" ;
                                    geonames_ontology:geonamesID "2186224" ;
                                    geonames_ontology:lat "-42" ;
@@ -822,7 +711,9 @@ geonames_ontology:name rdf:type owl:DatatypeProperty .
 
 
 ###  https://sws.geonames.org/2205218
-<https://sws.geonames.org/2205218> rdf:type owl:NamedIndividual ;
+<https://sws.geonames.org/2205218> rdf:type owl:NamedIndividual ,
+                                            properties:Country ,
+                                            properties:EU_Third_Country ;
                                    geonames_ontology:countryCode "FJ" ;
                                    geonames_ontology:geonamesID "2205218" ;
                                    geonames_ontology:lat "-18" ;
@@ -831,7 +722,9 @@ geonames_ontology:name rdf:type owl:DatatypeProperty .
 
 
 ###  https://sws.geonames.org/2215636
-<https://sws.geonames.org/2215636> rdf:type owl:NamedIndividual ;
+<https://sws.geonames.org/2215636> rdf:type owl:NamedIndividual ,
+                                            properties:Country ,
+                                            properties:EU_Third_Country ;
                                    geonames_ontology:countryCode "LY" ;
                                    geonames_ontology:geonamesID "2215636" ;
                                    geonames_ontology:lat "28" ;
@@ -840,7 +733,9 @@ geonames_ontology:name rdf:type owl:DatatypeProperty .
 
 
 ###  https://sws.geonames.org/2233387
-<https://sws.geonames.org/2233387> rdf:type owl:NamedIndividual ;
+<https://sws.geonames.org/2233387> rdf:type owl:NamedIndividual ,
+                                            properties:Country ,
+                                            properties:EU_Third_Country ;
                                    geonames_ontology:countryCode "CM" ;
                                    geonames_ontology:geonamesID "2233387" ;
                                    geonames_ontology:lat "6" ;
@@ -849,7 +744,9 @@ geonames_ontology:name rdf:type owl:DatatypeProperty .
 
 
 ###  https://sws.geonames.org/223816
-<https://sws.geonames.org/223816> rdf:type owl:NamedIndividual ;
+<https://sws.geonames.org/223816> rdf:type owl:NamedIndividual ,
+                                           properties:Country ,
+                                           properties:EU_Third_Country ;
                                   geonames_ontology:countryCode "DJ" ;
                                   geonames_ontology:geonamesID "223816" ;
                                   geonames_ontology:lat "1.183.333" ;
@@ -858,7 +755,9 @@ geonames_ontology:name rdf:type owl:DatatypeProperty .
 
 
 ###  https://sws.geonames.org/2245662
-<https://sws.geonames.org/2245662> rdf:type owl:NamedIndividual ;
+<https://sws.geonames.org/2245662> rdf:type owl:NamedIndividual ,
+                                            properties:Country ,
+                                            properties:EU_Third_Country ;
                                    geonames_ontology:countryCode "SN" ;
                                    geonames_ontology:geonamesID "2245662" ;
                                    geonames_ontology:lat "14.5" ;
@@ -867,7 +766,9 @@ geonames_ontology:name rdf:type owl:DatatypeProperty .
 
 
 ###  https://sws.geonames.org/2260494
-<https://sws.geonames.org/2260494> rdf:type owl:NamedIndividual ;
+<https://sws.geonames.org/2260494> rdf:type owl:NamedIndividual ,
+                                            properties:Country ,
+                                            properties:EU_Third_Country ;
                                    geonames_ontology:countryCode "CG" ;
                                    geonames_ontology:geonamesID "2260494" ;
                                    geonames_ontology:lat "-1" ;
@@ -876,7 +777,9 @@ geonames_ontology:name rdf:type owl:DatatypeProperty .
 
 
 ###  https://sws.geonames.org/226074
-<https://sws.geonames.org/226074> rdf:type owl:NamedIndividual ;
+<https://sws.geonames.org/226074> rdf:type owl:NamedIndividual ,
+                                           properties:Country ,
+                                           properties:EU_Third_Country ;
                                   geonames_ontology:countryCode "UG" ;
                                   geonames_ontology:geonamesID "226074" ;
                                   geonames_ontology:lat "1.25" ;
@@ -885,7 +788,9 @@ geonames_ontology:name rdf:type owl:DatatypeProperty .
 
 
 ###  https://sws.geonames.org/2264397
-<https://sws.geonames.org/2264397> rdf:type owl:NamedIndividual ;
+<https://sws.geonames.org/2264397> rdf:type owl:NamedIndividual ,
+                                            properties:Country ,
+                                            properties:EU_Member_State ;
                                    geonames_ontology:countryCode "PT" ;
                                    geonames_ontology:geonamesID "2264397" ;
                                    geonames_ontology:lat "396.945" ;
@@ -894,7 +799,9 @@ geonames_ontology:name rdf:type owl:DatatypeProperty .
 
 
 ###  https://sws.geonames.org/2275384
-<https://sws.geonames.org/2275384> rdf:type owl:NamedIndividual ;
+<https://sws.geonames.org/2275384> rdf:type owl:NamedIndividual ,
+                                            properties:Country ,
+                                            properties:EU_Third_Country ;
                                    geonames_ontology:countryCode "LR" ;
                                    geonames_ontology:geonamesID "2275384" ;
                                    geonames_ontology:lat "6.5" ;
@@ -903,7 +810,9 @@ geonames_ontology:name rdf:type owl:DatatypeProperty .
 
 
 ###  https://sws.geonames.org/2287781
-<https://sws.geonames.org/2287781> rdf:type owl:NamedIndividual ;
+<https://sws.geonames.org/2287781> rdf:type owl:NamedIndividual ,
+                                            properties:Country ,
+                                            properties:EU_Third_Country ;
                                    geonames_ontology:countryCode "CI" ;
                                    geonames_ontology:geonamesID "2287781" ;
                                    geonames_ontology:lat "8" ;
@@ -912,7 +821,9 @@ geonames_ontology:name rdf:type owl:DatatypeProperty .
 
 
 ###  https://sws.geonames.org/2300660
-<https://sws.geonames.org/2300660> rdf:type owl:NamedIndividual ;
+<https://sws.geonames.org/2300660> rdf:type owl:NamedIndividual ,
+                                            properties:Country ,
+                                            properties:EU_Third_Country ;
                                    geonames_ontology:countryCode "GH" ;
                                    geonames_ontology:geonamesID "2300660" ;
                                    geonames_ontology:lat "8.1" ;
@@ -921,7 +832,9 @@ geonames_ontology:name rdf:type owl:DatatypeProperty .
 
 
 ###  https://sws.geonames.org/2309096
-<https://sws.geonames.org/2309096> rdf:type owl:NamedIndividual ;
+<https://sws.geonames.org/2309096> rdf:type owl:NamedIndividual ,
+                                            properties:Country ,
+                                            properties:EU_Third_Country ;
                                    geonames_ontology:countryCode "GQ" ;
                                    geonames_ontology:geonamesID "2309096" ;
                                    geonames_ontology:lat "1.7" ;
@@ -930,7 +843,9 @@ geonames_ontology:name rdf:type owl:DatatypeProperty .
 
 
 ###  https://sws.geonames.org/2328926
-<https://sws.geonames.org/2328926> rdf:type owl:NamedIndividual ;
+<https://sws.geonames.org/2328926> rdf:type owl:NamedIndividual ,
+                                            properties:Country ,
+                                            properties:EU_Third_Country ;
                                    geonames_ontology:countryCode "NG" ;
                                    geonames_ontology:geonamesID "2328926" ;
                                    geonames_ontology:lat "10" ;
@@ -939,7 +854,9 @@ geonames_ontology:name rdf:type owl:DatatypeProperty .
 
 
 ###  https://sws.geonames.org/2361809
-<https://sws.geonames.org/2361809> rdf:type owl:NamedIndividual ;
+<https://sws.geonames.org/2361809> rdf:type owl:NamedIndividual ,
+                                            properties:Country ,
+                                            properties:EU_Third_Country ;
                                    geonames_ontology:countryCode "BF" ;
                                    geonames_ontology:geonamesID "2361809" ;
                                    geonames_ontology:lat "12.5" ;
@@ -948,7 +865,9 @@ geonames_ontology:name rdf:type owl:DatatypeProperty .
 
 
 ###  https://sws.geonames.org/2363686
-<https://sws.geonames.org/2363686> rdf:type owl:NamedIndividual ;
+<https://sws.geonames.org/2363686> rdf:type owl:NamedIndividual ,
+                                            properties:Country ,
+                                            properties:EU_Third_Country ;
                                    geonames_ontology:countryCode "TG" ;
                                    geonames_ontology:geonamesID "2363686" ;
                                    geonames_ontology:lat "866.667" ;
@@ -957,7 +876,9 @@ geonames_ontology:name rdf:type owl:DatatypeProperty .
 
 
 ###  https://sws.geonames.org/2372248
-<https://sws.geonames.org/2372248> rdf:type owl:NamedIndividual ;
+<https://sws.geonames.org/2372248> rdf:type owl:NamedIndividual ,
+                                            properties:Country ,
+                                            properties:EU_Third_Country ;
                                    geonames_ontology:countryCode "GW" ;
                                    geonames_ontology:geonamesID "2372248" ;
                                    geonames_ontology:lat "12" ;
@@ -966,7 +887,9 @@ geonames_ontology:name rdf:type owl:DatatypeProperty .
 
 
 ###  https://sws.geonames.org/2378080
-<https://sws.geonames.org/2378080> rdf:type owl:NamedIndividual ;
+<https://sws.geonames.org/2378080> rdf:type owl:NamedIndividual ,
+                                            properties:Country ,
+                                            properties:EU_Third_Country ;
                                    geonames_ontology:countryCode "MR" ;
                                    geonames_ontology:geonamesID "2378080" ;
                                    geonames_ontology:lat "20.25" ;
@@ -975,7 +898,9 @@ geonames_ontology:name rdf:type owl:DatatypeProperty .
 
 
 ###  https://sws.geonames.org/2395170
-<https://sws.geonames.org/2395170> rdf:type owl:NamedIndividual ;
+<https://sws.geonames.org/2395170> rdf:type owl:NamedIndividual ,
+                                            properties:Country ,
+                                            properties:EU_Third_Country ;
                                    geonames_ontology:countryCode "BJ" ;
                                    geonames_ontology:geonamesID "2395170" ;
                                    geonames_ontology:lat "9.5" ;
@@ -984,7 +909,9 @@ geonames_ontology:name rdf:type owl:DatatypeProperty .
 
 
 ###  https://sws.geonames.org/239880
-<https://sws.geonames.org/239880> rdf:type owl:NamedIndividual ;
+<https://sws.geonames.org/239880> rdf:type owl:NamedIndividual ,
+                                           properties:Country ,
+                                           properties:EU_Third_Country ;
                                   geonames_ontology:countryCode "CF" ;
                                   geonames_ontology:geonamesID "239880" ;
                                   geonames_ontology:lat "7" ;
@@ -993,7 +920,9 @@ geonames_ontology:name rdf:type owl:DatatypeProperty .
 
 
 ###  https://sws.geonames.org/2400553
-<https://sws.geonames.org/2400553> rdf:type owl:NamedIndividual ;
+<https://sws.geonames.org/2400553> rdf:type owl:NamedIndividual ,
+                                            properties:Country ,
+                                            properties:EU_Third_Country ;
                                    geonames_ontology:countryCode "GA" ;
                                    geonames_ontology:geonamesID "2400553" ;
                                    geonames_ontology:lat "-1" ;
@@ -1002,7 +931,9 @@ geonames_ontology:name rdf:type owl:DatatypeProperty .
 
 
 ###  https://sws.geonames.org/2403846
-<https://sws.geonames.org/2403846> rdf:type owl:NamedIndividual ;
+<https://sws.geonames.org/2403846> rdf:type owl:NamedIndividual ,
+                                            properties:Country ,
+                                            properties:EU_Third_Country ;
                                    geonames_ontology:countryCode "SL" ;
                                    geonames_ontology:geonamesID "2403846" ;
                                    geonames_ontology:lat "8.5" ;
@@ -1011,7 +942,9 @@ geonames_ontology:name rdf:type owl:DatatypeProperty .
 
 
 ###  https://sws.geonames.org/2410758
-<https://sws.geonames.org/2410758> rdf:type owl:NamedIndividual ;
+<https://sws.geonames.org/2410758> rdf:type owl:NamedIndividual ,
+                                            properties:Country ,
+                                            properties:EU_Third_Country ;
                                    geonames_ontology:countryCode "ST" ;
                                    geonames_ontology:geonamesID "2410758" ;
                                    geonames_ontology:lat "1" ;
@@ -1020,7 +953,9 @@ geonames_ontology:name rdf:type owl:DatatypeProperty .
 
 
 ###  https://sws.geonames.org/241170
-<https://sws.geonames.org/241170> rdf:type owl:NamedIndividual ;
+<https://sws.geonames.org/241170> rdf:type owl:NamedIndividual ,
+                                           properties:Country ,
+                                           properties:EU_Third_Country ;
                                   geonames_ontology:countryCode "SC" ;
                                   geonames_ontology:geonamesID "241170" ;
                                   geonames_ontology:lat "-458.333" ;
@@ -1029,7 +964,9 @@ geonames_ontology:name rdf:type owl:DatatypeProperty .
 
 
 ###  https://sws.geonames.org/2413451
-<https://sws.geonames.org/2413451> rdf:type owl:NamedIndividual ;
+<https://sws.geonames.org/2413451> rdf:type owl:NamedIndividual ,
+                                            properties:Country ,
+                                            properties:EU_Third_Country ;
                                    geonames_ontology:countryCode "GM" ;
                                    geonames_ontology:geonamesID "2413451" ;
                                    geonames_ontology:lat "13.5" ;
@@ -1038,7 +975,9 @@ geonames_ontology:name rdf:type owl:DatatypeProperty .
 
 
 ###  https://sws.geonames.org/2420477
-<https://sws.geonames.org/2420477> rdf:type owl:NamedIndividual ;
+<https://sws.geonames.org/2420477> rdf:type owl:NamedIndividual ,
+                                            properties:Country ,
+                                            properties:EU_Third_Country ;
                                    geonames_ontology:countryCode "GN" ;
                                    geonames_ontology:geonamesID "2420477" ;
                                    geonames_ontology:lat "1.083.333" ;
@@ -1047,7 +986,9 @@ geonames_ontology:name rdf:type owl:DatatypeProperty .
 
 
 ###  https://sws.geonames.org/2434508
-<https://sws.geonames.org/2434508> rdf:type owl:NamedIndividual ;
+<https://sws.geonames.org/2434508> rdf:type owl:NamedIndividual ,
+                                            properties:Country ,
+                                            properties:EU_Third_Country ;
                                    geonames_ontology:countryCode "TD" ;
                                    geonames_ontology:geonamesID "2434508" ;
                                    geonames_ontology:lat "15" ;
@@ -1056,7 +997,9 @@ geonames_ontology:name rdf:type owl:DatatypeProperty .
 
 
 ###  https://sws.geonames.org/2440476
-<https://sws.geonames.org/2440476> rdf:type owl:NamedIndividual ;
+<https://sws.geonames.org/2440476> rdf:type owl:NamedIndividual ,
+                                            properties:Country ,
+                                            properties:EU_Third_Country ;
                                    geonames_ontology:countryCode "NE" ;
                                    geonames_ontology:geonamesID "2440476" ;
                                    geonames_ontology:lat "18" ;
@@ -1065,7 +1008,9 @@ geonames_ontology:name rdf:type owl:DatatypeProperty .
 
 
 ###  https://sws.geonames.org/2453866
-<https://sws.geonames.org/2453866> rdf:type owl:NamedIndividual ;
+<https://sws.geonames.org/2453866> rdf:type owl:NamedIndividual ,
+                                            properties:Country ,
+                                            properties:EU_Third_Country ;
                                    geonames_ontology:countryCode "ML" ;
                                    geonames_ontology:geonamesID "2453866" ;
                                    geonames_ontology:lat "18" ;
@@ -1074,7 +1019,9 @@ geonames_ontology:name rdf:type owl:DatatypeProperty .
 
 
 ###  https://sws.geonames.org/2464461
-<https://sws.geonames.org/2464461> rdf:type owl:NamedIndividual ;
+<https://sws.geonames.org/2464461> rdf:type owl:NamedIndividual ,
+                                            properties:Country ,
+                                            properties:EU_Third_Country ;
                                    geonames_ontology:countryCode "TN" ;
                                    geonames_ontology:geonamesID "2464461" ;
                                    geonames_ontology:lat "34" ;
@@ -1083,7 +1030,9 @@ geonames_ontology:name rdf:type owl:DatatypeProperty .
 
 
 ###  https://sws.geonames.org/248816
-<https://sws.geonames.org/248816> rdf:type owl:NamedIndividual ;
+<https://sws.geonames.org/248816> rdf:type owl:NamedIndividual ,
+                                           properties:Country ,
+                                           properties:EU_Third_Country ;
                                   geonames_ontology:countryCode "JO" ;
                                   geonames_ontology:geonamesID "248816" ;
                                   geonames_ontology:lat "31" ;
@@ -1092,7 +1041,9 @@ geonames_ontology:name rdf:type owl:DatatypeProperty .
 
 
 ###  https://sws.geonames.org/2510769
-<https://sws.geonames.org/2510769> rdf:type owl:NamedIndividual ;
+<https://sws.geonames.org/2510769> rdf:type owl:NamedIndividual ,
+                                            properties:Country ,
+                                            properties:EU_Member_State ;
                                    geonames_ontology:countryCode "ES" ;
                                    geonames_ontology:geonamesID "2510769" ;
                                    geonames_ontology:lat "40" ;
@@ -1101,7 +1052,9 @@ geonames_ontology:name rdf:type owl:DatatypeProperty .
 
 
 ###  https://sws.geonames.org/2542007
-<https://sws.geonames.org/2542007> rdf:type owl:NamedIndividual ;
+<https://sws.geonames.org/2542007> rdf:type owl:NamedIndividual ,
+                                            properties:Country ,
+                                            properties:EU_Third_Country ;
                                    geonames_ontology:countryCode "MA" ;
                                    geonames_ontology:geonamesID "2542007" ;
                                    geonames_ontology:lat "28.5" ;
@@ -1110,7 +1063,9 @@ geonames_ontology:name rdf:type owl:DatatypeProperty .
 
 
 ###  https://sws.geonames.org/2562770
-<https://sws.geonames.org/2562770> rdf:type owl:NamedIndividual ;
+<https://sws.geonames.org/2562770> rdf:type owl:NamedIndividual ,
+                                            properties:Country ,
+                                            properties:EU_Member_State ;
                                    geonames_ontology:countryCode "MT" ;
                                    geonames_ontology:geonamesID "2562770" ;
                                    geonames_ontology:lat "3.591.667" ;
@@ -1119,7 +1074,9 @@ geonames_ontology:name rdf:type owl:DatatypeProperty .
 
 
 ###  https://sws.geonames.org/2589581
-<https://sws.geonames.org/2589581> rdf:type owl:NamedIndividual ;
+<https://sws.geonames.org/2589581> rdf:type owl:NamedIndividual ,
+                                            properties:Country ,
+                                            properties:EU_Third_Country ;
                                    geonames_ontology:countryCode "DZ" ;
                                    geonames_ontology:geonamesID "2589581" ;
                                    geonames_ontology:lat "28" ;
@@ -1128,7 +1085,9 @@ geonames_ontology:name rdf:type owl:DatatypeProperty .
 
 
 ###  https://sws.geonames.org/2623032
-<https://sws.geonames.org/2623032> rdf:type owl:NamedIndividual ;
+<https://sws.geonames.org/2623032> rdf:type owl:NamedIndividual ,
+                                            properties:Country ,
+                                            properties:EU_Member_State ;
                                    geonames_ontology:countryCode "DK" ;
                                    geonames_ontology:geonamesID "2623032" ;
                                    geonames_ontology:lat "56" ;
@@ -1137,7 +1096,9 @@ geonames_ontology:name rdf:type owl:DatatypeProperty .
 
 
 ###  https://sws.geonames.org/2629691
-<https://sws.geonames.org/2629691> rdf:type owl:NamedIndividual ;
+<https://sws.geonames.org/2629691> rdf:type owl:NamedIndividual ,
+                                            properties:Country ,
+                                            properties:EU_Third_Country ;
                                    geonames_ontology:countryCode "IS" ;
                                    geonames_ontology:geonamesID "2629691" ;
                                    geonames_ontology:lat "65" ;
@@ -1146,7 +1107,9 @@ geonames_ontology:name rdf:type owl:DatatypeProperty .
 
 
 ###  https://sws.geonames.org/2635167
-<https://sws.geonames.org/2635167> rdf:type owl:NamedIndividual ;
+<https://sws.geonames.org/2635167> rdf:type owl:NamedIndividual ,
+                                            properties:Country ,
+                                            properties:EU_Third_Country ;
                                    geonames_ontology:countryCode "GB" ;
                                    geonames_ontology:geonamesID "2635167" ;
                                    geonames_ontology:lat "5.475.844" ;
@@ -1155,7 +1118,9 @@ geonames_ontology:name rdf:type owl:DatatypeProperty .
 
 
 ###  https://sws.geonames.org/2658434
-<https://sws.geonames.org/2658434> rdf:type owl:NamedIndividual ;
+<https://sws.geonames.org/2658434> rdf:type owl:NamedIndividual ,
+                                            properties:Country ,
+                                            properties:EU_Third_Country ;
                                    geonames_ontology:countryCode "CH" ;
                                    geonames_ontology:geonamesID "2658434" ;
                                    geonames_ontology:lat "4.700.016" ;
@@ -1164,7 +1129,9 @@ geonames_ontology:name rdf:type owl:DatatypeProperty .
 
 
 ###  https://sws.geonames.org/2661886
-<https://sws.geonames.org/2661886> rdf:type owl:NamedIndividual ;
+<https://sws.geonames.org/2661886> rdf:type owl:NamedIndividual ,
+                                            properties:Country ,
+                                            properties:EU_Member_State ;
                                    geonames_ontology:countryCode "SE" ;
                                    geonames_ontology:geonamesID "2661886" ;
                                    geonames_ontology:lat "62" ;
@@ -1173,7 +1140,9 @@ geonames_ontology:name rdf:type owl:DatatypeProperty .
 
 
 ###  https://sws.geonames.org/272103
-<https://sws.geonames.org/272103> rdf:type owl:NamedIndividual ;
+<https://sws.geonames.org/272103> rdf:type owl:NamedIndividual ,
+                                           properties:Country ,
+                                           properties:EU_Third_Country ;
                                   geonames_ontology:countryCode "LB" ;
                                   geonames_ontology:geonamesID "272103" ;
                                   geonames_ontology:lat "3.383.333" ;
@@ -1182,7 +1151,9 @@ geonames_ontology:name rdf:type owl:DatatypeProperty .
 
 
 ###  https://sws.geonames.org/2750405
-<https://sws.geonames.org/2750405> rdf:type owl:NamedIndividual ;
+<https://sws.geonames.org/2750405> rdf:type owl:NamedIndividual ,
+                                            properties:Country ,
+                                            properties:EU_Member_State ;
                                    geonames_ontology:countryCode "NL" ;
                                    geonames_ontology:geonamesID "2750405" ;
                                    geonames_ontology:lat "52.25" ;
@@ -1191,7 +1162,9 @@ geonames_ontology:name rdf:type owl:DatatypeProperty .
 
 
 ###  https://sws.geonames.org/2782113
-<https://sws.geonames.org/2782113> rdf:type owl:NamedIndividual ;
+<https://sws.geonames.org/2782113> rdf:type owl:NamedIndividual ,
+                                            properties:Country ,
+                                            properties:EU_Member_State ;
                                    geonames_ontology:countryCode "AT" ;
                                    geonames_ontology:geonamesID "2782113" ;
                                    geonames_ontology:lat "4.733.333" ;
@@ -1200,7 +1173,9 @@ geonames_ontology:name rdf:type owl:DatatypeProperty .
 
 
 ###  https://sws.geonames.org/2802361
-<https://sws.geonames.org/2802361> rdf:type owl:NamedIndividual ;
+<https://sws.geonames.org/2802361> rdf:type owl:NamedIndividual ,
+                                            properties:Country ,
+                                            properties:EU_Member_State ;
                                    geonames_ontology:countryCode "BE" ;
                                    geonames_ontology:geonamesID "2802361" ;
                                    geonames_ontology:lat "50.75" ;
@@ -1209,7 +1184,9 @@ geonames_ontology:name rdf:type owl:DatatypeProperty .
 
 
 ###  https://sws.geonames.org/285570
-<https://sws.geonames.org/285570> rdf:type owl:NamedIndividual ;
+<https://sws.geonames.org/285570> rdf:type owl:NamedIndividual ,
+                                           properties:Country ,
+                                           properties:EU_Third_Country ;
                                   geonames_ontology:countryCode "KW" ;
                                   geonames_ontology:geonamesID "285570" ;
                                   geonames_ontology:lat "29.5" ;
@@ -1218,7 +1195,9 @@ geonames_ontology:name rdf:type owl:DatatypeProperty .
 
 
 ###  https://sws.geonames.org/286963
-<https://sws.geonames.org/286963> rdf:type owl:NamedIndividual ;
+<https://sws.geonames.org/286963> rdf:type owl:NamedIndividual ,
+                                           properties:Country ,
+                                           properties:EU_Third_Country ;
                                   geonames_ontology:countryCode "OM" ;
                                   geonames_ontology:geonamesID "286963" ;
                                   geonames_ontology:lat "21" ;
@@ -1227,7 +1206,9 @@ geonames_ontology:name rdf:type owl:DatatypeProperty .
 
 
 ###  https://sws.geonames.org/289688
-<https://sws.geonames.org/289688> rdf:type owl:NamedIndividual ;
+<https://sws.geonames.org/289688> rdf:type owl:NamedIndividual ,
+                                           properties:Country ,
+                                           properties:EU_Third_Country ;
                                   geonames_ontology:countryCode "QA" ;
                                   geonames_ontology:geonamesID "289688" ;
                                   geonames_ontology:lat "25.5" ;
@@ -1236,7 +1217,9 @@ geonames_ontology:name rdf:type owl:DatatypeProperty .
 
 
 ###  https://sws.geonames.org/290291
-<https://sws.geonames.org/290291> rdf:type owl:NamedIndividual ;
+<https://sws.geonames.org/290291> rdf:type owl:NamedIndividual ,
+                                           properties:Country ,
+                                           properties:EU_Third_Country ;
                                   geonames_ontology:countryCode "BH" ;
                                   geonames_ontology:geonamesID "290291" ;
                                   geonames_ontology:lat "2.603.333" ;
@@ -1245,7 +1228,9 @@ geonames_ontology:name rdf:type owl:DatatypeProperty .
 
 
 ###  https://sws.geonames.org/290557
-<https://sws.geonames.org/290557> rdf:type owl:NamedIndividual ;
+<https://sws.geonames.org/290557> rdf:type owl:NamedIndividual ,
+                                           properties:Country ,
+                                           properties:EU_Third_Country ;
                                   geonames_ontology:countryCode "AE" ;
                                   geonames_ontology:geonamesID "290557" ;
                                   geonames_ontology:lat "23.75" ;
@@ -1254,7 +1239,9 @@ geonames_ontology:name rdf:type owl:DatatypeProperty .
 
 
 ###  https://sws.geonames.org/2921044
-<https://sws.geonames.org/2921044> rdf:type owl:NamedIndividual ;
+<https://sws.geonames.org/2921044> rdf:type owl:NamedIndividual ,
+                                            properties:Country ,
+                                            properties:EU_Member_State ;
                                    geonames_ontology:countryCode "DE" ;
                                    geonames_ontology:geonamesID "2921044" ;
                                    geonames_ontology:lat "51.5" ;
@@ -1263,7 +1250,9 @@ geonames_ontology:name rdf:type owl:DatatypeProperty .
 
 
 ###  https://sws.geonames.org/294640
-<https://sws.geonames.org/294640> rdf:type owl:NamedIndividual ;
+<https://sws.geonames.org/294640> rdf:type owl:NamedIndividual ,
+                                           properties:Country ,
+                                           properties:EU_Third_Country ;
                                   geonames_ontology:countryCode "IL" ;
                                   geonames_ontology:geonamesID "294640" ;
                                   geonames_ontology:lat "31.5" ;
@@ -1272,7 +1261,9 @@ geonames_ontology:name rdf:type owl:DatatypeProperty .
 
 
 ###  https://sws.geonames.org/2960313
-<https://sws.geonames.org/2960313> rdf:type owl:NamedIndividual ;
+<https://sws.geonames.org/2960313> rdf:type owl:NamedIndividual ,
+                                            properties:Country ,
+                                            properties:EU_Member_State ;
                                    geonames_ontology:countryCode "LU" ;
                                    geonames_ontology:geonamesID "2960313" ;
                                    geonames_ontology:lat "49.75" ;
@@ -1281,7 +1272,9 @@ geonames_ontology:name rdf:type owl:DatatypeProperty .
 
 
 ###  https://sws.geonames.org/2963597
-<https://sws.geonames.org/2963597> rdf:type owl:NamedIndividual ;
+<https://sws.geonames.org/2963597> rdf:type owl:NamedIndividual ,
+                                            properties:Country ,
+                                            properties:EU_Member_State ;
                                    geonames_ontology:countryCode "IE" ;
                                    geonames_ontology:geonamesID "2963597" ;
                                    geonames_ontology:lat "53" ;
@@ -1290,7 +1283,9 @@ geonames_ontology:name rdf:type owl:DatatypeProperty .
 
 
 ###  https://sws.geonames.org/298795
-<https://sws.geonames.org/298795> rdf:type owl:NamedIndividual ;
+<https://sws.geonames.org/298795> rdf:type owl:NamedIndividual ,
+                                           properties:Country ,
+                                           properties:EU_Third_Country ;
                                   geonames_ontology:countryCode "TR" ;
                                   geonames_ontology:geonamesID "298795" ;
                                   geonames_ontology:lat "39" ;
@@ -1299,7 +1294,9 @@ geonames_ontology:name rdf:type owl:DatatypeProperty .
 
 
 ###  https://sws.geonames.org/2993457
-<https://sws.geonames.org/2993457> rdf:type owl:NamedIndividual ;
+<https://sws.geonames.org/2993457> rdf:type owl:NamedIndividual ,
+                                            properties:Country ,
+                                            properties:EU_Member_State ;
                                    geonames_ontology:countryCode "MC" ;
                                    geonames_ontology:geonamesID "2993457" ;
                                    geonames_ontology:lat "4.373.141" ;
@@ -1308,7 +1305,9 @@ geonames_ontology:name rdf:type owl:DatatypeProperty .
 
 
 ###  https://sws.geonames.org/3017382
-<https://sws.geonames.org/3017382> rdf:type owl:NamedIndividual ;
+<https://sws.geonames.org/3017382> rdf:type owl:NamedIndividual ,
+                                            properties:Country ,
+                                            properties:EU_Member_State ;
                                    geonames_ontology:countryCode "FR" ;
                                    geonames_ontology:geonamesID "3017382" ;
                                    geonames_ontology:lat "46" ;
@@ -1317,7 +1316,9 @@ geonames_ontology:name rdf:type owl:DatatypeProperty .
 
 
 ###  https://sws.geonames.org/3041565
-<https://sws.geonames.org/3041565> rdf:type owl:NamedIndividual ;
+<https://sws.geonames.org/3041565> rdf:type owl:NamedIndividual ,
+                                            properties:Country ,
+                                            properties:EU_Third_Country ;
                                    geonames_ontology:countryCode "AD" ;
                                    geonames_ontology:geonamesID "3041565" ;
                                    geonames_ontology:lat "42.55" ;
@@ -1326,7 +1327,9 @@ geonames_ontology:name rdf:type owl:DatatypeProperty .
 
 
 ###  https://sws.geonames.org/3042058
-<https://sws.geonames.org/3042058> rdf:type owl:NamedIndividual ;
+<https://sws.geonames.org/3042058> rdf:type owl:NamedIndividual ,
+                                            properties:Country ,
+                                            properties:EU_Third_Country ;
                                    geonames_ontology:countryCode "LI" ;
                                    geonames_ontology:geonamesID "3042058" ;
                                    geonames_ontology:lat "4.716.667" ;
@@ -1335,7 +1338,9 @@ geonames_ontology:name rdf:type owl:DatatypeProperty .
 
 
 ###  https://sws.geonames.org/3057568
-<https://sws.geonames.org/3057568> rdf:type owl:NamedIndividual ;
+<https://sws.geonames.org/3057568> rdf:type owl:NamedIndividual ,
+                                            properties:Country ,
+                                            properties:EU_Member_State ;
                                    geonames_ontology:countryCode "SK" ;
                                    geonames_ontology:geonamesID "3057568" ;
                                    geonames_ontology:lat "4.866.667" ;
@@ -1344,7 +1349,9 @@ geonames_ontology:name rdf:type owl:DatatypeProperty .
 
 
 ###  https://sws.geonames.org/3077311
-<https://sws.geonames.org/3077311> rdf:type owl:NamedIndividual ;
+<https://sws.geonames.org/3077311> rdf:type owl:NamedIndividual ,
+                                            properties:Country ,
+                                            properties:EU_Member_State ;
                                    geonames_ontology:countryCode "CZ" ;
                                    geonames_ontology:geonamesID "3077311" ;
                                    geonames_ontology:lat "49.75" ;
@@ -1353,7 +1360,9 @@ geonames_ontology:name rdf:type owl:DatatypeProperty .
 
 
 ###  https://sws.geonames.org/3144096
-<https://sws.geonames.org/3144096> rdf:type owl:NamedIndividual ;
+<https://sws.geonames.org/3144096> rdf:type owl:NamedIndividual ,
+                                            properties:Country ,
+                                            properties:EU_Third_Country ;
                                    geonames_ontology:countryCode "NO" ;
                                    geonames_ontology:geonamesID "3144096" ;
                                    geonames_ontology:lat "62" ;
@@ -1362,7 +1371,9 @@ geonames_ontology:name rdf:type owl:DatatypeProperty .
 
 
 ###  https://sws.geonames.org/3164670
-<https://sws.geonames.org/3164670> rdf:type owl:NamedIndividual ;
+<https://sws.geonames.org/3164670> rdf:type owl:NamedIndividual ,
+                                            properties:Country ,
+                                            properties:EU_Third_Country ;
                                    geonames_ontology:countryCode "VA" ;
                                    geonames_ontology:geonamesID "3164670" ;
                                    geonames_ontology:lat "4.190.225" ;
@@ -1371,7 +1382,9 @@ geonames_ontology:name rdf:type owl:DatatypeProperty .
 
 
 ###  https://sws.geonames.org/3168068
-<https://sws.geonames.org/3168068> rdf:type owl:NamedIndividual ;
+<https://sws.geonames.org/3168068> rdf:type owl:NamedIndividual ,
+                                            properties:Country ,
+                                            properties:EU_Third_Country ;
                                    geonames_ontology:countryCode "SM" ;
                                    geonames_ontology:geonamesID "3168068" ;
                                    geonames_ontology:lat "439.367" ;
@@ -1380,7 +1393,9 @@ geonames_ontology:name rdf:type owl:DatatypeProperty .
 
 
 ###  https://sws.geonames.org/3175395
-<https://sws.geonames.org/3175395> rdf:type owl:NamedIndividual ;
+<https://sws.geonames.org/3175395> rdf:type owl:NamedIndividual ,
+                                            properties:Country ,
+                                            properties:EU_Member_State ;
                                    geonames_ontology:countryCode "IT" ;
                                    geonames_ontology:geonamesID "3175395" ;
                                    geonames_ontology:lat "4.283.333" ;
@@ -1389,7 +1404,9 @@ geonames_ontology:name rdf:type owl:DatatypeProperty .
 
 
 ###  https://sws.geonames.org/3190538
-<https://sws.geonames.org/3190538> rdf:type owl:NamedIndividual ;
+<https://sws.geonames.org/3190538> rdf:type owl:NamedIndividual ,
+                                            properties:Country ,
+                                            properties:EU_Member_State ;
                                    geonames_ontology:countryCode "SI" ;
                                    geonames_ontology:geonamesID "3190538" ;
                                    geonames_ontology:lat "4.608.333" ;
@@ -1398,7 +1415,9 @@ geonames_ontology:name rdf:type owl:DatatypeProperty .
 
 
 ###  https://sws.geonames.org/3194884
-<https://sws.geonames.org/3194884> rdf:type owl:NamedIndividual ;
+<https://sws.geonames.org/3194884> rdf:type owl:NamedIndividual ,
+                                            properties:Country ,
+                                            properties:EU_Third_Country ;
                                    geonames_ontology:countryCode "ME" ;
                                    geonames_ontology:geonamesID "3194884" ;
                                    geonames_ontology:lat "42.75" ;
@@ -1407,7 +1426,9 @@ geonames_ontology:name rdf:type owl:DatatypeProperty .
 
 
 ###  https://sws.geonames.org/3202326
-<https://sws.geonames.org/3202326> rdf:type owl:NamedIndividual ;
+<https://sws.geonames.org/3202326> rdf:type owl:NamedIndividual ,
+                                            properties:Country ,
+                                            properties:EU_Member_State ;
                                    geonames_ontology:countryCode "HR" ;
                                    geonames_ontology:geonamesID "3202326" ;
                                    geonames_ontology:lat "4.516.667" ;
@@ -1416,7 +1437,9 @@ geonames_ontology:name rdf:type owl:DatatypeProperty .
 
 
 ###  https://sws.geonames.org/3277605
-<https://sws.geonames.org/3277605> rdf:type owl:NamedIndividual ;
+<https://sws.geonames.org/3277605> rdf:type owl:NamedIndividual ,
+                                            properties:Country ,
+                                            properties:EU_Third_Country ;
                                    geonames_ontology:countryCode "BA" ;
                                    geonames_ontology:geonamesID "3277605" ;
                                    geonames_ontology:lat "44.25" ;
@@ -1425,7 +1448,9 @@ geonames_ontology:name rdf:type owl:DatatypeProperty .
 
 
 ###  https://sws.geonames.org/3351879
-<https://sws.geonames.org/3351879> rdf:type owl:NamedIndividual ;
+<https://sws.geonames.org/3351879> rdf:type owl:NamedIndividual ,
+                                            properties:Country ,
+                                            properties:EU_Third_Country ;
                                    geonames_ontology:countryCode "AO" ;
                                    geonames_ontology:geonamesID "3351879" ;
                                    geonames_ontology:lat "-12.5" ;
@@ -1434,7 +1459,8 @@ geonames_ontology:name rdf:type owl:DatatypeProperty .
 
 
 ###  https://sws.geonames.org/3355338
-<https://sws.geonames.org/3355338> rdf:type owl:NamedIndividual ;
+<https://sws.geonames.org/3355338> rdf:type owl:NamedIndividual ,
+                                            properties:Country ;
                                    geonames_ontology:geonamesID "3355338" ;
                                    geonames_ontology:lat "-22" ;
                                    geonames_ontology:long "17" ;
@@ -1442,7 +1468,9 @@ geonames_ontology:name rdf:type owl:DatatypeProperty .
 
 
 ###  https://sws.geonames.org/3374084
-<https://sws.geonames.org/3374084> rdf:type owl:NamedIndividual ;
+<https://sws.geonames.org/3374084> rdf:type owl:NamedIndividual ,
+                                            properties:Country ,
+                                            properties:EU_Third_Country ;
                                    geonames_ontology:countryCode "BB" ;
                                    geonames_ontology:geonamesID "3374084" ;
                                    geonames_ontology:lat "1.316.453" ;
@@ -1451,7 +1479,9 @@ geonames_ontology:name rdf:type owl:DatatypeProperty .
 
 
 ###  https://sws.geonames.org/3374766
-<https://sws.geonames.org/3374766> rdf:type owl:NamedIndividual ;
+<https://sws.geonames.org/3374766> rdf:type owl:NamedIndividual ,
+                                            properties:Country ,
+                                            properties:EU_Third_Country ;
                                    geonames_ontology:countryCode "CV" ;
                                    geonames_ontology:geonamesID "3374766" ;
                                    geonames_ontology:lat "16" ;
@@ -1460,7 +1490,9 @@ geonames_ontology:name rdf:type owl:DatatypeProperty .
 
 
 ###  https://sws.geonames.org/3378535
-<https://sws.geonames.org/3378535> rdf:type owl:NamedIndividual ;
+<https://sws.geonames.org/3378535> rdf:type owl:NamedIndividual ,
+                                            properties:Country ,
+                                            properties:EU_Third_Country ;
                                    geonames_ontology:countryCode "GY" ;
                                    geonames_ontology:geonamesID "3378535" ;
                                    geonames_ontology:lat "5" ;
@@ -1469,7 +1501,9 @@ geonames_ontology:name rdf:type owl:DatatypeProperty .
 
 
 ###  https://sws.geonames.org/337996
-<https://sws.geonames.org/337996> rdf:type owl:NamedIndividual ;
+<https://sws.geonames.org/337996> rdf:type owl:NamedIndividual ,
+                                           properties:Country ,
+                                           properties:EU_Third_Country ;
                                   geonames_ontology:countryCode "ET" ;
                                   geonames_ontology:geonamesID "337996" ;
                                   geonames_ontology:lat "9" ;
@@ -1478,7 +1512,9 @@ geonames_ontology:name rdf:type owl:DatatypeProperty .
 
 
 ###  https://sws.geonames.org/338010
-<https://sws.geonames.org/338010> rdf:type owl:NamedIndividual ;
+<https://sws.geonames.org/338010> rdf:type owl:NamedIndividual ,
+                                           properties:Country ,
+                                           properties:EU_Third_Country ;
                                   geonames_ontology:countryCode "ER" ;
                                   geonames_ontology:geonamesID "338010" ;
                                   geonames_ontology:lat "15" ;
@@ -1487,7 +1523,9 @@ geonames_ontology:name rdf:type owl:DatatypeProperty .
 
 
 ###  https://sws.geonames.org/3382998
-<https://sws.geonames.org/3382998> rdf:type owl:NamedIndividual ;
+<https://sws.geonames.org/3382998> rdf:type owl:NamedIndividual ,
+                                            properties:Country ,
+                                            properties:EU_Third_Country ;
                                    geonames_ontology:countryCode "SR" ;
                                    geonames_ontology:geonamesID "3382998" ;
                                    geonames_ontology:lat "4" ;
@@ -1496,7 +1534,9 @@ geonames_ontology:name rdf:type owl:DatatypeProperty .
 
 
 ###  https://sws.geonames.org/3437598
-<https://sws.geonames.org/3437598> rdf:type owl:NamedIndividual ;
+<https://sws.geonames.org/3437598> rdf:type owl:NamedIndividual ,
+                                            properties:Country ,
+                                            properties:EU_Third_Country ;
                                    geonames_ontology:countryCode "PY" ;
                                    geonames_ontology:geonamesID "3437598" ;
                                    geonames_ontology:lat "-2.333.333" ;
@@ -1505,7 +1545,9 @@ geonames_ontology:name rdf:type owl:DatatypeProperty .
 
 
 ###  https://sws.geonames.org/3439705
-<https://sws.geonames.org/3439705> rdf:type owl:NamedIndividual ;
+<https://sws.geonames.org/3439705> rdf:type owl:NamedIndividual ,
+                                            properties:Country ,
+                                            properties:EU_Third_Country ;
                                    geonames_ontology:countryCode "UY" ;
                                    geonames_ontology:geonamesID "3439705" ;
                                    geonames_ontology:lat "-33" ;
@@ -1514,7 +1556,9 @@ geonames_ontology:name rdf:type owl:DatatypeProperty .
 
 
 ###  https://sws.geonames.org/3469034
-<https://sws.geonames.org/3469034> rdf:type owl:NamedIndividual ;
+<https://sws.geonames.org/3469034> rdf:type owl:NamedIndividual ,
+                                            properties:Country ,
+                                            properties:EU_Third_Country ;
                                    geonames_ontology:countryCode "BR" ;
                                    geonames_ontology:geonamesID "3469034" ;
                                    geonames_ontology:lat "-10" ;
@@ -1523,7 +1567,9 @@ geonames_ontology:name rdf:type owl:DatatypeProperty .
 
 
 ###  https://sws.geonames.org/3489940
-<https://sws.geonames.org/3489940> rdf:type owl:NamedIndividual ;
+<https://sws.geonames.org/3489940> rdf:type owl:NamedIndividual ,
+                                            properties:Country ,
+                                            properties:EU_Third_Country ;
                                    geonames_ontology:countryCode "JM" ;
                                    geonames_ontology:geonamesID "3489940" ;
                                    geonames_ontology:lat "1.816.667" ;
@@ -1532,7 +1578,9 @@ geonames_ontology:name rdf:type owl:DatatypeProperty .
 
 
 ###  https://sws.geonames.org/3508796
-<https://sws.geonames.org/3508796> rdf:type owl:NamedIndividual ;
+<https://sws.geonames.org/3508796> rdf:type owl:NamedIndividual ,
+                                            properties:Country ,
+                                            properties:EU_Third_Country ;
                                    geonames_ontology:countryCode "DO" ;
                                    geonames_ontology:geonamesID "3508796" ;
                                    geonames_ontology:lat "19" ;
@@ -1541,7 +1589,9 @@ geonames_ontology:name rdf:type owl:DatatypeProperty .
 
 
 ###  https://sws.geonames.org/3562981
-<https://sws.geonames.org/3562981> rdf:type owl:NamedIndividual ;
+<https://sws.geonames.org/3562981> rdf:type owl:NamedIndividual ,
+                                            properties:Country ,
+                                            properties:EU_Third_Country ;
                                    geonames_ontology:countryCode "CU" ;
                                    geonames_ontology:geonamesID "3562981" ;
                                    geonames_ontology:lat "22" ;
@@ -1550,7 +1600,9 @@ geonames_ontology:name rdf:type owl:DatatypeProperty .
 
 
 ###  https://sws.geonames.org/3572887
-<https://sws.geonames.org/3572887> rdf:type owl:NamedIndividual ;
+<https://sws.geonames.org/3572887> rdf:type owl:NamedIndividual ,
+                                            properties:Country ,
+                                            properties:EU_Third_Country ;
                                    geonames_ontology:countryCode "BS" ;
                                    geonames_ontology:geonamesID "3572887" ;
                                    geonames_ontology:lat "2.504.082" ;
@@ -1559,7 +1611,9 @@ geonames_ontology:name rdf:type owl:DatatypeProperty .
 
 
 ###  https://sws.geonames.org/3573591
-<https://sws.geonames.org/3573591> rdf:type owl:NamedIndividual ;
+<https://sws.geonames.org/3573591> rdf:type owl:NamedIndividual ,
+                                            properties:Country ,
+                                            properties:EU_Third_Country ;
                                    geonames_ontology:countryCode "TT" ;
                                    geonames_ontology:geonamesID "3573591" ;
                                    geonames_ontology:lat "11" ;
@@ -1568,7 +1622,9 @@ geonames_ontology:name rdf:type owl:DatatypeProperty .
 
 
 ###  https://sws.geonames.org/3575174
-<https://sws.geonames.org/3575174> rdf:type owl:NamedIndividual ;
+<https://sws.geonames.org/3575174> rdf:type owl:NamedIndividual ,
+                                            properties:Country ,
+                                            properties:EU_Third_Country ;
                                    geonames_ontology:countryCode "KN" ;
                                    geonames_ontology:geonamesID "3575174" ;
                                    geonames_ontology:lat "1.733.333" ;
@@ -1577,7 +1633,9 @@ geonames_ontology:name rdf:type owl:DatatypeProperty .
 
 
 ###  https://sws.geonames.org/3575830
-<https://sws.geonames.org/3575830> rdf:type owl:NamedIndividual ;
+<https://sws.geonames.org/3575830> rdf:type owl:NamedIndividual ,
+                                            properties:Country ,
+                                            properties:EU_Third_Country ;
                                    geonames_ontology:countryCode "DM" ;
                                    geonames_ontology:geonamesID "3575830" ;
                                    geonames_ontology:lat "15.5" ;
@@ -1586,7 +1644,9 @@ geonames_ontology:name rdf:type owl:DatatypeProperty .
 
 
 ###  https://sws.geonames.org/3576396
-<https://sws.geonames.org/3576396> rdf:type owl:NamedIndividual ;
+<https://sws.geonames.org/3576396> rdf:type owl:NamedIndividual ,
+                                            properties:Country ,
+                                            properties:EU_Third_Country ;
                                    geonames_ontology:countryCode "AG" ;
                                    geonames_ontology:geonamesID "3576396" ;
                                    geonames_ontology:lat "17.05" ;
@@ -1595,7 +1655,9 @@ geonames_ontology:name rdf:type owl:DatatypeProperty .
 
 
 ###  https://sws.geonames.org/3576468
-<https://sws.geonames.org/3576468> rdf:type owl:NamedIndividual ;
+<https://sws.geonames.org/3576468> rdf:type owl:NamedIndividual ,
+                                            properties:Country ,
+                                            properties:EU_Third_Country ;
                                    geonames_ontology:countryCode "LC" ;
                                    geonames_ontology:geonamesID "3576468" ;
                                    geonames_ontology:lat "1.388.333" ;
@@ -1604,7 +1666,9 @@ geonames_ontology:name rdf:type owl:DatatypeProperty .
 
 
 ###  https://sws.geonames.org/3577279
-<https://sws.geonames.org/3577279> rdf:type owl:NamedIndividual ;
+<https://sws.geonames.org/3577279> rdf:type owl:NamedIndividual ,
+                                            properties:Country ,
+                                            properties:EU_Third_Country ;
                                    geonames_ontology:countryCode "AW" ;
                                    geonames_ontology:geonamesID "3577279" ;
                                    geonames_ontology:lat "12.5" ;
@@ -1613,7 +1677,9 @@ geonames_ontology:name rdf:type owl:DatatypeProperty .
 
 
 ###  https://sws.geonames.org/3577815
-<https://sws.geonames.org/3577815> rdf:type owl:NamedIndividual ;
+<https://sws.geonames.org/3577815> rdf:type owl:NamedIndividual ,
+                                            properties:Country ,
+                                            properties:EU_Third_Country ;
                                    geonames_ontology:countryCode "VC" ;
                                    geonames_ontology:geonamesID "3577815" ;
                                    geonames_ontology:lat "1.308.333" ;
@@ -1622,7 +1688,9 @@ geonames_ontology:name rdf:type owl:DatatypeProperty .
 
 
 ###  https://sws.geonames.org/3578421
-<https://sws.geonames.org/3578421> rdf:type owl:NamedIndividual ;
+<https://sws.geonames.org/3578421> rdf:type owl:NamedIndividual ,
+                                            properties:Country ,
+                                            properties:EU_Member_State ;
                                    geonames_ontology:countryCode "MF" ;
                                    geonames_ontology:geonamesID "3578421" ;
                                    geonames_ontology:lat "1.806.667" ;
@@ -1631,7 +1699,9 @@ geonames_ontology:name rdf:type owl:DatatypeProperty .
 
 
 ###  https://sws.geonames.org/3578476
-<https://sws.geonames.org/3578476> rdf:type owl:NamedIndividual ;
+<https://sws.geonames.org/3578476> rdf:type owl:NamedIndividual ,
+                                            properties:Country ,
+                                            properties:EU_Third_Country ;
                                    geonames_ontology:countryCode "BL" ;
                                    geonames_ontology:geonamesID "3578476" ;
                                    geonames_ontology:lat "17.9" ;
@@ -1640,7 +1710,9 @@ geonames_ontology:name rdf:type owl:DatatypeProperty .
 
 
 ###  https://sws.geonames.org/357994
-<https://sws.geonames.org/357994> rdf:type owl:NamedIndividual ;
+<https://sws.geonames.org/357994> rdf:type owl:NamedIndividual ,
+                                           properties:Country ,
+                                           properties:EU_Third_Country ;
                                   geonames_ontology:countryCode "EG" ;
                                   geonames_ontology:geonamesID "357994" ;
                                   geonames_ontology:lat "27" ;
@@ -1649,7 +1721,9 @@ geonames_ontology:name rdf:type owl:DatatypeProperty .
 
 
 ###  https://sws.geonames.org/3580239
-<https://sws.geonames.org/3580239> rdf:type owl:NamedIndividual ;
+<https://sws.geonames.org/3580239> rdf:type owl:NamedIndividual ,
+                                            properties:Country ,
+                                            properties:EU_Third_Country ;
                                    geonames_ontology:countryCode "GD" ;
                                    geonames_ontology:geonamesID "3580239" ;
                                    geonames_ontology:lat "1.211.667" ;
@@ -1658,7 +1732,9 @@ geonames_ontology:name rdf:type owl:DatatypeProperty .
 
 
 ###  https://sws.geonames.org/3582678
-<https://sws.geonames.org/3582678> rdf:type owl:NamedIndividual ;
+<https://sws.geonames.org/3582678> rdf:type owl:NamedIndividual ,
+                                            properties:Country ,
+                                            properties:EU_Third_Country ;
                                    geonames_ontology:countryCode "BZ" ;
                                    geonames_ontology:geonamesID "3582678" ;
                                    geonames_ontology:lat "17.25" ;
@@ -1667,7 +1743,9 @@ geonames_ontology:name rdf:type owl:DatatypeProperty .
 
 
 ###  https://sws.geonames.org/3585968
-<https://sws.geonames.org/3585968> rdf:type owl:NamedIndividual ;
+<https://sws.geonames.org/3585968> rdf:type owl:NamedIndividual ,
+                                            properties:Country ,
+                                            properties:EU_Third_Country ;
                                    geonames_ontology:countryCode "SV" ;
                                    geonames_ontology:geonamesID "3585968" ;
                                    geonames_ontology:lat "1.383.333" ;
@@ -1676,7 +1754,9 @@ geonames_ontology:name rdf:type owl:DatatypeProperty .
 
 
 ###  https://sws.geonames.org/3595528
-<https://sws.geonames.org/3595528> rdf:type owl:NamedIndividual ;
+<https://sws.geonames.org/3595528> rdf:type owl:NamedIndividual ,
+                                            properties:Country ,
+                                            properties:EU_Third_Country ;
                                    geonames_ontology:countryCode "GT" ;
                                    geonames_ontology:geonamesID "3595528" ;
                                    geonames_ontology:lat "15.5" ;
@@ -1685,7 +1765,9 @@ geonames_ontology:name rdf:type owl:DatatypeProperty .
 
 
 ###  https://sws.geonames.org/3608932
-<https://sws.geonames.org/3608932> rdf:type owl:NamedIndividual ;
+<https://sws.geonames.org/3608932> rdf:type owl:NamedIndividual ,
+                                            properties:Country ,
+                                            properties:EU_Third_Country ;
                                    geonames_ontology:countryCode "HN" ;
                                    geonames_ontology:geonamesID "3608932" ;
                                    geonames_ontology:lat "15" ;
@@ -1694,7 +1776,9 @@ geonames_ontology:name rdf:type owl:DatatypeProperty .
 
 
 ###  https://sws.geonames.org/3617476
-<https://sws.geonames.org/3617476> rdf:type owl:NamedIndividual ;
+<https://sws.geonames.org/3617476> rdf:type owl:NamedIndividual ,
+                                            properties:Country ,
+                                            properties:EU_Third_Country ;
                                    geonames_ontology:countryCode "NI" ;
                                    geonames_ontology:geonamesID "3617476" ;
                                    geonames_ontology:lat "13" ;
@@ -1703,7 +1787,9 @@ geonames_ontology:name rdf:type owl:DatatypeProperty .
 
 
 ###  https://sws.geonames.org/3624060
-<https://sws.geonames.org/3624060> rdf:type owl:NamedIndividual ;
+<https://sws.geonames.org/3624060> rdf:type owl:NamedIndividual ,
+                                            properties:Country ,
+                                            properties:EU_Third_Country ;
                                    geonames_ontology:countryCode "CR" ;
                                    geonames_ontology:geonamesID "3624060" ;
                                    geonames_ontology:lat "10" ;
@@ -1712,7 +1798,9 @@ geonames_ontology:name rdf:type owl:DatatypeProperty .
 
 
 ###  https://sws.geonames.org/3625428
-<https://sws.geonames.org/3625428> rdf:type owl:NamedIndividual ;
+<https://sws.geonames.org/3625428> rdf:type owl:NamedIndividual ,
+                                            properties:Country ,
+                                            properties:EU_Third_Country ;
                                    geonames_ontology:countryCode "VE" ;
                                    geonames_ontology:geonamesID "3625428" ;
                                    geonames_ontology:lat "8" ;
@@ -1721,7 +1809,9 @@ geonames_ontology:name rdf:type owl:DatatypeProperty .
 
 
 ###  https://sws.geonames.org/3658394
-<https://sws.geonames.org/3658394> rdf:type owl:NamedIndividual ;
+<https://sws.geonames.org/3658394> rdf:type owl:NamedIndividual ,
+                                            properties:Country ,
+                                            properties:EU_Third_Country ;
                                    geonames_ontology:countryCode "EC" ;
                                    geonames_ontology:geonamesID "3658394" ;
                                    geonames_ontology:lat "-1.25" ;
@@ -1730,7 +1820,9 @@ geonames_ontology:name rdf:type owl:DatatypeProperty .
 
 
 ###  https://sws.geonames.org/366755
-<https://sws.geonames.org/366755> rdf:type owl:NamedIndividual ;
+<https://sws.geonames.org/366755> rdf:type owl:NamedIndividual ,
+                                           properties:Country ,
+                                           properties:EU_Third_Country ;
                                   geonames_ontology:countryCode "SD" ;
                                   geonames_ontology:geonamesID "366755" ;
                                   geonames_ontology:lat "16" ;
@@ -1739,7 +1831,9 @@ geonames_ontology:name rdf:type owl:DatatypeProperty .
 
 
 ###  https://sws.geonames.org/3686110
-<https://sws.geonames.org/3686110> rdf:type owl:NamedIndividual ;
+<https://sws.geonames.org/3686110> rdf:type owl:NamedIndividual ,
+                                            properties:Country ,
+                                            properties:EU_Third_Country ;
                                    geonames_ontology:countryCode "CO" ;
                                    geonames_ontology:geonamesID "3686110" ;
                                    geonames_ontology:lat "4" ;
@@ -1748,7 +1842,9 @@ geonames_ontology:name rdf:type owl:DatatypeProperty .
 
 
 ###  https://sws.geonames.org/3703430
-<https://sws.geonames.org/3703430> rdf:type owl:NamedIndividual ;
+<https://sws.geonames.org/3703430> rdf:type owl:NamedIndividual ,
+                                            properties:Country ,
+                                            properties:EU_Third_Country ;
                                    geonames_ontology:countryCode "PA" ;
                                    geonames_ontology:geonamesID "3703430" ;
                                    geonames_ontology:lat "9" ;
@@ -1757,7 +1853,9 @@ geonames_ontology:name rdf:type owl:DatatypeProperty .
 
 
 ###  https://sws.geonames.org/3723988
-<https://sws.geonames.org/3723988> rdf:type owl:NamedIndividual ;
+<https://sws.geonames.org/3723988> rdf:type owl:NamedIndividual ,
+                                            properties:Country ,
+                                            properties:EU_Third_Country ;
                                    geonames_ontology:countryCode "HT" ;
                                    geonames_ontology:geonamesID "3723988" ;
                                    geonames_ontology:lat "1.907.582" ;
@@ -1766,7 +1864,9 @@ geonames_ontology:name rdf:type owl:DatatypeProperty .
 
 
 ###  https://sws.geonames.org/3865483
-<https://sws.geonames.org/3865483> rdf:type owl:NamedIndividual ;
+<https://sws.geonames.org/3865483> rdf:type owl:NamedIndividual ,
+                                            properties:Country ,
+                                            properties:EU_Third_Country ;
                                    geonames_ontology:countryCode "AR" ;
                                    geonames_ontology:geonamesID "3865483" ;
                                    geonames_ontology:lat "-34" ;
@@ -1775,7 +1875,9 @@ geonames_ontology:name rdf:type owl:DatatypeProperty .
 
 
 ###  https://sws.geonames.org/3895114
-<https://sws.geonames.org/3895114> rdf:type owl:NamedIndividual ;
+<https://sws.geonames.org/3895114> rdf:type owl:NamedIndividual ,
+                                            properties:Country ,
+                                            properties:EU_Third_Country ;
                                    geonames_ontology:countryCode "CL" ;
                                    geonames_ontology:geonamesID "3895114" ;
                                    geonames_ontology:lat "-30" ;
@@ -1784,7 +1886,9 @@ geonames_ontology:name rdf:type owl:DatatypeProperty .
 
 
 ###  https://sws.geonames.org/390903
-<https://sws.geonames.org/390903> rdf:type owl:NamedIndividual ;
+<https://sws.geonames.org/390903> rdf:type owl:NamedIndividual ,
+                                           properties:Country ,
+                                           properties:EU_Member_State ;
                                   geonames_ontology:countryCode "GR" ;
                                   geonames_ontology:geonamesID "390903" ;
                                   geonames_ontology:lat "39" ;
@@ -1793,7 +1897,9 @@ geonames_ontology:name rdf:type owl:DatatypeProperty .
 
 
 ###  https://sws.geonames.org/3923057
-<https://sws.geonames.org/3923057> rdf:type owl:NamedIndividual ;
+<https://sws.geonames.org/3923057> rdf:type owl:NamedIndividual ,
+                                            properties:Country ,
+                                            properties:EU_Third_Country ;
                                    geonames_ontology:countryCode "BO" ;
                                    geonames_ontology:geonamesID "3923057" ;
                                    geonames_ontology:lat "-17" ;
@@ -1802,7 +1908,9 @@ geonames_ontology:name rdf:type owl:DatatypeProperty .
 
 
 ###  https://sws.geonames.org/3932488
-<https://sws.geonames.org/3932488> rdf:type owl:NamedIndividual ;
+<https://sws.geonames.org/3932488> rdf:type owl:NamedIndividual ,
+                                            properties:Country ,
+                                            properties:EU_Third_Country ;
                                    geonames_ontology:countryCode "PE" ;
                                    geonames_ontology:geonamesID "3932488" ;
                                    geonames_ontology:lat "-10" ;
@@ -1811,7 +1919,9 @@ geonames_ontology:name rdf:type owl:DatatypeProperty .
 
 
 ###  https://sws.geonames.org/3996063
-<https://sws.geonames.org/3996063> rdf:type owl:NamedIndividual ;
+<https://sws.geonames.org/3996063> rdf:type owl:NamedIndividual ,
+                                            properties:Country ,
+                                            properties:EU_Third_Country ;
                                    geonames_ontology:countryCode "MX" ;
                                    geonames_ontology:geonamesID "3996063" ;
                                    geonames_ontology:lat "23" ;
@@ -1820,7 +1930,9 @@ geonames_ontology:name rdf:type owl:DatatypeProperty .
 
 
 ###  https://sws.geonames.org/4030945
-<https://sws.geonames.org/4030945> rdf:type owl:NamedIndividual ;
+<https://sws.geonames.org/4030945> rdf:type owl:NamedIndividual ,
+                                            properties:Country ,
+                                            properties:EU_Third_Country ;
                                    geonames_ontology:countryCode "KI" ;
                                    geonames_ontology:geonamesID "4030945" ;
                                    geonames_ontology:lat "1.421" ;
@@ -1829,7 +1941,9 @@ geonames_ontology:name rdf:type owl:DatatypeProperty .
 
 
 ###  https://sws.geonames.org/4032283
-<https://sws.geonames.org/4032283> rdf:type owl:NamedIndividual ;
+<https://sws.geonames.org/4032283> rdf:type owl:NamedIndividual ,
+                                            properties:Country ,
+                                            properties:EU_Third_Country ;
                                    geonames_ontology:countryCode "TO" ;
                                    geonames_ontology:geonamesID "4032283" ;
                                    geonames_ontology:lat "-20" ;
@@ -1838,7 +1952,9 @@ geonames_ontology:name rdf:type owl:DatatypeProperty .
 
 
 ###  https://sws.geonames.org/4034894
-<https://sws.geonames.org/4034894> rdf:type owl:NamedIndividual ;
+<https://sws.geonames.org/4034894> rdf:type owl:NamedIndividual ,
+                                            properties:Country ,
+                                            properties:EU_Third_Country ;
                                    geonames_ontology:countryCode "WS" ;
                                    geonames_ontology:geonamesID "4034894" ;
                                    geonames_ontology:lat "-13.8" ;
@@ -1847,7 +1963,9 @@ geonames_ontology:name rdf:type owl:DatatypeProperty .
 
 
 ###  https://sws.geonames.org/433561
-<https://sws.geonames.org/433561> rdf:type owl:NamedIndividual ;
+<https://sws.geonames.org/433561> rdf:type owl:NamedIndividual ,
+                                           properties:Country ,
+                                           properties:EU_Third_Country ;
                                   geonames_ontology:countryCode "BI" ;
                                   geonames_ontology:geonamesID "433561" ;
                                   geonames_ontology:lat "-3.5" ;
@@ -1856,7 +1974,9 @@ geonames_ontology:name rdf:type owl:DatatypeProperty .
 
 
 ###  https://sws.geonames.org/453733
-<https://sws.geonames.org/453733> rdf:type owl:NamedIndividual ;
+<https://sws.geonames.org/453733> rdf:type owl:NamedIndividual ,
+                                           properties:Country ,
+                                           properties:EU_Member_State ;
                                   geonames_ontology:countryCode "EE" ;
                                   geonames_ontology:geonamesID "453733" ;
                                   geonames_ontology:lat "59" ;
@@ -1865,7 +1985,9 @@ geonames_ontology:name rdf:type owl:DatatypeProperty .
 
 
 ###  https://sws.geonames.org/458258
-<https://sws.geonames.org/458258> rdf:type owl:NamedIndividual ;
+<https://sws.geonames.org/458258> rdf:type owl:NamedIndividual ,
+                                           properties:Country ,
+                                           properties:EU_Member_State ;
                                   geonames_ontology:countryCode "LV" ;
                                   geonames_ontology:geonamesID "458258" ;
                                   geonames_ontology:lat "57" ;
@@ -1874,7 +1996,9 @@ geonames_ontology:name rdf:type owl:DatatypeProperty .
 
 
 ###  https://sws.geonames.org/49518
-<https://sws.geonames.org/49518> rdf:type owl:NamedIndividual ;
+<https://sws.geonames.org/49518> rdf:type owl:NamedIndividual ,
+                                          properties:Country ,
+                                          properties:EU_Third_Country ;
                                  geonames_ontology:countryCode "RW" ;
                                  geonames_ontology:geonamesID "49518" ;
                                  geonames_ontology:lat "-2" ;
@@ -1883,7 +2007,9 @@ geonames_ontology:name rdf:type owl:DatatypeProperty .
 
 
 ###  https://sws.geonames.org/51537
-<https://sws.geonames.org/51537> rdf:type owl:NamedIndividual ;
+<https://sws.geonames.org/51537> rdf:type owl:NamedIndividual ,
+                                          properties:Country ,
+                                          properties:EU_Third_Country ;
                                  geonames_ontology:countryCode "SO" ;
                                  geonames_ontology:geonamesID "51537" ;
                                  geonames_ontology:lat "6" ;
@@ -1892,7 +2018,9 @@ geonames_ontology:name rdf:type owl:DatatypeProperty .
 
 
 ###  https://sws.geonames.org/587116
-<https://sws.geonames.org/587116> rdf:type owl:NamedIndividual ;
+<https://sws.geonames.org/587116> rdf:type owl:NamedIndividual ,
+                                           properties:Country ,
+                                           properties:EU_Third_Country ;
                                   geonames_ontology:countryCode "AZ" ;
                                   geonames_ontology:geonamesID "587116" ;
                                   geonames_ontology:lat "40.5" ;
@@ -1901,7 +2029,9 @@ geonames_ontology:name rdf:type owl:DatatypeProperty .
 
 
 ###  https://sws.geonames.org/597427
-<https://sws.geonames.org/597427> rdf:type owl:NamedIndividual ;
+<https://sws.geonames.org/597427> rdf:type owl:NamedIndividual ,
+                                           properties:Country ,
+                                           properties:EU_Member_State ;
                                   geonames_ontology:countryCode "LT" ;
                                   geonames_ontology:geonamesID "597427" ;
                                   geonames_ontology:lat "5.541.667" ;
@@ -1910,7 +2040,9 @@ geonames_ontology:name rdf:type owl:DatatypeProperty .
 
 
 ###  https://sws.geonames.org/6112716
-<https://sws.geonames.org/6112716> rdf:type owl:NamedIndividual ;
+<https://sws.geonames.org/6112716> rdf:type owl:NamedIndividual ,
+                                            properties:Country ,
+                                            properties:EU_Third_Country ;
                                    geonames_ontology:countryCode "CA" ;
                                    geonames_ontology:geonamesID "6112716" ;
                                    geonames_ontology:lat "5.135.663" ;
@@ -1919,7 +2051,9 @@ geonames_ontology:name rdf:type owl:DatatypeProperty .
 
 
 ###  https://sws.geonames.org/614540
-<https://sws.geonames.org/614540> rdf:type owl:NamedIndividual ;
+<https://sws.geonames.org/614540> rdf:type owl:NamedIndividual ,
+                                           properties:Country ,
+                                           properties:EU_Third_Country ;
                                   geonames_ontology:countryCode "GE" ;
                                   geonames_ontology:geonamesID "614540" ;
                                   geonames_ontology:lat "4.199.998" ;
@@ -1928,7 +2062,9 @@ geonames_ontology:name rdf:type owl:DatatypeProperty .
 
 
 ###  https://sws.geonames.org/617790
-<https://sws.geonames.org/617790> rdf:type owl:NamedIndividual ;
+<https://sws.geonames.org/617790> rdf:type owl:NamedIndividual ,
+                                           properties:Country ,
+                                           properties:EU_Third_Country ;
                                   geonames_ontology:countryCode "MD" ;
                                   geonames_ontology:geonamesID "617790" ;
                                   geonames_ontology:lat "47.25" ;
@@ -1937,7 +2073,9 @@ geonames_ontology:name rdf:type owl:DatatypeProperty .
 
 
 ###  https://sws.geonames.org/6251999
-<https://sws.geonames.org/6251999> rdf:type owl:NamedIndividual ;
+<https://sws.geonames.org/6251999> rdf:type owl:NamedIndividual ,
+                                            properties:Country ,
+                                            properties:EU_Third_Country ;
                                    geonames_ontology:countryCode "CA" ;
                                    geonames_ontology:geonamesID "6251999" ;
                                    geonames_ontology:lat "6.010.867" ;
@@ -1946,7 +2084,9 @@ geonames_ontology:name rdf:type owl:DatatypeProperty .
 
 
 ###  https://sws.geonames.org/6252001
-<https://sws.geonames.org/6252001> rdf:type owl:NamedIndividual ;
+<https://sws.geonames.org/6252001> rdf:type owl:NamedIndividual ,
+                                            properties:Country ,
+                                            properties:EU_Third_Country ;
                                    geonames_ontology:countryCode "US" ;
                                    geonames_ontology:geonamesID "6252001" ;
                                    geonames_ontology:lat "39.76" ;
@@ -1955,7 +2095,9 @@ geonames_ontology:name rdf:type owl:DatatypeProperty .
 
 
 ###  https://sws.geonames.org/6290252
-<https://sws.geonames.org/6290252> rdf:type owl:NamedIndividual ;
+<https://sws.geonames.org/6290252> rdf:type owl:NamedIndividual ,
+                                            properties:Country ,
+                                            properties:EU_Third_Country ;
                                    geonames_ontology:countryCode "RS" ;
                                    geonames_ontology:geonamesID "6290252" ;
                                    geonames_ontology:lat "4.481.892" ;
@@ -1964,7 +2106,9 @@ geonames_ontology:name rdf:type owl:DatatypeProperty .
 
 
 ###  https://sws.geonames.org/630336
-<https://sws.geonames.org/630336> rdf:type owl:NamedIndividual ;
+<https://sws.geonames.org/630336> rdf:type owl:NamedIndividual ,
+                                           properties:Country ,
+                                           properties:EU_Third_Country ;
                                   geonames_ontology:countryCode "BY" ;
                                   geonames_ontology:geonamesID "630336" ;
                                   geonames_ontology:lat "53" ;
@@ -1973,7 +2117,9 @@ geonames_ontology:name rdf:type owl:DatatypeProperty .
 
 
 ###  https://sws.geonames.org/660013
-<https://sws.geonames.org/660013> rdf:type owl:NamedIndividual ;
+<https://sws.geonames.org/660013> rdf:type owl:NamedIndividual ,
+                                           properties:Country ,
+                                           properties:EU_Member_State ;
                                   geonames_ontology:countryCode "FI" ;
                                   geonames_ontology:geonamesID "660013" ;
                                   geonames_ontology:lat "64" ;
@@ -1982,7 +2128,9 @@ geonames_ontology:name rdf:type owl:DatatypeProperty .
 
 
 ###  https://sws.geonames.org/690791
-<https://sws.geonames.org/690791> rdf:type owl:NamedIndividual ;
+<https://sws.geonames.org/690791> rdf:type owl:NamedIndividual ,
+                                           properties:Country ,
+                                           properties:EU_Third_Country ;
                                   geonames_ontology:countryCode "UA" ;
                                   geonames_ontology:geonamesID "690791" ;
                                   geonames_ontology:lat "49" ;
@@ -1991,7 +2139,9 @@ geonames_ontology:name rdf:type owl:DatatypeProperty .
 
 
 ###  https://sws.geonames.org/69543
-<https://sws.geonames.org/69543> rdf:type owl:NamedIndividual ;
+<https://sws.geonames.org/69543> rdf:type owl:NamedIndividual ,
+                                          properties:Country ,
+                                          properties:EU_Third_Country ;
                                  geonames_ontology:countryCode "YE" ;
                                  geonames_ontology:geonamesID "69543" ;
                                  geonames_ontology:lat "15.5" ;
@@ -2000,7 +2150,9 @@ geonames_ontology:name rdf:type owl:DatatypeProperty .
 
 
 ###  https://sws.geonames.org/718075
-<https://sws.geonames.org/718075> rdf:type owl:NamedIndividual ;
+<https://sws.geonames.org/718075> rdf:type owl:NamedIndividual ,
+                                           properties:Country ,
+                                           properties:EU_Third_Country ;
                                   geonames_ontology:countryCode "MK" ;
                                   geonames_ontology:geonamesID "718075" ;
                                   geonames_ontology:lat "4.166.667" ;
@@ -2009,7 +2161,9 @@ geonames_ontology:name rdf:type owl:DatatypeProperty .
 
 
 ###  https://sws.geonames.org/719819
-<https://sws.geonames.org/719819> rdf:type owl:NamedIndividual ;
+<https://sws.geonames.org/719819> rdf:type owl:NamedIndividual ,
+                                           properties:Country ,
+                                           properties:EU_Member_State ;
                                   geonames_ontology:countryCode "HU" ;
                                   geonames_ontology:geonamesID "719819" ;
                                   geonames_ontology:lat "47" ;
@@ -2018,7 +2172,9 @@ geonames_ontology:name rdf:type owl:DatatypeProperty .
 
 
 ###  https://sws.geonames.org/732800
-<https://sws.geonames.org/732800> rdf:type owl:NamedIndividual ;
+<https://sws.geonames.org/732800> rdf:type owl:NamedIndividual ,
+                                           properties:Country ,
+                                           properties:EU_Member_State ;
                                   geonames_ontology:countryCode "BG" ;
                                   geonames_ontology:geonamesID "732800" ;
                                   geonames_ontology:lat "4.266.667" ;
@@ -2027,7 +2183,9 @@ geonames_ontology:name rdf:type owl:DatatypeProperty .
 
 
 ###  https://sws.geonames.org/7609695
-<https://sws.geonames.org/7609695> rdf:type owl:NamedIndividual ;
+<https://sws.geonames.org/7609695> rdf:type owl:NamedIndividual ,
+                                            properties:Country ,
+                                            properties:EU_Third_Country ;
                                    geonames_ontology:countryCode "SX" ;
                                    geonames_ontology:geonamesID "7609695" ;
                                    geonames_ontology:lat "1.804.167" ;
@@ -2036,7 +2194,9 @@ geonames_ontology:name rdf:type owl:DatatypeProperty .
 
 
 ###  https://sws.geonames.org/7626836
-<https://sws.geonames.org/7626836> rdf:type owl:NamedIndividual ;
+<https://sws.geonames.org/7626836> rdf:type owl:NamedIndividual ,
+                                            properties:Country ,
+                                            properties:EU_Third_Country ;
                                    geonames_ontology:countryCode "CW" ;
                                    geonames_ontology:geonamesID "7626836" ;
                                    geonames_ontology:lat "1.216.667" ;
@@ -2045,7 +2205,9 @@ geonames_ontology:name rdf:type owl:DatatypeProperty .
 
 
 ###  https://sws.geonames.org/7626844
-<https://sws.geonames.org/7626844> rdf:type owl:NamedIndividual ;
+<https://sws.geonames.org/7626844> rdf:type owl:NamedIndividual ,
+                                            properties:Country ,
+                                            properties:EU_Third_Country ;
                                    geonames_ontology:countryCode "BQ" ;
                                    geonames_ontology:geonamesID "7626844" ;
                                    geonames_ontology:lat "1.221.286" ;
@@ -2054,7 +2216,9 @@ geonames_ontology:name rdf:type owl:DatatypeProperty .
 
 
 ###  https://sws.geonames.org/783754
-<https://sws.geonames.org/783754> rdf:type owl:NamedIndividual ;
+<https://sws.geonames.org/783754> rdf:type owl:NamedIndividual ,
+                                           properties:Country ,
+                                           properties:EU_Third_Country ;
                                   geonames_ontology:countryCode "AL" ;
                                   geonames_ontology:geonamesID "783754" ;
                                   geonames_ontology:lat "41" ;
@@ -2063,7 +2227,9 @@ geonames_ontology:name rdf:type owl:DatatypeProperty .
 
 
 ###  https://sws.geonames.org/7909807
-<https://sws.geonames.org/7909807> rdf:type owl:NamedIndividual ;
+<https://sws.geonames.org/7909807> rdf:type owl:NamedIndividual ,
+                                            properties:Country ,
+                                            properties:EU_Third_Country ;
                                    geonames_ontology:countryCode "SS" ;
                                    geonames_ontology:geonamesID "7909807" ;
                                    geonames_ontology:lat "7.5" ;
@@ -2072,7 +2238,9 @@ geonames_ontology:name rdf:type owl:DatatypeProperty .
 
 
 ###  https://sws.geonames.org/798544
-<https://sws.geonames.org/798544> rdf:type owl:NamedIndividual ;
+<https://sws.geonames.org/798544> rdf:type owl:NamedIndividual ,
+                                           properties:Country ,
+                                           properties:EU_Member_State ;
                                   geonames_ontology:countryCode "PL" ;
                                   geonames_ontology:geonamesID "798544" ;
                                   geonames_ontology:lat "52" ;
@@ -2081,7 +2249,9 @@ geonames_ontology:name rdf:type owl:DatatypeProperty .
 
 
 ###  https://sws.geonames.org/798549
-<https://sws.geonames.org/798549> rdf:type owl:NamedIndividual ;
+<https://sws.geonames.org/798549> rdf:type owl:NamedIndividual ,
+                                           properties:Country ,
+                                           properties:EU_Member_State ;
                                   geonames_ontology:countryCode "RO" ;
                                   geonames_ontology:geonamesID "798549" ;
                                   geonames_ontology:lat "46" ;
@@ -2090,7 +2260,9 @@ geonames_ontology:name rdf:type owl:DatatypeProperty .
 
 
 ###  https://sws.geonames.org/831053
-<https://sws.geonames.org/831053> rdf:type owl:NamedIndividual ;
+<https://sws.geonames.org/831053> rdf:type owl:NamedIndividual ,
+                                           properties:Country ,
+                                           properties:EU_Third_Country ;
                                   geonames_ontology:countryCode "XK" ;
                                   geonames_ontology:geonamesID "831053" ;
                                   geonames_ontology:lat "4.258.333" ;
@@ -2099,7 +2271,9 @@ geonames_ontology:name rdf:type owl:DatatypeProperty .
 
 
 ###  https://sws.geonames.org/878675
-<https://sws.geonames.org/878675> rdf:type owl:NamedIndividual ;
+<https://sws.geonames.org/878675> rdf:type owl:NamedIndividual ,
+                                           properties:Country ,
+                                           properties:EU_Third_Country ;
                                   geonames_ontology:countryCode "ZW" ;
                                   geonames_ontology:geonamesID "878675" ;
                                   geonames_ontology:lat "-19" ;
@@ -2108,7 +2282,9 @@ geonames_ontology:name rdf:type owl:DatatypeProperty .
 
 
 ###  https://sws.geonames.org/895949
-<https://sws.geonames.org/895949> rdf:type owl:NamedIndividual ;
+<https://sws.geonames.org/895949> rdf:type owl:NamedIndividual ,
+                                           properties:Country ,
+                                           properties:EU_Third_Country ;
                                   geonames_ontology:countryCode "ZM" ;
                                   geonames_ontology:geonamesID "895949" ;
                                   geonames_ontology:lat "-1.433.333" ;
@@ -2117,7 +2293,9 @@ geonames_ontology:name rdf:type owl:DatatypeProperty .
 
 
 ###  https://sws.geonames.org/921929
-<https://sws.geonames.org/921929> rdf:type owl:NamedIndividual ;
+<https://sws.geonames.org/921929> rdf:type owl:NamedIndividual ,
+                                           properties:Country ,
+                                           properties:EU_Third_Country ;
                                   geonames_ontology:countryCode "KM" ;
                                   geonames_ontology:geonamesID "921929" ;
                                   geonames_ontology:lat "-1.223.333" ;
@@ -2126,7 +2304,9 @@ geonames_ontology:name rdf:type owl:DatatypeProperty .
 
 
 ###  https://sws.geonames.org/927384
-<https://sws.geonames.org/927384> rdf:type owl:NamedIndividual ;
+<https://sws.geonames.org/927384> rdf:type owl:NamedIndividual ,
+                                           properties:Country ,
+                                           properties:EU_Third_Country ;
                                   geonames_ontology:countryCode "MW" ;
                                   geonames_ontology:geonamesID "927384" ;
                                   geonames_ontology:lat "-13.5" ;
@@ -2135,7 +2315,9 @@ geonames_ontology:name rdf:type owl:DatatypeProperty .
 
 
 ###  https://sws.geonames.org/932692
-<https://sws.geonames.org/932692> rdf:type owl:NamedIndividual ;
+<https://sws.geonames.org/932692> rdf:type owl:NamedIndividual ,
+                                           properties:Country ,
+                                           properties:EU_Third_Country ;
                                   geonames_ontology:countryCode "LS" ;
                                   geonames_ontology:geonamesID "932692" ;
                                   geonames_ontology:lat "-29.5" ;
@@ -2144,7 +2326,9 @@ geonames_ontology:name rdf:type owl:DatatypeProperty .
 
 
 ###  https://sws.geonames.org/933860
-<https://sws.geonames.org/933860> rdf:type owl:NamedIndividual ;
+<https://sws.geonames.org/933860> rdf:type owl:NamedIndividual ,
+                                           properties:Country ,
+                                           properties:EU_Third_Country ;
                                   geonames_ontology:countryCode "BW" ;
                                   geonames_ontology:geonamesID "933860" ;
                                   geonames_ontology:lat "-22" ;
@@ -2153,7 +2337,9 @@ geonames_ontology:name rdf:type owl:DatatypeProperty .
 
 
 ###  https://sws.geonames.org/934292
-<https://sws.geonames.org/934292> rdf:type owl:NamedIndividual ;
+<https://sws.geonames.org/934292> rdf:type owl:NamedIndividual ,
+                                           properties:Country ,
+                                           properties:EU_Third_Country ;
                                   geonames_ontology:countryCode "MU" ;
                                   geonames_ontology:geonamesID "934292" ;
                                   geonames_ontology:lat "-20.3" ;
@@ -2162,7 +2348,9 @@ geonames_ontology:name rdf:type owl:DatatypeProperty .
 
 
 ###  https://sws.geonames.org/934841
-<https://sws.geonames.org/934841> rdf:type owl:NamedIndividual ;
+<https://sws.geonames.org/934841> rdf:type owl:NamedIndividual ,
+                                           properties:Country ,
+                                           properties:EU_Third_Country ;
                                   geonames_ontology:countryCode "SZ" ;
                                   geonames_ontology:geonamesID "934841" ;
                                   geonames_ontology:lat "-26.5" ;
@@ -2171,7 +2359,9 @@ geonames_ontology:name rdf:type owl:DatatypeProperty .
 
 
 ###  https://sws.geonames.org/953987
-<https://sws.geonames.org/953987> rdf:type owl:NamedIndividual ;
+<https://sws.geonames.org/953987> rdf:type owl:NamedIndividual ,
+                                           properties:Country ,
+                                           properties:EU_Third_Country ;
                                   geonames_ontology:countryCode "ZA" ;
                                   geonames_ontology:geonamesID "953987" ;
                                   geonames_ontology:lat "-29" ;
@@ -2180,7 +2370,9 @@ geonames_ontology:name rdf:type owl:DatatypeProperty .
 
 
 ###  https://sws.geonames.org/99237
-<https://sws.geonames.org/99237> rdf:type owl:NamedIndividual ;
+<https://sws.geonames.org/99237> rdf:type owl:NamedIndividual ,
+                                          properties:Country ,
+                                          properties:EU_Third_Country ;
                                  geonames_ontology:countryCode "IQ" ;
                                  geonames_ontology:geonamesID "99237" ;
                                  geonames_ontology:lat "33" ;
