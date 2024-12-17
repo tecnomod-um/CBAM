@@ -47,10 +47,11 @@
                                      terms:abstract "The Carbon Boarder Adjustment Mechanism report Ontology" ;
                                      terms:accessRights "This ontology is licensed under the Creative Commons Attribution-NonCommercial 4.0 International License (CC BY-NC 4.0). It allows non-commercial use, sharing, and adaptation of the ontology, as long as users provide clear credit to the creator by citing the ontology's title, creator, and license information. Commercial use is strictly prohibited." ;
                                      terms:contributor [ foaf:name "Alexander Garcia Castro" ,
-                                                                   "Andreas Nissen" ,
+                                                                   "Andreas Rathgeb" ,
                                                                    "Astrid Duque Ramos" ,
                                                                    "Francisco Abad" ,
-                                                                   "Lars Rathgeb"
+                                                                   "Jesualdo Tomás Fernández Breis"
+                                                                   "Lars Nissen"
                                                        ] ;
                                      terms:creator [ foaf:name "Astrid Duque Ramos"
                                                    ] ;
