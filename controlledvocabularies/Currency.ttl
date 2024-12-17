@@ -23,7 +23,7 @@
                                                                       ] ;
                                    <http://purl.org/dc/terms/description> "This ontology represents the code list for the 'Currency' as defined by the Carbon Border Adjustment Mechanism (CBAM) Report. The type of coordinates (GPS/GNSS)." ;
                                    <http://purl.org/dc/terms/hasVersion> "<https://purl.org/cbam/Currency/1.0>"^^xsd:anyURI ;
-                                   <http://purl.org/dc/terms/issued> "22024-11-21"^^xsd:date ;
+                                   <http://purl.org/dc/terms/issued> "2024-11-21"^^xsd:date ;
                                    <http://purl.org/dc/terms/license> "<http://creativecommons.org/licenses/by/4.0/>" ;
                                    <http://purl.org/dc/terms/modified> "2024-11-21"^^xsd:date ;
                                    <http://purl.org/dc/terms/publisher> "Siemens Energy" ;

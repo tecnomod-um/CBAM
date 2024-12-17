@@ -32,7 +32,7 @@
                                                 dcterms:license "<http://creativecommons.org/licenses/by/4.0/>" ;
                                                 dcterms:modified "2024-11-21"^^xsd:date ;
 #                                               dcterms:publisher [ foaf:organization [ foaf:name ,"Universidad de Murcia" ]];
-                                                frapo:isFundedBy "Siemens Energy"
+                                                frapo:isFundedBy "Siemens Energy" ;
                                                 dcterms:source "Report Structure ver 18.0.xlsx  <https://taxation-customs.ec.europa.eu/carbon-border-adjustment-mechanism_en#where-to-report>" ;
                                                 dcterms:title "Source of electricity"^^rdfs:Literal ;
                                                 vann:preferredNamespacePrefix "<https://purl.org/cbam/Source_of_electricity/>" ;
