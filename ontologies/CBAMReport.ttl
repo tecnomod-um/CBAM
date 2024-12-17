@@ -48,8 +48,7 @@
                                                  <https://purl.org/cbam/emissionsqualifyingparameters/> ;
                                      dcterms:abstract "The Carbon Boarder Adjustment Mechanism report Ontology" ;
                                      dcterms:accessRights "This ontology is licensed under the Creative Commons Attribution-NonCommercial 4.0 International License (CC BY-NC 4.0). It allows non-commercial use, sharing, and adaptation of the ontology, as long as users provide clear credit to the creator by citing the ontology's title, creator, and license information. Commercial use is strictly prohibited." ;
-                                     dcterms:bibliographicCitation "OK4I - Ontologies and Knowledge Graphs for Industry, July 15–19, 2024, Enschede, Netherlands - <https://www.utwente.nl/en/eemcs/fois2024/resources/papers/duque-et-al-ontology-network-for-the-standardization-of-the-eu-cbam-report-data.pdf>"^^rdfs:Literal ;
-                                     dcterms:contributor [ foaf:name "Astrid Duque Ramos"
+                                     dcterms:contributor [ ffoaf:name "Astrid Duque Ramos" , "Alexander Garcia Castro" , "Andreas Nissen" , "Lars Rathgeb" , "Francisco Abad"
                                                          ] ;
                                      dcterms:creator [ foaf:name "Astrid Duque Ramos"
                                                      ] ;
@@ -59,7 +58,8 @@
                                      dcterms:issued "2024-11-21"^^xsd:date ;
                                      dcterms:license "http://creativecommons.org/licenses/by/4.0/"^^xsd:anyURI ;
                                      dcterms:modified "2024-11-28"^^xsd:date ;
-                                     dcterms:publisher "Siemens Energy" ;
+                                     dcterms:publisher "Universidad de Murcia" ;
+                                     schema:funder "Siemens Energy"
                                      dcterms:source "Report Structure ver 18.0.xlsx  <https://taxation-customs.ec.europa.eu/carbon-border-adjustment-mechanism_en#where-to-report>" ;
                                      dcterms:title "CBAM report"^^rdfs:Literal ;
                                      vann:preferredNamespacePrefix "https://purl.org/cbam/cbamreport/" ;
