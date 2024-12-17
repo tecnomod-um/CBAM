@@ -1,3 +1,4 @@
+@base <https://purl.org/cbamreport#> .
 @prefix : <https://purl.org/cbamreport#> .
 @prefix org: <http://www.w3.org/ns/org#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
@@ -11,1568 +12,1678 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix terms: <http://purl.org/dc/terms/> .
-@prefix schema: <https://schema.org/> .
 @prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
-@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix schema: <https://schema.org/> .
 @prefix ontology: <https://www.geonames.org/ontology#> .
 @prefix cbamreport: <https://purl.org/cbamreport/> .
-@prefix properties: <https://purl.org/cbam/> .
 @prefix vocabulary: <https://purl.org/cbam/cbam_goods/> .
 @prefix emissionsqualifyingparameters: <https://purl.org/emissionsqualifyingparameters#> .
-@base <https://purl.org/cbamreport#> .
-
-<https://purl.org/cbam/cbamreport/> rdf:type owl:Ontology ;
-                                     owl:versionIRI <https://purl.org/cbam/cbamreport/1.0> ;
-                                     owl:imports <http://www.w3.org/2006/vcard/ns> ,
-                                                 org: ,
-                                                 <https://purl.org/cbam/Area_of_import/1.0> ,
-                                                 <https://purl.org/cbam/CN/> ,
-                                                 <https://purl.org/cbam/Coordinate_System/1.0> ,
-                                                 <https://purl.org/cbam/CountryPlus/1.0> ,
-                                                 <https://purl.org/cbam/Currency/1.0> ,
-                                                 <https://purl.org/cbam/Customs_Procedure/1.0> ,
-                                                 <https://purl.org/cbam/Electricity_Determination/1.0> ,
-                                                 <https://purl.org/cbam/Emission_Report/1.0> ,
-                                                 <https://purl.org/cbam/Exchange_Rate/1.0> ,
-                                                 <https://purl.org/cbam/Flag/1.0> ,
-                                                 <https://purl.org/cbam/Goods_Document/1.0> ,
-                                                 <https://purl.org/cbam/Instrument/1.0> ,
-                                                 <https://purl.org/cbam/Parameter_Value_Type/1.0> ,
-                                                 <https://purl.org/cbam/Product_Covered/1.0> ,
-                                                 <https://purl.org/cbam/Production_Method/1.0> ,
-                                                 <https://purl.org/cbam/Reporting_Rule/1.0> ,
-                                                 <https://purl.org/cbam/Reporting_period/1.0> ,
-                                                 <https://purl.org/cbam/Role/1.0> ,
-                                                 <https://purl.org/cbam/Source_of_electricity/1.0> ,
-                                                 <https://purl.org/cbam/cbam_goods/1.0> ,
-                                                 <https://purl.org/cbam/emissionsqualifyingparameters/> ;
-                                     dcterms:abstract "The Carbon Boarder Adjustment Mechanism report Ontology" ;
-                                     dcterms:accessRights "This ontology is licensed under the Creative Commons Attribution-NonCommercial 4.0 International License (CC BY-NC 4.0). It allows non-commercial use, sharing, and adaptation of the ontology, as long as users provide clear credit to the creator by citing the ontology's title, creator, and license information. Commercial use is strictly prohibited." ;
-                                     dcterms:contributor [ foaf:name "Astrid Duque Ramos" , "Alexander Garcia Castro" , "Andreas Nissen" , "Lars Rathgeb" , "Francisco Abad"
-                                                         ] ;
-                                     dcterms:creator [ foaf:name "Astrid Duque Ramos"
-                                                     ] ;
-                                     dcterms:date "2024-06-01"^^rdfs:Literal ;
-                                     dcterms:description "This ontology represents the entities of the Carbon Border Adjustment Mechanism (CBAM) Report." ;
-                                     dcterms:hasVersion "https://purl.org/cbam/cbamreport/1.0"^^xsd:anyURI ;
-                                     dcterms:issued "2024-11-21"^^xsd:date ;
-                                     dcterms:license "http://creativecommons.org/licenses/by/4.0/"^^xsd:anyURI ;
-                                     dcterms:modified "2024-11-28"^^xsd:date ;
-                                     dcterms:publisher "Universidad de Murcia" ;
-                                     schema:funder "Siemens Energy" ;
-                                     dcterms:source "Report Structure ver 18.0.xlsx  <https://taxation-customs.ec.europa.eu/carbon-border-adjustment-mechanism_en#where-to-report>" ;
-                                     dcterms:title "CBAM report"^^rdfs:Literal ;
-                                     vann:preferredNamespacePrefix "https://purl.org/cbam/cbamreport/" ;
-                                     rdfs:comment "Siemens Energy CBAMReport vocabulary" .
-
-#################################################################
-#    Annotation properties
-#################################################################
-
-###  http://purl.org/dc/dcam/rangeIncludes
-<http://purl.org/dc/dcam/rangeIncludes> rdf:type owl:AnnotationProperty .
-
-
-###  http://purl.org/dc/terms/abstract
-dcterms:abstract rdf:type owl:AnnotationProperty ;
-                 rdfs:subPropertyOf dcterms:description .
-
-
-###  http://purl.org/dc/terms/accessRights
-dcterms:accessRights rdf:type owl:AnnotationProperty ;
-                     rdfs:subPropertyOf dcterms:rights .
-
-
-###  http://purl.org/dc/terms/alternative
-dcterms:alternative rdf:type owl:AnnotationProperty ;
-                    rdfs:range rdfs:Literal .
-
-
-###  http://purl.org/dc/terms/available
-dcterms:available rdf:type owl:AnnotationProperty ;
-                  rdfs:range rdfs:Literal .
-
-
-###  http://purl.org/dc/terms/bibliographicCitation
-dcterms:bibliographicCitation rdf:type owl:AnnotationProperty ;
-                              rdfs:range rdfs:Literal .
-
-
-###  http://purl.org/dc/terms/conformsTo
-dcterms:conformsTo rdf:type owl:AnnotationProperty ;
-                   rdfs:subPropertyOf dcterms:relation .
-
-
-###  http://purl.org/dc/terms/contributor
-dcterms:contributor rdf:type owl:AnnotationProperty ;
-                    rdfs:subPropertyOf dcterms:contributor .
-
-
-###  http://purl.org/dc/terms/created
-dcterms:created rdf:type owl:AnnotationProperty ;
-                rdfs:range rdfs:Literal .
-
-
-###  http://purl.org/dc/terms/creator
-dcterms:creator rdf:type owl:AnnotationProperty ;
-                rdfs:subPropertyOf dcterms:contributor ,
-                                   dcterms:creator .
-
-
-###  http://purl.org/dc/terms/date
-dcterms:date rdf:type owl:AnnotationProperty ;
-             rdfs:range rdfs:Literal .
-
-
-###  http://purl.org/dc/terms/dateAccepted
-dcterms:dateAccepted rdf:type owl:AnnotationProperty ;
-                     rdfs:range rdfs:Literal .
-
-
-###  http://purl.org/dc/terms/dateCopyrighted
-dcterms:dateCopyrighted rdf:type owl:AnnotationProperty ;
-                        rdfs:range rdfs:Literal .
-
-
-###  http://purl.org/dc/terms/dateSubmitted
-dcterms:dateSubmitted rdf:type owl:AnnotationProperty ;
-                      rdfs:range rdfs:Literal .
-
-
-###  http://purl.org/dc/terms/description
-dcterms:description rdf:type owl:AnnotationProperty ;
-                    rdfs:subPropertyOf dcterms:description .
-
-
-###  http://purl.org/dc/terms/hasFormat
-dcterms:hasFormat rdf:type owl:AnnotationProperty ;
-                  rdfs:subPropertyOf dcterms:relation .
-
-
-###  http://purl.org/dc/terms/hasPart
-dcterms:hasPart rdf:type owl:AnnotationProperty ;
-                rdfs:subPropertyOf dcterms:relation .
-
-
-###  http://purl.org/dc/terms/hasVersion
-dcterms:hasVersion rdf:type owl:AnnotationProperty ;
-                   rdfs:subPropertyOf dcterms:relation .
-
-
-###  http://purl.org/dc/terms/identifier
-dcterms:identifier rdf:type owl:AnnotationProperty ;
-                   rdfs:range rdfs:Literal .
-
-
-###  http://purl.org/dc/terms/isFormatOf
-dcterms:isFormatOf rdf:type owl:AnnotationProperty ;
-                   rdfs:subPropertyOf dcterms:relation .
-
-
-###  http://purl.org/dc/terms/isPartOf
-dcterms:isPartOf rdf:type owl:AnnotationProperty ;
-                 rdfs:subPropertyOf dcterms:relation .
-
-
-###  http://purl.org/dc/terms/isReferencedBy
-dcterms:isReferencedBy rdf:type owl:AnnotationProperty ;
-                       rdfs:subPropertyOf dcterms:relation .
-
-
-###  http://purl.org/dc/terms/isReplacedBy
-dcterms:isReplacedBy rdf:type owl:AnnotationProperty ;
-                     rdfs:subPropertyOf dcterms:relation .
-
-
-###  http://purl.org/dc/terms/isRequiredBy
-dcterms:isRequiredBy rdf:type owl:AnnotationProperty ;
-                     rdfs:subPropertyOf dcterms:relation .
-
-
-###  http://purl.org/dc/terms/isVersionOf
-dcterms:isVersionOf rdf:type owl:AnnotationProperty ;
-                    rdfs:subPropertyOf dcterms:relation .
-
-
-###  http://purl.org/dc/terms/issued
-dcterms:issued rdf:type owl:AnnotationProperty ;
-               rdfs:range rdfs:Literal .
-
-
-###  http://purl.org/dc/terms/language
-dcterms:language rdf:type owl:AnnotationProperty ;
-                 rdfs:subPropertyOf dcterms:language .
-
-
-###  http://purl.org/dc/terms/license
-dcterms:license rdf:type owl:AnnotationProperty ;
-                rdfs:subPropertyOf dcterms:rights .
-
-
-###  http://purl.org/dc/terms/modified
-dcterms:modified rdf:type owl:AnnotationProperty ;
-                 rdfs:range rdfs:Literal .
-
-
-###  http://purl.org/dc/terms/publisher
-dcterms:publisher rdf:type owl:AnnotationProperty ;
-                  rdfs:subPropertyOf dcterms:publisher .
-
-
-###  http://purl.org/dc/terms/references
-dcterms:references rdf:type owl:AnnotationProperty ;
-                   rdfs:subPropertyOf dcterms:relation .
-
-
-###  http://purl.org/dc/terms/relation
-dcterms:relation rdf:type owl:AnnotationProperty ;
-                 rdfs:subPropertyOf dcterms:relation .
-
-
-###  http://purl.org/dc/terms/replaces
-dcterms:replaces rdf:type owl:AnnotationProperty ;
-                 rdfs:subPropertyOf dcterms:relation .
-
-
-###  http://purl.org/dc/terms/requires
-dcterms:requires rdf:type owl:AnnotationProperty ;
-                 rdfs:subPropertyOf dcterms:relation .
-
-
-###  http://purl.org/dc/terms/rights
-dcterms:rights rdf:type owl:AnnotationProperty ;
-               rdfs:subPropertyOf dcterms:rights .
-
-
-###  http://purl.org/dc/terms/source
-dcterms:source rdf:type owl:AnnotationProperty ;
-               rdfs:subPropertyOf dcterms:relation ,
-                                  dcterms:source .
-
-
-###  http://purl.org/dc/terms/subject
-dcterms:subject rdf:type owl:AnnotationProperty ;
-                rdfs:subPropertyOf dcterms:subject .
-
-
-###  http://purl.org/dc/terms/tableOfContents
-dcterms:tableOfContents rdf:type owl:AnnotationProperty ;
-                        rdfs:subPropertyOf dcterms:description .
-
-
-###  http://purl.org/dc/terms/title
-dcterms:title rdf:type owl:AnnotationProperty ;
-              rdfs:range rdfs:Literal .
-
-
-###  http://purl.org/dc/terms/type
-dcterms:type rdf:type owl:AnnotationProperty ;
-             rdfs:subPropertyOf dcterms:type .
-
-
-###  http://purl.org/dc/terms/valid
-dcterms:valid rdf:type owl:AnnotationProperty ;
-              rdfs:range rdfs:Literal .
-
-###  http://purl.org/vocab/vann/preferredNamespacePrefix
-vann:preferredNamespacePrefix rdf:type owl:AnnotationProperty .
-
-###  http://purl.org/vocab/vann/preferredNamespaceUri
-vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
-
-###  http://www.w3.org/2000/01/rdf-schema#subClassOf
-rdfs:subClassOf rdf:type owl:AnnotationProperty .
-
-###  http://xmlns.com/foaf/0.1/maker
-foaf:maker rdf:type owl:AnnotationProperty .
-
-###  http://xmlns.com/foaf/0.1/name
-foaf:name rdf:type owl:AnnotationProperty ;
-          foaf:name "" .
-
-
-###  http://xmlns.com/foaf/0.1/workInfohomePage
-foaf:workInfohomePage rdf:type owl:AnnotationProperty .
-
-
-###  https://purl.org/cbam/code
-properties:code rdf:type owl:AnnotationProperty .
-
-
-###  https://purl.org/cbam/procedure_status
-properties:procedure_status rdf:type owl:AnnotationProperty .
-
-
-###  https://purl.org/cbam/validity_date
-properties:validity_date rdf:type owl:AnnotationProperty .
-
-
-#################################################################
-#    Datatypes
-#################################################################
-
-###  http://www.w3.org/2001/XMLSchema#date
-xsd:date rdf:type rdfs:Datatype .
-
-
-###  http://www.w3.org/2001/XMLSchema#string
-xsd:string owl:equivalentClass rdfs:Literal .
-
-
-#################################################################
-#    Object Properties
-#################################################################
-
-###  https://purl.org/cbamreport#hasEconomicActivity
-:hasEconomicActivity rdf:type owl:ObjectProperty ;
-                     rdfs:domain cbamreport:Installation ;
-                     rdfs:range cbamreport:EconomicActivity .
-
-
-###  https://purl.org/cbamreport#hasEmissionsCovered
-:hasEmissionsCovered rdf:type owl:ObjectProperty ;
-                     rdfs:subPropertyOf owl:topObjectProperty ;
-                     rdfs:domain <http://schema.org/Product> ;
-                     rdfs:range cbamreport:GoodsCoveredUnderCarbonPriceDue .
-
-
-###  https://purl.org/cbamreport#hasUNLOCODE
-:hasUNLOCODE rdf:type owl:ObjectProperty ;
-             rdfs:domain cbamreport:Installation .
-
-
-###  https://purl.org/cbamreport#isSubjectTo
-:isSubjectTo rdf:type owl:ObjectProperty ;
-             rdfs:domain <http://schema.org/Product> .
-
-
-###  https://purl.org/cbamreport/acquiredIn
-cbamreport:acquiredIn rdf:type owl:ObjectProperty ;
-                      rdfs:domain cbamreport:GoodsImported ;
-                      rdfs:range cbamreport:Importation ;
-                      rdfs:label "acquiredIn" .
-
-
-###  https://purl.org/cbamreport/consume
-cbamreport:consume rdf:type owl:ObjectProperty ;
-                   rdfs:domain cbamreport:ProductionProcess ;
-                   rdfs:range cbamreport:Commodity ;
-                   rdfs:label "consume" .
-
-
-###  https://purl.org/cbamreport/createA
-cbamreport:createA rdf:type owl:ObjectProperty ;
-                   rdfs:domain cbamreport:Declarant ;
-                   rdfs:range cbamreport:CBAMReport ;
-                   rdfs:label "createA" .
-
-
-###  https://purl.org/cbamreport/declare
-cbamreport:declare rdf:type owl:ObjectProperty ;
-                   rdfs:domain cbamreport:CBAMReport ;
-                   rdfs:range <https://purl.org/cbamrepor#GreenHouseGasEmissions> ;
-                   rdfs:label "declare" .
-
-
-###  https://purl.org/cbamreport/determinesCost
-cbamreport:determinesCost rdf:type owl:ObjectProperty ;
-                          rdfs:domain cbamreport:CarbonPrice ;
-                          rdfs:label "determinesCost" .
-
-
-###  https://purl.org/cbamreport/generate
-cbamreport:generate rdf:type owl:ObjectProperty ;
-                    rdfs:domain cbamreport:Electricity ;
-                    rdfs:range <https://purl.org/cbamrepor#GreenHouseGasEmissions> ;
-                    rdfs:label "generate" .
-
-
-###  https://purl.org/cbamreport/hasAddress
-cbamreport:hasAddress rdf:type owl:ObjectProperty ,
-                               owl:TransitiveProperty ;
-                      rdfs:range cbamreport:Address ;
-                      rdfs:label "hasAddress" .
-
-
-###  https://purl.org/cbamreport/hasCNCode
-cbamreport:hasCNCode rdf:type owl:ObjectProperty ;
-                     rdfs:domain <http://schema.org/Product> ;
-                     rdfs:label "hasCNCode" .
-
-
-###  https://purl.org/cbamreport/hasCharge
-cbamreport:hasCharge rdf:type owl:ObjectProperty ;
-                     rdfs:domain cbamreport:GoodsCoveredUnderCarbonPriceDue ;
-                     rdfs:range cbamreport:CarbonPriceDue ;
-                     rdfs:label "hasCarbonCharge" .
-
-
-###  https://purl.org/cbamreport/hasQuantityValue
-cbamreport:hasQuantityValue rdf:type owl:ObjectProperty ;
-                            rdfs:domain <http://schema.org/Product> ;
-                            rdfs:label "hasWeight" .
-
-
-###  https://purl.org/cbamreport/hasRole
-cbamreport:hasRole rdf:type owl:ObjectProperty ;
-                   rdfs:domain cbamreport:Declarant ;
-                   rdfs:label "hasRole" .
-
-
-###  https://purl.org/cbamreport/identifiedBy
-cbamreport:identifiedBy rdf:type owl:ObjectProperty ;
-                        rdfs:domain cbamreport:ProductionProcess ;
-                        rdfs:label "identifiedBy" .
-
-
-###  https://purl.org/cbamreport/import
-cbamreport:import rdf:type owl:ObjectProperty ;
-                  rdfs:domain cbamreport:Importer ;
-                  rdfs:range cbamreport:GoodsImported ;
-                  rdfs:label "import" .
-
-
-###  https://purl.org/cbamreport/isAssignedto
-cbamreport:isAssignedto rdf:type owl:ObjectProperty ;
-                        rdfs:label "isAssignedto" .
-
-
-###  https://purl.org/cbamreport/isCodifiedBy
-cbamreport:isCodifiedBy rdf:type owl:ObjectProperty ;
-                        rdfs:domain cbamreport:Commodity ;
-                        rdfs:label "isCodifiedBy" .
-
-
-###  https://purl.org/cbamreport/isDeterminedBy
-cbamreport:isDeterminedBy rdf:type owl:ObjectProperty ;
-                          rdfs:label "isDeterminedBy" .
-
-
-###  https://purl.org/cbamreport/isEstablishedIn
-cbamreport:isEstablishedIn rdf:type owl:ObjectProperty ;
-                           rdfs:label "isEstablishedIn" .
-
-
-###  https://purl.org/cbamreport/isExpressedIn
-cbamreport:isExpressedIn rdf:type owl:ObjectProperty ;
-                         rdfs:label "isExpressedIn" .
-
-
-###  https://purl.org/cbamreport/isIdentifiedBy
-cbamreport:isIdentifiedBy rdf:type owl:ObjectProperty ;
-                          rdfs:domain cbamreport:Commodity ;
-                          rdfs:range [ rdf:type owl:Class ;
-                                       owl:unionOf ( cbamreport:CommodityCNCode
-                                                     cbamreport:CommodityHSCode
-                                                   )
-                                     ] ;
-                          rdfs:label "isIdentifiedBy" .
-
-
-###  https://purl.org/cbamreport/isImportedFrom
-cbamreport:isImportedFrom rdf:type owl:ObjectProperty ;
-                          rdfs:label "isImportedFrom" .
-
-
-###  https://purl.org/cbamreport/isLocatedIn
-cbamreport:isLocatedIn rdf:type owl:ObjectProperty ;
-                       rdfs:label "isLocatedIn" .
-
-
-###  https://purl.org/cbamreport/isMeasuredBy
-cbamreport:isMeasuredBy rdf:type owl:ObjectProperty ;
-                        rdfs:domain <https://purl.org/cbamrepor#GreenHouseGasEmissions> ;
-                        rdfs:label "isMeasuredBy" .
-
-
-###  https://purl.org/cbamreport/isProduceBy
-cbamreport:isProduceBy rdf:type owl:ObjectProperty ;
-                       rdfs:domain cbamreport:Goods ;
-                       rdfs:label "isProduceBy" .
-
-
-###  https://purl.org/cbamreport/isQuantifiedBy
-cbamreport:isQuantifiedBy rdf:type owl:ObjectProperty ;
-                          rdfs:domain <https://purl.org/cbamrepor#GreenHouseGasEmissions> ;
-                          rdfs:label "isQuantifiedBy" .
-
-
-###  https://purl.org/cbamreport/isReportedIn
-cbamreport:isReportedIn rdf:type owl:ObjectProperty ;
-                        rdfs:label "isReportedIn" .
-
-
-###  https://purl.org/cbamreport/isRequiredFor
-cbamreport:isRequiredFor rdf:type owl:ObjectProperty ;
-                         owl:inverseOf cbamreport:requires ;
-                         rdfs:domain cbamreport:Authorisation ;
-                         rdfs:range cbamreport:InwardPRoccessingCustomsProcedure ;
-                         rdfs:label "isRequiredFor" .
-
-
-###  https://purl.org/cbamreport/isTransformedInto
-cbamreport:isTransformedInto rdf:type owl:ObjectProperty ;
-                             rdfs:domain cbamreport:Commodity ;
-                             rdfs:range cbamreport:Goods ;
-                             rdfs:label "isTransformedInto" .
-
-
-###  https://purl.org/cbamreport/registeredIn
-cbamreport:registeredIn rdf:type owl:ObjectProperty ;
-                        rdfs:domain cbamreport:Importation ;
-                        rdfs:range cbamreport:MappingProductionMethodAndEmissionQualifyingParameters ;
-                        rdfs:label "registeredIn" .
-
-
-###  https://purl.org/cbamreport/regulatedBy
-cbamreport:regulatedBy rdf:type owl:ObjectProperty ;
-                       rdfs:domain <https://purl.org/cbamrepor#GreenHouseGasEmissions> ;
-                       rdfs:range cbamreport:CarbonPrice ;
-                       rdfs:label "regulatedBy" .
-
-
-###  https://purl.org/cbamreport/reportedBy
-cbamreport:reportedBy rdf:type owl:ObjectProperty ;
-                      rdfs:domain <https://purl.org/cbamrepor#GreenHouseGasEmissions> ;
-                      rdfs:range cbamreport:ReportingMethodology ;
-                      rdfs:label "reportedBy" .
-
-
-###  https://purl.org/cbamreport/requires
-cbamreport:requires rdf:type owl:ObjectProperty ;
-                    rdfs:domain cbamreport:InwardPRoccessingCustomsProcedure ;
-                    rdfs:range cbamreport:Authorisation ;
-                    rdfs:label "requires" .
-
-
-#################################################################
-#    Data properties
-#################################################################
-
-###  http://www.w3.org/2006/vcard/ns#country-name
-vcard:country-name rdf:type owl:DatatypeProperty .
-
-
-###  http://www.w3.org/2006/vcard/ns#locality
-vcard:locality rdf:type owl:DatatypeProperty .
-
-
-###  https://purl.org/cbamreport#installationName
-:installationName rdf:type owl:DatatypeProperty ;
-                  rdfs:subPropertyOf cbamreport:name .
-
-
-###  https://purl.org/cbamreport#installationUNLOCODE
-:installationUNLOCODE rdf:type owl:DatatypeProperty ;
-                      rdfs:domain cbamreport:Installation ;
-                      rdfs:range xsd:string .
-
-
-###  https://purl.org/cbamreport#itemNumber
-:itemNumber rdf:type owl:DatatypeProperty ;
-            rdfs:domain cbamreport:GoodsImported ;
-            rdfs:range xsd:nonNegativeInteger ;
-            rdfs:label "itemNumber" .
-
-
-###  https://purl.org/cbamreport/Authorisation
-cbamreport:Authorisation rdf:type owl:DatatypeProperty ;
-                         rdfs:subPropertyOf owl:topDataProperty ;
-                         rdfs:domain cbamreport:Authorisation ;
-                         rdfs:range xsd:string .
-
-
-###  https://purl.org/cbamreport/Deadline_for_submission_of_Bill_of_discharge
-cbamreport:Deadline_for_submission_of_Bill_of_discharge rdf:type owl:DatatypeProperty ;
-                                                        rdfs:subPropertyOf owl:topDataProperty ;
-                                                        rdfs:domain cbamreport:Authorisation ;
-                                                        rdfs:range xsd:dateTime ;
-                                                        rdfs:comment "The deadline for the submission of the Bill of discharge. Typically it will be one month after the end date of the Globalisation timer." ;
-                                                        rdfs:label "Deadline_for_submission_of_Bill_of_discharge" .
-
-
-###  https://purl.org/cbamreport/DirectEmbeddedEmissions
-cbamreport:DirectEmbeddedEmissions rdf:type owl:DatatypeProperty ;
-                                   rdfs:label "DirectEmbeddedEmissions" .
-
-
-###  https://purl.org/cbamreport/EORINumber
-cbamreport:EORINumber rdf:type owl:DatatypeProperty ;
-                      rdfs:subPropertyOf cbamreport:identificationNumber ;
-                      rdfs:range xsd:string ;
-                      rdfs:comment "This is their EORI number of the organization" ;
-                      rdfs:label "EORINumber" .
-
-
-###  https://purl.org/cbamreport/Globalisation_time_end
-cbamreport:Globalisation_time_end rdf:type owl:DatatypeProperty ;
-                                  rdfs:subPropertyOf owl:topDataProperty ;
-                                  rdfs:domain cbamreport:InwardPRoccessingCustomsProcedure ;
-                                  rdfs:range xsd:dateTime ;
-                                  rdfs:comment "The end date of the Globalisation timer for Inward processing" ;
-                                  rdfs:label "Globalisation_time_end" .
-
-
-###  https://purl.org/cbamreport/Globalisation_time_start
-cbamreport:Globalisation_time_start rdf:type owl:DatatypeProperty ;
-                                    rdfs:subPropertyOf owl:topDataProperty ;
-                                    rdfs:domain cbamreport:InwardPRoccessingCustomsProcedure ;
-                                    rdfs:range xsd:dateTime ;
-                                    rdfs:comment "The start date of the Globalisation time" ;
-                                    rdfs:label "Globalisation_time_start" .
-
-
-###  https://purl.org/cbamreport/IndirectEmbeddedEmissions
-cbamreport:IndirectEmbeddedEmissions rdf:type owl:DatatypeProperty ;
-                                     rdfs:label "IndirectEmbeddedEmissions" .
-
-
-###  https://purl.org/cbamreport/Inward_processing_waiver_for_Bill_of_discharge
-cbamreport:Inward_processing_waiver_for_Bill_of_discharge rdf:type owl:DatatypeProperty ;
-                                                          rdfs:subPropertyOf owl:topDataProperty ;
-                                                          rdfs:label "Inward_processing_waiver_for_Bill_of_discharge" .
-
-
-###  https://purl.org/cbamreport/NotEORINumber
-cbamreport:NotEORINumber rdf:type owl:DatatypeProperty ;
-                         rdfs:subPropertyOf cbamreport:identificationNumber ;
-                         rdfs:range xsd:string ;
-                         rdfs:label "NotEORINumber" .
-
-
-###  https://purl.org/cbamreport/TINTNumber
-cbamreport:TINTNumber rdf:type owl:DatatypeProperty ;
-                      rdfs:subPropertyOf cbamreport:identificationNumber ;
-                      rdfs:label "TINTNumber" .
-
-
-###  https://purl.org/cbamreport/URI
-cbamreport:URI rdf:type owl:DatatypeProperty ;
-               rdfs:range xsd:anyURI ;
-               rdfs:comment "The URI link of an attachment" ;
-               rdfs:label "URI" .
-
-
-###  https://purl.org/cbamreport/additionalInformation
-cbamreport:additionalInformation rdf:type owl:DatatypeProperty ;
-                                 rdfs:subPropertyOf cbamreport:productionMethod ;
-                                 rdfs:label "additionalInformation" .
-
-
-###  https://purl.org/cbamreport/amountEuro
-cbamreport:amountEuro rdf:type owl:DatatypeProperty ;
-                      rdfs:domain cbamreport:CarbonPriceDue ;
-                      rdfs:range xsd:double ;
-                      rdfs:label "amountEuro" .
-
-
-###  https://purl.org/cbamreport/amountOfTheCarbonPriceDue
-cbamreport:amountOfTheCarbonPriceDue rdf:type owl:DatatypeProperty ;
-                                     rdfs:subPropertyOf owl:topDataProperty ;
-                                     rdfs:domain cbamreport:CarbonPriceDue ;
-                                     rdfs:range xsd:decimal ;
-                                     rdfs:label "amountOfCarbonPriceDue" .
-
-
-###  https://purl.org/cbamreport/applicableReportingMethodology
-cbamreport:applicableReportingMethodology rdf:type owl:DatatypeProperty ;
-                                          rdfs:domain cbamreport:ReportingMethodology ;
-                                          rdfs:range xsd:boolean .
-
-
-###  https://purl.org/cbamreport/city
-cbamreport:city rdf:type owl:DatatypeProperty ;
-                rdfs:subPropertyOf owl:topDataProperty ;
-                rdfs:label "city" .
-
-
-###  https://purl.org/cbamreport/countryofOrigin
-cbamreport:countryofOrigin rdf:type owl:DatatypeProperty ;
-                           rdfs:range xsd:string ;
-                           rdfs:comment "This is an entity to declare the Country of Origin of the CBAM Good." ;
-                           rdfs:label "countryofOrigin" .
-
-
-###  https://purl.org/cbamreport/dateOfSignature
-cbamreport:dateOfSignature rdf:type owl:DatatypeProperty ;
-                           rdfs:domain cbamreport:CBAMReportSignature ;
-                           rdfs:range xsd:date .
-
-
-###  https://purl.org/cbamreport/declarantName
-cbamreport:declarantName rdf:type owl:DatatypeProperty ;
-                         rdfs:subPropertyOf cbamreport:name ;
-                         rdfs:domain cbamreport:Declarant ;
-                         rdfs:range xsd:NCName ;
-                         rdfs:comment "The full name (person or company) of the Declarant" ;
-                         rdfs:label "declarantName" .
-
-
-###  https://purl.org/cbamreport/descriptionAndIndicationOfLegalAct
-cbamreport:descriptionAndIndicationOfLegalAct rdf:type owl:DatatypeProperty ;
-                                              rdfs:subPropertyOf owl:topDataProperty ;
-                                              rdfs:domain cbamreport:CarbonPriceDue ;
-                                              rdfs:range xsd:string ;
-                                              rdfs:label "descriptionAndIndicationOfLegalAct" .
-
-
-###  https://purl.org/cbamreport/descriptionofGoods
-cbamreport:descriptionofGoods rdf:type owl:DatatypeProperty ;
-                              rdfs:domain cbamreport:Goods ;
-                              rdfs:range xsd:string ;
-                              rdfs:label "descriptionofGoods" .
-
-
-###  https://purl.org/cbamreport/draftReportID
-cbamreport:draftReportID rdf:type owl:DatatypeProperty ;
-                         rdfs:subPropertyOf owl:topDataProperty ;
-                         rdfs:domain cbamreport:CBAMReport ;
-                         rdfs:range xsd:string ;
-                         rdfs:comment "The unique ID that the Declarant inserts when the report is created (and saved) to identify their report." ;
-                         rdfs:label "draftReportID" .
-
-
-###  https://purl.org/cbamreport/embeddedEmissionsCoveredByCarbonPrice
-cbamreport:embeddedEmissionsCoveredByCarbonPrice rdf:type owl:DatatypeProperty ;
-                                                 rdfs:domain <https://purl.org/cbamrepor#GreenHouseGasEmissions> ;
-                                                 rdfs:range xsd:decimal ;
-                                                 rdfs:label "embeddedEmissionsCoveredByCarbonPriceDue" .
-
-
-###  https://purl.org/cbamreport/embeddedEmissionsCoveredByRebate
-cbamreport:embeddedEmissionsCoveredByRebate rdf:type owl:DatatypeProperty ;
-                                            rdfs:domain <https://purl.org/cbamrepor#GreenHouseGasEmissions> ;
-                                            rdfs:range xsd:decimal ;
-                                            rdfs:label "embeddedEmissionsCoveredByRebate" .
-
-
-###  https://purl.org/cbamreport/fileName
-cbamreport:fileName rdf:type owl:DatatypeProperty ;
-                    rdfs:range xsd:string ;
-                    rdfs:comment "The file name of the attachment" ;
-                    rdfs:label "fileName" .
-
-
-###  https://purl.org/cbamreport/formOfRebate
-cbamreport:formOfRebate rdf:type owl:DatatypeProperty ;
-                        rdfs:domain cbamreport:Rebate ;
-                        rdfs:range xsd:string .
-
-
-###  https://purl.org/cbamreport/goodsItemNumber
-cbamreport:goodsItemNumber rdf:type owl:DatatypeProperty ;
-                           rdfs:domain cbamreport:GoodsImported ;
-                           rdfs:range xsd:positiveInteger ;
-                           rdfs:comment "Each ‘Goods Item Number’ must be unique throughout the CBAM report. The items shall be numbered in a sequential fashion, starting from '1' for the first item and incrementing the numbering by '1' for each following item." ,
-                                        "This element specifies the item number of every CBAM Good imported of the CBAM Report. It is a sequential number" ;
-                           rdfs:label "goodsItemNumber" .
-
-
-###  https://purl.org/cbamreport/hasCountry
-cbamreport:hasCountry rdf:type owl:DatatypeProperty ;
-                      rdfs:subPropertyOf vcard:country-name .
-
-
-###  https://purl.org/cbamreport/identificationNumber
-cbamreport:identificationNumber rdf:type owl:DatatypeProperty ;
-                                rdfs:range xsd:string ;
-                                rdfs:label "identificationNumber" .
-
-
-###  https://purl.org/cbamreport/identificationnumberOfTheSpecificSteelMill
-cbamreport:identificationnumberOfTheSpecificSteelMill rdf:type owl:DatatypeProperty ;
-                                                      rdfs:subPropertyOf cbamreport:identificationNumber ;
-                                                      rdfs:comment "Specific steel mill identification number" ,
-                                                                   "the heat number, also known as the heat code or cast number. This unique identifier is usually stamped on the steel product itself, often near the product's manufacturer's name or logo" ;
-                                                      rdfs:label "identificationnumberOfTheSpecificSteelMill" .
-
-
-###  https://purl.org/cbamreport/importerName
-cbamreport:importerName rdf:type owl:DatatypeProperty ;
-                        rdfs:subPropertyOf cbamreport:name ;
-                        rdfs:domain cbamreport:Importer ;
-                        rdfs:range xsd:NCName ;
-                        rdfs:label "importerName" .
-
-
-###  https://purl.org/cbamreport/methodID
-cbamreport:methodID rdf:type owl:DatatypeProperty ;
-                    rdfs:subPropertyOf cbamreport:productionMethod ;
-                    rdfs:comment "The unique identity of the production method." ;
-                    rdfs:label "methodID" .
-
-
-###  https://purl.org/cbamreport/method_name
-cbamreport:method_name rdf:type owl:DatatypeProperty ;
-                       rdfs:subPropertyOf cbamreport:productionMethod ;
-                       rdfs:label "method_name" .
-
-
-###  https://purl.org/cbamreport/name
-cbamreport:name rdf:type owl:DatatypeProperty ;
-                rdfs:range xsd:NCName ;
-                rdfs:label "name" .
-
-
-###  https://purl.org/cbamreport/netMass
-cbamreport:netMass rdf:type owl:DatatypeProperty ;
-                   rdfs:domain cbamreport:GoodsMeasure ;
-                   rdfs:range xsd:float ;
-                   rdfs:comment "The Net mass is to be used for the CBAM Goods that are measured in kgs (or in tonnes)." ;
-                   rdfs:label "netMass" .
-
-
-###  https://purl.org/cbamreport/pOBox
-cbamreport:pOBox rdf:type owl:DatatypeProperty ;
-                 rdfs:subPropertyOf owl:topDataProperty ;
-                 rdfs:label "hasPoBox" .
-
-
-###  https://purl.org/cbamreport/parameterValue
-cbamreport:parameterValue rdf:type owl:DatatypeProperty ;
-                          rdfs:comment "The actual value of the parameter" ;
-                          rdfs:label "parameterValue" .
-
-
-###  https://purl.org/cbamreport/percentageCoveredByRebate
-cbamreport:percentageCoveredByRebate rdf:type owl:DatatypeProperty ;
-                                     rdfs:domain cbamreport:Rebate ;
-                                     rdfs:range xsd:decimal .
-
-
-###  https://purl.org/cbamreport/postcode
-cbamreport:postcode rdf:type owl:DatatypeProperty ;
-                    rdfs:subPropertyOf owl:topDataProperty ;
-                    rdfs:domain cbamreport:Address ;
-                    rdfs:range xsd:string ;
-                    rdfs:label "hasPostcode" .
-
-
-###  https://purl.org/cbamreport/productionMethod
-cbamreport:productionMethod rdf:type owl:DatatypeProperty ;
-                            rdfs:label "productionMethod" .
-
-
-###  https://purl.org/cbamreport/quantityCoveredByFreeAllocationsny
-cbamreport:quantityCoveredByFreeAllocationsny rdf:type owl:DatatypeProperty ;
-                                              rdfs:subPropertyOf cbamreport:quantityOfEmissionsCovered ;
-                                              rdfs:label "quantityCoveredByFreeAllocationsny" .
-
-
-###  https://purl.org/cbamreport/quantityCoveredByOtherFormOfCompensation
-cbamreport:quantityCoveredByOtherFormOfCompensation rdf:type owl:DatatypeProperty ;
-                                                    rdfs:subPropertyOf cbamreport:quantityOfEmissionsCovered ;
-                                                    rdfs:label "quantityCoveredByOtherFormOfCompensation" .
-
-
-###  https://purl.org/cbamreport/quantityCoveredByRebate
-cbamreport:quantityCoveredByRebate rdf:type owl:DatatypeProperty ;
-                                   rdfs:subPropertyOf cbamreport:quantityOfEmissionsCovered ;
-                                   rdfs:domain cbamreport:Rebate ;
-                                   rdfs:range xsd:decimal ;
-                                   rdfs:label "quantityCoveredByRebate" .
-
-
-###  https://purl.org/cbamreport/quantityOfEmissionsCovered
-cbamreport:quantityOfEmissionsCovered rdf:type owl:DatatypeProperty ;
-                                      rdfs:subPropertyOf owl:topDataProperty ;
-                                      rdfs:label "quantityOfEmissionsCovered" .
-
-
-###  https://purl.org/cbamreport/referenceNumber
-cbamreport:referenceNumber rdf:type owl:DatatypeProperty ;
-                           rdfs:domain cbamreport:CompetentAuthority ;
-                           rdfs:range xsd:string ;
-                           rdfs:comment "The Name or Reference number of the Competent Authority." ;
-                           rdfs:label "referenceNumber" .
-
-
-###  https://purl.org/cbamreport/region
-cbamreport:region rdf:type owl:DatatypeProperty .
-
-
-###  https://purl.org/cbamreport/reportGlobalConfirmation
-cbamreport:reportGlobalConfirmation rdf:type owl:DatatypeProperty ;
-                                    rdfs:domain cbamreport:ReportConfirmation ;
-                                    rdfs:range xsd:boolean .
-
-
-###  https://purl.org/cbamreport/reportID
-cbamreport:reportID rdf:type owl:DatatypeProperty ;
-                    rdfs:subPropertyOf owl:topDataProperty ;
-                    rdfs:range xsd:string ;
-                    rdfs:comment "This unique ID is allocated by the system once the report is submitted" ;
-                    rdfs:label "reportID" .
-
-
-###  https://purl.org/cbamreport/reportIssueDate
-cbamreport:reportIssueDate rdf:type owl:DatatypeProperty ;
-                           rdfs:domain cbamreport:CBAMReport ;
-                           rdfs:range xsd:dateTime ;
-                           rdfs:comment "The date that the CBAM report is submitted" ;
-                           rdfs:label "reportIssueDate" .
-
-
-###  https://purl.org/cbamreport/representativeName
-cbamreport:representativeName rdf:type owl:DatatypeProperty ;
-                              rdfs:subPropertyOf cbamreport:name ;
-                              rdfs:domain cbamreport:Representative ;
-                              rdfs:range xsd:NCName ;
-                              rdfs:label "representativeName" .
-
-
-###  https://purl.org/cbamreport/resultEffectiveCPDue
-cbamreport:resultEffectiveCPDue rdf:type owl:DatatypeProperty ;
-                                rdfs:label "resultEffectiveCPDue" .
-
-
-###  https://purl.org/cbamreport/sequenceNumber
-cbamreport:sequenceNumber rdf:type owl:DatatypeProperty ;
-                          rdfs:domain cbamreport:Importation ;
-                          rdfs:range xsd:nonNegativeInteger ;
-                          rdfs:comment "The sequence number is used for the unique identification and ordering of entities" ;
-                          rdfs:label "sequenceNumber" .
-
-
-###  https://purl.org/cbamreport/shareOfEmissionByDefaultValue
-cbamreport:shareOfEmissionByDefaultValue rdf:type owl:DatatypeProperty ;
-                                         rdfs:domain cbamreport:DirectEmissions ;
-                                         rdfs:range xsd:decimal ;
-                                         rdfs:label "shareOfEmissionByDefaultValue" .
-
-
-###  https://purl.org/cbamreport/shareOfTotalEmbeddedEmissionsCoveredByTheCarbonPrice
-cbamreport:shareOfTotalEmbeddedEmissionsCoveredByTheCarbonPrice rdf:type owl:DatatypeProperty ;
-                                                                rdfs:domain <https://purl.org/cbamrepor#GreenHouseGasEmissions> ;
-                                                                rdfs:range xsd:decimal .
-
-
-###  https://purl.org/cbamreport/signatureName
-cbamreport:signatureName rdf:type owl:DatatypeProperty ;
-                         rdfs:domain cbamreport:Signature ;
-                         rdfs:range xsd:Name ;
-                         foaf:name "" ,
-                                   "signatureName" .
-
-
-###  https://purl.org/cbamreport/signaturePlace
-cbamreport:signaturePlace rdf:type owl:DatatypeProperty ;
-                          rdfs:subPropertyOf vcard:locality ;
-                          rdfs:range xsd:string .
-
-
-###  https://purl.org/cbamreport/street
-cbamreport:street rdf:type owl:DatatypeProperty ;
-                  rdfs:subPropertyOf owl:topDataProperty ;
-                  rdfs:label "street" .
-
-
-###  https://purl.org/cbamreport/streetAdditionalLine
-cbamreport:streetAdditionalLine rdf:type owl:DatatypeProperty ;
-                                rdfs:subPropertyOf owl:topDataProperty ;
-                                rdfs:comment "The street name where the Organization is located" ;
-                                rdfs:label "streetAdditionalLine" .
-
-
-###  https://purl.org/cbamreport/streetnumber
-cbamreport:streetnumber rdf:type owl:DatatypeProperty ;
-                        rdfs:subPropertyOf owl:topDataProperty ;
-                        rdfs:label "streetnumber" .
-
-
-###  https://purl.org/cbamreport/subDivision
-cbamreport:subDivision rdf:type owl:DatatypeProperty ;
-                       rdfs:subPropertyOf owl:topDataProperty ;
-                       rdfs:comment "The sub-division where the Organization is located" ;
-                       rdfs:label "subDivision" .
-
-
-###  https://purl.org/cbamreport/supplementaryUnits
-cbamreport:supplementaryUnits rdf:type owl:DatatypeProperty ;
-                              rdfs:domain cbamreport:GoodsMeasure ;
-                              rdfs:range xsd:string ;
-                              rdfs:label "supplementaryUnits" .
-
-
-###  https://purl.org/cbamreport/totalEmissions
-cbamreport:totalEmissions rdf:type owl:DatatypeProperty ;
-                          rdfs:domain cbamreport:GoodsEmissions ;
-                          rdfs:range xsd:double ;
-                          rdfs:comment "The total of the emissions for all the Goods declared in the CBAM report" ;
-                          rdfs:label "totalEmissions" .
-
-
-###  https://purl.org/cbamreport/totalGoodsImported
-cbamreport:totalGoodsImported rdf:type owl:DatatypeProperty ;
-                              rdfs:domain cbamreport:GoodsImported ;
-                              rdfs:range xsd:positiveInteger ;
-                              rdfs:comment "The total Goods that are declared in the CBAM repor" ;
-                              rdfs:label "totalGoodsImported" .
-
-
-###  https://purl.org/cbamreport/total_Direct_Indirect_Embedded_Emission
-cbamreport:total_Direct_Indirect_Embedded_Emission rdf:type owl:DatatypeProperty ;
-                                                   rdfs:subPropertyOf cbamreport:totalEmissions ;
-                                                   rdfs:comment "The TOTAL (direct + indirect) embedded emissions that are subject to carbon pricing. For instance, if only direct emissions are covered by a carbon pricing system, the share to be provided here would be exactly the share of the direct emissions of the total emissions." ;
-                                                   rdfs:label "total_Direct_Indirect_Embedded_Emission" .
-
-
-###  https://purl.org/cbamreport/total_Embedded_Emissions_of_Electricity_Imported
-cbamreport:total_Embedded_Emissions_of_Electricity_Imported rdf:type owl:DatatypeProperty ;
-                                                            rdfs:label "total_Embedded_Emissions_of_Electricity_Imported" .
-
-
-###  https://purl.org/cbamreport/typeOfMeasurementUnitForEmissions
-cbamreport:typeOfMeasurementUnitForEmissions rdf:type owl:DatatypeProperty ;
-                                             rdfs:domain <http://schema.org/Product> ;
-                                             rdfs:comment "tCO₂e/t indicates how many tonnes of CO₂ equivalent are emitted per tonne of a given product or material" .
-
-
-###  https://purl.org/cbamreport/year
-cbamreport:year rdf:type owl:DatatypeProperty ;
-                rdfs:subPropertyOf owl:topDataProperty ;
-                rdfs:comment "The year for which the report is submitted" ;
-                rdfs:label "year" .
-
-
-#################################################################
-#    Classes
-#################################################################
-
-###  http://schema.org/Product
-<http://schema.org/Product> rdf:type owl:Class ;
-                            rdfs:label "Product" .
-
-###  https://purl.org/cbamrepor#GreenHouseGasEmissions
-<https://purl.org/cbamrepor#GreenHouseGasEmissions> rdf:type owl:Class ;
-                                                    rdfs:subClassOf [ rdf:type owl:Restriction ;
-                                                                      owl:onProperty cbamreport:DirectEmbeddedEmissions ;
-                                                                      owl:someValuesFrom xsd:decimal
-                                                                    ] ,
-                                                                    [ rdf:type owl:Restriction ;
-                                                                      owl:onProperty cbamreport:sequenceNumber ;
-                                                                      owl:someValuesFrom xsd:positiveInteger
-                                                                    ] ,
-                                                                    [ rdf:type owl:Restriction ;
-                                                                      owl:onProperty cbamreport:total_Direct_Indirect_Embedded_Emission ;
-                                                                      owl:someValuesFrom xsd:decimal
-                                                                    ] ;
-                                                    rdfs:label "GreenHouseGasEmissions" .
-
-
-###  https://purl.org/cbamreport#BasedExclPfcEmissions
-:BasedExclPfcEmissions rdf:type owl:Class ;
-                       rdfs:subClassOf <https://purl.org/cbamrepor#GreenHouseGasEmissions> ;
-                       rdfs:label "BasedExclPfcEmissions" .
-
-
-###  https://purl.org/cbamreport#MeasurementBasedEmissions
-:MeasurementBasedEmissions rdf:type owl:Class ;
-                           rdfs:subClassOf <https://purl.org/cbamrepor#GreenHouseGasEmissions> ;
-                           rdfs:label "MeasurementBasedEmissions" .
-
-
-###  https://purl.org/cbamreport#Organization
-:Organization rdf:type owl:Class ;
-              rdfs:label "Organization"@en .
-
-
-###  https://purl.org/cbamreport#OtherEmissions
-:OtherEmissions rdf:type owl:Class ;
-                rdfs:subClassOf <https://purl.org/cbamrepor#GreenHouseGasEmissions> ;
-                rdfs:label "OtherEmissions" .
-
-
-###  https://purl.org/cbamreport#TotalDirectEmissions
-:TotalDirectEmissions rdf:type owl:Class ;
-                      rdfs:subClassOf <https://purl.org/cbamrepor#GreenHouseGasEmissions> ,
-                                      :TotalEmissions ;
-                      rdfs:label "TotalDirectEmissions" .
-
-
-###  https://purl.org/cbamreport#TotalEmissions
-:TotalEmissions rdf:type owl:Class ;
-                rdfs:subClassOf <https://purl.org/cbamrepor#GreenHouseGasEmissions> ;
-                rdfs:label "TotalEmissions" .
-
-
-###  https://purl.org/cbamreport#TotalIndirectEmissions
-:TotalIndirectEmissions rdf:type owl:Class ;
-                        rdfs:subClassOf <https://purl.org/cbamrepor#GreenHouseGasEmissions> ,
-                                        :TotalEmissions ;
-                        rdfs:label "TotalIndirectEmissions" .
-
-
-###  https://purl.org/cbamreport#TotalPfcEmissions
-:TotalPfcEmissions rdf:type owl:Class ;
-                   rdfs:subClassOf <https://purl.org/cbamrepor#GreenHouseGasEmissions> ;
-                   rdfs:label "TotalPfcEmissions" .
-
-
-###  https://purl.org/cbamreport#Unlocode
-:Unlocode rdf:type owl:Class ;
-          rdfs:label "Unlocode" .
-
-
-###  https://purl.org/cbamreport/Address
-cbamreport:Address rdf:type owl:Class ;
-                   rdfs:subClassOf [ rdf:type owl:Restriction ;
-                                     owl:onProperty cbamreport:city ;
-                                     owl:someValuesFrom xsd:string
-                                   ] ,
-                                   [ rdf:type owl:Restriction ;
-                                     owl:onProperty cbamreport:pOBox ;
-                                     owl:someValuesFrom xsd:string
-                                   ] ,
-                                   [ rdf:type owl:Restriction ;
-                                     owl:onProperty cbamreport:postcode ;
-                                     owl:someValuesFrom xsd:string
-                                   ] ,
-                                   [ rdf:type owl:Restriction ;
-                                     owl:onProperty cbamreport:street ;
-                                     owl:someValuesFrom xsd:string
-                                   ] ,
-                                   [ rdf:type owl:Restriction ;
-                                     owl:onProperty cbamreport:streetAdditionalLine ;
-                                     owl:someValuesFrom xsd:string
-                                   ] ,
-                                   [ rdf:type owl:Restriction ;
-                                     owl:onProperty cbamreport:streetnumber ;
-                                     owl:someValuesFrom xsd:string
-                                   ] ,
-                                   [ rdf:type owl:Restriction ;
-                                     owl:onProperty cbamreport:subDivision ;
-                                     owl:someValuesFrom xsd:string
-                                   ] ;
-                   rdfs:comment "This element is used to hold the Address" ;
-                   rdfs:label "Address" .
-
-
-###  https://purl.org/cbamreport/Attachments
-cbamreport:Attachments rdf:type owl:Class ;
-                       rdfs:comment "This is an entity used to attach a file or provide a URL" ;
-                       rdfs:label "Attachments" .
-
-
-###  https://purl.org/cbamreport/Authorisation
-cbamreport:Authorisation rdf:type owl:Class .
-
-
-###  https://purl.org/cbamreport/CBAMGoods
-cbamreport:CBAMGoods rdf:type owl:Class ;
-                     rdfs:label "CBAMGoods" .
-
-
-###  https://purl.org/cbamreport/CBAMReport
-cbamreport:CBAMReport rdf:type owl:Class ;
-                      rdfs:subClassOf [ rdf:type owl:Restriction ;
-                                        owl:onProperty cbamreport:draftReportID ;
-                                        owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                        owl:onDataRange xsd:string
-                                      ] ;
-                      rdfs:comment " The CBAM Report that Declarants will submit" ;
-                      rdfs:label "CBAMReport" .
-
-
-###  https://purl.org/cbamreport/CBAMReportSignature
-cbamreport:CBAMReportSignature rdf:type owl:Class ;
-                               rdfs:subClassOf cbamreport:Signature ;
-                               owl:disjointWith cbamreport:ComparableRuleSignature ;
-                               rdfs:comment "A signature confirming that the information in the CBAM report is accurate and complete" ;
-                               rdfs:label "CBAMReportSignature" .
-
-
-###  https://purl.org/cbamreport/CBAMReportStructure
-cbamreport:CBAMReportStructure rdf:type owl:Class ;
-                               rdfs:subClassOf [ rdf:type owl:Restriction ;
-                                                 owl:onProperty cbamreport:fileName ;
-                                                 owl:someValuesFrom xsd:string
-                                               ] ,
-                                               [ rdf:type owl:Restriction ;
-                                                 owl:onProperty cbamreport:name ;
-                                                 owl:someValuesFrom xsd:string
-                                               ] ;
-                               rdfs:label "CBAMReportStructure" .
-
-
-###  https://purl.org/cbamreport/CarbonPrice
-cbamreport:CarbonPrice rdf:type owl:Class ;
-                       rdfs:label "CarbonPrice" .
-
-
-###  https://purl.org/cbamreport/CarbonPriceDue
-cbamreport:CarbonPriceDue rdf:type owl:Class ;
-                          rdfs:subClassOf cbamreport:CarbonPrice ;
-                          rdfs:label "CarbonPriceDue" .
-
-
-###  https://purl.org/cbamreport/Commodity
-cbamreport:Commodity rdf:type owl:Class ;
-                     rdfs:label "Commodity" .
-
-
-###  https://purl.org/cbamreport/CommodityCNCode
-cbamreport:CommodityCNCode rdf:type owl:Class ;
-                           rdfs:subClassOf cbamreport:CommodityCode ;
-                           rdfs:comment "This is the CN Code of the CBAM Good. It is a 2-digit code that is added in the HS code." ;
-                           rdfs:label "CommodityCNCode" .
-
-
-###  https://purl.org/cbamreport/CommodityCode
-cbamreport:CommodityCode rdf:type owl:Class ;
-                         rdfs:subClassOf cbamreport:Commodity ;
-                         owl:disjointWith cbamreport:CommodityDetails ;
-                         rdfs:comment "This is an entity that contains the HS Code and the CN Code of the CBAM Good" ;
-                         rdfs:label "CommodityCode" .
-
-
-###  https://purl.org/cbamreport/CommodityDetails
-cbamreport:CommodityDetails rdf:type owl:Class ;
-                            rdfs:subClassOf cbamreport:Commodity ;
-                            rdfs:comment "This is an entity that contains the description element of the CBAM Good." ;
-                            rdfs:label "CommodityDetails" .
-
-
-###  https://purl.org/cbamreport/CommodityHSCode
-cbamreport:CommodityHSCode rdf:type owl:Class ;
-                           rdfs:subClassOf cbamreport:CommodityCode ;
-                           rdfs:comment "This is the HS Code of the CBAM Good. It is a 6-digit code." ;
-                           rdfs:label "CommodityHSCode" .
-
-
-###  https://purl.org/cbamreport/ComparableRuleSignature
-cbamreport:ComparableRuleSignature rdf:type owl:Class ;
-                                   rdfs:subClassOf cbamreport:Signature ;
-                                   rdfs:comment "A signature confirming that the non-CBAM-specific applicable rules used are comparable to the CBAM applicable rules" ;
-                                   rdfs:label "ComparableRuleSignature" .
-
-
-###  https://purl.org/cbamreport/CompetentAuthority
-cbamreport:CompetentAuthority rdf:type owl:Class ;
-                              rdfs:subClassOf :Organization ,
-                                              [ rdf:type owl:Restriction ;
-                                                owl:onProperty cbamreport:referenceNumber ;
-                                                owl:allValuesFrom xsd:string
-                                              ] ;
-                              rdfs:comment "This entity contains information regarding the Competent Authority where the Declarant is established" ;
-                              rdfs:label "CompetentAuthority" .
-
-
-###  https://purl.org/cbamreport/Contact
-cbamreport:Contact rdf:type owl:Class ;
-                   rdfs:label "Contact" .
-
-
-###  https://purl.org/cbamreport/Declarant
-cbamreport:Declarant rdf:type owl:Class ;
-                     rdfs:subClassOf :Organization ,
-                                     [ rdf:type owl:Restriction ;
-                                       owl:onProperty cbamreport:declarantName ;
-                                       owl:someValuesFrom xsd:NCName
-                                     ] ;
-                     rdfs:comment "The entity that contains information about the Declarant" ;
-                     rdfs:label "Declarant" .
-
-
-###  https://purl.org/cbamreport/DirectEmissions
-cbamreport:DirectEmissions rdf:type owl:Class ;
-                           rdfs:subClassOf <https://purl.org/cbamrepor#GreenHouseGasEmissions> ,
-                                           [ rdf:type owl:Restriction ;
-                                             owl:onProperty cbamreport:DirectEmbeddedEmissions ;
-                                             owl:someValuesFrom xsd:double
-                                           ] ;
-                           owl:disjointWith cbamreport:IndirectEmissions ;
-                           rdfs:label "DirectEmissions" .
-
-
-###  https://purl.org/cbamreport/EconomicActivity
-cbamreport:EconomicActivity rdf:type owl:Class ;
-                            rdfs:comment "The definition of the economic activity of the installation" ;
-                            rdfs:label "EconomicActivity" .
-
-
-###  https://purl.org/cbamreport/Electricity
-cbamreport:Electricity rdf:type owl:Class ;
-                       rdfs:label "Electricity" .
-
-
-###  https://purl.org/cbamreport/EmissionsOfTheElectricityImported
-cbamreport:EmissionsOfTheElectricityImported rdf:type owl:Class ;
-                                             rdfs:subClassOf <https://purl.org/cbamrepor#GreenHouseGasEmissions> ,
-                                                             [ rdf:type owl:Restriction ;
-                                                               owl:onProperty cbamreport:total_Embedded_Emissions_of_Electricity_Imported ;
-                                                               owl:someValuesFrom xsd:decimal
-                                                             ] ;
-                                             rdfs:label "EmissionsOfTheElectricityImported" .
-
-
-###  https://purl.org/cbamreport/GlobalisationTime
-cbamreport:GlobalisationTime rdf:type owl:Class ;
-                             rdfs:label "GlobalisationTime" .
-
-
-###  https://purl.org/cbamreport/Goods
-cbamreport:Goods rdf:type owl:Class ;
-                 rdfs:label "Goods" .
-
-
-###  https://purl.org/cbamreport/GoodsCoveredUnderCarbonPriceDue
-cbamreport:GoodsCoveredUnderCarbonPriceDue rdf:type owl:Class ;
-                                           rdfs:subClassOf cbamreport:Goods ;
-                                           rdfs:label "GoodsCoveredUnderCarbonPriceDue" .
-
-
-###  https://purl.org/cbamreport/GoodsEmissions
-cbamreport:GoodsEmissions rdf:type owl:Class ;
-                          rdfs:label "GoodsEmissions" .
-
-
-###  https://purl.org/cbamreport/GoodsImported
-cbamreport:GoodsImported rdf:type owl:Class ;
-                         rdfs:subClassOf cbamreport:Goods ,
-                                         [ rdf:type owl:Restriction ;
-                                           owl:onProperty cbamreport:isProduceBy ;
-                                           owl:someValuesFrom cbamreport:Installation
-                                         ] ,
-                                         [ rdf:type owl:Restriction ;
-                                           owl:onProperty cbamreport:goodsItemNumber ;
-                                           owl:someValuesFrom xsd:positiveInteger
-                                         ] ;
-                         rdfs:comment "This is the entity that contains the information for the CBAM Good. There may be up to 99999 CBAM Goods in a CBAM report" ;
-                         rdfs:label "GoodsImported" .
-
-
-###  https://purl.org/cbamreport/GoodsMeasure
-cbamreport:GoodsMeasure rdf:type owl:Class ;
-                        rdfs:subClassOf [ rdf:type owl:Restriction ;
-                                          owl:onProperty cbamreport:isExpressedIn ;
-                                          owl:someValuesFrom cbamreport:TypeOFMeasurementUnit
-                                        ] ,
-                                        [ rdf:type owl:Restriction ;
-                                          owl:onProperty cbamreport:netMass ;
-                                          owl:someValuesFrom xsd:float
-                                        ] ;
-                        rdfs:label "GoodsMeasure" .
-
-
-###  https://purl.org/cbamreport/GoodsMeasureCovered
-cbamreport:GoodsMeasureCovered rdf:type owl:Class ;
-                               rdfs:subClassOf cbamreport:GoodsMeasure ;
-                               rdfs:comment "This entity is used to provide the quantity of the Good for which the emissions are already paid." ;
-                               rdfs:label "GoodsMeasureCovered" .
-
-
-###  https://purl.org/cbamreport/GoodsMeasureImported
-cbamreport:GoodsMeasureImported rdf:type owl:Class ;
-                                rdfs:subClassOf cbamreport:GoodsMeasure ;
-                                rdfs:comment "This is the entity that contains the quantity of the CBAM goods imported" ;
-                                rdfs:label "GoodsMeasureImported" .
-
-
-###  https://purl.org/cbamreport/GoodsMeasurePerProcedure
-cbamreport:GoodsMeasurePerProcedure rdf:type owl:Class ;
-                                    rdfs:subClassOf cbamreport:GoodsMeasure ;
-                                    rdfs:comment "This Data Group contains the quantity of the CBAM Good per Customs procedure" ;
-                                    rdfs:label "GoodsMeasurePerProcedure" .
-
-
-###  https://purl.org/cbamreport/GoodsMeasureProduced
-cbamreport:GoodsMeasureProduced rdf:type owl:Class ;
-                                rdfs:subClassOf cbamreport:GoodsMeasure ;
-                                rdfs:label "GoodsMeasureProduced" .
-
-
-###  https://purl.org/cbamreport/Goods_Produced
-cbamreport:Goods_Produced rdf:type owl:Class ;
-                          rdfs:subClassOf cbamreport:Goods ;
-                          rdfs:label "Goods_Produced" .
-
-
-###  https://purl.org/cbamreport/Importation
-cbamreport:Importation rdf:type owl:Class ;
-                       rdfs:label "Importation" .
-
-
-###  https://purl.org/cbamreport/Importer
-cbamreport:Importer rdf:type owl:Class ;
-                    rdfs:subClassOf :Organization ,
-                                    [ rdf:type owl:Restriction ;
-                                      owl:onProperty cbamreport:importerName ;
-                                      owl:someValuesFrom xsd:NCName
-                                    ] ;
-                    rdfs:comment "The entity that contains information about the Importer that is represented by the Declarant. The Importer can either be declared at Header level, if the same importer is common for all Goods Imported, or in the Goods Imported level" ;
-                    rdfs:label "Importer" .
-
-
-###  https://purl.org/cbamreport/IndirectEmissions
-cbamreport:IndirectEmissions rdf:type owl:Class ;
-                             rdfs:subClassOf <https://purl.org/cbamrepor#GreenHouseGasEmissions> ,
-                                             [ rdf:type owl:Restriction ;
-                                               owl:onProperty cbamreport:IndirectEmbeddedEmissions ;
-                                               owl:someValuesFrom xsd:decimal
-                                             ] ;
-                             rdfs:label "IndirectEmissions" .
-
-
-###  https://purl.org/cbamreport/Installation
-cbamreport:Installation rdf:type owl:Class ;
-                        rdfs:label "Installation" .
-
-
-###  https://purl.org/cbamreport/InwardPRoccessingCustomsProcedure
-cbamreport:InwardPRoccessingCustomsProcedure rdf:type owl:Class ;
-                                             rdfs:label "InwardPRoccessingCustomsProcedure" .
-
-
-###  https://purl.org/cbamreport/MappingProductionMethodAndEmissionQualifyingParameters
-cbamreport:MappingProductionMethodAndEmissionQualifyingParameters rdf:type owl:Class ;
-                                                                  rdfs:label "MappingProductionMethodAndEmissionQualifyingParameters" .
-
-
-###  https://purl.org/cbamreport/MeasureUnitForEmissions
-cbamreport:MeasureUnitForEmissions rdf:type owl:Class ;
-                                   rdfs:label "MeasureUnitForEmissions" .
-
-
-###  https://purl.org/cbamreport/Operator
-cbamreport:Operator rdf:type owl:Class ;
-                    rdfs:subClassOf :Organization ;
-                    rdfs:label "Operator" .
-
-
-###  https://purl.org/cbamreport/ProductionProcess
-cbamreport:ProductionProcess rdf:type owl:Class ;
-                             rdfs:label "ProductionProcess" .
-
-
-###  https://purl.org/cbamreport/Qreport
-cbamreport:Qreport rdf:type owl:Class ;
-                   rdfs:label "Qreport" .
-
-
-###  https://purl.org/cbamreport/Rebate
-cbamreport:Rebate rdf:type owl:Class ;
-                  rdfs:label "Rebate" .
-
-
-###  https://purl.org/cbamreport/Remarks
-cbamreport:Remarks rdf:type owl:Class ;
-                   rdfs:label "Remarks" .
-
-
-###  https://purl.org/cbamreport/ReportConfirmation
-cbamreport:ReportConfirmation rdf:type owl:Class ;
-                              rdfs:label "ReportConfirmation" .
-
-
-###  https://purl.org/cbamreport/ReportingMethodology
-cbamreport:ReportingMethodology rdf:type owl:Class ;
-                                rdfs:label "ReportingMethodology" .
-
-
-###  https://purl.org/cbamreport/Representative
-cbamreport:Representative rdf:type owl:Class ;
-                          rdfs:subClassOf :Organization ;
-                          rdfs:label "Representative" .
-
-
-###  https://purl.org/cbamreport/Signature
-cbamreport:Signature rdf:type owl:Class ;
-                     rdfs:comment "here are two types of signatures in the CBAM Report. The first one is related to the information in the report. The Declarant must confirm that the information in the CBAM report is accurate and complete. The second is only applicable if the type of applicable rules selected is not CBAM-specific. In this case, the Declarant must confirm that the used applicable rules are comparable to the CBAM applicable rules" ;
-                     rdfs:label "Signature" .
-
-
-###  https://purl.org/cbamreport/SteellMill
-cbamreport:SteellMill rdf:type owl:Class ;
-                      rdfs:subClassOf [ rdf:type owl:Restriction ;
-                                        owl:onProperty cbamreport:identificationnumberOfTheSpecificSteelMill ;
-                                        owl:someValuesFrom xsd:string
-                                      ] ;
-                      rdfs:label "SteelMill" .
-
-
-###  https://purl.org/cbamreport/SupportingDocumentsForGoods
-cbamreport:SupportingDocumentsForGoods rdf:type owl:Class ;
-                                       rdfs:label "SupportingDocumentsForGoods" .
-
-
-###  https://purl.org/cbamreport/TotalEmissions
-cbamreport:TotalEmissions rdf:type owl:Class ;
-                          rdfs:label "TotalEmissions" .
-
-
-###  https://purl.org/cbamreport/TotalGoodsImported
-cbamreport:TotalGoodsImported rdf:type owl:Class ;
-                              rdfs:label "TotalGoodsImported" .
-
-
-###  https://purl.org/cbamreport/TypeOFMeasurementUnit
-cbamreport:TypeOFMeasurementUnit rdf:type owl:Class ;
-                                 rdfs:comment "The type of measurement unit of the quantity of the CBAM Good." ;
-                                 rdfs:label "TypeOFMeasurementUnit" .
-
-#################################################################
-#    Annotations
-#################################################################
-
-cbamreport:Authorisation rdfs:comment "The Authorisation related to the inward processing" ;
-                         rdfs:label "Authorisation" .
-
-
-#################################################################
-#    General axioms
-#################################################################
-
-[ rdf:type owl:AllDisjointClasses ;
-  owl:members ( :BasedExclPfcEmissions
-                :MeasurementBasedEmissions
-                :OtherEmissions
-                :TotalDirectEmissions
-                :TotalEmissions
-                :TotalIndirectEmissions
-                :TotalPfcEmissions
-                cbamreport:DirectEmissions
-                cbamreport:EmissionsOfTheElectricityImported
-                cbamreport:IndirectEmissions
-              )
-] .
-
-
-[ rdf:type owl:AllDisjointClasses ;
-  owl:members ( :TotalDirectEmissions
-                :TotalEmissions
-                cbamreport:DirectEmissions
-                cbamreport:EmissionsOfTheElectricityImported
-                cbamreport:IndirectEmissions
-              )
-] .
-
-
-[ rdf:type owl:AllDisjointClasses ;
-  owl:members ( cbamreport:CompetentAuthority
-                cbamreport:Declarant
-                cbamreport:Importer
-                cbamreport:Operator
-                cbamreport:Representative
-              )
-] .
-
-
-[ rdf:type owl:AllDisjointClasses ;
-  owl:members ( cbamreport:GoodsCoveredUnderCarbonPriceDue
-                cbamreport:GoodsImported
-                cbamreport:Goods_Produced
-              )
-] .
-
-
-[ rdf:type owl:AllDisjointClasses ;
-  owl:members ( cbamreport:GoodsMeasureCovered
-                cbamreport:GoodsMeasureImported
-                cbamreport:GoodsMeasurePerProcedure
-                cbamreport:GoodsMeasureProduced
-              )
-] .
-
-
-###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/dcam/rangeIncludes
+# 
+# http://purl.org/dc/terms/abstract
+# 
+# http://purl.org/dc/terms/accessRights
+# 
+# http://purl.org/dc/terms/alternative
+# 
+# http://purl.org/dc/terms/available
+# 
+# http://purl.org/dc/terms/bibliographicCitation
+# 
+# http://purl.org/dc/terms/conformsTo
+# 
+# http://purl.org/dc/terms/contributor
+# 
+# http://purl.org/dc/terms/created
+# 
+# http://purl.org/dc/terms/creator
+# 
+# http://purl.org/dc/terms/date
+# 
+# http://purl.org/dc/terms/dateAccepted
+# 
+# http://purl.org/dc/terms/dateCopyrighted
+# 
+# http://purl.org/dc/terms/dateSubmitted
+# 
+# http://purl.org/dc/terms/description
+# 
+# http://purl.org/dc/terms/hasFormat
+# 
+# http://purl.org/dc/terms/hasPart
+# 
+# http://purl.org/dc/terms/hasVersion
+# 
+# http://purl.org/dc/terms/identifier
+# 
+# http://purl.org/dc/terms/isFormatOf
+# 
+# http://purl.org/dc/terms/isPartOf
+# 
+# http://purl.org/dc/terms/isReferencedBy
+# 
+# http://purl.org/dc/terms/isReplacedBy
+# 
+# http://purl.org/dc/terms/isRequiredBy
+# 
+# http://purl.org/dc/terms/isVersionOf
+# 
+# http://purl.org/dc/terms/issued
+# 
+# http://purl.org/dc/terms/language
+# 
+# http://purl.org/dc/terms/license
+# 
+# http://purl.org/dc/terms/modified
+# 
+# http://purl.org/dc/terms/publisher
+# 
+# http://purl.org/dc/terms/references
+# 
+# http://purl.org/dc/terms/relation
+# 
+# http://purl.org/dc/terms/replaces
+# 
+# http://purl.org/dc/terms/requires
+# 
+# http://purl.org/dc/terms/rights
+# 
+# http://purl.org/dc/terms/source
+# 
+# http://purl.org/dc/terms/subject
+# 
+# http://purl.org/dc/terms/tableOfContents
+# 
+# http://purl.org/dc/terms/title
+# 
+# http://purl.org/dc/terms/type
+# 
+# http://purl.org/dc/terms/valid
+# 
+# http://purl.org/vocab/vann/preferredNamespacePrefix
+# 
+# http://purl.org/vocab/vann/preferredNamespaceUri
+# 
+# http://www.w3.org/2000/01/rdf-schema#subClassOf
+# 
+# http://xmlns.com/foaf/0.1/maker
+# 
+# http://xmlns.com/foaf/0.1/name
+# 
+# http://xmlns.com/foaf/0.1/workInfohomePage
+# 
+# https://purl.org/cbam/code
+# 
+# https://purl.org/cbam/procedure_status
+# 
+# https://purl.org/cbam/validity_date
+# 
+# https://schema.org/funder
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Datatypes
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2001/XMLSchema#date
+# 
+# http://www.w3.org/2001/XMLSchema#string
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# https://purl.org/cbamreport#hasEconomicActivity
+# 
+# https://purl.org/cbamreport#hasEmissionsCovered
+# 
+# https://purl.org/cbamreport#hasUNLOCODE
+# 
+# https://purl.org/cbamreport#isSubjectTo
+# 
+# https://purl.org/cbamreport/acquiredIn
+# 
+# https://purl.org/cbamreport/consume
+# 
+# https://purl.org/cbamreport/createA
+# 
+# https://purl.org/cbamreport/declare
+# 
+# https://purl.org/cbamreport/determinesCost
+# 
+# https://purl.org/cbamreport/generate
+# 
+# https://purl.org/cbamreport/hasAddress
+# 
+# https://purl.org/cbamreport/hasCNCode
+# 
+# https://purl.org/cbamreport/hasCharge
+# 
+# https://purl.org/cbamreport/hasQuantityValue
+# 
+# https://purl.org/cbamreport/hasRole
+# 
+# https://purl.org/cbamreport/identifiedBy
+# 
+# https://purl.org/cbamreport/import
+# 
+# https://purl.org/cbamreport/isAssignedto
+# 
+# https://purl.org/cbamreport/isCodifiedBy
+# 
+# https://purl.org/cbamreport/isDeterminedBy
+# 
+# https://purl.org/cbamreport/isEstablishedIn
+# 
+# https://purl.org/cbamreport/isExpressedIn
+# 
+# https://purl.org/cbamreport/isIdentifiedBy
+# 
+# https://purl.org/cbamreport/isImportedFrom
+# 
+# https://purl.org/cbamreport/isLocatedIn
+# 
+# https://purl.org/cbamreport/isMeasuredBy
+# 
+# https://purl.org/cbamreport/isProduceBy
+# 
+# https://purl.org/cbamreport/isQuantifiedBy
+# 
+# https://purl.org/cbamreport/isReportedIn
+# 
+# https://purl.org/cbamreport/isRequiredFor
+# 
+# https://purl.org/cbamreport/isTransformedInto
+# 
+# https://purl.org/cbamreport/registeredIn
+# 
+# https://purl.org/cbamreport/regulatedBy
+# 
+# https://purl.org/cbamreport/reportedBy
+# 
+# https://purl.org/cbamreport/requires
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2006/vcard/ns#country-name
+# 
+# http://www.w3.org/2006/vcard/ns#locality
+# 
+# https://purl.org/cbamreport#installationName
+# 
+# https://purl.org/cbamreport#installationUNLOCODE
+# 
+# https://purl.org/cbamreport#itemNumber
+# 
+# https://purl.org/cbamreport/Authorisation
+# 
+# https://purl.org/cbamreport/Deadline_for_submission_of_Bill_of_discharge
+# 
+# https://purl.org/cbamreport/DirectEmbeddedEmissions
+# 
+# https://purl.org/cbamreport/EORINumber
+# 
+# https://purl.org/cbamreport/Globalisation_time_end
+# 
+# https://purl.org/cbamreport/Globalisation_time_start
+# 
+# https://purl.org/cbamreport/IndirectEmbeddedEmissions
+# 
+# https://purl.org/cbamreport/Inward_processing_waiver_for_Bill_of_discharge
+# 
+# https://purl.org/cbamreport/NotEORINumber
+# 
+# https://purl.org/cbamreport/TINTNumber
+# 
+# https://purl.org/cbamreport/URI
+# 
+# https://purl.org/cbamreport/additionalInformation
+# 
+# https://purl.org/cbamreport/amountEuro
+# 
+# https://purl.org/cbamreport/amountOfTheCarbonPriceDue
+# 
+# https://purl.org/cbamreport/applicableReportingMethodology
+# 
+# https://purl.org/cbamreport/city
+# 
+# https://purl.org/cbamreport/countryofOrigin
+# 
+# https://purl.org/cbamreport/dateOfSignature
+# 
+# https://purl.org/cbamreport/declarantName
+# 
+# https://purl.org/cbamreport/descriptionAndIndicationOfLegalAct
+# 
+# https://purl.org/cbamreport/descriptionofGoods
+# 
+# https://purl.org/cbamreport/draftReportID
+# 
+# https://purl.org/cbamreport/embeddedEmissionsCoveredByCarbonPrice
+# 
+# https://purl.org/cbamreport/embeddedEmissionsCoveredByRebate
+# 
+# https://purl.org/cbamreport/fileName
+# 
+# https://purl.org/cbamreport/formOfRebate
+# 
+# https://purl.org/cbamreport/goodsItemNumber
+# 
+# https://purl.org/cbamreport/hasCountry
+# 
+# https://purl.org/cbamreport/identificationNumber
+# 
+# https://purl.org/cbamreport/identificationnumberOfTheSpecificSteelMill
+# 
+# https://purl.org/cbamreport/importerName
+# 
+# https://purl.org/cbamreport/methodID
+# 
+# https://purl.org/cbamreport/method_name
+# 
+# https://purl.org/cbamreport/name
+# 
+# https://purl.org/cbamreport/netMass
+# 
+# https://purl.org/cbamreport/pOBox
+# 
+# https://purl.org/cbamreport/parameterValue
+# 
+# https://purl.org/cbamreport/percentageCoveredByRebate
+# 
+# https://purl.org/cbamreport/postcode
+# 
+# https://purl.org/cbamreport/productionMethod
+# 
+# https://purl.org/cbamreport/quantityCoveredByFreeAllocationsny
+# 
+# https://purl.org/cbamreport/quantityCoveredByOtherFormOfCompensation
+# 
+# https://purl.org/cbamreport/quantityCoveredByRebate
+# 
+# https://purl.org/cbamreport/quantityOfEmissionsCovered
+# 
+# https://purl.org/cbamreport/referenceNumber
+# 
+# https://purl.org/cbamreport/region
+# 
+# https://purl.org/cbamreport/reportGlobalConfirmation
+# 
+# https://purl.org/cbamreport/reportID
+# 
+# https://purl.org/cbamreport/reportIssueDate
+# 
+# https://purl.org/cbamreport/representativeName
+# 
+# https://purl.org/cbamreport/resultEffectiveCPDue
+# 
+# https://purl.org/cbamreport/sequenceNumber
+# 
+# https://purl.org/cbamreport/shareOfEmissionByDefaultValue
+# 
+# https://purl.org/cbamreport/shareOfTotalEmbeddedEmissionsCoveredByTheCarbonPrice
+# 
+# https://purl.org/cbamreport/signatureName
+# 
+# https://purl.org/cbamreport/signaturePlace
+# 
+# https://purl.org/cbamreport/street
+# 
+# https://purl.org/cbamreport/streetAdditionalLine
+# 
+# https://purl.org/cbamreport/streetnumber
+# 
+# https://purl.org/cbamreport/subDivision
+# 
+# https://purl.org/cbamreport/supplementaryUnits
+# 
+# https://purl.org/cbamreport/totalEmissions
+# 
+# https://purl.org/cbamreport/totalGoodsImported
+# 
+# https://purl.org/cbamreport/total_Direct_Indirect_Embedded_Emission
+# 
+# https://purl.org/cbamreport/total_Embedded_Emissions_of_Electricity_Imported
+# 
+# https://purl.org/cbamreport/typeOfMeasurementUnitForEmissions
+# 
+# https://purl.org/cbamreport/year
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://schema.org/Product
+# 
+# https://purl.org/cbamrepor#GreenHouseGasEmissions
+# 
+# https://purl.org/cbamreport#BasedExclPfcEmissions
+# 
+# https://purl.org/cbamreport#MeasurementBasedEmissions
+# 
+# https://purl.org/cbamreport#Organization
+# 
+# https://purl.org/cbamreport#OtherEmissions
+# 
+# https://purl.org/cbamreport#TotalDirectEmissions
+# 
+# https://purl.org/cbamreport#TotalEmissions
+# 
+# https://purl.org/cbamreport#TotalIndirectEmissions
+# 
+# https://purl.org/cbamreport#TotalPfcEmissions
+# 
+# https://purl.org/cbamreport#Unlocode
+# 
+# https://purl.org/cbamreport/Address
+# 
+# https://purl.org/cbamreport/Attachments
+# 
+# https://purl.org/cbamreport/Authorisation
+# 
+# https://purl.org/cbamreport/CBAMGoods
+# 
+# https://purl.org/cbamreport/CBAMReport
+# 
+# https://purl.org/cbamreport/CBAMReportSignature
+# 
+# https://purl.org/cbamreport/CBAMReportStructure
+# 
+# https://purl.org/cbamreport/CarbonPrice
+# 
+# https://purl.org/cbamreport/CarbonPriceDue
+# 
+# https://purl.org/cbamreport/Commodity
+# 
+# https://purl.org/cbamreport/CommodityCNCode
+# 
+# https://purl.org/cbamreport/CommodityCode
+# 
+# https://purl.org/cbamreport/CommodityDetails
+# 
+# https://purl.org/cbamreport/CommodityHSCode
+# 
+# https://purl.org/cbamreport/ComparableRuleSignature
+# 
+# https://purl.org/cbamreport/CompetentAuthority
+# 
+# https://purl.org/cbamreport/Contact
+# 
+# https://purl.org/cbamreport/Declarant
+# 
+# https://purl.org/cbamreport/DirectEmissions
+# 
+# https://purl.org/cbamreport/EconomicActivity
+# 
+# https://purl.org/cbamreport/Electricity
+# 
+# https://purl.org/cbamreport/EmissionsOfTheElectricityImported
+# 
+# https://purl.org/cbamreport/GlobalisationTime
+# 
+# https://purl.org/cbamreport/Goods
+# 
+# https://purl.org/cbamreport/GoodsCoveredUnderCarbonPriceDue
+# 
+# https://purl.org/cbamreport/GoodsEmissions
+# 
+# https://purl.org/cbamreport/GoodsImported
+# 
+# https://purl.org/cbamreport/GoodsMeasure
+# 
+# https://purl.org/cbamreport/GoodsMeasureCovered
+# 
+# https://purl.org/cbamreport/GoodsMeasureImported
+# 
+# https://purl.org/cbamreport/GoodsMeasurePerProcedure
+# 
+# https://purl.org/cbamreport/GoodsMeasureProduced
+# 
+# https://purl.org/cbamreport/Goods_Produced
+# 
+# https://purl.org/cbamreport/Importation
+# 
+# https://purl.org/cbamreport/Importer
+# 
+# https://purl.org/cbamreport/IndirectEmissions
+# 
+# https://purl.org/cbamreport/Installation
+# 
+# https://purl.org/cbamreport/InwardPRoccessingCustomsProcedure
+# 
+# https://purl.org/cbamreport/MappingProductionMethodAndEmissionQualifyingParameters
+# 
+# https://purl.org/cbamreport/MeasureUnitForEmissions
+# 
+# https://purl.org/cbamreport/Operator
+# 
+# https://purl.org/cbamreport/ProductionProcess
+# 
+# https://purl.org/cbamreport/Qreport
+# 
+# https://purl.org/cbamreport/Rebate
+# 
+# https://purl.org/cbamreport/Remarks
+# 
+# https://purl.org/cbamreport/ReportConfirmation
+# 
+# https://purl.org/cbamreport/ReportingMethodology
+# 
+# https://purl.org/cbamreport/Representative
+# 
+# https://purl.org/cbamreport/Signature
+# 
+# https://purl.org/cbamreport/SteellMill
+# 
+# https://purl.org/cbamreport/SupportingDocumentsForGoods
+# 
+# https://purl.org/cbamreport/TotalEmissions
+# 
+# https://purl.org/cbamreport/TotalGoodsImported
+# 
+# https://purl.org/cbamreport/TypeOFMeasurementUnit
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Annotations
+# #
+# #################################################################
+# 
+# 
+# 
+# 
+# 
+# #################################################################
+# #
+# #    General axioms
+# #
+# #################################################################
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi
+
+{
+  <cbam/cbamreport/> a owl:Ontology;
+    owl:versionIRI <cbam/cbamreport/1.0>;
+    owl:imports <http://www.w3.org/2006/vcard/ns>, <http://www.w3.org/ns/org#>, <cbam/Area_of_import/1.0>,
+      <cbam/CN/>, <cbam/Coordinate_System/1.0>, <cbam/CountryPlus/1.0>, <cbam/Currency/1.0>,
+      <cbam/Customs_Procedure/1.0>, <cbam/Electricity_Determination/1.0>, <cbam/Emission_Report/1.0>,
+      <cbam/Exchange_Rate/1.0>, <cbam/Flag/1.0>, <cbam/Goods_Document/1.0>, <cbam/Instrument/1.0>,
+      <cbam/Parameter_Value_Type/1.0>, <cbam/Product_Covered/1.0>, <cbam/Production_Method/1.0>,
+      <cbam/Reporting_Rule/1.0>, <cbam/Reporting_period/1.0>, <cbam/Role/1.0>, <cbam/Source_of_electricity/1.0>,
+      vocabulary:1.0, <cbam/emissionsqualifyingparameters/>;
+    terms:abstract "The Carbon Boarder Adjustment Mechanism report Ontology";
+    terms:accessRights "This ontology is licensed under the Creative Commons Attribution-NonCommercial 4.0 International License (CC BY-NC 4.0). It allows non-commercial use, sharing, and adaptation of the ontology, as long as users provide clear credit to the creator by citing the ontology's title, creator, and license information. Commercial use is strictly prohibited.";
+    terms:contributor _:genid1;
+    terms:creator _:genid2;
+    terms:date "2024-06-01"^^rdfs:Literal;
+    terms:description "This ontology represents the entities of the Carbon Border Adjustment Mechanism (CBAM) Report.";
+    terms:hasVersion "https://purl.org/cbam/cbamreport/1.0"^^xsd:anyURI;
+    terms:issued "2024-11-21"^^xsd:date;
+    terms:license "http://creativecommons.org/licenses/by/4.0/"^^xsd:anyURI;
+    terms:modified "2024-11-28"^^xsd:date;
+    terms:publisher "Universidad de Murcia";
+    terms:source "Report Structure ver 18.0.xlsx  <https://taxation-customs.ec.europa.eu/carbon-border-adjustment-mechanism_en#where-to-report>";
+    terms:title "CBAM report"^^rdfs:Literal;
+    vann:preferredNamespacePrefix "https://purl.org/cbam/cbamreport/";
+    rdfs:comment "Siemens Energy CBAMReport vocabulary";
+    schema:funder "Siemens Energy" .
+  
+  _:genid1 foaf:name "Lars Rathgeb", "Francisco Abad", "Astrid Duque Ramos", "Andreas Nissen",
+      "Alexander Garcia Castro" .
+  
+  _:genid2 foaf:name "Astrid Duque Ramos" .
+  
+  <http://purl.org/dc/dcam/rangeIncludes> a owl:AnnotationProperty .
+  
+  terms:abstract a owl:AnnotationProperty;
+    rdfs:subPropertyOf terms:description .
+  
+  terms:accessRights a owl:AnnotationProperty;
+    rdfs:subPropertyOf terms:rights .
+  
+  terms:alternative a owl:AnnotationProperty;
+    rdfs:range rdfs:Literal .
+  
+  terms:available a owl:AnnotationProperty;
+    rdfs:range rdfs:Literal .
+  
+  terms:bibliographicCitation a owl:AnnotationProperty;
+    rdfs:range rdfs:Literal .
+  
+  terms:conformsTo a owl:AnnotationProperty;
+    rdfs:subPropertyOf terms:relation .
+  
+  terms:contributor a owl:AnnotationProperty;
+    rdfs:subPropertyOf terms:contributor .
+  
+  terms:created a owl:AnnotationProperty;
+    rdfs:range rdfs:Literal .
+  
+  terms:creator a owl:AnnotationProperty;
+    rdfs:subPropertyOf terms:contributor, terms:creator .
+  
+  terms:date a owl:AnnotationProperty;
+    rdfs:range rdfs:Literal .
+  
+  terms:dateAccepted a owl:AnnotationProperty;
+    rdfs:range rdfs:Literal .
+  
+  terms:dateCopyrighted a owl:AnnotationProperty;
+    rdfs:range rdfs:Literal .
+  
+  terms:dateSubmitted a owl:AnnotationProperty;
+    rdfs:range rdfs:Literal .
+  
+  terms:description a owl:AnnotationProperty;
+    rdfs:subPropertyOf terms:description .
+  
+  terms:hasFormat a owl:AnnotationProperty;
+    rdfs:subPropertyOf terms:relation .
+  
+  terms:hasPart a owl:AnnotationProperty;
+    rdfs:subPropertyOf terms:relation .
+  
+  terms:hasVersion a owl:AnnotationProperty;
+    rdfs:subPropertyOf terms:relation .
+  
+  terms:identifier a owl:AnnotationProperty;
+    rdfs:range rdfs:Literal .
+  
+  terms:isFormatOf a owl:AnnotationProperty;
+    rdfs:subPropertyOf terms:relation .
+  
+  terms:isPartOf a owl:AnnotationProperty;
+    rdfs:subPropertyOf terms:relation .
+  
+  terms:isReferencedBy a owl:AnnotationProperty;
+    rdfs:subPropertyOf terms:relation .
+  
+  terms:isReplacedBy a owl:AnnotationProperty;
+    rdfs:subPropertyOf terms:relation .
+  
+  terms:isRequiredBy a owl:AnnotationProperty;
+    rdfs:subPropertyOf terms:relation .
+  
+  terms:isVersionOf a owl:AnnotationProperty;
+    rdfs:subPropertyOf terms:relation .
+  
+  terms:issued a owl:AnnotationProperty;
+    rdfs:range rdfs:Literal .
+  
+  terms:language a owl:AnnotationProperty;
+    rdfs:subPropertyOf terms:language .
+  
+  terms:license a owl:AnnotationProperty;
+    rdfs:subPropertyOf terms:rights .
+  
+  terms:modified a owl:AnnotationProperty;
+    rdfs:range rdfs:Literal .
+  
+  terms:publisher a owl:AnnotationProperty;
+    rdfs:subPropertyOf terms:publisher .
+  
+  terms:references a owl:AnnotationProperty;
+    rdfs:subPropertyOf terms:relation .
+  
+  terms:relation a owl:AnnotationProperty;
+    rdfs:subPropertyOf terms:relation .
+  
+  terms:replaces a owl:AnnotationProperty;
+    rdfs:subPropertyOf terms:relation .
+  
+  terms:requires a owl:AnnotationProperty;
+    rdfs:subPropertyOf terms:relation .
+  
+  terms:rights a owl:AnnotationProperty;
+    rdfs:subPropertyOf terms:rights .
+  
+  terms:source a owl:AnnotationProperty;
+    rdfs:subPropertyOf terms:relation, terms:source .
+  
+  terms:subject a owl:AnnotationProperty;
+    rdfs:subPropertyOf terms:subject .
+  
+  terms:tableOfContents a owl:AnnotationProperty;
+    rdfs:subPropertyOf terms:description .
+  
+  terms:title a owl:AnnotationProperty;
+    rdfs:range rdfs:Literal .
+  
+  terms:type a owl:AnnotationProperty;
+    rdfs:subPropertyOf terms:type .
+  
+  terms:valid a owl:AnnotationProperty;
+    rdfs:range rdfs:Literal .
+  
+  vann:preferredNamespacePrefix a owl:AnnotationProperty .
+  
+  vann:preferredNamespaceUri a owl:AnnotationProperty .
+  
+  rdfs:subClassOf a owl:AnnotationProperty .
+  
+  foaf:maker a owl:AnnotationProperty .
+  
+  foaf:name a owl:AnnotationProperty;
+    foaf:name "" .
+  
+  foaf:workInfohomePage a owl:AnnotationProperty .
+  
+  cbam:code a owl:AnnotationProperty .
+  
+  cbam:procedure_status a owl:AnnotationProperty .
+  
+  cbam:validity_date a owl:AnnotationProperty .
+  
+  schema:funder a owl:AnnotationProperty .
+  
+  xsd:date a rdfs:Datatype .
+  
+  xsd:string owl:equivalentClass rdfs:Literal .
+  
+  :hasEconomicActivity a owl:ObjectProperty;
+    rdfs:domain cbamreport:Installation;
+    rdfs:range cbamreport:EconomicActivity .
+  
+  :hasEmissionsCovered a owl:ObjectProperty;
+    rdfs:subPropertyOf owl:topObjectProperty;
+    rdfs:domain <http://schema.org/Product>;
+    rdfs:range cbamreport:GoodsCoveredUnderCarbonPriceDue .
+  
+  :hasUNLOCODE a owl:ObjectProperty;
+    rdfs:domain cbamreport:Installation .
+  
+  :isSubjectTo a owl:ObjectProperty;
+    rdfs:domain <http://schema.org/Product> .
+  
+  cbamreport:acquiredIn a owl:ObjectProperty;
+    rdfs:domain cbamreport:GoodsImported;
+    rdfs:range cbamreport:Importation;
+    rdfs:label "acquiredIn" .
+  
+  cbamreport:consume a owl:ObjectProperty;
+    rdfs:domain cbamreport:ProductionProcess;
+    rdfs:range cbamreport:Commodity;
+    rdfs:label "consume" .
+  
+  cbamreport:createA a owl:ObjectProperty;
+    rdfs:domain cbamreport:Declarant;
+    rdfs:range cbamreport:CBAMReport;
+    rdfs:label "createA" .
+  
+  cbamreport:declare a owl:ObjectProperty;
+    rdfs:domain cbamreport:CBAMReport;
+    rdfs:range <cbamrepor#GreenHouseGasEmissions>;
+    rdfs:label "declare" .
+  
+  cbamreport:determinesCost a owl:ObjectProperty;
+    rdfs:domain cbamreport:CarbonPrice;
+    rdfs:label "determinesCost" .
+  
+  cbamreport:generate a owl:ObjectProperty;
+    rdfs:domain cbamreport:Electricity;
+    rdfs:range <cbamrepor#GreenHouseGasEmissions>;
+    rdfs:label "generate" .
+  
+  cbamreport:hasAddress a owl:ObjectProperty, owl:TransitiveProperty;
+    rdfs:range cbamreport:Address;
+    rdfs:label "hasAddress" .
+  
+  cbamreport:hasCNCode a owl:ObjectProperty;
+    rdfs:domain <http://schema.org/Product>;
+    rdfs:label "hasCNCode" .
+  
+  cbamreport:hasCharge a owl:ObjectProperty;
+    rdfs:domain cbamreport:GoodsCoveredUnderCarbonPriceDue;
+    rdfs:range cbamreport:CarbonPriceDue;
+    rdfs:label "hasCarbonCharge" .
+  
+  cbamreport:hasQuantityValue a owl:ObjectProperty;
+    rdfs:domain <http://schema.org/Product>;
+    rdfs:label "hasWeight" .
+  
+  cbamreport:hasRole a owl:ObjectProperty;
+    rdfs:domain cbamreport:Declarant;
+    rdfs:label "hasRole" .
+  
+  cbamreport:identifiedBy a owl:ObjectProperty;
+    rdfs:domain cbamreport:ProductionProcess;
+    rdfs:label "identifiedBy" .
+  
+  cbamreport:import a owl:ObjectProperty;
+    rdfs:domain cbamreport:Importer;
+    rdfs:range cbamreport:GoodsImported;
+    rdfs:label "import" .
+  
+  cbamreport:isAssignedto a owl:ObjectProperty;
+    rdfs:label "isAssignedto" .
+  
+  cbamreport:isCodifiedBy a owl:ObjectProperty;
+    rdfs:domain cbamreport:Commodity;
+    rdfs:label "isCodifiedBy" .
+  
+  cbamreport:isDeterminedBy a owl:ObjectProperty;
+    rdfs:label "isDeterminedBy" .
+  
+  cbamreport:isEstablishedIn a owl:ObjectProperty;
+    rdfs:label "isEstablishedIn" .
+  
+  cbamreport:isExpressedIn a owl:ObjectProperty;
+    rdfs:label "isExpressedIn" .
+  
+  cbamreport:isIdentifiedBy a owl:ObjectProperty;
+    rdfs:domain cbamreport:Commodity;
+    rdfs:range _:genid3;
+    rdfs:label "isIdentifiedBy" .
+  
+  _:genid3 a owl:Class;
+    owl:unionOf _:genid5 .
+  
+  _:genid5 a rdf:List;
+    rdf:first cbamreport:CommodityCNCode;
+    rdf:rest _:genid4 .
+  
+  _:genid4 a rdf:List;
+    rdf:first cbamreport:CommodityHSCode;
+    rdf:rest rdf:nil .
+  
+  cbamreport:isImportedFrom a owl:ObjectProperty;
+    rdfs:label "isImportedFrom" .
+  
+  cbamreport:isLocatedIn a owl:ObjectProperty;
+    rdfs:label "isLocatedIn" .
+  
+  cbamreport:isMeasuredBy a owl:ObjectProperty;
+    rdfs:domain <cbamrepor#GreenHouseGasEmissions>;
+    rdfs:label "isMeasuredBy" .
+  
+  cbamreport:isProduceBy a owl:ObjectProperty;
+    rdfs:domain cbamreport:Goods;
+    rdfs:label "isProduceBy" .
+  
+  cbamreport:isQuantifiedBy a owl:ObjectProperty;
+    rdfs:domain <cbamrepor#GreenHouseGasEmissions>;
+    rdfs:label "isQuantifiedBy" .
+  
+  cbamreport:isReportedIn a owl:ObjectProperty;
+    rdfs:label "isReportedIn" .
+  
+  cbamreport:isRequiredFor a owl:ObjectProperty;
+    owl:inverseOf cbamreport:requires;
+    rdfs:domain cbamreport:Authorisation;
+    rdfs:range cbamreport:InwardPRoccessingCustomsProcedure;
+    rdfs:label "isRequiredFor" .
+  
+  cbamreport:isTransformedInto a owl:ObjectProperty;
+    rdfs:domain cbamreport:Commodity;
+    rdfs:range cbamreport:Goods;
+    rdfs:label "isTransformedInto" .
+  
+  cbamreport:registeredIn a owl:ObjectProperty;
+    rdfs:domain cbamreport:Importation;
+    rdfs:range cbamreport:MappingProductionMethodAndEmissionQualifyingParameters;
+    rdfs:label "registeredIn" .
+  
+  cbamreport:regulatedBy a owl:ObjectProperty;
+    rdfs:domain <cbamrepor#GreenHouseGasEmissions>;
+    rdfs:range cbamreport:CarbonPrice;
+    rdfs:label "regulatedBy" .
+  
+  cbamreport:reportedBy a owl:ObjectProperty;
+    rdfs:domain <cbamrepor#GreenHouseGasEmissions>;
+    rdfs:range cbamreport:ReportingMethodology;
+    rdfs:label "reportedBy" .
+  
+  cbamreport:requires a owl:ObjectProperty;
+    rdfs:domain cbamreport:InwardPRoccessingCustomsProcedure;
+    rdfs:range cbamreport:Authorisation;
+    rdfs:label "requires" .
+  
+  vcard:country-name a owl:DatatypeProperty .
+  
+  vcard:locality a owl:DatatypeProperty .
+  
+  :installationName a owl:DatatypeProperty;
+    rdfs:subPropertyOf cbamreport:name .
+  
+  :installationUNLOCODE a owl:DatatypeProperty;
+    rdfs:domain cbamreport:Installation;
+    rdfs:range xsd:string .
+  
+  :itemNumber a owl:DatatypeProperty;
+    rdfs:domain cbamreport:GoodsImported;
+    rdfs:range xsd:nonNegativeInteger;
+    rdfs:label "itemNumber" .
+  
+  cbamreport:Authorisation a owl:DatatypeProperty, owl:Class;
+    rdfs:subPropertyOf owl:topDataProperty;
+    rdfs:domain cbamreport:Authorisation;
+    rdfs:range xsd:string;
+    rdfs:comment "The Authorisation related to the inward processing";
+    rdfs:label _:genid30, "Authorisation" .
+  
+  cbamreport:Deadline_for_submission_of_Bill_of_discharge a owl:DatatypeProperty;
+    rdfs:subPropertyOf owl:topDataProperty;
+    rdfs:domain cbamreport:Authorisation;
+    rdfs:range xsd:dateTime;
+    rdfs:comment "The deadline for the submission of the Bill of discharge. Typically it will be one month after the end date of the Globalisation timer.";
+    rdfs:label "Deadline_for_submission_of_Bill_of_discharge" .
+  
+  cbamreport:DirectEmbeddedEmissions a owl:DatatypeProperty;
+    rdfs:label "DirectEmbeddedEmissions" .
+  
+  cbamreport:EORINumber a owl:DatatypeProperty;
+    rdfs:subPropertyOf cbamreport:identificationNumber;
+    rdfs:range xsd:string;
+    rdfs:comment "This is their EORI number of the organization";
+    rdfs:label "EORINumber" .
+  
+  cbamreport:Globalisation_time_end a owl:DatatypeProperty;
+    rdfs:subPropertyOf owl:topDataProperty;
+    rdfs:domain cbamreport:InwardPRoccessingCustomsProcedure;
+    rdfs:range xsd:dateTime;
+    rdfs:comment "The end date of the Globalisation timer for Inward processing";
+    rdfs:label "Globalisation_time_end" .
+  
+  cbamreport:Globalisation_time_start a owl:DatatypeProperty;
+    rdfs:subPropertyOf owl:topDataProperty;
+    rdfs:domain cbamreport:InwardPRoccessingCustomsProcedure;
+    rdfs:range xsd:dateTime;
+    rdfs:comment "The start date of the Globalisation time";
+    rdfs:label "Globalisation_time_start" .
+  
+  cbamreport:IndirectEmbeddedEmissions a owl:DatatypeProperty;
+    rdfs:label "IndirectEmbeddedEmissions" .
+  
+  cbamreport:Inward_processing_waiver_for_Bill_of_discharge a owl:DatatypeProperty;
+    rdfs:subPropertyOf owl:topDataProperty;
+    rdfs:label "Inward_processing_waiver_for_Bill_of_discharge" .
+  
+  cbamreport:NotEORINumber a owl:DatatypeProperty;
+    rdfs:subPropertyOf cbamreport:identificationNumber;
+    rdfs:range xsd:string;
+    rdfs:label "NotEORINumber" .
+  
+  cbamreport:TINTNumber a owl:DatatypeProperty;
+    rdfs:subPropertyOf cbamreport:identificationNumber;
+    rdfs:label "TINTNumber" .
+  
+  cbamreport:URI a owl:DatatypeProperty;
+    rdfs:range xsd:anyURI;
+    rdfs:comment "The URI link of an attachment";
+    rdfs:label "URI" .
+  
+  cbamreport:additionalInformation a owl:DatatypeProperty;
+    rdfs:subPropertyOf cbamreport:productionMethod;
+    rdfs:label "additionalInformation" .
+  
+  cbamreport:amountEuro a owl:DatatypeProperty;
+    rdfs:domain cbamreport:CarbonPriceDue;
+    rdfs:range xsd:double;
+    rdfs:label "amountEuro" .
+  
+  cbamreport:amountOfTheCarbonPriceDue a owl:DatatypeProperty;
+    rdfs:subPropertyOf owl:topDataProperty;
+    rdfs:domain cbamreport:CarbonPriceDue;
+    rdfs:range xsd:decimal;
+    rdfs:label "amountOfCarbonPriceDue" .
+  
+  cbamreport:applicableReportingMethodology a owl:DatatypeProperty;
+    rdfs:domain cbamreport:ReportingMethodology;
+    rdfs:range xsd:boolean .
+  
+  cbamreport:city a owl:DatatypeProperty;
+    rdfs:subPropertyOf owl:topDataProperty;
+    rdfs:label "city" .
+  
+  cbamreport:countryofOrigin a owl:DatatypeProperty;
+    rdfs:range xsd:string;
+    rdfs:comment "This is an entity to declare the Country of Origin of the CBAM Good.";
+    rdfs:label "countryofOrigin" .
+  
+  cbamreport:dateOfSignature a owl:DatatypeProperty;
+    rdfs:domain cbamreport:CBAMReportSignature;
+    rdfs:range xsd:date .
+  
+  cbamreport:declarantName a owl:DatatypeProperty;
+    rdfs:subPropertyOf cbamreport:name;
+    rdfs:domain cbamreport:Declarant;
+    rdfs:range xsd:NCName;
+    rdfs:comment "The full name (person or company) of the Declarant";
+    rdfs:label "declarantName" .
+  
+  cbamreport:descriptionAndIndicationOfLegalAct a owl:DatatypeProperty;
+    rdfs:subPropertyOf owl:topDataProperty;
+    rdfs:domain cbamreport:CarbonPriceDue;
+    rdfs:range xsd:string;
+    rdfs:label "descriptionAndIndicationOfLegalAct" .
+  
+  cbamreport:descriptionofGoods a owl:DatatypeProperty;
+    rdfs:domain cbamreport:Goods;
+    rdfs:range xsd:string;
+    rdfs:label "descriptionofGoods" .
+  
+  cbamreport:draftReportID a owl:DatatypeProperty;
+    rdfs:subPropertyOf owl:topDataProperty;
+    rdfs:domain cbamreport:CBAMReport;
+    rdfs:range xsd:string;
+    rdfs:comment "The unique ID that the Declarant inserts when the report is created (and saved) to identify their report.";
+    rdfs:label "draftReportID" .
+  
+  cbamreport:embeddedEmissionsCoveredByCarbonPrice a owl:DatatypeProperty;
+    rdfs:domain <cbamrepor#GreenHouseGasEmissions>;
+    rdfs:range xsd:decimal;
+    rdfs:label "embeddedEmissionsCoveredByCarbonPriceDue" .
+  
+  cbamreport:embeddedEmissionsCoveredByRebate a owl:DatatypeProperty;
+    rdfs:domain <cbamrepor#GreenHouseGasEmissions>;
+    rdfs:range xsd:decimal;
+    rdfs:label "embeddedEmissionsCoveredByRebate" .
+  
+  cbamreport:fileName a owl:DatatypeProperty;
+    rdfs:range xsd:string;
+    rdfs:comment "The file name of the attachment";
+    rdfs:label "fileName" .
+  
+  cbamreport:formOfRebate a owl:DatatypeProperty;
+    rdfs:domain cbamreport:Rebate;
+    rdfs:range xsd:string .
+  
+  cbamreport:goodsItemNumber a owl:DatatypeProperty;
+    rdfs:domain cbamreport:GoodsImported;
+    rdfs:range xsd:positiveInteger;
+    rdfs:comment "Each ‘Goods Item Number’ must be unique throughout the CBAM report. The items shall be numbered in a sequential fashion, starting from '1' for the first item and incrementing the numbering by '1' for each following item.",
+      "This element specifies the item number of every CBAM Good imported of the CBAM Report. It is a sequential number";
+    rdfs:label "goodsItemNumber" .
+  
+  cbamreport:hasCountry a owl:DatatypeProperty;
+    rdfs:subPropertyOf vcard:country-name .
+  
+  cbamreport:identificationNumber a owl:DatatypeProperty;
+    rdfs:range xsd:string;
+    rdfs:label "identificationNumber" .
+  
+  cbamreport:identificationnumberOfTheSpecificSteelMill a owl:DatatypeProperty;
+    rdfs:subPropertyOf cbamreport:identificationNumber;
+    rdfs:comment "Specific steel mill identification number", "the heat number, also known as the heat code or cast number. This unique identifier is usually stamped on the steel product itself, often near the product's manufacturer's name or logo";
+    rdfs:label "identificationnumberOfTheSpecificSteelMill" .
+  
+  cbamreport:importerName a owl:DatatypeProperty;
+    rdfs:subPropertyOf cbamreport:name;
+    rdfs:domain cbamreport:Importer;
+    rdfs:range xsd:NCName;
+    rdfs:label "importerName" .
+  
+  cbamreport:methodID a owl:DatatypeProperty;
+    rdfs:subPropertyOf cbamreport:productionMethod;
+    rdfs:comment "The unique identity of the production method.";
+    rdfs:label "methodID" .
+  
+  cbamreport:method_name a owl:DatatypeProperty;
+    rdfs:subPropertyOf cbamreport:productionMethod;
+    rdfs:label "method_name" .
+  
+  cbamreport:name a owl:DatatypeProperty;
+    rdfs:range xsd:NCName;
+    rdfs:label "name" .
+  
+  cbamreport:netMass a owl:DatatypeProperty;
+    rdfs:domain cbamreport:GoodsMeasure;
+    rdfs:range xsd:float;
+    rdfs:comment "The Net mass is to be used for the CBAM Goods that are measured in kgs (or in tonnes).";
+    rdfs:label "netMass" .
+  
+  cbamreport:pOBox a owl:DatatypeProperty;
+    rdfs:subPropertyOf owl:topDataProperty;
+    rdfs:label "hasPoBox" .
+  
+  cbamreport:parameterValue a owl:DatatypeProperty;
+    rdfs:comment "The actual value of the parameter";
+    rdfs:label "parameterValue" .
+  
+  cbamreport:percentageCoveredByRebate a owl:DatatypeProperty;
+    rdfs:domain cbamreport:Rebate;
+    rdfs:range xsd:decimal .
+  
+  cbamreport:postcode a owl:DatatypeProperty;
+    rdfs:subPropertyOf owl:topDataProperty;
+    rdfs:domain cbamreport:Address;
+    rdfs:range xsd:string;
+    rdfs:label "hasPostcode" .
+  
+  cbamreport:productionMethod a owl:DatatypeProperty;
+    rdfs:label "productionMethod" .
+  
+  cbamreport:quantityCoveredByFreeAllocationsny a owl:DatatypeProperty;
+    rdfs:subPropertyOf cbamreport:quantityOfEmissionsCovered;
+    rdfs:label "quantityCoveredByFreeAllocationsny" .
+  
+  cbamreport:quantityCoveredByOtherFormOfCompensation a owl:DatatypeProperty;
+    rdfs:subPropertyOf cbamreport:quantityOfEmissionsCovered;
+    rdfs:label "quantityCoveredByOtherFormOfCompensation" .
+  
+  cbamreport:quantityCoveredByRebate a owl:DatatypeProperty;
+    rdfs:subPropertyOf cbamreport:quantityOfEmissionsCovered;
+    rdfs:domain cbamreport:Rebate;
+    rdfs:range xsd:decimal;
+    rdfs:label "quantityCoveredByRebate" .
+  
+  cbamreport:quantityOfEmissionsCovered a owl:DatatypeProperty;
+    rdfs:subPropertyOf owl:topDataProperty;
+    rdfs:label "quantityOfEmissionsCovered" .
+  
+  cbamreport:referenceNumber a owl:DatatypeProperty;
+    rdfs:domain cbamreport:CompetentAuthority;
+    rdfs:range xsd:string;
+    rdfs:comment "The Name or Reference number of the Competent Authority.";
+    rdfs:label "referenceNumber" .
+  
+  cbamreport:region a owl:DatatypeProperty .
+  
+  cbamreport:reportGlobalConfirmation a owl:DatatypeProperty;
+    rdfs:domain cbamreport:ReportConfirmation;
+    rdfs:range xsd:boolean .
+  
+  cbamreport:reportID a owl:DatatypeProperty;
+    rdfs:subPropertyOf owl:topDataProperty;
+    rdfs:range xsd:string;
+    rdfs:comment "This unique ID is allocated by the system once the report is submitted";
+    rdfs:label "reportID" .
+  
+  cbamreport:reportIssueDate a owl:DatatypeProperty;
+    rdfs:domain cbamreport:CBAMReport;
+    rdfs:range xsd:dateTime;
+    rdfs:comment "The date that the CBAM report is submitted";
+    rdfs:label "reportIssueDate" .
+  
+  cbamreport:representativeName a owl:DatatypeProperty;
+    rdfs:subPropertyOf cbamreport:name;
+    rdfs:domain cbamreport:Representative;
+    rdfs:range xsd:NCName;
+    rdfs:label "representativeName" .
+  
+  cbamreport:resultEffectiveCPDue a owl:DatatypeProperty;
+    rdfs:label "resultEffectiveCPDue" .
+  
+  cbamreport:sequenceNumber a owl:DatatypeProperty;
+    rdfs:domain cbamreport:Importation;
+    rdfs:range xsd:nonNegativeInteger;
+    rdfs:comment "The sequence number is used for the unique identification and ordering of entities";
+    rdfs:label "sequenceNumber" .
+  
+  cbamreport:shareOfEmissionByDefaultValue a owl:DatatypeProperty;
+    rdfs:domain cbamreport:DirectEmissions;
+    rdfs:range xsd:decimal;
+    rdfs:label "shareOfEmissionByDefaultValue" .
+  
+  cbamreport:shareOfTotalEmbeddedEmissionsCoveredByTheCarbonPrice a owl:DatatypeProperty;
+    rdfs:domain <cbamrepor#GreenHouseGasEmissions>;
+    rdfs:range xsd:decimal .
+  
+  cbamreport:signatureName a owl:DatatypeProperty;
+    rdfs:domain cbamreport:Signature;
+    rdfs:range xsd:Name;
+    foaf:name "", "signatureName" .
+  
+  cbamreport:signaturePlace a owl:DatatypeProperty;
+    rdfs:subPropertyOf vcard:locality;
+    rdfs:range xsd:string .
+  
+  cbamreport:street a owl:DatatypeProperty;
+    rdfs:subPropertyOf owl:topDataProperty;
+    rdfs:label "street" .
+  
+  cbamreport:streetAdditionalLine a owl:DatatypeProperty;
+    rdfs:subPropertyOf owl:topDataProperty;
+    rdfs:comment "The street name where the Organization is located";
+    rdfs:label "streetAdditionalLine" .
+  
+  cbamreport:streetnumber a owl:DatatypeProperty;
+    rdfs:subPropertyOf owl:topDataProperty;
+    rdfs:label "streetnumber" .
+  
+  cbamreport:subDivision a owl:DatatypeProperty;
+    rdfs:subPropertyOf owl:topDataProperty;
+    rdfs:comment "The sub-division where the Organization is located";
+    rdfs:label "subDivision" .
+  
+  cbamreport:supplementaryUnits a owl:DatatypeProperty;
+    rdfs:domain cbamreport:GoodsMeasure;
+    rdfs:range xsd:string;
+    rdfs:label "supplementaryUnits" .
+  
+  cbamreport:totalEmissions a owl:DatatypeProperty;
+    rdfs:domain cbamreport:GoodsEmissions;
+    rdfs:range xsd:double;
+    rdfs:comment "The total of the emissions for all the Goods declared in the CBAM report";
+    rdfs:label "totalEmissions" .
+  
+  cbamreport:totalGoodsImported a owl:DatatypeProperty;
+    rdfs:domain cbamreport:GoodsImported;
+    rdfs:range xsd:positiveInteger;
+    rdfs:comment "The total Goods that are declared in the CBAM repor";
+    rdfs:label "totalGoodsImported" .
+  
+  cbamreport:total_Direct_Indirect_Embedded_Emission a owl:DatatypeProperty;
+    rdfs:subPropertyOf cbamreport:totalEmissions;
+    rdfs:comment "The TOTAL (direct + indirect) embedded emissions that are subject to carbon pricing. For instance, if only direct emissions are covered by a carbon pricing system, the share to be provided here would be exactly the share of the direct emissions of the total emissions.";
+    rdfs:label "total_Direct_Indirect_Embedded_Emission" .
+  
+  cbamreport:total_Embedded_Emissions_of_Electricity_Imported a owl:DatatypeProperty;
+    rdfs:label "total_Embedded_Emissions_of_Electricity_Imported" .
+  
+  cbamreport:typeOfMeasurementUnitForEmissions a owl:DatatypeProperty;
+    rdfs:domain <http://schema.org/Product>;
+    rdfs:comment "tCO₂e/t indicates how many tonnes of CO₂ equivalent are emitted per tonne of a given product or material" .
+  
+  cbamreport:year a owl:DatatypeProperty;
+    rdfs:subPropertyOf owl:topDataProperty;
+    rdfs:comment "The year for which the report is submitted";
+    rdfs:label "year" .
+  
+  <http://schema.org/Product> a owl:Class;
+    rdfs:label "Product" .
+  
+  <cbamrepor#GreenHouseGasEmissions> a owl:Class;
+    rdfs:subClassOf _:genid6, _:genid7, _:genid8;
+    rdfs:label "GreenHouseGasEmissions" .
+  
+  _:genid6 a owl:Restriction;
+    owl:someValuesFrom xsd:decimal;
+    owl:onProperty cbamreport:DirectEmbeddedEmissions .
+  
+  _:genid7 a owl:Restriction;
+    owl:someValuesFrom xsd:positiveInteger;
+    owl:onProperty cbamreport:sequenceNumber .
+  
+  _:genid8 a owl:Restriction;
+    owl:someValuesFrom xsd:decimal;
+    owl:onProperty cbamreport:total_Direct_Indirect_Embedded_Emission .
+  
+  :BasedExclPfcEmissions a owl:Class;
+    rdfs:subClassOf <cbamrepor#GreenHouseGasEmissions>;
+    rdfs:label "BasedExclPfcEmissions" .
+  
+  :MeasurementBasedEmissions a owl:Class;
+    rdfs:subClassOf <cbamrepor#GreenHouseGasEmissions>;
+    rdfs:label "MeasurementBasedEmissions" .
+  
+  :Organization a owl:Class;
+    rdfs:label "Organization"@en .
+  
+  :OtherEmissions a owl:Class;
+    rdfs:subClassOf <cbamrepor#GreenHouseGasEmissions>;
+    rdfs:label "OtherEmissions" .
+  
+  :TotalDirectEmissions a owl:Class;
+    rdfs:subClassOf <cbamrepor#GreenHouseGasEmissions>, :TotalEmissions;
+    rdfs:label "TotalDirectEmissions" .
+  
+  :TotalEmissions a owl:Class;
+    rdfs:subClassOf <cbamrepor#GreenHouseGasEmissions>;
+    rdfs:label "TotalEmissions" .
+  
+  :TotalIndirectEmissions a owl:Class;
+    rdfs:subClassOf <cbamrepor#GreenHouseGasEmissions>, :TotalEmissions;
+    rdfs:label "TotalIndirectEmissions" .
+  
+  :TotalPfcEmissions a owl:Class;
+    rdfs:subClassOf <cbamrepor#GreenHouseGasEmissions>;
+    rdfs:label "TotalPfcEmissions" .
+  
+  :Unlocode a owl:Class;
+    rdfs:label "Unlocode" .
+  
+  cbamreport:Address a owl:Class;
+    rdfs:subClassOf _:genid9, _:genid10, _:genid11, _:genid12, _:genid13, _:genid14, _:genid15;
+    rdfs:comment "This element is used to hold the Address";
+    rdfs:label "Address" .
+  
+  _:genid9 a owl:Restriction;
+    owl:someValuesFrom xsd:string;
+    owl:onProperty cbamreport:city .
+  
+  _:genid10 a owl:Restriction;
+    owl:someValuesFrom xsd:string;
+    owl:onProperty cbamreport:pOBox .
+  
+  _:genid11 a owl:Restriction;
+    owl:someValuesFrom xsd:string;
+    owl:onProperty cbamreport:postcode .
+  
+  _:genid12 a owl:Restriction;
+    owl:someValuesFrom xsd:string;
+    owl:onProperty cbamreport:street .
+  
+  _:genid13 a owl:Restriction;
+    owl:someValuesFrom xsd:string;
+    owl:onProperty cbamreport:streetAdditionalLine .
+  
+  _:genid14 a owl:Restriction;
+    owl:someValuesFrom xsd:string;
+    owl:onProperty cbamreport:streetnumber .
+  
+  _:genid15 a owl:Restriction;
+    owl:someValuesFrom xsd:string;
+    owl:onProperty cbamreport:subDivision .
+  
+  cbamreport:Attachments a owl:Class;
+    rdfs:comment "This is an entity used to attach a file or provide a URL";
+    rdfs:label "Attachments" .
+  
+  cbamreport:CBAMGoods a owl:Class;
+    rdfs:label "CBAMGoods" .
+  
+  cbamreport:CBAMReport a owl:Class;
+    rdfs:subClassOf _:genid16;
+    rdfs:comment " The CBAM Report that Declarants will submit";
+    rdfs:label "CBAMReport" .
+  
+  _:genid16 a owl:Restriction;
+    owl:onDataRange xsd:string;
+    owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger;
+    owl:onProperty cbamreport:draftReportID .
+  
+  cbamreport:CBAMReportSignature a owl:Class;
+    rdfs:subClassOf cbamreport:Signature;
+    owl:disjointWith cbamreport:ComparableRuleSignature;
+    rdfs:comment "A signature confirming that the information in the CBAM report is accurate and complete";
+    rdfs:label "CBAMReportSignature" .
+  
+  cbamreport:CBAMReportStructure a owl:Class;
+    rdfs:subClassOf _:genid17, _:genid18;
+    rdfs:label "CBAMReportStructure" .
+  
+  _:genid17 a owl:Restriction;
+    owl:someValuesFrom xsd:string;
+    owl:onProperty cbamreport:fileName .
+  
+  _:genid18 a owl:Restriction;
+    owl:someValuesFrom xsd:string;
+    owl:onProperty cbamreport:name .
+  
+  cbamreport:CarbonPrice a owl:Class;
+    rdfs:label "CarbonPrice" .
+  
+  cbamreport:CarbonPriceDue a owl:Class;
+    rdfs:subClassOf cbamreport:CarbonPrice;
+    rdfs:label "CarbonPriceDue" .
+  
+  cbamreport:Commodity a owl:Class;
+    rdfs:label "Commodity" .
+  
+  cbamreport:CommodityCNCode a owl:Class;
+    rdfs:subClassOf cbamreport:CommodityCode;
+    rdfs:comment "This is the CN Code of the CBAM Good. It is a 2-digit code that is added in the HS code.";
+    rdfs:label "CommodityCNCode" .
+  
+  cbamreport:CommodityCode a owl:Class;
+    rdfs:subClassOf cbamreport:Commodity;
+    owl:disjointWith cbamreport:CommodityDetails;
+    rdfs:comment "This is an entity that contains the HS Code and the CN Code of the CBAM Good";
+    rdfs:label "CommodityCode" .
+  
+  cbamreport:CommodityDetails a owl:Class;
+    rdfs:subClassOf cbamreport:Commodity;
+    rdfs:comment "This is an entity that contains the description element of the CBAM Good.";
+    rdfs:label "CommodityDetails" .
+  
+  cbamreport:CommodityHSCode a owl:Class;
+    rdfs:subClassOf cbamreport:CommodityCode;
+    rdfs:comment "This is the HS Code of the CBAM Good. It is a 6-digit code.";
+    rdfs:label "CommodityHSCode" .
+  
+  cbamreport:ComparableRuleSignature a owl:Class;
+    rdfs:subClassOf cbamreport:Signature;
+    rdfs:comment "A signature confirming that the non-CBAM-specific applicable rules used are comparable to the CBAM applicable rules";
+    rdfs:label "ComparableRuleSignature" .
+  
+  cbamreport:CompetentAuthority a owl:Class;
+    rdfs:subClassOf org:FormalOrganization, _:genid19;
+    rdfs:comment "This entity contains information regarding the Competent Authority where the Declarant is established";
+    rdfs:label "CompetentAuthority" .
+  
+  _:genid19 a owl:Restriction;
+    owl:allValuesFrom xsd:string;
+    owl:onProperty cbamreport:referenceNumber .
+  
+  cbamreport:Contact a owl:Class;
+    rdfs:label "Contact" .
+  
+  cbamreport:Declarant a owl:Class;
+    rdfs:subClassOf org:FormalOrganization, _:genid20;
+    rdfs:comment "The entity that contains information about the Declarant";
+    rdfs:label "Declarant" .
+  
+  _:genid20 a owl:Restriction;
+    owl:someValuesFrom xsd:NCName;
+    owl:onProperty cbamreport:declarantName .
+  
+  cbamreport:DirectEmissions a owl:Class;
+    rdfs:subClassOf <cbamrepor#GreenHouseGasEmissions>, _:genid21;
+    owl:disjointWith cbamreport:IndirectEmissions;
+    rdfs:label "DirectEmissions" .
+  
+  _:genid21 a owl:Restriction;
+    owl:someValuesFrom xsd:double;
+    owl:onProperty cbamreport:DirectEmbeddedEmissions .
+  
+  cbamreport:EconomicActivity a owl:Class;
+    rdfs:comment "The definition of the economic activity of the installation";
+    rdfs:label "EconomicActivity" .
+  
+  cbamreport:Electricity a owl:Class;
+    rdfs:label "Electricity" .
+  
+  cbamreport:EmissionsOfTheElectricityImported a owl:Class;
+    rdfs:subClassOf <cbamrepor#GreenHouseGasEmissions>, _:genid22;
+    rdfs:label "EmissionsOfTheElectricityImported" .
+  
+  _:genid22 a owl:Restriction;
+    owl:someValuesFrom xsd:decimal;
+    owl:onProperty cbamreport:total_Embedded_Emissions_of_Electricity_Imported .
+  
+  cbamreport:GlobalisationTime a owl:Class;
+    rdfs:label "GlobalisationTime" .
+  
+  cbamreport:Goods a owl:Class;
+    rdfs:label "Goods" .
+  
+  cbamreport:GoodsCoveredUnderCarbonPriceDue a owl:Class;
+    rdfs:subClassOf cbamreport:Goods;
+    rdfs:label "GoodsCoveredUnderCarbonPriceDue" .
+  
+  cbamreport:GoodsEmissions a owl:Class;
+    rdfs:label "GoodsEmissions" .
+  
+  cbamreport:GoodsImported a owl:Class;
+    rdfs:subClassOf cbamreport:Goods, _:genid23, _:genid24;
+    rdfs:comment "This is the entity that contains the information for the CBAM Good. There may be up to 99999 CBAM Goods in a CBAM report";
+    rdfs:label "GoodsImported" .
+  
+  _:genid23 a owl:Restriction;
+    owl:someValuesFrom cbamreport:Installation;
+    owl:onProperty cbamreport:isProduceBy .
+  
+  _:genid24 a owl:Restriction;
+    owl:someValuesFrom xsd:positiveInteger;
+    owl:onProperty cbamreport:goodsItemNumber .
+  
+  cbamreport:GoodsMeasure a owl:Class;
+    rdfs:subClassOf _:genid25, _:genid26;
+    rdfs:label "GoodsMeasure" .
+  
+  _:genid25 a owl:Restriction;
+    owl:someValuesFrom cbamreport:TypeOFMeasurementUnit;
+    owl:onProperty cbamreport:isExpressedIn .
+  
+  _:genid26 a owl:Restriction;
+    owl:someValuesFrom xsd:float;
+    owl:onProperty cbamreport:netMass .
+  
+  cbamreport:GoodsMeasureCovered a owl:Class;
+    rdfs:subClassOf cbamreport:GoodsMeasure;
+    rdfs:comment "This entity is used to provide the quantity of the Good for which the emissions are already paid.";
+    rdfs:label "GoodsMeasureCovered" .
+  
+  cbamreport:GoodsMeasureImported a owl:Class;
+    rdfs:subClassOf cbamreport:GoodsMeasure;
+    rdfs:comment "This is the entity that contains the quantity of the CBAM goods imported";
+    rdfs:label "GoodsMeasureImported" .
+  
+  cbamreport:GoodsMeasurePerProcedure a owl:Class;
+    rdfs:subClassOf cbamreport:GoodsMeasure;
+    rdfs:comment "This Data Group contains the quantity of the CBAM Good per Customs procedure";
+    rdfs:label "GoodsMeasurePerProcedure" .
+  
+  cbamreport:GoodsMeasureProduced a owl:Class;
+    rdfs:subClassOf cbamreport:GoodsMeasure;
+    rdfs:label "GoodsMeasureProduced" .
+  
+  cbamreport:Goods_Produced a owl:Class;
+    rdfs:subClassOf cbamreport:Goods;
+    rdfs:label "Goods_Produced" .
+  
+  cbamreport:Importation a owl:Class;
+    rdfs:label "Importation" .
+  
+  cbamreport:Importer a owl:Class;
+    rdfs:subClassOf org:FormalOrganization, :Organization, _:genid27;
+    rdfs:comment "The entity that contains information about the Importer that is represented by the Declarant. The Importer can either be declared at Header level, if the same importer is common for all Goods Imported, or in the Goods Imported level";
+    rdfs:label "Importer" .
+  
+  _:genid27 a owl:Restriction;
+    owl:someValuesFrom xsd:NCName;
+    owl:onProperty cbamreport:importerName .
+  
+  cbamreport:IndirectEmissions a owl:Class;
+    rdfs:subClassOf <cbamrepor#GreenHouseGasEmissions>, _:genid28;
+    rdfs:label "IndirectEmissions" .
+  
+  _:genid28 a owl:Restriction;
+    owl:someValuesFrom xsd:decimal;
+    owl:onProperty cbamreport:IndirectEmbeddedEmissions .
+  
+  cbamreport:Installation a owl:Class;
+    rdfs:label "Installation" .
+  
+  cbamreport:InwardPRoccessingCustomsProcedure a owl:Class;
+    rdfs:label "InwardPRoccessingCustomsProcedure" .
+  
+  cbamreport:MappingProductionMethodAndEmissionQualifyingParameters a owl:Class;
+    rdfs:label "MappingProductionMethodAndEmissionQualifyingParameters" .
+  
+  cbamreport:MeasureUnitForEmissions a owl:Class;
+    rdfs:label "MeasureUnitForEmissions" .
+  
+  cbamreport:Operator a owl:Class;
+    rdfs:subClassOf org:FormalOrganization;
+    rdfs:label "Operator" .
+  
+  cbamreport:ProductionProcess a owl:Class;
+    rdfs:label "ProductionProcess" .
+  
+  cbamreport:Qreport a owl:Class;
+    rdfs:label "Qreport" .
+  
+  cbamreport:Rebate a owl:Class;
+    rdfs:label "Rebate" .
+  
+  cbamreport:Remarks a owl:Class;
+    rdfs:label "Remarks" .
+  
+  cbamreport:ReportConfirmation a owl:Class;
+    rdfs:label "ReportConfirmation" .
+  
+  cbamreport:ReportingMethodology a owl:Class;
+    rdfs:label "ReportingMethodology" .
+  
+  cbamreport:Representative a owl:Class;
+    rdfs:subClassOf org:FormalOrganization;
+    rdfs:label "Representative" .
+  
+  cbamreport:Signature a owl:Class;
+    rdfs:comment "here are two types of signatures in the CBAM Report. The first one is related to the information in the report. The Declarant must confirm that the information in the CBAM report is accurate and complete. The second is only applicable if the type of applicable rules selected is not CBAM-specific. In this case, the Declarant must confirm that the used applicable rules are comparable to the CBAM applicable rules";
+    rdfs:label "Signature" .
+  
+  cbamreport:SteellMill a owl:Class;
+    rdfs:subClassOf _:genid29;
+    rdfs:label "SteelMill" .
+  
+  _:genid29 a owl:Restriction;
+    owl:someValuesFrom xsd:string;
+    owl:onProperty cbamreport:identificationnumberOfTheSpecificSteelMill .
+  
+  cbamreport:SupportingDocumentsForGoods a owl:Class;
+    rdfs:label "SupportingDocumentsForGoods" .
+  
+  cbamreport:TotalEmissions a owl:Class;
+    rdfs:label "TotalEmissions" .
+  
+  cbamreport:TotalGoodsImported a owl:Class;
+    rdfs:label "TotalGoodsImported" .
+  
+  cbamreport:TypeOFMeasurementUnit a owl:Class;
+    rdfs:comment "The type of measurement unit of the quantity of the CBAM Good.";
+    rdfs:label "TypeOFMeasurementUnit" .
+  
+  _:genid31 a owl:AllDisjointClasses;
+    owl:members _:genid41 .
+  
+  _:genid41 a rdf:List;
+    rdf:first :BasedExclPfcEmissions;
+    rdf:rest _:genid40 .
+  
+  _:genid40 a rdf:List;
+    rdf:first :MeasurementBasedEmissions;
+    rdf:rest _:genid39 .
+  
+  _:genid39 a rdf:List;
+    rdf:first :OtherEmissions;
+    rdf:rest _:genid38 .
+  
+  _:genid38 a rdf:List;
+    rdf:first :TotalDirectEmissions;
+    rdf:rest _:genid37 .
+  
+  _:genid37 a rdf:List;
+    rdf:first :TotalEmissions;
+    rdf:rest _:genid36 .
+  
+  _:genid36 a rdf:List;
+    rdf:first :TotalIndirectEmissions;
+    rdf:rest _:genid35 .
+  
+  _:genid35 a rdf:List;
+    rdf:first :TotalPfcEmissions;
+    rdf:rest _:genid34 .
+  
+  _:genid34 a rdf:List;
+    rdf:first cbamreport:DirectEmissions;
+    rdf:rest _:genid33 .
+  
+  _:genid33 a rdf:List;
+    rdf:first cbamreport:EmissionsOfTheElectricityImported;
+    rdf:rest _:genid32 .
+  
+  _:genid32 a rdf:List;
+    rdf:first cbamreport:IndirectEmissions;
+    rdf:rest rdf:nil .
+  
+  _:genid42 a owl:AllDisjointClasses;
+    owl:members _:genid47 .
+  
+  _:genid47 a rdf:List;
+    rdf:first :TotalDirectEmissions;
+    rdf:rest _:genid46 .
+  
+  _:genid46 a rdf:List;
+    rdf:first :TotalEmissions;
+    rdf:rest _:genid45 .
+  
+  _:genid45 a rdf:List;
+    rdf:first cbamreport:DirectEmissions;
+    rdf:rest _:genid44 .
+  
+  _:genid44 a rdf:List;
+    rdf:first cbamreport:EmissionsOfTheElectricityImported;
+    rdf:rest _:genid43 .
+  
+  _:genid43 a rdf:List;
+    rdf:first cbamreport:IndirectEmissions;
+    rdf:rest rdf:nil .
+  
+  _:genid48 a owl:AllDisjointClasses;
+    owl:members _:genid53 .
+  
+  _:genid53 a rdf:List;
+    rdf:first cbamreport:CompetentAuthority;
+    rdf:rest _:genid52 .
+  
+  _:genid52 a rdf:List;
+    rdf:first cbamreport:Declarant;
+    rdf:rest _:genid51 .
+  
+  _:genid51 a rdf:List;
+    rdf:first cbamreport:Importer;
+    rdf:rest _:genid50 .
+  
+  _:genid50 a rdf:List;
+    rdf:first cbamreport:Operator;
+    rdf:rest _:genid49 .
+  
+  _:genid49 a rdf:List;
+    rdf:first cbamreport:Representative;
+    rdf:rest rdf:nil .
+  
+  _:genid54 a owl:AllDisjointClasses;
+    owl:members _:genid57 .
+  
+  _:genid57 a rdf:List;
+    rdf:first cbamreport:GoodsCoveredUnderCarbonPriceDue;
+    rdf:rest _:genid56 .
+  
+  _:genid56 a rdf:List;
+    rdf:first cbamreport:GoodsImported;
+    rdf:rest _:genid55 .
+  
+  _:genid55 a rdf:List;
+    rdf:first cbamreport:Goods_Produced;
+    rdf:rest rdf:nil .
+  
+  _:genid58 a owl:AllDisjointClasses;
+    owl:members _:genid62 .
+  
+  _:genid62 a rdf:List;
+    rdf:first cbamreport:GoodsMeasureCovered;
+    rdf:rest _:genid61 .
+  
+  _:genid61 a rdf:List;
+    rdf:first cbamreport:GoodsMeasureImported;
+    rdf:rest _:genid60 .
+  
+  _:genid60 a rdf:List;
+    rdf:first cbamreport:GoodsMeasurePerProcedure;
+    rdf:rest _:genid59 .
+  
+  _:genid59 a rdf:List;
+    rdf:first cbamreport:GoodsMeasureProduced;
+    rdf:rest rdf:nil .
+}
