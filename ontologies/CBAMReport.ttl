@@ -9,9 +9,9 @@
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix terms: <http://purl.org/dc/terms/> .
+@prefix schema: <https://schema.org/> .
 @prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix ontology: <https://www.geonames.org/ontology#> .
@@ -48,7 +48,7 @@
                                                  <https://purl.org/cbam/emissionsqualifyingparameters/> ;
                                      dcterms:abstract "The Carbon Boarder Adjustment Mechanism report Ontology" ;
                                      dcterms:accessRights "This ontology is licensed under the Creative Commons Attribution-NonCommercial 4.0 International License (CC BY-NC 4.0). It allows non-commercial use, sharing, and adaptation of the ontology, as long as users provide clear credit to the creator by citing the ontology's title, creator, and license information. Commercial use is strictly prohibited." ;
-                                     dcterms:contributor [ ffoaf:name "Astrid Duque Ramos" , "Alexander Garcia Castro" , "Andreas Nissen" , "Lars Rathgeb" , "Francisco Abad"
+                                     dcterms:contributor [ foaf:name "Astrid Duque Ramos" , "Alexander Garcia Castro" , "Andreas Nissen" , "Lars Rathgeb" , "Francisco Abad"
                                                          ] ;
                                      dcterms:creator [ foaf:name "Astrid Duque Ramos"
                                                      ] ;
@@ -59,7 +59,7 @@
                                      dcterms:license "http://creativecommons.org/licenses/by/4.0/"^^xsd:anyURI ;
                                      dcterms:modified "2024-11-28"^^xsd:date ;
                                      dcterms:publisher "Universidad de Murcia" ;
-                                     schema:funder "Siemens Energy"
+                                     schema:funder "Siemens Energy" ;
                                      dcterms:source "Report Structure ver 18.0.xlsx  <https://taxation-customs.ec.europa.eu/carbon-border-adjustment-mechanism_en#where-to-report>" ;
                                      dcterms:title "CBAM report"^^rdfs:Literal ;
                                      vann:preferredNamespacePrefix "https://purl.org/cbam/cbamreport/" ;
@@ -274,22 +274,17 @@ dcterms:type rdf:type owl:AnnotationProperty ;
 dcterms:valid rdf:type owl:AnnotationProperty ;
               rdfs:range rdfs:Literal .
 
-
 ###  http://purl.org/vocab/vann/preferredNamespacePrefix
 vann:preferredNamespacePrefix rdf:type owl:AnnotationProperty .
-
 
 ###  http://purl.org/vocab/vann/preferredNamespaceUri
 vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
 
-
 ###  http://www.w3.org/2000/01/rdf-schema#subClassOf
 rdfs:subClassOf rdf:type owl:AnnotationProperty .
 
-
 ###  http://xmlns.com/foaf/0.1/maker
 foaf:maker rdf:type owl:AnnotationProperty .
-
 
 ###  http://xmlns.com/foaf/0.1/name
 foaf:name rdf:type owl:AnnotationProperty ;
@@ -1048,12 +1043,6 @@ cbamreport:year rdf:type owl:DatatypeProperty ;
 <http://schema.org/Product> rdf:type owl:Class ;
                             rdfs:label "Product" .
 
-
-###  http://www.w3.org/2004/02/skos/core#Concept
-skos:Concept rdf:type owl:Class ;
-             rdfs:label "Concept" .
-
-
 ###  https://purl.org/cbamrepor#GreenHouseGasEmissions
 <https://purl.org/cbamrepor#GreenHouseGasEmissions> rdf:type owl:Class ;
                                                     rdfs:subClassOf [ rdf:type owl:Restriction ;
@@ -1521,27 +1510,6 @@ cbamreport:TotalGoodsImported rdf:type owl:Class ;
 cbamreport:TypeOFMeasurementUnit rdf:type owl:Class ;
                                  rdfs:comment "The type of measurement unit of the quantity of the CBAM Good." ;
                                  rdfs:label "TypeOFMeasurementUnit" .
-
-
-#################################################################
-#    Individuals
-#################################################################
-
-###  https://purl.org/cbam/ReportingPeriod
-properties:ReportingPeriod rdf:type owl:NamedIndividual ,
-                                    skos:Concept .
-
-
-###  https://purl.org/cbamreport/Good1
-cbamreport:Good1 rdf:type owl:NamedIndividual ,
-                          cbamreport:GoodsImported ;
-                 cbamreport:isProduceBy cbamreport:IN01 .
-
-
-###  https://purl.org/cbamreport/IN01
-cbamreport:IN01 rdf:type owl:NamedIndividual ,
-                         cbamreport:Installation .
-
 
 #################################################################
 #    Annotations
