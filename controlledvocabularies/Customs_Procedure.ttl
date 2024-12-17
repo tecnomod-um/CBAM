@@ -20,9 +20,7 @@
                                             dcterms:abstract "The Customs Procedure Code List in the CBAM Report" ;
                                             dcterms:accessRights "This ontology is licensed under the Creative Commons Attribution-NonCommercial 4.0 International License (CC BY-NC 4.0). It allows non-commercial use, sharing, and adaptation of the ontology, as long as users provide clear credit to the creator by citing the ontology's title, creator, and license information. Commercial use is strictly prohibited." ;
                                             dcterms:bibliographicCitation "OK4I - Ontologies and Knowledge Graphs for Industry, July 15–19, 2024, Enschede, Netherlands - <https://www.utwente.nl/en/eemcs/fois2024/resources/papers/duque-et-al-ontology-network-for-the-standardization-of-the-eu-cbam-report-data.pdf>" ;
-                                            dcterms:contributor [ foaf:name "Jesualdo Tomás Fernández Breis"
-                                                                ] ,
-                                                                [ foaf:name "Astrid Duque Ramos"
+                                            dcterms:contributor [ foaf:name "Jesualdo Tomás Fernández Breis" , "Astrid Duque Ramos" , "Alexander Garcia Castro" , "Andreas Nissen" , "Lars Rathgeb" , "Francisco Abad"
                                                                 ] ;
                                             dcterms:created "2024-06-01"^^rdfs:Literal ;
                                             dcterms:creator [ foaf:name "Jesualdo Tomás Fernández Breis"

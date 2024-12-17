@@ -11,6 +11,7 @@
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix frapo: <http://purl.org/cerif/frapo#> .
 @prefix properties: <https://purl.org/cbam/> .
 @prefix vocabulary: <https://purl.org/cbam/Source_of_electricity/> .
 @base <https://purl.org/cbam/Source_of_electricity/> .
@@ -20,9 +21,7 @@
                                                 dcterms:abstract "The Source of electricity Code List in the CBAM Report" ;
                                                 dcterms:accessRights "This ontology is licensed under the Creative Commons Attribution-NonCommercial 4.0 International License (CC BY-NC 4.0). It allows non-commercial use, sharing, and adaptation of the ontology, as long as users provide clear credit to the creator by citing the ontology's title, creator, and license information. Commercial use is strictly prohibited." ;
                                                 dcterms:bibliographicCitation "OK4I - Ontologies and Knowledge Graphs for Industry, July 15–19, 2024, Enschede, Netherlands - <https://www.utwente.nl/en/eemcs/fois2024/resources/papers/duque-et-al-ontology-network-for-the-standardization-of-the-eu-cbam-report-data.pdf>" ;
-                                                dcterms:contributor [ foaf:name "Jesualdo Tomás Fernández Breis"
-                                                                    ] ,
-                                                                    [ foaf:name "Astrid Duque Ramos"
+                                                dcterms:contributor [ foaf:name "Jesualdo Tomás Fernández Breis" , "Astrid Duque Ramos" , "Alexander Garcia Castro" , "Andreas Nissen" , "Lars Rathgeb" , "Francisco Abad"
                                                                     ] ;
                                                 dcterms:created "2024-06-01"^^rdfs:Literal ;
                                                 dcterms:creator [ foaf:name "Jesualdo Tomás Fernández Breis"
@@ -32,7 +31,8 @@
                                                 dcterms:issued "2024-11-21"^^xsd:date ;
                                                 dcterms:license "<http://creativecommons.org/licenses/by/4.0/>" ;
                                                 dcterms:modified "2024-11-21"^^xsd:date ;
-                                                dcterms:publisher "Siemens Energy" ;
+#                                               dcterms:publisher [ foaf:organization [ foaf:name ,"Universidad de Murcia" ]];
+                                                frapo:isFundedBy "Siemens Energy"
                                                 dcterms:source "Report Structure ver 18.0.xlsx  <https://taxation-customs.ec.europa.eu/carbon-border-adjustment-mechanism_en#where-to-report>" ;
                                                 dcterms:title "Source of electricity"^^rdfs:Literal ;
                                                 vann:preferredNamespacePrefix "<https://purl.org/cbam/Source_of_electricity/>" ;
