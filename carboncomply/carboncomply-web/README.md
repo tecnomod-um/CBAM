@@ -1,4 +1,7 @@
-# Getting Started with Create React App
+# CarbonComply-web
+Frontend for CarbonComply app.
+
+Developed with react.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

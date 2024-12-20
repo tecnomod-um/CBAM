@@ -1,23 +1,24 @@
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix geo: <https://sws.geonames.org/> .
 @prefix ontology-geo: <https://www.geonames.org/ontology#> .
-@prefix ontology-se-cbam: <https://ontology.siemens-energy.com/cbam/> .
-@prefix ontology-se-cbam-cbam-goods: <https://ontology.siemens-energy.com/cbam/cbam_goods/> .
-@prefix ontology-se-cbam-cbamreport: <https://ontology.siemens-energy.com/cbam/cbamreport/> .
-@prefix ontology-se-cbam-cn: <https://ontology.siemens-energy.com/cbam/CN/> .
-@prefix ontology-se-cbam-electricity-determination: <https://ontology.siemens-energy.com/cbam/Electricity_Determination/> .
-@prefix ontology-se-cbam-instrument: <https://ontology.siemens-energy.com/cbam/Instrument/> .
-@prefix ontology-se-cbam-production-method: <https://ontology.siemens-energy.com/cbam/Production_Method/> .
-@prefix ontology-se-cbam_emissionsqualifyingparameters: <https://ontology.siemens-energy.com/cbam/emissionsqualifyingparameters/> .
+@prefix ontology-se-cbam: <https://purl.org/cbam/> .
+@prefix ontology-se-cbam-cbam-goods: <https://purl.org/cbam/cbam_goods/> .
+@prefix ontology-se-cbam-cbamreport: <https://purl.org/cbam/cbamreport/> .
+@prefix ontology-se-cbam-cn: <https://purl.org/cbam/CN/> .
+@prefix ontology-se-cbam-electricity-determination: <https://purl.org/cbam/Electricity_Determination/> .
+@prefix ontology-se-cbam-instrument: <https://purl.org/cbam/Instrument/> .
+@prefix ontology-se-cbam-production-method: <https://purl.org/cbam/Production_Method/> .
+@prefix ontology-se-cbam_emissionsqualifyingparameters: <https://purl.org/cbam/emissionsqualifyingparameters/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix sch: <http://schema.org/> .
-@prefix se-cbam-cbam-goods: <https://data.siemens-energy.com/cbam/cbam_goods#> .
-@prefix se-cbam-cbamreport: <https://data.siemens-energy.com/cbam/cbamreport#> .
-@prefix se-cbam-cn: <https://data.siemens-energy.com/cbam/CN#> .
-@prefix se-cbam-electricity-determination: <https://data.siemens-energy.com/cbam/Electricity_Determination#> .
-@prefix se-cbam-emissionsqualifyingparameters: <https://data.siemens-energy.com/cbam/emissionsqualifyingparameters#> .
-@prefix se-cbam-instrument: <https://data.siemens-energy.com/cbam/Instrument#> .
-@prefix se-cbam-production-method: <https://data.siemens-energy.com/cbam/Production_Method#> .
+@prefix se-cbam-cbam-goods: <https://data.com/cbam/cbam_goods#> .
+@prefix se-cbam-cbamreport: <https://data.com/cbam/cbamreport#> .
+@prefix se-cbam-cn: <https://data.com/cbam/CN#> .
+@prefix se-cbam-electricity-determination: <https://data.com/cbam/Electricity_Determination#> .
+@prefix se-cbam-emissionsqualifyingparameters: <https://data.com/cbam/emissionsqualifyingparameters#> .
+@prefix se-cbam-instrument: <https://data.com/cbam/Instrument#> .
+@prefix se-cbam-production-method: <https://data.com/cbam/Production_Method#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 se-cbam-cbamreport:BasedExclPfcEmissions_CNABC2023010120231231 a ontology-se-cbam-cbamreport:BasedExclPfcEmissions ;
@@ -706,44 +707,44 @@ se-cbam-production-method:TWXYZ2023010120231231_1 a ontology-se-cbam-production-
     rdfs:label "Cement Bubble" ;
     ontology-se-cbam-production-method:code "Cement Bubble" .
 
-se-cbam-cbam-goods:AggregatedGoodsCategory_CNABC2023010120231231_1 a ontology-se-cbam-cbam-goods:AggregatedGoodsCategory,
-        "https://ontology.siemens-energy.com/cbam/cbam_goods#Iron_or_steel_products" ;
+se-cbam-cbam-goods:AggregatedGoodsCategory_CNABC2023010120231231_1 a <https://purl.org/cbam/cbam_goods#Iron_or_steel_products>,
+        ontology-se-cbam-cbam-goods:AggregatedGoodsCategory ;
     rdfs:label "Iron or steel products" .
 
-se-cbam-cbam-goods:AggregatedGoodsCategory_CNABC2023010120231231_2 a ontology-se-cbam-cbam-goods:AggregatedGoodsCategory,
-        "https://ontology.siemens-energy.com/cbam/cbam_goods#Iron_or_steel_products" ;
+se-cbam-cbam-goods:AggregatedGoodsCategory_CNABC2023010120231231_2 a <https://purl.org/cbam/cbam_goods#Iron_or_steel_products>,
+        ontology-se-cbam-cbam-goods:AggregatedGoodsCategory ;
     rdfs:label "Iron or steel products" .
 
-se-cbam-cbam-goods:AggregatedGoodsCategory_CNABC2023010120231231_3 a ontology-se-cbam-cbam-goods:AggregatedGoodsCategory,
-        "https://ontology.siemens-energy.com/cbam/cbam_goods#Iron_or_steel_products" ;
+se-cbam-cbam-goods:AggregatedGoodsCategory_CNABC2023010120231231_3 a <https://purl.org/cbam/cbam_goods#Iron_or_steel_products>,
+        ontology-se-cbam-cbam-goods:AggregatedGoodsCategory ;
     rdfs:label "Iron or steel products" .
 
-se-cbam-cbam-goods:AggregatedGoodsCategory_CNABC2023010120231231_4 a ontology-se-cbam-cbam-goods:AggregatedGoodsCategory,
-        "https://ontology.siemens-energy.com/cbam/cbam_goods#Iron_or_steel_products" ;
+se-cbam-cbam-goods:AggregatedGoodsCategory_CNABC2023010120231231_4 a <https://purl.org/cbam/cbam_goods#Iron_or_steel_products>,
+        ontology-se-cbam-cbam-goods:AggregatedGoodsCategory ;
     rdfs:label "Iron or steel products" .
 
-se-cbam-cbam-goods:AggregatedGoodsCategory_COCBA2023010120231231_1 a ontology-se-cbam-cbam-goods:AggregatedGoodsCategory,
-        "https://ontology.siemens-energy.com/cbam/cbam_goods#Pig_Iron" ;
+se-cbam-cbam-goods:AggregatedGoodsCategory_COCBA2023010120231231_1 a <https://purl.org/cbam/cbam_goods#Pig_Iron>,
+        ontology-se-cbam-cbam-goods:AggregatedGoodsCategory ;
     rdfs:label "Pig iron" .
 
-se-cbam-cbam-goods:AggregatedGoodsCategory_COCBA2023010120231231_2 a ontology-se-cbam-cbam-goods:AggregatedGoodsCategory,
-        "https://ontology.siemens-energy.com/cbam/cbam_goods#Pig_Iron" ;
+se-cbam-cbam-goods:AggregatedGoodsCategory_COCBA2023010120231231_2 a <https://purl.org/cbam/cbam_goods#Pig_Iron>,
+        ontology-se-cbam-cbam-goods:AggregatedGoodsCategory ;
     rdfs:label "Pig iron" .
 
-se-cbam-cbam-goods:AggregatedGoodsCategory_COCBA2023010120231231_3 a ontology-se-cbam-cbam-goods:AggregatedGoodsCategory,
-        "https://ontology.siemens-energy.com/cbam/cbam_goods#Iron_or_steel_products" ;
+se-cbam-cbam-goods:AggregatedGoodsCategory_COCBA2023010120231231_3 a <https://purl.org/cbam/cbam_goods#Iron_or_steel_products>,
+        ontology-se-cbam-cbam-goods:AggregatedGoodsCategory ;
     rdfs:label "Iron or steel products" .
 
-se-cbam-cbam-goods:AggregatedGoodsCategory_COCBA2023010120231231_4 a ontology-se-cbam-cbam-goods:AggregatedGoodsCategory,
-        "https://ontology.siemens-energy.com/cbam/cbam_goods#Iron_or_steel_products" ;
+se-cbam-cbam-goods:AggregatedGoodsCategory_COCBA2023010120231231_4 a <https://purl.org/cbam/cbam_goods#Iron_or_steel_products>,
+        ontology-se-cbam-cbam-goods:AggregatedGoodsCategory ;
     rdfs:label "Iron or steel products" .
 
-se-cbam-cbam-goods:AggregatedGoodsCategory_TRABC2023010120231231_1 a ontology-se-cbam-cbam-goods:AggregatedGoodsCategory,
-        "https://ontology.siemens-energy.com/cbam/cbam_goods#Cement" ;
+se-cbam-cbam-goods:AggregatedGoodsCategory_TRABC2023010120231231_1 a <https://purl.org/cbam/cbam_goods#Cement>,
+        ontology-se-cbam-cbam-goods:AggregatedGoodsCategory ;
     rdfs:label "Cement" .
 
-se-cbam-cbam-goods:AggregatedGoodsCategory_TWXYZ2023010120231231_1 a ontology-se-cbam-cbam-goods:AggregatedGoodsCategory,
-        "https://ontology.siemens-energy.com/cbam/cbam_goods#Cement" ;
+se-cbam-cbam-goods:AggregatedGoodsCategory_TWXYZ2023010120231231_1 a <https://purl.org/cbam/cbam_goods#Cement>,
+        ontology-se-cbam-cbam-goods:AggregatedGoodsCategory ;
     rdfs:label "Cement" .
 
 se-cbam-cbamreport:Address_CNABC a ontology-se-cbam-cbamreport:Address ;
@@ -2524,28 +2525,32 @@ se-cbam-emissionsqualifyingparameters:Urea_purity_TWXYZ2023010120231231_1 a onto
     ontology-se-cbam_emissionsqualifyingparameters:typeOfEmissionValue "DIRECT" ;
     ontology-se-cbam_emissionsqualifyingparameters:typeOfParameterValue "PERCENTAGE" .
 
-geo:1668284 a ontology-se-cbam:Country,
+geo:1668284 a owl:NamedIndividual,
+        ontology-se-cbam:Country,
         ontology-se-cbam:EU_Third_Country ;
     ontology-geo:countryCode "TW" ;
     ontology-geo:lat "24" ;
     ontology-geo:long "121" ;
     ontology-geo:name "Taiwan" .
 
-geo:1814991 a ontology-se-cbam:Country,
+geo:1814991 a owl:NamedIndividual,
+        ontology-se-cbam:Country,
         ontology-se-cbam:EU_Third_Country ;
     ontology-geo:countryCode "CN" ;
     ontology-geo:lat "35" ;
     ontology-geo:long "105" ;
     ontology-geo:name "People‚Äôs Republic of China" .
 
-geo:298795 a ontology-se-cbam:Country,
+geo:298795 a owl:NamedIndividual,
+        ontology-se-cbam:Country,
         ontology-se-cbam:EU_Third_Country ;
     ontology-geo:countryCode "TR" ;
     ontology-geo:lat "39" ;
     ontology-geo:long "35" ;
     ontology-geo:name "Republic of Turkey" .
 
-geo:3686110 a ontology-se-cbam:Country,
+geo:3686110 a owl:NamedIndividual,
+        ontology-se-cbam:Country,
         ontology-se-cbam:EU_Third_Country ;
     ontology-geo:countryCode "CO" ;
     ontology-geo:lat "4" ;

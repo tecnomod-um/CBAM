@@ -14,7 +14,7 @@ def get_property_value(ontology_path: str, entity_iri: str, property_iri: str) -
     global ontologies
     if ontology_path not in ontologies.keys():
         g = Graph()
-        g.parse(ontology_path)
+        g.parse(ontology_path, format='ttl')
         ontologies[ontology_path] = g
 
     ontology = ontologies.get(ontology_path)
@@ -39,7 +39,7 @@ def belong_to_class(ontology_path: str, instance_iri: str, class_iri: str) -> bo
     global ontologies
     if ontology_path not in ontologies.keys():
         g = Graph()
-        g.parse(ontology_path)
+        g.parse(ontology_path, format='ttl')
         ontologies[ontology_path] = g
 
     ontology = ontologies.get(ontology_path)
@@ -60,7 +60,7 @@ def get_belonging_classes(ontology_path: str, instance_iri: str) -> list:
     global ontologies
     if ontology_path not in ontologies.keys():
         g = Graph()
-        g.parse(ontology_path)
+        g.parse(ontology_path, format='ttl')
         ontologies[ontology_path] = g
 
     ontology = ontologies.get(ontology_path)

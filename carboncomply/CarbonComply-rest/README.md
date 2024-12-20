@@ -1,2 +1,2 @@
-# P4Q-rest
-Precise4Q rest endpoint
+# CarbonComply-rest
+CarbonComply rest endpoint
