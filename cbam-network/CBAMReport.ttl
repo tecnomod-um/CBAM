@@ -50,7 +50,7 @@
                                                                    "Andreas Rathgeb" ,
                                                                    "Astrid Duque Ramos" ,
                                                                    "Francisco Abad" ,
-                                                                   "Jesualdo Tomás Fernández Breis"
+                                                                   "Jesualdo Tomás Fernández Breis" ,
                                                                    "Lars Nissen"
                                                        ] ;
                                      terms:creator [ foaf:name "Astrid Duque Ramos"
