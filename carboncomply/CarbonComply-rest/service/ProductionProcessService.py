@@ -5,7 +5,7 @@ import logging
 
 logger = logging.getLogger(__name__)
 
-production_method_iri = 'https://purl.org/cbam/Production_Method/'
+production_method_ontology_file = Path(Path(__file__).parent, '../resources/ontologies/ProductionMethod.ttl')
 
 
 class ProductionProcessService(metaclass=Singleton):
@@ -15,7 +15,7 @@ class ProductionProcessService(metaclass=Singleton):
     def _get_iri_by_label_dict(self) -> dict:
         iri_by_label_dict: dict = {}
         ontology = Graph()
-        ontology.parse(production_method_iri, format='ttl')
+        ontology.parse(str(production_method_ontology_file.absolute()))
         query = """
                     SELECT ?iri ?label WHERE {
                         ?iri <http://www.w3.org/2000/01/rdf-schema#label> ?label .

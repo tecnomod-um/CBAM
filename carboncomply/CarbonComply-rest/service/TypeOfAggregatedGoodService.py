@@ -6,7 +6,7 @@ from utils.Singleton import Singleton
 import logging
 logger = logging.getLogger(__name__)
 
-goods_iri = 'https://purl.org/cbam/cbam_goods/'
+type_of_aggregated_good_ontology_file = Path(Path(__file__).parent, '../resources/ontologies/Goods.ttl')
 
 
 class TypeOfAggregatedGoodService(metaclass=Singleton):
@@ -16,7 +16,7 @@ class TypeOfAggregatedGoodService(metaclass=Singleton):
     def _get_iri_by_label_dict(self) -> dict:
         iri_by_label_dict: dict = {}
         ontology = Graph()
-        ontology.parse(goods_iri, format='ttl')
+        ontology.parse(str(type_of_aggregated_good_ontology_file.absolute()))
         query = """
             SELECT ?iri ?normalized_label WHERE {
                 ?iri <http://www.w3.org/2000/01/rdf-schema#label> ?normalized_label .

@@ -1,9 +1,10 @@
+from pathlib import Path
 from rdflib import Graph
 from utils.Singleton import Singleton
 import logging
 logger = logging.getLogger(__name__)
 
-country_plus_iri = 'https://purl.org/cbam/CountryPlus/'
+country_ontology_file = Path(Path(__file__).parent, '../resources/ontologies/CountryPlus.ttl')
 
 
 class CountryService(metaclass=Singleton):
@@ -13,12 +14,12 @@ class CountryService(metaclass=Singleton):
     def _get_iri_by_code_dict(self):
         iri_by_code: dict = {}
         ontology = Graph()
-        ontology.parse(country_plus_iri, format='ttl')
+        ontology.parse(str(country_ontology_file.absolute()))
         query = """
                     SELECT ?iri ?code WHERE {
                         ?iri <https://www.geonames.org/ontology#countryCode> ?code .
                     }
-                """
+                    """
         results = ontology.query(query)
         for row in results:
             iri = row.iri
@@ -32,7 +33,3 @@ class CountryService(metaclass=Singleton):
         else:
             logger.warning(f'No class found for country code  {country_code}')
             return None
-
-if __name__ == '__main__':
-    service = CountryService()
-    print (service.get_iri('DE'))

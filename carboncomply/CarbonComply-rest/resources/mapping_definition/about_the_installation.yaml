@@ -40,7 +40,7 @@ mappings:
           - function: fun:get_belonging_classes
             parameters:
             - parameter: param:ontologyParam
-              value: 'https://purl.org/cbam/CountryPlus/'
+              value: 'resources/ontologies/CountryPlus.ttl'
             - parameter: param:instanceParam
               value: $(country_iri)
             type: iri   
@@ -49,7 +49,7 @@ mappings:
           - function: fun:get_property_value
             parameters:
               - parameter: param:ontologyParam
-                value: 'https://purl.org/cbam/CountryPlus/'
+                value: 'resources/ontologies/CountryPlus.ttl'
               - parameter: param:entityParam 
                 value: $(country_iri)
               - parameter: param:propertyParam 
@@ -60,7 +60,7 @@ mappings:
           - function: fun:get_property_value
             parameters:
               - parameter: param:ontologyParam
-                value: 'https://purl.org/cbam/CountryPlus/'
+                value: 'resources/ontologies/CountryPlus.ttl'
               - parameter: param:entityParam 
                 value: $(country_iri)
               - parameter: param:propertyParam 
@@ -71,7 +71,7 @@ mappings:
           - function: fun:get_property_value
             parameters:
               - parameter: param:ontologyParam
-                value: 'https://purl.org/cbam/CountryPlus/'
+                value: 'resources/ontologies/CountryPlus.ttl'
               - parameter: param:entityParam 
                 value: $(country_iri)
               - parameter: param:propertyParam 
@@ -83,7 +83,7 @@ mappings:
           - function: fun:get_property_value
             parameters:
               - parameter: param:ontologyParam
-                value: 'https://purl.org/cbam/CountryPlus/'
+                value: 'resources/ontologies/CountryPlus.ttl'
               - parameter: param:entityParam 
                 value:  $(country_iri)
               - parameter: param:propertyParam 

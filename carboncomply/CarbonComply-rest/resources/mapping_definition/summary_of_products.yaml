@@ -102,7 +102,7 @@ mappings:
           - function: fun:get_property_value
             parameters:
               - parameter: param:ontologyParam
-                value: 'https://purl.org/cbam/CN/'
+                value: 'resources/ontologies/CNCode.ttl'
               - parameter: param:entityParam 
                 value: $(cn_iri) 
               - parameter: param:propertyParam 
@@ -113,7 +113,7 @@ mappings:
           - function: fun:get_property_value
             parameters:
               - parameter: param:ontologyParam
-                value: 'https://purl.org/cbam/CN/'
+                value: 'resources/ontologies/CNCode.ttl'
               - parameter: param:entityParam 
                 value: $(cn_iri) 
               - parameter: param:propertyParam 
@@ -160,7 +160,7 @@ mappings:
           - function: fun:get_property_value
             parameters:
               - parameter: param:ontologyParam
-                value: 'https://purl.org/cbam/emissionsqualifyingparameters/'
+                value: 'resources/ontologies/EmissionQualifParams.ttl'
               - parameter: param:entityParam 
                 value: 'ontology-se-cbam-emissionsqualifyingparameters:Precursor_reducing_Agent'
               - parameter: param:propertyParam 
@@ -171,7 +171,7 @@ mappings:
           - function: fun:get_property_value
             parameters:
               - parameter: param:ontologyParam
-                value: 'https://purl.org/cbam/emissionsqualifyingparameters/'
+                value: 'resources/ontologies/EmissionQualifParams.ttl'
               - parameter: param:entityParam 
                 value: 'ontology-se-cbam-emissionsqualifyingparameters:Precursor_reducing_Agent'
               - parameter: param:propertyParam 
@@ -182,7 +182,7 @@ mappings:
           - function: fun:get_property_value
             parameters:
               - parameter: param:ontologyParam
-                value: 'https://purl.org/cbam/emissionsqualifyingparameters/'
+                value: 'resources/ontologies/EmissionQualifParams.ttl'
               - parameter: param:entityParam 
                 value: 'ontology-se-cbam-emissionsqualifyingparameters:Precursor_reducing_Agent'
               - parameter: param:propertyParam 
@@ -193,7 +193,7 @@ mappings:
           - function: fun:get_property_value
             parameters:
               - parameter: param:ontologyParam
-                value: 'https://purl.org/cbam/emissionsqualifyingparameters/'
+                value: 'resources/ontologies/EmissionQualifParams.ttl'
               - parameter: param:entityParam 
                 value: 'ontology-se-cbam-emissionsqualifyingparameters:Precursor_reducing_Agent'
               - parameter: param:propertyParam 
@@ -204,7 +204,7 @@ mappings:
           - function: fun:get_property_value
             parameters:
               - parameter: param:ontologyParam
-                value: 'https://purl.org/cbam/emissionsqualifyingparameters/'
+                value: 'resources/ontologies/EmissionQualifParams.ttl'
               - parameter: param:entityParam 
                 value: 'ontology-se-cbam-emissionsqualifyingparameters:Precursor_reducing_Agent'
               - parameter: param:propertyParam 
@@ -215,7 +215,7 @@ mappings:
           - function: fun:get_property_value
             parameters:
               - parameter: param:ontologyParam
-                value: 'https://purl.org/cbam/emissionsqualifyingparameters/'
+                value: 'resources/ontologies/EmissionQualifParams.ttl'
               - parameter: param:entityParam 
                 value: 'ontology-se-cbam-emissionsqualifyingparameters:Precursor_reducing_Agent'
               - parameter: param:propertyParam 
@@ -235,7 +235,7 @@ mappings:
           - function: fun:get_property_value
             parameters:
               - parameter: param:ontologyParam
-                value: 'https://purl.org/cbam/emissionsqualifyingparameters/'
+                value: 'resources/ontologies/EmissionQualifParams.ttl'
               - parameter: param:entityParam 
                 value: 'ontology-se-cbam-emissionsqualifyingparameters:Manganese_content'
               - parameter: param:propertyParam 
@@ -246,7 +246,7 @@ mappings:
           - function: fun:get_property_value
             parameters:
               - parameter: param:ontologyParam
-                value: 'https://purl.org/cbam/emissionsqualifyingparameters/'
+                value: 'resources/ontologies/EmissionQualifParams.ttl'
               - parameter: param:entityParam 
                 value: 'ontology-se-cbam-emissionsqualifyingparameters:Manganese_content'
               - parameter: param:propertyParam 
@@ -257,7 +257,7 @@ mappings:
           - function: fun:get_property_value
             parameters:
               - parameter: param:ontologyParam
-                value: 'https://purl.org/cbam/emissionsqualifyingparameters/'
+                value: 'resources/ontologies/EmissionQualifParams.ttl'
               - parameter: param:entityParam 
                 value: 'ontology-se-cbam-emissionsqualifyingparameters:Manganese_content'
               - parameter: param:propertyParam 
@@ -268,7 +268,7 @@ mappings:
           - function: fun:get_property_value
             parameters:
               - parameter: param:ontologyParam
-                value: 'https://purl.org/cbam/emissionsqualifyingparameters/'
+                value: 'resources/ontologies/EmissionQualifParams.ttl'
               - parameter: param:entityParam 
                 value: 'ontology-se-cbam-emissionsqualifyingparameters:Manganese_content'
               - parameter: param:propertyParam 
@@ -279,7 +279,7 @@ mappings:
           - function: fun:get_property_value
             parameters:
               - parameter: param:ontologyParam
-                value: 'https://purl.org/cbam/emissionsqualifyingparameters/'
+                value: 'resources/ontologies/EmissionQualifParams.ttl'
               - parameter: param:entityParam 
                 value: 'ontology-se-cbam-emissionsqualifyingparameters:Manganese_content'
               - parameter: param:propertyParam 
@@ -290,7 +290,7 @@ mappings:
           - function: fun:get_property_value
             parameters:
               - parameter: param:ontologyParam
-                value: 'https://purl.org/cbam/emissionsqualifyingparameters/'
+                value: 'resources/ontologies/EmissionQualifParams.ttl'
               - parameter: param:entityParam 
                 value: 'ontology-se-cbam-emissionsqualifyingparameters:Manganese_content'
               - parameter: param:propertyParam 
@@ -310,7 +310,7 @@ mappings:
           - function: fun:get_property_value
             parameters:
               - parameter: param:ontologyParam
-                value: 'https://purl.org/cbam/emissionsqualifyingparameters/'
+                value: 'resources/ontologies/EmissionQualifParams.ttl'
               - parameter: param:entityParam 
                 value: 'ontology-se-cbam-emissionsqualifyingparameters:Chromium_content'
               - parameter: param:propertyParam 
@@ -321,7 +321,7 @@ mappings:
           - function: fun:get_property_value
             parameters:
               - parameter: param:ontologyParam
-                value: 'https://purl.org/cbam/emissionsqualifyingparameters/'
+                value: 'resources/ontologies/EmissionQualifParams.ttl'
               - parameter: param:entityParam 
                 value: 'ontology-se-cbam-emissionsqualifyingparameters:Chromium_content'
               - parameter: param:propertyParam 
@@ -332,7 +332,7 @@ mappings:
           - function: fun:get_property_value
             parameters:
               - parameter: param:ontologyParam
-                value: 'https://purl.org/cbam/emissionsqualifyingparameters/'
+                value: 'resources/ontologies/EmissionQualifParams.ttl'
               - parameter: param:entityParam 
                 value: 'ontology-se-cbam-emissionsqualifyingparameters:Chromium_content'
               - parameter: param:propertyParam 
@@ -343,7 +343,7 @@ mappings:
           - function: fun:get_property_value
             parameters:
               - parameter: param:ontologyParam
-                value: 'https://purl.org/cbam/emissionsqualifyingparameters/'
+                value: 'resources/ontologies/EmissionQualifParams.ttl'
               - parameter: param:entityParam 
                 value: 'ontology-se-cbam-emissionsqualifyingparameters:Chromium_content'
               - parameter: param:propertyParam 
@@ -354,7 +354,7 @@ mappings:
           - function: fun:get_property_value
             parameters:
               - parameter: param:ontologyParam
-                value: 'https://purl.org/cbam/emissionsqualifyingparameters/'
+                value: 'resources/ontologies/EmissionQualifParams.ttl'
               - parameter: param:entityParam 
                 value: 'ontology-se-cbam-emissionsqualifyingparameters:Chromium_content'
               - parameter: param:propertyParam 
@@ -365,7 +365,7 @@ mappings:
           - function: fun:get_property_value
             parameters:
               - parameter: param:ontologyParam
-                value: 'https://purl.org/cbam/emissionsqualifyingparameters/'
+                value: 'resources/ontologies/EmissionQualifParams.ttl'
               - parameter: param:entityParam 
                 value: 'ontology-se-cbam-emissionsqualifyingparameters:Chromium_content'
               - parameter: param:propertyParam 
@@ -385,7 +385,7 @@ mappings:
           - function: fun:get_property_value
             parameters:
               - parameter: param:ontologyParam
-                value: 'https://purl.org/cbam/emissionsqualifyingparameters/'
+                value: 'resources/ontologies/EmissionQualifParams.ttl'
               - parameter: param:entityParam 
                 value: 'ontology-se-cbam-emissionsqualifyingparameters:Nickel_content'
               - parameter: param:propertyParam 
@@ -396,7 +396,7 @@ mappings:
           - function: fun:get_property_value
             parameters:
               - parameter: param:ontologyParam
-                value: 'https://purl.org/cbam/emissionsqualifyingparameters/'
+                value: 'resources/ontologies/EmissionQualifParams.ttl'
               - parameter: param:entityParam 
                 value: 'ontology-se-cbam-emissionsqualifyingparameters:Nickel_content'
               - parameter: param:propertyParam 
@@ -407,7 +407,7 @@ mappings:
           - function: fun:get_property_value
             parameters:
               - parameter: param:ontologyParam
-                value: 'https://purl.org/cbam/emissionsqualifyingparameters/'
+                value: 'resources/ontologies/EmissionQualifParams.ttl'
               - parameter: param:entityParam 
                 value: 'ontology-se-cbam-emissionsqualifyingparameters:Nickel_content'
               - parameter: param:propertyParam 
@@ -418,7 +418,7 @@ mappings:
           - function: fun:get_property_value
             parameters:
               - parameter: param:ontologyParam
-                value: 'https://purl.org/cbam/emissionsqualifyingparameters/'
+                value: 'resources/ontologies/EmissionQualifParams.ttl'
               - parameter: param:entityParam 
                 value: 'ontology-se-cbam-emissionsqualifyingparameters:Nickel_content'
               - parameter: param:propertyParam 
@@ -429,7 +429,7 @@ mappings:
           - function: fun:get_property_value
             parameters:
               - parameter: param:ontologyParam
-                value: 'https://purl.org/cbam/emissionsqualifyingparameters/'
+                value: 'resources/ontologies/EmissionQualifParams.ttl'
               - parameter: param:entityParam 
                 value: 'ontology-se-cbam-emissionsqualifyingparameters:Nickel_content'
               - parameter: param:propertyParam 
@@ -440,7 +440,7 @@ mappings:
           - function: fun:get_property_value
             parameters:
               - parameter: param:ontologyParam
-                value: 'https://purl.org/cbam/emissionsqualifyingparameters/'
+                value: 'resources/ontologies/EmissionQualifParams.ttl'
               - parameter: param:entityParam 
                 value: 'ontology-se-cbam-emissionsqualifyingparameters:Nickel_content'
               - parameter: param:propertyParam 
@@ -460,7 +460,7 @@ mappings:
           - function: fun:get_property_value
             parameters:
               - parameter: param:ontologyParam
-                value: 'https://purl.org/cbam/emissionsqualifyingparameters/'
+                value: 'resources/ontologies/EmissionQualifParams.ttl'
               - parameter: param:entityParam 
                 value: 'ontology-se-cbam-emissionsqualifyingparameters:Content_of_other_alloy_elements'
               - parameter: param:propertyParam 
@@ -471,7 +471,7 @@ mappings:
           - function: fun:get_property_value
             parameters:
               - parameter: param:ontologyParam
-                value: 'https://purl.org/cbam/emissionsqualifyingparameters/'
+                value: 'resources/ontologies/EmissionQualifParams.ttl'
               - parameter: param:entityParam 
                 value: 'ontology-se-cbam-emissionsqualifyingparameters:Content_of_other_alloy_elements'
               - parameter: param:propertyParam 
@@ -482,7 +482,7 @@ mappings:
           - function: fun:get_property_value
             parameters:
               - parameter: param:ontologyParam
-                value: 'https://purl.org/cbam/emissionsqualifyingparameters/'
+                value: 'resources/ontologies/EmissionQualifParams.ttl'
               - parameter: param:entityParam 
                 value: 'ontology-se-cbam-emissionsqualifyingparameters:Content_of_other_alloy_elements'
               - parameter: param:propertyParam 
@@ -493,7 +493,7 @@ mappings:
           - function: fun:get_property_value
             parameters:
               - parameter: param:ontologyParam
-                value: 'https://purl.org/cbam/emissionsqualifyingparameters/'
+                value: 'resources/ontologies/EmissionQualifParams.ttl'
               - parameter: param:entityParam 
                 value: 'ontology-se-cbam-emissionsqualifyingparameters:Content_of_other_alloy_elements'
               - parameter: param:propertyParam 
@@ -504,7 +504,7 @@ mappings:
           - function: fun:get_property_value
             parameters:
               - parameter: param:ontologyParam
-                value: 'https://purl.org/cbam/emissionsqualifyingparameters/'
+                value: 'resources/ontologies/EmissionQualifParams.ttl'
               - parameter: param:entityParam 
                 value: 'ontology-se-cbam-emissionsqualifyingparameters:Content_of_other_alloy_elements'
               - parameter: param:propertyParam 
@@ -515,7 +515,7 @@ mappings:
           - function: fun:get_property_value
             parameters:
               - parameter: param:ontologyParam
-                value: 'https://purl.org/cbam/emissionsqualifyingparameters/'
+                value: 'resources/ontologies/EmissionQualifParams.ttl'
               - parameter: param:entityParam 
                 value: 'ontology-se-cbam-emissionsqualifyingparameters:Content_of_other_alloy_elements'
               - parameter: param:propertyParam 
@@ -535,7 +535,7 @@ mappings:
           - function: fun:get_property_value
             parameters:
               - parameter: param:ontologyParam
-                value: 'https://purl.org/cbam/emissionsqualifyingparameters/'
+                value: 'resources/ontologies/EmissionQualifParams.ttl'
               - parameter: param:entityParam 
                 value: 'ontology-se-cbam-emissionsqualifyingparameters:Carbon_content_of_iron_or_steel'
               - parameter: param:propertyParam 
@@ -546,7 +546,7 @@ mappings:
           - function: fun:get_property_value
             parameters:
               - parameter: param:ontologyParam
-                value: 'https://purl.org/cbam/emissionsqualifyingparameters/'
+                value: 'resources/ontologies/EmissionQualifParams.ttl'
               - parameter: param:entityParam 
                 value: 'ontology-se-cbam-emissionsqualifyingparameters:Carbon_content_of_iron_or_steel'
               - parameter: param:propertyParam 
@@ -557,7 +557,7 @@ mappings:
           - function: fun:get_property_value
             parameters:
               - parameter: param:ontologyParam
-                value: 'https://purl.org/cbam/emissionsqualifyingparameters/'
+                value: 'resources/ontologies/EmissionQualifParams.ttl'
               - parameter: param:entityParam 
                 value: 'ontology-se-cbam-emissionsqualifyingparameters:Carbon_content_of_iron_or_steel'
               - parameter: param:propertyParam 
@@ -568,7 +568,7 @@ mappings:
           - function: fun:get_property_value
             parameters:
               - parameter: param:ontologyParam
-                value: 'https://purl.org/cbam/emissionsqualifyingparameters/'
+                value: 'resources/ontologies/EmissionQualifParams.ttl'
               - parameter: param:entityParam 
                 value: 'ontology-se-cbam-emissionsqualifyingparameters:Carbon_content_of_iron_or_steel'
               - parameter: param:propertyParam 
@@ -579,7 +579,7 @@ mappings:
           - function: fun:get_property_value
             parameters:
               - parameter: param:ontologyParam
-                value: 'https://purl.org/cbam/emissionsqualifyingparameters/'
+                value: 'resources/ontologies/EmissionQualifParams.ttl'
               - parameter: param:entityParam 
                 value: 'ontology-se-cbam-emissionsqualifyingparameters:Carbon_content_of_iron_or_steel'
               - parameter: param:propertyParam 
@@ -590,7 +590,7 @@ mappings:
           - function: fun:get_property_value
             parameters:
               - parameter: param:ontologyParam
-                value: 'https://purl.org/cbam/emissionsqualifyingparameters/'
+                value: 'resources/ontologies/EmissionQualifParams.ttl'
               - parameter: param:entityParam 
                 value: 'ontology-se-cbam-emissionsqualifyingparameters:Carbon_content_of_iron_or_steel'
               - parameter: param:propertyParam 
@@ -610,7 +610,7 @@ mappings:
           - function: fun:get_property_value
             parameters:
               - parameter: param:ontologyParam
-                value: 'https://purl.org/cbam/emissionsqualifyingparameters/'
+                value: 'resources/ontologies/EmissionQualifParams.ttl'
               - parameter: param:entityParam 
                 value: 'ontology-se-cbam-emissionsqualifyingparameters:Steel_scrap_usage'
               - parameter: param:propertyParam 
@@ -621,7 +621,7 @@ mappings:
           - function: fun:get_property_value
             parameters:
               - parameter: param:ontologyParam
-                value: 'https://purl.org/cbam/emissionsqualifyingparameters/'
+                value: 'resources/ontologies/EmissionQualifParams.ttl'
               - parameter: param:entityParam 
                 value: 'ontology-se-cbam-emissionsqualifyingparameters:Steel_scrap_usage'
               - parameter: param:propertyParam 
@@ -632,7 +632,7 @@ mappings:
           - function: fun:get_property_value
             parameters:
               - parameter: param:ontologyParam
-                value: 'https://purl.org/cbam/emissionsqualifyingparameters/'
+                value: 'resources/ontologies/EmissionQualifParams.ttl'
               - parameter: param:entityParam 
                 value: 'ontology-se-cbam-emissionsqualifyingparameters:Steel_scrap_usage'
               - parameter: param:propertyParam 
@@ -643,7 +643,7 @@ mappings:
           - function: fun:get_property_value
             parameters:
               - parameter: param:ontologyParam
-                value: 'https://purl.org/cbam/emissionsqualifyingparameters/'
+                value: 'resources/ontologies/EmissionQualifParams.ttl'
               - parameter: param:entityParam 
                 value: 'ontology-se-cbam-emissionsqualifyingparameters:Steel_scrap_usage'
               - parameter: param:propertyParam 
@@ -654,7 +654,7 @@ mappings:
           - function: fun:get_property_value
             parameters:
               - parameter: param:ontologyParam
-                value: 'https://purl.org/cbam/emissionsqualifyingparameters/'
+                value: 'resources/ontologies/EmissionQualifParams.ttl'
               - parameter: param:entityParam 
                 value: 'ontology-se-cbam-emissionsqualifyingparameters:Steel_scrap_usage'
               - parameter: param:propertyParam 
@@ -665,7 +665,7 @@ mappings:
           - function: fun:get_property_value
             parameters:
               - parameter: param:ontologyParam
-                value: 'https://purl.org/cbam/emissionsqualifyingparameters/'
+                value: 'resources/ontologies/EmissionQualifParams.ttl'
               - parameter: param:entityParam 
                 value: 'ontology-se-cbam-emissionsqualifyingparameters:Steel_scrap_usage'
               - parameter: param:propertyParam 
@@ -685,7 +685,7 @@ mappings:
           - function: fun:get_property_value
             parameters:
               - parameter: param:ontologyParam
-                value: 'https://purl.org/cbam/emissionsqualifyingparameters/'
+                value: 'resources/ontologies/EmissionQualifParams.ttl'
               - parameter: param:entityParam 
                 value: 'ontology-se-cbam-emissionsqualifyingparameters:Non_Iron_content'
               - parameter: param:propertyParam 
@@ -696,7 +696,7 @@ mappings:
           - function: fun:get_property_value
             parameters:
               - parameter: param:ontologyParam
-                value: 'https://purl.org/cbam/emissionsqualifyingparameters/'
+                value: 'resources/ontologies/EmissionQualifParams.ttl'
               - parameter: param:entityParam 
                 value: 'ontology-se-cbam-emissionsqualifyingparameters:Non_Iron_content'
               - parameter: param:propertyParam 
@@ -707,7 +707,7 @@ mappings:
           - function: fun:get_property_value
             parameters:
               - parameter: param:ontologyParam
-                value: 'https://purl.org/cbam/emissionsqualifyingparameters/'
+                value: 'resources/ontologies/EmissionQualifParams.ttl'
               - parameter: param:entityParam 
                 value: 'ontology-se-cbam-emissionsqualifyingparameters:Non_Iron_content'
               - parameter: param:propertyParam 
@@ -718,7 +718,7 @@ mappings:
           - function: fun:get_property_value
             parameters:
               - parameter: param:ontologyParam
-                value: 'https://purl.org/cbam/emissionsqualifyingparameters/'
+                value: 'resources/ontologies/EmissionQualifParams.ttl'
               - parameter: param:entityParam 
                 value: 'ontology-se-cbam-emissionsqualifyingparameters:Non_Iron_content'
               - parameter: param:propertyParam 
@@ -729,7 +729,7 @@ mappings:
           - function: fun:get_property_value
             parameters:
               - parameter: param:ontologyParam
-                value: 'https://purl.org/cbam/emissionsqualifyingparameters/'
+                value: 'resources/ontologies/EmissionQualifParams.ttl'
               - parameter: param:entityParam 
                 value: 'ontology-se-cbam-emissionsqualifyingparameters:Non_Iron_content'
               - parameter: param:propertyParam 
@@ -740,7 +740,7 @@ mappings:
           - function: fun:get_property_value
             parameters:
               - parameter: param:ontologyParam
-                value: 'https://purl.org/cbam/emissionsqualifyingparameters/'
+                value: 'resources/ontologies/EmissionQualifParams.ttl'
               - parameter: param:entityParam 
                 value: 'ontology-se-cbam-emissionsqualifyingparameters:Non_Iron_content'
               - parameter: param:propertyParam 
@@ -760,7 +760,7 @@ mappings:
           - function: fun:get_property_value
             parameters:
               - parameter: param:ontologyParam
-                value: 'https://purl.org/cbam/emissionsqualifyingparameters/'
+                value: 'resources/ontologies/EmissionQualifParams.ttl'
               - parameter: param:entityParam 
                 value: 'ontology-se-cbam-emissionsqualifyingparameters:Steel_pre-consumer_scrap'
               - parameter: param:propertyParam 
@@ -771,7 +771,7 @@ mappings:
           - function: fun:get_property_value
             parameters:
               - parameter: param:ontologyParam
-                value: 'https://purl.org/cbam/emissionsqualifyingparameters/'
+                value: 'resources/ontologies/EmissionQualifParams.ttl'
               - parameter: param:entityParam 
                 value: 'ontology-se-cbam-emissionsqualifyingparameters:Steel_pre-consumer_scrap'
               - parameter: param:propertyParam 
@@ -782,7 +782,7 @@ mappings:
           - function: fun:get_property_value
             parameters:
               - parameter: param:ontologyParam
-                value: 'https://purl.org/cbam/emissionsqualifyingparameters/'
+                value: 'resources/ontologies/EmissionQualifParams.ttl'
               - parameter: param:entityParam 
                 value: 'ontology-se-cbam-emissionsqualifyingparameters:Steel_pre-consumer_scrap'
               - parameter: param:propertyParam 
@@ -793,7 +793,7 @@ mappings:
           - function: fun:get_property_value
             parameters:
               - parameter: param:ontologyParam
-                value: 'https://purl.org/cbam/emissionsqualifyingparameters/'
+                value: 'resources/ontologies/EmissionQualifParams.ttl'
               - parameter: param:entityParam 
                 value: 'ontology-se-cbam-emissionsqualifyingparameters:Steel_pre-consumer_scrap'
               - parameter: param:propertyParam 
@@ -804,7 +804,7 @@ mappings:
           - function: fun:get_property_value
             parameters:
               - parameter: param:ontologyParam
-                value: 'https://purl.org/cbam/emissionsqualifyingparameters/'
+                value: 'resources/ontologies/EmissionQualifParams.ttl'
               - parameter: param:entityParam 
                 value: 'ontology-se-cbam-emissionsqualifyingparameters:Steel_pre-consumer_scrap'
               - parameter: param:propertyParam 
@@ -815,7 +815,7 @@ mappings:
           - function: fun:get_property_value
             parameters:
               - parameter: param:ontologyParam
-                value: 'https://purl.org/cbam/emissionsqualifyingparameters/'
+                value: 'resources/ontologies/EmissionQualifParams.ttl'
               - parameter: param:entityParam 
                 value: 'ontology-se-cbam-emissionsqualifyingparameters:Steel_pre-consumer_scrap'
               - parameter: param:propertyParam 
@@ -835,7 +835,7 @@ mappings:
           - function: fun:get_property_value
             parameters:
               - parameter: param:ontologyParam
-                value: 'https://purl.org/cbam/emissionsqualifyingparameters/'
+                value: 'resources/ontologies/EmissionQualifParams.ttl'
               - parameter: param:entityParam 
                 value: 'ontology-se-cbam-emissionsqualifyingparameters:Aluminium_pre-consumer_scrap'
               - parameter: param:propertyParam 
@@ -846,7 +846,7 @@ mappings:
           - function: fun:get_property_value
             parameters:
               - parameter: param:ontologyParam
-                value: 'https://purl.org/cbam/emissionsqualifyingparameters/'
+                value: 'resources/ontologies/EmissionQualifParams.ttl'
               - parameter: param:entityParam 
                 value: 'ontology-se-cbam-emissionsqualifyingparameters:Aluminium_pre-consumer_scrap'
               - parameter: param:propertyParam 
@@ -857,7 +857,7 @@ mappings:
           - function: fun:get_property_value
             parameters:
               - parameter: param:ontologyParam
-                value: 'https://purl.org/cbam/emissionsqualifyingparameters/'
+                value: 'resources/ontologies/EmissionQualifParams.ttl'
               - parameter: param:entityParam 
                 value: 'ontology-se-cbam-emissionsqualifyingparameters:Aluminium_pre-consumer_scrap'
               - parameter: param:propertyParam 
@@ -868,7 +868,7 @@ mappings:
           - function: fun:get_property_value
             parameters:
               - parameter: param:ontologyParam
-                value: 'https://purl.org/cbam/emissionsqualifyingparameters/'
+                value: 'resources/ontologies/EmissionQualifParams.ttl'
               - parameter: param:entityParam 
                 value: 'ontology-se-cbam-emissionsqualifyingparameters:Aluminium_pre-consumer_scrap'
               - parameter: param:propertyParam 
@@ -879,7 +879,7 @@ mappings:
           - function: fun:get_property_value
             parameters:
               - parameter: param:ontologyParam
-                value: 'https://purl.org/cbam/emissionsqualifyingparameters/'
+                value: 'resources/ontologies/EmissionQualifParams.ttl'
               - parameter: param:entityParam 
                 value: 'ontology-se-cbam-emissionsqualifyingparameters:Aluminium_pre-consumer_scrap'
               - parameter: param:propertyParam 
@@ -890,7 +890,7 @@ mappings:
           - function: fun:get_property_value
             parameters:
               - parameter: param:ontologyParam
-                value: 'https://purl.org/cbam/emissionsqualifyingparameters/'
+                value: 'resources/ontologies/EmissionQualifParams.ttl'
               - parameter: param:entityParam 
                 value: 'ontology-se-cbam-emissionsqualifyingparameters:Aluminium_pre-consumer_scrap'
               - parameter: param:propertyParam 
@@ -910,7 +910,7 @@ mappings:
           - function: fun:get_property_value
             parameters:
               - parameter: param:ontologyParam
-                value: 'https://purl.org/cbam/emissionsqualifyingparameters/'
+                value: 'resources/ontologies/EmissionQualifParams.ttl'
               - parameter: param:entityParam 
                 value: 'ontology-se-cbam-emissionsqualifyingparameters:Aluminium_scrap_usage'
               - parameter: param:propertyParam 
@@ -921,7 +921,7 @@ mappings:
           - function: fun:get_property_value
             parameters:
               - parameter: param:ontologyParam
-                value: 'https://purl.org/cbam/emissionsqualifyingparameters/'
+                value: 'resources/ontologies/EmissionQualifParams.ttl'
               - parameter: param:entityParam 
                 value: 'ontology-se-cbam-emissionsqualifyingparameters:Aluminium_scrap_usage'
               - parameter: param:propertyParam 
@@ -932,7 +932,7 @@ mappings:
           - function: fun:get_property_value
             parameters:
               - parameter: param:ontologyParam
-                value: 'https://purl.org/cbam/emissionsqualifyingparameters/'
+                value: 'resources/ontologies/EmissionQualifParams.ttl'
               - parameter: param:entityParam 
                 value: 'ontology-se-cbam-emissionsqualifyingparameters:Aluminium_scrap_usage'
               - parameter: param:propertyParam 
@@ -943,7 +943,7 @@ mappings:
           - function: fun:get_property_value
             parameters:
               - parameter: param:ontologyParam
-                value: 'https://purl.org/cbam/emissionsqualifyingparameters/'
+                value: 'resources/ontologies/EmissionQualifParams.ttl'
               - parameter: param:entityParam 
                 value: 'ontology-se-cbam-emissionsqualifyingparameters:Aluminium_scrap_usage'
               - parameter: param:propertyParam 
@@ -954,7 +954,7 @@ mappings:
           - function: fun:get_property_value
             parameters:
               - parameter: param:ontologyParam
-                value: 'https://purl.org/cbam/emissionsqualifyingparameters/'
+                value: 'resources/ontologies/EmissionQualifParams.ttl'
               - parameter: param:entityParam 
                 value: 'ontology-se-cbam-emissionsqualifyingparameters:Aluminium_scrap_usage'
               - parameter: param:propertyParam 
@@ -965,7 +965,7 @@ mappings:
           - function: fun:get_property_value
             parameters:
               - parameter: param:ontologyParam
-                value: 'https://purl.org/cbam/emissionsqualifyingparameters/'
+                value: 'resources/ontologies/EmissionQualifParams.ttl'
               - parameter: param:entityParam 
                 value: 'ontology-se-cbam-emissionsqualifyingparameters:Aluminium_scrap_usage'
               - parameter: param:propertyParam 
@@ -985,7 +985,7 @@ mappings:
           - function: fun:get_property_value
             parameters:
               - parameter: param:ontologyParam
-                value: 'https://purl.org/cbam/emissionsqualifyingparameters/'
+                value: 'resources/ontologies/EmissionQualifParams.ttl'
               - parameter: param:entityParam 
                 value: 'ontology-se-cbam-emissionsqualifyingparameters:Non_Aluminium_content'
               - parameter: param:propertyParam 
@@ -996,7 +996,7 @@ mappings:
           - function: fun:get_property_value
             parameters:
               - parameter: param:ontologyParam
-                value: 'https://purl.org/cbam/emissionsqualifyingparameters/'
+                value: 'resources/ontologies/EmissionQualifParams.ttl'
               - parameter: param:entityParam 
                 value: 'ontology-se-cbam-emissionsqualifyingparameters:Non_Aluminium_content'
               - parameter: param:propertyParam 
@@ -1007,7 +1007,7 @@ mappings:
           - function: fun:get_property_value
             parameters:
               - parameter: param:ontologyParam
-                value: 'https://purl.org/cbam/emissionsqualifyingparameters/'
+                value: 'resources/ontologies/EmissionQualifParams.ttl'
               - parameter: param:entityParam 
                 value: 'ontology-se-cbam-emissionsqualifyingparameters:Non_Aluminium_content'
               - parameter: param:propertyParam 
@@ -1018,7 +1018,7 @@ mappings:
           - function: fun:get_property_value
             parameters:
               - parameter: param:ontologyParam
-                value: 'https://purl.org/cbam/emissionsqualifyingparameters/'
+                value: 'resources/ontologies/EmissionQualifParams.ttl'
               - parameter: param:entityParam 
                 value: 'ontology-se-cbam-emissionsqualifyingparameters:Non_Aluminium_content'
               - parameter: param:propertyParam 
@@ -1029,7 +1029,7 @@ mappings:
           - function: fun:get_property_value
             parameters:
               - parameter: param:ontologyParam
-                value: 'https://purl.org/cbam/emissionsqualifyingparameters/'
+                value: 'resources/ontologies/EmissionQualifParams.ttl'
               - parameter: param:entityParam 
                 value: 'ontology-se-cbam-emissionsqualifyingparameters:Non_Aluminium_content'
               - parameter: param:propertyParam 
@@ -1040,7 +1040,7 @@ mappings:
           - function: fun:get_property_value
             parameters:
               - parameter: param:ontologyParam
-                value: 'https://purl.org/cbam/emissionsqualifyingparameters/'
+                value: 'resources/ontologies/EmissionQualifParams.ttl'
               - parameter: param:entityParam 
                 value: 'ontology-se-cbam-emissionsqualifyingparameters:Non_Aluminium_content'
               - parameter: param:propertyParam 
@@ -1060,7 +1060,7 @@ mappings:
           - function: fun:get_property_value
             parameters:
               - parameter: param:ontologyParam
-                value: 'https://purl.org/cbam/emissionsqualifyingparameters/'
+                value: 'resources/ontologies/EmissionQualifParams.ttl'
               - parameter: param:entityParam 
                 value: 'ontology-se-cbam-emissionsqualifyingparameters:Clinker_factor'
               - parameter: param:propertyParam 
@@ -1071,7 +1071,7 @@ mappings:
           - function: fun:get_property_value
             parameters:
               - parameter: param:ontologyParam
-                value: 'https://purl.org/cbam/emissionsqualifyingparameters/'
+                value: 'resources/ontologies/EmissionQualifParams.ttl'
               - parameter: param:entityParam 
                 value: 'ontology-se-cbam-emissionsqualifyingparameters:Clinker_factor'
               - parameter: param:propertyParam 
@@ -1082,7 +1082,7 @@ mappings:
           - function: fun:get_property_value
             parameters:
               - parameter: param:ontologyParam
-                value: 'https://purl.org/cbam/emissionsqualifyingparameters/'
+                value: 'resources/ontologies/EmissionQualifParams.ttl'
               - parameter: param:entityParam 
                 value: 'ontology-se-cbam-emissionsqualifyingparameters:Clinker_factor'
               - parameter: param:propertyParam 
@@ -1093,7 +1093,7 @@ mappings:
           - function: fun:get_property_value
             parameters:
               - parameter: param:ontologyParam
-                value: 'https://purl.org/cbam/emissionsqualifyingparameters/'
+                value: 'resources/ontologies/EmissionQualifParams.ttl'
               - parameter: param:entityParam 
                 value: 'ontology-se-cbam-emissionsqualifyingparameters:Clinker_factor'
               - parameter: param:propertyParam 
@@ -1104,7 +1104,7 @@ mappings:
           - function: fun:get_property_value
             parameters:
               - parameter: param:ontologyParam
-                value: 'https://purl.org/cbam/emissionsqualifyingparameters/'
+                value: 'resources/ontologies/EmissionQualifParams.ttl'
               - parameter: param:entityParam 
                 value: 'ontology-se-cbam-emissionsqualifyingparameters:Clinker_factor'
               - parameter: param:propertyParam 
@@ -1115,7 +1115,7 @@ mappings:
           - function: fun:get_property_value
             parameters:
               - parameter: param:ontologyParam
-                value: 'https://purl.org/cbam/emissionsqualifyingparameters/'
+                value: 'resources/ontologies/EmissionQualifParams.ttl'
               - parameter: param:entityParam 
                 value: 'ontology-se-cbam-emissionsqualifyingparameters:Clinker_factor'
               - parameter: param:propertyParam 
@@ -1135,7 +1135,7 @@ mappings:
           - function: fun:get_property_value
             parameters:
               - parameter: param:ontologyParam
-                value: 'https://purl.org/cbam/emissionsqualifyingparameters/'
+                value: 'resources/ontologies/EmissionQualifParams.ttl'
               - parameter: param:entityParam 
                 value: 'ontology-se-cbam-emissionsqualifyingparameters:Calcination'
               - parameter: param:propertyParam 
@@ -1146,7 +1146,7 @@ mappings:
           - function: fun:get_property_value
             parameters:
               - parameter: param:ontologyParam
-                value: 'https://purl.org/cbam/emissionsqualifyingparameters/'
+                value: 'resources/ontologies/EmissionQualifParams.ttl'
               - parameter: param:entityParam 
                 value: 'ontology-se-cbam-emissionsqualifyingparameters:Calcination'
               - parameter: param:propertyParam 
@@ -1157,7 +1157,7 @@ mappings:
           - function: fun:get_property_value
             parameters:
               - parameter: param:ontologyParam
-                value: 'https://purl.org/cbam/emissionsqualifyingparameters/'
+                value: 'resources/ontologies/EmissionQualifParams.ttl'
               - parameter: param:entityParam 
                 value: 'ontology-se-cbam-emissionsqualifyingparameters:Calcination'
               - parameter: param:propertyParam 
@@ -1168,7 +1168,7 @@ mappings:
           - function: fun:get_property_value
             parameters:
               - parameter: param:ontologyParam
-                value: 'https://purl.org/cbam/emissionsqualifyingparameters/'
+                value: 'resources/ontologies/EmissionQualifParams.ttl'
               - parameter: param:entityParam 
                 value: 'ontology-se-cbam-emissionsqualifyingparameters:Calcination'
               - parameter: param:propertyParam 
@@ -1179,7 +1179,7 @@ mappings:
           - function: fun:get_property_value
             parameters:
               - parameter: param:ontologyParam
-                value: 'https://purl.org/cbam/emissionsqualifyingparameters/'
+                value: 'resources/ontologies/EmissionQualifParams.ttl'
               - parameter: param:entityParam 
                 value: 'ontology-se-cbam-emissionsqualifyingparameters:Calcination'
               - parameter: param:propertyParam 
@@ -1190,7 +1190,7 @@ mappings:
           - function: fun:get_property_value
             parameters:
               - parameter: param:ontologyParam
-                value: 'https://purl.org/cbam/emissionsqualifyingparameters/'
+                value: 'resources/ontologies/EmissionQualifParams.ttl'
               - parameter: param:entityParam 
                 value: 'ontology-se-cbam-emissionsqualifyingparameters:Calcination'
               - parameter: param:propertyParam 
@@ -1210,7 +1210,7 @@ mappings:
           - function: fun:get_property_value
             parameters:
               - parameter: param:ontologyParam
-                value: 'https://purl.org/cbam/emissionsqualifyingparameters/'
+                value: 'resources/ontologies/EmissionQualifParams.ttl'
               - parameter: param:entityParam 
                 value: 'ontology-se-cbam-emissionsqualifyingparameters:Ammonia_concentration'
               - parameter: param:propertyParam 
@@ -1221,7 +1221,7 @@ mappings:
           - function: fun:get_property_value
             parameters:
               - parameter: param:ontologyParam
-                value: 'https://purl.org/cbam/emissionsqualifyingparameters/'
+                value: 'resources/ontologies/EmissionQualifParams.ttl'
               - parameter: param:entityParam 
                 value: 'ontology-se-cbam-emissionsqualifyingparameters:Ammonia_concentration'
               - parameter: param:propertyParam 
@@ -1232,7 +1232,7 @@ mappings:
           - function: fun:get_property_value
             parameters:
               - parameter: param:ontologyParam
-                value: 'https://purl.org/cbam/emissionsqualifyingparameters/'
+                value: 'resources/ontologies/EmissionQualifParams.ttl'
               - parameter: param:entityParam 
                 value: 'ontology-se-cbam-emissionsqualifyingparameters:Ammonia_concentration'
               - parameter: param:propertyParam 
@@ -1243,7 +1243,7 @@ mappings:
           - function: fun:get_property_value
             parameters:
               - parameter: param:ontologyParam
-                value: 'https://purl.org/cbam/emissionsqualifyingparameters/'
+                value: 'resources/ontologies/EmissionQualifParams.ttl'
               - parameter: param:entityParam 
                 value: 'ontology-se-cbam-emissionsqualifyingparameters:Ammonia_concentration'
               - parameter: param:propertyParam 
@@ -1254,7 +1254,7 @@ mappings:
           - function: fun:get_property_value
             parameters:
               - parameter: param:ontologyParam
-                value: 'https://purl.org/cbam/emissionsqualifyingparameters/'
+                value: 'resources/ontologies/EmissionQualifParams.ttl'
               - parameter: param:entityParam 
                 value: 'ontology-se-cbam-emissionsqualifyingparameters:Ammonia_concentration'
               - parameter: param:propertyParam 
@@ -1265,7 +1265,7 @@ mappings:
           - function: fun:get_property_value
             parameters:
               - parameter: param:ontologyParam
-                value: 'https://purl.org/cbam/emissionsqualifyingparameters/'
+                value: 'resources/ontologies/EmissionQualifParams.ttl'
               - parameter: param:entityParam 
                 value: 'ontology-se-cbam-emissionsqualifyingparameters:Ammonia_concentration'
               - parameter: param:propertyParam 
@@ -1285,7 +1285,7 @@ mappings:
           - function: fun:get_property_value
             parameters:
               - parameter: param:ontologyParam
-                value: 'https://purl.org/cbam/emissionsqualifyingparameters/'
+                value: 'resources/ontologies/EmissionQualifParams.ttl'
               - parameter: param:entityParam 
                 value: 'ontology-se-cbam-emissionsqualifyingparameters:Nitric_acid_concentration'
               - parameter: param:propertyParam 
@@ -1296,7 +1296,7 @@ mappings:
           - function: fun:get_property_value
             parameters:
               - parameter: param:ontologyParam
-                value: 'https://purl.org/cbam/emissionsqualifyingparameters/'
+                value: 'resources/ontologies/EmissionQualifParams.ttl'
               - parameter: param:entityParam 
                 value: 'ontology-se-cbam-emissionsqualifyingparameters:Nitric_acid_concentration'
               - parameter: param:propertyParam 
@@ -1307,7 +1307,7 @@ mappings:
           - function: fun:get_property_value
             parameters:
               - parameter: param:ontologyParam
-                value: 'https://purl.org/cbam/emissionsqualifyingparameters/'
+                value: 'resources/ontologies/EmissionQualifParams.ttl'
               - parameter: param:entityParam 
                 value: 'ontology-se-cbam-emissionsqualifyingparameters:Nitric_acid_concentration'
               - parameter: param:propertyParam 
@@ -1318,7 +1318,7 @@ mappings:
           - function: fun:get_property_value
             parameters:
               - parameter: param:ontologyParam
-                value: 'https://purl.org/cbam/emissionsqualifyingparameters/'
+                value: 'resources/ontologies/EmissionQualifParams.ttl'
               - parameter: param:entityParam 
                 value: 'ontology-se-cbam-emissionsqualifyingparameters:Nitric_acid_concentration'
               - parameter: param:propertyParam 
@@ -1329,7 +1329,7 @@ mappings:
           - function: fun:get_property_value
             parameters:
               - parameter: param:ontologyParam
-                value: 'https://purl.org/cbam/emissionsqualifyingparameters/'
+                value: 'resources/ontologies/EmissionQualifParams.ttl'
               - parameter: param:entityParam 
                 value: 'ontology-se-cbam-emissionsqualifyingparameters:Nitric_acid_concentration'
               - parameter: param:propertyParam 
@@ -1340,7 +1340,7 @@ mappings:
           - function: fun:get_property_value
             parameters:
               - parameter: param:ontologyParam
-                value: 'https://purl.org/cbam/emissionsqualifyingparameters/'
+                value: 'resources/ontologies/EmissionQualifParams.ttl'
               - parameter: param:entityParam 
                 value: 'ontology-se-cbam-emissionsqualifyingparameters:Nitric_acid_concentration'
               - parameter: param:propertyParam 
@@ -1360,7 +1360,7 @@ mappings:
           - function: fun:get_property_value
             parameters:
               - parameter: param:ontologyParam
-                value: 'https://purl.org/cbam/emissionsqualifyingparameters/'
+                value: 'resources/ontologies/EmissionQualifParams.ttl'
               - parameter: param:entityParam 
                 value: 'ontology-se-cbam-emissionsqualifyingparameters:Urea_purity'
               - parameter: param:propertyParam 
@@ -1371,7 +1371,7 @@ mappings:
           - function: fun:get_property_value
             parameters:
               - parameter: param:ontologyParam
-                value: 'https://purl.org/cbam/emissionsqualifyingparameters/'
+                value: 'resources/ontologies/EmissionQualifParams.ttl'
               - parameter: param:entityParam 
                 value: 'ontology-se-cbam-emissionsqualifyingparameters:Urea_purity'
               - parameter: param:propertyParam 
@@ -1382,7 +1382,7 @@ mappings:
           - function: fun:get_property_value
             parameters:
               - parameter: param:ontologyParam
-                value: 'https://purl.org/cbam/emissionsqualifyingparameters/'
+                value: 'resources/ontologies/EmissionQualifParams.ttl'
               - parameter: param:entityParam 
                 value: 'ontology-se-cbam-emissionsqualifyingparameters:Urea_purity'
               - parameter: param:propertyParam 
@@ -1393,7 +1393,7 @@ mappings:
           - function: fun:get_property_value
             parameters:
               - parameter: param:ontologyParam
-                value: 'https://purl.org/cbam/emissionsqualifyingparameters/'
+                value: 'resources/ontologies/EmissionQualifParams.ttl'
               - parameter: param:entityParam 
                 value: 'ontology-se-cbam-emissionsqualifyingparameters:Urea_purity'
               - parameter: param:propertyParam 
@@ -1404,7 +1404,7 @@ mappings:
           - function: fun:get_property_value
             parameters:
               - parameter: param:ontologyParam
-                value: 'https://purl.org/cbam/emissionsqualifyingparameters/'
+                value: 'resources/ontologies/EmissionQualifParams.ttl'
               - parameter: param:entityParam 
                 value: 'ontology-se-cbam-emissionsqualifyingparameters:Urea_purity'
               - parameter: param:propertyParam 
@@ -1415,7 +1415,7 @@ mappings:
           - function: fun:get_property_value
             parameters:
               - parameter: param:ontologyParam
-                value: 'https://purl.org/cbam/emissionsqualifyingparameters/'
+                value: 'resources/ontologies/EmissionQualifParams.ttl'
               - parameter: param:entityParam 
                 value: 'ontology-se-cbam-emissionsqualifyingparameters:Urea_purity'
               - parameter: param:propertyParam 
@@ -1435,7 +1435,7 @@ mappings:
           - function: fun:get_property_value
             parameters:
               - parameter: param:ontologyParam
-                value: 'https://purl.org/cbam/emissionsqualifyingparameters/'
+                value: 'resources/ontologies/EmissionQualifParams.ttl'
               - parameter: param:entityParam 
                 value: 'ontology-se-cbam-emissionsqualifyingparameters:Ammonium_Nitrogen_content'
               - parameter: param:propertyParam 
@@ -1446,7 +1446,7 @@ mappings:
           - function: fun:get_property_value
             parameters:
               - parameter: param:ontologyParam
-                value: 'https://purl.org/cbam/emissionsqualifyingparameters/'
+                value: 'resources/ontologies/EmissionQualifParams.ttl'
               - parameter: param:entityParam 
                 value: 'ontology-se-cbam-emissionsqualifyingparameters:Ammonium_Nitrogen_content'
               - parameter: param:propertyParam 
@@ -1457,7 +1457,7 @@ mappings:
           - function: fun:get_property_value
             parameters:
               - parameter: param:ontologyParam
-                value: 'https://purl.org/cbam/emissionsqualifyingparameters/'
+                value: 'resources/ontologies/EmissionQualifParams.ttl'
               - parameter: param:entityParam 
                 value: 'ontology-se-cbam-emissionsqualifyingparameters:Ammonium_Nitrogen_content'
               - parameter: param:propertyParam 
@@ -1468,7 +1468,7 @@ mappings:
           - function: fun:get_property_value
             parameters:
               - parameter: param:ontologyParam
-                value: 'https://purl.org/cbam/emissionsqualifyingparameters/'
+                value: 'resources/ontologies/EmissionQualifParams.ttl'
               - parameter: param:entityParam 
                 value: 'ontology-se-cbam-emissionsqualifyingparameters:Ammonium_Nitrogen_content'
               - parameter: param:propertyParam 
@@ -1479,7 +1479,7 @@ mappings:
           - function: fun:get_property_value
             parameters:
               - parameter: param:ontologyParam
-                value: 'https://purl.org/cbam/emissionsqualifyingparameters/'
+                value: 'resources/ontologies/EmissionQualifParams.ttl'
               - parameter: param:entityParam 
                 value: 'ontology-se-cbam-emissionsqualifyingparameters:Ammonium_Nitrogen_content'
               - parameter: param:propertyParam 
@@ -1490,7 +1490,7 @@ mappings:
           - function: fun:get_property_value
             parameters:
               - parameter: param:ontologyParam
-                value: 'https://purl.org/cbam/emissionsqualifyingparameters/'
+                value: 'resources/ontologies/EmissionQualifParams.ttl'
               - parameter: param:entityParam 
                 value: 'ontology-se-cbam-emissionsqualifyingparameters:Ammonium_Nitrogen_content'
               - parameter: param:propertyParam 
@@ -1510,7 +1510,7 @@ mappings:
           - function: fun:get_property_value
             parameters:
               - parameter: param:ontologyParam
-                value: 'https://purl.org/cbam/emissionsqualifyingparameters/'
+                value: 'resources/ontologies/EmissionQualifParams.ttl'
               - parameter: param:entityParam 
                 value: 'ontology-se-cbam-emissionsqualifyingparameters:Nitrate_Nitrogen_content'
               - parameter: param:propertyParam 
@@ -1521,7 +1521,7 @@ mappings:
           - function: fun:get_property_value
             parameters:
               - parameter: param:ontologyParam
-                value: 'https://purl.org/cbam/emissionsqualifyingparameters/'
+                value: 'resources/ontologies/EmissionQualifParams.ttl'
               - parameter: param:entityParam 
                 value: 'ontology-se-cbam-emissionsqualifyingparameters:Nitrate_Nitrogen_content'
               - parameter: param:propertyParam 
@@ -1532,7 +1532,7 @@ mappings:
           - function: fun:get_property_value
             parameters:
               - parameter: param:ontologyParam
-                value: 'https://purl.org/cbam/emissionsqualifyingparameters/'
+                value: 'resources/ontologies/EmissionQualifParams.ttl'
               - parameter: param:entityParam 
                 value: 'ontology-se-cbam-emissionsqualifyingparameters:Nitrate_Nitrogen_content'
               - parameter: param:propertyParam 
@@ -1543,7 +1543,7 @@ mappings:
           - function: fun:get_property_value
             parameters:
               - parameter: param:ontologyParam
-                value: 'https://purl.org/cbam/emissionsqualifyingparameters/'
+                value: 'resources/ontologies/EmissionQualifParams.ttl'
               - parameter: param:entityParam 
                 value: 'ontology-se-cbam-emissionsqualifyingparameters:Nitrate_Nitrogen_content'
               - parameter: param:propertyParam 
@@ -1554,7 +1554,7 @@ mappings:
           - function: fun:get_property_value
             parameters:
               - parameter: param:ontologyParam
-                value: 'https://purl.org/cbam/emissionsqualifyingparameters/'
+                value: 'resources/ontologies/EmissionQualifParams.ttl'
               - parameter: param:entityParam 
                 value: 'ontology-se-cbam-emissionsqualifyingparameters:Nitrate_Nitrogen_content'
               - parameter: param:propertyParam 
@@ -1565,7 +1565,7 @@ mappings:
           - function: fun:get_property_value
             parameters:
               - parameter: param:ontologyParam
-                value: 'https://purl.org/cbam/emissionsqualifyingparameters/'
+                value: 'resources/ontologies/EmissionQualifParams.ttl'
               - parameter: param:entityParam 
                 value: 'ontology-se-cbam-emissionsqualifyingparameters:Nitrate_Nitrogen_content'
               - parameter: param:propertyParam 
@@ -1585,7 +1585,7 @@ mappings:
           - function: fun:get_property_value
             parameters:
               - parameter: param:ontologyParam
-                value: 'https://purl.org/cbam/emissionsqualifyingparameters/'
+                value: 'resources/ontologies/EmissionQualifParams.ttl'
               - parameter: param:entityParam 
                 value: 'ontology-se-cbam-emissionsqualifyingparameters:Urea_Nitrogen_content'
               - parameter: param:propertyParam 
@@ -1596,7 +1596,7 @@ mappings:
           - function: fun:get_property_value
             parameters:
               - parameter: param:ontologyParam
-                value: 'https://purl.org/cbam/emissionsqualifyingparameters/'
+                value: 'resources/ontologies/EmissionQualifParams.ttl'
               - parameter: param:entityParam 
                 value: 'ontology-se-cbam-emissionsqualifyingparameters:Urea_Nitrogen_content'
               - parameter: param:propertyParam 
@@ -1607,7 +1607,7 @@ mappings:
           - function: fun:get_property_value
             parameters:
               - parameter: param:ontologyParam
-                value: 'https://purl.org/cbam/emissionsqualifyingparameters/'
+                value: 'resources/ontologies/EmissionQualifParams.ttl'
               - parameter: param:entityParam 
                 value: 'ontology-se-cbam-emissionsqualifyingparameters:Urea_Nitrogen_content'
               - parameter: param:propertyParam 
@@ -1618,7 +1618,7 @@ mappings:
           - function: fun:get_property_value
             parameters:
               - parameter: param:ontologyParam
-                value: 'https://purl.org/cbam/emissionsqualifyingparameters/'
+                value: 'resources/ontologies/EmissionQualifParams.ttl'
               - parameter: param:entityParam 
                 value: 'ontology-se-cbam-emissionsqualifyingparameters:Urea_Nitrogen_content'
               - parameter: param:propertyParam 
@@ -1629,7 +1629,7 @@ mappings:
           - function: fun:get_property_value
             parameters:
               - parameter: param:ontologyParam
-                value: 'https://purl.org/cbam/emissionsqualifyingparameters/'
+                value: 'resources/ontologies/EmissionQualifParams.ttl'
               - parameter: param:entityParam 
                 value: 'ontology-se-cbam-emissionsqualifyingparameters:Urea_Nitrogen_content'
               - parameter: param:propertyParam 
@@ -1640,7 +1640,7 @@ mappings:
           - function: fun:get_property_value
             parameters:
               - parameter: param:ontologyParam
-                value: 'https://purl.org/cbam/emissionsqualifyingparameters/'
+                value: 'resources/ontologies/EmissionQualifParams.ttl'
               - parameter: param:entityParam 
                 value: 'ontology-se-cbam-emissionsqualifyingparameters:Urea_Nitrogen_content'
               - parameter: param:propertyParam 
@@ -1660,7 +1660,7 @@ mappings:
           - function: fun:get_property_value
             parameters:
               - parameter: param:ontologyParam
-                value: 'https://purl.org/cbam/emissionsqualifyingparameters/'
+                value: 'resources/ontologies/EmissionQualifParams.ttl'
               - parameter: param:entityParam 
                 value: 'ontology-se-cbam-emissionsqualifyingparameters:Other_Nitrogen_content'
               - parameter: param:propertyParam 
@@ -1671,7 +1671,7 @@ mappings:
           - function: fun:get_property_value
             parameters:
               - parameter: param:ontologyParam
-                value: 'https://purl.org/cbam/emissionsqualifyingparameters/'
+                value: 'resources/ontologies/EmissionQualifParams.ttl'
               - parameter: param:entityParam 
                 value: 'ontology-se-cbam-emissionsqualifyingparameters:Other_Nitrogen_content'
               - parameter: param:propertyParam 
@@ -1682,7 +1682,7 @@ mappings:
           - function: fun:get_property_value
             parameters:
               - parameter: param:ontologyParam
-                value: 'https://purl.org/cbam/emissionsqualifyingparameters/'
+                value: 'resources/ontologies/EmissionQualifParams.ttl'
               - parameter: param:entityParam 
                 value: 'ontology-se-cbam-emissionsqualifyingparameters:Other_Nitrogen_content'
               - parameter: param:propertyParam 
@@ -1693,7 +1693,7 @@ mappings:
           - function: fun:get_property_value
             parameters:
               - parameter: param:ontologyParam
-                value: 'https://purl.org/cbam/emissionsqualifyingparameters/'
+                value: 'resources/ontologies/EmissionQualifParams.ttl'
               - parameter: param:entityParam 
                 value: 'ontology-se-cbam-emissionsqualifyingparameters:Other_Nitrogen_content'
               - parameter: param:propertyParam 
@@ -1704,7 +1704,7 @@ mappings:
           - function: fun:get_property_value
             parameters:
               - parameter: param:ontologyParam
-                value: 'https://purl.org/cbam/emissionsqualifyingparameters/'
+                value: 'resources/ontologies/EmissionQualifParams.ttl'
               - parameter: param:entityParam 
                 value: 'ontology-se-cbam-emissionsqualifyingparameters:Other_Nitrogen_content'
               - parameter: param:propertyParam 
@@ -1715,7 +1715,7 @@ mappings:
           - function: fun:get_property_value
             parameters:
               - parameter: param:ontologyParam
-                value: 'https://purl.org/cbam/emissionsqualifyingparameters/'
+                value: 'resources/ontologies/EmissionQualifParams.ttl'
               - parameter: param:entityParam 
                 value: 'ontology-se-cbam-emissionsqualifyingparameters:Other_Nitrogen_content'
               - parameter: param:propertyParam 
@@ -1763,7 +1763,7 @@ mappings:
           - function: fun:get_property_value
             parameters:
               - parameter: param:ontologyParam
-                value: 'https://purl.org/cbam/emissionsqualifyingparameters/'
+                value: 'resources/ontologies/EmissionQualifParams.ttl'
               - parameter: param:entityParam 
                 value: 'ontology-se-cbam-emissionsqualifyingparameters:Other_Nitrogen_content'
               - parameter: param:propertyParam 
