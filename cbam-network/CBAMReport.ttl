@@ -14,7 +14,7 @@
 @prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 @prefix schema: <https://schema.org/> .
 @prefix ontology: <https://www.geonames.org/ontology#> .
-@prefix cbamreport: <https://purl.org/cbamreport/> .
+@prefix cbamreport: <https://purl.org/cbam/cbamreport/> .
 @prefix vocabulary: <https://purl.org/cbam/cbam_goods/> .
 @prefix emissionsqualifyingparameters: <https://purl.org/emissionsqualifyingparameters#> .
 @base <https://purl.org/cbam/cbamreport/> .
@@ -333,6 +333,13 @@ xsd:string owl:equivalentClass rdfs:Literal .
 #################################################################
 #    Object Properties
 #################################################################
+
+###  https://purl.org/cbam/cbamreport/hasEmissionQualifyingParameter
+:hasEmissionQualifyingParameter rdf:type owl:ObjectProperty ;
+                                rdfs:domain <http://schema.org/Product> ;
+                                rdfs:range <https://purl.org/cbam/emissionsqualifyingparameters/EmissionParameter> ;
+                                rdfs:label "hasEmissionQualifyingParameter" .
+
 
 ###  https://purl.org/cbamreport#hasEconomicActivity
 :hasEconomicActivity rdf:type owl:ObjectProperty ;
@@ -1182,7 +1189,7 @@ cbamreport:CBAMReport rdf:type owl:Class ;
                                         owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                                         owl:onDataRange xsd:string
                                       ] ;
-                      rdfs:comment " The CBAM Report that Declarants will submit" ;
+                      rdfs:comment "The CBAM Report that Declarants will submit" ;
                       rdfs:label "CBAMReport" .
 
 
