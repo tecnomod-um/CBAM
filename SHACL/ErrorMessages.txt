@@ -1,0 +1,21 @@
+Predicate ontology-se-cbam-cbam-goods:belongsToCategory is not allowed (closed shape). https://purl.org/cbam/cbam_goods#belongsToCategory is not with:
+Predicate ontology-se-cbam-cbamreport:generate is not allowed (closed shape) 
+Predicate ontology-se-cbam-cbamreport:hasCarbonCharge is not allowed (closed shape)
+Predicate ontology-se-cbam-cbamreport:hasCNCode is not allowed (closed shape)
+Predicate ontology-se-cbam-cbamreport:hasEmissionQualifyingParameter is not allowed (closed shape)
+Predicate ontology-se-cbam-cbamreport:hasEmissionsCovered is not allowed (closed shape)
+Predicate ontology-se-cbam-cbamreport:isCoveredRebate is not allowed (closed shape) -- For include in CBAMReport
+Predicate ontology-se-cbam-cbamreport:isDeterminedBy is not allowed (closed shape)
+Predicate ontology-se-cbam-cbamreport:isExecutedBy is not allowed (closed shape) -- For Include in CBAMReport
+Predicate ontology-se-cbam-cbamreport:isManufacturedIn is not allowed (closed shape) For Include in CBAMReport
+Predicate ontology-se-cbam-cbamreport:isProducedIn is not allowed (closed shape) ---For Include in CBAMReport
+Predicate ontology-se-cbam-cbamreport:isRegisteredIn is not allowed (closed shape). Review - registeredIn It is the same?
+Predicate ontology-se-cbam-cbamreport:isSubjectTo is not allowed (closed shape)
+Predicate ontology-se-cbam-cbamreport:itemNumber is not allowed (closed shape)
+Predicate ontology-se-cbam_emissionsqualifyingparameters:code is not allowed (closed shape). It is the same? cbam:code rdf:type owl:AnnotationProperty 
+Predicate ontology-se-cbam_emissionsqualifyingparameters:comment is not allowed (closed shape). - for include in emissionQualifyingParameter
+Predicate ontology-se-cbam_emissionsqualifyingparameters:description is not allowed (closed shape). - For include
+Predicate ontology-se-cbam_emissionsqualifyingparameters:typeOfEmissionValue is not allowed (closed shape) To include in the emissionQualifyingParameter
+Predicate ontology-se-cbam_emissionsqualifyingparameters:typeOfParameterValue is not allowed (closed shape) It is the same? cbamreport:parameterValue
+
+emissionsqualifyingparameters:code
