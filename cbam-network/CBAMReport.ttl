@@ -556,7 +556,7 @@ cbamreport:isTransformedInto rdf:type owl:ObjectProperty ;
 cbamreport:manufacturedAtInstallation rdf:type owl:ObjectProperty ;
                                       rdfs:domain <http://schema.org/Product> ;
                                       rdfs:range cbamreport:Installation ;
-                                      rdfs:label "manufacturedAtInstallation" .
+                                      rdfs:label "manufacturedAt" .
 
 
 ###  https://purl.org/cbam/cbamreport/producedAtInstallation
