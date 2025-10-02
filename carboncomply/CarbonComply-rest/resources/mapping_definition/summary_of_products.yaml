@@ -63,7 +63,6 @@ mappings:
       - [ontology-se-cbam-cbamreport:hasEmissionQualifyingParameter, se-cbam-emissionsqualifyingparameters:Other_Nitrogen_content_$(communication_report_id)_$(nro)]
       - [ontology-se-cbam-cbamreport:generate, se-cbam-cbamreport:GreenHouseGasEmissions_$(communication_report_id)_$(nro)]
       - [ontology-se-cbam-cbamreport:isDeterminedBy, se-cbam-electricity_determination:Electricity_Determination_$(communication_report_id)_$(nro)]
-      - [ontology-se-cbam-cbam-goods:belongsToCategory, se-cbam-cbam-goods:AggregatedGoodsCategory_$(communication_report_id)_$(nro)]
       - [ontology-se-cbam-cbamreport:isExecutedBy, se-cbam-production-method:$(communication_report_id)_$(nro)]
       - [ontology-se-cbam-cbamreport:isCoveredRebate, se-cbam-cbamreport:Rebate_$(communication_report_id)_$(nro)]
       - [ontology-se-cbam-cbamreport:hasCarbonCharge, se-cbam-cbamreport:CarbonPrice_$(communication_report_id)_$(nro)]
@@ -97,6 +96,7 @@ mappings:
       - [a, $(cn_iri)~iri]
       - [ontology-se-cbam-cn:cn_code, {"value": $("cn_codes"), "datatype": "xsd:string"}]
       - [rdfs:comment, {"value": $("cn_name"), "datatype": "xsd:string"}]
+      - [ontology-se-cbam-cbam-goods:belongsToCategory, se-cbam-cbam-goods:AggregatedGoodsCategory_$(communication_report_id)_$(nro)]
       - p: ontology-se-cbam-cn:hs6_code 
         o:
           - function: fun:get_property_value
