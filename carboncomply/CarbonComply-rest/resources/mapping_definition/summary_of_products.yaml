@@ -153,6 +153,7 @@ mappings:
     s: se-cbam-emissionsqualifyingparameters:Precursor_reducing_Agent_$(communication_report_id)_$(nro)
     po:
       - [a, ontology-se-cbam-emissionsqualifyingparameters:Precursor_reducing_Agent]
+      - [a, ontology-se-cbam-emissionsqualifyingparameters:EmissionParameter]
       - [ontology-se-cbam-emissionsqualifyingparameters:code, "QPD10"]
       - [ontology-se-cbam-emissionsqualifyingparameters:comment, {"value": $("the_main_reducing_agent_of_the_precursor_if_known"), "datatype": "xsd:string"}]
       - p: http://www.w3.org/2000/01/rdf-schema#label 
@@ -228,6 +229,7 @@ mappings:
     s: se-cbam-emissionsqualifyingparameters:Manganese_content_$(communication_report_id)_$(nro)
     po:
       - [a, ontology-se-cbam-emissionsqualifyingparameters:Manganese_content]
+      - [a, ontology-se-cbam-emissionsqualifyingparameters:EmissionParameter]
       - [ontology-se-cbam-emissionsqualifyingparameters:code, "QPD13"]
       - [ontology-se-cbam-emissionsqualifyingparameters:parameterValuePercentage, {"value": $("%_mn"), "datatype": "xsd:decimal"}]
       - p: http://www.w3.org/2000/01/rdf-schema#label 
@@ -303,6 +305,7 @@ mappings:
     s: se-cbam-emissionsqualifyingparameters:Chromium_content_$(communication_report_id)_$(nro)
     po:
       - [a, ontology-se-cbam-emissionsqualifyingparameters:Chromium_content]
+      - [a, ontology-se-cbam-emissionsqualifyingparameters:EmissionParameter]
       - [ontology-se-cbam-emissionsqualifyingparameters:code, "QPD14"]
       - [ontology-se-cbam-emissionsqualifyingparameters:parameterValuePercentage, {"value": $("%_cr"), "datatype": "xsd:decimal"}]
       - p: http://www.w3.org/2000/01/rdf-schema#label 
@@ -378,6 +381,7 @@ mappings:
     s: se-cbam-emissionsqualifyingparameters:Nickel_content_$(communication_report_id)_$(nro)
     po:
       - [a, ontology-se-cbam-emissionsqualifyingparameters:Nickel_content]
+      - [a, ontology-se-cbam-emissionsqualifyingparameters:EmissionParameter]
       - [ontology-se-cbam-emissionsqualifyingparameters:code, "QPD15"]
       - [ontology-se-cbam-emissionsqualifyingparameters:parameterValuePercentage, {"value": $("%_ni"), "datatype": "xsd:decimal"}]
       - p: http://www.w3.org/2000/01/rdf-schema#label 
@@ -453,6 +457,7 @@ mappings:
     s: se-cbam-emissionsqualifyingparameters:Content_of_other_alloy_elements_$(communication_report_id)_$(nro)
     po:
       - [a, ontology-se-cbam-emissionsqualifyingparameters:Content_of_other_alloy_elements]
+      - [a, ontology-se-cbam-emissionsqualifyingparameters:EmissionParameter]
       - [ontology-se-cbam-emissionsqualifyingparameters:code, "QPD16"]
       - [ontology-se-cbam-emissionsqualifyingparameters:parameterValuePercentage, {"value": $("%_other_alloys"), "datatype": "xsd:decimal"}]
       - p: http://www.w3.org/2000/01/rdf-schema#label 
@@ -528,6 +533,7 @@ mappings:
     s: se-cbam-emissionsqualifyingparameters:Carbon_content_of_iron_or_steel_$(communication_report_id)_$(nro)
     po:
       - [a, ontology-se-cbam-emissionsqualifyingparameters:Carbon_content_of_iron_or_steel]
+      - [a, ontology-se-cbam-emissionsqualifyingparameters:EmissionParameter]
       - [ontology-se-cbam-emissionsqualifyingparameters:code, "QPD12"]
       - [ontology-se-cbam-emissionsqualifyingparameters:parameterValuePercentage, {"value": $("%_carbon"), "datatype": "xsd:decimal"}]
       - p: http://www.w3.org/2000/01/rdf-schema#label 
@@ -603,6 +609,7 @@ mappings:
     s: se-cbam-emissionsqualifyingparameters:Steel_scrap_usage_$(communication_report_id)_$(nro)
     po:
       - [a, ontology-se-cbam-emissionsqualifyingparameters:Steel_scrap_usage]
+      - [a, ontology-se-cbam-emissionsqualifyingparameters:EmissionParameter]
       - [ontology-se-cbam-emissionsqualifyingparameters:code, "QPD17"]
       - [ontology-se-cbam-emissionsqualifyingparameters:parameterValueNumeric, {"value": $("t_scrap_per_t_steel"), "datatype": "xsd:positiveInteger"}]
       - p: http://www.w3.org/2000/01/rdf-schema#label 
@@ -678,6 +685,7 @@ mappings:
     s: se-cbam-emissionsqualifyingparameters:Non_Iron_content_$(communication_report_id)_$(nro)
     po:
       - [a, ontology-se-cbam-emissionsqualifyingparameters:Non_Iron_content]
+      - [a, ontology-se-cbam-emissionsqualifyingparameters:EmissionParameter]
       - [ontology-se-cbam-emissionsqualifyingparameters:code, "QPD20"]
       - [ontology-se-cbam-emissionsqualifyingparameters:parameterValuePercentage, {"value": $("%_other_materials"), "datatype": "xsd:decimal"}]
       - p: http://www.w3.org/2000/01/rdf-schema#label 
@@ -753,6 +761,7 @@ mappings:
     s: se-cbam-emissionsqualifyingparameters:Steel_pre-consumer_scrap_$(communication_report_id)_$(nro)
     po:
       - [a, ontology-se-cbam-emissionsqualifyingparameters:Steel_pre-consumer_scrap]
+      - [a, ontology-se-cbam-emissionsqualifyingparameters:EmissionParameter]
       - [ontology-se-cbam-emissionsqualifyingparameters:code, "QPD18"]
       - [ontology-se-cbam-emissionsqualifyingparameters:parameterValuePercentage, {"value": $("%_pre-consumer_scrap"), "datatype": "xsd:decimal"}]
       - p: http://www.w3.org/2000/01/rdf-schema#label 
@@ -828,6 +837,7 @@ mappings:
     s: se-cbam-emissionsqualifyingparameters:Aluminium_pre-consumer_scrap_$(communication_report_id)_$(nro)
     po:
       - [a, ontology-se-cbam-emissionsqualifyingparameters:Aluminium_pre-consumer_scrap]
+      - [a, ontology-se-cbam-emissionsqualifyingparameters:EmissionParameter]
       - [ontology-se-cbam-emissionsqualifyingparameters:code, "QPD22"]
       - [ontology-se-cbam-emissionsqualifyingparameters:parameterValuePercentage, {"value": $("%_pre-consumer_scrap"), "datatype": "xsd:decimal"}]
       - p: http://www.w3.org/2000/01/rdf-schema#label 
@@ -903,6 +913,7 @@ mappings:
     s: se-cbam-emissionsqualifyingparameters:Aluminium_scrap_usage_$(communication_report_id)_$(nro)
     po:
       - [a, ontology-se-cbam-emissionsqualifyingparameters:Aluminium_scrap_usage]
+      - [a, ontology-se-cbam-emissionsqualifyingparameters:EmissionParameter]
       - [ontology-se-cbam-emissionsqualifyingparameters:code, "QPD21"]
       - [ontology-se-cbam-emissionsqualifyingparameters:parameterValueNumeric, {"value": $("t_scrap_per_t_aluminium"), "datatype": "xsd:positiveInteger"}]
       - p: http://www.w3.org/2000/01/rdf-schema#label 
@@ -978,6 +989,7 @@ mappings:
     s: se-cbam-emissionsqualifyingparameters:Non_Aluminium_content_$(communication_report_id)_$(nro)
     po:
       - [a, ontology-se-cbam-emissionsqualifyingparameters:Non_Aluminium_content]
+      - [a, ontology-se-cbam-emissionsqualifyingparameters:EmissionParameter]
       - [ontology-se-cbam-emissionsqualifyingparameters:code, "QPD23"]
       - [ontology-se-cbam-emissionsqualifyingparameters:parameterValuePercentage, {"value": $("%_non-aluminium_elements"), "datatype": "xsd:decimal"}]
       - p: http://www.w3.org/2000/01/rdf-schema#label 
@@ -1053,6 +1065,7 @@ mappings:
     s: se-cbam-emissionsqualifyingparameters:Clinker_factor_$(communication_report_id)_$(nro)
     po:
       - [a, ontology-se-cbam-emissionsqualifyingparameters:Clinker_factor]
+      - [a, ontology-se-cbam-emissionsqualifyingparameters:EmissionParameter]
       - [ontology-se-cbam-emissionsqualifyingparameters:code, "QPD02"]
       - [ontology-se-cbam-emissionsqualifyingparameters:parameterValuePercentage, {"value": $("clinker_factor"), "datatype": "xsd:decimal"}]
       - p: http://www.w3.org/2000/01/rdf-schema#label 
@@ -1128,6 +1141,7 @@ mappings:
     s: se-cbam-emissionsqualifyingparameters:Calcination_$(communication_report_id)_$(nro)
     po:
       - [a, ontology-se-cbam-emissionsqualifyingparameters:Calcination]
+      - [a, ontology-se-cbam-emissionsqualifyingparameters:EmissionParameter]
       - [ontology-se-cbam-emissionsqualifyingparameters:code, "QPD01"]
       - [ontology-se-cbam-emissionsqualifyingparameters:parameterValueText, {"value": $("calcined_or_not"), "datatype": "xsd:string"}]
       - p: http://www.w3.org/2000/01/rdf-schema#label 
@@ -1203,6 +1217,7 @@ mappings:
     s: se-cbam-emissionsqualifyingparameters:Ammonia_concentration_$(communication_report_id)_$(nro)
     po:
       - [a, ontology-se-cbam-emissionsqualifyingparameters:Ammonia_concentration]
+      - [a, ontology-se-cbam-emissionsqualifyingparameters:EmissionParameter]
       - [ontology-se-cbam-emissionsqualifyingparameters:code, "QPD05"]
       - [ontology-se-cbam-emissionsqualifyingparameters:parameterValuePercentage, {"value": $("concentration_if_hydrous_solution"), "datatype": "xsd:decimal"}]
       - p: http://www.w3.org/2000/01/rdf-schema#label 
@@ -1278,6 +1293,7 @@ mappings:
     s: se-cbam-emissionsqualifyingparameters:Nitric_acid_concentration_$(communication_report_id)_$(nro)
     po:
       - [a, ontology-se-cbam-emissionsqualifyingparameters:Nitric_acid_concentration]
+      - [a, ontology-se-cbam-emissionsqualifyingparameters:EmissionParameter]
       - [ontology-se-cbam-emissionsqualifyingparameters:code, "QPD04"]
       - [ontology-se-cbam-emissionsqualifyingparameters:parameterValuePercentage, {"value": $("%_nitric_acid"), "datatype": "xsd:decimal"}]
       - p: http://www.w3.org/2000/01/rdf-schema#label 
@@ -1353,6 +1369,7 @@ mappings:
     s: se-cbam-emissionsqualifyingparameters:Urea_purity_$(communication_report_id)_$(nro)
     po:
       - [a, ontology-se-cbam-emissionsqualifyingparameters:Urea_purity]
+      - [a, ontology-se-cbam-emissionsqualifyingparameters:EmissionParameter]
       - [ontology-se-cbam-emissionsqualifyingparameters:code, "QPD03"]
       - [ontology-se-cbam-emissionsqualifyingparameters:parameterValuePercentage, {"value": $("%_urea"), "datatype": "xsd:decimal"}]
       - p: http://www.w3.org/2000/01/rdf-schema#label 
@@ -1428,6 +1445,7 @@ mappings:
     s: se-cbam-emissionsqualifyingparameters:Ammonium_Nitrogen_content_$(communication_report_id)_$(nro)
     po:
       - [a, ontology-se-cbam-emissionsqualifyingparameters:Ammonium_Nitrogen_content]
+      - [a, ontology-se-cbam-emissionsqualifyingparameters:EmissionParameter]
       - [ontology-se-cbam-emissionsqualifyingparameters:code, "QPD07"]
       - [ontology-se-cbam-emissionsqualifyingparameters:parameterValuePercentage, {"value": $("%_n_as_ammonium_nh4+"), "datatype": "xsd:decimal"}]
       - p: http://www.w3.org/2000/01/rdf-schema#label 
@@ -1503,6 +1521,7 @@ mappings:
     s: se-cbam-emissionsqualifyingparameters:Nitrate_Nitrogen_content_$(communication_report_id)_$(nro)
     po:
       - [a, ontology-se-cbam-emissionsqualifyingparameters:Nitrate_Nitrogen_content]
+      - [a, ontology-se-cbam-emissionsqualifyingparameters:EmissionParameter]
       - [ontology-se-cbam-emissionsqualifyingparameters:code, "QPD08"]
       - [ontology-se-cbam-emissionsqualifyingparameters:parameterValuePercentage, {"value": $("%_n_as_nitrate_no3–"), "datatype": "xsd:decimal"}]
       - p: http://www.w3.org/2000/01/rdf-schema#label 
@@ -1578,6 +1597,7 @@ mappings:
     s: se-cbam-emissionsqualifyingparameters:Urea_Nitrogen_content_$(communication_report_id)_$(nro)
     po:
       - [a, ontology-se-cbam-emissionsqualifyingparameters:Urea_Nitrogen_content]
+      - [a, ontology-se-cbam-emissionsqualifyingparameters:EmissionParameter]
       - [ontology-se-cbam-emissionsqualifyingparameters:code, "QPD06"]
       - [ontology-se-cbam-emissionsqualifyingparameters:parameterValuePercentage, {"value": $("%_n_as_urea"), "datatype": "xsd:decimal"}]
       - p: http://www.w3.org/2000/01/rdf-schema#label 
@@ -1653,6 +1673,7 @@ mappings:
     s: se-cbam-emissionsqualifyingparameters:Other_Nitrogen_content_$(communication_report_id)_$(nro)
     po:
       - [a, ontology-se-cbam-emissionsqualifyingparameters:Other_Nitrogen_content]
+      - [a, ontology-se-cbam-emissionsqualifyingparameters:EmissionParameter]
       - [ontology-se-cbam-emissionsqualifyingparameters:code, "QPD09"]
       - [ontology-se-cbam-emissionsqualifyingparameters:parameterValuePercentage, {"value": $("%_n_in_other_organic_forms"), "datatype": "xsd:decimal"}]
       - p: http://www.w3.org/2000/01/rdf-schema#label 
