@@ -27,10 +27,10 @@ Changes in mappings:
 
 
 TODO/Comments list:
-https://purl.org/cbam/cbamreport/measurementBasedValue -> https://purl.org/cbam/cbamreport/emissionsValue?
-https://purl.org/cbam/cbamreport/measurementBasedUnit -> https://purl.org/cbam/cbamreport/emissionsUnit?
-https://purl.org/cbam/cbamreport/calculationBasedExclPfcEmissionsUnit -> https://purl.org/cbam/cbamreport/emissionsUnit?
-https://purl.org/cbam/cbamreport/calculationBasedExclPfcEmissionsValue -> https://purl.org/cbam/cbamreport/emissionsValue?
+https://purl.org/cbam/cbamreport/measurementBasedValue -> https://purl.org/cbam/cbamreport/emissionsValue? Si
+https://purl.org/cbam/cbamreport/measurementBasedUnit -> https://purl.org/cbam/cbamreport/emissionsUnit? Si
+https://purl.org/cbam/cbamreport/calculationBasedExclPfcEmissionsUnit -> https://purl.org/cbam/cbamreport/emissionsUnit? Revisar
+https://purl.org/cbam/cbamreport/calculationBasedExclPfcEmissionsValue -> https://purl.org/cbam/cbamreport/emissionsValue? Revisar
 
 Is this correct? the range of produced at INSTALLATION is a steel mill and not an installation? In the mappings we use "https://purl.org/cbam/cbamreport/isProducedIn", which does not exists.
 https://purl.org/cbam/cbamreport/producedAtInstallation
@@ -41,22 +41,13 @@ https://purl.org/cbam/cbamreport/producedAtInstallation
 ontology-se-cbam-electricity-determination:code "Mix" ; # In Electricity determination exists code but the URI is this:  https://purl.org/cbam/code
 rdfs:label "Bubble approach" ; # this is not a label for production method, #esto es un ejemplo o de donde sale el label? 
 ontology-se-cbam-production-method:code "Bubble approach" .  #code for production Method has a letter and a number Ej P20 and the cose is in the URI Examplehttps://purl.org/cbam/Production_Method/P20.
-se-cbam-cbam-goods:AggregatedGoodsCategory_CNABC2023010120231231_4 a <https://purl.org/cbam/cbam_goods#Iron_or_steel_products>, #Mapping - veo esto extraño , no deberìa er se-cbam-cbam-goods:AggregatedGoodsCategory_CNABC2023010120231231_4  and ontology-se-cbam-cbam-goods:AggregatedGoodsCategory y luego el label rdfs:label "Iron or steel products"
 
 
 
 ontology-se-cbam-cbamreport:embeddedEmissionsCoveredByCarbonPrice 0.0 ; #domain GreenHouseGasEmissions Mapping
 ontology-se-cbam-cbamreport:typeOfMeasurementUnitForEmissions "tCO2e/t" . #changed domain for GreenHouseGasEmissions.
 ontology-se-cbam_emissionsqualifyingparameters:code "QPD22" ; #In the ontology, the code is under this two URIS properties: <https://purl.org/cbam/> and emissionsqualifyingparameters: <https://purl.org/cbam/emissionsqualifyingparameters/>
-ontology-se-cbam-cbamreport:hasRepresentative se-cbam-cbamreport:Representative_TRABC ; # Mapping Representative is subclass of http://www.w3.org/ns/org#Organization and http://www.w3.org/ns/org#FormalOrganization
-
-
-
-# Por qué tiene ontology-se-cbam_emissionsqualifyingparameters:description - este solo deberia tener el resultEffectiveCPDue y el type of measurement unit. 
-se-cbam-cbamreport:CarbonPrice_CNABC2023010120231231_1 a ontology-se-cbam-cbamreport:CarbonPrice ;
-    ontology-se-cbam-cbamreport:resultEffectiveCPDue 5e+00 ;
-    ontology-se-cbam_emissionsqualifyingparameters:description "Mass % nitrogen bound in other (organic) forms, related to fertiliser or fertiliser solution as is, NOT on dry basis)" .
-    
+ontology-se-cbam-cbamreport:hasRepresentative se-cbam-cbamreport:Representative_TRABC ; # Mapping Representative is subclass of http://www.w3.org/ns/org#Organization and http://www.w3.org/ns/org#FormalOrganization 
 
 
 # Mapping to disucss - Comm a Report, Report hasID ID
