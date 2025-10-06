@@ -13,10 +13,11 @@ mappings:
     s: se-cbam-cbamreport:TotalEmissions_$(communication_report_id)
     po:
       - [a, ontology-se-cbam-cbamreport:TotalEmissions]
+      - [a, ontology-se-cbam-cbamreport:GreenHouseGasEmissions]
       - [ontology-se-cbam-cbamreport:isRegisteredIn, se-cbam-cbamreport:CommunicationReport_$(communication_report_id)]
       - [ontology-se-cbam-cbamreport:isEmittedBy, se-cbam-cbamreport:Installation_$(installation_unlocode)]
-      - [ontology-se-cbam-cbamreport:totalEmissionsUnit, {"value": $("total_emissions_during_reporting_period_unit"), "datatype": "xsd:string"}]
-      - [ontology-se-cbam-cbamreport:totalEmissionsValue, {"value": $("total_emissions_during_reporting_period_value"), "datatype": "xsd:float"}]
+      - [ontology-se-cbam-cbamreport:emissionsUnit, {"value": $("total_emissions_during_reporting_period_unit"), "datatype": "xsd:string"}]
+      - [ontology-se-cbam-cbamreport:emissionsValue, {"value": $("total_emissions_during_reporting_period_value"), "datatype": "xsd:float"}]
 
   BasedExclPfcEmissionsMapping:
     sources:
@@ -24,6 +25,7 @@ mappings:
     s: se-cbam-cbamreport:BasedExclPfcEmissions_$(communication_report_id)
     po:
       - [a, ontology-se-cbam-cbamreport:BasedExclPfcEmissions]
+      - [a, ontology-se-cbam-cbamreport:GreenHouseGasEmissions]
       - [ontology-se-cbam-cbamreport:isRegisteredIn, se-cbam-cbamreport:CommunicationReport_$(communication_report_id)]
       - [ontology-se-cbam-cbamreport:isEmittedBy, se-cbam-cbamreport:Installation_$(installation_unlocode)]
       - [ontology-se-cbam-cbamreport:calculationBasedExclPfcEmissionsUnit, {"value": $("calculation_-_based_excl._pfc_emissions_unit"), "datatype": "xsd:string"}]
@@ -35,10 +37,11 @@ mappings:
     s: se-cbam-cbamreport:totalPfcEmissions_$(communication_report_id)
     po:
       - [a, ontology-se-cbam-cbamreport:TotalPfcEmissions]
+      - [a, ontology-se-cbam-cbamreport:GreenHouseGasEmissions]
       - [ontology-se-cbam-cbamreport:isRegisteredIn, se-cbam-cbamreport:CommunicationReport_$(communication_report_id)]
       - [ontology-se-cbam-cbamreport:isEmittedBy, se-cbam-cbamreport:Installation_$(installation_unlocode)]
-      - [ontology-se-cbam-cbamreport:totalPfcEmissionsUnit, {"value": $("total_pfc_emissions_unit"), "datatype": "xsd:string"}]
-      - [ontology-se-cbam-cbamreport:totalPfcEmissionsValue, {"value": $("total_pfc_emissions_value"), "datatype": "xsd:float"}]
+      - [ontology-se-cbam-cbamreport:emissionsUnit, {"value": $("total_pfc_emissions_unit"), "datatype": "xsd:string"}]
+      - [ontology-se-cbam-cbamreport:emissionsValue, {"value": $("total_pfc_emissions_value"), "datatype": "xsd:float"}]
 
   MeasurementBasedMapping:
     sources:
@@ -46,6 +49,7 @@ mappings:
     s: se-cbam-cbamreport:measurementBased_$(communication_report_id)
     po:
       - [a, ontology-se-cbam-cbamreport:MeasurementBasedEmissions]
+      - [a, ontology-se-cbam-cbamreport:GreenHouseGasEmissions]
       - [ontology-se-cbam-cbamreport:isRegisteredIn, se-cbam-cbamreport:CommunicationReport_$(communication_report_id)]
       - [ontology-se-cbam-cbamreport:isEmittedBy, se-cbam-cbamreport:Installation_$(installation_unlocode)]
       - [ontology-se-cbam-cbamreport:measurementBasedUnit, {"value": $("measurement_-_based_unit"), "datatype": "xsd:string"}]
@@ -57,10 +61,11 @@ mappings:
     s: se-cbam-cbamreport:otherEmissions_$(communication_report_id)
     po:
       - [a, ontology-se-cbam-cbamreport:OtherEmissions]
+      - [a, ontology-se-cbam-cbamreport:GreenHouseGasEmissions]
       - [ontology-se-cbam-cbamreport:isRegisteredIn, se-cbam-cbamreport:CommunicationReport_$(communication_report_id)]
       - [ontology-se-cbam-cbamreport:isEmittedBy, se-cbam-cbamreport:Installation_$(installation_unlocode)]
-      - [ontology-se-cbam-cbamreport:otherUnit, {"value": $("other_unit"), "datatype": "xsd:string"}]
-      - [ontology-se-cbam-cbamreport:otherValue, {"value": $("other_value"), "datatype": "xsd:float"}]
+      - [ontology-se-cbam-cbamreport:emissionsUnit, {"value": $("other_unit"), "datatype": "xsd:string"}]
+      - [ontology-se-cbam-cbamreport:emissionsValue, {"value": $("other_value"), "datatype": "xsd:float"}]
 
   totalDirectEmissionsMapping:
     sources:
@@ -68,10 +73,11 @@ mappings:
     s: se-cbam-cbamreport:totalDirectEmissions_$(communication_report_id)
     po:
       - [a, ontology-se-cbam-cbamreport:TotalDirectEmissions]    
+      - [a, ontology-se-cbam-cbamreport:GreenHouseGasEmissions]
       - [ontology-se-cbam-cbamreport:isRegisteredIn, se-cbam-cbamreport:CommunicationReport_$(communication_report_id)]
       - [ontology-se-cbam-cbamreport:isEmittedBy, se-cbam-cbamreport:Installation_$(installation_unlocode)]
-      - [ontology-se-cbam-cbamreport:totalDirectEmissionsdUnit, {"value": $("total_direct_emissions_during_reporting_period_unit"), "datatype": "xsd:string"}]
-      - [ontology-se-cbam-cbamreport:totalDirectEmissionsValue, {"value": $("total_direct_emissions_during_reporting_period_value"), "datatype": "xsd:float"}]
+      - [ontology-se-cbam-cbamreport:emissionsUnit, {"value": $("total_direct_emissions_during_reporting_period_unit"), "datatype": "xsd:string"}]
+      - [ontology-se-cbam-cbamreport:emissionsValue, {"value": $("total_direct_emissions_during_reporting_period_value"), "datatype": "xsd:float"}]
   
   totalIndirectEmissionsMapping:
     sources:
@@ -79,10 +85,11 @@ mappings:
     s: se-cbam-cbamreport:totalIndirectEmissions_$(communication_report_id)
     po:
       - [a, ontology-se-cbam-cbamreport:TotalIndirectEmissions]
+      - [a, ontology-se-cbam-cbamreport:GreenHouseGasEmissions]
       - [ontology-se-cbam-cbamreport:isRegisteredIn, se-cbam-cbamreport:CommunicationReport_$(communication_report_id)]
       - [ontology-se-cbam-cbamreport:isEmittedBy, se-cbam-cbamreport:Installation_$(installation_unlocode)]
-      - [ontology-se-cbam-cbamreport:totalIndirectEmissionsUnit, {"value": $("total_indirect_emissions_during_reporting_period_unit"), "datatype": "xsd:string"}]
-      - [ontology-se-cbam-cbamreport:totalIndirectEmissionsValue, {"value": $("total_indirect_emissions_during_reporting_period_value"), "datatype": "xsd:float"}]
+      - [ontology-se-cbam-cbamreport:emissionsUnit, {"value": $("total_indirect_emissions_during_reporting_period_unit"), "datatype": "xsd:string"}]
+      - [ontology-se-cbam-cbamreport:emissionsValue, {"value": $("total_indirect_emissions_during_reporting_period_value"), "datatype": "xsd:float"}]
     QualityMapping: 
       sources:
       - ['${summary_of_emissions_path}~csv']    
