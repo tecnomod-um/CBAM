@@ -61,15 +61,15 @@ mappings:
       - [ontology-se-cbam-cbamreport:hasEmissionQualifyingParameter, se-cbam-emissionsqualifyingparameters:Nitrate_Nitrogen_content_$(communication_report_id)_$(nro)]
       - [ontology-se-cbam-cbamreport:hasEmissionQualifyingParameter, se-cbam-emissionsqualifyingparameters:Urea_Nitrogen_content_$(communication_report_id)_$(nro)]
       - [ontology-se-cbam-cbamreport:hasEmissionQualifyingParameter, se-cbam-emissionsqualifyingparameters:Other_Nitrogen_content_$(communication_report_id)_$(nro)]
-      - [ontology-se-cbam-cbamreport:generate, se-cbam-cbamreport:GreenHouseGasEmissions_$(communication_report_id)_$(nro)]
+      - [ontology-se-cbam-cbamreport:hasGreenHouseGasEmissions, se-cbam-cbamreport:GreenHouseGasEmissions_$(communication_report_id)_$(nro)]
       - [ontology-se-cbam-cbamreport:isDeterminedBy, se-cbam-electricity_determination:Electricity_Determination_$(communication_report_id)_$(nro)]
-      - [ontology-se-cbam-cbamreport:isExecutedBy, se-cbam-production-method:$(communication_report_id)_$(nro)]
+      - [ontology-se-cbam-cbamreport:hasProductionMethod, se-cbam-production-method:$(communication_report_id)_$(nro)]
       - [ontology-se-cbam-cbamreport:isCoveredRebate, se-cbam-cbamreport:Rebate_$(communication_report_id)_$(nro)]
       - [ontology-se-cbam-cbamreport:hasCarbonCharge, se-cbam-cbamreport:CarbonPrice_$(communication_report_id)_$(nro)]
       - [ontology-se-cbam-cbamreport:isSubjectTo, se-cbam-instrument:Instrument_$(communication_report_id)_$(nro)]
       - [ontology-se-cbam-cbamreport:isProducedIn, se-cbam-cbamreport:steelMill_$(communication_report_id)_$(nro)]
       - [ontology-se-cbam-cbamreport:hasEmissionsCovered, se-cbam-cbamreport:CarbonEmissionsCovered_$(communication_report_id)_$(nro)]
-      - [ontology-se-cbam-cbamreport:isManufacturedIn, se-cbam-cbamreport:Installation_$(installation_unlocode)]
+      - [ontology-se-cbam-cbamreport:isManufacturedAt, se-cbam-cbamreport:Installation_$(installation_unlocode)]
       - [ontology-se-cbam-cbamreport:isRegisteredIn, se-cbam-cbamreport:CommunicationReport_$(communication_report_id)]
   productionProcessMapping:
     sources:
@@ -130,7 +130,7 @@ mappings:
       - [ontology-se-cbam-cbamreport:IndirectEmbeddedEmissions, {"value": $("see_indirect"), "datatype": "xsd:decimal"}]
       - [ontology-se-cbam-cbamreport:total_Direct_Indirect_Embedded_Emission, {"value": $("see_total"), "datatype": "xsd:decimal"}]
       - [ontology-se-cbam-cbamreport:UnitforEmission, {"value": $("unit"), "datatype": "xsd:string"}]  
-      - [ontology-se-cbam-cbamreport:typeOfMeasurementUnitForEmissions, "EMU1"] # EMU 1 fijo
+      - [ontology-se-cbam-cbamreport:typeOfMeasurementUnitForEmissions, "EMU1"]
       - [ontology-se-cbam-cbamreport:shareOfEmissionsByDefaultValue, {"value": $("share_of_emissions_by_default_value"), "datatype": "xsd:decimal"}]
   electricitySourceMapping:
     sources:

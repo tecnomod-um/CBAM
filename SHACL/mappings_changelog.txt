@@ -1,0 +1,64 @@
+Changes in mappings:
+	- Product hasCNCode CN belongsToCategory AggregatedGoodsCategory.
+	- Emission qualifying parameters labelled with the general type EmissionParameter.
+	- Change https://purl.org/cbam/cbamreport/isExecutedBy by https://purl.org/cbam/cbamreport/hasProductionMethod
+	- Change https://purl.org/cbam/cbamreport/isManufacturedIn by https://purl.org/cbam/cbamreport/IsManufacturedAt
+	- Change https://purl.org/cbam/cbamreport/generate by https://purl.org/cbam/cbamreport/hasGreenHouseGasEmissions
+
+
+
+TODO list:
+
+Is this correct? the range of produced at INSTALLATION is a steel mill and not an installation? In the mappings we use "https://purl.org/cbam/cbamreport/isProducedIn", which does not exists.
+https://purl.org/cbam/cbamreport/producedAtInstallation
+	domain: Good
+	Range: SteelMill
+
+
+
+
+ontology-se-cbam-cbamreport:totalEmissionsUnit "tCO2e" ;  #changed for emissionsUnit. -domain GreenHouseGasEmissions  Mapping
+ontology-se-cbam-cbamreport:totalEmissionsValue "8842963.34987776"^^xsd:float . #changed for emissionsValue - domain GreenHouseGasEmissions Mapping
+ontology-se-cbam-cbamreport:measurementBasedValue "0.0"^^xsd:float .  #domain MeasurementBasedEmissions -  subclass of GreenHouseGasEmissions - Mapping
+ontology-se-cbam-cbamreport:otherUnit "tCO2e" ; #changed for emissionsUnit -domain GreenHouseGasEmissions Mapping
+ontology-se-cbam-cbamreport:otherValue "0.0"^^xsd:float . #changed for emissionsValue -domain GreenHouseGasEmissions Mapping
+ontology-se-cbam-cbamreport:totalDirectEmissionsValue "7866044.46987776"^^xsd:float ; #changed for emissionsValue -domain GreenHouseGasEmissions Mapping
+ontology-se-cbam-cbamreport:totalDirectEmissionsdUnit "tCO2e" .#changed for emissionsUnit -domain GreenHouseGasEmissions Mapping
+ontology-se-cbam-cbamreport:totalIndirectEmissionsUnit "tCO2e" ; #changed for emissionsUnit -domain GreenHouseGasEmissions Mapping
+ontology-se-cbam-cbamreport:totalIndirectEmissionsValue "976918.88"^^xsd:float .  #changed for emissionsValue -domain GreenHouseGasEmissions Mapping
+ontology-se-cbam-cbamreport:totalPfcEmissionsUnit "tCO2e" ; #changed for emissionsUnit -domain GreenHouseGasEmissions Mapping
+ontology-se-cbam-cbamreport:totalPfcEmissionsValue "0.0"^^xsd:float . #changed for emissionsValue -domain GreenHouseGasEmissions Mapping
+ontology-se-cbam-electricity-determination:code "Mix" ; # In Electricity determination exists code but the URI is this:  https://purl.org/cbam/code
+rdfs:label "Bubble approach" ; # this is not a label for production method, #esto es un ejemplo o de donde sale el label? 
+ontology-se-cbam-production-method:code "Bubble approach" .  #code for production Method has a letter and a number Ej P20 and the cose is in the URI Examplehttps://purl.org/cbam/Production_Method/P20.
+se-cbam-cbam-goods:AggregatedGoodsCategory_CNABC2023010120231231_4 a <https://purl.org/cbam/cbam_goods#Iron_or_steel_products>, #Mapping - veo esto extraño , no deberìa er se-cbam-cbam-goods:AggregatedGoodsCategory_CNABC2023010120231231_4  and ontology-se-cbam-cbam-goods:AggregatedGoodsCategory y luego el label rdfs:label "Iron or steel products"
+
+
+
+ontology-se-cbam-cbamreport:embeddedEmissionsCoveredByCarbonPrice 0.0 ; #domain GreenHouseGasEmissions Mapping
+ontology-se-cbam-cbamreport:UnitforEmission "tCO2e/t" ; #Changed for emissionsUnit -domain GreenHouseGasEmissions Mapping
+ontology-se-cbam-cbamreport:typeOfMeasurementUnitForEmissions "tCO2e/t" . #changed domain for GreenHouseGasEmissions.
+ontology-se-cbam_emissionsqualifyingparameters:code "QPD22" ; #In the ontology, the code is under this two URIS properties: <https://purl.org/cbam/> and emissionsqualifyingparameters: <https://purl.org/cbam/emissionsqualifyingparameters/>
+ontology-se-cbam-cbamreport:hasRepresentative se-cbam-cbamreport:Representative_TRABC ; # Mapping Representative is subclass of http://www.w3.org/ns/org#Organization and http://www.w3.org/ns/org#FormalOrganization
+
+
+
+# Por qué tiene ontology-se-cbam_emissionsqualifyingparameters:description - este solo deberia tener el resultEffectiveCPDue y el type of measurement unit. 
+se-cbam-cbamreport:CarbonPrice_CNABC2023010120231231_1 a ontology-se-cbam-cbamreport:CarbonPrice ;
+    ontology-se-cbam-cbamreport:resultEffectiveCPDue 5e+00 ;
+    ontology-se-cbam_emissionsqualifyingparameters:description "Mass % nitrogen bound in other (organic) forms, related to fertiliser or fertiliser solution as is, NOT on dry basis)" .
+    
+
+
+# Mapping to disucss - Comm a Report, Report hasID ID
+#se-cbam-cbamreport:CommunicationReport_TWXYZ2023010120231231 a ontology-se-cbam-cbamreport:Report ;
+ #   ontology-se-cbam-cbamreport:hasID "TWXYZ2023010120231231" ;
+   
+   #ontology-se-cbam-cbamreport:hasReportingPeriod a ontology-se-cbam-Reporting_period:Reporting period ;
+   # ontology-se-cbam-Reporting_period:hasReportingPeriodEnd "2023-12-31"^^xsd:date ; #created the dataproperties in Reporting Period ontology Reporting_period.ttl 
+  #  ontology-se-cbam-Reporting_period:hasReportingPeriodStart "2023-01-01"^^xsd:date .
+
+
+
+
+foaf:name "Example Blast Steelworks" ; #Mapping duda (how to represent foaf:name in the ontology?
