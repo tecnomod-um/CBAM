@@ -14,9 +14,9 @@
                                    <http://purl.org/dc/terms/abstract> "The Currency Code List in the CBAM Report" ;
                                    <http://purl.org/dc/terms/accessRights> "This ontology is licensed under the Creative Commons Attribution-NonCommercial 4.0 International License (CC BY-NC 4.0). It allows non-commercial use, sharing, and adaptation of the ontology, as long as users provide clear credit to the creator by citing the ontology's title, creator, and license information. Commercial use is strictly prohibited." ;
                                    <http://purl.org/dc/terms/bibliographicCitation> "OK4I - Ontologies and Knowledge Graphs for Industry, July 15–19, 2024, Enschede, Netherlands - <https://www.utwente.nl/en/eemcs/fois2024/resources/papers/duque-et-al-ontology-network-for-the-standardization-of-the-eu-cbam-report-data.pdf>" ;
-                                   <http://purl.org/dc/terms/contributor> [ <http://xmlns.com/foaf/0.1/name> "Jesualdo Tomás Fernández Breis"
+                                   <http://purl.org/dc/terms/contributor> [ <http://xmlns.com/foaf/0.1/name> "Astrid Duque Ramos"
                                                                           ] ,
-                                                                          [ <http://xmlns.com/foaf/0.1/name> "Astrid Duque Ramos"
+                                                                          [ <http://xmlns.com/foaf/0.1/name> "Jesualdo Tomás Fernández Breis"
                                                                           ] ;
                                    <http://purl.org/dc/terms/created> "2024-06-01"^^rdfs:Literal ;
                                    <http://purl.org/dc/terms/creator> [ <http://xmlns.com/foaf/0.1/name> "Jesualdo Tomás Fernández Breis"
@@ -267,11 +267,17 @@ cbam:code rdf:type owl:AnnotationProperty .
 
 
 ###  https://purl.org/cbam/currencyCode
-cbam:currencyCode rdf:type owl:AnnotationProperty .
+cbam:currencyCode rdf:type owl:AnnotationProperty ;
+                  rdfs:label "currencyCode" ;
+                  rdfs:range xsd:string ;
+                  rdfs:domain cbam:Currency .
 
 
 ###  https://purl.org/cbam/currencyName
-cbam:currencyName rdf:type owl:AnnotationProperty .
+cbam:currencyName rdf:type owl:AnnotationProperty ;
+                  rdfs:label "currencyName" ;
+                  rdfs:range xsd:string ;
+                  rdfs:domain cbam:Currency .
 
 
 ###  https://purl.org/cbam/validity_date

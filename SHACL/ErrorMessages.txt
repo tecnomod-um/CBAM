@@ -1,24 +1,35 @@
-At least one of the values must be an instance of class xsd:decimal
-At least one of the values must be an instance of class xsd:positiveInteger
-Predicate foaf:name is not allowed (closed shape)
-Predicate ontology-geo:lat is not allowed (closed shape)
-Predicate ontology-geo:long is not allowed (closed shape)
+At least one of the values must be an instance of class xsd:decimal #?? 
+At least one of the values must be an instance of class xsd:positiveInteger #??
+Predicate foaf:name is not allowed (closed shape) #Created Doain and range to foaf:name in CBAMReport
+Predicate ontology-geo:lat is not allowed (closed shape) # added domain and range in cbamreport ontology 
+Predicate ontology-geo:long is not allowed (closed shape) # added domain and range in cbamreport ontology
 Predicate ontology-se-cbam-cbamreport:calculationBasedExclPfcEmissionsUnit is not allowed (closed shape)
 Predicate ontology-se-cbam-cbamreport:calculationBasedExclPfcEmissionsValue is not allowed (closed shape)
-Predicate ontology-se-cbam-cbamreport:hasCNCode is not allowed (closed shape)
-Predicate ontology-se-cbam-cbamreport:hasNumber is not allowed (closed shape)
-Predicate ontology-se-cbam-cbamreport:hasPoBox is not allowed (closed shape)
-Predicate ontology-se-cbam-cbamreport:hasPostCode is not allowed (closed shape)
-Predicate ontology-se-cbam-cbamreport:hasReport is not allowed (closed shape)
-Predicate ontology-se-cbam-cbamreport:hasReportingPeriodEnd is not allowed (closed shape)
-Predicate ontology-se-cbam-cbamreport:hasReportingPeriodStart is not allowed (closed shape)
-Predicate ontology-se-cbam-cbamreport:hasStreet is not allowed (closed shape)
-Predicate ontology-se-cbam-cbamreport:isEmittedBy is not allowed (closed shape)
-Predicate ontology-se-cbam-cbamreport:isManufacturedAt is not allowed (closed shape)
-Predicate ontology-se-cbam-cbamreport:isProducedIn is not allowed (closed shape)
-Predicate ontology-se-cbam-cbamreport:isRegisteredIn is not allowed (closed shape)
+Predicate ontology-se-cbam-cbamreport:hasCNCode is not allowed (closed shape) #Mapping hasCNCode Dojmain Good - currently is connected with Product
+Predicate ontology-se-cbam-cbamreport:hasNumber is not allowed (closed shape) #Created DataProperty
+Predicate ontology-se-cbam-cbamreport:hasPoBox is not allowed (closed shape) #changed URI
+Predicate ontology-se-cbam-cbamreport:hasPostCode is not allowed (closed shape)#Changed URI
+Predicate ontology-se-cbam-cbamreport:hasReport is not allowed (closed shape) 
+#I think it is neccesary to modify this mapping, in the hasReportingPeriodEnd and Start are dataproperties from https://purl.org/cbam/Reporting_period/ ontology 
+se-cbam-cbamreport:CommunicationReport_TRABC2023010120231231 a ontology-se-cbam-cbamreport:Report ;
+    ontology-se-cbam-cbamreport:hasID "TRABC2023010120231231" ;
+    ontology-se-cbam-cbamreport:hasReportingPeriodEnd "2023-12-31"^^xsd:date ;
+    ontology-se-cbam-cbamreport:hasReportingPeriodStart "2023-01-01"^^xsd:date .
+#Try this option 
+@prefix ontology-se-cbam-reporting_period: https://purl.org/cbam/Reporting_period/
+se-cbam-cbamreport:CommunicationReport_TRABC2023010120231231 a ontology-se-cbam-cbamreport:Report ;
+    ontology-se-cbam-cbamreport:Report hasReportingPeriod https://purl.org/cbam/cbamreport/hasReportingPeriod;
+    ontology-se-cbam-cbamreport:hasID "TRABC2023010120231231" ;
+    ontology-se-cbam-reporting_period:hasReportingPeriodEnd "2023-12-31"^^xsd:date ;
+    ontology-se-cbam-reporting_period:hasReportingPeriodStart "2023-01-01"^^xsd:date 
+
+Predicate ontology-se-cbam-cbamreport:hasStreet is not allowed (closed shape) #Added hasStreet DataProperty
+Predicate ontology-se-cbam-cbamreport:isEmittedBy is not allowed (closed shape) # Domain GreenHouseGasEmissions wich is the parent class of Total emissionsqualifyingparameters
+Predicate ontology-se-cbam-cbamreport:isManufacturedAt is not allowed (closed shape) # isManufacturedAt changed the Is in the URI
+Predicate ontology-se-cbam-cbamreport:isProducedIn is not allowed (closed shape) #Changed for isPrducedAt
+Predicate ontology-se-cbam-cbamreport:isRegisteredIn is not allowed (closed shape) #Domamin GreenHouseGasEmissions Range Report - Mapping each subclass of GreenHouseGasEmissions 
 Predicate ontology-se-cbam-cbamreport:shareOfEmissionsByDefaultValue is not allowed (closed shape)
-Predicate ontology-se-cbam-cbamreport:Total_Embedded_Emissions_of_Electricity_Imported is not allowed (closed shape)
+Predicate ontology-se-cbam-cbamreport:Total_Embedded_Emissions_of_Electricity_Imported is not allowed (closed shape) #Mapping change it for total_Embedded_Emissions_of_Electricity_Imported 
 Predicate ontology-se-cbam-cbamreport:typeOfMeasurementUnitForEmissions is not allowed (closed shape)
 Predicate ontology-se-cbam-electricity-determination:code is not allowed (closed shape)
 Predicate ontology-se-cbam_emissionsqualifyingparameters:code is not allowed (closed shape)

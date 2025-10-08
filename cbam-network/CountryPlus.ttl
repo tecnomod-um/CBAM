@@ -145,6 +145,7 @@ geonames_ontology:long rdf:type owl:DatatypeProperty ;
 
 ###  https://www.geonames.org/ontology#name
 geonames_ontology:name rdf:type owl:DatatypeProperty ;
+                       rdfs:domain properties:Country ;
                        rdfs:label "name" .
 
 

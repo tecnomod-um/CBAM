@@ -79,7 +79,7 @@ se-cbam-cbamreport:Product_CNABC2023010120231231_1 a sch:Product ;
     ontology-se-cbam-cbamreport:hasEmissionsCovered se-cbam-cbamreport:CarbonEmissionsCovered_CNABC2023010120231231_1 ;
     ontology-se-cbam-cbamreport:hasGreenHouseGasEmissions se-cbam-cbamreport:GreenHouseGasEmissions_CNABC2023010120231231_1 ;
     ontology-se-cbam-cbamreport:hasProductionMethod se-cbam-production-method:CNABC2023010120231231_1 ;
-    ontology-se-cbam-cbamreport:isCoveredRebate se-cbam-cbamreport:Rebate_CNABC2023010120231231_1 ;
+    ontology-se-cbam-cbamreport:isCoveredRebate se-cbam-cbamreport:Rebate_CNABC2023010120231231_1 ; #Mapping isCoveredeRebate - Changed for coveredByRebate 
     ontology-se-cbam-cbamreport:isDeterminedBy se-cbam-electricity-determination:Electricity_Determination_CNABC2023010120231231_1 ;
     ontology-se-cbam-cbamreport:isManufacturedAt se-cbam-cbamreport:Installation_CNABC ;
     ontology-se-cbam-cbamreport:isProducedIn se-cbam-cbamreport:steelMill_CNABC2023010120231231_1 ;
@@ -431,7 +431,7 @@ se-cbam-cbamreport:Product_TWXYZ2023010120231231_1 a sch:Product ;
 
 se-cbam-cbamreport:TotalEmissions_CNABC2023010120231231 a ontology-se-cbam-cbamreport:GreenHouseGasEmissions,
         ontology-se-cbam-cbamreport:TotalEmissions ;
-    ontology-se-cbam-cbamreport:emissionsUnit "tCO2e" ;
+    ontology-se-cbam-cbamreport:emissionsUnit "tCO2e" ;  
     ontology-se-cbam-cbamreport:emissionsValue "8842963.34987776"^^xsd:float ;
     ontology-se-cbam-cbamreport:isEmittedBy se-cbam-cbamreport:Installation_CNABC ;
     ontology-se-cbam-cbamreport:isRegisteredIn se-cbam-cbamreport:CommunicationReport_CNABC2023010120231231 .

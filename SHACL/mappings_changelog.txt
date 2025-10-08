@@ -32,10 +32,15 @@ https://purl.org/cbam/cbamreport/measurementBasedUnit -> https://purl.org/cbam/c
 https://purl.org/cbam/cbamreport/calculationBasedExclPfcEmissionsUnit -> https://purl.org/cbam/cbamreport/emissionsUnit? Revisar
 https://purl.org/cbam/cbamreport/calculationBasedExclPfcEmissionsValue -> https://purl.org/cbam/cbamreport/emissionsValue? Revisar
 
-Is this correct? the range of produced at INSTALLATION is a steel mill and not an installation? In the mappings we use "https://purl.org/cbam/cbamreport/isProducedIn", which does not exists.
+Is this correct? Yes.  I added the hasProductionUnit object property to relate Installation with SteelMill, then in the mapping is important to include the Installation and the SteelMill when neccesary
+Becuase reading better, not the whole goods are producedAt an SteelMill, only those form Iron and steel, etc.  
+Added object properties:  hasProductionUnit:  Installation - > SteelMill and the inverse isPorductionUnitOf SteelMill -> Installation
+ the range of produced at INSTALLATION is a steel mill and not an installation? In the mappings we use "https://purl.org/cbam/cbamreport/isProducedIn", which does not exists.
 https://purl.org/cbam/cbamreport/producedAtInstallation
 	domain: Good
 	Range: SteelMill
+
+
 
 
 ontology-se-cbam-electricity-determination:code "Mix" ; # In Electricity determination exists code but the URI is this:  https://purl.org/cbam/code
