@@ -55,7 +55,6 @@
                                                        ] ;
                                      terms:creator [ foaf:name "Astrid Duque Ramos"
                                                    ] ;
-                                     terms:publisher "Universidad de Murcia" ;
                                      terms:source "Report Structure ver 18.0.xlsx  <https://taxation-customs.ec.europa.eu/carbon-border-adjustment-mechanism_en#where-to-report>" ;
                                      terms:title "CBAM report"^^rdfs:Literal ;
                                      vann:preferredNamespacePrefix "https://purl.org/cbam/cbamreport/" ;
@@ -337,13 +336,6 @@ cbamreport:acquiredIn rdf:type owl:ObjectProperty ;
                       rdfs:label "acquiredIn" .
 
 
-###  https://purl.org/cbam/cbamreport/classifiedAsGood
-cbamreport:classifiedAsGood rdf:type owl:ObjectProperty ;
-                            rdfs:domain <http://schema.org/Product> ;
-                            rdfs:range cbamreport:Good ;
-                            rdfs:label "classifiedAsGood" .
-
-
 ###  https://purl.org/cbam/cbamreport/consume
 cbamreport:consume rdf:type owl:ObjectProperty ;
                    rdfs:domain cbamreport:ProductionProcess ;
@@ -353,14 +345,14 @@ cbamreport:consume rdf:type owl:ObjectProperty ;
 
 ###  https://purl.org/cbam/cbamreport/countryOfOrigin
 cbamreport:countryOfOrigin rdf:type owl:ObjectProperty ;
-                           rdfs:domain <http://schema.org/Product> ;
+                           rdfs:domain cbamreport:Good ;
                            rdfs:range cbam:Country ;
                            rdfs:label "countryOfOrigin" .
 
 
 ###  https://purl.org/cbam/cbamreport/coveredByRebate
 cbamreport:coveredByRebate rdf:type owl:ObjectProperty ;
-                           rdfs:domain <http://schema.org/Product> ;
+                           rdfs:domain cbamreport:Good ;
                            rdfs:range cbamreport:Rebate ;
                            rdfs:label "coveredByRebate" .
 
@@ -409,7 +401,7 @@ cbamreport:hasCNCode rdf:type owl:ObjectProperty ;
 
 ###  https://purl.org/cbam/cbamreport/hasCarbonCharge
 cbamreport:hasCarbonCharge rdf:type owl:ObjectProperty ;
-                           rdfs:domain <http://schema.org/Product> ;
+                           rdfs:domain cbamreport:Good ;
                            rdfs:range cbamreport:CarbonPrice ;
                            rdfs:label "hasCarbonCharge" .
 
@@ -436,7 +428,7 @@ cbamreport:hasEconomicActivity rdf:type owl:ObjectProperty ;
 
 ###  https://purl.org/cbam/cbamreport/hasEmissionQualifyingParameter
 cbamreport:hasEmissionQualifyingParameter rdf:type owl:ObjectProperty ;
-                                          rdfs:domain <http://schema.org/Product> ;
+                                          rdfs:domain cbamreport:Good ;
                                           rdfs:range <https://purl.org/cbam/emissionsqualifyingparameters/EmissionParameter> ;
                                           rdfs:label "hasEmissionQualifyingParameter" .
 
@@ -444,7 +436,7 @@ cbamreport:hasEmissionQualifyingParameter rdf:type owl:ObjectProperty ;
 ###  https://purl.org/cbam/cbamreport/hasEmissionsCovered
 cbamreport:hasEmissionsCovered rdf:type owl:ObjectProperty ;
                                rdfs:subPropertyOf owl:topObjectProperty ;
-                               rdfs:domain <http://schema.org/Product> ;
+                               rdfs:domain cbamreport:Good ;
                                rdfs:range cbamreport:CarbonEmissionsCovered ;
                                rdfs:label "hasEmissionsCovered" .
 
@@ -452,8 +444,8 @@ cbamreport:hasEmissionsCovered rdf:type owl:ObjectProperty ;
 ###  https://purl.org/cbam/cbamreport/hasGreenHouseGasEmissions
 cbamreport:hasGreenHouseGasEmissions rdf:type owl:ObjectProperty ;
                                      rdfs:domain [ rdf:type owl:Class ;
-                                                   owl:unionOf ( <http://schema.org/Product>
-                                                                 cbamreport:Electricity
+                                                   owl:unionOf ( cbamreport:Electricity
+                                                                 cbamreport:Good
                                                                )
                                                  ] ;
                                      rdfs:range cbamreport:GreenHouseGasEmissions ;
@@ -462,7 +454,7 @@ cbamreport:hasGreenHouseGasEmissions rdf:type owl:ObjectProperty ;
 
 ###  https://purl.org/cbam/cbamreport/hasProductionMethod
 cbamreport:hasProductionMethod rdf:type owl:ObjectProperty ;
-                               rdfs:domain <http://schema.org/Product> ;
+                               rdfs:domain cbamreport:Good ;
                                rdfs:range <https://purl.org/cbam/Production_Method/Production_Method> ;
                                rdfs:label "hasProductionMethod" .
 
@@ -477,7 +469,7 @@ cbamreport:hasProductionUnit rdf:type owl:ObjectProperty ;
 
 ###  https://purl.org/cbam/cbamreport/hasQuantityValue
 cbamreport:hasQuantityValue rdf:type owl:ObjectProperty ;
-                            rdfs:domain <http://schema.org/Product> ;
+                            rdfs:domain cbamreport:Good ;
                             rdfs:range cbamreport:GoodsMeasureImported ;
                             rdfs:label "hasWeight" .
 
@@ -536,7 +528,7 @@ cbamreport:isCodifiedBy rdf:type owl:ObjectProperty ;
 
 ###  https://purl.org/cbam/cbamreport/isDeterminedBy
 cbamreport:isDeterminedBy rdf:type owl:ObjectProperty ;
-                          rdfs:domain <http://schema.org/Product> ;
+                          rdfs:domain cbamreport:Good ;
                           rdfs:range <https://purl.org/cbam/Electricity_Determination/Electricity_Determination> ;
                           rdfs:label "isDeterminedBy" .
 
@@ -575,7 +567,7 @@ cbamreport:isIdentifiedBy rdf:type owl:ObjectProperty ;
 
 ###  https://purl.org/cbam/cbamreport/isImportedFrom
 cbamreport:isImportedFrom rdf:type owl:ObjectProperty ;
-                          rdfs:domain <http://schema.org/Product> ;
+                          rdfs:domain cbamreport:Good ;
                           rdfs:range cbam:Country ;
                           rdfs:label "isImportedFrom" .
 
@@ -589,7 +581,7 @@ cbamreport:isLocatedIn rdf:type owl:ObjectProperty ;
 
 ###  https://purl.org/cbam/cbamreport/isManufacturedAt
 cbamreport:isManufacturedAt rdf:type owl:ObjectProperty ;
-                            rdfs:domain <http://schema.org/Product> ;
+                            rdfs:domain cbamreport:Good ;
                             rdfs:range cbamreport:Installation ;
                             rdfs:label "isManufacturedAt" .
 
@@ -602,7 +594,7 @@ cbamreport:isMeasuredBy rdf:type owl:ObjectProperty ;
 
 ###  https://purl.org/cbam/cbamreport/isProducedAt
 cbamreport:isProducedAt rdf:type owl:ObjectProperty ;
-                        rdfs:domain <http://schema.org/Product> ;
+                        rdfs:domain cbamreport:Good ;
                         rdfs:range cbamreport:SteelMill ;
                         rdfs:label "isProducedAt" .
 
@@ -629,7 +621,7 @@ cbamreport:isRegisteredIn rdf:type owl:ObjectProperty ;
 
 ###  https://purl.org/cbam/cbamreport/isReportedIn
 cbamreport:isReportedIn rdf:type owl:ObjectProperty ;
-                        rdfs:domain <http://schema.org/Product> ;
+                        rdfs:domain cbamreport:Good ;
                         rdfs:range cbamreport:CBAMReport ;
                         rdfs:label "isReportedIn" .
 
@@ -644,7 +636,7 @@ cbamreport:isRequiredFor rdf:type owl:ObjectProperty ;
 
 ###  https://purl.org/cbam/cbamreport/isSubjectTo
 cbamreport:isSubjectTo rdf:type owl:ObjectProperty ;
-                       rdfs:domain <http://schema.org/Product> ;
+                       rdfs:domain cbamreport:Good ;
                        rdfs:range <https://purl.org/cbam/Instrument/Instrument> ;
                        rdfs:label "isSubjectTo" .
 
@@ -659,7 +651,7 @@ cbamreport:isTransformedInto rdf:type owl:ObjectProperty ;
 ###  https://purl.org/cbam/cbamreport/producedBy
 cbamreport:producedBy rdf:type owl:ObjectProperty ;
                       owl:inverseOf cbamreport:producesGood ;
-                      rdfs:domain <http://schema.org/Product> ;
+                      rdfs:domain cbamreport:Good ;
                       rdfs:range cbamreport:ProductionProcess ;
                       rdfs:label "producedBy" .
 
@@ -1281,11 +1273,6 @@ ontology:long rdfs:domain cbamreport:Installation ;
 #    Classes
 #################################################################
 
-###  http://schema.org/Product
-<http://schema.org/Product> rdf:type owl:Class ;
-                            rdfs:label "Product" .
-
-
 ###  https://purl.org/cbam/cbamreport/Address
 cbamreport:Address rdf:type owl:Class ;
                    rdfs:subClassOf [ rdf:type owl:Restriction ;
@@ -1334,11 +1321,6 @@ cbamreport:Authorisation rdf:type owl:Class .
 cbamreport:BasedExclPfcEmissions rdf:type owl:Class ;
                                  rdfs:subClassOf cbamreport:GreenHouseGasEmissions ;
                                  rdfs:label "BasedExclPfcEmissions" .
-
-
-###  https://purl.org/cbam/cbamreport/CBAMGoods
-cbamreport:CBAMGoods rdf:type owl:Class ;
-                     rdfs:label "CBAMGoods" .
 
 
 ###  https://purl.org/cbam/cbamreport/CBAMReport
@@ -1519,11 +1501,7 @@ cbamreport:GoodsEmissions rdf:type owl:Class ;
 
 ###  https://purl.org/cbam/cbamreport/GoodsImported
 cbamreport:GoodsImported rdf:type owl:Class ;
-                         rdfs:subClassOf <http://schema.org/Product> ,
-                                         [ rdf:type owl:Restriction ;
-                                           owl:onProperty cbamreport:hasProductionMethod ;
-                                           owl:someValuesFrom cbamreport:Installation
-                                         ] ,
+                         rdfs:subClassOf cbamreport:Good ,
                                          [ rdf:type owl:Restriction ;
                                            owl:onProperty cbamreport:goodsItemNumber ;
                                            owl:someValuesFrom xsd:positiveInteger
@@ -1775,26 +1753,12 @@ cbamreport:TypeOfMeasurementUnit rdf:type owl:Class ;
  ] .
 
 [ foaf:name "Alexander Garcia Castro" ,
-             "Andreas Rathgeb" ,
-             "Astrid Duque Ramos" ,
-             "Francisco Abad" ,
-             "Jesualdo Tomás Fernández Breis" ,
-             "Lars Nissen"
- ] .
-
-[ foaf:name "Alexander Garcia Castro" ,
              "Andreas Nissen" ,
              "Astrid Duque Ramos" ,
              "Francisco Abad" ,
              "Lars Rathgeb"
  ] .
 
-[ foaf:name "Astrid Duque Ramos"
- ] .
-
-[ foaf:name "Astrid Duque Ramos"
- ] .
-
 [ foaf:name "Alexander Garcia Castro" ,
              "Andreas Rathgeb" ,
              "Astrid Duque Ramos" ,
@@ -1817,21 +1781,46 @@ cbamreport:TypeOfMeasurementUnit rdf:type owl:Class ;
              "Lars Nissen"
  ] .
 
+[ foaf:name "Astrid Duque Ramos"
+ ] .
+
+[ foaf:name "Astrid Duque Ramos"
+ ] .
+
 [ foaf:name "Alexander Garcia Castro" ,
              "Andreas Rathgeb" ,
              "Astrid Duque Ramos" ,
              "Francisco Abad" ,
              "Jesualdo Tomás Fernández Breis" ,
              "Lars Nissen"
+ ] .
+
+[ foaf:name "Alexander Garcia Castro" ,
+             "Andreas Rathgeb" ,
+             "Astrid Duque Ramos" ,
+             "Francisco Abad" ,
+             "Jesualdo Tomás Fernández Breis" ,
+             "Lars Nissen"
+ ] .
+
+[ foaf:name "Alexander Garcia Castro" ,
+             "Andreas Rathgeb" ,
+             "Astrid Duque Ramos" ,
+             "Francisco Abad" ,
+             "Jesualdo Tomás Fernández Breis" ,
+             "Lars Nissen"
+ ] .
+
+[ foaf:name "Astrid Duque Ramos"
  ] .
 
 #################################################################
 #    Annotations
 #################################################################
 
-cbamreport:Authorisation rdfs:label [ ] ,
-"Authorisation" ;
-rdfs:comment "The Authorisation related to the inward processing" .
+cbamreport:Authorisation rdfs:label [ ] ;
+rdfs:comment "The Authorisation related to the inward processing" ;
+rdfs:label "Authorisation" .
 
 
 #################################################################

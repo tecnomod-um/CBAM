@@ -34,7 +34,7 @@ mappings:
       - ['${summary_of_products_path}~csv']
     s: se-cbam-cbamreport:Product_$(communication_report_id)_$(nro)
     po: 
-      - [a, schema:Product] # Here is the conection between mappings and cbamreport.  Classes and 
+      - [a, ontology-se-cbam-cbamreport:Good]
       - [rdfs:label, {"value": $("product_name_used_for_communication_with_reporting_declarant_eg_on_invoices"), "datatype": "xsd:string"}] #verify it is neccesary to change for productname
       - [foaf:name, {"value": $("product_name_used_for_communication_with_reporting_declarant_eg_on_invoices"), "datatype": "xsd:string"}] #review if put cnname or only the rdf label.  
       - [ontology-se-cbam-cbamreport:hasCNCode, se-cbam-cn:$(cn_codes)] 

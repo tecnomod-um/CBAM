@@ -31,6 +31,7 @@ Changes in mappings:
 	- Put all dataypes referring to decimal numbers as xsd:decimal (xsd:float, xsd:double)
 	- Coordinates of installation as strings (CountryPlus has every latitude and longitude as strings. I tried to set them as decimals but I've seen some problems, such as a value of "5.475.844" for latitude, maybe derived from problematic datatype conversion when creating the ontology)
 	- Create instance for economic activity of installations. It was a data property before, but in the ontology it was an object property.
+	- Change the type of products from schema:Product to 
 
 Changes in ontology:
 	- Replace https://purl.org/cbam/code by https://purl.org/cbam/Electricity_Determination/code in Electricity_Determination
@@ -46,6 +47,10 @@ Changes in ontology:
 	- CBAMReport as subclass of Report
 	- Range of https://purl.org/cbam/cbamreport/hasReport changed from CBAMReport to Report
 	- Remove hasCountry as a subproperty of country-name, it does not make sense. Move hasCountry from data to object property whose range is Country.
+	- Remove schema:Product and change its usages by cbamreport:Good
+	- Remove CBAMGoods (not used)
+	- Put GoodsImported as subclass of Good
+	- Remove the axiom GoodsImported subclass of hasProductionMethod some Installation (This does not make sense)
 
 TODO/Comments list:
 https://purl.org/cbam/cbamreport/measurementBasedValue -> https://purl.org/cbam/cbamreport/emissionsValue? Si
@@ -65,8 +70,6 @@ https://purl.org/cbam/cbamreport/producedAtInstallation
 
 
 ontology-se-cbam-electricity-determination:code "Mix" ; # In Electricity determination exists code but the URI is this:  https://purl.org/cbam/code
-rdfs:label "Bubble approach" ; # this is not a label for production method, #esto es un ejemplo o de donde sale el label? 
-ontology-se-cbam-production-method:code "Bubble approach" .  #code for production Method has a letter and a number Ej P20 and the cose is in the URI Examplehttps://purl.org/cbam/Production_Method/P20.
 
 
 
