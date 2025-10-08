@@ -36,7 +36,7 @@ mappings:
     po: 
       - [a, schema:Product] # Here is the conection between mappings and cbamreport.  Classes and 
       - [rdfs:label, {"value": $("product_name_used_for_communication_with_reporting_declarant_eg_on_invoices"), "datatype": "xsd:string"}] #verify it is neccesary to change for productname
-      - [schema:name, {"value": $("product_name_used_for_communication_with_reporting_declarant_eg_on_invoices"), "datatype": "xsd:string"}] #review if put cnname or only the rdf label.  
+      - [foaf:name, {"value": $("product_name_used_for_communication_with_reporting_declarant_eg_on_invoices"), "datatype": "xsd:string"}] #review if put cnname or only the rdf label.  
       - [ontology-se-cbam-cbamreport:hasCNCode, se-cbam-cn:$(cn_codes)] 
       - [ontology-se-cbam-cbamreport:itemNumber, {"value": $("nro"), "datatype": "xsd:nonNegativeInteger"}]
       - [ontology-se-cbam-cbamreport:hasEmissionQualifyingParameter, se-cbam-emissionsqualifyingparameters:Precursor_reducing_Agent_$(communication_report_id)_$(nro)]
@@ -67,7 +67,7 @@ mappings:
       - [ontology-se-cbam-cbamreport:isCoveredRebate, se-cbam-cbamreport:Rebate_$(communication_report_id)_$(nro)]
       - [ontology-se-cbam-cbamreport:hasCarbonCharge, se-cbam-cbamreport:CarbonPrice_$(communication_report_id)_$(nro)]
       - [ontology-se-cbam-cbamreport:isSubjectTo, se-cbam-instrument:Instrument_$(communication_report_id)_$(nro)]
-      - [ontology-se-cbam-cbamreport:isProducedIn, se-cbam-cbamreport:steelMill_$(communication_report_id)_$(nro)]
+      - [ontology-se-cbam-cbamreport:isProducedAt, se-cbam-cbamreport:steelMill_$(communication_report_id)_$(nro)]
       - [ontology-se-cbam-cbamreport:hasEmissionsCovered, se-cbam-cbamreport:CarbonEmissionsCovered_$(communication_report_id)_$(nro)]
       - [ontology-se-cbam-cbamreport:isManufacturedAt, se-cbam-cbamreport:Installation_$(installation_unlocode)]
       - [ontology-se-cbam-cbamreport:isRegisteredIn, se-cbam-cbamreport:CommunicationReport_$(communication_report_id)]
@@ -139,7 +139,7 @@ mappings:
     po:
       - [a, ontology-se-cbam-electricity_determination:Electricity_Determination]
       - [ontology-se-cbam-electricity_determination:code, {"value": $("source_for_electricity_ef"), "datatype": "xsd:string"}]
-      - [ontology-se-cbam-cbamreport:Total_Embedded_Emissions_of_Electricity_Imported, {"value": $("embedded_electricity_mwh/t"), "datatype": "xsd:decimal"}]  
+      - [ontology-se-cbam-cbamreport:total_Embedded_Emissions_of_Electricity_Imported, {"value": $("embedded_electricity_mwh/t"), "datatype": "xsd:decimal"}]  
   steelMillMapping: 
     sources:
     - ['${summary_of_products_path}~csv']
@@ -1439,6 +1439,83 @@ mappings:
                 value: 'ontology-se-cbam-emissionsqualifyingparameters:description'
             type: literal
 
+
+  steelProductScrapUsage:
+    sources:
+      - ['${summary_of_products_path}~csv']
+    s: se-cbam-emissionsqualifyingparameters:Steel_product_scrap_usage_$(communication_report_id)_$(nro)
+    po:
+      - [a, ontology-se-cbam-emissionsqualifyingparameters:Steel_product_scrap_usage]
+      - [a, ontology-se-cbam-emissionsqualifyingparameters:EmissionParameter]
+      - [ontology-se-cbam-emissionsqualifyingparameters:code, "QPD19"]
+      - [ontology-se-cbam-emissionsqualifyingparameters:parameterValueNumeric, {"value": $("t_scrap_per_t_steel"), "datatype": "xsd:decimal"}]
+      - p: http://www.w3.org/2000/01/rdf-schema#label 
+        o:
+          - function: fun:get_property_value
+            parameters:
+              - parameter: param:ontologyParam
+                value: 'resources/ontologies/EmissionQualifParams.ttl'
+              - parameter: param:entityParam 
+                value: 'ontology-se-cbam-emissionsqualifyingparameters:Steel_product_scrap_usage'
+              - parameter: param:propertyParam 
+                value: 'http://www.w3.org/2000/01/rdf-schema#label'
+            type: literal
+      - p: ontology-se-cbam-emissionsqualifyingparameters:description    
+        o:
+          - function: fun:get_property_value
+            parameters:
+              - parameter: param:ontologyParam
+                value: 'resources/ontologies/EmissionQualifParams.ttl'
+              - parameter: param:entityParam 
+                value: 'ontology-se-cbam-emissionsqualifyingparameters:Steel_product_scrap_usage'
+              - parameter: param:propertyParam 
+                value: 'ontology-se-cbam-emissionsqualifyingparameters:description'
+            type: literal
+      - p: ontology-se-cbam-emissionsqualifyingparameters:code
+        o:
+          - function: fun:get_property_value
+            parameters:
+              - parameter: param:ontologyParam
+                value: 'resources/ontologies/EmissionQualifParams.ttl'
+              - parameter: param:entityParam 
+                value: 'ontology-se-cbam-emissionsqualifyingparameters:Steel_product_scrap_usage'
+              - parameter: param:propertyParam 
+                value: 'ontology-se-cbam-emissionsqualifyingparameters:code'
+            type: literal 
+      - p: ontology-se-cbam-emissionsqualifyingparameters:typeOfEmissionValue 
+        o:
+          - function: fun:get_property_value
+            parameters:
+              - parameter: param:ontologyParam
+                value: 'resources/ontologies/EmissionQualifParams.ttl'
+              - parameter: param:entityParam 
+                value: 'ontology-se-cbam-emissionsqualifyingparameters:Steel_product_scrap_usage'
+              - parameter: param:propertyParam 
+                value: 'ontology-se-cbam-emissionsqualifyingparameters:typeOfEmissionValue'
+            type: literal 
+      - p: ontology-se-cbam-emissionsqualifyingparameters:typeOfParameterValue
+        o:
+          - function: fun:get_property_value
+            parameters:
+              - parameter: param:ontologyParam
+                value: 'resources/ontologies/EmissionQualifParams.ttl'
+              - parameter: param:entityParam 
+                value: 'ontology-se-cbam-emissionsqualifyingparameters:Steel_product_scrap_usage'
+              - parameter: param:propertyParam 
+                value: 'ontology-se-cbam-emissionsqualifyingparameters:typeOfParameterValue'
+            type: literal   
+      - p: ontology-se-cbam-emissionsqualifyingparameters:description    
+        o:
+          - function: fun:get_property_value
+            parameters:
+              - parameter: param:ontologyParam
+                value: 'resources/ontologies/EmissionQualifParams.ttl'
+              - parameter: param:entityParam 
+                value: 'ontology-se-cbam-emissionsqualifyingparameters:Steel_product_scrap_usage'
+              - parameter: param:propertyParam 
+                value: 'ontology-se-cbam-emissionsqualifyingparameters:description'
+            type: literal
+
   ammoniumNitrogenContent:
     sources:
       - ['${summary_of_products_path}~csv']
@@ -1752,9 +1829,10 @@ mappings:
   carbonEmissionsCoveredMapping:
     sources:
       - ['${summary_of_products_path}~csv']
-    s: se-cbam-cbamreport:CarbonEmissionsCovered_$(communication_report_id)_$(nro) #Form Of Car
+    s: se-cbam-cbamreport:CarbonEmissionsCovered_$(communication_report_id)_$(nro)
     po:
-      - [a, ontology-se-cbam-cbamreport:CarbonEmissions] #Form Of Car
+      - [a, ontology-se-cbam-cbamreport:CarbonEmissions]
+      - [a, ontology-se-cbam-cbamreport:CarbonEmissionsCovered]
       - [ontology-se-cbam-cbamreport:shareOfTotalEmbeddedEmissionsCoveredByTheCarbonPrice, {"value": $("share_of_total_embedded_emissions_covered_by_the_carbon_price"), "datatype": "xsd:decimal"}]
       - [ontology-se-cbam-cbamreport:embeddedEmissionsCoveredByCarbonPrice, {"value": $("embedded_emissions_covered_by_the_carbon_price_1"), "datatype": "xsd:decimal"}]
       - [ontology-se-cbam-cbamreport:typeOfMeasurementUnitForEmissions, {"value": $("embedded_emissions_covered_by_the_carbon_price_2"), "datatype": "xsd:string"}]
@@ -1766,10 +1844,10 @@ mappings:
     s: se-cbam-cbamreport:Rebate_$(communication_report_id)_$(nro)
     po:
       - [a, ontology-se-cbam-cbamreport:Rebate]
-      - [ontology-se-cbam-cbamreport:percentageCoveredByRebate, {"value": $("share_of_embedded_emissions_covered_by_the_rebate"), "datatype": "xsd:double"}]
-      - [ontology-se-cbam-cbamreport:embeddedEmissionsCoveredByRebate, {"value": $("embedded_emissions_covered_by_rebate_1"), "datatype": "xsd:double"}]
+      - [ontology-se-cbam-cbamreport:percentageCoveredByRebate, {"value": $("share_of_embedded_emissions_covered_by_the_rebate"), "datatype": "xsd:decimal"}]
+      - [ontology-se-cbam-cbamreport:embeddedEmissionsCoveredByRebate, {"value": $("embedded_emissions_covered_by_rebate_1"), "datatype": "xsd:decimal"}]
       - [ontology-se-cbam-cbamreport:typeOfMeasurementUnitForEmissions, {"value": $("embedded_emissions_covered_by_rebate_2"), "datatype": "xsd:string"}]
-      - [ontology-se-cbam-cbamreport:quantityCoveredByRebate, {"value": $("amount_of_rebate_local_currency_1"), "datatype": "xsd:double"}]
+      - [ontology-se-cbam-cbamreport:quantityCoveredByRebate, {"value": $("amount_of_rebate_local_currency_1"), "datatype": "xsd:decimal"}]
       - [ontology-se-cbam-currency:currencyCode, {"value": $("amount_of_rebate_local_currency_2"), "datatype": "xsd:string"}]
   resultEffectiveCPDueMapping:
     sources:
@@ -1777,7 +1855,7 @@ mappings:
     s: se-cbam-cbamreport:CarbonPrice_$(communication_report_id)_$(nro)
     po:
       - [a, ontology-se-cbam-cbamreport:CarbonPrice]
-      - [ontology-se-cbam-cbamreport:resultEffectiveCPDue, {"value": $("result:_effective_cp_due_1"), "datatype": "xsd:double"}]
+      - [ontology-se-cbam-cbamreport:resultEffectiveCPDue, {"value": $("result:_effective_cp_due_1"), "datatype": "xsd:decimal"}]
       - [ontology-se-cbam-currency:currencyCode, {"value": $("result:_effective_cp_due_2"), "datatype": "xsd:string"}]
       - p: ontology-se-cbam-emissionsqualifyingparameters:description    
         o:
