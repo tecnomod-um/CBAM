@@ -27,13 +27,6 @@ se-cbam-cbamreport:BasedExclPfcEmissions_CNABC2023010120231231 a ontology-se-cba
     ontology-se-cbam-cbamreport:isEmittedBy se-cbam-cbamreport:Installation_CNABC ;
     ontology-se-cbam-cbamreport:isRegisteredIn se-cbam-cbamreport:CommunicationReport_CNABC2023010120231231 .
 
-se-cbam-cbamreport:BasedExclPfcEmissions_COCBA2023010120231231 a ontology-se-cbam-cbamreport:BasedExclPfcEmissions,
-        ontology-se-cbam-cbamreport:GreenHouseGasEmissions ;
-    ontology-se-cbam-cbamreport:calculationBasedExclPfcEmissionsUnit "tCO2e" ;
-    ontology-se-cbam-cbamreport:calculationBasedExclPfcEmissionsValue 7866044.469877754 ;
-    ontology-se-cbam-cbamreport:isEmittedBy se-cbam-cbamreport:Installation_COCBA ;
-    ontology-se-cbam-cbamreport:isRegisteredIn se-cbam-cbamreport:CommunicationReport_COCBA2023010120231231 .
-
 se-cbam-cbamreport:BasedExclPfcEmissions_TRABC2023010120231231 a ontology-se-cbam-cbamreport:BasedExclPfcEmissions,
         ontology-se-cbam-cbamreport:GreenHouseGasEmissions ;
     ontology-se-cbam-cbamreport:calculationBasedExclPfcEmissionsUnit "tCO2e" ;
@@ -200,158 +193,6 @@ se-cbam-cbamreport:Product_CNABC2023010120231231_4 a ontology-se-cbam-cbamreport
     ontology-se-cbam-cbamreport:isSubjectTo se-cbam-instrument:Instrument_CNABC2023010120231231_4 ;
     ontology-se-cbam-cbamreport:itemNumber "4"^^xsd:nonNegativeInteger .
 
-se-cbam-cbamreport:Product_COCBA2023010120231231_1 a ontology-se-cbam-cbamreport:Good ;
-    rdfs:label "Example name A" ;
-    foaf:name "Example name A" ;
-    ontology-se-cbam-cbamreport:hasCNCode se-cbam-cn:CN_72081000 ;
-    ontology-se-cbam-cbamreport:hasCarbonCharge se-cbam-cbamreport:CarbonPrice_COCBA2023010120231231_1 ;
-    ontology-se-cbam-cbamreport:hasEmissionQualifyingParameter se-cbam-emissionsqualifyingparameters:Aluminium_pre-consumer_scrap_COCBA2023010120231231_1,
-        se-cbam-emissionsqualifyingparameters:Aluminium_scrap_usage_COCBA2023010120231231_1,
-        se-cbam-emissionsqualifyingparameters:Ammonia_concentration_COCBA2023010120231231_1,
-        se-cbam-emissionsqualifyingparameters:Ammonium_Nitrogen_content_COCBA2023010120231231_1,
-        se-cbam-emissionsqualifyingparameters:Calcination_COCBA2023010120231231_1,
-        se-cbam-emissionsqualifyingparameters:Carbon_content_of_iron_or_steel_COCBA2023010120231231_1,
-        se-cbam-emissionsqualifyingparameters:Chromium_content_COCBA2023010120231231_1,
-        se-cbam-emissionsqualifyingparameters:Clinker_factor_COCBA2023010120231231_1,
-        se-cbam-emissionsqualifyingparameters:Content_of_other_alloy_elements_COCBA2023010120231231_1,
-        se-cbam-emissionsqualifyingparameters:Manganese_content_COCBA2023010120231231_1,
-        se-cbam-emissionsqualifyingparameters:Nickel_content_COCBA2023010120231231_1,
-        se-cbam-emissionsqualifyingparameters:Nitrate_Nitrogen_content_COCBA2023010120231231_1,
-        se-cbam-emissionsqualifyingparameters:Nitric_acid_concentration_COCBA2023010120231231_1,
-        se-cbam-emissionsqualifyingparameters:Non_Aluminium_content_COCBA2023010120231231_1,
-        se-cbam-emissionsqualifyingparameters:Non_Iron_content_COCBA2023010120231231_1,
-        se-cbam-emissionsqualifyingparameters:Other_Nitrogen_content_COCBA2023010120231231_1,
-        se-cbam-emissionsqualifyingparameters:Precursor_reducing_Agent_COCBA2023010120231231_1,
-        se-cbam-emissionsqualifyingparameters:Steel_pre-consumer_scrap_COCBA2023010120231231_1,
-        se-cbam-emissionsqualifyingparameters:Steel_product_scrap_usage_COCBA2023010120231231_1,
-        se-cbam-emissionsqualifyingparameters:Steel_scrap_usage_COCBA2023010120231231_1,
-        se-cbam-emissionsqualifyingparameters:Urea_Nitrogen_content_COCBA2023010120231231_1,
-        se-cbam-emissionsqualifyingparameters:Urea_purity_COCBA2023010120231231_1 ;
-    ontology-se-cbam-cbamreport:hasEmissionsCovered se-cbam-cbamreport:CarbonEmissionsCovered_COCBA2023010120231231_1 ;
-    ontology-se-cbam-cbamreport:hasGreenHouseGasEmissions se-cbam-cbamreport:GreenHouseGasEmissions_COCBA2023010120231231_1 ;
-    ontology-se-cbam-cbamreport:hasProductionMethod se-cbam-production-method:COCBA2023010120231231_1 ;
-    ontology-se-cbam-cbamreport:isCoveredRebate se-cbam-cbamreport:Rebate_COCBA2023010120231231_1 ;
-    ontology-se-cbam-cbamreport:isDeterminedBy se-cbam-electricity-determination:Electricity_Determination_COCBA2023010120231231_1 ;
-    ontology-se-cbam-cbamreport:isManufacturedAt se-cbam-cbamreport:Installation_COCBA ;
-    ontology-se-cbam-cbamreport:isProducedAt se-cbam-cbamreport:steelMill_COCBA2023010120231231_1 ;
-    ontology-se-cbam-cbamreport:isRegisteredIn se-cbam-cbamreport:CommunicationReport_COCBA2023010120231231 ;
-    ontology-se-cbam-cbamreport:isSubjectTo se-cbam-instrument:Instrument_COCBA2023010120231231_1 ;
-    ontology-se-cbam-cbamreport:itemNumber "1"^^xsd:nonNegativeInteger .
-
-se-cbam-cbamreport:Product_COCBA2023010120231231_2 a ontology-se-cbam-cbamreport:Good ;
-    rdfs:label "Example name B" ;
-    foaf:name "Example name B" ;
-    ontology-se-cbam-cbamreport:hasCNCode se-cbam-cn:CN_72122000 ;
-    ontology-se-cbam-cbamreport:hasCarbonCharge se-cbam-cbamreport:CarbonPrice_COCBA2023010120231231_2 ;
-    ontology-se-cbam-cbamreport:hasEmissionQualifyingParameter se-cbam-emissionsqualifyingparameters:Aluminium_pre-consumer_scrap_COCBA2023010120231231_2,
-        se-cbam-emissionsqualifyingparameters:Aluminium_scrap_usage_COCBA2023010120231231_2,
-        se-cbam-emissionsqualifyingparameters:Ammonia_concentration_COCBA2023010120231231_2,
-        se-cbam-emissionsqualifyingparameters:Ammonium_Nitrogen_content_COCBA2023010120231231_2,
-        se-cbam-emissionsqualifyingparameters:Calcination_COCBA2023010120231231_2,
-        se-cbam-emissionsqualifyingparameters:Carbon_content_of_iron_or_steel_COCBA2023010120231231_2,
-        se-cbam-emissionsqualifyingparameters:Chromium_content_COCBA2023010120231231_2,
-        se-cbam-emissionsqualifyingparameters:Clinker_factor_COCBA2023010120231231_2,
-        se-cbam-emissionsqualifyingparameters:Content_of_other_alloy_elements_COCBA2023010120231231_2,
-        se-cbam-emissionsqualifyingparameters:Manganese_content_COCBA2023010120231231_2,
-        se-cbam-emissionsqualifyingparameters:Nickel_content_COCBA2023010120231231_2,
-        se-cbam-emissionsqualifyingparameters:Nitrate_Nitrogen_content_COCBA2023010120231231_2,
-        se-cbam-emissionsqualifyingparameters:Nitric_acid_concentration_COCBA2023010120231231_2,
-        se-cbam-emissionsqualifyingparameters:Non_Aluminium_content_COCBA2023010120231231_2,
-        se-cbam-emissionsqualifyingparameters:Non_Iron_content_COCBA2023010120231231_2,
-        se-cbam-emissionsqualifyingparameters:Other_Nitrogen_content_COCBA2023010120231231_2,
-        se-cbam-emissionsqualifyingparameters:Precursor_reducing_Agent_COCBA2023010120231231_2,
-        se-cbam-emissionsqualifyingparameters:Steel_pre-consumer_scrap_COCBA2023010120231231_2,
-        se-cbam-emissionsqualifyingparameters:Steel_product_scrap_usage_COCBA2023010120231231_2,
-        se-cbam-emissionsqualifyingparameters:Steel_scrap_usage_COCBA2023010120231231_2,
-        se-cbam-emissionsqualifyingparameters:Urea_Nitrogen_content_COCBA2023010120231231_2,
-        se-cbam-emissionsqualifyingparameters:Urea_purity_COCBA2023010120231231_2 ;
-    ontology-se-cbam-cbamreport:hasEmissionsCovered se-cbam-cbamreport:CarbonEmissionsCovered_COCBA2023010120231231_2 ;
-    ontology-se-cbam-cbamreport:hasGreenHouseGasEmissions se-cbam-cbamreport:GreenHouseGasEmissions_COCBA2023010120231231_2 ;
-    ontology-se-cbam-cbamreport:hasProductionMethod se-cbam-production-method:COCBA2023010120231231_2 ;
-    ontology-se-cbam-cbamreport:isCoveredRebate se-cbam-cbamreport:Rebate_COCBA2023010120231231_2 ;
-    ontology-se-cbam-cbamreport:isDeterminedBy se-cbam-electricity-determination:Electricity_Determination_COCBA2023010120231231_2 ;
-    ontology-se-cbam-cbamreport:isManufacturedAt se-cbam-cbamreport:Installation_COCBA ;
-    ontology-se-cbam-cbamreport:isProducedAt se-cbam-cbamreport:steelMill_COCBA2023010120231231_2 ;
-    ontology-se-cbam-cbamreport:isRegisteredIn se-cbam-cbamreport:CommunicationReport_COCBA2023010120231231 ;
-    ontology-se-cbam-cbamreport:isSubjectTo se-cbam-instrument:Instrument_COCBA2023010120231231_2 ;
-    ontology-se-cbam-cbamreport:itemNumber "2"^^xsd:nonNegativeInteger .
-
-se-cbam-cbamreport:Product_COCBA2023010120231231_3 a ontology-se-cbam-cbamreport:Good ;
-    rdfs:label "Example name E" ;
-    foaf:name "Example name E" ;
-    ontology-se-cbam-cbamreport:hasCNCode se-cbam-cn:CN_73181100 ;
-    ontology-se-cbam-cbamreport:hasCarbonCharge se-cbam-cbamreport:CarbonPrice_COCBA2023010120231231_3 ;
-    ontology-se-cbam-cbamreport:hasEmissionQualifyingParameter se-cbam-emissionsqualifyingparameters:Aluminium_pre-consumer_scrap_COCBA2023010120231231_3,
-        se-cbam-emissionsqualifyingparameters:Aluminium_scrap_usage_COCBA2023010120231231_3,
-        se-cbam-emissionsqualifyingparameters:Ammonia_concentration_COCBA2023010120231231_3,
-        se-cbam-emissionsqualifyingparameters:Ammonium_Nitrogen_content_COCBA2023010120231231_3,
-        se-cbam-emissionsqualifyingparameters:Calcination_COCBA2023010120231231_3,
-        se-cbam-emissionsqualifyingparameters:Carbon_content_of_iron_or_steel_COCBA2023010120231231_3,
-        se-cbam-emissionsqualifyingparameters:Chromium_content_COCBA2023010120231231_3,
-        se-cbam-emissionsqualifyingparameters:Clinker_factor_COCBA2023010120231231_3,
-        se-cbam-emissionsqualifyingparameters:Content_of_other_alloy_elements_COCBA2023010120231231_3,
-        se-cbam-emissionsqualifyingparameters:Manganese_content_COCBA2023010120231231_3,
-        se-cbam-emissionsqualifyingparameters:Nickel_content_COCBA2023010120231231_3,
-        se-cbam-emissionsqualifyingparameters:Nitrate_Nitrogen_content_COCBA2023010120231231_3,
-        se-cbam-emissionsqualifyingparameters:Nitric_acid_concentration_COCBA2023010120231231_3,
-        se-cbam-emissionsqualifyingparameters:Non_Aluminium_content_COCBA2023010120231231_3,
-        se-cbam-emissionsqualifyingparameters:Non_Iron_content_COCBA2023010120231231_3,
-        se-cbam-emissionsqualifyingparameters:Other_Nitrogen_content_COCBA2023010120231231_3,
-        se-cbam-emissionsqualifyingparameters:Precursor_reducing_Agent_COCBA2023010120231231_3,
-        se-cbam-emissionsqualifyingparameters:Steel_pre-consumer_scrap_COCBA2023010120231231_3,
-        se-cbam-emissionsqualifyingparameters:Steel_product_scrap_usage_COCBA2023010120231231_3,
-        se-cbam-emissionsqualifyingparameters:Steel_scrap_usage_COCBA2023010120231231_3,
-        se-cbam-emissionsqualifyingparameters:Urea_Nitrogen_content_COCBA2023010120231231_3,
-        se-cbam-emissionsqualifyingparameters:Urea_purity_COCBA2023010120231231_3 ;
-    ontology-se-cbam-cbamreport:hasEmissionsCovered se-cbam-cbamreport:CarbonEmissionsCovered_COCBA2023010120231231_3 ;
-    ontology-se-cbam-cbamreport:hasGreenHouseGasEmissions se-cbam-cbamreport:GreenHouseGasEmissions_COCBA2023010120231231_3 ;
-    ontology-se-cbam-cbamreport:hasProductionMethod se-cbam-production-method:COCBA2023010120231231_3 ;
-    ontology-se-cbam-cbamreport:isCoveredRebate se-cbam-cbamreport:Rebate_COCBA2023010120231231_3 ;
-    ontology-se-cbam-cbamreport:isDeterminedBy se-cbam-electricity-determination:Electricity_Determination_COCBA2023010120231231_3 ;
-    ontology-se-cbam-cbamreport:isManufacturedAt se-cbam-cbamreport:Installation_COCBA ;
-    ontology-se-cbam-cbamreport:isProducedAt se-cbam-cbamreport:steelMill_COCBA2023010120231231_3 ;
-    ontology-se-cbam-cbamreport:isRegisteredIn se-cbam-cbamreport:CommunicationReport_COCBA2023010120231231 ;
-    ontology-se-cbam-cbamreport:isSubjectTo se-cbam-instrument:Instrument_COCBA2023010120231231_3 ;
-    ontology-se-cbam-cbamreport:itemNumber "3"^^xsd:nonNegativeInteger .
-
-se-cbam-cbamreport:Product_COCBA2023010120231231_4 a ontology-se-cbam-cbamreport:Good ;
-    rdfs:label "Example name F" ;
-    foaf:name "Example name F" ;
-    ontology-se-cbam-cbamreport:hasCNCode se-cbam-cn:CN_73030010 ;
-    ontology-se-cbam-cbamreport:hasCarbonCharge se-cbam-cbamreport:CarbonPrice_COCBA2023010120231231_4 ;
-    ontology-se-cbam-cbamreport:hasEmissionQualifyingParameter se-cbam-emissionsqualifyingparameters:Aluminium_pre-consumer_scrap_COCBA2023010120231231_4,
-        se-cbam-emissionsqualifyingparameters:Aluminium_scrap_usage_COCBA2023010120231231_4,
-        se-cbam-emissionsqualifyingparameters:Ammonia_concentration_COCBA2023010120231231_4,
-        se-cbam-emissionsqualifyingparameters:Ammonium_Nitrogen_content_COCBA2023010120231231_4,
-        se-cbam-emissionsqualifyingparameters:Calcination_COCBA2023010120231231_4,
-        se-cbam-emissionsqualifyingparameters:Carbon_content_of_iron_or_steel_COCBA2023010120231231_4,
-        se-cbam-emissionsqualifyingparameters:Chromium_content_COCBA2023010120231231_4,
-        se-cbam-emissionsqualifyingparameters:Clinker_factor_COCBA2023010120231231_4,
-        se-cbam-emissionsqualifyingparameters:Content_of_other_alloy_elements_COCBA2023010120231231_4,
-        se-cbam-emissionsqualifyingparameters:Manganese_content_COCBA2023010120231231_4,
-        se-cbam-emissionsqualifyingparameters:Nickel_content_COCBA2023010120231231_4,
-        se-cbam-emissionsqualifyingparameters:Nitrate_Nitrogen_content_COCBA2023010120231231_4,
-        se-cbam-emissionsqualifyingparameters:Nitric_acid_concentration_COCBA2023010120231231_4,
-        se-cbam-emissionsqualifyingparameters:Non_Aluminium_content_COCBA2023010120231231_4,
-        se-cbam-emissionsqualifyingparameters:Non_Iron_content_COCBA2023010120231231_4,
-        se-cbam-emissionsqualifyingparameters:Other_Nitrogen_content_COCBA2023010120231231_4,
-        se-cbam-emissionsqualifyingparameters:Precursor_reducing_Agent_COCBA2023010120231231_4,
-        se-cbam-emissionsqualifyingparameters:Steel_pre-consumer_scrap_COCBA2023010120231231_4,
-        se-cbam-emissionsqualifyingparameters:Steel_product_scrap_usage_COCBA2023010120231231_4,
-        se-cbam-emissionsqualifyingparameters:Steel_scrap_usage_COCBA2023010120231231_4,
-        se-cbam-emissionsqualifyingparameters:Urea_Nitrogen_content_COCBA2023010120231231_4,
-        se-cbam-emissionsqualifyingparameters:Urea_purity_COCBA2023010120231231_4 ;
-    ontology-se-cbam-cbamreport:hasEmissionsCovered se-cbam-cbamreport:CarbonEmissionsCovered_COCBA2023010120231231_4 ;
-    ontology-se-cbam-cbamreport:hasGreenHouseGasEmissions se-cbam-cbamreport:GreenHouseGasEmissions_COCBA2023010120231231_4 ;
-    ontology-se-cbam-cbamreport:hasProductionMethod se-cbam-production-method:COCBA2023010120231231_4 ;
-    ontology-se-cbam-cbamreport:isCoveredRebate se-cbam-cbamreport:Rebate_COCBA2023010120231231_4 ;
-    ontology-se-cbam-cbamreport:isDeterminedBy se-cbam-electricity-determination:Electricity_Determination_COCBA2023010120231231_4 ;
-    ontology-se-cbam-cbamreport:isManufacturedAt se-cbam-cbamreport:Installation_COCBA ;
-    ontology-se-cbam-cbamreport:isProducedAt se-cbam-cbamreport:steelMill_COCBA2023010120231231_4 ;
-    ontology-se-cbam-cbamreport:isRegisteredIn se-cbam-cbamreport:CommunicationReport_COCBA2023010120231231 ;
-    ontology-se-cbam-cbamreport:isSubjectTo se-cbam-instrument:Instrument_COCBA2023010120231231_4 ;
-    ontology-se-cbam-cbamreport:itemNumber "4"^^xsd:nonNegativeInteger .
-
 se-cbam-cbamreport:Product_TRABC2023010120231231_1 a ontology-se-cbam-cbamreport:Good ;
     rdfs:label "Portland Cement Art. Nr. 1" ;
     foaf:name "Portland Cement Art. Nr. 1" ;
@@ -435,13 +276,6 @@ se-cbam-cbamreport:TotalEmissions_CNABC2023010120231231 a ontology-se-cbam-cbamr
     ontology-se-cbam-cbamreport:isEmittedBy se-cbam-cbamreport:Installation_CNABC ;
     ontology-se-cbam-cbamreport:isRegisteredIn se-cbam-cbamreport:CommunicationReport_CNABC2023010120231231 .
 
-se-cbam-cbamreport:TotalEmissions_COCBA2023010120231231 a ontology-se-cbam-cbamreport:GreenHouseGasEmissions,
-        ontology-se-cbam-cbamreport:TotalEmissions ;
-    ontology-se-cbam-cbamreport:emissionsUnit "tCO2e" ;
-    ontology-se-cbam-cbamreport:emissionsValue 8842963.349877754 ;
-    ontology-se-cbam-cbamreport:isEmittedBy se-cbam-cbamreport:Installation_COCBA ;
-    ontology-se-cbam-cbamreport:isRegisteredIn se-cbam-cbamreport:CommunicationReport_COCBA2023010120231231 .
-
 se-cbam-cbamreport:TotalEmissions_TRABC2023010120231231 a ontology-se-cbam-cbamreport:GreenHouseGasEmissions,
         ontology-se-cbam-cbamreport:TotalEmissions ;
     ontology-se-cbam-cbamreport:emissionsUnit "tCO2e" ;
@@ -460,13 +294,6 @@ se-cbam-cbamreport:measurementBased_CNABC2023010120231231 a ontology-se-cbam-cba
         ontology-se-cbam-cbamreport:MeasurementBasedEmissions ;
     ontology-se-cbam-cbamreport:isEmittedBy se-cbam-cbamreport:Installation_CNABC ;
     ontology-se-cbam-cbamreport:isRegisteredIn se-cbam-cbamreport:CommunicationReport_CNABC2023010120231231 ;
-    ontology-se-cbam-cbamreport:measurementBasedUnit "tCO2e" ;
-    ontology-se-cbam-cbamreport:measurementBasedValue 0.0 .
-
-se-cbam-cbamreport:measurementBased_COCBA2023010120231231 a ontology-se-cbam-cbamreport:GreenHouseGasEmissions,
-        ontology-se-cbam-cbamreport:MeasurementBasedEmissions ;
-    ontology-se-cbam-cbamreport:isEmittedBy se-cbam-cbamreport:Installation_COCBA ;
-    ontology-se-cbam-cbamreport:isRegisteredIn se-cbam-cbamreport:CommunicationReport_COCBA2023010120231231 ;
     ontology-se-cbam-cbamreport:measurementBasedUnit "tCO2e" ;
     ontology-se-cbam-cbamreport:measurementBasedValue 0.0 .
 
@@ -491,13 +318,6 @@ se-cbam-cbamreport:otherEmissions_CNABC2023010120231231 a ontology-se-cbam-cbamr
     ontology-se-cbam-cbamreport:isEmittedBy se-cbam-cbamreport:Installation_CNABC ;
     ontology-se-cbam-cbamreport:isRegisteredIn se-cbam-cbamreport:CommunicationReport_CNABC2023010120231231 .
 
-se-cbam-cbamreport:otherEmissions_COCBA2023010120231231 a ontology-se-cbam-cbamreport:GreenHouseGasEmissions,
-        ontology-se-cbam-cbamreport:OtherEmissions ;
-    ontology-se-cbam-cbamreport:emissionsUnit "tCO2e" ;
-    ontology-se-cbam-cbamreport:emissionsValue 0.0 ;
-    ontology-se-cbam-cbamreport:isEmittedBy se-cbam-cbamreport:Installation_COCBA ;
-    ontology-se-cbam-cbamreport:isRegisteredIn se-cbam-cbamreport:CommunicationReport_COCBA2023010120231231 .
-
 se-cbam-cbamreport:otherEmissions_TRABC2023010120231231 a ontology-se-cbam-cbamreport:GreenHouseGasEmissions,
         ontology-se-cbam-cbamreport:OtherEmissions ;
     ontology-se-cbam-cbamreport:emissionsUnit "tCO2e" ;
@@ -518,13 +338,6 @@ se-cbam-cbamreport:totalDirectEmissions_CNABC2023010120231231 a ontology-se-cbam
     ontology-se-cbam-cbamreport:emissionsValue 7866044.46987776 ;
     ontology-se-cbam-cbamreport:isEmittedBy se-cbam-cbamreport:Installation_CNABC ;
     ontology-se-cbam-cbamreport:isRegisteredIn se-cbam-cbamreport:CommunicationReport_CNABC2023010120231231 .
-
-se-cbam-cbamreport:totalDirectEmissions_COCBA2023010120231231 a ontology-se-cbam-cbamreport:GreenHouseGasEmissions,
-        ontology-se-cbam-cbamreport:TotalDirectEmissions ;
-    ontology-se-cbam-cbamreport:emissionsUnit "tCO2e" ;
-    ontology-se-cbam-cbamreport:emissionsValue 7866044.469877754 ;
-    ontology-se-cbam-cbamreport:isEmittedBy se-cbam-cbamreport:Installation_COCBA ;
-    ontology-se-cbam-cbamreport:isRegisteredIn se-cbam-cbamreport:CommunicationReport_COCBA2023010120231231 .
 
 se-cbam-cbamreport:totalDirectEmissions_TRABC2023010120231231 a ontology-se-cbam-cbamreport:GreenHouseGasEmissions,
         ontology-se-cbam-cbamreport:TotalDirectEmissions ;
@@ -547,13 +360,6 @@ se-cbam-cbamreport:totalIndirectEmissions_CNABC2023010120231231 a ontology-se-cb
     ontology-se-cbam-cbamreport:isEmittedBy se-cbam-cbamreport:Installation_CNABC ;
     ontology-se-cbam-cbamreport:isRegisteredIn se-cbam-cbamreport:CommunicationReport_CNABC2023010120231231 .
 
-se-cbam-cbamreport:totalIndirectEmissions_COCBA2023010120231231 a ontology-se-cbam-cbamreport:GreenHouseGasEmissions,
-        ontology-se-cbam-cbamreport:TotalIndirectEmissions ;
-    ontology-se-cbam-cbamreport:emissionsUnit "tCO2e" ;
-    ontology-se-cbam-cbamreport:emissionsValue 976918.88 ;
-    ontology-se-cbam-cbamreport:isEmittedBy se-cbam-cbamreport:Installation_COCBA ;
-    ontology-se-cbam-cbamreport:isRegisteredIn se-cbam-cbamreport:CommunicationReport_COCBA2023010120231231 .
-
 se-cbam-cbamreport:totalIndirectEmissions_TRABC2023010120231231 a ontology-se-cbam-cbamreport:GreenHouseGasEmissions,
         ontology-se-cbam-cbamreport:TotalIndirectEmissions ;
     ontology-se-cbam-cbamreport:emissionsUnit "tCO2e" ;
@@ -575,13 +381,6 @@ se-cbam-cbamreport:totalPfcEmissions_CNABC2023010120231231 a ontology-se-cbam-cb
     ontology-se-cbam-cbamreport:isEmittedBy se-cbam-cbamreport:Installation_CNABC ;
     ontology-se-cbam-cbamreport:isRegisteredIn se-cbam-cbamreport:CommunicationReport_CNABC2023010120231231 .
 
-se-cbam-cbamreport:totalPfcEmissions_COCBA2023010120231231 a ontology-se-cbam-cbamreport:GreenHouseGasEmissions,
-        ontology-se-cbam-cbamreport:TotalPfcEmissions ;
-    ontology-se-cbam-cbamreport:emissionsUnit "tCO2e" ;
-    ontology-se-cbam-cbamreport:emissionsValue 0.0 ;
-    ontology-se-cbam-cbamreport:isEmittedBy se-cbam-cbamreport:Installation_COCBA ;
-    ontology-se-cbam-cbamreport:isRegisteredIn se-cbam-cbamreport:CommunicationReport_COCBA2023010120231231 .
-
 se-cbam-cbamreport:totalPfcEmissions_TRABC2023010120231231 a ontology-se-cbam-cbamreport:GreenHouseGasEmissions,
         ontology-se-cbam-cbamreport:TotalPfcEmissions ;
     ontology-se-cbam-cbamreport:emissionsUnit "tCO2e" ;
@@ -595,6 +394,22 @@ se-cbam-cbamreport:totalPfcEmissions_TWXYZ2023010120231231 a ontology-se-cbam-cb
     ontology-se-cbam-cbamreport:emissionsValue 0.0 ;
     ontology-se-cbam-cbamreport:isEmittedBy se-cbam-cbamreport:Installation_TWXYZ ;
     ontology-se-cbam-cbamreport:isRegisteredIn se-cbam-cbamreport:CommunicationReport_TWXYZ2023010120231231 .
+
+se-cbam-cn:CN_72081000 a ontology-se-cbam-cn:720810000080,
+        ontology-se-cbam-cn:CN ;
+    rdfs:label "- In coils, not further worked than hot-rolled, with patterns in relief" ;
+    rdfs:comment "Flat-rolled products of iron or non-alloy steel, of a width of >= 600 mm, in coils, simply hot-rolled, not clad, plated or coated, with patterns in relief directly due to the rolling process" ;
+    ontology-se-cbam-cn:cn_code "72081000" ;
+    ontology-se-cbam-cn:hs6_code "720810" ;
+    ontology-se-cbam-cbam-goods:belongsToCategory se-cbam-cbam-goods:AggregatedGoodsCategory_CNABC2023010120231231_1 .
+
+se-cbam-cn:CN_72122000 a ontology-se-cbam-cn:721220000080,
+        ontology-se-cbam-cn:CN ;
+    rdfs:label "- Electrolytically plated or coated with zinc" ;
+    rdfs:comment "Flat-rolled products of iron or non-alloy steel, of a width of < 600 mm, hot-rolled or cold-rolled \"cold-reduced\", electrolytically plated or coated with zinc" ;
+    ontology-se-cbam-cn:cn_code "72122000" ;
+    ontology-se-cbam-cn:hs6_code "721220" ;
+    ontology-se-cbam-cbam-goods:belongsToCategory se-cbam-cbam-goods:AggregatedGoodsCategory_CNABC2023010120231231_2 .
 
 se-cbam-cn:CN_72139120 a ontology-se-cbam-cn:721391200080,
         ontology-se-cbam-cn:CN ;
@@ -612,22 +427,6 @@ se-cbam-cn:CN_73021028 a ontology-se-cbam-cn:730210280080,
     ontology-se-cbam-cn:hs6_code "730210" ;
     ontology-se-cbam-cbam-goods:belongsToCategory se-cbam-cbam-goods:AggregatedGoodsCategory_CNABC2023010120231231_4 .
 
-se-cbam-cn:CN_73030010 a ontology-se-cbam-cn:730300100080,
-        ontology-se-cbam-cn:CN ;
-    rdfs:label "- Tubes and pipes of a kind used in pressure systems" ;
-    rdfs:comment "Tubes and pipes of a kind used in pressure systems, of cast iron" ;
-    ontology-se-cbam-cn:cn_code "73030010" ;
-    ontology-se-cbam-cn:hs6_code "730300" ;
-    ontology-se-cbam-cbam-goods:belongsToCategory se-cbam-cbam-goods:AggregatedGoodsCategory_COCBA2023010120231231_4 .
-
-se-cbam-cn:CN_73181100 a ontology-se-cbam-cn:731811000080,
-        ontology-se-cbam-cn:CN ;
-    rdfs:label "-- Coach screws" ;
-    rdfs:comment "Coach screws of iron or steel" ;
-    ontology-se-cbam-cn:cn_code "73181100" ;
-    ontology-se-cbam-cn:hs6_code "731811" ;
-    ontology-se-cbam-cbam-goods:belongsToCategory se-cbam-cbam-goods:AggregatedGoodsCategory_COCBA2023010120231231_3 .
-
 se-cbam-electricity-determination:Electricity_Determination_CNABC2023010120231231_1 a ontology-se-cbam-electricity-determination:Electricity_Determination ;
     ontology-se-cbam-electricity-determination:code "Mix" ;
     ontology-se-cbam-cbamreport:total_Embedded_Emissions_of_Electricity_Imported 0.3455925 .
@@ -641,22 +440,6 @@ se-cbam-electricity-determination:Electricity_Determination_CNABC202301012023123
     ontology-se-cbam-cbamreport:total_Embedded_Emissions_of_Electricity_Imported 0.3455925 .
 
 se-cbam-electricity-determination:Electricity_Determination_CNABC2023010120231231_4 a ontology-se-cbam-electricity-determination:Electricity_Determination ;
-    ontology-se-cbam-electricity-determination:code "Mix" ;
-    ontology-se-cbam-cbamreport:total_Embedded_Emissions_of_Electricity_Imported 0.3455925 .
-
-se-cbam-electricity-determination:Electricity_Determination_COCBA2023010120231231_1 a ontology-se-cbam-electricity-determination:Electricity_Determination ;
-    ontology-se-cbam-electricity-determination:code "Mix" ;
-    ontology-se-cbam-cbamreport:total_Embedded_Emissions_of_Electricity_Imported 0.276474 .
-
-se-cbam-electricity-determination:Electricity_Determination_COCBA2023010120231231_2 a ontology-se-cbam-electricity-determination:Electricity_Determination ;
-    ontology-se-cbam-electricity-determination:code "Mix" ;
-    ontology-se-cbam-cbamreport:total_Embedded_Emissions_of_Electricity_Imported 0.276474 .
-
-se-cbam-electricity-determination:Electricity_Determination_COCBA2023010120231231_3 a ontology-se-cbam-electricity-determination:Electricity_Determination ;
-    ontology-se-cbam-electricity-determination:code "Mix" ;
-    ontology-se-cbam-cbamreport:total_Embedded_Emissions_of_Electricity_Imported 0.3455925 .
-
-se-cbam-electricity-determination:Electricity_Determination_COCBA2023010120231231_4 a ontology-se-cbam-electricity-determination:Electricity_Determination ;
     ontology-se-cbam-electricity-determination:code "Mix" ;
     ontology-se-cbam-cbamreport:total_Embedded_Emissions_of_Electricity_Imported 0.3455925 .
 
@@ -676,14 +459,6 @@ se-cbam-instrument:Instrument_CNABC2023010120231231_3 a ontology-se-cbam-instrum
 
 se-cbam-instrument:Instrument_CNABC2023010120231231_4 a ontology-se-cbam-instrument:Instrument .
 
-se-cbam-instrument:Instrument_COCBA2023010120231231_1 a ontology-se-cbam-instrument:Instrument .
-
-se-cbam-instrument:Instrument_COCBA2023010120231231_2 a ontology-se-cbam-instrument:Instrument .
-
-se-cbam-instrument:Instrument_COCBA2023010120231231_3 a ontology-se-cbam-instrument:Instrument .
-
-se-cbam-instrument:Instrument_COCBA2023010120231231_4 a ontology-se-cbam-instrument:Instrument .
-
 se-cbam-instrument:Instrument_TRABC2023010120231231_1 a ontology-se-cbam-instrument:Instrument .
 
 se-cbam-instrument:Instrument_TWXYZ2023010120231231_1 a ontology-se-cbam-instrument:Instrument .
@@ -701,22 +476,6 @@ se-cbam-production-method:CNABC2023010120231231_3 a ontology-se-cbam-production-
     ontology-se-cbam-production-method:code "Bubble approach" .
 
 se-cbam-production-method:CNABC2023010120231231_4 a ontology-se-cbam-production-method:Production_Method ;
-    rdfs:label "Bubble approach" ;
-    ontology-se-cbam-production-method:code "Bubble approach" .
-
-se-cbam-production-method:COCBA2023010120231231_1 a ontology-se-cbam-production-method:Production_Method ;
-    rdfs:label "Other process" ;
-    ontology-se-cbam-production-method:code "Other process" .
-
-se-cbam-production-method:COCBA2023010120231231_2 a ontology-se-cbam-production-method:Production_Method ;
-    rdfs:label "Other process" ;
-    ontology-se-cbam-production-method:code "Other process" .
-
-se-cbam-production-method:COCBA2023010120231231_3 a ontology-se-cbam-production-method:Production_Method ;
-    rdfs:label "Bubble approach" ;
-    ontology-se-cbam-production-method:code "Bubble approach" .
-
-se-cbam-production-method:COCBA2023010120231231_4 a ontology-se-cbam-production-method:Production_Method ;
     rdfs:label "Bubble approach" ;
     ontology-se-cbam-production-method:code "Bubble approach" .
 
@@ -744,22 +503,6 @@ se-cbam-cbam-goods:AggregatedGoodsCategory_CNABC2023010120231231_4 a ontology-se
         ontology-se-cbam-cbam-goods:Iron_or_steel_products ;
     rdfs:label "Iron or steel products" .
 
-se-cbam-cbam-goods:AggregatedGoodsCategory_COCBA2023010120231231_1 a ontology-se-cbam-cbam-goods:AggregatedGoodsCategory,
-        ontology-se-cbam-cbam-goods:Pig_Iron ;
-    rdfs:label "Pig iron" .
-
-se-cbam-cbam-goods:AggregatedGoodsCategory_COCBA2023010120231231_2 a ontology-se-cbam-cbam-goods:AggregatedGoodsCategory,
-        ontology-se-cbam-cbam-goods:Pig_Iron ;
-    rdfs:label "Pig iron" .
-
-se-cbam-cbam-goods:AggregatedGoodsCategory_COCBA2023010120231231_3 a ontology-se-cbam-cbam-goods:AggregatedGoodsCategory,
-        ontology-se-cbam-cbam-goods:Iron_or_steel_products ;
-    rdfs:label "Iron or steel products" .
-
-se-cbam-cbam-goods:AggregatedGoodsCategory_COCBA2023010120231231_4 a ontology-se-cbam-cbam-goods:AggregatedGoodsCategory,
-        ontology-se-cbam-cbam-goods:Iron_or_steel_products ;
-    rdfs:label "Iron or steel products" .
-
 se-cbam-cbam-goods:AggregatedGoodsCategory_TRABC2023010120231231_1 a ontology-se-cbam-cbam-goods:AggregatedGoodsCategory,
         ontology-se-cbam-cbam-goods:Cement ;
     rdfs:label "Cement" .
@@ -775,14 +518,6 @@ se-cbam-cbamreport:Address_CNABC a ontology-se-cbam-cbamreport:Address ;
     ontology-se-cbam-cbamreport:hasPoBox "XYZ" ;
     ontology-se-cbam-cbamreport:hasPostCode "123456" ;
     ontology-se-cbam-cbamreport:hasStreet "Blastfurnace street" .
-
-se-cbam-cbamreport:Address_COCBA a ontology-se-cbam-cbamreport:Address ;
-    ontology-se-cbam-cbamreport:hasCity "Another City" ;
-    ontology-se-cbam-cbamreport:hasCountry geo:3686110 ;
-    ontology-se-cbam-cbamreport:hasNumber "21" ;
-    ontology-se-cbam-cbamreport:hasPoBox "YXZ" ;
-    ontology-se-cbam-cbamreport:hasPostCode "43164" ;
-    ontology-se-cbam-cbamreport:hasStreet "Steel Street" .
 
 se-cbam-cbamreport:Address_TRABC a ontology-se-cbam-cbamreport:Address ;
     ontology-se-cbam-cbamreport:hasCity "Example City" ;
@@ -824,30 +559,6 @@ se-cbam-cbamreport:CarbonEmissionsCovered_CNABC2023010120231231_4 a ontology-se-
     ontology-se-cbam-cbamreport:embeddedEmissionsCoveredByCarbonPrice 0.0 ;
     ontology-se-cbam-cbamreport:typeOfMeasurementUnitForEmissions "tCO2e/t" .
 
-se-cbam-cbamreport:CarbonEmissionsCovered_COCBA2023010120231231_1 a ontology-se-cbam-cbamreport:CarbonEmissions,
-        ontology-se-cbam-cbamreport:CarbonEmissionsCovered ;
-    ontology-se-cbam-cbamreport:amountOfCarbonPriceDue 50.0 ;
-    ontology-se-cbam-cbamreport:embeddedEmissionsCoveredByCarbonPrice 0.0 ;
-    ontology-se-cbam-cbamreport:typeOfMeasurementUnitForEmissions "tCO2e/t" .
-
-se-cbam-cbamreport:CarbonEmissionsCovered_COCBA2023010120231231_2 a ontology-se-cbam-cbamreport:CarbonEmissions,
-        ontology-se-cbam-cbamreport:CarbonEmissionsCovered ;
-    ontology-se-cbam-cbamreport:amountOfCarbonPriceDue 30.0 ;
-    ontology-se-cbam-cbamreport:embeddedEmissionsCoveredByCarbonPrice 0.0 ;
-    ontology-se-cbam-cbamreport:typeOfMeasurementUnitForEmissions "tCO2e/t" .
-
-se-cbam-cbamreport:CarbonEmissionsCovered_COCBA2023010120231231_3 a ontology-se-cbam-cbamreport:CarbonEmissions,
-        ontology-se-cbam-cbamreport:CarbonEmissionsCovered ;
-    ontology-se-cbam-cbamreport:amountOfCarbonPriceDue 45.0 ;
-    ontology-se-cbam-cbamreport:embeddedEmissionsCoveredByCarbonPrice 0.0 ;
-    ontology-se-cbam-cbamreport:typeOfMeasurementUnitForEmissions "tCO2e/t" .
-
-se-cbam-cbamreport:CarbonEmissionsCovered_COCBA2023010120231231_4 a ontology-se-cbam-cbamreport:CarbonEmissions,
-        ontology-se-cbam-cbamreport:CarbonEmissionsCovered ;
-    ontology-se-cbam-cbamreport:amountOfCarbonPriceDue 60.0 ;
-    ontology-se-cbam-cbamreport:embeddedEmissionsCoveredByCarbonPrice 0.0 ;
-    ontology-se-cbam-cbamreport:typeOfMeasurementUnitForEmissions "tCO2e/t" .
-
 se-cbam-cbamreport:CarbonEmissionsCovered_TRABC2023010120231231_1 a ontology-se-cbam-cbamreport:CarbonEmissions,
         ontology-se-cbam-cbamreport:CarbonEmissionsCovered ;
     ontology-se-cbam-cbamreport:amountOfCarbonPriceDue 50.0 ;
@@ -874,22 +585,6 @@ se-cbam-cbamreport:CarbonPrice_CNABC2023010120231231_3 a ontology-se-cbam-cbamre
 
 se-cbam-cbamreport:CarbonPrice_CNABC2023010120231231_4 a ontology-se-cbam-cbamreport:CarbonPrice ;
     ontology-se-cbam-cbamreport:resultEffectiveCPDue 15.0 ;
-    ontology-se-cbam_emissionsqualifyingparameters:description "Mass % nitrogen bound in other (organic) forms, related to fertiliser or fertiliser solution as is, NOT on dry basis)" .
-
-se-cbam-cbamreport:CarbonPrice_COCBA2023010120231231_1 a ontology-se-cbam-cbamreport:CarbonPrice ;
-    ontology-se-cbam-cbamreport:resultEffectiveCPDue 25.0 ;
-    ontology-se-cbam_emissionsqualifyingparameters:description "Mass % nitrogen bound in other (organic) forms, related to fertiliser or fertiliser solution as is, NOT on dry basis)" .
-
-se-cbam-cbamreport:CarbonPrice_COCBA2023010120231231_2 a ontology-se-cbam-cbamreport:CarbonPrice ;
-    ontology-se-cbam-cbamreport:resultEffectiveCPDue 20.0 ;
-    ontology-se-cbam_emissionsqualifyingparameters:description "Mass % nitrogen bound in other (organic) forms, related to fertiliser or fertiliser solution as is, NOT on dry basis)" .
-
-se-cbam-cbamreport:CarbonPrice_COCBA2023010120231231_3 a ontology-se-cbam-cbamreport:CarbonPrice ;
-    ontology-se-cbam-cbamreport:resultEffectiveCPDue 20.0 ;
-    ontology-se-cbam_emissionsqualifyingparameters:description "Mass % nitrogen bound in other (organic) forms, related to fertiliser or fertiliser solution as is, NOT on dry basis)" .
-
-se-cbam-cbamreport:CarbonPrice_COCBA2023010120231231_4 a ontology-se-cbam-cbamreport:CarbonPrice ;
-    ontology-se-cbam-cbamreport:resultEffectiveCPDue 45.0 ;
     ontology-se-cbam_emissionsqualifyingparameters:description "Mass % nitrogen bound in other (organic) forms, related to fertiliser or fertiliser solution as is, NOT on dry basis)" .
 
 se-cbam-cbamreport:CarbonPrice_TRABC2023010120231231_1 a ontology-se-cbam-cbamreport:CarbonPrice ;
@@ -932,38 +627,6 @@ se-cbam-cbamreport:GreenHouseGasEmissions_CNABC2023010120231231_4 a ontology-se-
     ontology-se-cbam-cbamreport:total_Direct_Indirect_Embedded_Emission 1.74253004705787 ;
     ontology-se-cbam-cbamreport:typeOfMeasurementUnitForEmissions "EMU1" .
 
-se-cbam-cbamreport:GreenHouseGasEmissions_COCBA2023010120231231_1 a ontology-se-cbam-cbamreport:GreenHouseGasEmissions ;
-    ontology-se-cbam-cbamreport:DirectEmbeddedEmissions 1.1666666666666667 ;
-    ontology-se-cbam-cbamreport:IndirectEmbeddedEmissions 0.16284318599999997 ;
-    ontology-se-cbam-cbamreport:emissionsUnit "tCO2e/t" ;
-    ontology-se-cbam-cbamreport:shareOfEmissionsByDefaultValue 0.0 ;
-    ontology-se-cbam-cbamreport:total_Direct_Indirect_Embedded_Emission 1.3295098526666667 ;
-    ontology-se-cbam-cbamreport:typeOfMeasurementUnitForEmissions "EMU1" .
-
-se-cbam-cbamreport:GreenHouseGasEmissions_COCBA2023010120231231_2 a ontology-se-cbam-cbamreport:GreenHouseGasEmissions ;
-    ontology-se-cbam-cbamreport:DirectEmbeddedEmissions 1.1666666666666667 ;
-    ontology-se-cbam-cbamreport:IndirectEmbeddedEmissions 0.16284318599999997 ;
-    ontology-se-cbam-cbamreport:emissionsUnit "tCO2e/t" ;
-    ontology-se-cbam-cbamreport:shareOfEmissionsByDefaultValue 0.0 ;
-    ontology-se-cbam-cbamreport:total_Direct_Indirect_Embedded_Emission 1.3295098526666667 ;
-    ontology-se-cbam-cbamreport:typeOfMeasurementUnitForEmissions "EMU1" .
-
-se-cbam-cbamreport:GreenHouseGasEmissions_COCBA2023010120231231_3 a ontology-se-cbam-cbamreport:GreenHouseGasEmissions ;
-    ontology-se-cbam-cbamreport:DirectEmbeddedEmissions 1.5389760645578654 ;
-    ontology-se-cbam-cbamreport:IndirectEmbeddedEmissions 0.20355398249999998 ;
-    ontology-se-cbam-cbamreport:emissionsUnit "tCO2e/t" ;
-    ontology-se-cbam-cbamreport:shareOfEmissionsByDefaultValue 0.0 ;
-    ontology-se-cbam-cbamreport:total_Direct_Indirect_Embedded_Emission 1.7425300470578653 ;
-    ontology-se-cbam-cbamreport:typeOfMeasurementUnitForEmissions "EMU1" .
-
-se-cbam-cbamreport:GreenHouseGasEmissions_COCBA2023010120231231_4 a ontology-se-cbam-cbamreport:GreenHouseGasEmissions ;
-    ontology-se-cbam-cbamreport:DirectEmbeddedEmissions 1.5389760645578654 ;
-    ontology-se-cbam-cbamreport:IndirectEmbeddedEmissions 0.20355398249999998 ;
-    ontology-se-cbam-cbamreport:emissionsUnit "tCO2e/t" ;
-    ontology-se-cbam-cbamreport:shareOfEmissionsByDefaultValue 0.0 ;
-    ontology-se-cbam-cbamreport:total_Direct_Indirect_Embedded_Emission 1.7425300470578653 ;
-    ontology-se-cbam-cbamreport:typeOfMeasurementUnitForEmissions "EMU1" .
-
 se-cbam-cbamreport:GreenHouseGasEmissions_TRABC2023010120231231_1 a ontology-se-cbam-cbamreport:GreenHouseGasEmissions ;
     ontology-se-cbam-cbamreport:DirectEmbeddedEmissions 0.7852147410358565 ;
     ontology-se-cbam-cbamreport:IndirectEmbeddedEmissions 0.12224275 ;
@@ -1000,26 +663,6 @@ se-cbam-cbamreport:Rebate_CNABC2023010120231231_4 a ontology-se-cbam-cbamreport:
     ontology-se-cbam-cbamreport:quantityCoveredByRebate 35.0 ;
     ontology-se-cbam-cbamreport:typeOfMeasurementUnitForEmissions "tCO2e/t" .
 
-se-cbam-cbamreport:Rebate_COCBA2023010120231231_1 a ontology-se-cbam-cbamreport:Rebate ;
-    ontology-se-cbam-cbamreport:embeddedEmissionsCoveredByRebate 0.0 ;
-    ontology-se-cbam-cbamreport:quantityCoveredByRebate 25.0 ;
-    ontology-se-cbam-cbamreport:typeOfMeasurementUnitForEmissions "tCO2e/t" .
-
-se-cbam-cbamreport:Rebate_COCBA2023010120231231_2 a ontology-se-cbam-cbamreport:Rebate ;
-    ontology-se-cbam-cbamreport:embeddedEmissionsCoveredByRebate 0.0 ;
-    ontology-se-cbam-cbamreport:quantityCoveredByRebate 10.0 ;
-    ontology-se-cbam-cbamreport:typeOfMeasurementUnitForEmissions "tCO2e/t" .
-
-se-cbam-cbamreport:Rebate_COCBA2023010120231231_3 a ontology-se-cbam-cbamreport:Rebate ;
-    ontology-se-cbam-cbamreport:embeddedEmissionsCoveredByRebate 0.0 ;
-    ontology-se-cbam-cbamreport:quantityCoveredByRebate 25.0 ;
-    ontology-se-cbam-cbamreport:typeOfMeasurementUnitForEmissions "tCO2e/t" .
-
-se-cbam-cbamreport:Rebate_COCBA2023010120231231_4 a ontology-se-cbam-cbamreport:Rebate ;
-    ontology-se-cbam-cbamreport:embeddedEmissionsCoveredByRebate 0.0 ;
-    ontology-se-cbam-cbamreport:quantityCoveredByRebate 15.0 ;
-    ontology-se-cbam-cbamreport:typeOfMeasurementUnitForEmissions "tCO2e/t" .
-
 se-cbam-cbamreport:Rebate_TRABC2023010120231231_1 a ontology-se-cbam-cbamreport:Rebate ;
     ontology-se-cbam-cbamreport:embeddedEmissionsCoveredByRebate 0.0 ;
     ontology-se-cbam-cbamreport:quantityCoveredByRebate 20.0 ;
@@ -1032,11 +675,13 @@ se-cbam-cbamreport:Rebate_TWXYZ2023010120231231_1 a ontology-se-cbam-cbamreport:
 
 se-cbam-cbamreport:Representative_CNABC a ontology-se-cbam-cbamreport:Representative .
 
-se-cbam-cbamreport:Representative_COCBA a ontology-se-cbam-cbamreport:Representative .
-
 se-cbam-cbamreport:Representative_TRABC a ontology-se-cbam-cbamreport:Representative .
 
 se-cbam-cbamreport:Representative_TWXYZ a ontology-se-cbam-cbamreport:Representative .
+
+se-cbam-cbamreport:economic_activity_Iron%20%26%20steel%20production a ontology-se-cbam-cbamreport:EconomicActivity ;
+    rdfs:label "Iron & steel production" ;
+    foaf:name "Iron & steel production" .
 
 se-cbam-cbamreport:steelMill_CNABC2023010120231231_1 a ontology-se-cbam-cbamreport:SteelMill ;
     ontology-se-cbam-cbamreport:identificationnumberOfTheSpecificSteelMill "623108" .
@@ -1048,18 +693,6 @@ se-cbam-cbamreport:steelMill_CNABC2023010120231231_3 a ontology-se-cbam-cbamrepo
     ontology-se-cbam-cbamreport:identificationnumberOfTheSpecificSteelMill "623108" .
 
 se-cbam-cbamreport:steelMill_CNABC2023010120231231_4 a ontology-se-cbam-cbamreport:SteelMill ;
-    ontology-se-cbam-cbamreport:identificationnumberOfTheSpecificSteelMill "623108" .
-
-se-cbam-cbamreport:steelMill_COCBA2023010120231231_1 a ontology-se-cbam-cbamreport:SteelMill ;
-    ontology-se-cbam-cbamreport:identificationnumberOfTheSpecificSteelMill "623108" .
-
-se-cbam-cbamreport:steelMill_COCBA2023010120231231_2 a ontology-se-cbam-cbamreport:SteelMill ;
-    ontology-se-cbam-cbamreport:identificationnumberOfTheSpecificSteelMill "623108" .
-
-se-cbam-cbamreport:steelMill_COCBA2023010120231231_3 a ontology-se-cbam-cbamreport:SteelMill ;
-    ontology-se-cbam-cbamreport:identificationnumberOfTheSpecificSteelMill "623108" .
-
-se-cbam-cbamreport:steelMill_COCBA2023010120231231_4 a ontology-se-cbam-cbamreport:SteelMill ;
     ontology-se-cbam-cbamreport:identificationnumberOfTheSpecificSteelMill "623108" .
 
 se-cbam-cbamreport:steelMill_TRABC2023010120231231_1 a ontology-se-cbam-cbamreport:SteelMill .
@@ -1091,38 +724,6 @@ se-cbam-emissionsqualifyingparameters:Aluminium_pre-consumer_scrap_CNABC20230101
     ontology-se-cbam_emissionsqualifyingparameters:typeOfParameterValue "PERCENTAGE" .
 
 se-cbam-emissionsqualifyingparameters:Aluminium_pre-consumer_scrap_CNABC2023010120231231_4 a ontology-se-cbam_emissionsqualifyingparameters:Aluminium_pre-consumer_scrap,
-        ontology-se-cbam_emissionsqualifyingparameters:EmissionParameter ;
-    rdfs:label "Aluminium_pre-consumer_scrap" ;
-    ontology-se-cbam_emissionsqualifyingparameters:code "QPD22" ;
-    ontology-se-cbam_emissionsqualifyingparameters:description "% of scrap used that is pre-consumer scrap" ;
-    ontology-se-cbam_emissionsqualifyingparameters:typeOfEmissionValue "DIRECT" ;
-    ontology-se-cbam_emissionsqualifyingparameters:typeOfParameterValue "PERCENTAGE" .
-
-se-cbam-emissionsqualifyingparameters:Aluminium_pre-consumer_scrap_COCBA2023010120231231_1 a ontology-se-cbam_emissionsqualifyingparameters:Aluminium_pre-consumer_scrap,
-        ontology-se-cbam_emissionsqualifyingparameters:EmissionParameter ;
-    rdfs:label "Aluminium_pre-consumer_scrap" ;
-    ontology-se-cbam_emissionsqualifyingparameters:code "QPD22" ;
-    ontology-se-cbam_emissionsqualifyingparameters:description "% of scrap used that is pre-consumer scrap" ;
-    ontology-se-cbam_emissionsqualifyingparameters:typeOfEmissionValue "DIRECT" ;
-    ontology-se-cbam_emissionsqualifyingparameters:typeOfParameterValue "PERCENTAGE" .
-
-se-cbam-emissionsqualifyingparameters:Aluminium_pre-consumer_scrap_COCBA2023010120231231_2 a ontology-se-cbam_emissionsqualifyingparameters:Aluminium_pre-consumer_scrap,
-        ontology-se-cbam_emissionsqualifyingparameters:EmissionParameter ;
-    rdfs:label "Aluminium_pre-consumer_scrap" ;
-    ontology-se-cbam_emissionsqualifyingparameters:code "QPD22" ;
-    ontology-se-cbam_emissionsqualifyingparameters:description "% of scrap used that is pre-consumer scrap" ;
-    ontology-se-cbam_emissionsqualifyingparameters:typeOfEmissionValue "DIRECT" ;
-    ontology-se-cbam_emissionsqualifyingparameters:typeOfParameterValue "PERCENTAGE" .
-
-se-cbam-emissionsqualifyingparameters:Aluminium_pre-consumer_scrap_COCBA2023010120231231_3 a ontology-se-cbam_emissionsqualifyingparameters:Aluminium_pre-consumer_scrap,
-        ontology-se-cbam_emissionsqualifyingparameters:EmissionParameter ;
-    rdfs:label "Aluminium_pre-consumer_scrap" ;
-    ontology-se-cbam_emissionsqualifyingparameters:code "QPD22" ;
-    ontology-se-cbam_emissionsqualifyingparameters:description "% of scrap used that is pre-consumer scrap" ;
-    ontology-se-cbam_emissionsqualifyingparameters:typeOfEmissionValue "DIRECT" ;
-    ontology-se-cbam_emissionsqualifyingparameters:typeOfParameterValue "PERCENTAGE" .
-
-se-cbam-emissionsqualifyingparameters:Aluminium_pre-consumer_scrap_COCBA2023010120231231_4 a ontology-se-cbam_emissionsqualifyingparameters:Aluminium_pre-consumer_scrap,
         ontology-se-cbam_emissionsqualifyingparameters:EmissionParameter ;
     rdfs:label "Aluminium_pre-consumer_scrap" ;
     ontology-se-cbam_emissionsqualifyingparameters:code "QPD22" ;
@@ -1178,38 +779,6 @@ se-cbam-emissionsqualifyingparameters:Aluminium_scrap_usage_CNABC202301012023123
     ontology-se-cbam_emissionsqualifyingparameters:typeOfEmissionValue "DIRECT" ;
     ontology-se-cbam_emissionsqualifyingparameters:typeOfParameterValue "NUMERIC" .
 
-se-cbam-emissionsqualifyingparameters:Aluminium_scrap_usage_COCBA2023010120231231_1 a ontology-se-cbam_emissionsqualifyingparameters:Aluminium_scrap_usage,
-        ontology-se-cbam_emissionsqualifyingparameters:EmissionParameter ;
-    rdfs:label "Aluminium_scrap_usage" ;
-    ontology-se-cbam_emissionsqualifyingparameters:code "QPD21" ;
-    ontology-se-cbam_emissionsqualifyingparameters:description "Tonnes scrap used for producing 1 t of the product (total scrap including post-consumer scrap)" ;
-    ontology-se-cbam_emissionsqualifyingparameters:typeOfEmissionValue "DIRECT" ;
-    ontology-se-cbam_emissionsqualifyingparameters:typeOfParameterValue "NUMERIC" .
-
-se-cbam-emissionsqualifyingparameters:Aluminium_scrap_usage_COCBA2023010120231231_2 a ontology-se-cbam_emissionsqualifyingparameters:Aluminium_scrap_usage,
-        ontology-se-cbam_emissionsqualifyingparameters:EmissionParameter ;
-    rdfs:label "Aluminium_scrap_usage" ;
-    ontology-se-cbam_emissionsqualifyingparameters:code "QPD21" ;
-    ontology-se-cbam_emissionsqualifyingparameters:description "Tonnes scrap used for producing 1 t of the product (total scrap including post-consumer scrap)" ;
-    ontology-se-cbam_emissionsqualifyingparameters:typeOfEmissionValue "DIRECT" ;
-    ontology-se-cbam_emissionsqualifyingparameters:typeOfParameterValue "NUMERIC" .
-
-se-cbam-emissionsqualifyingparameters:Aluminium_scrap_usage_COCBA2023010120231231_3 a ontology-se-cbam_emissionsqualifyingparameters:Aluminium_scrap_usage,
-        ontology-se-cbam_emissionsqualifyingparameters:EmissionParameter ;
-    rdfs:label "Aluminium_scrap_usage" ;
-    ontology-se-cbam_emissionsqualifyingparameters:code "QPD21" ;
-    ontology-se-cbam_emissionsqualifyingparameters:description "Tonnes scrap used for producing 1 t of the product (total scrap including post-consumer scrap)" ;
-    ontology-se-cbam_emissionsqualifyingparameters:typeOfEmissionValue "DIRECT" ;
-    ontology-se-cbam_emissionsqualifyingparameters:typeOfParameterValue "NUMERIC" .
-
-se-cbam-emissionsqualifyingparameters:Aluminium_scrap_usage_COCBA2023010120231231_4 a ontology-se-cbam_emissionsqualifyingparameters:Aluminium_scrap_usage,
-        ontology-se-cbam_emissionsqualifyingparameters:EmissionParameter ;
-    rdfs:label "Aluminium_scrap_usage" ;
-    ontology-se-cbam_emissionsqualifyingparameters:code "QPD21" ;
-    ontology-se-cbam_emissionsqualifyingparameters:description "Tonnes scrap used for producing 1 t of the product (total scrap including post-consumer scrap)" ;
-    ontology-se-cbam_emissionsqualifyingparameters:typeOfEmissionValue "DIRECT" ;
-    ontology-se-cbam_emissionsqualifyingparameters:typeOfParameterValue "NUMERIC" .
-
 se-cbam-emissionsqualifyingparameters:Aluminium_scrap_usage_TRABC2023010120231231_1 a ontology-se-cbam_emissionsqualifyingparameters:Aluminium_scrap_usage,
         ontology-se-cbam_emissionsqualifyingparameters:EmissionParameter ;
     rdfs:label "Aluminium_scrap_usage" ;
@@ -1251,38 +820,6 @@ se-cbam-emissionsqualifyingparameters:Ammonia_concentration_CNABC202301012023123
     ontology-se-cbam_emissionsqualifyingparameters:typeOfParameterValue "PERCENTAGE" .
 
 se-cbam-emissionsqualifyingparameters:Ammonia_concentration_CNABC2023010120231231_4 a ontology-se-cbam_emissionsqualifyingparameters:Ammonia_concentration,
-        ontology-se-cbam_emissionsqualifyingparameters:EmissionParameter ;
-    rdfs:label "Ammonia_concentration" ;
-    ontology-se-cbam_emissionsqualifyingparameters:code "QPD05" ;
-    ontology-se-cbam_emissionsqualifyingparameters:description "Ammonia concentration, expressed as mass %, if hydrous solution. 100%, if anhydrous ammonia." ;
-    ontology-se-cbam_emissionsqualifyingparameters:typeOfEmissionValue "DIRECT" ;
-    ontology-se-cbam_emissionsqualifyingparameters:typeOfParameterValue "PERCENTAGE" .
-
-se-cbam-emissionsqualifyingparameters:Ammonia_concentration_COCBA2023010120231231_1 a ontology-se-cbam_emissionsqualifyingparameters:Ammonia_concentration,
-        ontology-se-cbam_emissionsqualifyingparameters:EmissionParameter ;
-    rdfs:label "Ammonia_concentration" ;
-    ontology-se-cbam_emissionsqualifyingparameters:code "QPD05" ;
-    ontology-se-cbam_emissionsqualifyingparameters:description "Ammonia concentration, expressed as mass %, if hydrous solution. 100%, if anhydrous ammonia." ;
-    ontology-se-cbam_emissionsqualifyingparameters:typeOfEmissionValue "DIRECT" ;
-    ontology-se-cbam_emissionsqualifyingparameters:typeOfParameterValue "PERCENTAGE" .
-
-se-cbam-emissionsqualifyingparameters:Ammonia_concentration_COCBA2023010120231231_2 a ontology-se-cbam_emissionsqualifyingparameters:Ammonia_concentration,
-        ontology-se-cbam_emissionsqualifyingparameters:EmissionParameter ;
-    rdfs:label "Ammonia_concentration" ;
-    ontology-se-cbam_emissionsqualifyingparameters:code "QPD05" ;
-    ontology-se-cbam_emissionsqualifyingparameters:description "Ammonia concentration, expressed as mass %, if hydrous solution. 100%, if anhydrous ammonia." ;
-    ontology-se-cbam_emissionsqualifyingparameters:typeOfEmissionValue "DIRECT" ;
-    ontology-se-cbam_emissionsqualifyingparameters:typeOfParameterValue "PERCENTAGE" .
-
-se-cbam-emissionsqualifyingparameters:Ammonia_concentration_COCBA2023010120231231_3 a ontology-se-cbam_emissionsqualifyingparameters:Ammonia_concentration,
-        ontology-se-cbam_emissionsqualifyingparameters:EmissionParameter ;
-    rdfs:label "Ammonia_concentration" ;
-    ontology-se-cbam_emissionsqualifyingparameters:code "QPD05" ;
-    ontology-se-cbam_emissionsqualifyingparameters:description "Ammonia concentration, expressed as mass %, if hydrous solution. 100%, if anhydrous ammonia." ;
-    ontology-se-cbam_emissionsqualifyingparameters:typeOfEmissionValue "DIRECT" ;
-    ontology-se-cbam_emissionsqualifyingparameters:typeOfParameterValue "PERCENTAGE" .
-
-se-cbam-emissionsqualifyingparameters:Ammonia_concentration_COCBA2023010120231231_4 a ontology-se-cbam_emissionsqualifyingparameters:Ammonia_concentration,
         ontology-se-cbam_emissionsqualifyingparameters:EmissionParameter ;
     rdfs:label "Ammonia_concentration" ;
     ontology-se-cbam_emissionsqualifyingparameters:code "QPD05" ;
@@ -1338,38 +875,6 @@ se-cbam-emissionsqualifyingparameters:Ammonium_Nitrogen_content_CNABC20230101202
     ontology-se-cbam_emissionsqualifyingparameters:typeOfEmissionValue "DIRECT" ;
     ontology-se-cbam_emissionsqualifyingparameters:typeOfParameterValue "PERCENTAGE" .
 
-se-cbam-emissionsqualifyingparameters:Ammonium_Nitrogen_content_COCBA2023010120231231_1 a ontology-se-cbam_emissionsqualifyingparameters:Ammonium_Nitrogen_content,
-        ontology-se-cbam_emissionsqualifyingparameters:EmissionParameter ;
-    rdfs:label "Ammonium_Nitrogen_content" ;
-    ontology-se-cbam_emissionsqualifyingparameters:code "QPD07" ;
-    ontology-se-cbam_emissionsqualifyingparameters:description "Mass % nitrogen bound in ammonium (NH4+), related to fertiliser or fertiliser solution as is, NOT on dry basis)" ;
-    ontology-se-cbam_emissionsqualifyingparameters:typeOfEmissionValue "DIRECT" ;
-    ontology-se-cbam_emissionsqualifyingparameters:typeOfParameterValue "PERCENTAGE" .
-
-se-cbam-emissionsqualifyingparameters:Ammonium_Nitrogen_content_COCBA2023010120231231_2 a ontology-se-cbam_emissionsqualifyingparameters:Ammonium_Nitrogen_content,
-        ontology-se-cbam_emissionsqualifyingparameters:EmissionParameter ;
-    rdfs:label "Ammonium_Nitrogen_content" ;
-    ontology-se-cbam_emissionsqualifyingparameters:code "QPD07" ;
-    ontology-se-cbam_emissionsqualifyingparameters:description "Mass % nitrogen bound in ammonium (NH4+), related to fertiliser or fertiliser solution as is, NOT on dry basis)" ;
-    ontology-se-cbam_emissionsqualifyingparameters:typeOfEmissionValue "DIRECT" ;
-    ontology-se-cbam_emissionsqualifyingparameters:typeOfParameterValue "PERCENTAGE" .
-
-se-cbam-emissionsqualifyingparameters:Ammonium_Nitrogen_content_COCBA2023010120231231_3 a ontology-se-cbam_emissionsqualifyingparameters:Ammonium_Nitrogen_content,
-        ontology-se-cbam_emissionsqualifyingparameters:EmissionParameter ;
-    rdfs:label "Ammonium_Nitrogen_content" ;
-    ontology-se-cbam_emissionsqualifyingparameters:code "QPD07" ;
-    ontology-se-cbam_emissionsqualifyingparameters:description "Mass % nitrogen bound in ammonium (NH4+), related to fertiliser or fertiliser solution as is, NOT on dry basis)" ;
-    ontology-se-cbam_emissionsqualifyingparameters:typeOfEmissionValue "DIRECT" ;
-    ontology-se-cbam_emissionsqualifyingparameters:typeOfParameterValue "PERCENTAGE" .
-
-se-cbam-emissionsqualifyingparameters:Ammonium_Nitrogen_content_COCBA2023010120231231_4 a ontology-se-cbam_emissionsqualifyingparameters:Ammonium_Nitrogen_content,
-        ontology-se-cbam_emissionsqualifyingparameters:EmissionParameter ;
-    rdfs:label "Ammonium_Nitrogen_content" ;
-    ontology-se-cbam_emissionsqualifyingparameters:code "QPD07" ;
-    ontology-se-cbam_emissionsqualifyingparameters:description "Mass % nitrogen bound in ammonium (NH4+), related to fertiliser or fertiliser solution as is, NOT on dry basis)" ;
-    ontology-se-cbam_emissionsqualifyingparameters:typeOfEmissionValue "DIRECT" ;
-    ontology-se-cbam_emissionsqualifyingparameters:typeOfParameterValue "PERCENTAGE" .
-
 se-cbam-emissionsqualifyingparameters:Ammonium_Nitrogen_content_TRABC2023010120231231_1 a ontology-se-cbam_emissionsqualifyingparameters:Ammonium_Nitrogen_content,
         ontology-se-cbam_emissionsqualifyingparameters:EmissionParameter ;
     rdfs:label "Ammonium_Nitrogen_content" ;
@@ -1411,38 +916,6 @@ se-cbam-emissionsqualifyingparameters:Calcination_CNABC2023010120231231_3 a onto
     ontology-se-cbam_emissionsqualifyingparameters:typeOfParameterValue "TEXT" .
 
 se-cbam-emissionsqualifyingparameters:Calcination_CNABC2023010120231231_4 a ontology-se-cbam_emissionsqualifyingparameters:Calcination,
-        ontology-se-cbam_emissionsqualifyingparameters:EmissionParameter ;
-    rdfs:label "Calcination" ;
-    ontology-se-cbam_emissionsqualifyingparameters:code "QPD01" ;
-    ontology-se-cbam_emissionsqualifyingparameters:description "Whether the clay imported is calcined or not (Possible values:\"Calcinated\", \"Not Calcinated\")" ;
-    ontology-se-cbam_emissionsqualifyingparameters:typeOfEmissionValue "DIRECT" ;
-    ontology-se-cbam_emissionsqualifyingparameters:typeOfParameterValue "TEXT" .
-
-se-cbam-emissionsqualifyingparameters:Calcination_COCBA2023010120231231_1 a ontology-se-cbam_emissionsqualifyingparameters:Calcination,
-        ontology-se-cbam_emissionsqualifyingparameters:EmissionParameter ;
-    rdfs:label "Calcination" ;
-    ontology-se-cbam_emissionsqualifyingparameters:code "QPD01" ;
-    ontology-se-cbam_emissionsqualifyingparameters:description "Whether the clay imported is calcined or not (Possible values:\"Calcinated\", \"Not Calcinated\")" ;
-    ontology-se-cbam_emissionsqualifyingparameters:typeOfEmissionValue "DIRECT" ;
-    ontology-se-cbam_emissionsqualifyingparameters:typeOfParameterValue "TEXT" .
-
-se-cbam-emissionsqualifyingparameters:Calcination_COCBA2023010120231231_2 a ontology-se-cbam_emissionsqualifyingparameters:Calcination,
-        ontology-se-cbam_emissionsqualifyingparameters:EmissionParameter ;
-    rdfs:label "Calcination" ;
-    ontology-se-cbam_emissionsqualifyingparameters:code "QPD01" ;
-    ontology-se-cbam_emissionsqualifyingparameters:description "Whether the clay imported is calcined or not (Possible values:\"Calcinated\", \"Not Calcinated\")" ;
-    ontology-se-cbam_emissionsqualifyingparameters:typeOfEmissionValue "DIRECT" ;
-    ontology-se-cbam_emissionsqualifyingparameters:typeOfParameterValue "TEXT" .
-
-se-cbam-emissionsqualifyingparameters:Calcination_COCBA2023010120231231_3 a ontology-se-cbam_emissionsqualifyingparameters:Calcination,
-        ontology-se-cbam_emissionsqualifyingparameters:EmissionParameter ;
-    rdfs:label "Calcination" ;
-    ontology-se-cbam_emissionsqualifyingparameters:code "QPD01" ;
-    ontology-se-cbam_emissionsqualifyingparameters:description "Whether the clay imported is calcined or not (Possible values:\"Calcinated\", \"Not Calcinated\")" ;
-    ontology-se-cbam_emissionsqualifyingparameters:typeOfEmissionValue "DIRECT" ;
-    ontology-se-cbam_emissionsqualifyingparameters:typeOfParameterValue "TEXT" .
-
-se-cbam-emissionsqualifyingparameters:Calcination_COCBA2023010120231231_4 a ontology-se-cbam_emissionsqualifyingparameters:Calcination,
         ontology-se-cbam_emissionsqualifyingparameters:EmissionParameter ;
     rdfs:label "Calcination" ;
     ontology-se-cbam_emissionsqualifyingparameters:code "QPD01" ;
@@ -1498,38 +971,6 @@ se-cbam-emissionsqualifyingparameters:Carbon_content_of_iron_or_steel_CNABC20230
     ontology-se-cbam_emissionsqualifyingparameters:typeOfEmissionValue "DIRECT" ;
     ontology-se-cbam_emissionsqualifyingparameters:typeOfParameterValue "PERCENTAGE" .
 
-se-cbam-emissionsqualifyingparameters:Carbon_content_of_iron_or_steel_COCBA2023010120231231_1 a ontology-se-cbam_emissionsqualifyingparameters:Carbon_content_of_iron_or_steel,
-        ontology-se-cbam_emissionsqualifyingparameters:EmissionParameter ;
-    rdfs:label "Carbon_content_of_iron_or_steel" ;
-    ontology-se-cbam_emissionsqualifyingparameters:code "QPD12" ;
-    ontology-se-cbam_emissionsqualifyingparameters:description "Mass % carbon contained in the iron, alloy or steel under consideration" ;
-    ontology-se-cbam_emissionsqualifyingparameters:typeOfEmissionValue "DIRECT" ;
-    ontology-se-cbam_emissionsqualifyingparameters:typeOfParameterValue "PERCENTAGE" .
-
-se-cbam-emissionsqualifyingparameters:Carbon_content_of_iron_or_steel_COCBA2023010120231231_2 a ontology-se-cbam_emissionsqualifyingparameters:Carbon_content_of_iron_or_steel,
-        ontology-se-cbam_emissionsqualifyingparameters:EmissionParameter ;
-    rdfs:label "Carbon_content_of_iron_or_steel" ;
-    ontology-se-cbam_emissionsqualifyingparameters:code "QPD12" ;
-    ontology-se-cbam_emissionsqualifyingparameters:description "Mass % carbon contained in the iron, alloy or steel under consideration" ;
-    ontology-se-cbam_emissionsqualifyingparameters:typeOfEmissionValue "DIRECT" ;
-    ontology-se-cbam_emissionsqualifyingparameters:typeOfParameterValue "PERCENTAGE" .
-
-se-cbam-emissionsqualifyingparameters:Carbon_content_of_iron_or_steel_COCBA2023010120231231_3 a ontology-se-cbam_emissionsqualifyingparameters:Carbon_content_of_iron_or_steel,
-        ontology-se-cbam_emissionsqualifyingparameters:EmissionParameter ;
-    rdfs:label "Carbon_content_of_iron_or_steel" ;
-    ontology-se-cbam_emissionsqualifyingparameters:code "QPD12" ;
-    ontology-se-cbam_emissionsqualifyingparameters:description "Mass % carbon contained in the iron, alloy or steel under consideration" ;
-    ontology-se-cbam_emissionsqualifyingparameters:typeOfEmissionValue "DIRECT" ;
-    ontology-se-cbam_emissionsqualifyingparameters:typeOfParameterValue "PERCENTAGE" .
-
-se-cbam-emissionsqualifyingparameters:Carbon_content_of_iron_or_steel_COCBA2023010120231231_4 a ontology-se-cbam_emissionsqualifyingparameters:Carbon_content_of_iron_or_steel,
-        ontology-se-cbam_emissionsqualifyingparameters:EmissionParameter ;
-    rdfs:label "Carbon_content_of_iron_or_steel" ;
-    ontology-se-cbam_emissionsqualifyingparameters:code "QPD12" ;
-    ontology-se-cbam_emissionsqualifyingparameters:description "Mass % carbon contained in the iron, alloy or steel under consideration" ;
-    ontology-se-cbam_emissionsqualifyingparameters:typeOfEmissionValue "DIRECT" ;
-    ontology-se-cbam_emissionsqualifyingparameters:typeOfParameterValue "PERCENTAGE" .
-
 se-cbam-emissionsqualifyingparameters:Carbon_content_of_iron_or_steel_TRABC2023010120231231_1 a ontology-se-cbam_emissionsqualifyingparameters:Carbon_content_of_iron_or_steel,
         ontology-se-cbam_emissionsqualifyingparameters:EmissionParameter ;
     rdfs:label "Carbon_content_of_iron_or_steel" ;
@@ -1578,38 +1019,6 @@ se-cbam-emissionsqualifyingparameters:Chromium_content_CNABC2023010120231231_4 a
     ontology-se-cbam_emissionsqualifyingparameters:typeOfEmissionValue "DIRECT" ;
     ontology-se-cbam_emissionsqualifyingparameters:typeOfParameterValue "PERCENTAGE" .
 
-se-cbam-emissionsqualifyingparameters:Chromium_content_COCBA2023010120231231_1 a ontology-se-cbam_emissionsqualifyingparameters:Chromium_content,
-        ontology-se-cbam_emissionsqualifyingparameters:EmissionParameter ;
-    rdfs:label "Chromium_content" ;
-    ontology-se-cbam_emissionsqualifyingparameters:code "QPD14" ;
-    ontology-se-cbam_emissionsqualifyingparameters:description "Mass % chromium contained in the iron, alloy or steel under consideration" ;
-    ontology-se-cbam_emissionsqualifyingparameters:typeOfEmissionValue "DIRECT" ;
-    ontology-se-cbam_emissionsqualifyingparameters:typeOfParameterValue "PERCENTAGE" .
-
-se-cbam-emissionsqualifyingparameters:Chromium_content_COCBA2023010120231231_2 a ontology-se-cbam_emissionsqualifyingparameters:Chromium_content,
-        ontology-se-cbam_emissionsqualifyingparameters:EmissionParameter ;
-    rdfs:label "Chromium_content" ;
-    ontology-se-cbam_emissionsqualifyingparameters:code "QPD14" ;
-    ontology-se-cbam_emissionsqualifyingparameters:description "Mass % chromium contained in the iron, alloy or steel under consideration" ;
-    ontology-se-cbam_emissionsqualifyingparameters:typeOfEmissionValue "DIRECT" ;
-    ontology-se-cbam_emissionsqualifyingparameters:typeOfParameterValue "PERCENTAGE" .
-
-se-cbam-emissionsqualifyingparameters:Chromium_content_COCBA2023010120231231_3 a ontology-se-cbam_emissionsqualifyingparameters:Chromium_content,
-        ontology-se-cbam_emissionsqualifyingparameters:EmissionParameter ;
-    rdfs:label "Chromium_content" ;
-    ontology-se-cbam_emissionsqualifyingparameters:code "QPD14" ;
-    ontology-se-cbam_emissionsqualifyingparameters:description "Mass % chromium contained in the iron, alloy or steel under consideration" ;
-    ontology-se-cbam_emissionsqualifyingparameters:typeOfEmissionValue "DIRECT" ;
-    ontology-se-cbam_emissionsqualifyingparameters:typeOfParameterValue "PERCENTAGE" .
-
-se-cbam-emissionsqualifyingparameters:Chromium_content_COCBA2023010120231231_4 a ontology-se-cbam_emissionsqualifyingparameters:Chromium_content,
-        ontology-se-cbam_emissionsqualifyingparameters:EmissionParameter ;
-    rdfs:label "Chromium_content" ;
-    ontology-se-cbam_emissionsqualifyingparameters:code "QPD14" ;
-    ontology-se-cbam_emissionsqualifyingparameters:description "Mass % chromium contained in the iron, alloy or steel under consideration" ;
-    ontology-se-cbam_emissionsqualifyingparameters:typeOfEmissionValue "DIRECT" ;
-    ontology-se-cbam_emissionsqualifyingparameters:typeOfParameterValue "PERCENTAGE" .
-
 se-cbam-emissionsqualifyingparameters:Chromium_content_TRABC2023010120231231_1 a ontology-se-cbam_emissionsqualifyingparameters:Chromium_content,
         ontology-se-cbam_emissionsqualifyingparameters:EmissionParameter ;
     rdfs:label "Chromium_content" ;
@@ -1651,38 +1060,6 @@ se-cbam-emissionsqualifyingparameters:Clinker_factor_CNABC2023010120231231_3 a o
     ontology-se-cbam_emissionsqualifyingparameters:typeOfParameterValue "PERCENTAGE" .
 
 se-cbam-emissionsqualifyingparameters:Clinker_factor_CNABC2023010120231231_4 a ontology-se-cbam_emissionsqualifyingparameters:Clinker_factor,
-        ontology-se-cbam_emissionsqualifyingparameters:EmissionParameter ;
-    rdfs:label "Clinker_factor" ;
-    ontology-se-cbam_emissionsqualifyingparameters:code "QPD02" ;
-    ontology-se-cbam_emissionsqualifyingparameters:description "Mass ratio of tonnes cement clinker consumed per produced tonne of cement (clinker to cement ratio expressed in per cent)." ;
-    ontology-se-cbam_emissionsqualifyingparameters:typeOfEmissionValue "DIRECT" ;
-    ontology-se-cbam_emissionsqualifyingparameters:typeOfParameterValue "PERCENTAGE" .
-
-se-cbam-emissionsqualifyingparameters:Clinker_factor_COCBA2023010120231231_1 a ontology-se-cbam_emissionsqualifyingparameters:Clinker_factor,
-        ontology-se-cbam_emissionsqualifyingparameters:EmissionParameter ;
-    rdfs:label "Clinker_factor" ;
-    ontology-se-cbam_emissionsqualifyingparameters:code "QPD02" ;
-    ontology-se-cbam_emissionsqualifyingparameters:description "Mass ratio of tonnes cement clinker consumed per produced tonne of cement (clinker to cement ratio expressed in per cent)." ;
-    ontology-se-cbam_emissionsqualifyingparameters:typeOfEmissionValue "DIRECT" ;
-    ontology-se-cbam_emissionsqualifyingparameters:typeOfParameterValue "PERCENTAGE" .
-
-se-cbam-emissionsqualifyingparameters:Clinker_factor_COCBA2023010120231231_2 a ontology-se-cbam_emissionsqualifyingparameters:Clinker_factor,
-        ontology-se-cbam_emissionsqualifyingparameters:EmissionParameter ;
-    rdfs:label "Clinker_factor" ;
-    ontology-se-cbam_emissionsqualifyingparameters:code "QPD02" ;
-    ontology-se-cbam_emissionsqualifyingparameters:description "Mass ratio of tonnes cement clinker consumed per produced tonne of cement (clinker to cement ratio expressed in per cent)." ;
-    ontology-se-cbam_emissionsqualifyingparameters:typeOfEmissionValue "DIRECT" ;
-    ontology-se-cbam_emissionsqualifyingparameters:typeOfParameterValue "PERCENTAGE" .
-
-se-cbam-emissionsqualifyingparameters:Clinker_factor_COCBA2023010120231231_3 a ontology-se-cbam_emissionsqualifyingparameters:Clinker_factor,
-        ontology-se-cbam_emissionsqualifyingparameters:EmissionParameter ;
-    rdfs:label "Clinker_factor" ;
-    ontology-se-cbam_emissionsqualifyingparameters:code "QPD02" ;
-    ontology-se-cbam_emissionsqualifyingparameters:description "Mass ratio of tonnes cement clinker consumed per produced tonne of cement (clinker to cement ratio expressed in per cent)." ;
-    ontology-se-cbam_emissionsqualifyingparameters:typeOfEmissionValue "DIRECT" ;
-    ontology-se-cbam_emissionsqualifyingparameters:typeOfParameterValue "PERCENTAGE" .
-
-se-cbam-emissionsqualifyingparameters:Clinker_factor_COCBA2023010120231231_4 a ontology-se-cbam_emissionsqualifyingparameters:Clinker_factor,
         ontology-se-cbam_emissionsqualifyingparameters:EmissionParameter ;
     rdfs:label "Clinker_factor" ;
     ontology-se-cbam_emissionsqualifyingparameters:code "QPD02" ;
@@ -1740,38 +1117,6 @@ se-cbam-emissionsqualifyingparameters:Content_of_other_alloy_elements_CNABC20230
     ontology-se-cbam_emissionsqualifyingparameters:typeOfEmissionValue "DIRECT" ;
     ontology-se-cbam_emissionsqualifyingparameters:typeOfParameterValue "PERCENTAGE" .
 
-se-cbam-emissionsqualifyingparameters:Content_of_other_alloy_elements_COCBA2023010120231231_1 a ontology-se-cbam_emissionsqualifyingparameters:Content_of_other_alloy_elements,
-        ontology-se-cbam_emissionsqualifyingparameters:EmissionParameter ;
-    rdfs:label "Content_of_other_alloy_elements" ;
-    ontology-se-cbam_emissionsqualifyingparameters:code "QPD16" ;
-    ontology-se-cbam_emissionsqualifyingparameters:description "Total mass % of all alloy elements other than C, Mn, Cr and Ni" ;
-    ontology-se-cbam_emissionsqualifyingparameters:typeOfEmissionValue "DIRECT" ;
-    ontology-se-cbam_emissionsqualifyingparameters:typeOfParameterValue "PERCENTAGE" .
-
-se-cbam-emissionsqualifyingparameters:Content_of_other_alloy_elements_COCBA2023010120231231_2 a ontology-se-cbam_emissionsqualifyingparameters:Content_of_other_alloy_elements,
-        ontology-se-cbam_emissionsqualifyingparameters:EmissionParameter ;
-    rdfs:label "Content_of_other_alloy_elements" ;
-    ontology-se-cbam_emissionsqualifyingparameters:code "QPD16" ;
-    ontology-se-cbam_emissionsqualifyingparameters:description "Total mass % of all alloy elements other than C, Mn, Cr and Ni" ;
-    ontology-se-cbam_emissionsqualifyingparameters:typeOfEmissionValue "DIRECT" ;
-    ontology-se-cbam_emissionsqualifyingparameters:typeOfParameterValue "PERCENTAGE" .
-
-se-cbam-emissionsqualifyingparameters:Content_of_other_alloy_elements_COCBA2023010120231231_3 a ontology-se-cbam_emissionsqualifyingparameters:Content_of_other_alloy_elements,
-        ontology-se-cbam_emissionsqualifyingparameters:EmissionParameter ;
-    rdfs:label "Content_of_other_alloy_elements" ;
-    ontology-se-cbam_emissionsqualifyingparameters:code "QPD16" ;
-    ontology-se-cbam_emissionsqualifyingparameters:description "Total mass % of all alloy elements other than C, Mn, Cr and Ni" ;
-    ontology-se-cbam_emissionsqualifyingparameters:typeOfEmissionValue "DIRECT" ;
-    ontology-se-cbam_emissionsqualifyingparameters:typeOfParameterValue "PERCENTAGE" .
-
-se-cbam-emissionsqualifyingparameters:Content_of_other_alloy_elements_COCBA2023010120231231_4 a ontology-se-cbam_emissionsqualifyingparameters:Content_of_other_alloy_elements,
-        ontology-se-cbam_emissionsqualifyingparameters:EmissionParameter ;
-    rdfs:label "Content_of_other_alloy_elements" ;
-    ontology-se-cbam_emissionsqualifyingparameters:code "QPD16" ;
-    ontology-se-cbam_emissionsqualifyingparameters:description "Total mass % of all alloy elements other than C, Mn, Cr and Ni" ;
-    ontology-se-cbam_emissionsqualifyingparameters:typeOfEmissionValue "DIRECT" ;
-    ontology-se-cbam_emissionsqualifyingparameters:typeOfParameterValue "PERCENTAGE" .
-
 se-cbam-emissionsqualifyingparameters:Content_of_other_alloy_elements_TRABC2023010120231231_1 a ontology-se-cbam_emissionsqualifyingparameters:Content_of_other_alloy_elements,
         ontology-se-cbam_emissionsqualifyingparameters:EmissionParameter ;
     rdfs:label "Content_of_other_alloy_elements" ;
@@ -1813,38 +1158,6 @@ se-cbam-emissionsqualifyingparameters:Manganese_content_CNABC2023010120231231_3 
     ontology-se-cbam_emissionsqualifyingparameters:typeOfParameterValue "PERCENTAGE" .
 
 se-cbam-emissionsqualifyingparameters:Manganese_content_CNABC2023010120231231_4 a ontology-se-cbam_emissionsqualifyingparameters:EmissionParameter,
-        ontology-se-cbam_emissionsqualifyingparameters:Manganese_content ;
-    rdfs:label "Manganese_content" ;
-    ontology-se-cbam_emissionsqualifyingparameters:code "QPD13" ;
-    ontology-se-cbam_emissionsqualifyingparameters:description "Mass % manganese contained in the iron, alloy or steel under consideration" ;
-    ontology-se-cbam_emissionsqualifyingparameters:typeOfEmissionValue "DIRECT" ;
-    ontology-se-cbam_emissionsqualifyingparameters:typeOfParameterValue "PERCENTAGE" .
-
-se-cbam-emissionsqualifyingparameters:Manganese_content_COCBA2023010120231231_1 a ontology-se-cbam_emissionsqualifyingparameters:EmissionParameter,
-        ontology-se-cbam_emissionsqualifyingparameters:Manganese_content ;
-    rdfs:label "Manganese_content" ;
-    ontology-se-cbam_emissionsqualifyingparameters:code "QPD13" ;
-    ontology-se-cbam_emissionsqualifyingparameters:description "Mass % manganese contained in the iron, alloy or steel under consideration" ;
-    ontology-se-cbam_emissionsqualifyingparameters:typeOfEmissionValue "DIRECT" ;
-    ontology-se-cbam_emissionsqualifyingparameters:typeOfParameterValue "PERCENTAGE" .
-
-se-cbam-emissionsqualifyingparameters:Manganese_content_COCBA2023010120231231_2 a ontology-se-cbam_emissionsqualifyingparameters:EmissionParameter,
-        ontology-se-cbam_emissionsqualifyingparameters:Manganese_content ;
-    rdfs:label "Manganese_content" ;
-    ontology-se-cbam_emissionsqualifyingparameters:code "QPD13" ;
-    ontology-se-cbam_emissionsqualifyingparameters:description "Mass % manganese contained in the iron, alloy or steel under consideration" ;
-    ontology-se-cbam_emissionsqualifyingparameters:typeOfEmissionValue "DIRECT" ;
-    ontology-se-cbam_emissionsqualifyingparameters:typeOfParameterValue "PERCENTAGE" .
-
-se-cbam-emissionsqualifyingparameters:Manganese_content_COCBA2023010120231231_3 a ontology-se-cbam_emissionsqualifyingparameters:EmissionParameter,
-        ontology-se-cbam_emissionsqualifyingparameters:Manganese_content ;
-    rdfs:label "Manganese_content" ;
-    ontology-se-cbam_emissionsqualifyingparameters:code "QPD13" ;
-    ontology-se-cbam_emissionsqualifyingparameters:description "Mass % manganese contained in the iron, alloy or steel under consideration" ;
-    ontology-se-cbam_emissionsqualifyingparameters:typeOfEmissionValue "DIRECT" ;
-    ontology-se-cbam_emissionsqualifyingparameters:typeOfParameterValue "PERCENTAGE" .
-
-se-cbam-emissionsqualifyingparameters:Manganese_content_COCBA2023010120231231_4 a ontology-se-cbam_emissionsqualifyingparameters:EmissionParameter,
         ontology-se-cbam_emissionsqualifyingparameters:Manganese_content ;
     rdfs:label "Manganese_content" ;
     ontology-se-cbam_emissionsqualifyingparameters:code "QPD13" ;
@@ -1900,38 +1213,6 @@ se-cbam-emissionsqualifyingparameters:Nickel_content_CNABC2023010120231231_4 a o
     ontology-se-cbam_emissionsqualifyingparameters:typeOfEmissionValue "DIRECT" ;
     ontology-se-cbam_emissionsqualifyingparameters:typeOfParameterValue "PERCENTAGE" .
 
-se-cbam-emissionsqualifyingparameters:Nickel_content_COCBA2023010120231231_1 a ontology-se-cbam_emissionsqualifyingparameters:EmissionParameter,
-        ontology-se-cbam_emissionsqualifyingparameters:Nickel_content ;
-    rdfs:label "Nickel_content" ;
-    ontology-se-cbam_emissionsqualifyingparameters:code "QPD15" ;
-    ontology-se-cbam_emissionsqualifyingparameters:description "Mass % nickel contained in the iron, alloy or steel under consideration" ;
-    ontology-se-cbam_emissionsqualifyingparameters:typeOfEmissionValue "DIRECT" ;
-    ontology-se-cbam_emissionsqualifyingparameters:typeOfParameterValue "PERCENTAGE" .
-
-se-cbam-emissionsqualifyingparameters:Nickel_content_COCBA2023010120231231_2 a ontology-se-cbam_emissionsqualifyingparameters:EmissionParameter,
-        ontology-se-cbam_emissionsqualifyingparameters:Nickel_content ;
-    rdfs:label "Nickel_content" ;
-    ontology-se-cbam_emissionsqualifyingparameters:code "QPD15" ;
-    ontology-se-cbam_emissionsqualifyingparameters:description "Mass % nickel contained in the iron, alloy or steel under consideration" ;
-    ontology-se-cbam_emissionsqualifyingparameters:typeOfEmissionValue "DIRECT" ;
-    ontology-se-cbam_emissionsqualifyingparameters:typeOfParameterValue "PERCENTAGE" .
-
-se-cbam-emissionsqualifyingparameters:Nickel_content_COCBA2023010120231231_3 a ontology-se-cbam_emissionsqualifyingparameters:EmissionParameter,
-        ontology-se-cbam_emissionsqualifyingparameters:Nickel_content ;
-    rdfs:label "Nickel_content" ;
-    ontology-se-cbam_emissionsqualifyingparameters:code "QPD15" ;
-    ontology-se-cbam_emissionsqualifyingparameters:description "Mass % nickel contained in the iron, alloy or steel under consideration" ;
-    ontology-se-cbam_emissionsqualifyingparameters:typeOfEmissionValue "DIRECT" ;
-    ontology-se-cbam_emissionsqualifyingparameters:typeOfParameterValue "PERCENTAGE" .
-
-se-cbam-emissionsqualifyingparameters:Nickel_content_COCBA2023010120231231_4 a ontology-se-cbam_emissionsqualifyingparameters:EmissionParameter,
-        ontology-se-cbam_emissionsqualifyingparameters:Nickel_content ;
-    rdfs:label "Nickel_content" ;
-    ontology-se-cbam_emissionsqualifyingparameters:code "QPD15" ;
-    ontology-se-cbam_emissionsqualifyingparameters:description "Mass % nickel contained in the iron, alloy or steel under consideration" ;
-    ontology-se-cbam_emissionsqualifyingparameters:typeOfEmissionValue "DIRECT" ;
-    ontology-se-cbam_emissionsqualifyingparameters:typeOfParameterValue "PERCENTAGE" .
-
 se-cbam-emissionsqualifyingparameters:Nickel_content_TRABC2023010120231231_1 a ontology-se-cbam_emissionsqualifyingparameters:EmissionParameter,
         ontology-se-cbam_emissionsqualifyingparameters:Nickel_content ;
     rdfs:label "Nickel_content" ;
@@ -1973,38 +1254,6 @@ se-cbam-emissionsqualifyingparameters:Nitrate_Nitrogen_content_CNABC202301012023
     ontology-se-cbam_emissionsqualifyingparameters:typeOfParameterValue "PERCENTAGE" .
 
 se-cbam-emissionsqualifyingparameters:Nitrate_Nitrogen_content_CNABC2023010120231231_4 a ontology-se-cbam_emissionsqualifyingparameters:EmissionParameter,
-        ontology-se-cbam_emissionsqualifyingparameters:Nitrate_Nitrogen_content ;
-    rdfs:label "Nitrate_Nitrogen_content" ;
-    ontology-se-cbam_emissionsqualifyingparameters:code "QPD08" ;
-    ontology-se-cbam_emissionsqualifyingparameters:description "Mass % nitrogen bound in nitrate (NO3–), related to fertiliser or fertiliser solution as is, NOT on dry basis)" ;
-    ontology-se-cbam_emissionsqualifyingparameters:typeOfEmissionValue "DIRECT" ;
-    ontology-se-cbam_emissionsqualifyingparameters:typeOfParameterValue "PERCENTAGE" .
-
-se-cbam-emissionsqualifyingparameters:Nitrate_Nitrogen_content_COCBA2023010120231231_1 a ontology-se-cbam_emissionsqualifyingparameters:EmissionParameter,
-        ontology-se-cbam_emissionsqualifyingparameters:Nitrate_Nitrogen_content ;
-    rdfs:label "Nitrate_Nitrogen_content" ;
-    ontology-se-cbam_emissionsqualifyingparameters:code "QPD08" ;
-    ontology-se-cbam_emissionsqualifyingparameters:description "Mass % nitrogen bound in nitrate (NO3–), related to fertiliser or fertiliser solution as is, NOT on dry basis)" ;
-    ontology-se-cbam_emissionsqualifyingparameters:typeOfEmissionValue "DIRECT" ;
-    ontology-se-cbam_emissionsqualifyingparameters:typeOfParameterValue "PERCENTAGE" .
-
-se-cbam-emissionsqualifyingparameters:Nitrate_Nitrogen_content_COCBA2023010120231231_2 a ontology-se-cbam_emissionsqualifyingparameters:EmissionParameter,
-        ontology-se-cbam_emissionsqualifyingparameters:Nitrate_Nitrogen_content ;
-    rdfs:label "Nitrate_Nitrogen_content" ;
-    ontology-se-cbam_emissionsqualifyingparameters:code "QPD08" ;
-    ontology-se-cbam_emissionsqualifyingparameters:description "Mass % nitrogen bound in nitrate (NO3–), related to fertiliser or fertiliser solution as is, NOT on dry basis)" ;
-    ontology-se-cbam_emissionsqualifyingparameters:typeOfEmissionValue "DIRECT" ;
-    ontology-se-cbam_emissionsqualifyingparameters:typeOfParameterValue "PERCENTAGE" .
-
-se-cbam-emissionsqualifyingparameters:Nitrate_Nitrogen_content_COCBA2023010120231231_3 a ontology-se-cbam_emissionsqualifyingparameters:EmissionParameter,
-        ontology-se-cbam_emissionsqualifyingparameters:Nitrate_Nitrogen_content ;
-    rdfs:label "Nitrate_Nitrogen_content" ;
-    ontology-se-cbam_emissionsqualifyingparameters:code "QPD08" ;
-    ontology-se-cbam_emissionsqualifyingparameters:description "Mass % nitrogen bound in nitrate (NO3–), related to fertiliser or fertiliser solution as is, NOT on dry basis)" ;
-    ontology-se-cbam_emissionsqualifyingparameters:typeOfEmissionValue "DIRECT" ;
-    ontology-se-cbam_emissionsqualifyingparameters:typeOfParameterValue "PERCENTAGE" .
-
-se-cbam-emissionsqualifyingparameters:Nitrate_Nitrogen_content_COCBA2023010120231231_4 a ontology-se-cbam_emissionsqualifyingparameters:EmissionParameter,
         ontology-se-cbam_emissionsqualifyingparameters:Nitrate_Nitrogen_content ;
     rdfs:label "Nitrate_Nitrogen_content" ;
     ontology-se-cbam_emissionsqualifyingparameters:code "QPD08" ;
@@ -2060,38 +1309,6 @@ se-cbam-emissionsqualifyingparameters:Nitric_acid_concentration_CNABC20230101202
     ontology-se-cbam_emissionsqualifyingparameters:typeOfEmissionValue "DIRECT" ;
     ontology-se-cbam_emissionsqualifyingparameters:typeOfParameterValue "PERCENTAGE" .
 
-se-cbam-emissionsqualifyingparameters:Nitric_acid_concentration_COCBA2023010120231231_1 a ontology-se-cbam_emissionsqualifyingparameters:EmissionParameter,
-        ontology-se-cbam_emissionsqualifyingparameters:Nitric_acid_concentration ;
-    rdfs:label "Nitric_acid_concentration" ;
-    ontology-se-cbam_emissionsqualifyingparameters:code "QPD04" ;
-    ontology-se-cbam_emissionsqualifyingparameters:description "Nitric acid concentration expressed as mass %." ;
-    ontology-se-cbam_emissionsqualifyingparameters:typeOfEmissionValue "DIRECT" ;
-    ontology-se-cbam_emissionsqualifyingparameters:typeOfParameterValue "PERCENTAGE" .
-
-se-cbam-emissionsqualifyingparameters:Nitric_acid_concentration_COCBA2023010120231231_2 a ontology-se-cbam_emissionsqualifyingparameters:EmissionParameter,
-        ontology-se-cbam_emissionsqualifyingparameters:Nitric_acid_concentration ;
-    rdfs:label "Nitric_acid_concentration" ;
-    ontology-se-cbam_emissionsqualifyingparameters:code "QPD04" ;
-    ontology-se-cbam_emissionsqualifyingparameters:description "Nitric acid concentration expressed as mass %." ;
-    ontology-se-cbam_emissionsqualifyingparameters:typeOfEmissionValue "DIRECT" ;
-    ontology-se-cbam_emissionsqualifyingparameters:typeOfParameterValue "PERCENTAGE" .
-
-se-cbam-emissionsqualifyingparameters:Nitric_acid_concentration_COCBA2023010120231231_3 a ontology-se-cbam_emissionsqualifyingparameters:EmissionParameter,
-        ontology-se-cbam_emissionsqualifyingparameters:Nitric_acid_concentration ;
-    rdfs:label "Nitric_acid_concentration" ;
-    ontology-se-cbam_emissionsqualifyingparameters:code "QPD04" ;
-    ontology-se-cbam_emissionsqualifyingparameters:description "Nitric acid concentration expressed as mass %." ;
-    ontology-se-cbam_emissionsqualifyingparameters:typeOfEmissionValue "DIRECT" ;
-    ontology-se-cbam_emissionsqualifyingparameters:typeOfParameterValue "PERCENTAGE" .
-
-se-cbam-emissionsqualifyingparameters:Nitric_acid_concentration_COCBA2023010120231231_4 a ontology-se-cbam_emissionsqualifyingparameters:EmissionParameter,
-        ontology-se-cbam_emissionsqualifyingparameters:Nitric_acid_concentration ;
-    rdfs:label "Nitric_acid_concentration" ;
-    ontology-se-cbam_emissionsqualifyingparameters:code "QPD04" ;
-    ontology-se-cbam_emissionsqualifyingparameters:description "Nitric acid concentration expressed as mass %." ;
-    ontology-se-cbam_emissionsqualifyingparameters:typeOfEmissionValue "DIRECT" ;
-    ontology-se-cbam_emissionsqualifyingparameters:typeOfParameterValue "PERCENTAGE" .
-
 se-cbam-emissionsqualifyingparameters:Nitric_acid_concentration_TRABC2023010120231231_1 a ontology-se-cbam_emissionsqualifyingparameters:EmissionParameter,
         ontology-se-cbam_emissionsqualifyingparameters:Nitric_acid_concentration ;
     rdfs:label "Nitric_acid_concentration" ;
@@ -2133,38 +1350,6 @@ se-cbam-emissionsqualifyingparameters:Non_Aluminium_content_CNABC202301012023123
     ontology-se-cbam_emissionsqualifyingparameters:typeOfParameterValue "PERCENTAGE" .
 
 se-cbam-emissionsqualifyingparameters:Non_Aluminium_content_CNABC2023010120231231_4 a ontology-se-cbam_emissionsqualifyingparameters:EmissionParameter,
-        ontology-se-cbam_emissionsqualifyingparameters:Non_Aluminium_content ;
-    rdfs:label "Non_Aluminium_content" ;
-    ontology-se-cbam_emissionsqualifyingparameters:code "QPD23" ;
-    ontology-se-cbam_emissionsqualifyingparameters:description "Mass % of materials contained which are not aluminium if their mass is more than 1% but less than 5% of the total goods’ mass" ;
-    ontology-se-cbam_emissionsqualifyingparameters:typeOfEmissionValue "DIRECT" ;
-    ontology-se-cbam_emissionsqualifyingparameters:typeOfParameterValue "PERCENTAGE" .
-
-se-cbam-emissionsqualifyingparameters:Non_Aluminium_content_COCBA2023010120231231_1 a ontology-se-cbam_emissionsqualifyingparameters:EmissionParameter,
-        ontology-se-cbam_emissionsqualifyingparameters:Non_Aluminium_content ;
-    rdfs:label "Non_Aluminium_content" ;
-    ontology-se-cbam_emissionsqualifyingparameters:code "QPD23" ;
-    ontology-se-cbam_emissionsqualifyingparameters:description "Mass % of materials contained which are not aluminium if their mass is more than 1% but less than 5% of the total goods’ mass" ;
-    ontology-se-cbam_emissionsqualifyingparameters:typeOfEmissionValue "DIRECT" ;
-    ontology-se-cbam_emissionsqualifyingparameters:typeOfParameterValue "PERCENTAGE" .
-
-se-cbam-emissionsqualifyingparameters:Non_Aluminium_content_COCBA2023010120231231_2 a ontology-se-cbam_emissionsqualifyingparameters:EmissionParameter,
-        ontology-se-cbam_emissionsqualifyingparameters:Non_Aluminium_content ;
-    rdfs:label "Non_Aluminium_content" ;
-    ontology-se-cbam_emissionsqualifyingparameters:code "QPD23" ;
-    ontology-se-cbam_emissionsqualifyingparameters:description "Mass % of materials contained which are not aluminium if their mass is more than 1% but less than 5% of the total goods’ mass" ;
-    ontology-se-cbam_emissionsqualifyingparameters:typeOfEmissionValue "DIRECT" ;
-    ontology-se-cbam_emissionsqualifyingparameters:typeOfParameterValue "PERCENTAGE" .
-
-se-cbam-emissionsqualifyingparameters:Non_Aluminium_content_COCBA2023010120231231_3 a ontology-se-cbam_emissionsqualifyingparameters:EmissionParameter,
-        ontology-se-cbam_emissionsqualifyingparameters:Non_Aluminium_content ;
-    rdfs:label "Non_Aluminium_content" ;
-    ontology-se-cbam_emissionsqualifyingparameters:code "QPD23" ;
-    ontology-se-cbam_emissionsqualifyingparameters:description "Mass % of materials contained which are not aluminium if their mass is more than 1% but less than 5% of the total goods’ mass" ;
-    ontology-se-cbam_emissionsqualifyingparameters:typeOfEmissionValue "DIRECT" ;
-    ontology-se-cbam_emissionsqualifyingparameters:typeOfParameterValue "PERCENTAGE" .
-
-se-cbam-emissionsqualifyingparameters:Non_Aluminium_content_COCBA2023010120231231_4 a ontology-se-cbam_emissionsqualifyingparameters:EmissionParameter,
         ontology-se-cbam_emissionsqualifyingparameters:Non_Aluminium_content ;
     rdfs:label "Non_Aluminium_content" ;
     ontology-se-cbam_emissionsqualifyingparameters:code "QPD23" ;
@@ -2220,38 +1405,6 @@ se-cbam-emissionsqualifyingparameters:Non_Iron_content_CNABC2023010120231231_4 a
     ontology-se-cbam_emissionsqualifyingparameters:typeOfEmissionValue "DIRECT" ;
     ontology-se-cbam_emissionsqualifyingparameters:typeOfParameterValue "PERCENTAGE" .
 
-se-cbam-emissionsqualifyingparameters:Non_Iron_content_COCBA2023010120231231_1 a ontology-se-cbam_emissionsqualifyingparameters:EmissionParameter,
-        ontology-se-cbam_emissionsqualifyingparameters:Non_Iron_content ;
-    rdfs:label "Non_Iron_content" ;
-    ontology-se-cbam_emissionsqualifyingparameters:code "QPD20" ;
-    ontology-se-cbam_emissionsqualifyingparameters:description "Mass % of materials contained which are not iron or steel if their mass is more than 1% but less than 5% of the total goods’ mass" ;
-    ontology-se-cbam_emissionsqualifyingparameters:typeOfEmissionValue "DIRECT" ;
-    ontology-se-cbam_emissionsqualifyingparameters:typeOfParameterValue "PERCENTAGE" .
-
-se-cbam-emissionsqualifyingparameters:Non_Iron_content_COCBA2023010120231231_2 a ontology-se-cbam_emissionsqualifyingparameters:EmissionParameter,
-        ontology-se-cbam_emissionsqualifyingparameters:Non_Iron_content ;
-    rdfs:label "Non_Iron_content" ;
-    ontology-se-cbam_emissionsqualifyingparameters:code "QPD20" ;
-    ontology-se-cbam_emissionsqualifyingparameters:description "Mass % of materials contained which are not iron or steel if their mass is more than 1% but less than 5% of the total goods’ mass" ;
-    ontology-se-cbam_emissionsqualifyingparameters:typeOfEmissionValue "DIRECT" ;
-    ontology-se-cbam_emissionsqualifyingparameters:typeOfParameterValue "PERCENTAGE" .
-
-se-cbam-emissionsqualifyingparameters:Non_Iron_content_COCBA2023010120231231_3 a ontology-se-cbam_emissionsqualifyingparameters:EmissionParameter,
-        ontology-se-cbam_emissionsqualifyingparameters:Non_Iron_content ;
-    rdfs:label "Non_Iron_content" ;
-    ontology-se-cbam_emissionsqualifyingparameters:code "QPD20" ;
-    ontology-se-cbam_emissionsqualifyingparameters:description "Mass % of materials contained which are not iron or steel if their mass is more than 1% but less than 5% of the total goods’ mass" ;
-    ontology-se-cbam_emissionsqualifyingparameters:typeOfEmissionValue "DIRECT" ;
-    ontology-se-cbam_emissionsqualifyingparameters:typeOfParameterValue "PERCENTAGE" .
-
-se-cbam-emissionsqualifyingparameters:Non_Iron_content_COCBA2023010120231231_4 a ontology-se-cbam_emissionsqualifyingparameters:EmissionParameter,
-        ontology-se-cbam_emissionsqualifyingparameters:Non_Iron_content ;
-    rdfs:label "Non_Iron_content" ;
-    ontology-se-cbam_emissionsqualifyingparameters:code "QPD20" ;
-    ontology-se-cbam_emissionsqualifyingparameters:description "Mass % of materials contained which are not iron or steel if their mass is more than 1% but less than 5% of the total goods’ mass" ;
-    ontology-se-cbam_emissionsqualifyingparameters:typeOfEmissionValue "DIRECT" ;
-    ontology-se-cbam_emissionsqualifyingparameters:typeOfParameterValue "PERCENTAGE" .
-
 se-cbam-emissionsqualifyingparameters:Non_Iron_content_TRABC2023010120231231_1 a ontology-se-cbam_emissionsqualifyingparameters:EmissionParameter,
         ontology-se-cbam_emissionsqualifyingparameters:Non_Iron_content ;
     rdfs:label "Non_Iron_content" ;
@@ -2293,38 +1446,6 @@ se-cbam-emissionsqualifyingparameters:Other_Nitrogen_content_CNABC20230101202312
     ontology-se-cbam_emissionsqualifyingparameters:typeOfParameterValue "PERCENTAGE" .
 
 se-cbam-emissionsqualifyingparameters:Other_Nitrogen_content_CNABC2023010120231231_4 a ontology-se-cbam_emissionsqualifyingparameters:EmissionParameter,
-        ontology-se-cbam_emissionsqualifyingparameters:Other_Nitrogen_content ;
-    rdfs:label "Other_Nitrogen_content" ;
-    ontology-se-cbam_emissionsqualifyingparameters:code "QPD09" ;
-    ontology-se-cbam_emissionsqualifyingparameters:description "Mass % nitrogen bound in other (organic) forms, related to fertiliser or fertiliser solution as is, NOT on dry basis)" ;
-    ontology-se-cbam_emissionsqualifyingparameters:typeOfEmissionValue "DIRECT" ;
-    ontology-se-cbam_emissionsqualifyingparameters:typeOfParameterValue "PERCENTAGE" .
-
-se-cbam-emissionsqualifyingparameters:Other_Nitrogen_content_COCBA2023010120231231_1 a ontology-se-cbam_emissionsqualifyingparameters:EmissionParameter,
-        ontology-se-cbam_emissionsqualifyingparameters:Other_Nitrogen_content ;
-    rdfs:label "Other_Nitrogen_content" ;
-    ontology-se-cbam_emissionsqualifyingparameters:code "QPD09" ;
-    ontology-se-cbam_emissionsqualifyingparameters:description "Mass % nitrogen bound in other (organic) forms, related to fertiliser or fertiliser solution as is, NOT on dry basis)" ;
-    ontology-se-cbam_emissionsqualifyingparameters:typeOfEmissionValue "DIRECT" ;
-    ontology-se-cbam_emissionsqualifyingparameters:typeOfParameterValue "PERCENTAGE" .
-
-se-cbam-emissionsqualifyingparameters:Other_Nitrogen_content_COCBA2023010120231231_2 a ontology-se-cbam_emissionsqualifyingparameters:EmissionParameter,
-        ontology-se-cbam_emissionsqualifyingparameters:Other_Nitrogen_content ;
-    rdfs:label "Other_Nitrogen_content" ;
-    ontology-se-cbam_emissionsqualifyingparameters:code "QPD09" ;
-    ontology-se-cbam_emissionsqualifyingparameters:description "Mass % nitrogen bound in other (organic) forms, related to fertiliser or fertiliser solution as is, NOT on dry basis)" ;
-    ontology-se-cbam_emissionsqualifyingparameters:typeOfEmissionValue "DIRECT" ;
-    ontology-se-cbam_emissionsqualifyingparameters:typeOfParameterValue "PERCENTAGE" .
-
-se-cbam-emissionsqualifyingparameters:Other_Nitrogen_content_COCBA2023010120231231_3 a ontology-se-cbam_emissionsqualifyingparameters:EmissionParameter,
-        ontology-se-cbam_emissionsqualifyingparameters:Other_Nitrogen_content ;
-    rdfs:label "Other_Nitrogen_content" ;
-    ontology-se-cbam_emissionsqualifyingparameters:code "QPD09" ;
-    ontology-se-cbam_emissionsqualifyingparameters:description "Mass % nitrogen bound in other (organic) forms, related to fertiliser or fertiliser solution as is, NOT on dry basis)" ;
-    ontology-se-cbam_emissionsqualifyingparameters:typeOfEmissionValue "DIRECT" ;
-    ontology-se-cbam_emissionsqualifyingparameters:typeOfParameterValue "PERCENTAGE" .
-
-se-cbam-emissionsqualifyingparameters:Other_Nitrogen_content_COCBA2023010120231231_4 a ontology-se-cbam_emissionsqualifyingparameters:EmissionParameter,
         ontology-se-cbam_emissionsqualifyingparameters:Other_Nitrogen_content ;
     rdfs:label "Other_Nitrogen_content" ;
     ontology-se-cbam_emissionsqualifyingparameters:code "QPD09" ;
@@ -2388,46 +1509,6 @@ se-cbam-emissionsqualifyingparameters:Precursor_reducing_Agent_CNABC202301012023
     ontology-se-cbam_emissionsqualifyingparameters:typeOfEmissionValue "DIRECT" ;
     ontology-se-cbam_emissionsqualifyingparameters:typeOfParameterValue "TEXT" .
 
-se-cbam-emissionsqualifyingparameters:Precursor_reducing_Agent_COCBA2023010120231231_1 a ontology-se-cbam_emissionsqualifyingparameters:EmissionParameter,
-        ontology-se-cbam_emissionsqualifyingparameters:Precursor_reducing_Agent ;
-    rdfs:label "Precursor_reducing_Agent" ;
-    ontology-se-cbam_emissionsqualifyingparameters:code "QPD10",
-        "QPD11" ;
-    ontology-se-cbam_emissionsqualifyingparameters:comment "Coal or coke" ;
-    ontology-se-cbam_emissionsqualifyingparameters:description "The main reducing agent used in the production of the precursor (pig iron or direct reduced iron), if known. If more than one is used, fill in the one which is predominant in the production process. (Possible values: \"Coke\"; \"Coal\"; \"Fuel oil\"; \"Natural gas\"; \"Hydrogen\"; \"Charcoal or biomass\"; \"Other\"; \"Not applicable\")" ;
-    ontology-se-cbam_emissionsqualifyingparameters:typeOfEmissionValue "DIRECT" ;
-    ontology-se-cbam_emissionsqualifyingparameters:typeOfParameterValue "TEXT" .
-
-se-cbam-emissionsqualifyingparameters:Precursor_reducing_Agent_COCBA2023010120231231_2 a ontology-se-cbam_emissionsqualifyingparameters:EmissionParameter,
-        ontology-se-cbam_emissionsqualifyingparameters:Precursor_reducing_Agent ;
-    rdfs:label "Precursor_reducing_Agent" ;
-    ontology-se-cbam_emissionsqualifyingparameters:code "QPD10",
-        "QPD11" ;
-    ontology-se-cbam_emissionsqualifyingparameters:comment "Coal or coke" ;
-    ontology-se-cbam_emissionsqualifyingparameters:description "The main reducing agent used in the production of the precursor (pig iron or direct reduced iron), if known. If more than one is used, fill in the one which is predominant in the production process. (Possible values: \"Coke\"; \"Coal\"; \"Fuel oil\"; \"Natural gas\"; \"Hydrogen\"; \"Charcoal or biomass\"; \"Other\"; \"Not applicable\")" ;
-    ontology-se-cbam_emissionsqualifyingparameters:typeOfEmissionValue "DIRECT" ;
-    ontology-se-cbam_emissionsqualifyingparameters:typeOfParameterValue "TEXT" .
-
-se-cbam-emissionsqualifyingparameters:Precursor_reducing_Agent_COCBA2023010120231231_3 a ontology-se-cbam_emissionsqualifyingparameters:EmissionParameter,
-        ontology-se-cbam_emissionsqualifyingparameters:Precursor_reducing_Agent ;
-    rdfs:label "Precursor_reducing_Agent" ;
-    ontology-se-cbam_emissionsqualifyingparameters:code "QPD10",
-        "QPD11" ;
-    ontology-se-cbam_emissionsqualifyingparameters:comment "Coal or coke" ;
-    ontology-se-cbam_emissionsqualifyingparameters:description "The main reducing agent used in the production of the precursor (pig iron or direct reduced iron), if known. If more than one is used, fill in the one which is predominant in the production process. (Possible values: \"Coke\"; \"Coal\"; \"Fuel oil\"; \"Natural gas\"; \"Hydrogen\"; \"Charcoal or biomass\"; \"Other\"; \"Not applicable\")" ;
-    ontology-se-cbam_emissionsqualifyingparameters:typeOfEmissionValue "DIRECT" ;
-    ontology-se-cbam_emissionsqualifyingparameters:typeOfParameterValue "TEXT" .
-
-se-cbam-emissionsqualifyingparameters:Precursor_reducing_Agent_COCBA2023010120231231_4 a ontology-se-cbam_emissionsqualifyingparameters:EmissionParameter,
-        ontology-se-cbam_emissionsqualifyingparameters:Precursor_reducing_Agent ;
-    rdfs:label "Precursor_reducing_Agent" ;
-    ontology-se-cbam_emissionsqualifyingparameters:code "QPD10",
-        "QPD11" ;
-    ontology-se-cbam_emissionsqualifyingparameters:comment "Coal or coke" ;
-    ontology-se-cbam_emissionsqualifyingparameters:description "The main reducing agent used in the production of the precursor (pig iron or direct reduced iron), if known. If more than one is used, fill in the one which is predominant in the production process. (Possible values: \"Coke\"; \"Coal\"; \"Fuel oil\"; \"Natural gas\"; \"Hydrogen\"; \"Charcoal or biomass\"; \"Other\"; \"Not applicable\")" ;
-    ontology-se-cbam_emissionsqualifyingparameters:typeOfEmissionValue "DIRECT" ;
-    ontology-se-cbam_emissionsqualifyingparameters:typeOfParameterValue "TEXT" .
-
 se-cbam-emissionsqualifyingparameters:Precursor_reducing_Agent_TRABC2023010120231231_1 a ontology-se-cbam_emissionsqualifyingparameters:EmissionParameter,
         ontology-se-cbam_emissionsqualifyingparameters:Precursor_reducing_Agent ;
     rdfs:label "Precursor_reducing_Agent" ;
@@ -2471,38 +1552,6 @@ se-cbam-emissionsqualifyingparameters:Steel_pre-consumer_scrap_CNABC202301012023
     ontology-se-cbam_emissionsqualifyingparameters:typeOfParameterValue "PERCENTAGE" .
 
 se-cbam-emissionsqualifyingparameters:Steel_pre-consumer_scrap_CNABC2023010120231231_4 a ontology-se-cbam_emissionsqualifyingparameters:EmissionParameter,
-        ontology-se-cbam_emissionsqualifyingparameters:Steel_pre-consumer_scrap ;
-    rdfs:label "Steel_pre-consumer_scrap" ;
-    ontology-se-cbam_emissionsqualifyingparameters:code "QPD18" ;
-    ontology-se-cbam_emissionsqualifyingparameters:description "% of scrap used that is pre-consumer scrap" ;
-    ontology-se-cbam_emissionsqualifyingparameters:typeOfEmissionValue "DIRECT" ;
-    ontology-se-cbam_emissionsqualifyingparameters:typeOfParameterValue "PERCENTAGE" .
-
-se-cbam-emissionsqualifyingparameters:Steel_pre-consumer_scrap_COCBA2023010120231231_1 a ontology-se-cbam_emissionsqualifyingparameters:EmissionParameter,
-        ontology-se-cbam_emissionsqualifyingparameters:Steel_pre-consumer_scrap ;
-    rdfs:label "Steel_pre-consumer_scrap" ;
-    ontology-se-cbam_emissionsqualifyingparameters:code "QPD18" ;
-    ontology-se-cbam_emissionsqualifyingparameters:description "% of scrap used that is pre-consumer scrap" ;
-    ontology-se-cbam_emissionsqualifyingparameters:typeOfEmissionValue "DIRECT" ;
-    ontology-se-cbam_emissionsqualifyingparameters:typeOfParameterValue "PERCENTAGE" .
-
-se-cbam-emissionsqualifyingparameters:Steel_pre-consumer_scrap_COCBA2023010120231231_2 a ontology-se-cbam_emissionsqualifyingparameters:EmissionParameter,
-        ontology-se-cbam_emissionsqualifyingparameters:Steel_pre-consumer_scrap ;
-    rdfs:label "Steel_pre-consumer_scrap" ;
-    ontology-se-cbam_emissionsqualifyingparameters:code "QPD18" ;
-    ontology-se-cbam_emissionsqualifyingparameters:description "% of scrap used that is pre-consumer scrap" ;
-    ontology-se-cbam_emissionsqualifyingparameters:typeOfEmissionValue "DIRECT" ;
-    ontology-se-cbam_emissionsqualifyingparameters:typeOfParameterValue "PERCENTAGE" .
-
-se-cbam-emissionsqualifyingparameters:Steel_pre-consumer_scrap_COCBA2023010120231231_3 a ontology-se-cbam_emissionsqualifyingparameters:EmissionParameter,
-        ontology-se-cbam_emissionsqualifyingparameters:Steel_pre-consumer_scrap ;
-    rdfs:label "Steel_pre-consumer_scrap" ;
-    ontology-se-cbam_emissionsqualifyingparameters:code "QPD18" ;
-    ontology-se-cbam_emissionsqualifyingparameters:description "% of scrap used that is pre-consumer scrap" ;
-    ontology-se-cbam_emissionsqualifyingparameters:typeOfEmissionValue "DIRECT" ;
-    ontology-se-cbam_emissionsqualifyingparameters:typeOfParameterValue "PERCENTAGE" .
-
-se-cbam-emissionsqualifyingparameters:Steel_pre-consumer_scrap_COCBA2023010120231231_4 a ontology-se-cbam_emissionsqualifyingparameters:EmissionParameter,
         ontology-se-cbam_emissionsqualifyingparameters:Steel_pre-consumer_scrap ;
     rdfs:label "Steel_pre-consumer_scrap" ;
     ontology-se-cbam_emissionsqualifyingparameters:code "QPD18" ;
@@ -2558,38 +1607,6 @@ se-cbam-emissionsqualifyingparameters:Steel_product_scrap_usage_CNABC20230101202
     ontology-se-cbam_emissionsqualifyingparameters:typeOfEmissionValue "DIRECT" ;
     ontology-se-cbam_emissionsqualifyingparameters:typeOfParameterValue "NUMERIC" .
 
-se-cbam-emissionsqualifyingparameters:Steel_product_scrap_usage_COCBA2023010120231231_1 a ontology-se-cbam_emissionsqualifyingparameters:EmissionParameter,
-        ontology-se-cbam_emissionsqualifyingparameters:Steel_product_scrap_usage ;
-    rdfs:label "Steel_product_scrap_usage" ;
-    ontology-se-cbam_emissionsqualifyingparameters:code "QPD19" ;
-    ontology-se-cbam_emissionsqualifyingparameters:description "Tonnes scrap used for producing 1 t of the product (total scrap including post-consumer scrap)" ;
-    ontology-se-cbam_emissionsqualifyingparameters:typeOfEmissionValue "DIRECT" ;
-    ontology-se-cbam_emissionsqualifyingparameters:typeOfParameterValue "NUMERIC" .
-
-se-cbam-emissionsqualifyingparameters:Steel_product_scrap_usage_COCBA2023010120231231_2 a ontology-se-cbam_emissionsqualifyingparameters:EmissionParameter,
-        ontology-se-cbam_emissionsqualifyingparameters:Steel_product_scrap_usage ;
-    rdfs:label "Steel_product_scrap_usage" ;
-    ontology-se-cbam_emissionsqualifyingparameters:code "QPD19" ;
-    ontology-se-cbam_emissionsqualifyingparameters:description "Tonnes scrap used for producing 1 t of the product (total scrap including post-consumer scrap)" ;
-    ontology-se-cbam_emissionsqualifyingparameters:typeOfEmissionValue "DIRECT" ;
-    ontology-se-cbam_emissionsqualifyingparameters:typeOfParameterValue "NUMERIC" .
-
-se-cbam-emissionsqualifyingparameters:Steel_product_scrap_usage_COCBA2023010120231231_3 a ontology-se-cbam_emissionsqualifyingparameters:EmissionParameter,
-        ontology-se-cbam_emissionsqualifyingparameters:Steel_product_scrap_usage ;
-    rdfs:label "Steel_product_scrap_usage" ;
-    ontology-se-cbam_emissionsqualifyingparameters:code "QPD19" ;
-    ontology-se-cbam_emissionsqualifyingparameters:description "Tonnes scrap used for producing 1 t of the product (total scrap including post-consumer scrap)" ;
-    ontology-se-cbam_emissionsqualifyingparameters:typeOfEmissionValue "DIRECT" ;
-    ontology-se-cbam_emissionsqualifyingparameters:typeOfParameterValue "NUMERIC" .
-
-se-cbam-emissionsqualifyingparameters:Steel_product_scrap_usage_COCBA2023010120231231_4 a ontology-se-cbam_emissionsqualifyingparameters:EmissionParameter,
-        ontology-se-cbam_emissionsqualifyingparameters:Steel_product_scrap_usage ;
-    rdfs:label "Steel_product_scrap_usage" ;
-    ontology-se-cbam_emissionsqualifyingparameters:code "QPD19" ;
-    ontology-se-cbam_emissionsqualifyingparameters:description "Tonnes scrap used for producing 1 t of the product (total scrap including post-consumer scrap)" ;
-    ontology-se-cbam_emissionsqualifyingparameters:typeOfEmissionValue "DIRECT" ;
-    ontology-se-cbam_emissionsqualifyingparameters:typeOfParameterValue "NUMERIC" .
-
 se-cbam-emissionsqualifyingparameters:Steel_product_scrap_usage_TRABC2023010120231231_1 a ontology-se-cbam_emissionsqualifyingparameters:EmissionParameter,
         ontology-se-cbam_emissionsqualifyingparameters:Steel_product_scrap_usage ;
     rdfs:label "Steel_product_scrap_usage" ;
@@ -2631,38 +1648,6 @@ se-cbam-emissionsqualifyingparameters:Steel_scrap_usage_CNABC2023010120231231_3 
     ontology-se-cbam_emissionsqualifyingparameters:typeOfParameterValue "NUMERIC" .
 
 se-cbam-emissionsqualifyingparameters:Steel_scrap_usage_CNABC2023010120231231_4 a ontology-se-cbam_emissionsqualifyingparameters:EmissionParameter,
-        ontology-se-cbam_emissionsqualifyingparameters:Steel_scrap_usage ;
-    rdfs:label "Steel_scrap_usage" ;
-    ontology-se-cbam_emissionsqualifyingparameters:code "QPD17" ;
-    ontology-se-cbam_emissionsqualifyingparameters:description "Tonnes scrap used for producing 1 t crude steel (total scrap including post-consumer scrap)" ;
-    ontology-se-cbam_emissionsqualifyingparameters:typeOfEmissionValue "DIRECT" ;
-    ontology-se-cbam_emissionsqualifyingparameters:typeOfParameterValue "NUMERIC" .
-
-se-cbam-emissionsqualifyingparameters:Steel_scrap_usage_COCBA2023010120231231_1 a ontology-se-cbam_emissionsqualifyingparameters:EmissionParameter,
-        ontology-se-cbam_emissionsqualifyingparameters:Steel_scrap_usage ;
-    rdfs:label "Steel_scrap_usage" ;
-    ontology-se-cbam_emissionsqualifyingparameters:code "QPD17" ;
-    ontology-se-cbam_emissionsqualifyingparameters:description "Tonnes scrap used for producing 1 t crude steel (total scrap including post-consumer scrap)" ;
-    ontology-se-cbam_emissionsqualifyingparameters:typeOfEmissionValue "DIRECT" ;
-    ontology-se-cbam_emissionsqualifyingparameters:typeOfParameterValue "NUMERIC" .
-
-se-cbam-emissionsqualifyingparameters:Steel_scrap_usage_COCBA2023010120231231_2 a ontology-se-cbam_emissionsqualifyingparameters:EmissionParameter,
-        ontology-se-cbam_emissionsqualifyingparameters:Steel_scrap_usage ;
-    rdfs:label "Steel_scrap_usage" ;
-    ontology-se-cbam_emissionsqualifyingparameters:code "QPD17" ;
-    ontology-se-cbam_emissionsqualifyingparameters:description "Tonnes scrap used for producing 1 t crude steel (total scrap including post-consumer scrap)" ;
-    ontology-se-cbam_emissionsqualifyingparameters:typeOfEmissionValue "DIRECT" ;
-    ontology-se-cbam_emissionsqualifyingparameters:typeOfParameterValue "NUMERIC" .
-
-se-cbam-emissionsqualifyingparameters:Steel_scrap_usage_COCBA2023010120231231_3 a ontology-se-cbam_emissionsqualifyingparameters:EmissionParameter,
-        ontology-se-cbam_emissionsqualifyingparameters:Steel_scrap_usage ;
-    rdfs:label "Steel_scrap_usage" ;
-    ontology-se-cbam_emissionsqualifyingparameters:code "QPD17" ;
-    ontology-se-cbam_emissionsqualifyingparameters:description "Tonnes scrap used for producing 1 t crude steel (total scrap including post-consumer scrap)" ;
-    ontology-se-cbam_emissionsqualifyingparameters:typeOfEmissionValue "DIRECT" ;
-    ontology-se-cbam_emissionsqualifyingparameters:typeOfParameterValue "NUMERIC" .
-
-se-cbam-emissionsqualifyingparameters:Steel_scrap_usage_COCBA2023010120231231_4 a ontology-se-cbam_emissionsqualifyingparameters:EmissionParameter,
         ontology-se-cbam_emissionsqualifyingparameters:Steel_scrap_usage ;
     rdfs:label "Steel_scrap_usage" ;
     ontology-se-cbam_emissionsqualifyingparameters:code "QPD17" ;
@@ -2718,38 +1703,6 @@ se-cbam-emissionsqualifyingparameters:Urea_Nitrogen_content_CNABC202301012023123
     ontology-se-cbam_emissionsqualifyingparameters:typeOfEmissionValue "DIRECT" ;
     ontology-se-cbam_emissionsqualifyingparameters:typeOfParameterValue "PERCENTAGE" .
 
-se-cbam-emissionsqualifyingparameters:Urea_Nitrogen_content_COCBA2023010120231231_1 a ontology-se-cbam_emissionsqualifyingparameters:EmissionParameter,
-        ontology-se-cbam_emissionsqualifyingparameters:Urea_Nitrogen_content ;
-    rdfs:label "Urea_Nitrogen_content" ;
-    ontology-se-cbam_emissionsqualifyingparameters:code "QPD06" ;
-    ontology-se-cbam_emissionsqualifyingparameters:description "Mass % nitrogen bound in urea (related to fertiliser or fertiliser solution as is, NOT on dry basis)" ;
-    ontology-se-cbam_emissionsqualifyingparameters:typeOfEmissionValue "DIRECT" ;
-    ontology-se-cbam_emissionsqualifyingparameters:typeOfParameterValue "PERCENTAGE" .
-
-se-cbam-emissionsqualifyingparameters:Urea_Nitrogen_content_COCBA2023010120231231_2 a ontology-se-cbam_emissionsqualifyingparameters:EmissionParameter,
-        ontology-se-cbam_emissionsqualifyingparameters:Urea_Nitrogen_content ;
-    rdfs:label "Urea_Nitrogen_content" ;
-    ontology-se-cbam_emissionsqualifyingparameters:code "QPD06" ;
-    ontology-se-cbam_emissionsqualifyingparameters:description "Mass % nitrogen bound in urea (related to fertiliser or fertiliser solution as is, NOT on dry basis)" ;
-    ontology-se-cbam_emissionsqualifyingparameters:typeOfEmissionValue "DIRECT" ;
-    ontology-se-cbam_emissionsqualifyingparameters:typeOfParameterValue "PERCENTAGE" .
-
-se-cbam-emissionsqualifyingparameters:Urea_Nitrogen_content_COCBA2023010120231231_3 a ontology-se-cbam_emissionsqualifyingparameters:EmissionParameter,
-        ontology-se-cbam_emissionsqualifyingparameters:Urea_Nitrogen_content ;
-    rdfs:label "Urea_Nitrogen_content" ;
-    ontology-se-cbam_emissionsqualifyingparameters:code "QPD06" ;
-    ontology-se-cbam_emissionsqualifyingparameters:description "Mass % nitrogen bound in urea (related to fertiliser or fertiliser solution as is, NOT on dry basis)" ;
-    ontology-se-cbam_emissionsqualifyingparameters:typeOfEmissionValue "DIRECT" ;
-    ontology-se-cbam_emissionsqualifyingparameters:typeOfParameterValue "PERCENTAGE" .
-
-se-cbam-emissionsqualifyingparameters:Urea_Nitrogen_content_COCBA2023010120231231_4 a ontology-se-cbam_emissionsqualifyingparameters:EmissionParameter,
-        ontology-se-cbam_emissionsqualifyingparameters:Urea_Nitrogen_content ;
-    rdfs:label "Urea_Nitrogen_content" ;
-    ontology-se-cbam_emissionsqualifyingparameters:code "QPD06" ;
-    ontology-se-cbam_emissionsqualifyingparameters:description "Mass % nitrogen bound in urea (related to fertiliser or fertiliser solution as is, NOT on dry basis)" ;
-    ontology-se-cbam_emissionsqualifyingparameters:typeOfEmissionValue "DIRECT" ;
-    ontology-se-cbam_emissionsqualifyingparameters:typeOfParameterValue "PERCENTAGE" .
-
 se-cbam-emissionsqualifyingparameters:Urea_Nitrogen_content_TRABC2023010120231231_1 a ontology-se-cbam_emissionsqualifyingparameters:EmissionParameter,
         ontology-se-cbam_emissionsqualifyingparameters:Urea_Nitrogen_content ;
     rdfs:label "Urea_Nitrogen_content" ;
@@ -2798,38 +1751,6 @@ se-cbam-emissionsqualifyingparameters:Urea_purity_CNABC2023010120231231_4 a onto
     ontology-se-cbam_emissionsqualifyingparameters:typeOfEmissionValue "DIRECT" ;
     ontology-se-cbam_emissionsqualifyingparameters:typeOfParameterValue "PERCENTAGE" .
 
-se-cbam-emissionsqualifyingparameters:Urea_purity_COCBA2023010120231231_1 a ontology-se-cbam_emissionsqualifyingparameters:EmissionParameter,
-        ontology-se-cbam_emissionsqualifyingparameters:Urea_purity ;
-    rdfs:label "Urea_purity" ;
-    ontology-se-cbam_emissionsqualifyingparameters:code "QPD03" ;
-    ontology-se-cbam_emissionsqualifyingparameters:description "Purity (expressed as mass % urea contained)" ;
-    ontology-se-cbam_emissionsqualifyingparameters:typeOfEmissionValue "DIRECT" ;
-    ontology-se-cbam_emissionsqualifyingparameters:typeOfParameterValue "PERCENTAGE" .
-
-se-cbam-emissionsqualifyingparameters:Urea_purity_COCBA2023010120231231_2 a ontology-se-cbam_emissionsqualifyingparameters:EmissionParameter,
-        ontology-se-cbam_emissionsqualifyingparameters:Urea_purity ;
-    rdfs:label "Urea_purity" ;
-    ontology-se-cbam_emissionsqualifyingparameters:code "QPD03" ;
-    ontology-se-cbam_emissionsqualifyingparameters:description "Purity (expressed as mass % urea contained)" ;
-    ontology-se-cbam_emissionsqualifyingparameters:typeOfEmissionValue "DIRECT" ;
-    ontology-se-cbam_emissionsqualifyingparameters:typeOfParameterValue "PERCENTAGE" .
-
-se-cbam-emissionsqualifyingparameters:Urea_purity_COCBA2023010120231231_3 a ontology-se-cbam_emissionsqualifyingparameters:EmissionParameter,
-        ontology-se-cbam_emissionsqualifyingparameters:Urea_purity ;
-    rdfs:label "Urea_purity" ;
-    ontology-se-cbam_emissionsqualifyingparameters:code "QPD03" ;
-    ontology-se-cbam_emissionsqualifyingparameters:description "Purity (expressed as mass % urea contained)" ;
-    ontology-se-cbam_emissionsqualifyingparameters:typeOfEmissionValue "DIRECT" ;
-    ontology-se-cbam_emissionsqualifyingparameters:typeOfParameterValue "PERCENTAGE" .
-
-se-cbam-emissionsqualifyingparameters:Urea_purity_COCBA2023010120231231_4 a ontology-se-cbam_emissionsqualifyingparameters:EmissionParameter,
-        ontology-se-cbam_emissionsqualifyingparameters:Urea_purity ;
-    rdfs:label "Urea_purity" ;
-    ontology-se-cbam_emissionsqualifyingparameters:code "QPD03" ;
-    ontology-se-cbam_emissionsqualifyingparameters:description "Purity (expressed as mass % urea contained)" ;
-    ontology-se-cbam_emissionsqualifyingparameters:typeOfEmissionValue "DIRECT" ;
-    ontology-se-cbam_emissionsqualifyingparameters:typeOfParameterValue "PERCENTAGE" .
-
 se-cbam-emissionsqualifyingparameters:Urea_purity_TRABC2023010120231231_1 a ontology-se-cbam_emissionsqualifyingparameters:EmissionParameter,
         ontology-se-cbam_emissionsqualifyingparameters:Urea_purity ;
     rdfs:label "Urea_purity" ;
@@ -2870,14 +1791,6 @@ geo:298795 a owl:NamedIndividual,
     ontology-geo:long "35" ;
     ontology-geo:name "Republic of Turkey" .
 
-geo:3686110 a owl:NamedIndividual,
-        ontology-se-cbam:Country,
-        ontology-se-cbam:EU_Third_Country ;
-    ontology-geo:countryCode "CO" ;
-    ontology-geo:lat "4" ;
-    ontology-geo:long "-73.25" ;
-    ontology-geo:name "Republic of Colombia" .
-
 se-cbam-cn:CN_25232900 a ontology-se-cbam-cn:252329000080,
         ontology-se-cbam-cn:CN ;
     rdfs:label "-- Other" ;
@@ -2887,31 +1800,9 @@ se-cbam-cn:CN_25232900 a ontology-se-cbam-cn:252329000080,
     ontology-se-cbam-cbam-goods:belongsToCategory se-cbam-cbam-goods:AggregatedGoodsCategory_TRABC2023010120231231_1,
         se-cbam-cbam-goods:AggregatedGoodsCategory_TWXYZ2023010120231231_1 .
 
-se-cbam-cn:CN_72081000 a ontology-se-cbam-cn:720810000080,
-        ontology-se-cbam-cn:CN ;
-    rdfs:label "- In coils, not further worked than hot-rolled, with patterns in relief" ;
-    rdfs:comment "Flat-rolled products of iron or non-alloy steel, of a width of >= 600 mm, in coils, simply hot-rolled, not clad, plated or coated, with patterns in relief directly due to the rolling process" ;
-    ontology-se-cbam-cn:cn_code "72081000" ;
-    ontology-se-cbam-cn:hs6_code "720810" ;
-    ontology-se-cbam-cbam-goods:belongsToCategory se-cbam-cbam-goods:AggregatedGoodsCategory_CNABC2023010120231231_1,
-        se-cbam-cbam-goods:AggregatedGoodsCategory_COCBA2023010120231231_1 .
-
-se-cbam-cn:CN_72122000 a ontology-se-cbam-cn:721220000080,
-        ontology-se-cbam-cn:CN ;
-    rdfs:label "- Electrolytically plated or coated with zinc" ;
-    rdfs:comment "Flat-rolled products of iron or non-alloy steel, of a width of < 600 mm, hot-rolled or cold-rolled \"cold-reduced\", electrolytically plated or coated with zinc" ;
-    ontology-se-cbam-cn:cn_code "72122000" ;
-    ontology-se-cbam-cn:hs6_code "721220" ;
-    ontology-se-cbam-cbam-goods:belongsToCategory se-cbam-cbam-goods:AggregatedGoodsCategory_CNABC2023010120231231_2,
-        se-cbam-cbam-goods:AggregatedGoodsCategory_COCBA2023010120231231_2 .
-
 se-cbam-cbamreport:economic_activity_Clinker%20and%20cement a ontology-se-cbam-cbamreport:EconomicActivity ;
     rdfs:label "Clinker and cement" ;
     foaf:name "Clinker and cement" .
-
-se-cbam-cbamreport:economic_activity_Iron%20%26%20steel%20production a ontology-se-cbam-cbamreport:EconomicActivity ;
-    rdfs:label "Iron & steel production" ;
-    foaf:name "Iron & steel production" .
 
 se-cbam-cbamreport:Installation_TRABC a ontology-se-cbam-cbamreport:Installation ;
     foaf:name "Example Cement Producer" ;
@@ -2953,23 +1844,8 @@ se-cbam-cbamreport:Installation_CNABC a ontology-se-cbam-cbamreport:Installation
     ontology-geo:lat "16.6911279" ;
     ontology-geo:long "147.80337464" .
 
-se-cbam-cbamreport:Installation_COCBA a ontology-se-cbam-cbamreport:Installation ;
-    foaf:name "Example Steel House" ;
-    ontology-se-cbam-cbamreport:hasAddress se-cbam-cbamreport:Address_COCBA ;
-    ontology-se-cbam-cbamreport:hasEconomicActivity se-cbam-cbamreport:economic_activity_Iron%20%26%20steel%20production ;
-    ontology-se-cbam-cbamreport:hasReport se-cbam-cbamreport:CommunicationReport_COCBA2023010120231231 ;
-    ontology-se-cbam-cbamreport:hasRepresentative se-cbam-cbamreport:Representative_COCBA ;
-    ontology-se-cbam-cbamreport:hasUNLOCODE "COCBA" ;
-    ontology-geo:lat "4.36297315" ;
-    ontology-geo:long "4.80337464" .
-
 se-cbam-cbamreport:CommunicationReport_CNABC2023010120231231 a ontology-se-cbam-cbamreport:Report ;
     ontology-se-cbam-cbamreport:hasID "CNABC2023010120231231" ;
-    ontology-se-cbam-cbamreport:hasReportingPeriodEnd "2023-12-31"^^xsd:date ;
-    ontology-se-cbam-cbamreport:hasReportingPeriodStart "2023-01-01"^^xsd:date .
-
-se-cbam-cbamreport:CommunicationReport_COCBA2023010120231231 a ontology-se-cbam-cbamreport:Report ;
-    ontology-se-cbam-cbamreport:hasID "COCBA2023010120231231" ;
     ontology-se-cbam-cbamreport:hasReportingPeriodEnd "2023-12-31"^^xsd:date ;
     ontology-se-cbam-cbamreport:hasReportingPeriodStart "2023-01-01"^^xsd:date .
 

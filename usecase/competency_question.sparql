@@ -14,10 +14,10 @@ select
    ?totalEmissionsUnit
    (str(?carbonCost_dt) as ?carbonCost)
 where {
-   ?product  rdf:type schema:Product ;
+   ?product  rdf:type cbam:Good ;
       cbam:hasCNCode ?cn ;
-      cbam:isManufacturedIn ?installation ;
-      cbam:generate ?emissions ;
+      cbam:isManufacturedAt ?installation ;
+      cbam:hasGreenHouseGasEmissions ?emissions ;
       cbam:hasCarbonCharge ?carbonPrice .
 
    ?cn cn:cn_code ?cnCode .
@@ -27,7 +27,7 @@ where {
       cbam:total_Direct_Indirect_Embedded_Emission ?totalEmissions_dt ;
       cbam:DirectEmbeddedEmissions ?directEmissions_dt ;
       cbam:IndirectEmbeddedEmissions ?indirectEmissions_dt ;
-      cbam:UnitforEmission ?totalEmissionsUnit .
+      cbam:emissionsUnit ?totalEmissionsUnit .
 
    ?carbonPrice cbam:resultEffectiveCPDue ?carbonCost_dt .
 } order by ?cnCode
