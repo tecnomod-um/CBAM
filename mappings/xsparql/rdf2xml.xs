@@ -26,7 +26,7 @@ declare namespace se-cbam-cbam-goods = "https://data.com/cbam/cbam_goods#";
 <v1:QReport xmlns:v1="http://xmlns.ec.eu/BusinessObjects/CBAM/Types/V1">
 { for $product $itemNumber from <${inputFile}>
 	where {
-		$product a sch:Product .
+		$product a ontology-se-cbam-cbamreport:Good .
 		$product ontology-se-cbam-cbamreport:itemNumber $itemNumber .
 	} order by $itemNumber
 	return <v1:ImportedGood>
@@ -49,7 +49,7 @@ declare namespace se-cbam-cbam-goods = "https://data.com/cbam/cbam_goods#";
             <v1:GoodsEmissions>
             { for $contactName $contactPhone $contactMail from <${inputFile}>
                 where {
-                    $product ontology-se-cbam-cbamreport:isManufacturedIn $installation .
+                    $product ontology-se-cbam-cbamreport:isManufacturedAt $installation .
                     $installation a ontology-se-cbam-cbamreport:Installation .
                     $installation ontology-se-cbam-cbamreport:hasRepresentative $representative .
                     $representative foaf:name $contactName .
@@ -76,12 +76,13 @@ declare namespace se-cbam-cbam-goods = "https://data.com/cbam/cbam_goods#";
             }
             { for $installationLatitude $installationLongitude $installationName $installationEconomicActivity $installationUnlocode $installationAddressCity $installationAddressCountryCode $installationAddressStreet $installationAddressNumber $installationAddressPostCode $installationAddressPoBox from <${inputFile}>
                 where {
-                    $product ontology-se-cbam-cbamreport:isManufacturedIn $installation .
+                    $product ontology-se-cbam-cbamreport:isManufacturedAt $installation .
                     $installation a ontology-se-cbam-cbamreport:Installation .
                     $installation geonames:lat $installationLatitude .
                     $installation geonames:long $installationLongitude .
                     $installation foaf:name $installationName .
-                    $installation ontology-se-cbam-cbamreport:hasEconomicActivity $installationEconomicActivity .
+                    $installation ontology-se-cbam-cbamreport:hasEconomicActivity $installationEconomicActivityInstance .
+                    $installationEconomicActivityInstance foaf:name $installationEconomicActivity .
                     $installation ontology-se-cbam-cbamreport:hasUNLOCODE $installationUnlocode .
                     $installation ontology-se-cbam-cbamreport:hasAddress $installationAddress .
                     $installationAddress  ontology-se-cbam-cbamreport:hasCity $installationAddressCity .
@@ -111,7 +112,7 @@ declare namespace se-cbam-cbam-goods = "https://data.com/cbam/cbam_goods#";
             }
             { for $directEmission $unitOfMeasure from <${inputFile}>
                 where {
-                    $product ontology-se-cbam-cbamreport:generate $greenHouseGasEmissions .
+                    $product ontology-se-cbam-cbamreport:hasGreenHouseGasEmissions $greenHouseGasEmissions .
                     $greenHouseGasEmissions ontology-se-cbam-cbamreport:DirectEmbeddedEmissions $directEmission .
                     $greenHouseGasEmissions ontology-se-cbam-cbamreport:typeOfMeasurementUnitForEmissions $unitOfMeasure .
                 }
@@ -122,7 +123,7 @@ declare namespace se-cbam-cbam-goods = "https://data.com/cbam/cbam_goods#";
             }
             { for $indirectEmission $unitOfMeasure from <${inputFile}>
                 where {
-                    $product ontology-se-cbam-cbamreport:generate $greenHouseGasEmissions .
+                    $product ontology-se-cbam-cbamreport:hasGreenHouseGasEmissions $greenHouseGasEmissions .
                     $greenHouseGasEmissions ontology-se-cbam-cbamreport:IndirectEmbeddedEmissions $indirectEmission .
                     $greenHouseGasEmissions ontology-se-cbam-cbamreport:typeOfMeasurementUnitForEmissions $unitOfMeasure .
                 }
@@ -133,9 +134,9 @@ declare namespace se-cbam-cbam-goods = "https://data.com/cbam/cbam_goods#";
             }
             { for $methodName $steelMillIdNumber from <${inputFile}>
                 where {
-                    $product ontology-se-cbam-cbamreport:isExecutedBy $productionMethod .
+                    $product ontology-se-cbam-cbamreport:hasProductionMethod $productionMethod .
                     $productionMethod rdfs:label $methodName .
-                    $product ontology-se-cbam-cbamreport:isProducedIn $steelMill .
+                    $product ontology-se-cbam-cbamreport:isProducedAt $steelMill .
                     $steelMill ontology-se-cbam-cbamreport:identificationnumberOfTheSpecificSteelMill $steelMillIdNumber .
                 }
                 return  <v1:ProdMethodQualifyingParams>
@@ -148,7 +149,7 @@ declare namespace se-cbam-cbam-goods = "https://data.com/cbam/cbam_goods#";
                                     $product ontology-se-cbam-cbamreport:hasEmissionQualifyingParameter $parameter .
                                     $parameter ontology-se-cbam-emissionsqualifyingparameters:typeOfEmissionValue "DIRECT" .
                                     $parameter ontology-se-cbam-emissionsqualifyingparameters:code $parameterCode .
-	                                $parameter rdfs:label $parameterName .
+	                            $parameter rdfs:label $parameterName .
                                     $parameter ontology-se-cbam-emissionsqualifyingparameters:description $parameterDescription .
                                     $parameter ontology-se-cbam-emissionsqualifyingparameters:parameterValueNumeric|ontology-se-cbam-emissionsqualifyingparameters:parameterValuePercentage|ontology-se-cbam-emissionsqualifyingparameters:parameterValueText $parameterValue .
                                     $parameter ontology-se-cbam-emissionsqualifyingparameters:typeOfParameterValue $parameterValueType .
@@ -204,7 +205,7 @@ declare namespace se-cbam-cbam-goods = "https://data.com/cbam/cbam_goods#";
                     }
                     { for $installationCountry from <${inputFile}>
                         where {
-                            $product ontology-se-cbam-cbamreport:isManufacturedIn $installation .
+                            $product ontology-se-cbam-cbamreport:isManufacturedAt $installation .
                             $installation ontology-se-cbam-cbamreport:hasAddress $installationAddress .
                             $installationAddress ontology-se-cbam-cbamreport:hasCountry $installationAddressCountry .
                             $installationAddressCountry geonames:countryCode $installationCountry .
