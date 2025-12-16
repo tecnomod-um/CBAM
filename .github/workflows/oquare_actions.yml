@@ -1,0 +1,30 @@
+name: OQuaRE QA
+
+on: [push]
+
+permissions:
+  contents: write
+  
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    name: Evaluate ontologies
+    steps:
+      - uses: actions/checkout@v4
+      # Configuration
+      # Java setup
+      - uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'
+          java-version: '17'
+      # Python setup
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.9'
+
+      - name: OQuaRE module
+        uses: tecnomod-um/oquare-metrics@v3.0
+        with:
+          ontology-folders: cbam-network
+          contents-folder: oquare-evaluation
+
