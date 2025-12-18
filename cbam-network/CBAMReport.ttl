@@ -1310,7 +1310,7 @@ cbamreport:Address rdf:type owl:Class ;
 ###  https://purl.org/cbam/cbamreport/Attachment
 cbamreport:Attachment rdf:type owl:Class ;
                       rdfs:comment "This is an entity used to attach a file or provide a URL" ;
-                      rdfs:label "Attachments" .
+                      rdfs:label "Attachment" .
 
 
 ###  https://purl.org/cbam/cbamreport/Authorisation
