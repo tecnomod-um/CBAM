@@ -14,16 +14,16 @@
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix properties: <https://purl.org/cbam/> .
 @prefix emissionsqualifyingparameters: <https://purl.org/cbam/emissionsqualifyingparameters/> .
-@base <https://purl.org/cbam/emissionsqualifyingparameters/> .
+@base <https://purl.org/cbam/emissionsqualifyingparameters#> .
 
 <https://purl.org/cbam/emissionsqualifyingparameters/> rdf:type owl:Ontology ;
                                                         owl:versionIRI <https://purl.org/cbam/emissionsqualifyingparameters/1.0> ;
                                                         dcterms:abstract "The Emissions Qualifying Parameters Code List in the CBAM Report" ;
                                                         dcterms:accessRights "This ontology is licensed under the Creative Commons Attribution-NonCommercial 4.0 International License (CC BY-NC 4.0). It allows non-commercial use, sharing, and adaptation of the ontology, as long as users provide clear credit to the creator by citing the ontology's title, creator, and license information. Commercial use is strictly prohibited." ;
                                                         dcterms:bibliographicCitation "OK4I - Ontologies and Knowledge Graphs for Industry, July 15–19, 2024, Enschede, Netherlands - <https://www.utwente.nl/en/eemcs/fois2024/resources/papers/duque-et-al-ontology-network-for-the-standardization-of-the-eu-cbam-report-data.pdf>" ;
-                                                        dcterms:contributor [ foaf:name "Astrid Duque Ramos"
+                                                        dcterms:contributor [ foaf:name "Jesualdo Tomás Fernández Breis"
                                                                             ] ,
-                                                                            [ foaf:name "Jesualdo Tomás Fernández Breis"
+                                                                            [ foaf:name "Astrid Duque Ramos"
                                                                             ] ;
                                                         dcterms:created "2024-06-01"^^rdfs:Literal ;
                                                         dcterms:creator [ foaf:name "Astrid Duque Ramos"
@@ -846,19 +846,19 @@ emissionsqualifyingparameters:TEXT rdf:type owl:NamedIndividual ,
 [ foaf:name "Astrid Duque Ramos"
 ] .
 
+[ rdfs:label "N62c96b55ac7041f4964f84de5a715b7b"
+ ] .
+
 [ foaf:name "Jesualdo Tomás Fernández Breis"
  ] .
 
 [ foaf:name "Astrid Duque Ramos"
  ] .
 
-[ rdfs:label "N6ead3d6ac8bd4fb9ac7800de0a534c3a"
- ] .
-
-[ rdfs:label "N62c96b55ac7041f4964f84de5a715b7b"
- ] .
-
 [ rdfs:label "N5ae3ea7ce6124304b8aa587a6b24ea95"
+ ] .
+
+[ rdfs:label "N6ead3d6ac8bd4fb9ac7800de0a534c3a"
  ] .
 
 [ rdfs:label "N5b0531ff6e0440d7bb37d2c7054e810c"
@@ -886,7 +886,6 @@ emissionsqualifyingparameters:TEXT rdf:type owl:NamedIndividual ,
                  emissionsqualifyingparameters:Non_Iron_content
                  emissionsqualifyingparameters:Other_Nitrogen_content
                  emissionsqualifyingparameters:Precursor_reducing_Agent
-                 emissionsqualifyingparameters:Reducing_Agent
                  emissionsqualifyingparameters:Steel_pre-consumer_scrap
                  emissionsqualifyingparameters:Steel_product_scrap_usage
                  emissionsqualifyingparameters:Steel_scrap_usage
@@ -894,6 +893,33 @@ emissionsqualifyingparameters:TEXT rdf:type owl:NamedIndividual ,
                  emissionsqualifyingparameters:Urea_purity
                )
  ] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( emissionsqualifyingparameters:Aluminium_pre-consumer_scrap
+                emissionsqualifyingparameters:Aluminium_scrap_usage
+                emissionsqualifyingparameters:Ammonia_concentration
+                emissionsqualifyingparameters:Ammonium_Nitrogen_content
+                emissionsqualifyingparameters:Calcination
+                emissionsqualifyingparameters:Carbon_content_of_iron_or_steel
+                emissionsqualifyingparameters:Chromium_content
+                emissionsqualifyingparameters:Clinker_factor
+                emissionsqualifyingparameters:Content_of_other_alloy_elements
+                emissionsqualifyingparameters:Manganese_content
+                emissionsqualifyingparameters:Nickel_content
+                emissionsqualifyingparameters:Nitrate_Nitrogen_content
+                emissionsqualifyingparameters:Nitric_acid_concentration
+                emissionsqualifyingparameters:Non_Aluminium_content
+                emissionsqualifyingparameters:Non_Iron_content
+                emissionsqualifyingparameters:Other_Nitrogen_content
+                emissionsqualifyingparameters:Reducing_Agent
+                emissionsqualifyingparameters:Steel_pre-consumer_scrap
+                emissionsqualifyingparameters:Steel_product_scrap_usage
+                emissionsqualifyingparameters:Steel_scrap_usage
+                emissionsqualifyingparameters:Urea_Nitrogen_content
+                emissionsqualifyingparameters:Urea_purity
+              )
+] .
 
 
 [ rdf:type owl:AllDisjointProperties ;
@@ -904,4 +930,4 @@ emissionsqualifyingparameters:TEXT rdf:type owl:NamedIndividual ,
 ] .
 
 
-###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
+###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi
