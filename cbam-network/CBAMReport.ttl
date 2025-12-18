@@ -1307,10 +1307,10 @@ cbamreport:Address rdf:type owl:Class ;
                    rdfs:label "Address" .
 
 
-###  https://purl.org/cbam/cbamreport/Attachments
-cbamreport:Attachments rdf:type owl:Class ;
-                       rdfs:comment "This is an entity used to attach a file or provide a URL" ;
-                       rdfs:label "Attachments" .
+###  https://purl.org/cbam/cbamreport/Attachment
+cbamreport:Attachment rdf:type owl:Class ;
+                      rdfs:comment "This is an entity used to attach a file or provide a URL" ;
+                      rdfs:label "Attachments" .
 
 
 ###  https://purl.org/cbam/cbamreport/Authorisation
@@ -1738,13 +1738,16 @@ cbamreport:TypeOfMeasurementUnit rdf:type owl:Class ;
                                  rdfs:label "TypeOfMeasurementUnit" .
 
 
-[ foaf:name "Alexander Garcia Castro" ,
-            "Andreas Nissen" ,
-            "Astrid Duque Ramos" ,
-            "Francisco Abad" ,
-            "Lars Rathgeb"
+[ foaf:name "Astrid Duque Ramos"
 ] .
 
+[ foaf:name "Alexander Garcia Castro" ,
+             "Andreas Nissen" ,
+             "Astrid Duque Ramos" ,
+             "Francisco Abad" ,
+             "Lars Rathgeb"
+ ] .
+
 [ foaf:name "Astrid Duque Ramos"
  ] .
 
@@ -1770,17 +1773,6 @@ cbamreport:TypeOfMeasurementUnit rdf:type owl:Class ;
 [ foaf:name "Astrid Duque Ramos"
  ] .
 
-[ foaf:name "Astrid Duque Ramos"
- ] .
-
-[ foaf:name "Alexander Garcia Castro" ,
-             "Andreas Rathgeb" ,
-             "Astrid Duque Ramos" ,
-             "Francisco Abad" ,
-             "Jesualdo Tomás Fernández Breis" ,
-             "Lars Nissen"
- ] .
-
 [ foaf:name "Alexander Garcia Castro" ,
              "Andreas Rathgeb" ,
              "Astrid Duque Ramos" ,
@@ -1809,6 +1801,14 @@ cbamreport:TypeOfMeasurementUnit rdf:type owl:Class ;
  ] .
 
 [ foaf:name "Astrid Duque Ramos"
+ ] .
+
+[ foaf:name "Alexander Garcia Castro" ,
+             "Andreas Rathgeb" ,
+             "Astrid Duque Ramos" ,
+             "Francisco Abad" ,
+             "Jesualdo Tomás Fernández Breis" ,
+             "Lars Nissen"
  ] .
 
 [ foaf:name "Astrid Duque Ramos"
