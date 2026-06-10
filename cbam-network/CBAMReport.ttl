@@ -933,6 +933,14 @@ cbamreport:hasID rdf:type owl:DatatypeProperty ;
                  rdfs:label "hasID" .
 
 
+###  https://purl.org/cbam/cbamreport/hasNameOrigin
+cbamreport:hasNameOrigin rdf:type owl:DatatypeProperty ;
+                         rdfs:domain cbamreport:Installation ;
+                         rdfs:range xsd:string ;
+                         rdfs:comment "The original name of an installation." ;
+                         rdfs:label "has name origin" .
+
+
 ###  https://purl.org/cbam/cbamreport/hasNumber
 cbamreport:hasNumber rdf:type owl:DatatypeProperty ;
                      rdfs:domain cbamreport:Address ;
@@ -1734,87 +1742,87 @@ cbamreport:TypeOfMeasurementUnit rdf:type owl:Class ;
 ] .
 
 [ foaf:name "Alexander Garcia Castro" ,
-             "Andreas Rathgeb" ,
-             "Astrid Duque Ramos" ,
-             "Francisco Abad" ,
-             "Jesualdo Tomás Fernández Breis" ,
-             "Lars Nissen"
- ] .
-
-[ foaf:name "Astrid Duque Ramos"
- ] .
-
-[ foaf:name "Alexander Garcia Castro" ,
-             "Andreas Rathgeb" ,
-             "Astrid Duque Ramos" ,
-             "Francisco Abad" ,
-             "Jesualdo Tomás Fernández Breis" ,
-             "Lars Nissen"
- ] .
-
-[ foaf:name "Alexander Garcia Castro" ,
-             "Andreas Rathgeb" ,
-             "Astrid Duque Ramos" ,
-             "Francisco Abad" ,
-             "Jesualdo Tomás Fernández Breis" ,
-             "Lars Nissen"
- ] .
-
-[ foaf:name "Alexander Garcia Castro" ,
-             "Andreas Rathgeb" ,
-             "Astrid Duque Ramos" ,
-             "Francisco Abad" ,
-             "Jesualdo Tomás Fernández Breis" ,
-             "Lars Nissen"
- ] .
-
-[ foaf:name "Astrid Duque Ramos"
- ] .
-
-[ foaf:name "Astrid Duque Ramos"
- ] .
-
-[ foaf:name "Astrid Duque Ramos"
- ] .
-
-[ foaf:name "Astrid Duque Ramos"
- ] .
-
-[ foaf:name "Alexander Garcia Castro" ,
-             "Andreas Rathgeb" ,
-             "Astrid Duque Ramos" ,
-             "Francisco Abad" ,
-             "Jesualdo Tomás Fernández Breis" ,
-             "Lars Nissen"
- ] .
-
-[ foaf:name "Alexander Garcia Castro" ,
-             "Andreas Rathgeb" ,
-             "Astrid Duque Ramos" ,
-             "Francisco Abad" ,
-             "Jesualdo Tomás Fernández Breis" ,
-             "Lars Nissen"
- ] .
-
-[ foaf:name "Astrid Duque Ramos"
- ] .
-
-[ foaf:name "Astrid Duque Ramos"
- ] .
-
-[ foaf:name "Alexander Garcia Castro" ,
-             "Andreas Rathgeb" ,
-             "Astrid Duque Ramos" ,
-             "Francisco Abad" ,
-             "Jesualdo Tomás Fernández Breis" ,
-             "Lars Nissen"
- ] .
-
-[ foaf:name "Alexander Garcia Castro" ,
              "Andreas Nissen" ,
              "Astrid Duque Ramos" ,
              "Francisco Abad" ,
              "Lars Rathgeb"
+ ] .
+
+[ foaf:name "Alexander Garcia Castro" ,
+             "Andreas Rathgeb" ,
+             "Astrid Duque Ramos" ,
+             "Francisco Abad" ,
+             "Jesualdo Tomás Fernández Breis" ,
+             "Lars Nissen"
+ ] .
+
+[ foaf:name "Alexander Garcia Castro" ,
+             "Andreas Rathgeb" ,
+             "Astrid Duque Ramos" ,
+             "Francisco Abad" ,
+             "Jesualdo Tomás Fernández Breis" ,
+             "Lars Nissen"
+ ] .
+
+[ foaf:name "Astrid Duque Ramos"
+ ] .
+
+[ foaf:name "Astrid Duque Ramos"
+ ] .
+
+[ foaf:name "Astrid Duque Ramos"
+ ] .
+
+[ foaf:name "Astrid Duque Ramos"
+ ] .
+
+[ foaf:name "Alexander Garcia Castro" ,
+             "Andreas Rathgeb" ,
+             "Astrid Duque Ramos" ,
+             "Francisco Abad" ,
+             "Jesualdo Tomás Fernández Breis" ,
+             "Lars Nissen"
+ ] .
+
+[ foaf:name "Astrid Duque Ramos"
+ ] .
+
+[ foaf:name "Alexander Garcia Castro" ,
+             "Andreas Rathgeb" ,
+             "Astrid Duque Ramos" ,
+             "Francisco Abad" ,
+             "Jesualdo Tomás Fernández Breis" ,
+             "Lars Nissen"
+ ] .
+
+[ foaf:name "Alexander Garcia Castro" ,
+             "Andreas Rathgeb" ,
+             "Astrid Duque Ramos" ,
+             "Francisco Abad" ,
+             "Jesualdo Tomás Fernández Breis" ,
+             "Lars Nissen"
+ ] .
+
+[ foaf:name "Alexander Garcia Castro" ,
+             "Andreas Rathgeb" ,
+             "Astrid Duque Ramos" ,
+             "Francisco Abad" ,
+             "Jesualdo Tomás Fernández Breis" ,
+             "Lars Nissen"
+ ] .
+
+[ foaf:name "Astrid Duque Ramos"
+ ] .
+
+[ foaf:name "Alexander Garcia Castro" ,
+             "Andreas Rathgeb" ,
+             "Astrid Duque Ramos" ,
+             "Francisco Abad" ,
+             "Jesualdo Tomás Fernández Breis" ,
+             "Lars Nissen"
+ ] .
+
+[ foaf:name "Astrid Duque Ramos"
  ] .
 
 #################################################################
