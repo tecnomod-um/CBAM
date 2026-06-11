@@ -20,7 +20,12 @@
                                          dcterms:abstract "The Area of Import Code List in the CBAM Report" ;
                                          dcterms:accessRights "This ontology is licensed under the Creative Commons Attribution-NonCommercial 4.0 International License (CC BY-NC 4.0). It allows non-commercial use, sharing, and adaptation of the ontology, as long as users provide clear credit to the creator by citing the ontology's title, creator, and license information. Commercial use is strictly prohibited." ;
                                          dcterms:bibliographicCitation "OK4I - Ontologies and Knowledge Graphs for Industry, July 15–19, 2024, Enschede, Netherlands - <https://www.utwente.nl/en/eemcs/fois2024/resources/papers/duque-et-al-ontology-network-for-the-standardization-of-the-eu-cbam-report-data.pdf>" ;
-                                         dcterms:contributor [ foaf:name "Jesualdo Tomás Fernández Breis" , "Astrid Duque Ramos" , "Alexander Garcia Castro" , "Andreas Nissen" , "Lars Rathgeb" , "Francisco Abad"
+                                         dcterms:contributor [ foaf:name "Alexander Garcia Castro" ,
+                                                                         "Andreas Nissen" ,
+                                                                         "Astrid Duque Ramos" ,
+                                                                         "Francisco Abad" ,
+                                                                         "Jesualdo Tomás Fernández Breis" ,
+                                                                         "Lars Rathgeb"
                                                              ] ;
                                          dcterms:created "2024-06-01"^^rdfs:Literal ;
                                          dcterms:creator [ foaf:name "Jesualdo Tomás Fernández Breis"
@@ -41,16 +46,19 @@
 #################################################################
 
 ###  http://purl.org/dc/dcam/rangeIncludes
-<http://purl.org/dc/dcam/rangeIncludes> rdf:type owl:AnnotationProperty .
+<http://purl.org/dc/dcam/rangeIncludes> rdf:type owl:AnnotationProperty ;
+                                        rdfs:label "range includes" .
 
 
 ###  http://purl.org/dc/terms/abstract
 dcterms:abstract rdf:type owl:AnnotationProperty ;
+                 rdfs:label "abstract" ;
                  rdfs:subPropertyOf dcterms:description .
 
 
 ###  http://purl.org/dc/terms/accessRights
 dcterms:accessRights rdf:type owl:AnnotationProperty ;
+                     rdfs:label "access rights" ;
                      rdfs:subPropertyOf dcterms:rights .
 
 
@@ -71,11 +79,13 @@ dcterms:bibliographicCitation rdf:type owl:AnnotationProperty ;
 
 ###  http://purl.org/dc/terms/conformsTo
 dcterms:conformsTo rdf:type owl:AnnotationProperty ;
+                   rdfs:label "conforms to" ;
                    rdfs:subPropertyOf dcterms:relation .
 
 
 ###  http://purl.org/dc/terms/contributor
 dcterms:contributor rdf:type owl:AnnotationProperty ;
+                    rdfs:label "contributor" ;
                     rdfs:subPropertyOf dcterms:contributor .
 
 
@@ -86,6 +96,7 @@ dcterms:created rdf:type owl:AnnotationProperty ;
 
 ###  http://purl.org/dc/terms/creator
 dcterms:creator rdf:type owl:AnnotationProperty ;
+                rdfs:label "creator" ;
                 rdfs:subPropertyOf dcterms:contributor ,
                                    dcterms:creator .
 
@@ -112,21 +123,25 @@ dcterms:dateSubmitted rdf:type owl:AnnotationProperty ;
 
 ###  http://purl.org/dc/terms/description
 dcterms:description rdf:type owl:AnnotationProperty ;
+                    rdfs:label "description" ;
                     rdfs:subPropertyOf dcterms:description .
 
 
 ###  http://purl.org/dc/terms/hasFormat
 dcterms:hasFormat rdf:type owl:AnnotationProperty ;
+                  rdfs:label "has format" ;
                   rdfs:subPropertyOf dcterms:relation .
 
 
 ###  http://purl.org/dc/terms/hasPart
 dcterms:hasPart rdf:type owl:AnnotationProperty ;
+                rdfs:label "has part" ;
                 rdfs:subPropertyOf dcterms:relation .
 
 
 ###  http://purl.org/dc/terms/hasVersion
 dcterms:hasVersion rdf:type owl:AnnotationProperty ;
+                   rdfs:label "has version" ;
                    rdfs:subPropertyOf dcterms:relation .
 
 
@@ -137,31 +152,37 @@ dcterms:identifier rdf:type owl:AnnotationProperty ;
 
 ###  http://purl.org/dc/terms/isFormatOf
 dcterms:isFormatOf rdf:type owl:AnnotationProperty ;
+                   rdfs:label "is format of" ;
                    rdfs:subPropertyOf dcterms:relation .
 
 
 ###  http://purl.org/dc/terms/isPartOf
 dcterms:isPartOf rdf:type owl:AnnotationProperty ;
+                 rdfs:label "is part of" ;
                  rdfs:subPropertyOf dcterms:relation .
 
 
 ###  http://purl.org/dc/terms/isReferencedBy
 dcterms:isReferencedBy rdf:type owl:AnnotationProperty ;
+                       rdfs:label "is referenced by" ;
                        rdfs:subPropertyOf dcterms:relation .
 
 
 ###  http://purl.org/dc/terms/isReplacedBy
 dcterms:isReplacedBy rdf:type owl:AnnotationProperty ;
+                     rdfs:label "is replaced by" ;
                      rdfs:subPropertyOf dcterms:relation .
 
 
 ###  http://purl.org/dc/terms/isRequiredBy
 dcterms:isRequiredBy rdf:type owl:AnnotationProperty ;
+                     rdfs:label "is required by" ;
                      rdfs:subPropertyOf dcterms:relation .
 
 
 ###  http://purl.org/dc/terms/isVersionOf
 dcterms:isVersionOf rdf:type owl:AnnotationProperty ;
+                    rdfs:label "is version of" ;
                     rdfs:subPropertyOf dcterms:relation .
 
 
@@ -172,11 +193,13 @@ dcterms:issued rdf:type owl:AnnotationProperty ;
 
 ###  http://purl.org/dc/terms/language
 dcterms:language rdf:type owl:AnnotationProperty ;
+                 rdfs:label "language" ;
                  rdfs:subPropertyOf dcterms:language .
 
 
 ###  http://purl.org/dc/terms/license
 dcterms:license rdf:type owl:AnnotationProperty ;
+                rdfs:label "license" ;
                 rdfs:subPropertyOf dcterms:rights .
 
 
@@ -187,47 +210,56 @@ dcterms:modified rdf:type owl:AnnotationProperty ;
 
 ###  http://purl.org/dc/terms/publisher
 dcterms:publisher rdf:type owl:AnnotationProperty ;
+                  rdfs:label "publisher" ;
                   rdfs:subPropertyOf dcterms:publisher .
 
 
 ###  http://purl.org/dc/terms/references
 dcterms:references rdf:type owl:AnnotationProperty ;
+                   rdfs:label "references" ;
                    rdfs:subPropertyOf dcterms:relation .
 
 
 ###  http://purl.org/dc/terms/relation
 dcterms:relation rdf:type owl:AnnotationProperty ;
+                 rdfs:label "relation" ;
                  rdfs:subPropertyOf dcterms:relation .
 
 
 ###  http://purl.org/dc/terms/replaces
 dcterms:replaces rdf:type owl:AnnotationProperty ;
+                 rdfs:label "replaces" ;
                  rdfs:subPropertyOf dcterms:relation .
 
 
 ###  http://purl.org/dc/terms/requires
 dcterms:requires rdf:type owl:AnnotationProperty ;
+                 rdfs:label "requires" ;
                  rdfs:subPropertyOf dcterms:relation .
 
 
 ###  http://purl.org/dc/terms/rights
 dcterms:rights rdf:type owl:AnnotationProperty ;
+               rdfs:label "rights" ;
                rdfs:subPropertyOf dcterms:rights .
 
 
 ###  http://purl.org/dc/terms/source
 dcterms:source rdf:type owl:AnnotationProperty ;
+               rdfs:label "source" ;
                rdfs:subPropertyOf dcterms:relation ,
                                   dcterms:source .
 
 
 ###  http://purl.org/dc/terms/subject
 dcterms:subject rdf:type owl:AnnotationProperty ;
+                rdfs:label "subject" ;
                 rdfs:subPropertyOf dcterms:subject .
 
 
 ###  http://purl.org/dc/terms/tableOfContents
 dcterms:tableOfContents rdf:type owl:AnnotationProperty ;
+                        rdfs:label "table of contents" ;
                         rdfs:subPropertyOf dcterms:description .
 
 
@@ -238,6 +270,7 @@ dcterms:title rdf:type owl:AnnotationProperty ;
 
 ###  http://purl.org/dc/terms/type
 dcterms:type rdf:type owl:AnnotationProperty ;
+             rdfs:label "type" ;
              rdfs:subPropertyOf dcterms:type .
 
 
@@ -247,31 +280,46 @@ dcterms:valid rdf:type owl:AnnotationProperty ;
 
 
 ###  http://purl.org/vocab/vann/preferredNamespacePrefix
-vann:preferredNamespacePrefix rdf:type owl:AnnotationProperty .
+vann:preferredNamespacePrefix rdf:type owl:AnnotationProperty ;
+                              rdfs:label "preferred namespace prefix" .
 
 
 ###  http://purl.org/vocab/vann/preferredNamespaceUri
-vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
+vann:preferredNamespaceUri rdf:type owl:AnnotationProperty ;
+                           rdfs:label "preferred namespace uri" .
+
+
+###  http://www.w3.org/2000/01/rdf-schema#comment
+rdfs:comment rdfs:label "comment" .
+
+
+###  http://www.w3.org/2000/01/rdf-schema#label
+rdfs:label rdfs:label "label" .
 
 
 ###  http://xmlns.com/foaf/0.1/maker
-foaf:maker rdf:type owl:AnnotationProperty .
+foaf:maker rdf:type owl:AnnotationProperty ;
+           rdfs:label "maker" .
 
 
 ###  http://xmlns.com/foaf/0.1/name
-foaf:name rdf:type owl:AnnotationProperty .
+foaf:name rdf:type owl:AnnotationProperty ;
+          rdfs:label "name" .
 
 
 ###  http://xmlns.com/foaf/0.1/workInfohomePage
-foaf:workInfohomePage rdf:type owl:AnnotationProperty .
+foaf:workInfohomePage rdf:type owl:AnnotationProperty ;
+                      rdfs:label "work infohome page" .
 
 
 ###  https://purl.org/cbam/code
-properties:code rdf:type owl:AnnotationProperty .
+properties:code rdf:type owl:AnnotationProperty ;
+                rdfs:label "code" .
 
 
 ###  https://purl.org/cbam/validity_date
-properties:validity_date rdf:type owl:AnnotationProperty .
+properties:validity_date rdf:type owl:AnnotationProperty ;
+                         rdfs:label "validity date" .
 
 
 #################################################################
@@ -379,6 +427,49 @@ vocabulary:EUOTH rdf:type owl:NamedIndividual ,
                  rdfs:label "EU by other means" ;
                  properties:code "EUOTH" ;
                  properties:validity_date "1/1/23" .
+
+
+#################################################################
+#    Annotations
+#################################################################
+
+dcterms:alternative rdfs:label "alternative" .
+
+
+dcterms:available rdfs:label "available" .
+
+
+dcterms:bibliographicCitation rdfs:label "bibliographic citation" .
+
+
+dcterms:created rdfs:label "created" .
+
+
+dcterms:date rdfs:label "date" .
+
+
+dcterms:dateAccepted rdfs:label "date accepted" .
+
+
+dcterms:dateCopyrighted rdfs:label "date copyrighted" .
+
+
+dcterms:dateSubmitted rdfs:label "date submitted" .
+
+
+dcterms:identifier rdfs:label "identifier" .
+
+
+dcterms:issued rdfs:label "issued" .
+
+
+dcterms:modified rdfs:label "modified" .
+
+
+dcterms:title rdfs:label "title" .
+
+
+dcterms:valid rdfs:label "valid" .
 
 
 ###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi
