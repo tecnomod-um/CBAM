@@ -1,0 +1,1084 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://purl.org/cbam/Production_Method/"
+     xml:base="https://purl.org/cbam/Production_Method/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:bibo="http://purl.org/ontology/bibo/"
+     xmlns:dcam="http://purl.org/dc/dcam/"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:prov="http://www.w3.org/ns/prov#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:vcard="http://www.w3.org/2006/vcard/ns#"
+     xmlns:dcterms="http://purl.org/dc/terms/"
+     xmlns:properties="https://purl.org/cbam/"
+     xmlns:Production_Method="https://purl.org/cbam/Production_Method/">
+    <owl:Ontology rdf:about="https://purl.org/cbam/Production_Method/">
+        <owl:versionIRI rdf:resource="https://purl.org/cbam/Production_Method/1.0"/>
+        <dcterms:abstract>The Production Method Code List in the CBAM Report</dcterms:abstract>
+        <dcterms:accessRights>This ontology is licensed under the Creative Commons Attribution-NonCommercial 4.0 International License (CC BY-NC 4.0). It allows non-commercial use, sharing, and adaptation of the ontology, as long as users provide clear credit to the creator by citing the ontology&apos;s title, creator, and license information. Commercial use is strictly prohibited.</dcterms:accessRights>
+        <dcterms:bibliographicCitation>OK4I - Ontologies and Knowledge Graphs for Industry, July 15–19, 2024, Enschede, Netherlands - &lt;https://www.utwente.nl/en/eemcs/fois2024/resources/papers/duque-et-al-ontology-network-for-the-standardization-of-the-eu-cbam-report-data.pdf&gt;</dcterms:bibliographicCitation>
+        <dcterms:contributor>
+            <rdf:Description>
+                <foaf:name>Astrid Duque Ramos</foaf:name>
+            </rdf:Description>
+        </dcterms:contributor>
+        <dcterms:contributor>
+            <rdf:Description>
+                <foaf:name>Jesualdo Tomás Fernández Breis</foaf:name>
+            </rdf:Description>
+        </dcterms:contributor>
+        <dcterms:created rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">2024-06-01</dcterms:created>
+        <dcterms:creator>
+            <rdf:Description>
+                <foaf:name>Astrid Duque Ramos</foaf:name>
+            </rdf:Description>
+        </dcterms:creator>
+        <dcterms:description>This ontology represents the code list for the &apos;Production Method&apos; as defined by the Carbon Border Adjustment Mechanism (CBAM) Report.</dcterms:description>
+        <dcterms:hasVersion rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">&lt;https://purl.org/cbam/Production_Method/1.0&gt;</dcterms:hasVersion>
+        <dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-11-21</dcterms:issued>
+        <dcterms:license>&lt;http://creativecommons.org/licenses/by/4.0/&gt;</dcterms:license>
+        <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-11-21</dcterms:modified>
+        <dcterms:publisher>Siemens Energy</dcterms:publisher>
+        <dcterms:source>Report Structure ver 18.0.xlsx  &lt;https://taxation-customs.ec.europa.eu/carbon-border-adjustment-mechanism_en#where-to-report&gt;</dcterms:source>
+        <dcterms:title rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Production Method</dcterms:title>
+        <vann:preferredNamespacePrefix>&lt;https://purl.org/cbam/Production_Method/&gt;</vann:preferredNamespacePrefix>
+        <vann:preferredNamespaceUri>&lt;https://purl.org/cbam/Production_Method/&gt;</vann:preferredNamespaceUri>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/dcam/rangeIncludes -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/dcam/rangeIncludes"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/abstract -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/abstract">
+        <rdfs:comment xml:lang="en">A summary of the resource.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:label xml:lang="en">Abstract</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/description"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/accessRights -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/accessRights">
+        <dcam:rangeIncludes rdf:resource="http://purl.org/dc/terms/RightsStatement"/>
+        <dcterms:description xml:lang="en">Access Rights may include information regarding access or restrictions based on privacy, security, or other policies.</dcterms:description>
+        <rdfs:comment xml:lang="en">Information about who access the resource or an indication of its security status.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:label xml:lang="en">Access Rights</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/rights"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/alternative -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/alternative">
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/available -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/available">
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/bibliographicCitation -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/bibliographicCitation">
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/conformsTo -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/conformsTo">
+        <dcam:rangeIncludes rdf:resource="http://purl.org/dc/terms/Standard"/>
+        <rdfs:comment xml:lang="en">An established standard to which the described resource conforms.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:label xml:lang="en">Conforms To</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/relation"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/contributor -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/contributor">
+        <dcam:rangeIncludes rdf:resource="http://purl.org/dc/terms/Agent"/>
+        <dcterms:description xml:lang="en">The guidelines for using names of persons or organizations as creators apply to contributors.</dcterms:description>
+        <rdfs:comment xml:lang="en">An entity responsible for making contributions to the resource.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:label xml:lang="en">Contributor</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/contributor"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/created -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/created">
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator">
+        <dcam:rangeIncludes rdf:resource="http://purl.org/dc/terms/Agent"/>
+        <dcterms:description xml:lang="en">Recommended practice is to identify the creator with a URI.  If this is not possible or feasible, a literal value that identifies the creator may be provided.</dcterms:description>
+        <rdfs:comment xml:lang="en">An entity responsible for making the resource.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:label xml:lang="en">Creator</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/contributor"/>
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/creator"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/date -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/date">
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/dateAccepted -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/dateAccepted">
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/dateCopyrighted -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/dateCopyrighted">
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/dateSubmitted -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/dateSubmitted">
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description">
+        <dcterms:description xml:lang="en">Description may include but is not limited to: an abstract, a table of contents, a graphical representation, or a free-text account of the resource.</dcterms:description>
+        <rdfs:comment xml:lang="en">An account of the resource.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:label xml:lang="en">Description</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/description"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/hasFormat -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/hasFormat">
+        <dcterms:description xml:lang="en">This property is intended to be used with non-literal values. This property is an inverse property of Is Format Of.</dcterms:description>
+        <rdfs:comment xml:lang="en">A related resource that is substantially the same as the pre-existing described resource, but in another format.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:label xml:lang="en">Has Format</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/relation"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/hasPart -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/hasPart">
+        <dcterms:description xml:lang="en">This property is intended to be used with non-literal values. This property is an inverse property of Is Part Of.</dcterms:description>
+        <rdfs:comment xml:lang="en">A related resource that is included either physically or logically in the described resource.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:label xml:lang="en">Has Part</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/relation"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/hasVersion -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/hasVersion">
+        <dcterms:description xml:lang="en">Changes in version imply substantive changes in content rather than differences in format. This property is intended to be used with non-literal values. This property is an inverse property of Is Version Of.</dcterms:description>
+        <rdfs:comment xml:lang="en">A related resource that is a version, edition, or adaptation of the described resource.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:label xml:lang="en">Has Version</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/relation"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/identifier -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/identifier">
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/isFormatOf -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/isFormatOf">
+        <dcterms:description xml:lang="en">This property is intended to be used with non-literal values. This property is an inverse property of Has Format.</dcterms:description>
+        <rdfs:comment xml:lang="en">A pre-existing related resource that is substantially the same as the described resource, but in another format.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:label xml:lang="en">Is Format Of</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/relation"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/isPartOf -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/isPartOf">
+        <dcterms:description xml:lang="en">This property is intended to be used with non-literal values. This property is an inverse property of Has Part.</dcterms:description>
+        <rdfs:comment xml:lang="en">A related resource in which the described resource is physically or logically included.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:label xml:lang="en">Is Part Of</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/relation"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/isReferencedBy -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/isReferencedBy">
+        <dcterms:description xml:lang="en">This property is intended to be used with non-literal values. This property is an inverse property of References.</dcterms:description>
+        <rdfs:comment xml:lang="en">A related resource that references, cites, or otherwise points to the described resource.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:label xml:lang="en">Is Referenced By</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/relation"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/isReplacedBy -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/isReplacedBy">
+        <dcterms:description xml:lang="en">This property is intended to be used with non-literal values. This property is an inverse property of Replaces.</dcterms:description>
+        <rdfs:comment xml:lang="en">A related resource that supplants, displaces, or supersedes the described resource.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:label xml:lang="en">Is Replaced By</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/relation"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/isRequiredBy -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/isRequiredBy">
+        <dcterms:description xml:lang="en">This property is intended to be used with non-literal values. This property is an inverse property of Requires.</dcterms:description>
+        <rdfs:comment xml:lang="en">A related resource that requires the described resource to support its function, delivery, or coherence.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:label xml:lang="en">Is Required By</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/relation"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/isVersionOf -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/isVersionOf">
+        <dcterms:description xml:lang="en">Changes in version imply substantive changes in content rather than differences in format. This property is intended to be used with non-literal values. This property is an inverse property of Has Version.</dcterms:description>
+        <rdfs:comment xml:lang="en">A related resource of which the described resource is a version, edition, or adaptation.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:label xml:lang="en">Is Version Of</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/relation"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/issued -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/issued">
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/language -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/language">
+        <dcam:rangeIncludes rdf:resource="http://purl.org/dc/terms/LinguisticSystem"/>
+        <dcterms:description xml:lang="en">Recommended practice is to use either a non-literal value representing a language from a controlled vocabulary such as ISO 639-2 or ISO 639-3, or a literal value consisting of an IETF Best Current Practice 47 [[IETF-BCP47](https://tools.ietf.org/html/bcp47)] language tag.</dcterms:description>
+        <rdfs:comment xml:lang="en">A language of the resource.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:label xml:lang="en">Language</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/language"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license">
+        <dcam:rangeIncludes rdf:resource="http://purl.org/dc/terms/LicenseDocument"/>
+        <dcterms:description xml:lang="en">Recommended practice is to identify the license document with a URI. If this is not possible or feasible, a literal value that identifies the license may be provided.</dcterms:description>
+        <rdfs:comment xml:lang="en">A legal document giving official permission to do something with the resource.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:label xml:lang="en">License</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/rights"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/modified -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/modified">
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/publisher -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/publisher">
+        <dcam:rangeIncludes rdf:resource="http://purl.org/dc/terms/Agent"/>
+        <rdfs:comment xml:lang="en">An entity responsible for making the resource available.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:label xml:lang="en">Publisher</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/publisher"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/references -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/references">
+        <dcterms:description xml:lang="en">This property is intended to be used with non-literal values. This property is an inverse property of Is Referenced By.</dcterms:description>
+        <rdfs:comment xml:lang="en">A related resource that is referenced, cited, or otherwise pointed to by the described resource.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:label xml:lang="en">References</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/relation"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/relation -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/relation">
+        <dcterms:description xml:lang="en">Recommended practice is to identify the related resource by means of a URI.  If this is not possible or feasible, a string conforming to a formal identification system may be provided.</dcterms:description>
+        <rdfs:comment xml:lang="en">A related resource.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:label xml:lang="en">Relation</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/relation"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/replaces -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/replaces">
+        <dcterms:description xml:lang="en">This property is intended to be used with non-literal values. This property is an inverse property of Is Replaced By.</dcterms:description>
+        <rdfs:comment xml:lang="en">A related resource that is supplanted, displaced, or superseded by the described resource.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:label xml:lang="en">Replaces</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/relation"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/requires -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/requires">
+        <dcterms:description xml:lang="en">This property is intended to be used with non-literal values. This property is an inverse property of Is Required By.</dcterms:description>
+        <rdfs:comment xml:lang="en">A related resource that is required by the described resource to support its function, delivery, or coherence.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:label xml:lang="en">Requires</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/relation"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/rights -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/rights">
+        <dcam:rangeIncludes rdf:resource="http://purl.org/dc/terms/RightsStatement"/>
+        <dcterms:description xml:lang="en">Typically, rights information includes a statement about various property rights associated with the resource, including intellectual property rights.  Recommended practice is to refer to a rights statement with a URI.  If this is not possible or feasible, a literal value (name, label, or short text) may be provided.</dcterms:description>
+        <rdfs:comment xml:lang="en">Information about rights held in and over the resource.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:label xml:lang="en">Rights</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/rights"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/source -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/source">
+        <dcterms:description xml:lang="en">This property is intended to be used with non-literal values. The described resource may be derived from the related resource in whole or in part. Best practice is to identify the related resource by means of a URI or a string conforming to a formal identification system.</dcterms:description>
+        <rdfs:comment xml:lang="en">A related resource from which the described resource is derived.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:label xml:lang="en">Source</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/relation"/>
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/source"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/subject -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/subject">
+        <dcterms:description xml:lang="en">Recommended practice is to refer to the subject with a URI. If this is not possible or feasible, a literal value that identifies the subject may be provided. Both should preferably refer to a subject in a controlled vocabulary.</dcterms:description>
+        <rdfs:comment xml:lang="en">A topic of the resource.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:label xml:lang="en">Subject</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/subject"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/tableOfContents -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/tableOfContents">
+        <rdfs:comment xml:lang="en">A list of subunits of the resource.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:label xml:lang="en">Table Of Contents</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/description"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title">
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/type -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/type">
+        <dcterms:description xml:lang="en">Recommended practice is to use a controlled vocabulary such as the DCMI Type Vocabulary [[DCMI-TYPE](http://dublincore.org/documents/dcmi-type-vocabulary/)]. To describe the file format, physical medium, or dimensions of the resource, use the property Format.</dcterms:description>
+        <rdfs:comment xml:lang="en">The nature or genre of the resource.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:label xml:lang="en">Type</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/type"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/valid -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/valid">
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespaceUri -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespaceUri"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/maker -->
+
+    <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/maker"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/name -->
+
+    <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/name"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/workInfohomePage -->
+
+    <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/workInfohomePage"/>
+    
+
+
+    <!-- https://purl.org/cbam/validity_date -->
+
+    <owl:AnnotationProperty rdf:about="https://purl.org/cbam/validity_date"/>
+    
+
+
+    <!-- https://purl.org/cbam/Production_Method/code -->
+
+    <owl:AnnotationProperty rdf:about="https://purl.org/cbam/Production_Method/code">
+        <rdfs:label>code</rdfs:label>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:domain rdf:resource="https://purl.org/cbam/Production_Method/Production_Method"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#date -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://purl.org/cbam/Production_Method/P01 -->
+
+    <owl:Class rdf:about="https://purl.org/cbam/Production_Method/P01">
+        <rdfs:subClassOf rdf:resource="https://purl.org/cbam/Production_Method/Production_Method"/>
+        <rdfs:label>Calcined clay</rdfs:label>
+        <properties:validity_date>25/9/23</properties:validity_date>
+        <code>P01</code>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/cbam/Production_Method/P02 -->
+
+    <owl:Class rdf:about="https://purl.org/cbam/Production_Method/P02">
+        <rdfs:subClassOf rdf:resource="https://purl.org/cbam/Production_Method/Production_Method"/>
+        <rdfs:label>Cement clinker</rdfs:label>
+        <properties:validity_date>25/9/23</properties:validity_date>
+        <code>P02</code>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/cbam/Production_Method/P03 -->
+
+    <owl:Class rdf:about="https://purl.org/cbam/Production_Method/P03">
+        <rdfs:subClassOf rdf:resource="https://purl.org/cbam/Production_Method/Production_Method"/>
+        <rdfs:label>Cement</rdfs:label>
+        <properties:validity_date>25/9/23</properties:validity_date>
+        <code>P03</code>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/cbam/Production_Method/P04 -->
+
+    <owl:Class rdf:about="https://purl.org/cbam/Production_Method/P04">
+        <rdfs:subClassOf rdf:resource="https://purl.org/cbam/Production_Method/Production_Method"/>
+        <rdfs:label>Aluminuous cement</rdfs:label>
+        <properties:validity_date>25/9/23</properties:validity_date>
+        <code>P04</code>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/cbam/Production_Method/P05 -->
+
+    <owl:Class rdf:about="https://purl.org/cbam/Production_Method/P05">
+        <rdfs:subClassOf rdf:resource="https://purl.org/cbam/Production_Method/Production_Method"/>
+        <rdfs:label>Sintered ore</rdfs:label>
+        <properties:validity_date>25/9/23</properties:validity_date>
+        <code>P05</code>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/cbam/Production_Method/P08 -->
+
+    <owl:Class rdf:about="https://purl.org/cbam/Production_Method/P08">
+        <rdfs:subClassOf rdf:resource="https://purl.org/cbam/Production_Method/Production_Method"/>
+        <rdfs:label>Electricity</rdfs:label>
+        <properties:validity_date>25/9/23</properties:validity_date>
+        <code>P08</code>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/cbam/Production_Method/P09 -->
+
+    <owl:Class rdf:about="https://purl.org/cbam/Production_Method/P09">
+        <rdfs:subClassOf rdf:resource="https://purl.org/cbam/Production_Method/Production_Method"/>
+        <rdfs:label>Steam reforming</rdfs:label>
+        <properties:validity_date>25/9/23</properties:validity_date>
+        <code>P09</code>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/cbam/Production_Method/P10 -->
+
+    <owl:Class rdf:about="https://purl.org/cbam/Production_Method/P10">
+        <rdfs:subClassOf rdf:resource="https://purl.org/cbam/Production_Method/Production_Method"/>
+        <rdfs:label>Partial oxidation</rdfs:label>
+        <properties:validity_date>25/9/23</properties:validity_date>
+        <code>P10</code>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/cbam/Production_Method/P11 -->
+
+    <owl:Class rdf:about="https://purl.org/cbam/Production_Method/P11">
+        <rdfs:subClassOf rdf:resource="https://purl.org/cbam/Production_Method/Production_Method"/>
+        <rdfs:label>Other fuel-based hydrogen production</rdfs:label>
+        <properties:validity_date>25/9/23</properties:validity_date>
+        <code>P11</code>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/cbam/Production_Method/P12 -->
+
+    <owl:Class rdf:about="https://purl.org/cbam/Production_Method/P12">
+        <rdfs:subClassOf rdf:resource="https://purl.org/cbam/Production_Method/Production_Method"/>
+        <rdfs:label>Electrolysis of water</rdfs:label>
+        <properties:validity_date>25/9/23</properties:validity_date>
+        <code>P12</code>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/cbam/Production_Method/P13 -->
+
+    <owl:Class rdf:about="https://purl.org/cbam/Production_Method/P13">
+        <rdfs:subClassOf rdf:resource="https://purl.org/cbam/Production_Method/Production_Method"/>
+        <rdfs:label>Electrolysis of water (other energy sources)</rdfs:label>
+        <properties:validity_date>25/9/23</properties:validity_date>
+        <code>P13</code>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/cbam/Production_Method/P14 -->
+
+    <owl:Class rdf:about="https://purl.org/cbam/Production_Method/P14">
+        <rdfs:subClassOf rdf:resource="https://purl.org/cbam/Production_Method/Production_Method"/>
+        <rdfs:label>Chlor-Alkali electrolysis</rdfs:label>
+        <properties:validity_date>25/9/23</properties:validity_date>
+        <code>P14</code>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/cbam/Production_Method/P15 -->
+
+    <owl:Class rdf:about="https://purl.org/cbam/Production_Method/P15">
+        <rdfs:subClassOf rdf:resource="https://purl.org/cbam/Production_Method/Production_Method"/>
+        <rdfs:label>Production of chlorates</rdfs:label>
+        <properties:validity_date>25/9/23</properties:validity_date>
+        <code>P15</code>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/cbam/Production_Method/P16 -->
+
+    <owl:Class rdf:about="https://purl.org/cbam/Production_Method/P16">
+        <rdfs:subClassOf rdf:resource="https://purl.org/cbam/Production_Method/Production_Method"/>
+        <rdfs:label>Other production routes</rdfs:label>
+        <properties:validity_date>25/9/23</properties:validity_date>
+        <code>P16</code>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/cbam/Production_Method/P17 -->
+
+    <owl:Class rdf:about="https://purl.org/cbam/Production_Method/P17">
+        <rdfs:subClassOf rdf:resource="https://purl.org/cbam/Production_Method/Production_Method"/>
+        <rdfs:label>Nitric acid</rdfs:label>
+        <properties:validity_date>25/9/23</properties:validity_date>
+        <code>P17</code>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/cbam/Production_Method/P19 -->
+
+    <owl:Class rdf:about="https://purl.org/cbam/Production_Method/P19">
+        <rdfs:subClassOf rdf:resource="https://purl.org/cbam/Production_Method/Production_Method"/>
+        <rdfs:label>Haber-Bosch process with steam reforming of natural gas or biogas</rdfs:label>
+        <properties:validity_date>25/9/23</properties:validity_date>
+        <code>P19</code>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/cbam/Production_Method/P20 -->
+
+    <owl:Class rdf:about="https://purl.org/cbam/Production_Method/P20">
+        <rdfs:subClassOf rdf:resource="https://purl.org/cbam/Production_Method/Production_Method"/>
+        <rdfs:label>Haber-Bosch process with gasification of coal or other fuels</rdfs:label>
+        <properties:validity_date>25/9/23</properties:validity_date>
+        <code>P20</code>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/cbam/Production_Method/P21 -->
+
+    <owl:Class rdf:about="https://purl.org/cbam/Production_Method/P21">
+        <rdfs:subClassOf rdf:resource="https://purl.org/cbam/Production_Method/Production_Method"/>
+        <rdfs:label>Other production routes</rdfs:label>
+        <properties:validity_date>25/9/23</properties:validity_date>
+        <code>P21</code>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/cbam/Production_Method/P22 -->
+
+    <owl:Class rdf:about="https://purl.org/cbam/Production_Method/P22">
+        <rdfs:subClassOf rdf:resource="https://purl.org/cbam/Production_Method/Production_Method"/>
+        <rdfs:label>Mixed fertilisers</rdfs:label>
+        <properties:validity_date>25/9/23</properties:validity_date>
+        <code>P22</code>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/cbam/Production_Method/P23 -->
+
+    <owl:Class rdf:about="https://purl.org/cbam/Production_Method/P23">
+        <rdfs:subClassOf rdf:resource="https://purl.org/cbam/Production_Method/Production_Method"/>
+        <rdfs:label>Urea</rdfs:label>
+        <properties:validity_date>25/9/23</properties:validity_date>
+        <code>P23</code>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/cbam/Production_Method/P24 -->
+
+    <owl:Class rdf:about="https://purl.org/cbam/Production_Method/P24">
+        <rdfs:subClassOf rdf:resource="https://purl.org/cbam/Production_Method/Production_Method"/>
+        <rdfs:label>Blast furnace route</rdfs:label>
+        <properties:validity_date>25/9/23</properties:validity_date>
+        <code>P24</code>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/cbam/Production_Method/P25 -->
+
+    <owl:Class rdf:about="https://purl.org/cbam/Production_Method/P25">
+        <rdfs:subClassOf rdf:resource="https://purl.org/cbam/Production_Method/Production_Method"/>
+        <rdfs:label>Smelting reduction</rdfs:label>
+        <properties:validity_date>25/9/23</properties:validity_date>
+        <code>P25</code>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/cbam/Production_Method/P26 -->
+
+    <owl:Class rdf:about="https://purl.org/cbam/Production_Method/P26">
+        <rdfs:subClassOf rdf:resource="https://purl.org/cbam/Production_Method/Production_Method"/>
+        <rdfs:label>Other production routes</rdfs:label>
+        <properties:validity_date>25/9/23</properties:validity_date>
+        <code>P26</code>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/cbam/Production_Method/P27 -->
+
+    <owl:Class rdf:about="https://purl.org/cbam/Production_Method/P27">
+        <rdfs:subClassOf rdf:resource="https://purl.org/cbam/Production_Method/Production_Method"/>
+        <rdfs:label>Nickel Pig Iron production</rdfs:label>
+        <properties:validity_date>25/9/23</properties:validity_date>
+        <code>P27</code>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/cbam/Production_Method/P28 -->
+
+    <owl:Class rdf:about="https://purl.org/cbam/Production_Method/P28">
+        <rdfs:subClassOf rdf:resource="https://purl.org/cbam/Production_Method/Production_Method"/>
+        <rdfs:label>Nickel Pig Iron production</rdfs:label>
+        <properties:validity_date>25/9/23</properties:validity_date>
+        <code>P28</code>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/cbam/Production_Method/P29 -->
+
+    <owl:Class rdf:about="https://purl.org/cbam/Production_Method/P29">
+        <rdfs:subClassOf rdf:resource="https://purl.org/cbam/Production_Method/Production_Method"/>
+        <rdfs:label>Ferro-nickel (FeNi)</rdfs:label>
+        <properties:validity_date>25/9/23</properties:validity_date>
+        <code>P29</code>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/cbam/Production_Method/P30 -->
+
+    <owl:Class rdf:about="https://purl.org/cbam/Production_Method/P30">
+        <rdfs:subClassOf rdf:resource="https://purl.org/cbam/Production_Method/Production_Method"/>
+        <rdfs:label>Ferro-chromium (FeCr)</rdfs:label>
+        <properties:validity_date>25/9/23</properties:validity_date>
+        <code>P30</code>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/cbam/Production_Method/P31 -->
+
+    <owl:Class rdf:about="https://purl.org/cbam/Production_Method/P31">
+        <rdfs:subClassOf rdf:resource="https://purl.org/cbam/Production_Method/Production_Method"/>
+        <rdfs:label>Ferro-manganese (FeMn)</rdfs:label>
+        <properties:validity_date>25/9/23</properties:validity_date>
+        <code>P31</code>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/cbam/Production_Method/P32 -->
+
+    <owl:Class rdf:about="https://purl.org/cbam/Production_Method/P32">
+        <rdfs:subClassOf rdf:resource="https://purl.org/cbam/Production_Method/Production_Method"/>
+        <rdfs:label>Production of Direct reduced Iron (using hydrogen)</rdfs:label>
+        <properties:validity_date>25/9/23</properties:validity_date>
+        <code>P32</code>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/cbam/Production_Method/P33 -->
+
+    <owl:Class rdf:about="https://purl.org/cbam/Production_Method/P33">
+        <rdfs:subClassOf rdf:resource="https://purl.org/cbam/Production_Method/Production_Method"/>
+        <rdfs:label>DRI (Direct reduced iron)</rdfs:label>
+        <properties:validity_date>25/9/23</properties:validity_date>
+        <code>P33</code>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/cbam/Production_Method/P34 -->
+
+    <owl:Class rdf:about="https://purl.org/cbam/Production_Method/P34">
+        <rdfs:subClassOf rdf:resource="https://purl.org/cbam/Production_Method/Production_Method"/>
+        <rdfs:label>Iron or steel products</rdfs:label>
+        <properties:validity_date>25/9/23</properties:validity_date>
+        <code>P34</code>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/cbam/Production_Method/P35 -->
+
+    <owl:Class rdf:about="https://purl.org/cbam/Production_Method/P35">
+        <rdfs:subClassOf rdf:resource="https://purl.org/cbam/Production_Method/Production_Method"/>
+        <rdfs:label>Basic oxigen steel making</rdfs:label>
+        <properties:validity_date>25/9/23</properties:validity_date>
+        <code>P35</code>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/cbam/Production_Method/P36 -->
+
+    <owl:Class rdf:about="https://purl.org/cbam/Production_Method/P36">
+        <rdfs:subClassOf rdf:resource="https://purl.org/cbam/Production_Method/Production_Method"/>
+        <rdfs:label>Basic oxigen steel making (incl. Blast furnace)</rdfs:label>
+        <properties:validity_date>25/9/23</properties:validity_date>
+        <code>P36</code>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/cbam/Production_Method/P37 -->
+
+    <owl:Class rdf:about="https://purl.org/cbam/Production_Method/P37">
+        <rdfs:subClassOf rdf:resource="https://purl.org/cbam/Production_Method/Production_Method"/>
+        <rdfs:label>Basic oxigen steel making (incl. Melting reduction)</rdfs:label>
+        <properties:validity_date>25/9/23</properties:validity_date>
+        <code>P37</code>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/cbam/Production_Method/P38 -->
+
+    <owl:Class rdf:about="https://purl.org/cbam/Production_Method/P38">
+        <rdfs:subClassOf rdf:resource="https://purl.org/cbam/Production_Method/Production_Method"/>
+        <rdfs:label>Electric arc furnace</rdfs:label>
+        <properties:validity_date>25/9/23</properties:validity_date>
+        <code>P38</code>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/cbam/Production_Method/P39 -->
+
+    <owl:Class rdf:about="https://purl.org/cbam/Production_Method/P39">
+        <rdfs:subClassOf rdf:resource="https://purl.org/cbam/Production_Method/Production_Method"/>
+        <rdfs:label>Electric arc furnace (alloy steels))</rdfs:label>
+        <properties:validity_date>25/9/23</properties:validity_date>
+        <code>P39</code>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/cbam/Production_Method/P40 -->
+
+    <owl:Class rdf:about="https://purl.org/cbam/Production_Method/P40">
+        <rdfs:subClassOf rdf:resource="https://purl.org/cbam/Production_Method/Production_Method"/>
+        <rdfs:label>Electric arc furnace (carbon steel, from direct reduced iron)</rdfs:label>
+        <properties:validity_date>25/9/23</properties:validity_date>
+        <code>P40</code>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/cbam/Production_Method/P41 -->
+
+    <owl:Class rdf:about="https://purl.org/cbam/Production_Method/P41">
+        <rdfs:subClassOf rdf:resource="https://purl.org/cbam/Production_Method/Production_Method"/>
+        <rdfs:label>Electric arc furnace (general)</rdfs:label>
+        <properties:validity_date>25/9/23</properties:validity_date>
+        <code>P41</code>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/cbam/Production_Method/P42 -->
+
+    <owl:Class rdf:about="https://purl.org/cbam/Production_Method/P42">
+        <rdfs:subClassOf rdf:resource="https://purl.org/cbam/Production_Method/Production_Method"/>
+        <rdfs:label>Primary (electrolytic) smelting</rdfs:label>
+        <properties:validity_date>25/9/23</properties:validity_date>
+        <code>P42</code>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/cbam/Production_Method/P43 -->
+
+    <owl:Class rdf:about="https://purl.org/cbam/Production_Method/P43">
+        <rdfs:subClassOf rdf:resource="https://purl.org/cbam/Production_Method/Production_Method"/>
+        <rdfs:label>Secondary melting (recycling)</rdfs:label>
+        <properties:validity_date>25/9/23</properties:validity_date>
+        <code>P43</code>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/cbam/Production_Method/P44 -->
+
+    <owl:Class rdf:about="https://purl.org/cbam/Production_Method/P44">
+        <rdfs:subClassOf rdf:resource="https://purl.org/cbam/Production_Method/Production_Method"/>
+        <rdfs:label>Mix of primary and secondary production</rdfs:label>
+        <properties:validity_date>25/9/23</properties:validity_date>
+        <code>P44</code>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/cbam/Production_Method/P45 -->
+
+    <owl:Class rdf:about="https://purl.org/cbam/Production_Method/P45">
+        <rdfs:subClassOf rdf:resource="https://purl.org/cbam/Production_Method/Production_Method"/>
+        <rdfs:label>Aluminium products</rdfs:label>
+        <properties:validity_date>25/9/23</properties:validity_date>
+        <code>P45</code>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/cbam/Production_Method/P46 -->
+
+    <owl:Class rdf:about="https://purl.org/cbam/Production_Method/P46">
+        <rdfs:subClassOf rdf:resource="https://purl.org/cbam/Production_Method/Production_Method"/>
+        <rdfs:label>Integrated production with primary smelting</rdfs:label>
+        <properties:validity_date>25/9/23</properties:validity_date>
+        <code>P46</code>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/cbam/Production_Method/P47 -->
+
+    <owl:Class rdf:about="https://purl.org/cbam/Production_Method/P47">
+        <rdfs:subClassOf rdf:resource="https://purl.org/cbam/Production_Method/Production_Method"/>
+        <rdfs:label>Integrated production with secondary melting</rdfs:label>
+        <properties:validity_date>25/9/23</properties:validity_date>
+        <code>P47</code>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/cbam/Production_Method/P48 -->
+
+    <owl:Class rdf:about="https://purl.org/cbam/Production_Method/P48">
+        <rdfs:subClassOf rdf:resource="https://purl.org/cbam/Production_Method/Production_Method"/>
+        <rdfs:label>Integrated with mixed primary and secondary production</rdfs:label>
+        <properties:validity_date>25/9/23</properties:validity_date>
+        <code>P48</code>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/cbam/Production_Method/Production_Method -->
+
+    <owl:Class rdf:about="https://purl.org/cbam/Production_Method/Production_Method">
+        <rdfs:label>Production Method</rdfs:label>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+

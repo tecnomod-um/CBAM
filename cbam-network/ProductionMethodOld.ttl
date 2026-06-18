@@ -20,9 +20,9 @@
                                             dcterms:abstract "The Production Method Code List in the CBAM Report" ;
                                             dcterms:accessRights "This ontology is licensed under the Creative Commons Attribution-NonCommercial 4.0 International License (CC BY-NC 4.0). It allows non-commercial use, sharing, and adaptation of the ontology, as long as users provide clear credit to the creator by citing the ontology's title, creator, and license information. Commercial use is strictly prohibited." ;
                                             dcterms:bibliographicCitation "OK4I - Ontologies and Knowledge Graphs for Industry, July 15–19, 2024, Enschede, Netherlands - <https://www.utwente.nl/en/eemcs/fois2024/resources/papers/duque-et-al-ontology-network-for-the-standardization-of-the-eu-cbam-report-data.pdf>" ;
-                                            dcterms:contributor [ foaf:name "Astrid Duque Ramos"
+                                            dcterms:contributor [ foaf:name "Jesualdo Tomás Fernández Breis"
                                                                 ] ,
-                                                                [ foaf:name "Jesualdo Tomás Fernández Breis"
+                                                                [ foaf:name "Astrid Duque Ramos"
                                                                 ] ;
                                             dcterms:created "2024-06-01"^^rdfs:Literal ;
                                             dcterms:creator [ foaf:name "Astrid Duque Ramos"
@@ -400,6 +400,75 @@ xsd:date rdf:type rdfs:Datatype .
 
 
 #################################################################
+#    Data properties
+#################################################################
+
+###  http://purl.org/dc/terms/alternative
+dcterms:alternative rdf:type owl:DatatypeProperty ;
+                    rdfs:subPropertyOf dcterms:title .
+
+
+###  http://purl.org/dc/terms/available
+dcterms:available rdf:type owl:DatatypeProperty ;
+                  rdfs:subPropertyOf dcterms:date .
+
+
+###  http://purl.org/dc/terms/bibliographicCitation
+dcterms:bibliographicCitation rdf:type owl:DatatypeProperty ;
+                              rdfs:subPropertyOf dcterms:identifier .
+
+
+###  http://purl.org/dc/terms/created
+dcterms:created rdf:type owl:DatatypeProperty ;
+                rdfs:subPropertyOf dcterms:date .
+
+
+###  http://purl.org/dc/terms/date
+dcterms:date rdf:type owl:DatatypeProperty ;
+             rdfs:subPropertyOf dcterms:date .
+
+
+###  http://purl.org/dc/terms/dateAccepted
+dcterms:dateAccepted rdf:type owl:DatatypeProperty ;
+                     rdfs:subPropertyOf dcterms:date .
+
+
+###  http://purl.org/dc/terms/dateCopyrighted
+dcterms:dateCopyrighted rdf:type owl:DatatypeProperty ;
+                        rdfs:subPropertyOf dcterms:date .
+
+
+###  http://purl.org/dc/terms/dateSubmitted
+dcterms:dateSubmitted rdf:type owl:DatatypeProperty ;
+                      rdfs:subPropertyOf dcterms:date .
+
+
+###  http://purl.org/dc/terms/identifier
+dcterms:identifier rdf:type owl:DatatypeProperty ;
+                   rdfs:subPropertyOf dcterms:identifier .
+
+
+###  http://purl.org/dc/terms/issued
+dcterms:issued rdf:type owl:DatatypeProperty ;
+               rdfs:subPropertyOf dcterms:date .
+
+
+###  http://purl.org/dc/terms/modified
+dcterms:modified rdf:type owl:DatatypeProperty ;
+                 rdfs:subPropertyOf dcterms:date .
+
+
+###  http://purl.org/dc/terms/title
+dcterms:title rdf:type owl:DatatypeProperty ;
+              rdfs:subPropertyOf dcterms:title .
+
+
+###  http://purl.org/dc/terms/valid
+dcterms:valid rdf:type owl:DatatypeProperty ;
+              rdfs:subPropertyOf dcterms:date .
+
+
+#################################################################
 #    Classes
 #################################################################
 
@@ -766,6 +835,87 @@ Production_Method:P48 rdf:type owl:Class ;
 ###  https://purl.org/cbam/Production_Method/Production_Method
 Production_Method:Production_Method rdf:type owl:Class ;
                                     rdfs:label "Production Method" .
+
+
+#################################################################
+#    Annotations
+#################################################################
+
+dcterms:alternative dcterms:description "The distinction between titles and alternative titles is application-specific."@en ;
+                    rdfs:comment "An alternative name for the resource."@en ;
+                    rdfs:isDefinedBy dcterms: ;
+                    rdfs:label "Alternative Title"@en .
+
+
+dcterms:available dcterms:description "Recommended practice is to describe the date, date/time, or period of time as recommended for the property Date, of which this is a subproperty."@en ;
+                  rdfs:comment "Date that the resource became or will become available."@en ;
+                  rdfs:isDefinedBy dcterms: ;
+                  rdfs:label "Date Available"@en .
+
+
+dcterms:bibliographicCitation dcterms:description "Recommended practice is to include sufficient bibliographic detail to identify the resource as unambiguously as possible."@en ;
+                              rdfs:comment "A bibliographic reference for the resource."@en ;
+                              rdfs:isDefinedBy dcterms: ;
+                              rdfs:label "Bibliographic Citation"@en .
+
+
+dcterms:created dcterms:description "Recommended practice is to describe the date, date/time, or period of time as recommended for the property Date, of which this is a subproperty."@en ;
+                rdfs:comment "Date of creation of the resource."@en ;
+                rdfs:isDefinedBy dcterms: ;
+                rdfs:label "Date Created"@en .
+
+
+dcterms:date dcterms:description "Date may be used to express temporal information at any level of granularity.  Recommended practice is to express the date, date/time, or period of time according to ISO 8601-1 [[ISO 8601-1](https://www.iso.org/iso-8601-date-and-time-format.html)] or a published profile of the ISO standard, such as the W3C Note on Date and Time Formats [[W3CDTF](https://www.w3.org/TR/NOTE-datetime)] or the Extended Date/Time Format Specification [[EDTF](http://www.loc.gov/standards/datetime/)].  If the full date is unknown, month and year (YYYY-MM) or just year (YYYY) may be used. Date ranges may be specified using ISO 8601 period of time specification in which start and end dates are separated by a '/' (slash) character.  Either the start or end date may be missing."@en ;
+             rdfs:comment "A point or period of time associated with an event in the lifecycle of the resource."@en ;
+             rdfs:isDefinedBy dcterms: ;
+             rdfs:label "Date"@en .
+
+
+dcterms:dateAccepted dcterms:description "Recommended practice is to describe the date, date/time, or period of time as recommended for the property Date, of which this is a subproperty.  Examples of resources to which a date of acceptance may be relevant are a thesis (accepted by a university department) or an article (accepted by a journal)."@en ;
+                     rdfs:comment "Date of acceptance of the resource."@en ;
+                     rdfs:isDefinedBy dcterms: ;
+                     rdfs:label "Date Accepted"@en .
+
+
+dcterms:dateCopyrighted dcterms:description "Typically a year.  Recommended practice is to describe the date, date/time, or period of time as recommended for the property Date, of which this is a subproperty."@en ;
+                        rdfs:comment "Date of copyright of the resource."@en ;
+                        rdfs:isDefinedBy dcterms: ;
+                        rdfs:label "Date Copyrighted"@en .
+
+
+dcterms:dateSubmitted dcterms:description "Recommended practice is to describe the date, date/time, or period of time as recommended for the property Date, of which this is a subproperty.  Examples of resources to which a 'Date Submitted' may be relevant include a thesis (submitted to a university department) or an article (submitted to a journal)."@en ;
+                      rdfs:comment "Date of submission of the resource."@en ;
+                      rdfs:isDefinedBy dcterms: ;
+                      rdfs:label "Date Submitted"@en .
+
+
+dcterms:identifier dcterms:description "Recommended practice is to identify the resource by means of a string conforming to an identification system. Examples include International Standard Book Number (ISBN), Digital Object Identifier (DOI), and Uniform Resource Name (URN).  Persistent identifiers should be provided as HTTP URIs."@en ;
+                   rdfs:comment "An unambiguous reference to the resource within a given context."@en ;
+                   rdfs:isDefinedBy dcterms: ;
+                   rdfs:label "Identifier"@en .
+
+
+dcterms:issued dcterms:description "Recommended practice is to describe the date, date/time, or period of time as recommended for the property Date, of which this is a subproperty."@en ;
+               rdfs:comment "Date of formal issuance of the resource."@en ;
+               rdfs:isDefinedBy dcterms: ;
+               rdfs:label "Date Issued"@en .
+
+
+dcterms:modified dcterms:description "Recommended practice is to describe the date, date/time, or period of time as recommended for the property Date, of which this is a subproperty."@en ;
+                 rdfs:comment "Date on which the resource was changed."@en ;
+                 rdfs:isDefinedBy dcterms: ;
+                 rdfs:label "Date Modified"@en .
+
+
+dcterms:title rdfs:comment "A name given to the resource."@en ;
+              rdfs:isDefinedBy dcterms: ;
+              rdfs:label "Title"@en .
+
+
+dcterms:valid dcterms:description "Recommended practice is to describe the date, date/time, or period of time as recommended for the property Date, of which this is a subproperty."@en ;
+              rdfs:comment "Date (often a range) of validity of a resource."@en ;
+              rdfs:isDefinedBy dcterms: ;
+              rdfs:label "Date Valid"@en .
 
 
 ###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi
