@@ -959,16 +959,16 @@ owl:topDataProperty rdfs:comment "The data property that relates every individua
 vcard:country-name rdf:type owl:DatatypeProperty ;
                    rdfs:comment "The country name associated with the address of the object"@en ;
                    rdfs:isDefinedBy <http://www.w3.org/2006/vcard/ns> ;
-                   rdfs:label "country name"@en ,
-                              "country - name" .
+                   rdfs:label "country - name" ,
+                              "country name"@en .
 
 
 ###  http://www.w3.org/2006/vcard/ns#locality
 vcard:locality rdf:type owl:DatatypeProperty ;
                rdfs:comment "The locality (e.g. city or town) associated with the address of the object"@en ;
                rdfs:isDefinedBy <http://www.w3.org/2006/vcard/ns> ;
-               rdfs:label "locality"@en ,
-                          "locality" .
+               rdfs:label "locality" ,
+                          "locality"@en .
 
 
 ###  https://purl.org/cbam/Reporting_period/hasReportingPeriodEnd
@@ -1574,48 +1574,48 @@ org:FormalOrganization rdfs:comment "An Organization which is recognized in the 
                        rdfs:label "Formal Organization"@en ,
                                   "Organisation Formelle"@fr ,
                                   "Organizzazione formale"@it ,
-                                  "organización formal"@es ,
-                                  "formal organization" .
+                                  "formal organization" ,
+                                  "organización formal"@es .
 
 
 ###  https://purl.org/cbam/Country
 cbam:Country rdfs:comment "The Countries as defined by the Carbon Border Adjustment Mechanism (CBAM) Report" ;
-             rdfs:label "Country" ,
-                        "country" .
+             rdfs:label "country" ,
+                        "Country" .
 
 
 ###  https://purl.org/cbam/CN/CN
-<https://purl.org/cbam/CN/CN> rdfs:label "CN" ,
-                                         "cn" .
+<https://purl.org/cbam/CN/CN> rdfs:label "cn" ,
+                                         "CN" .
 
 
 ###  https://purl.org/cbam/Electricity_Determination/Electricity_Determination
 <https://purl.org/cbam/Electricity_Determination/Electricity_Determination> rdfs:comment "The type of determination of the direct embedded emissions. The possible values are: Actual data, Default value." ;
-                                                                            rdfs:label "Electricity Determination" ,
-                                                                                       "electricity determination" .
+                                                                            rdfs:label "electricity determination" ,
+                                                                                       "Electricity Determination" .
 
 
 ###  https://purl.org/cbam/Instrument/Instrument
 <https://purl.org/cbam/Instrument/Instrument> rdfs:comment "Form of carbon price (previous descrition:Type of instrument).  This element is used to describe the type of instrument (form of carbon price) used, as defined in the as defined by the Carbon Border Adjustment Mechanism (CBAM) Report" ;
-                                              rdfs:label "Instrument" ,
-                                                         "instrument" .
+                                              rdfs:label "instrument" ,
+                                                         "Instrument" .
 
 
 ###  https://purl.org/cbam/Production_Method/Production_Method
-<https://purl.org/cbam/Production_Method/Production_Method> rdfs:label "Production Method" ,
-                                                                       "production method" .
+<https://purl.org/cbam/Production_Method/Production_Method> rdfs:label "production method" ,
+                                                                       "Production Method" .
 
 
 ###  https://purl.org/cbam/Reporting_period/Reporting_period
 <https://purl.org/cbam/Reporting_period/Reporting_period> rdfs:comment "Defines the reporting period within the context of the Carbon Border Adjustment Mechanism (CBAM). This CBAM Local List specifies the quarters of a year, including 'Quarter 1,' 'Quarter 2,' 'Quarter 3,' and 'Quarter 4,' to structure reporting intervals." ;
-                                                          rdfs:label "Reporting period" ,
-                                                                     "reporting period" .
+                                                          rdfs:label "reporting period" ,
+                                                                     "Reporting period" .
 
 
 ###  https://purl.org/cbam/Role/Role
 <https://purl.org/cbam/Role/Role> rdfs:comment "Specifies the role of the declarant in the context of customs declarations. Indicates whether the declarant is acting as the importer or as an indirect customs representative." ;
-                                  rdfs:label "Role" ,
-                                             "role" .
+                                  rdfs:label "role" ,
+                                             "Role" .
 
 
 ###  https://purl.org/cbam/cbamreport/Address
@@ -2078,28 +2078,60 @@ cbamreport:TypeOfMeasurementUnit rdf:type owl:Class ;
 
 
 ###  https://purl.org/cbam/emissionsqualifyingparameters/EmissionParameter
-<https://purl.org/cbam/emissionsqualifyingparameters/EmissionParameter> rdfs:subClassOf <https://purl.org/cbam/emissionsqualifyingparameters/Aluminium_pre-consumer_scrap> ;
-                                                                        rdfs:comment "A class representing emission qualifying parameters." ;
-                                                                        rdfs:label "EmissionParameter" ,
-                                                                                   "emission parameter" ;
+<https://purl.org/cbam/emissionsqualifyingparameters/EmissionParameter> rdfs:comment "A class representing emission qualifying parameters." ;
+                                                                        rdfs:label "emission parameter" ,
+                                                                                   "EmissionParameter" ;
                                                                         <https://purl.org/cbam/emissionsqualifyingparameters/validityDate> "25/09/2023" .
 
 
-[ foaf:name "Alexander Garcia Castro" ,
-            "Andreas Rathgeb" ,
-            "Astrid Duque Ramos" ,
-            "Francisco Abad" ,
-            "Jesualdo Tomás Fernández Breis" ,
-            "Lars Nissen"
+[ foaf:name "Astrid Duque Ramos"
 ] .
 
-[ foaf:name "Astrid Duque Ramos"
+[ foaf:name "Alexander Garcia Castro" ,
+             "Andreas Rathgeb" ,
+             "Astrid Duque Ramos" ,
+             "Francisco Abad" ,
+             "Jesualdo Tomás Fernández Breis" ,
+             "Lars Nissen"
  ] .
 
 [ foaf:name "Astrid Duque Ramos"
  ] .
 
 [ foaf:name "Astrid Duque Ramos"
+ ] .
+
+[ foaf:name "Alexander Garcia Castro" ,
+             "Andreas Rathgeb" ,
+             "Astrid Duque Ramos" ,
+             "Francisco Abad" ,
+             "Jesualdo Tomás Fernández Breis" ,
+             "Lars Nissen"
+ ] .
+
+[ foaf:name "Astrid Duque Ramos"
+ ] .
+
+[ foaf:name "Astrid Duque Ramos"
+ ] .
+
+[ foaf:name "Astrid Duque Ramos"
+ ] .
+
+[ foaf:name "Alexander Garcia Castro" ,
+             "Andreas Rathgeb" ,
+             "Astrid Duque Ramos" ,
+             "Francisco Abad" ,
+             "Jesualdo Tomás Fernández Breis" ,
+             "Lars Nissen"
+ ] .
+
+[ foaf:name "Alexander Garcia Castro" ,
+             "Andreas Rathgeb" ,
+             "Astrid Duque Ramos" ,
+             "Francisco Abad" ,
+             "Jesualdo Tomás Fernández Breis" ,
+             "Lars Nissen"
  ] .
 
 [ foaf:name "Alexander Garcia Castro" ,
@@ -2127,34 +2159,6 @@ cbamreport:TypeOfMeasurementUnit rdf:type owl:Class ;
              "Francisco Abad" ,
              "Jesualdo Tomás Fernández Breis" ,
              "Lars Nissen"
- ] .
-
-[ foaf:name "Alexander Garcia Castro" ,
-             "Andreas Rathgeb" ,
-             "Astrid Duque Ramos" ,
-             "Francisco Abad" ,
-             "Jesualdo Tomás Fernández Breis" ,
-             "Lars Nissen"
- ] .
-
-[ foaf:name "Astrid Duque Ramos"
- ] .
-
-[ foaf:name "Astrid Duque Ramos"
- ] .
-
-[ foaf:name "Alexander Garcia Castro" ,
-             "Andreas Rathgeb" ,
-             "Astrid Duque Ramos" ,
-             "Francisco Abad" ,
-             "Jesualdo Tomás Fernández Breis" ,
-             "Lars Nissen"
- ] .
-
-[ foaf:name "Astrid Duque Ramos"
- ] .
-
-[ foaf:name "Astrid Duque Ramos"
  ] .
 
 [ foaf:name "Alexander Garcia Castro" ,
@@ -2164,12 +2168,7 @@ cbamreport:TypeOfMeasurementUnit rdf:type owl:Class ;
              "Lars Rathgeb"
  ] .
 
-[ foaf:name "Alexander Garcia Castro" ,
-             "Andreas Rathgeb" ,
-             "Astrid Duque Ramos" ,
-             "Francisco Abad" ,
-             "Jesualdo Tomás Fernández Breis" ,
-             "Lars Nissen"
+[ foaf:name "Astrid Duque Ramos"
  ] .
 
 #################################################################
