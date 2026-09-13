@@ -24,6 +24,30 @@ declare namespace se-cbam-cbam-goods = "https://data.com/cbam/cbam_goods#";
 
 
 <v1:QReport xmlns:v1="http://xmlns.ec.eu/BusinessObjects/CBAM/Types/V1">
+    <v1:SubmissionDate>{'1970-01-01T00:00:00Z'}</v1:SubmissionDate>
+    <v1:ReportingPeriod>{'Qx'}</v1:ReportingPeriod>
+    <v1:Year>{'1970'}</v1:Year>
+    <v1:Declarant>
+          <v1:IdentificationNumber>{'ES12345678901234'}</v1:IdentificationNumber>
+          <v1:Name>{'Test Declarant SL'}</v1:Name>
+          <v1:Role>{'IM'}</v1:Role>
+          <v1:ActorAddress>
+              <v1:Country>{'ES'}</v1:Country>
+              <v1:City>{'Madrid'}</v1:City>
+              <v1:Street>{'Calle Falsa'}</v1:Street>
+              <v1:Number>{'123'}</v1:Number>
+              <v1:Postcode>{'28001'}</v1:Postcode>
+          </v1:ActorAddress>
+      </v1:Declarant>
+      <v1:Signatures>
+          <v1:ReportConfirmation>
+              <v1:GlobalDataConfirmation>{'true'}</v1:GlobalDataConfirmation>
+              <v1:UseOfDataConfirmation>{'true'}</v1:UseOfDataConfirmation>
+              <v1:SignaturePlace>{'Madrid'}</v1:SignaturePlace>
+              <v1:Signature>{'Test Declarant'}</v1:Signature>
+              <v1:PositionOfPersonSending>{'Sample post'}</v1:PositionOfPersonSending>
+          </v1:ReportConfirmation>
+      </v1:Signatures>
 { for $product $itemNumber from <${inputFile}>
 	where {
 		$product a ontology-se-cbam-cbamreport:Good .
@@ -46,6 +70,35 @@ declare namespace se-cbam-cbam-goods = "https://data.com/cbam/cbam_goods#";
                         </v1:CommodityDetails>
                     </v1:CommodityCode>
             }
+            { for $originCountryCode from <${inputFile}>
+                where {
+                    $product ontology-se-cbam-cbamreport:isManufacturedAt $installation .
+                    $installation ontology-se-cbam-cbamreport:hasAddress $installationAddress .
+                    $installationAddress ontology-se-cbam-cbamreport:hasCountry $installationAddressCountry .
+                    $installationAddressCountry geonames:countryCode $originCountryCode .
+                }
+                return <v1:OriginCountry>
+                        <v1:Country>{$originCountryCode}</v1:Country>
+                       </v1:OriginCountry>
+            }
+            <v1:ImportedQuantity>
+                <v1:SequenceNumber>{'1'}</v1:SequenceNumber>
+                <v1:Procedure>
+                    <v1:RequestedProc>{'40'}</v1:RequestedProc>
+                </v1:Procedure>
+                <v1:ImportArea>
+                    <v1:ImportArea>{'ES002'}</v1:ImportArea>
+                </v1:ImportArea>
+                <v1:MeasureProcedureImported>
+                    <v1:Indicator>{'1'}</v1:Indicator>
+                    <v1:NetMass>{'1000.0'}</v1:NetMass>
+                    <v1:MeasurementUnit>{'KGM'}</v1:MeasurementUnit>
+                </v1:MeasureProcedureImported>
+            </v1:ImportedQuantity>
+            <v1:MeasureImported>
+                <v1:NetMass>{'1000.0'}</v1:NetMass>
+                <v1:MeasurementUnit>{'KGM'}</v1:MeasurementUnit>
+            </v1:MeasureImported>
             <v1:GoodsEmissions>
             { for $contactName $contactPhone $contactMail from <${inputFile}>
                 where {
@@ -60,7 +113,7 @@ declare namespace se-cbam-cbam-goods = "https://data.com/cbam/cbam_goods#";
                             <v1:OperatorId>{'todo'}</v1:OperatorId>
                             <v1:OperatorName>{'todo'}</v1:OperatorName>
                             <v1:OperatorAddress>
-                                <v1:Country>{'todo'}</v1:EstablishmentCountry>
+                                <v1:Country>{'todo'}</v1:Country>
                                 <v1:City>{'todo'}</v1:City>
                                 <v1:Street>{'todo'}</v1:Street>
                                 <v1:Number>{'todo'}</v1:Number>
@@ -110,6 +163,10 @@ declare namespace se-cbam-cbam-goods = "https://data.com/cbam/cbam_goods#";
                             </v1:Address>
                         </v1:Installation>
             }
+            <v1:ProducedMeasure>
+                <v1:NetMass>{'1000.0'}</v1:NetMass>
+                <v1:MeasurementUnit>{'t'}</v1:MeasurementUnit>
+            </v1:ProducedMeasure>
             { for $directEmission $unitOfMeasure from <${inputFile}>
                 where {
                     $product ontology-se-cbam-cbamreport:hasGreenHouseGasEmissions $greenHouseGasEmissions .
@@ -117,6 +174,7 @@ declare namespace se-cbam-cbam-goods = "https://data.com/cbam/cbam_goods#";
                     $greenHouseGasEmissions ontology-se-cbam-cbamreport:typeOfMeasurementUnitForEmissions $unitOfMeasure .
                 }
                 return <v1:DirectEmissions>
+                            <v1:ApplicableReportingTypeMethodology>{'todo'}</v1:ApplicableReportingTypeMethodology>
                             <v1:SpecificEmbeddedEmissions>{$directEmission}</v1:SpecificEmbeddedEmissions>
                             <v1:MeasurementUnit>{$unitOfMeasure}</v1:MeasurementUnit>
                         </v1:DirectEmissions>
@@ -128,22 +186,28 @@ declare namespace se-cbam-cbam-goods = "https://data.com/cbam/cbam_goods#";
                     $greenHouseGasEmissions ontology-se-cbam-cbamreport:typeOfMeasurementUnitForEmissions $unitOfMeasure .
                 }
                 return <v1:IndirectEmissions>
+                            <v1:DeterminationType>{'todo'}</v1:DeterminationType>
                             <v1:SpecificEmbeddedEmissions>{$indirectEmission}</v1:SpecificEmbeddedEmissions>
                             <v1:MeasurementUnit>{$unitOfMeasure}</v1:MeasurementUnit>
+                            <v1:ElectricitySource>{'todo'}</v1:ElectricitySource>
                         </v1:IndirectEmissions>
             }
-            { for $methodName $steelMillIdNumber from <${inputFile}>
+            { for $methodName from <${inputFile}>
                 where {
                     $product ontology-se-cbam-cbamreport:hasProductionMethod $productionMethod .
                     $productionMethod rdfs:label $methodName .
-                    $product ontology-se-cbam-cbamreport:isProducedAt $steelMill .
-                    $steelMill ontology-se-cbam-cbamreport:identificationnumberOfTheSpecificSteelMill $steelMillIdNumber .
                 }
                 return  <v1:ProdMethodQualifyingParams>
                             <v1:SequenceNumber>{1}</v1:SequenceNumber>
                             <v1:MethodId>{'todo'}</v1:MethodId>
                             <v1:MethodName>{$methodName}</v1:MethodName>
-                            <v1:SteelMillNumber>{$steelMillIdNumber}</v1:SteelMillNumber>
+                            { for $steelMillIdNumber from <${inputFile}>
+                                where {
+                                    $product ontology-se-cbam-cbamreport:isProducedAt $steelMill .
+                                    $steelMill ontology-se-cbam-cbamreport:identificationnumberOfTheSpecificSteelMill $steelMillIdNumber .
+                                }
+                                return <v1:SteelMillNumber>{$steelMillIdNumber}</v1:SteelMillNumber>
+                            }
                             { for $parameterCode $parameterValue $parameterDescription $parameterName $parameterValueType from <${inputFile}>
                                 where {
                                     $product ontology-se-cbam-cbamreport:hasEmissionQualifyingParameter $parameter .
@@ -188,7 +252,8 @@ declare namespace se-cbam-cbam-goods = "https://data.com/cbam/cbam_goods#";
             }
                 <v1:CarbonPriceDue>
                     <v1:SequenceNumber>{1}</v1:SequenceNumber>
-                    <v1:InstrumentType>{"todo"}</v1:InstrumentType>
+                    <v1:InstrumentType>{'todo'}</v1:InstrumentType>
+                    <v1:LegalActDescription>{'todo'}</v1:LegalActDescription>
                     { for $amount from <${inputFile}>
                         where {
                             $product ontology-se-cbam-cbamreport:hasEmissionsCovered $emissionsCovered .
@@ -231,13 +296,11 @@ declare namespace se-cbam-cbam-goods = "https://data.com/cbam/cbam_goods#";
                             }
                             return <v1:QuantityCovered>{$quantityCovered}</v1:QuantityCovered>
                         }
-                        { for $quantityCoveredFreeAloc from <${inputFile}>
-                            where {
-                                $product ontology-se-cbam-cbamreport:isCoveredRebate $rebate .
-                                $rebate ontology-se-cbam-cbamreport:quantityCoveredByRebate $quantityCovered .
-                            }
-                            return <v1:QuantityCoveredFreeAloc>{$quantityCoveredFreeAloc}</v1:QuantityCoveredFreeAloc>
-                        }
+                        <v1:QuantityCoveredFreeAloc>{'0.0'}</v1:QuantityCoveredFreeAloc>
+                        <v1:Measure>
+                            <v1:NetMass>{'25.0'}</v1:NetMass>
+                            <v1:MeasurementUnit>{'KGM'}</v1:MeasurementUnit>
+                        </v1:Measure>
                     </v1:ProductsCovered>
                 </v1:CarbonPriceDue>
             </v1:GoodsEmissions>

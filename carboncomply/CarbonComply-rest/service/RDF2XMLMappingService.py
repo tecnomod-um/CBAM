@@ -1,6 +1,7 @@
 import os
 from pathlib import Path
-
+import dataclasses
+from decimal import Decimal, ROUND_HALF_UP
 from rdflib import Graph
 
 from CommunicationReport import FileNames
@@ -50,10 +51,15 @@ class RDF2XMLMappingService(metaclass=Singleton):
 
     def _postprocess(self, report: Qreport):
         self._set_sequence_numbers(report)
+        self._round_decimal_fields(report)
 
     def _set_sequence_numbers(self, report: Qreport):
         for imported_good in report.imported_good:
+            goods_emission_count = 1
             for goods_emission in imported_good.goods_emissions:
+                goods_emission.sequence_number = goods_emission_count
+                goods_emission_count = goods_emission_count + 1
+
                 prod_method_qualifying_params_count = 1
                 for prod_method_qualifying_params in goods_emission.prod_method_qualifying_params:
                     prod_method_qualifying_params.sequence_number = prod_method_qualifying_params_count
@@ -68,3 +74,20 @@ class RDF2XMLMappingService(metaclass=Singleton):
                     for indirect_qualifying_parameter in prod_method_qualifying_params.indirect_qualifying_parameters:
                         indirect_qualifying_parameter.sequence_number = indirect_qualifying_parameter_count
                         indirect_qualifying_parameter_count = indirect_qualifying_parameter_count + 1
+
+    def _round_decimal_fields(self, obj):
+        if dataclasses.is_dataclass(obj):
+            for f in dataclasses.fields(obj):
+                value = getattr(obj, f.name)
+                if value is None:
+                    continue
+                if isinstance(value, Decimal):
+                    fraction_digits = f.metadata.get('fraction_digits')
+                    if fraction_digits is not None:
+                        quantizer = Decimal('1').scaleb(-fraction_digits)
+                        setattr(obj, f.name, value.quantize(quantizer, rounding=ROUND_HALF_UP))
+                elif dataclasses.is_dataclass(value):
+                    self._round_decimal_fields(value)
+                elif isinstance(value, list):
+                    for item in value:
+                        self._round_decimal_fields(item)
