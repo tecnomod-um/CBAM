@@ -113,7 +113,7 @@ declare namespace se-cbam-cbam-goods = "https://data.com/cbam/cbam_goods#";
                             <v1:OperatorId>{'todo'}</v1:OperatorId>
                             <v1:OperatorName>{'todo'}</v1:OperatorName>
                             <v1:OperatorAddress>
-                                <v1:Country>{'todo'}</v1:Country>
+                                <v1:Country>{'XX'}</v1:Country>
                                 <v1:City>{'todo'}</v1:City>
                                 <v1:Street>{'todo'}</v1:Street>
                                 <v1:Number>{'todo'}</v1:Number>
@@ -250,59 +250,59 @@ declare namespace se-cbam-cbam-goods = "https://data.com/cbam/cbam_goods#";
                             }
                         </v1:ProdMethodQualifyingParams>
             }
-                <v1:CarbonPriceDue>
-                    <v1:SequenceNumber>{1}</v1:SequenceNumber>
-                    <v1:InstrumentType>{'todo'}</v1:InstrumentType>
-                    <v1:LegalActDescription>{'todo'}</v1:LegalActDescription>
-                    { for $amount from <${inputFile}>
-                        where {
-                            $product ontology-se-cbam-cbamreport:hasEmissionsCovered $emissionsCovered .
-                            $emissionsCovered ontology-se-cbam-cbamreport:amountOfCarbonPriceDue $amount .
-                        }
-                        return <v1:Amount>{$amount}</v1:Amount>
-                    }
-                    { for $currency from <${inputFile}>
-                        where {
-                            $product ontology-se-cbam-cbamreport:hasEmissionsCovered $emissionsCovered .
-                            $emissionsCovered ontology-se-cbam-currency:currencyCode $currency .
-                        }
-                        return <v1:Currency>{$currency}</v1:Currency>
-                    }
-                    { for $installationCountry from <${inputFile}>
-                        where {
-                            $product ontology-se-cbam-cbamreport:isManufacturedAt $installation .
-                            $installation ontology-se-cbam-cbamreport:hasAddress $installationAddress .
-                            $installationAddress ontology-se-cbam-cbamreport:hasCountry $installationAddressCountry .
-                            $installationAddressCountry geonames:countryCode $installationCountry .
-                        }
-                        return <v1:Country>{$installationCountry}</v1:Country>
-                    }
+                { for $amount from <${inputFile}>
+                where {
+                    $product ontology-se-cbam-cbamreport:hasEmissionsCovered $emissionsCovered .
+                    $emissionsCovered ontology-se-cbam-cbamreport:amountOfCarbonPriceDue $amount .
+                }
+                return <v1:CarbonPriceDue>
+                            <v1:SequenceNumber>{'1'}</v1:SequenceNumber>
+                            <v1:InstrumentType>{'todo'}</v1:InstrumentType>
+                            <v1:LegalActDescription>{'todo'}</v1:LegalActDescription>
+                            <v1:Amount>{$amount}</v1:Amount>
+                            { for $currency from <${inputFile}>
+                                where {
+                                    $product ontology-se-cbam-cbamreport:hasEmissionsCovered $emissionsCovered .
+                                    $emissionsCovered ontology-se-cbam-currency:currencyCode $currency .
+                                }
+                                return <v1:Currency>{$currency}</v1:Currency>
+                            }
+                            { for $installationCountry from <${inputFile}>
+                                where {
+                                    $product ontology-se-cbam-cbamreport:isManufacturedAt $installation .
+                                    $installation ontology-se-cbam-cbamreport:hasAddress $installationAddress .
+                                    $installationAddress ontology-se-cbam-cbamreport:hasCountry $installationAddressCountry .
+                                    $installationAddressCountry geonames:countryCode $installationCountry .
+                                }
+                                return <v1:Country>{$installationCountry}</v1:Country>
+                            }
 
-                    <v1:ProductsCovered>
-                        <v1:SequenceNumber>{1}</v1:SequenceNumber>
-                        <v1:Type>{"todo"}</v1:Type>
-                        { for $cnCode from <${inputFile}>
-                            where {
-                                $product ontology-se-cbam-cbamreport:isCoveredRebate $rebate .
-                                $product ontology-se-cbam-cbamreport:hasCNCode $cnCodeIri .
-                                $cnCodeIri ontology-se-cbam-cn:cn_code $cnCode .
+                            { for $quantityCovered from <${inputFile}>
+                                where {
+                                    $product ontology-se-cbam-cbamreport:isCoveredRebate $rebate .
+                                    $rebate ontology-se-cbam-cbamreport:quantityCoveredByRebate $quantityCovered .
+                                }
+                                return <v1:ProductsCovered>
+                                            <v1:SequenceNumber>{'1'}</v1:SequenceNumber>
+                                            <v1:Type>{'todo'}</v1:Type>
+                                            { for $cnCode from <${inputFile}>
+                                                where {
+                                                    $product ontology-se-cbam-cbamreport:isCoveredRebate $rebate .
+                                                    $product ontology-se-cbam-cbamreport:hasCNCode $cnCodeIri .
+                                                    $cnCodeIri ontology-se-cbam-cn:cn_code $cnCode .
+                                                }
+                                                return <v1:CN>{$cnCode}</v1:CN>
+                                            }
+                                            <v1:QuantityCovered>{$quantityCovered}</v1:QuantityCovered>
+                                            <v1:QuantityCoveredFreeAloc>{'0.0'}</v1:QuantityCoveredFreeAloc>
+                                            <v1:Measure>
+                                                <v1:NetMass>{$quantityCovered}</v1:NetMass>
+                                                <v1:MeasurementUnit>{'KGM'}</v1:MeasurementUnit>
+                                            </v1:Measure>
+                                        </v1:ProductsCovered>
                             }
-                            return <v1:CN>{$cnCode}</v1:CN>
-                        }
-                        { for $quantityCovered from <${inputFile}>
-                            where {
-                                $product ontology-se-cbam-cbamreport:isCoveredRebate $rebate .
-                                $rebate ontology-se-cbam-cbamreport:quantityCoveredByRebate $quantityCovered .
-                            }
-                            return <v1:QuantityCovered>{$quantityCovered}</v1:QuantityCovered>
-                        }
-                        <v1:QuantityCoveredFreeAloc>{'0.0'}</v1:QuantityCoveredFreeAloc>
-                        <v1:Measure>
-                            <v1:NetMass>{'25.0'}</v1:NetMass>
-                            <v1:MeasurementUnit>{'KGM'}</v1:MeasurementUnit>
-                        </v1:Measure>
-                    </v1:ProductsCovered>
                 </v1:CarbonPriceDue>
+                }
             </v1:GoodsEmissions>
 		</v1:ImportedGood>
 }

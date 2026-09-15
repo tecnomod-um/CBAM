@@ -8,7 +8,8 @@ from werkzeug.datastructures import FileStorage
 from service.PipelineService import PipelineService
 from lxml import etree
 
-test_files_directory = Path('test_files')
+test_files_directory = Path('synthetic_cbam_templates')
+output_file = Path('/home/fabad/Descargas/cbam_performance_test/performance.tsv')
 number_of_iterations = 1
 shacl_shapes_path=Path('/home/fabad/CBAM/SHACL/astrea-shapes.ttl')
 ontology_folder = Path('/home/fabad/CBAM/cbam-network')
@@ -32,7 +33,7 @@ def get_rdf_graph(rdf_data: str) -> Graph:
     return g
 
 def get_shacl_validation(rdf_graph: Graph, ontology_graph: Graph, shapes_graph: Graph) -> str:
-    return 'Pass'
+    return ''
     conforms, results_graph, results_text = validate(
         rdf_graph,
         shacl_graph=shapes_graph,
@@ -110,3 +111,5 @@ if __name__ == '__main__':
 
     close_files(file_list)
     print(tsv_result)
+    with open(output_file, "w+", encoding="utf-8") as f:
+        f.write(tsv_result)
