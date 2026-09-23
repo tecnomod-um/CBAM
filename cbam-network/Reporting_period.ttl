@@ -400,6 +400,18 @@ xsd:date rdf:type rdfs:Datatype .
 
 
 #################################################################
+#    Object Properties
+#################################################################
+
+###  https://purl.org/cbam/Reporting_period/hasReportingPeriod
+vocabulary:hasReportingPeriod rdf:type owl:ObjectProperty ;
+                              rdfs:domain owl:Thing ;
+                              rdfs:range vocabulary:Reporting_period ;
+                              rdfs:comment "Relates a CBAM report or declarant entity to the specific reporting period (e.g., Quarter 1, Quarter 2, Quarter 3, or Quarter 4) in which the carbon border adjustment obligations are assessed and reported. The range is an individual of the Reporting_period class." ;
+                              rdfs:label "hasReportingPeriod" .
+
+
+#################################################################
 #    Data properties
 #################################################################
 
@@ -471,12 +483,14 @@ dcterms:valid rdf:type owl:DatatypeProperty ;
 ###  https://purl.org/cbam/Reporting_period/hasReportingPeriodEnd
 vocabulary:hasReportingPeriodEnd rdf:type owl:DatatypeProperty ;
                                  rdfs:range xsd:date ;
+                                 rdfs:comment "Specifies the end date of a CBAM reporting period. The value must be an xsd:date literal representing the last day (inclusive) of the quarter during which the declarant is required to submit the CBAM report." ;
                                  rdfs:label "hasReportingPeriodEnd" .
 
 
 ###  https://purl.org/cbam/Reporting_period/hasReportingPeriodStart
 vocabulary:hasReportingPeriodStart rdf:type owl:DatatypeProperty ;
                                    rdfs:range xsd:date ;
+                                   rdfs:comment "Specifies the start date of a CBAM reporting period. The value must be an xsd:date literal representing the first day of the quarter from which the declarant's reporting obligations apply." ;
                                    rdfs:label "hasReportingPeriodStart" .
 
 
@@ -526,15 +540,15 @@ vocabulary:Q4 rdf:type owl:NamedIndividual ,
               properties:validity_date "1/1/23" .
 
 
-[ foaf:name "Jesualdo Tomás Fernández Breis"
+[ foaf:name "Alexander Garcia Castro" ,
+            "Andreas Nissen" ,
+            "Astrid Duque Ramos" ,
+            "Francisco Abad" ,
+            "Jesualdo Tomás Fernández Breis" ,
+            "Lars Rathgeb"
 ] .
 
-[ foaf:name "Alexander Garcia Castro" ,
-             "Andreas Nissen" ,
-             "Astrid Duque Ramos" ,
-             "Francisco Abad" ,
-             "Jesualdo Tomás Fernández Breis" ,
-             "Lars Rathgeb"
+[ foaf:name "Jesualdo Tomás Fernández Breis"
  ] .
 
 #################################################################

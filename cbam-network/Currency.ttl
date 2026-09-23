@@ -359,11 +359,15 @@
 
 
 ###  http://purl.org/vocab/vann/preferredNamespacePrefix
-<http://purl.org/vocab/vann/preferredNamespacePrefix> rdf:type owl:AnnotationProperty .
+<http://purl.org/vocab/vann/preferredNamespacePrefix> rdf:type owl:AnnotationProperty ;
+                                                      rdfs:label "preferred namespace prefix"@en ;
+                                                      rdfs:comment "The preferred prefix to use when referring to terms from this namespace."@en .
 
 
 ###  http://purl.org/vocab/vann/preferredNamespaceUri
-<http://purl.org/vocab/vann/preferredNamespaceUri> rdf:type owl:AnnotationProperty .
+<http://purl.org/vocab/vann/preferredNamespaceUri> rdf:type owl:AnnotationProperty ;
+                                                   rdfs:label "preferred namespace URI"@en ;
+                                                   rdfs:comment "The preferred URI to use as the namespace for terms defined in this vocabulary."@en .
 
 
 ###  http://www.w3.org/2000/01/rdf-schema#comment
@@ -409,33 +413,43 @@ rdfs:label rdfs:comment "A human-readable name for the subject." ;
 
 
 ###  http://xmlns.com/foaf/0.1/workInfohomePage
-<http://xmlns.com/foaf/0.1/workInfohomePage> rdf:type owl:AnnotationProperty .
+<http://xmlns.com/foaf/0.1/workInfohomePage> rdf:type owl:AnnotationProperty ;
+                                             rdfs:label "work info home page"@en ;
+                                             rdfs:comment "A URL of a page with information about the work-related activities of an agent."@en .
 
 
 ###  https://purl.org/cbam/code
-cbam:code rdf:type owl:AnnotationProperty .
+cbam:code rdf:type owl:AnnotationProperty ;
+          rdfs:label "code"@en ;
+          rdfs:comment "A generic code identifier used within the CBAM ontology network to represent a coded value associated with a resource."@en .
 
 
 ###  https://purl.org/cbam/currencyCode
 cbam:currencyCode rdf:type owl:AnnotationProperty ;
-                  rdfs:label "currencyCode" ;
+                  rdfs:label "currency code"@en ;
+                  rdfs:comment "The ISO 4217 three-letter alphabetic code that uniquely identifies a currency (e.g., 'EUR', 'USD', 'GBP')."@en ;
                   rdfs:range xsd:string ;
                   rdfs:domain cbam:Currency .
 
 
 ###  https://purl.org/cbam/currencyName
 cbam:currencyName rdf:type owl:AnnotationProperty ;
-                  rdfs:label "currencyName" ;
+                  rdfs:label "currency name"@en ;
+                  rdfs:comment "The official name of the currency as defined by ISO 4217 (e.g., 'Euro', 'Dollar', 'Pound')."@en ;
                   rdfs:range xsd:string ;
                   rdfs:domain cbam:Currency .
 
 
 ###  https://purl.org/cbam/validity_date
-cbam:validity_date rdf:type owl:AnnotationProperty .
+cbam:validity_date rdf:type owl:AnnotationProperty ;
+                   rdfs:label "validity date"@en ;
+                   rdfs:comment "The date from which the value or entity is considered valid within the CBAM reporting context."@en .
 
 
 ###  https://www.geonames.org/ontology#geonamesID
-geonames:geonamesID rdf:type owl:AnnotationProperty .
+geonames:geonamesID rdf:type owl:AnnotationProperty ;
+                    rdfs:label "GeoNames ID"@en ;
+                    rdfs:comment "A reference to a GeoNames geographical entity, identifying the country or territory associated with a currency."@en .
 
 
 #################################################################
@@ -521,7 +535,8 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  https://purl.org/cbam/Currency
 cbam:Currency rdf:type owl:Class ;
-              rdfs:label "Currency" .
+              rdfs:label "Currency"@en ;
+              rdfs:comment "Represents a currency used in CBAM reporting, identified by its ISO 4217 currency code and name, and associated with one or more countries or territories via GeoNames identifiers."@en .
 
 
 #################################################################

@@ -21,9 +21,9 @@
                              dcterms:abstract "The CN Code List in the CBAM Report" ;
                              dcterms:accessRights "This ontology is licensed under the Creative Commons Attribution-NonCommercial 4.0 International License (CC BY-NC 4.0). It allows non-commercial use, sharing, and adaptation of the ontology, as long as users provide clear credit to the creator by citing the ontology's title, creator, and license information. Commercial use is strictly prohibited." ;
                              dcterms:bibliographicCitation "OK4I - Ontologies and Knowledge Graphs for Industry, July 15–19, 2024, Enschede, Netherlands - <https://www.utwente.nl/en/eemcs/fois2024/resources/papers/duque-et-al-ontology-network-for-the-standardization-of-the-eu-cbam-report-data.pdf>" ;
-                             dcterms:contributor [ foaf:name "Astrid Duque Ramos"
+                             dcterms:contributor [ foaf:name "Jesualdo Tomás Fernández Breis"
                                                  ] ,
-                                                 [ foaf:name "Jesualdo Tomás Fernández Breis"
+                                                 [ foaf:name "Astrid Duque Ramos"
                                                  ] ;
                              dcterms:created "2024-06-01"^^rdfs:Literal ;
                              dcterms:creator [ foaf:name "Jesualdo Tomás Fernández Breis"
@@ -50,21 +50,13 @@
 
 ###  http://purl.org/dc/terms/abstract
 dcterms:abstract rdf:type owl:AnnotationProperty ;
-                 rdfs:comment "A summary of the resource."@en ;
-                 rdfs:isDefinedBy dcterms: ;
-                 rdfs:label "Abstract"@en ,
-                            "abstract" ;
+                 rdfs:label "abstract" ;
                  rdfs:subPropertyOf dcterms:description .
 
 
 ###  http://purl.org/dc/terms/accessRights
 dcterms:accessRights rdf:type owl:AnnotationProperty ;
-                     <http://purl.org/dc/dcam/rangeIncludes> dcterms:RightsStatement ;
-                     dcterms:description "Access Rights may include information regarding access or restrictions based on privacy, security, or other policies."@en ;
-                     rdfs:comment "Information about who access the resource or an indication of its security status."@en ;
-                     rdfs:isDefinedBy dcterms: ;
-                     rdfs:label "Access Rights"@en ,
-                                "access rights" ;
+                     rdfs:label "access rights" ;
                      rdfs:subPropertyOf dcterms:rights .
 
 
@@ -85,22 +77,13 @@ dcterms:bibliographicCitation rdf:type owl:AnnotationProperty ;
 
 ###  http://purl.org/dc/terms/conformsTo
 dcterms:conformsTo rdf:type owl:AnnotationProperty ;
-                   <http://purl.org/dc/dcam/rangeIncludes> dcterms:Standard ;
-                   rdfs:comment "An established standard to which the described resource conforms."@en ;
-                   rdfs:isDefinedBy dcterms: ;
-                   rdfs:label "Conforms To"@en ,
-                              "conforms to" ;
+                   rdfs:label "conforms to" ;
                    rdfs:subPropertyOf dcterms:relation .
 
 
 ###  http://purl.org/dc/terms/contributor
 dcterms:contributor rdf:type owl:AnnotationProperty ;
-                    <http://purl.org/dc/dcam/rangeIncludes> dcterms:Agent ;
-                    dcterms:description "The guidelines for using names of persons or organizations as creators apply to contributors."@en ;
-                    rdfs:comment "An entity responsible for making contributions to the resource."@en ;
-                    rdfs:isDefinedBy dcterms: ;
-                    rdfs:label "Contributor"@en ,
-                               "contributor" ;
+                    rdfs:label "contributor" ;
                     rdfs:subPropertyOf dcterms:contributor .
 
 
@@ -111,12 +94,7 @@ dcterms:created rdf:type owl:AnnotationProperty ;
 
 ###  http://purl.org/dc/terms/creator
 dcterms:creator rdf:type owl:AnnotationProperty ;
-                <http://purl.org/dc/dcam/rangeIncludes> dcterms:Agent ;
-                dcterms:description "Recommended practice is to identify the creator with a URI.  If this is not possible or feasible, a literal value that identifies the creator may be provided."@en ;
-                rdfs:comment "An entity responsible for making the resource."@en ;
-                rdfs:isDefinedBy dcterms: ;
-                rdfs:label "Creator"@en ,
-                           "creator" ;
+                rdfs:label "creator" ;
                 rdfs:subPropertyOf dcterms:contributor ,
                                    dcterms:creator .
 
@@ -143,41 +121,25 @@ dcterms:dateSubmitted rdf:type owl:AnnotationProperty ;
 
 ###  http://purl.org/dc/terms/description
 dcterms:description rdf:type owl:AnnotationProperty ;
-                    dcterms:description "Description may include but is not limited to: an abstract, a table of contents, a graphical representation, or a free-text account of the resource."@en ;
-                    rdfs:comment "An account of the resource."@en ;
-                    rdfs:isDefinedBy dcterms: ;
-                    rdfs:label "Description"@en ,
-                               "description" ;
+                    rdfs:label "description" ;
                     rdfs:subPropertyOf dcterms:description .
 
 
 ###  http://purl.org/dc/terms/hasFormat
 dcterms:hasFormat rdf:type owl:AnnotationProperty ;
-                  dcterms:description "This property is intended to be used with non-literal values. This property is an inverse property of Is Format Of."@en ;
-                  rdfs:comment "A related resource that is substantially the same as the pre-existing described resource, but in another format."@en ;
-                  rdfs:isDefinedBy dcterms: ;
-                  rdfs:label "Has Format"@en ,
-                             "has format" ;
+                  rdfs:label "has format" ;
                   rdfs:subPropertyOf dcterms:relation .
 
 
 ###  http://purl.org/dc/terms/hasPart
 dcterms:hasPart rdf:type owl:AnnotationProperty ;
-                dcterms:description "This property is intended to be used with non-literal values. This property is an inverse property of Is Part Of."@en ;
-                rdfs:comment "A related resource that is included either physically or logically in the described resource."@en ;
-                rdfs:isDefinedBy dcterms: ;
-                rdfs:label "Has Part"@en ,
-                           "has part" ;
+                rdfs:label "has part" ;
                 rdfs:subPropertyOf dcterms:relation .
 
 
 ###  http://purl.org/dc/terms/hasVersion
 dcterms:hasVersion rdf:type owl:AnnotationProperty ;
-                   dcterms:description "Changes in version imply substantive changes in content rather than differences in format. This property is intended to be used with non-literal values. This property is an inverse property of Is Version Of."@en ;
-                   rdfs:comment "A related resource that is a version, edition, or adaptation of the described resource."@en ;
-                   rdfs:isDefinedBy dcterms: ;
-                   rdfs:label "Has Version"@en ,
-                              "has version" ;
+                   rdfs:label "has version" ;
                    rdfs:subPropertyOf dcterms:relation .
 
 
@@ -188,61 +150,37 @@ dcterms:identifier rdf:type owl:AnnotationProperty ;
 
 ###  http://purl.org/dc/terms/isFormatOf
 dcterms:isFormatOf rdf:type owl:AnnotationProperty ;
-                   dcterms:description "This property is intended to be used with non-literal values. This property is an inverse property of Has Format."@en ;
-                   rdfs:comment "A pre-existing related resource that is substantially the same as the described resource, but in another format."@en ;
-                   rdfs:isDefinedBy dcterms: ;
-                   rdfs:label "Is Format Of"@en ,
-                              "is format of" ;
+                   rdfs:label "is format of" ;
                    rdfs:subPropertyOf dcterms:relation .
 
 
 ###  http://purl.org/dc/terms/isPartOf
 dcterms:isPartOf rdf:type owl:AnnotationProperty ;
-                 dcterms:description "This property is intended to be used with non-literal values. This property is an inverse property of Has Part."@en ;
-                 rdfs:comment "A related resource in which the described resource is physically or logically included."@en ;
-                 rdfs:isDefinedBy dcterms: ;
-                 rdfs:label "Is Part Of"@en ,
-                            "is part of" ;
+                 rdfs:label "is part of" ;
                  rdfs:subPropertyOf dcterms:relation .
 
 
 ###  http://purl.org/dc/terms/isReferencedBy
 dcterms:isReferencedBy rdf:type owl:AnnotationProperty ;
-                       dcterms:description "This property is intended to be used with non-literal values. This property is an inverse property of References."@en ;
-                       rdfs:comment "A related resource that references, cites, or otherwise points to the described resource."@en ;
-                       rdfs:isDefinedBy dcterms: ;
-                       rdfs:label "Is Referenced By"@en ,
-                                  "is referenced by" ;
+                       rdfs:label "is referenced by" ;
                        rdfs:subPropertyOf dcterms:relation .
 
 
 ###  http://purl.org/dc/terms/isReplacedBy
 dcterms:isReplacedBy rdf:type owl:AnnotationProperty ;
-                     dcterms:description "This property is intended to be used with non-literal values. This property is an inverse property of Replaces."@en ;
-                     rdfs:comment "A related resource that supplants, displaces, or supersedes the described resource."@en ;
-                     rdfs:isDefinedBy dcterms: ;
-                     rdfs:label "Is Replaced By"@en ,
-                                "is replaced by" ;
+                     rdfs:label "is replaced by" ;
                      rdfs:subPropertyOf dcterms:relation .
 
 
 ###  http://purl.org/dc/terms/isRequiredBy
 dcterms:isRequiredBy rdf:type owl:AnnotationProperty ;
-                     dcterms:description "This property is intended to be used with non-literal values. This property is an inverse property of Requires."@en ;
-                     rdfs:comment "A related resource that requires the described resource to support its function, delivery, or coherence."@en ;
-                     rdfs:isDefinedBy dcterms: ;
-                     rdfs:label "Is Required By"@en ,
-                                "is required by" ;
+                     rdfs:label "is required by" ;
                      rdfs:subPropertyOf dcterms:relation .
 
 
 ###  http://purl.org/dc/terms/isVersionOf
 dcterms:isVersionOf rdf:type owl:AnnotationProperty ;
-                    dcterms:description "Changes in version imply substantive changes in content rather than differences in format. This property is intended to be used with non-literal values. This property is an inverse property of Has Version."@en ;
-                    rdfs:comment "A related resource of which the described resource is a version, edition, or adaptation."@en ;
-                    rdfs:isDefinedBy dcterms: ;
-                    rdfs:label "Is Version Of"@en ,
-                               "is version of" ;
+                    rdfs:label "is version of" ;
                     rdfs:subPropertyOf dcterms:relation .
 
 
@@ -253,23 +191,13 @@ dcterms:issued rdf:type owl:AnnotationProperty ;
 
 ###  http://purl.org/dc/terms/language
 dcterms:language rdf:type owl:AnnotationProperty ;
-                 <http://purl.org/dc/dcam/rangeIncludes> dcterms:LinguisticSystem ;
-                 dcterms:description "Recommended practice is to use either a non-literal value representing a language from a controlled vocabulary such as ISO 639-2 or ISO 639-3, or a literal value consisting of an IETF Best Current Practice 47 [[IETF-BCP47](https://tools.ietf.org/html/bcp47)] language tag."@en ;
-                 rdfs:comment "A language of the resource."@en ;
-                 rdfs:isDefinedBy dcterms: ;
-                 rdfs:label "Language"@en ,
-                            "language" ;
+                 rdfs:label "language" ;
                  rdfs:subPropertyOf dcterms:language .
 
 
 ###  http://purl.org/dc/terms/license
 dcterms:license rdf:type owl:AnnotationProperty ;
-                <http://purl.org/dc/dcam/rangeIncludes> dcterms:LicenseDocument ;
-                dcterms:description "Recommended practice is to identify the license document with a URI. If this is not possible or feasible, a literal value that identifies the license may be provided."@en ;
-                rdfs:comment "A legal document giving official permission to do something with the resource."@en ;
-                rdfs:isDefinedBy dcterms: ;
-                rdfs:label "License"@en ,
-                           "license" ;
+                rdfs:label "license" ;
                 rdfs:subPropertyOf dcterms:rights .
 
 
@@ -280,92 +208,56 @@ dcterms:modified rdf:type owl:AnnotationProperty ;
 
 ###  http://purl.org/dc/terms/publisher
 dcterms:publisher rdf:type owl:AnnotationProperty ;
-                  <http://purl.org/dc/dcam/rangeIncludes> dcterms:Agent ;
-                  rdfs:comment "An entity responsible for making the resource available."@en ;
-                  rdfs:isDefinedBy dcterms: ;
-                  rdfs:label "Publisher"@en ,
-                             "publisher" ;
+                  rdfs:label "publisher" ;
                   rdfs:subPropertyOf dcterms:publisher .
 
 
 ###  http://purl.org/dc/terms/references
 dcterms:references rdf:type owl:AnnotationProperty ;
-                   dcterms:description "This property is intended to be used with non-literal values. This property is an inverse property of Is Referenced By."@en ;
-                   rdfs:comment "A related resource that is referenced, cited, or otherwise pointed to by the described resource."@en ;
-                   rdfs:isDefinedBy dcterms: ;
-                   rdfs:label "References"@en ,
-                              "references" ;
+                   rdfs:label "references" ;
                    rdfs:subPropertyOf dcterms:relation .
 
 
 ###  http://purl.org/dc/terms/relation
 dcterms:relation rdf:type owl:AnnotationProperty ;
-                 dcterms:description "Recommended practice is to identify the related resource by means of a URI.  If this is not possible or feasible, a string conforming to a formal identification system may be provided."@en ;
-                 rdfs:comment "A related resource."@en ;
-                 rdfs:isDefinedBy dcterms: ;
-                 rdfs:label "Relation"@en ,
-                            "relation" ;
+                 rdfs:label "relation" ;
                  rdfs:subPropertyOf dcterms:relation .
 
 
 ###  http://purl.org/dc/terms/replaces
 dcterms:replaces rdf:type owl:AnnotationProperty ;
-                 dcterms:description "This property is intended to be used with non-literal values. This property is an inverse property of Is Replaced By."@en ;
-                 rdfs:comment "A related resource that is supplanted, displaced, or superseded by the described resource."@en ;
-                 rdfs:isDefinedBy dcterms: ;
-                 rdfs:label "Replaces"@en ,
-                            "replaces" ;
+                 rdfs:label "replaces" ;
                  rdfs:subPropertyOf dcterms:relation .
 
 
 ###  http://purl.org/dc/terms/requires
 dcterms:requires rdf:type owl:AnnotationProperty ;
-                 dcterms:description "This property is intended to be used with non-literal values. This property is an inverse property of Is Required By."@en ;
-                 rdfs:comment "A related resource that is required by the described resource to support its function, delivery, or coherence."@en ;
-                 rdfs:isDefinedBy dcterms: ;
-                 rdfs:label "Requires"@en ,
-                            "requires" ;
+                 rdfs:label "requires" ;
                  rdfs:subPropertyOf dcterms:relation .
 
 
 ###  http://purl.org/dc/terms/rights
 dcterms:rights rdf:type owl:AnnotationProperty ;
-               <http://purl.org/dc/dcam/rangeIncludes> dcterms:RightsStatement ;
-               dcterms:description "Typically, rights information includes a statement about various property rights associated with the resource, including intellectual property rights.  Recommended practice is to refer to a rights statement with a URI.  If this is not possible or feasible, a literal value (name, label, or short text) may be provided."@en ;
-               rdfs:comment "Information about rights held in and over the resource."@en ;
-               rdfs:isDefinedBy dcterms: ;
-               rdfs:label "Rights"@en ,
-                          "rights" ;
+               rdfs:label "rights" ;
                rdfs:subPropertyOf dcterms:rights .
 
 
 ###  http://purl.org/dc/terms/source
 dcterms:source rdf:type owl:AnnotationProperty ;
-               dcterms:description "This property is intended to be used with non-literal values. The described resource may be derived from the related resource in whole or in part. Best practice is to identify the related resource by means of a URI or a string conforming to a formal identification system."@en ;
-               rdfs:comment "A related resource from which the described resource is derived."@en ;
-               rdfs:isDefinedBy dcterms: ;
-               rdfs:label "Source"@en ,
-                          "source" ;
+               rdfs:label "source" ;
                rdfs:subPropertyOf dcterms:relation ,
                                   dcterms:source .
 
 
 ###  http://purl.org/dc/terms/subject
 dcterms:subject rdf:type owl:AnnotationProperty ;
-                dcterms:description "Recommended practice is to refer to the subject with a URI. If this is not possible or feasible, a literal value that identifies the subject may be provided. Both should preferably refer to a subject in a controlled vocabulary."@en ;
-                rdfs:comment "A topic of the resource."@en ;
-                rdfs:isDefinedBy dcterms: ;
-                rdfs:label "Subject"@en ,
-                           "subject" ;
+                rdfs:label "subject" ;
                 rdfs:subPropertyOf dcterms:subject .
 
 
 ###  http://purl.org/dc/terms/tableOfContents
 dcterms:tableOfContents rdf:type owl:AnnotationProperty ;
-                        rdfs:comment "A list of subunits of the resource."@en ;
-                        rdfs:isDefinedBy dcterms: ;
-                        rdfs:label "Table Of Contents"@en ,
-                                   "table of contents" ;
+                        rdfs:label "table of contents" ;
                         rdfs:subPropertyOf dcterms:description .
 
 
@@ -376,11 +268,7 @@ dcterms:title rdf:type owl:AnnotationProperty ;
 
 ###  http://purl.org/dc/terms/type
 dcterms:type rdf:type owl:AnnotationProperty ;
-             dcterms:description "Recommended practice is to use a controlled vocabulary such as the DCMI Type Vocabulary [[DCMI-TYPE](http://dublincore.org/documents/dcmi-type-vocabulary/)]. To describe the file format, physical medium, or dimensions of the resource, use the property Format."@en ;
-             rdfs:comment "The nature or genre of the resource."@en ;
-             rdfs:isDefinedBy dcterms: ;
-             rdfs:label "Type"@en ,
-                        "type" ;
+             rdfs:label "type" ;
              rdfs:subPropertyOf dcterms:type .
 
 
@@ -425,54 +313,62 @@ foaf:workInfohomePage rdf:type owl:AnnotationProperty ;
 
 ###  https://purl.org/cbam/validity_date
 properties:validity_date rdf:type owl:AnnotationProperty ;
-                         rdfs:label "validity date" .
+                         rdfs:label "Validity Date"@en ;
+                         rdfs:comment "The date from which a CN code entry is valid, reflecting the annual updates to the Combined Nomenclature published by the European Commission in the Official Journal of the European Union. CN codes may be added, removed, or restructured with each yearly revision, so this date identifies the applicable nomenclature version."@en .
 
 
 ###  https://purl.org/cbam/CN/cn10_code
 vocabulary:cn10_code rdf:type owl:AnnotationProperty ;
-                     rdfs:label "cn10 code" ;
+                     rdfs:label "CN10 Code"@en ;
+                     rdfs:comment "The 10-digit CN code, extending the 8-digit Combined Nomenclature code with 2 additional digits used in the EU TARIC system for statistical, tariff, and trade policy purposes. This is the most granular level of the EU tariff classification."@en ;
                      rdfs:range xsd:string ;
                      rdfs:domain vocabulary:CN .
 
 
 ###  https://purl.org/cbam/CN/cn6_code
 vocabulary:cn6_code rdf:type owl:AnnotationProperty ;
-                    rdfs:label "cn6 code" ;
+                    rdfs:label "CN6 Code (HS Subheading)"@en ;
+                    rdfs:comment "The 6-digit Harmonized System (HS) subheading code, which forms the common international basis of the CN classification as defined by the World Customs Organization (WCO). The first 2 digits identify the chapter, digits 3-4 the heading, and digits 5-6 the subheading. This level is shared across all WCO member countries."@en ;
                     rdfs:range xsd:string ;
                     rdfs:domain vocabulary:CN .
 
 
 ###  https://purl.org/cbam/CN/cn8_code
 vocabulary:cn8_code rdf:type owl:AnnotationProperty ;
-                    rdfs:label "cn8 code" ;
+                    rdfs:label "CN8 Code (Combined Nomenclature)"@en ;
+                    rdfs:comment "The 8-digit Combined Nomenclature code, composed of the 6-digit HS subheading code plus 2 EU-specific subdivision digits. This is the standard level used for EU customs tariff declarations, Intrastat reporting, and external trade statistics. It corresponds directly to the CN code published in the Official Journal of the European Union."@en ;
                     rdfs:range xsd:string ;
                     rdfs:domain vocabulary:CN .
 
 
 ###  https://purl.org/cbam/CN/cn_code
 vocabulary:cn_code rdf:type owl:AnnotationProperty ;
-                   rdfs:label "cn code" ;
+                   rdfs:label "CN Code (Formatted)"@en ;
+                   rdfs:comment "The formatted Combined Nomenclature code as officially published in the EU Official Journal, typically presented with spaces separating digit groups (e.g., '1001 11 00'). This human-readable format is used in legal texts, tariff schedules, and customs documentation. For structural groupings (sections, chapters, headings) that do not have a tradeable CN8 code, this value may be absent or set to the grouping identifier (e.g., 'I', '10')."@en ;
                    rdfs:range xsd:string ;
                    rdfs:domain vocabulary:CN .
 
 
 ###  https://purl.org/cbam/CN/code
 vocabulary:code rdf:type owl:AnnotationProperty ;
-                rdfs:label "code" ;
+                rdfs:label "Internal CN Entry Code"@en ;
+                rdfs:comment "The full internal code identifier for a CN entry, combining the 10-digit CN code with a 2-digit positional suffix that distinguishes the role of the line in the tariff hierarchy. Lines ending in '0010' or '0090' are structural groupings (parent headings with no tradeable commodity code), while lines ending in '0080' represent actual tradeable commodity codes for which customs declarations can be made."@en ;
                 rdfs:range xsd:string ;
                 rdfs:domain vocabulary:CN .
 
 
 ###  https://purl.org/cbam/CN/hs6_code
 vocabulary:hs6_code rdf:type owl:AnnotationProperty ;
-                    rdfs:label "hs6 code" ;
+                    rdfs:label "HS6 Code (Harmonized System)"@en ;
+                    rdfs:comment "The 6-digit Harmonized Commodity Description and Coding System (HS) subheading code maintained by the World Customs Organization (WCO). This code is the internationally harmonised basis used by over 200 countries for customs tariff classification and trade statistics. In the CN, this corresponds to the first 6 digits of the CN8 code and is identical to cn6_code."@en ;
                     rdfs:range xsd:string ;
                     rdfs:domain vocabulary:CN .
 
 
 ###  https://purl.org/cbam/CN/hs8_code
 vocabulary:hs8_code rdf:type owl:AnnotationProperty ;
-                    rdfs:label "hs8 code" ;
+                    rdfs:label "HS8 Code (CN Tariff Subheading)"@en ;
+                    rdfs:comment "The 8-digit tariff subheading code equivalent to the CN8 code, used in the context of the EU Combined Nomenclature for customs duty purposes, Intrastat declarations, and statistical reporting. It extends the 6-digit HS subheading with 2 EU-specific digits and is functionally equivalent to the cn8_code property."@en ;
                     rdfs:range xsd:string ;
                     rdfs:domain vocabulary:CN .
 
@@ -491,66 +387,92 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  http://purl.org/dc/terms/alternative
 dcterms:alternative rdf:type owl:DatatypeProperty ;
+                    rdfs:label "Alternative Title"@en ;
+                    rdfs:comment "An alternative name or title for the resource. This property can be used to provide additional names by which the resource may be known, such as abbreviations, translations, or informal names."@en ;
                     rdfs:subPropertyOf dcterms:title .
 
 
 ###  http://purl.org/dc/terms/available
 dcterms:available rdf:type owl:DatatypeProperty ;
+                  rdfs:label "Date Available"@en ;
+                  rdfs:comment "The date or date range on which the resource became or will become available for use or access."@en ;
                   rdfs:subPropertyOf dcterms:date .
 
 
 ###  http://purl.org/dc/terms/bibliographicCitation
 dcterms:bibliographicCitation rdf:type owl:DatatypeProperty ;
+                              rdfs:label "Bibliographic Citation"@en ;
+                              rdfs:comment "A bibliographic reference to the resource. Recommended practice is to include sufficient bibliographic detail to identify the resource as unambiguously as possible, including authors, title, publication venue, date, and persistent identifier (e.g., DOI or URL)."@en ;
                               rdfs:subPropertyOf dcterms:identifier .
 
 
 ###  http://purl.org/dc/terms/created
 dcterms:created rdf:type owl:DatatypeProperty ;
+                rdfs:label "Date Created"@en ;
+                rdfs:comment "The date of creation of the resource. Recommended practice is to describe the date, date/time, or period of time as recommended for the property Date, of which this is a subproperty."@en ;
                 rdfs:subPropertyOf dcterms:date .
 
 
 ###  http://purl.org/dc/terms/date
 dcterms:date rdf:type owl:DatatypeProperty ;
+             rdfs:label "Date"@en ;
+             rdfs:comment "A point or period of time associated with an event in the lifecycle of the resource. Recommended practice is to express the date, date/time, or period of time using ISO 8601-1 (date and time) or ISO 8601-2 (extended date/time) date format."@en ;
              rdfs:subPropertyOf dcterms:date .
 
 
 ###  http://purl.org/dc/terms/dateAccepted
 dcterms:dateAccepted rdf:type owl:DatatypeProperty ;
+                     rdfs:label "Date Accepted"@en ;
+                     rdfs:comment "The date of acceptance of the resource, for example by a publisher or funding body. Recommended practice is to describe the date using ISO 8601."@en ;
                      rdfs:subPropertyOf dcterms:date .
 
 
 ###  http://purl.org/dc/terms/dateCopyrighted
 dcterms:dateCopyrighted rdf:type owl:DatatypeProperty ;
+                        rdfs:label "Date Copyrighted"@en ;
+                        rdfs:comment "The year of formal copyright of the resource, typically expressed as a 4-digit year. Used to indicate when intellectual property rights were first asserted."@en ;
                         rdfs:subPropertyOf dcterms:date .
 
 
 ###  http://purl.org/dc/terms/dateSubmitted
 dcterms:dateSubmitted rdf:type owl:DatatypeProperty ;
+                      rdfs:label "Date Submitted"@en ;
+                      rdfs:comment "The date of submission of the resource, for example to a journal or repository. Recommended practice is to describe the date using ISO 8601."@en ;
                       rdfs:subPropertyOf dcterms:date .
 
 
 ###  http://purl.org/dc/terms/identifier
 dcterms:identifier rdf:type owl:DatatypeProperty ;
+                   rdfs:label "Identifier"@en ;
+                   rdfs:comment "An unambiguous reference to the resource within a given context, such as a URI, DOI, ISBN, or other persistent identifier scheme. Recommended practice is to identify the resource using a string conforming to an established identification system."@en ;
                    rdfs:subPropertyOf dcterms:identifier .
 
 
 ###  http://purl.org/dc/terms/issued
 dcterms:issued rdf:type owl:DatatypeProperty ;
+               rdfs:label "Date Issued"@en ;
+               rdfs:comment "The date of formal issuance of the resource, such as publication by a standards body, official journal, or registry. Recommended practice is to describe the date using ISO 8601."@en ;
                rdfs:subPropertyOf dcterms:date .
 
 
 ###  http://purl.org/dc/terms/modified
 dcterms:modified rdf:type owl:DatatypeProperty ;
+                 rdfs:label "Date Modified"@en ;
+                 rdfs:comment "The date on which the resource was most recently changed or updated. When the resource has been revised, this property should be updated to reflect the date of the latest modification. Recommended practice is to use ISO 8601 date format."@en ;
                  rdfs:subPropertyOf dcterms:date .
 
 
 ###  http://purl.org/dc/terms/title
 dcterms:title rdf:type owl:DatatypeProperty ;
+              rdfs:label "Title"@en ;
+              rdfs:comment "A name given to the resource. Typically a title will be the name by which the resource is formally known. In the context of this ontology, this refers to the official name of the CN code list or ontology itself."@en ;
               rdfs:subPropertyOf dcterms:title .
 
 
 ###  http://purl.org/dc/terms/valid
 dcterms:valid rdf:type owl:DatatypeProperty ;
+              rdfs:label "Date Valid"@en ;
+              rdfs:comment "The date or date range during which the resource is or was valid. For CN code entries, this represents the temporal scope of the nomenclature version in which the code is applicable. Recommended practice is to describe the date using ISO 8601."@en ;
               rdfs:subPropertyOf dcterms:date .
 
 
@@ -560,7 +482,9 @@ dcterms:valid rdf:type owl:DatatypeProperty ;
 
 ###  https://purl.org/cbam/CN/CN
 vocabulary:CN rdf:type owl:Class ;
-              rdfs:label "CN" .
+              rdfs:label "Combined Nomenclature (CN)"@en ;
+              rdfs:comment "The Combined Nomenclature (CN) is the European Union's goods classification system, based on the Harmonized System (HS) of the World Customs Organization (WCO) and extended with EU-specific subdivisions. It is used for customs tariff purposes, external trade statistics, and the application of EU trade policy measures. Each CN code consists of 8 digits: the first 6 align with the international HS code, and the last 2 are EU-specific subdivisions. The CN is updated annually and published in the Official Journal of the European Union."@en ;
+              dcterms:description "Top-level class representing all CN code entries as defined in the EU Combined Nomenclature, published annually by the European Commission. Source: https://taxation-customs.ec.europa.eu/customs/common-customs-tariff-cct/tariff-classification-goods/combined-nomenclature_en"@en .
 
 
 ###  https://purl.org/cbam/CN/100021000090
@@ -196018,94 +195942,43 @@ vocabulary:CN rdf:type owl:Class ;
 #    Annotations
 #################################################################
 
-dcterms:alternative dcterms:description "The distinction between titles and alternative titles is application-specific."@en ;
-                    rdfs:comment "An alternative name for the resource."@en ;
-                    rdfs:isDefinedBy dcterms: ;
-                    rdfs:label "Alternative Title"@en ,
-                               "alternative" .
+dcterms:alternative rdfs:label "alternative" .
 
 
-dcterms:available dcterms:description "Recommended practice is to describe the date, date/time, or period of time as recommended for the property Date, of which this is a subproperty."@en ;
-                  rdfs:comment "Date that the resource became or will become available."@en ;
-                  rdfs:isDefinedBy dcterms: ;
-                  rdfs:label "Date Available"@en ,
-                             "available" .
+dcterms:available rdfs:label "available" .
 
 
-dcterms:bibliographicCitation dcterms:description "Recommended practice is to include sufficient bibliographic detail to identify the resource as unambiguously as possible."@en ;
-                              rdfs:comment "A bibliographic reference for the resource."@en ;
-                              rdfs:isDefinedBy dcterms: ;
-                              rdfs:label "Bibliographic Citation"@en ,
-                                         "bibliographic citation" .
+dcterms:bibliographicCitation rdfs:label "bibliographic citation" .
 
 
-dcterms:created dcterms:description "Recommended practice is to describe the date, date/time, or period of time as recommended for the property Date, of which this is a subproperty."@en ;
-                rdfs:comment "Date of creation of the resource."@en ;
-                rdfs:isDefinedBy dcterms: ;
-                rdfs:label "Date Created"@en ,
-                           "created" .
+dcterms:created rdfs:label "created" .
 
 
-dcterms:date dcterms:description "Date may be used to express temporal information at any level of granularity.  Recommended practice is to express the date, date/time, or period of time according to ISO 8601-1 [[ISO 8601-1](https://www.iso.org/iso-8601-date-and-time-format.html)] or a published profile of the ISO standard, such as the W3C Note on Date and Time Formats [[W3CDTF](https://www.w3.org/TR/NOTE-datetime)] or the Extended Date/Time Format Specification [[EDTF](http://www.loc.gov/standards/datetime/)].  If the full date is unknown, month and year (YYYY-MM) or just year (YYYY) may be used. Date ranges may be specified using ISO 8601 period of time specification in which start and end dates are separated by a '/' (slash) character.  Either the start or end date may be missing."@en ;
-             rdfs:comment "A point or period of time associated with an event in the lifecycle of the resource."@en ;
-             rdfs:isDefinedBy dcterms: ;
-             rdfs:label "Date"@en ,
-                        "date" .
+dcterms:date rdfs:label "date" .
 
 
-dcterms:dateAccepted dcterms:description "Recommended practice is to describe the date, date/time, or period of time as recommended for the property Date, of which this is a subproperty.  Examples of resources to which a date of acceptance may be relevant are a thesis (accepted by a university department) or an article (accepted by a journal)."@en ;
-                     rdfs:comment "Date of acceptance of the resource."@en ;
-                     rdfs:isDefinedBy dcterms: ;
-                     rdfs:label "Date Accepted"@en ,
-                                "date accepted" .
+dcterms:dateAccepted rdfs:label "date accepted" .
 
 
-dcterms:dateCopyrighted dcterms:description "Typically a year.  Recommended practice is to describe the date, date/time, or period of time as recommended for the property Date, of which this is a subproperty."@en ;
-                        rdfs:comment "Date of copyright of the resource."@en ;
-                        rdfs:isDefinedBy dcterms: ;
-                        rdfs:label "Date Copyrighted"@en ,
-                                   "date copyrighted" .
+dcterms:dateCopyrighted rdfs:label "date copyrighted" .
 
 
-dcterms:dateSubmitted dcterms:description "Recommended practice is to describe the date, date/time, or period of time as recommended for the property Date, of which this is a subproperty.  Examples of resources to which a 'Date Submitted' may be relevant include a thesis (submitted to a university department) or an article (submitted to a journal)."@en ;
-                      rdfs:comment "Date of submission of the resource."@en ;
-                      rdfs:isDefinedBy dcterms: ;
-                      rdfs:label "Date Submitted"@en ,
-                                 "date submitted" .
+dcterms:dateSubmitted rdfs:label "date submitted" .
 
 
-dcterms:identifier dcterms:description "Recommended practice is to identify the resource by means of a string conforming to an identification system. Examples include International Standard Book Number (ISBN), Digital Object Identifier (DOI), and Uniform Resource Name (URN).  Persistent identifiers should be provided as HTTP URIs."@en ;
-                   rdfs:comment "An unambiguous reference to the resource within a given context."@en ;
-                   rdfs:isDefinedBy dcterms: ;
-                   rdfs:label "Identifier"@en ,
-                              "identifier" .
+dcterms:identifier rdfs:label "identifier" .
 
 
-dcterms:issued dcterms:description "Recommended practice is to describe the date, date/time, or period of time as recommended for the property Date, of which this is a subproperty."@en ;
-               rdfs:comment "Date of formal issuance of the resource."@en ;
-               rdfs:isDefinedBy dcterms: ;
-               rdfs:label "Date Issued"@en ,
-                          "issued" .
+dcterms:issued rdfs:label "issued" .
 
 
-dcterms:modified dcterms:description "Recommended practice is to describe the date, date/time, or period of time as recommended for the property Date, of which this is a subproperty."@en ;
-                 rdfs:comment "Date on which the resource was changed."@en ;
-                 rdfs:isDefinedBy dcterms: ;
-                 rdfs:label "Date Modified"@en ,
-                            "modified" .
+dcterms:modified rdfs:label "modified" .
 
 
-dcterms:title rdfs:comment "A name given to the resource."@en ;
-              rdfs:isDefinedBy dcterms: ;
-              rdfs:label "Title"@en ,
-                         "title" .
+dcterms:title rdfs:label "title" .
 
 
-dcterms:valid dcterms:description "Recommended practice is to describe the date, date/time, or period of time as recommended for the property Date, of which this is a subproperty."@en ;
-              rdfs:comment "Date (often a range) of validity of a resource."@en ;
-              rdfs:isDefinedBy dcterms: ;
-              rdfs:label "Date Valid"@en ,
-                         "valid" .
+dcterms:valid rdfs:label "valid" .
 
 
 ###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi
