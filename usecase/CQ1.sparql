@@ -1,0 +1,45 @@
+# What is the installation with the minimum emissions when producing a particular family of products?
+
+prefix schema: <http://schema.org/>
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+prefix xsd: <http://www.w3.org/2001/XMLSchema#>
+prefix cbam: <https://purl.org/cbam/cbamreport/>
+prefix cn: <https://purl.org/cbam/CN/>
+prefix foaf: <http://xmlns.com/foaf/0.1/>
+
+select
+   ?cnCode
+   ?installationName
+   (str(?totalEmissions_dt) as ?totalEmissions)
+   ?totalEmissionsUnit
+where {
+   {
+      select ?cnCode (min(xsd:decimal(?e)) as ?minEmissions)
+      where {
+         ?p rdf:type cbam:Good ;
+            cbam:hasCNCode ?c ;
+            cbam:isManufacturedAt ?inst ;
+            cbam:hasGreenHouseGasEmissions ?em .
+         ?c cn:cn_code ?cnCode .
+         ?em rdf:type cbam:GreenHouseGasEmissions ;
+             cbam:total_Direct_Indirect_Embedded_Emission ?e .
+      }
+      group by ?cnCode
+   }
+
+   ?product rdf:type cbam:Good ;
+      cbam:hasCNCode ?cn ;
+      cbam:isManufacturedAt ?installation ;
+      cbam:hasGreenHouseGasEmissions ?emissions .
+
+   ?cn cn:cn_code ?cnCode .
+   ?installation foaf:name ?installationName .
+
+   ?emissions rdf:type cbam:GreenHouseGasEmissions ;
+      cbam:total_Direct_Indirect_Embedded_Emission ?totalEmissions_dt ;
+      cbam:emissionsUnit ?totalEmissionsUnit .
+
+   filter(xsd:decimal(?totalEmissions_dt) = ?minEmissions)
+}
+order by ?cnCode

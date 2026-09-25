@@ -1,0 +1,26 @@
+# What is the carbon cost produced by an installation when producing a particular family of products? 
+
+prefix schema: <http://schema.org/>
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+prefix cbam: <https://purl.org/cbam/cbamreport/>
+prefix cn: <https://purl.org/cbam/CN/>
+prefix foaf: <http://xmlns.com/foaf/0.1/>
+
+select
+   ?cnCode
+   ?installationName
+   (str(?carbonCost_dt) as ?carbonCost)
+where {
+   ?product  rdf:type cbam:Good ;
+      cbam:hasCNCode ?cn ;
+      cbam:isManufacturedAt ?installation ;
+      cbam:hasGreenHouseGasEmissions ?emissions ;
+      cbam:hasCarbonCharge ?carbonPrice .
+
+   ?cn cn:cn_code ?cnCode .
+   ?installation foaf:name ?installationName .
+
+
+   ?carbonPrice cbam:resultEffectiveCPDue ?carbonCost_dt .
+} order by ?cnCode

@@ -1,0 +1,28 @@
+# What is the installation with the maximum indirect emissions per ton in average? 
+
+prefix schema: <http://schema.org/>
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+prefix xsd: <http://www.w3.org/2001/XMLSchema#>
+prefix cbam: <https://purl.org/cbam/cbamreport/>
+prefix cn: <https://purl.org/cbam/CN/>
+prefix foaf: <http://xmlns.com/foaf/0.1/>
+
+select
+   ?installationName
+   (avg(?indirectEmissions_dt) as ?indirectEmissions)
+   ?emissionsUnit
+where {
+   ?product rdf:type cbam:Good ;
+      cbam:isManufacturedAt ?installation ;
+      cbam:hasGreenHouseGasEmissions ?emissions .
+
+   ?installation foaf:name ?installationName .
+
+   ?emissions rdf:type cbam:GreenHouseGasEmissions ;
+      cbam:IndirectEmbeddedEmissions ?indirectEmissions_dt ;
+      cbam:emissionsUnit ?emissionsUnit .
+}
+group by ?installationName ?emissionsUnit
+order by desc(?indirectEmissions)
+limit 1
