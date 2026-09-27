@@ -1,4 +1,0 @@
-b,production_process,aggregated_goods_category,1,2,3,4,5,6,aggregated_goods_category_iri
-P1,Dry kiln process,Cement,,,,,,,https://purl.org/cbam/cbam_goods/Cement
-P2,Clinker cooling,Cement clinker,,,,,,,https://purl.org/cbam/cbam_goods/Cement_clinker
-P3,Wet kiln process,Cement clinker,,,,,,,https://purl.org/cbam/cbam_goods/Cement_clinker

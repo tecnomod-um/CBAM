@@ -1,4 +1,0 @@
-b,production_process,aggregated_goods_category,1,2,3,4,5,6,aggregated_goods_category_iri
-P1,Blast furnace route,Sintered ore,,,,,,,https://purl.org/cbam/cbam_goods/Sintered_Ore
-P2,Other process,DRI,,,,,,,
-P3,Sintering,Sintered ore,,,,,,,https://purl.org/cbam/cbam_goods/Sintered_Ore

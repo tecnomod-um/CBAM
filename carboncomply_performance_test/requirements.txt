@@ -50,3 +50,4 @@ wcwidth==0.8.3
 Werkzeug==3.0.3
 xsdata==24.6.1
 zipp==3.19.2
+psutil==7.2.2
