@@ -1,0 +1,4 @@
+b,production_process,aggregated_goods_category,1,2,3,4,5,6,aggregated_goods_category_iri
+P1,Electric arc furnace,Pig iron,,,,,,,https://purl.org/cbam/cbam_goods/Pig_Iron
+P2,Sintering,Sintered ore,,,,,,,https://purl.org/cbam/cbam_goods/Sintered_Ore
+P3,Blast furnace route,Pig iron,,,,,,,https://purl.org/cbam/cbam_goods/Pig_Iron
