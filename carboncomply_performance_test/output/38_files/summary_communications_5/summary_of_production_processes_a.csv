@@ -1,0 +1,4 @@
+a,aggregated_good_produced,route_1,route_2,route_3,route_4,route_5,route_6,aggregated_good_produced_iri
+G1,Pig iron,,,,,,,https://purl.org/cbam/cbam_goods/Pig_Iron
+G2,Crude steel,,,,,,,https://purl.org/cbam/cbam_goods/Crude_steel
+G3,DRI,,,,,,,

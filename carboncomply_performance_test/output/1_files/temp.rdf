@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:foaf="http://xmlns.com/foaf/0.1/"
+   xmlns:ontology-geo="https://www.geonames.org/ontology#"
+   xmlns:ontology-se-cbam-cbam-goods="https://purl.org/cbam/cbam_goods/"
+   xmlns:ontology-se-cbam-cbamreport="https://purl.org/cbam/cbamreport/"
+   xmlns:ontology-se-cbam-cn="https://purl.org/cbam/CN/"
+   xmlns:ontology-se-cbam-currency="https://purl.org/cbam/currency/"
+   xmlns:ontology-se-cbam-electricity-determination="https://purl.org/cbam/Electricity_Determination/"
+   xmlns:ontology-se-cbam-instrument="https://purl.org/cbam/Instrument/"
+   xmlns:ontology-se-cbam-production-method="https://purl.org/cbam/Production_Method/"
+   xmlns:ontology-se-cbam_emissionsqualifyingparameters="https://purl.org/cbam/emissionsqualifyingparameters/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:about="https://data.com/cbam/cbamreport#totalDirectEmissions_BRKJL2024010120241231">
+    <rdf:type rdf:resource="https://purl.org/cbam/cbamreport/GreenHouseGasEmissions"/>
+    <rdf:type rdf:resource="https://purl.org/cbam/cbamreport/TotalDirectEmissions"/>
+    <ontology-se-cbam-cbamreport:emissionsUnit>tCO2e</ontology-se-cbam-cbamreport:emissionsUnit>
+    <ontology-se-cbam-cbamreport:emissionsValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6592947.736</ontology-se-cbam-cbamreport:emissionsValue>
+    <ontology-se-cbam-cbamreport:isEmittedBy rdf:resource="https://data.com/cbam/cbamreport#Installation_BRKJL"/>
+    <ontology-se-cbam-cbamreport:isRegisteredIn rdf:resource="https://data.com/cbam/cbamreport#CommunicationReport_BRKJL2024010120241231"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://data.com/cbam/cbamreport#Product_BRKJL2024010120241231_1">
+    <rdf:type rdf:resource="https://purl.org/cbam/cbamreport/Good"/>
+    <rdfs:label>Example product A (batch 6)</rdfs:label>
+    <foaf:name>Example product A (batch 6)</foaf:name>
+    <ontology-se-cbam-cbamreport:hasCNCode rdf:resource="https://data.com/cbam/CN#CN_25231000"/>
+    <ontology-se-cbam-cbamreport:hasCarbonCharge rdf:resource="https://data.com/cbam/cbamreport#CarbonPrice_BRKJL2024010120241231_1"/>
+    <ontology-se-cbam-cbamreport:hasEmissionQualifyingParameter rdf:resource="https://data.com/cbam/emissionsqualifyingparameters#Aluminium_pre-consumer_scrap_BRKJL2024010120241231_1"/>
+    <ontology-se-cbam-cbamreport:hasEmissionQualifyingParameter rdf:resource="https://data.com/cbam/emissionsqualifyingparameters#Aluminium_scrap_usage_BRKJL2024010120241231_1"/>
+    <ontology-se-cbam-cbamreport:hasEmissionQualifyingParameter rdf:resource="https://data.com/cbam/emissionsqualifyingparameters#Ammonia_concentration_BRKJL2024010120241231_1"/>
+    <ontology-se-cbam-cbamreport:hasEmissionQualifyingParameter rdf:resource="https://data.com/cbam/emissionsqualifyingparameters#Ammonium_Nitrogen_content_BRKJL2024010120241231_1"/>
+    <ontology-se-cbam-cbamreport:hasEmissionQualifyingParameter rdf:resource="https://data.com/cbam/emissionsqualifyingparameters#Calcination_BRKJL2024010120241231_1"/>
+    <ontology-se-cbam-cbamreport:hasEmissionQualifyingParameter rdf:resource="https://data.com/cbam/emissionsqualifyingparameters#Carbon_content_of_iron_or_steel_BRKJL2024010120241231_1"/>
+    <ontology-se-cbam-cbamreport:hasEmissionQualifyingParameter rdf:resource="https://data.com/cbam/emissionsqualifyingparameters#Chromium_content_BRKJL2024010120241231_1"/>
+    <ontology-se-cbam-cbamreport:hasEmissionQualifyingParameter rdf:resource="https://data.com/cbam/emissionsqualifyingparameters#Clinker_factor_BRKJL2024010120241231_1"/>
+    <ontology-se-cbam-cbamreport:hasEmissionQualifyingParameter rdf:resource="https://data.com/cbam/emissionsqualifyingparameters#Content_of_other_alloy_elements_BRKJL2024010120241231_1"/>
+    <ontology-se-cbam-cbamreport:hasEmissionQualifyingParameter rdf:resource="https://data.com/cbam/emissionsqualifyingparameters#Manganese_content_BRKJL2024010120241231_1"/>
+    <ontology-se-cbam-cbamreport:hasEmissionQualifyingParameter rdf:resource="https://data.com/cbam/emissionsqualifyingparameters#Nickel_content_BRKJL2024010120241231_1"/>
+    <ontology-se-cbam-cbamreport:hasEmissionQualifyingParameter rdf:resource="https://data.com/cbam/emissionsqualifyingparameters#Nitrate_Nitrogen_content_BRKJL2024010120241231_1"/>
+    <ontology-se-cbam-cbamreport:hasEmissionQualifyingParameter rdf:resource="https://data.com/cbam/emissionsqualifyingparameters#Nitric_acid_concentration_BRKJL2024010120241231_1"/>
+    <ontology-se-cbam-cbamreport:hasEmissionQualifyingParameter rdf:resource="https://data.com/cbam/emissionsqualifyingparameters#Non_Aluminium_content_BRKJL2024010120241231_1"/>
+    <ontology-se-cbam-cbamreport:hasEmissionQualifyingParameter rdf:resource="https://data.com/cbam/emissionsqualifyingparameters#Non_Iron_content_BRKJL2024010120241231_1"/>
+    <ontology-se-cbam-cbamreport:hasEmissionQualifyingParameter rdf:resource="https://data.com/cbam/emissionsqualifyingparameters#Other_Nitrogen_content_BRKJL2024010120241231_1"/>
+    <ontology-se-cbam-cbamreport:hasEmissionQualifyingParameter rdf:resource="https://data.com/cbam/emissionsqualifyingparameters#Precursor_reducing_Agent_BRKJL2024010120241231_1"/>
+    <ontology-se-cbam-cbamreport:hasEmissionQualifyingParameter rdf:resource="https://data.com/cbam/emissionsqualifyingparameters#Steel_pre-consumer_scrap_BRKJL2024010120241231_1"/>
+    <ontology-se-cbam-cbamreport:hasEmissionQualifyingParameter rdf:resource="https://data.com/cbam/emissionsqualifyingparameters#Steel_product_scrap_usage_BRKJL2024010120241231_1"/>
+    <ontology-se-cbam-cbamreport:hasEmissionQualifyingParameter rdf:resource="https://data.com/cbam/emissionsqualifyingparameters#Steel_scrap_usage_BRKJL2024010120241231_1"/>
+    <ontology-se-cbam-cbamreport:hasEmissionQualifyingParameter rdf:resource="https://data.com/cbam/emissionsqualifyingparameters#Urea_Nitrogen_content_BRKJL2024010120241231_1"/>
+    <ontology-se-cbam-cbamreport:hasEmissionQualifyingParameter rdf:resource="https://data.com/cbam/emissionsqualifyingparameters#Urea_purity_BRKJL2024010120241231_1"/>
+    <ontology-se-cbam-cbamreport:hasEmissionsCovered rdf:resource="https://data.com/cbam/cbamreport#CarbonEmissionsCovered_BRKJL2024010120241231_1"/>
+    <ontology-se-cbam-cbamreport:hasGreenHouseGasEmissions rdf:resource="https://data.com/cbam/cbamreport#GreenHouseGasEmissions_BRKJL2024010120241231_1"/>
+    <ontology-se-cbam-cbamreport:hasProductionMethod rdf:resource="https://data.com/cbam/Production_Method#BRKJL2024010120241231_1"/>
+    <ontology-se-cbam-cbamreport:isCoveredRebate rdf:resource="https://data.com/cbam/cbamreport#Rebate_BRKJL2024010120241231_1"/>
+    <ontology-se-cbam-cbamreport:isDeterminedBy rdf:resource="https://data.com/cbam/Electricity_Determination#Electricity_Determination_BRKJL2024010120241231_1"/>
+    <ontology-se-cbam-cbamreport:isManufacturedAt rdf:resource="https://data.com/cbam/cbamreport#Installation_BRKJL"/>
+    <ontology-se-cbam-cbamreport:isProducedAt rdf:resource="https://data.com/cbam/cbamreport#steelMill_BRKJL2024010120241231_1"/>
+    <ontology-se-cbam-cbamreport:isRegisteredIn rdf:resource="https://data.com/cbam/cbamreport#CommunicationReport_BRKJL2024010120241231"/>
+    <ontology-se-cbam-cbamreport:isSubjectTo rdf:resource="https://data.com/cbam/Instrument#Instrument_BRKJL2024010120241231_1"/>
+    <ontology-se-cbam-cbamreport:itemNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</ontology-se-cbam-cbamreport:itemNumber>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://data.com/cbam/emissionsqualifyingparameters#Clinker_factor_BRKJL2024010120241231_1">
+    <rdf:type rdf:resource="https://purl.org/cbam/emissionsqualifyingparameters/Clinker_factor"/>
+    <rdf:type rdf:resource="https://purl.org/cbam/emissionsqualifyingparameters/EmissionParameter"/>
+    <rdfs:label>Clinker_factor</rdfs:label>
+    <ontology-se-cbam_emissionsqualifyingparameters:code>QPD02</ontology-se-cbam_emissionsqualifyingparameters:code>
+    <ontology-se-cbam_emissionsqualifyingparameters:description>Mass ratio of tonnes cement clinker consumed per produced tonne of cement (clinker to cement ratio expressed in per cent).</ontology-se-cbam_emissionsqualifyingparameters:description>
+    <ontology-se-cbam_emissionsqualifyingparameters:parameterValuePercentage rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.824</ontology-se-cbam_emissionsqualifyingparameters:parameterValuePercentage>
+    <ontology-se-cbam_emissionsqualifyingparameters:typeOfEmissionValue>DIRECT</ontology-se-cbam_emissionsqualifyingparameters:typeOfEmissionValue>
+    <ontology-se-cbam_emissionsqualifyingparameters:typeOfParameterValue>PERCENTAGE</ontology-se-cbam_emissionsqualifyingparameters:typeOfParameterValue>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://data.com/cbam/cbamreport#otherEmissions_BRKJL2024010120241231">
+    <rdf:type rdf:resource="https://purl.org/cbam/cbamreport/GreenHouseGasEmissions"/>
+    <rdf:type rdf:resource="https://purl.org/cbam/cbamreport/OtherEmissions"/>
+    <ontology-se-cbam-cbamreport:emissionsUnit>tCO2e</ontology-se-cbam-cbamreport:emissionsUnit>
+    <ontology-se-cbam-cbamreport:emissionsValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</ontology-se-cbam-cbamreport:emissionsValue>
+    <ontology-se-cbam-cbamreport:isEmittedBy rdf:resource="https://data.com/cbam/cbamreport#Installation_BRKJL"/>
+    <ontology-se-cbam-cbamreport:isRegisteredIn rdf:resource="https://data.com/cbam/cbamreport#CommunicationReport_BRKJL2024010120241231"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://data.com/cbam/cbamreport#Installation_BRKJL">
+    <rdf:type rdf:resource="https://purl.org/cbam/cbamreport/Installation"/>
+    <foaf:name>Porto Alegre Cement Plant 6</foaf:name>
+    <ontology-se-cbam-cbamreport:hasAddress rdf:resource="https://data.com/cbam/cbamreport#Address_BRKJL"/>
+    <ontology-se-cbam-cbamreport:hasEconomicActivity rdf:resource="https://data.com/cbam/cbamreport#economic_activity_Manufacture%20of%20cement"/>
+    <ontology-se-cbam-cbamreport:hasNameOrigin>Porto Alegre Cement Plant 6</ontology-se-cbam-cbamreport:hasNameOrigin>
+    <ontology-se-cbam-cbamreport:hasReport rdf:resource="https://data.com/cbam/cbamreport#CommunicationReport_BRKJL2024010120241231"/>
+    <ontology-se-cbam-cbamreport:hasRepresentative rdf:resource="https://data.com/cbam/cbamreport#Representative_BRKJL"/>
+    <ontology-se-cbam-cbamreport:hasUNLOCODE>BRKJL</ontology-se-cbam-cbamreport:hasUNLOCODE>
+    <ontology-geo:lat>50.6783197</ontology-geo:lat>
+    <ontology-geo:long>1.5237969</ontology-geo:long>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://data.com/cbam/cbamreport#CarbonEmissionsCovered_BRKJL2024010120241231_1">
+    <rdf:type rdf:resource="https://purl.org/cbam/cbamreport/CarbonEmissions"/>
+    <rdf:type rdf:resource="https://purl.org/cbam/cbamreport/CarbonEmissionsCovered"/>
+    <ontology-se-cbam-cbamreport:amountOfCarbonPriceDue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">33.73</ontology-se-cbam-cbamreport:amountOfCarbonPriceDue>
+    <ontology-se-cbam-cbamreport:embeddedEmissionsCoveredByCarbonPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.06123</ontology-se-cbam-cbamreport:embeddedEmissionsCoveredByCarbonPrice>
+    <ontology-se-cbam-cbamreport:shareOfTotalEmbeddedEmissionsCoveredByTheCarbonPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.3729</ontology-se-cbam-cbamreport:shareOfTotalEmbeddedEmissionsCoveredByTheCarbonPrice>
+    <ontology-se-cbam-cbamreport:typeOfMeasurementUnitForEmissions>tCO2e/t</ontology-se-cbam-cbamreport:typeOfMeasurementUnitForEmissions>
+    <ontology-se-cbam-currency:currencyCode>KRW</ontology-se-cbam-currency:currencyCode>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://data.com/cbam/emissionsqualifyingparameters#Steel_scrap_usage_BRKJL2024010120241231_1">
+    <rdf:type rdf:resource="https://purl.org/cbam/emissionsqualifyingparameters/EmissionParameter"/>
+    <rdf:type rdf:resource="https://purl.org/cbam/emissionsqualifyingparameters/Steel_scrap_usage"/>
+    <rdfs:label>Steel_scrap_usage</rdfs:label>
+    <ontology-se-cbam_emissionsqualifyingparameters:code>QPD17</ontology-se-cbam_emissionsqualifyingparameters:code>
+    <ontology-se-cbam_emissionsqualifyingparameters:description>Tonnes scrap used for producing 1 t crude steel (total scrap including post-consumer scrap)</ontology-se-cbam_emissionsqualifyingparameters:description>
+    <ontology-se-cbam_emissionsqualifyingparameters:typeOfEmissionValue>DIRECT</ontology-se-cbam_emissionsqualifyingparameters:typeOfEmissionValue>
+    <ontology-se-cbam_emissionsqualifyingparameters:typeOfParameterValue>NUMERIC</ontology-se-cbam_emissionsqualifyingparameters:typeOfParameterValue>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://data.com/cbam/emissionsqualifyingparameters#Content_of_other_alloy_elements_BRKJL2024010120241231_1">
+    <rdf:type rdf:resource="https://purl.org/cbam/emissionsqualifyingparameters/Content_of_other_alloy_elements"/>
+    <rdf:type rdf:resource="https://purl.org/cbam/emissionsqualifyingparameters/EmissionParameter"/>
+    <rdfs:label>Content_of_other_alloy_elements</rdfs:label>
+    <ontology-se-cbam_emissionsqualifyingparameters:code>QPD16</ontology-se-cbam_emissionsqualifyingparameters:code>
+    <ontology-se-cbam_emissionsqualifyingparameters:description>Total mass % of all alloy elements other than C, Mn, Cr and Ni</ontology-se-cbam_emissionsqualifyingparameters:description>
+    <ontology-se-cbam_emissionsqualifyingparameters:typeOfEmissionValue>DIRECT</ontology-se-cbam_emissionsqualifyingparameters:typeOfEmissionValue>
+    <ontology-se-cbam_emissionsqualifyingparameters:typeOfParameterValue>PERCENTAGE</ontology-se-cbam_emissionsqualifyingparameters:typeOfParameterValue>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://data.com/cbam/emissionsqualifyingparameters#Manganese_content_BRKJL2024010120241231_1">
+    <rdf:type rdf:resource="https://purl.org/cbam/emissionsqualifyingparameters/EmissionParameter"/>
+    <rdf:type rdf:resource="https://purl.org/cbam/emissionsqualifyingparameters/Manganese_content"/>
+    <rdfs:label>Manganese_content</rdfs:label>
+    <ontology-se-cbam_emissionsqualifyingparameters:code>QPD13</ontology-se-cbam_emissionsqualifyingparameters:code>
+    <ontology-se-cbam_emissionsqualifyingparameters:description>Mass % manganese contained in the iron, alloy or steel under consideration</ontology-se-cbam_emissionsqualifyingparameters:description>
+    <ontology-se-cbam_emissionsqualifyingparameters:typeOfEmissionValue>DIRECT</ontology-se-cbam_emissionsqualifyingparameters:typeOfEmissionValue>
+    <ontology-se-cbam_emissionsqualifyingparameters:typeOfParameterValue>PERCENTAGE</ontology-se-cbam_emissionsqualifyingparameters:typeOfParameterValue>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://data.com/cbam/cbamreport#Representative_BRKJL">
+    <rdf:type rdf:resource="https://purl.org/cbam/cbamreport/Representative"/>
+    <foaf:mbox>kenji.petrova@example-cement.com</foaf:mbox>
+    <foaf:name>Kenji Petrova</foaf:name>
+    <foaf:phone>+34 630860166</foaf:phone>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://data.com/cbam/cbamreport#CommunicationReport_BRKJL2024010120241231">
+    <rdf:type rdf:resource="https://purl.org/cbam/cbamreport/Report"/>
+    <ontology-se-cbam-cbamreport:hasID>BRKJL2024010120241231</ontology-se-cbam-cbamreport:hasID>
+    <ontology-se-cbam-cbamreport:hasReportingPeriodEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-12-31 00:00:00</ontology-se-cbam-cbamreport:hasReportingPeriodEnd>
+    <ontology-se-cbam-cbamreport:hasReportingPeriodStart rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-01-01 00:00:00</ontology-se-cbam-cbamreport:hasReportingPeriodStart>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://data.com/cbam/emissionsqualifyingparameters#Aluminium_pre-consumer_scrap_BRKJL2024010120241231_1">
+    <rdf:type rdf:resource="https://purl.org/cbam/emissionsqualifyingparameters/Aluminium_pre-consumer_scrap"/>
+    <rdf:type rdf:resource="https://purl.org/cbam/emissionsqualifyingparameters/EmissionParameter"/>
+    <rdfs:label>Aluminium_pre-consumer_scrap</rdfs:label>
+    <ontology-se-cbam_emissionsqualifyingparameters:code>QPD22</ontology-se-cbam_emissionsqualifyingparameters:code>
+    <ontology-se-cbam_emissionsqualifyingparameters:description>% of scrap used that is pre-consumer scrap</ontology-se-cbam_emissionsqualifyingparameters:description>
+    <ontology-se-cbam_emissionsqualifyingparameters:typeOfEmissionValue>DIRECT</ontology-se-cbam_emissionsqualifyingparameters:typeOfEmissionValue>
+    <ontology-se-cbam_emissionsqualifyingparameters:typeOfParameterValue>PERCENTAGE</ontology-se-cbam_emissionsqualifyingparameters:typeOfParameterValue>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://data.com/cbam/emissionsqualifyingparameters#Nickel_content_BRKJL2024010120241231_1">
+    <rdf:type rdf:resource="https://purl.org/cbam/emissionsqualifyingparameters/EmissionParameter"/>
+    <rdf:type rdf:resource="https://purl.org/cbam/emissionsqualifyingparameters/Nickel_content"/>
+    <rdfs:label>Nickel_content</rdfs:label>
+    <ontology-se-cbam_emissionsqualifyingparameters:code>QPD15</ontology-se-cbam_emissionsqualifyingparameters:code>
+    <ontology-se-cbam_emissionsqualifyingparameters:description>Mass % nickel contained in the iron, alloy or steel under consideration</ontology-se-cbam_emissionsqualifyingparameters:description>
+    <ontology-se-cbam_emissionsqualifyingparameters:typeOfEmissionValue>DIRECT</ontology-se-cbam_emissionsqualifyingparameters:typeOfEmissionValue>
+    <ontology-se-cbam_emissionsqualifyingparameters:typeOfParameterValue>PERCENTAGE</ontology-se-cbam_emissionsqualifyingparameters:typeOfParameterValue>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://data.com/cbam/emissionsqualifyingparameters#Urea_Nitrogen_content_BRKJL2024010120241231_1">
+    <rdf:type rdf:resource="https://purl.org/cbam/emissionsqualifyingparameters/EmissionParameter"/>
+    <rdf:type rdf:resource="https://purl.org/cbam/emissionsqualifyingparameters/Urea_Nitrogen_content"/>
+    <rdfs:label>Urea_Nitrogen_content</rdfs:label>
+    <ontology-se-cbam_emissionsqualifyingparameters:code>QPD06</ontology-se-cbam_emissionsqualifyingparameters:code>
+    <ontology-se-cbam_emissionsqualifyingparameters:description>Mass % nitrogen bound in urea (related to fertiliser or fertiliser solution as is, NOT on dry basis)</ontology-se-cbam_emissionsqualifyingparameters:description>
+    <ontology-se-cbam_emissionsqualifyingparameters:typeOfEmissionValue>DIRECT</ontology-se-cbam_emissionsqualifyingparameters:typeOfEmissionValue>
+    <ontology-se-cbam_emissionsqualifyingparameters:typeOfParameterValue>PERCENTAGE</ontology-se-cbam_emissionsqualifyingparameters:typeOfParameterValue>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://data.com/cbam/emissionsqualifyingparameters#Chromium_content_BRKJL2024010120241231_1">
+    <rdf:type rdf:resource="https://purl.org/cbam/emissionsqualifyingparameters/Chromium_content"/>
+    <rdf:type rdf:resource="https://purl.org/cbam/emissionsqualifyingparameters/EmissionParameter"/>
+    <rdfs:label>Chromium_content</rdfs:label>
+    <ontology-se-cbam_emissionsqualifyingparameters:code>QPD14</ontology-se-cbam_emissionsqualifyingparameters:code>
+    <ontology-se-cbam_emissionsqualifyingparameters:description>Mass % chromium contained in the iron, alloy or steel under consideration</ontology-se-cbam_emissionsqualifyingparameters:description>
+    <ontology-se-cbam_emissionsqualifyingparameters:typeOfEmissionValue>DIRECT</ontology-se-cbam_emissionsqualifyingparameters:typeOfEmissionValue>
+    <ontology-se-cbam_emissionsqualifyingparameters:typeOfParameterValue>PERCENTAGE</ontology-se-cbam_emissionsqualifyingparameters:typeOfParameterValue>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://data.com/cbam/emissionsqualifyingparameters#Ammonium_Nitrogen_content_BRKJL2024010120241231_1">
+    <rdf:type rdf:resource="https://purl.org/cbam/emissionsqualifyingparameters/Ammonium_Nitrogen_content"/>
+    <rdf:type rdf:resource="https://purl.org/cbam/emissionsqualifyingparameters/EmissionParameter"/>
+    <rdfs:label>Ammonium_Nitrogen_content</rdfs:label>
+    <ontology-se-cbam_emissionsqualifyingparameters:code>QPD07</ontology-se-cbam_emissionsqualifyingparameters:code>
+    <ontology-se-cbam_emissionsqualifyingparameters:description>Mass % nitrogen bound in ammonium (NH4+), related to fertiliser or fertiliser solution as is, NOT on dry basis)</ontology-se-cbam_emissionsqualifyingparameters:description>
+    <ontology-se-cbam_emissionsqualifyingparameters:typeOfEmissionValue>DIRECT</ontology-se-cbam_emissionsqualifyingparameters:typeOfEmissionValue>
+    <ontology-se-cbam_emissionsqualifyingparameters:typeOfParameterValue>PERCENTAGE</ontology-se-cbam_emissionsqualifyingparameters:typeOfParameterValue>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://data.com/cbam/emissionsqualifyingparameters#Calcination_BRKJL2024010120241231_1">
+    <rdf:type rdf:resource="https://purl.org/cbam/emissionsqualifyingparameters/Calcination"/>
+    <rdf:type rdf:resource="https://purl.org/cbam/emissionsqualifyingparameters/EmissionParameter"/>
+    <rdfs:label>Calcination</rdfs:label>
+    <ontology-se-cbam_emissionsqualifyingparameters:code>QPD01</ontology-se-cbam_emissionsqualifyingparameters:code>
+    <ontology-se-cbam_emissionsqualifyingparameters:description>Whether the clay imported is calcined or not (Possible values:"Calcinated", "Not Calcinated")</ontology-se-cbam_emissionsqualifyingparameters:description>
+    <ontology-se-cbam_emissionsqualifyingparameters:typeOfEmissionValue>DIRECT</ontology-se-cbam_emissionsqualifyingparameters:typeOfEmissionValue>
+    <ontology-se-cbam_emissionsqualifyingparameters:typeOfParameterValue>TEXT</ontology-se-cbam_emissionsqualifyingparameters:typeOfParameterValue>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://data.com/cbam/cbamreport#BasedExclPfcEmissions_BRKJL2024010120241231">
+    <rdf:type rdf:resource="https://purl.org/cbam/cbamreport/BasedExclPfcEmissions"/>
+    <rdf:type rdf:resource="https://purl.org/cbam/cbamreport/GreenHouseGasEmissions"/>
+    <ontology-se-cbam-cbamreport:calculationBasedExclPfcEmissionsUnit>tCO2e</ontology-se-cbam-cbamreport:calculationBasedExclPfcEmissionsUnit>
+    <ontology-se-cbam-cbamreport:calculationBasedExclPfcEmissionsValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6592947.736</ontology-se-cbam-cbamreport:calculationBasedExclPfcEmissionsValue>
+    <ontology-se-cbam-cbamreport:isEmittedBy rdf:resource="https://data.com/cbam/cbamreport#Installation_BRKJL"/>
+    <ontology-se-cbam-cbamreport:isRegisteredIn rdf:resource="https://data.com/cbam/cbamreport#CommunicationReport_BRKJL2024010120241231"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://sws.geonames.org/3469034">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://purl.org/cbam/Country"/>
+    <rdf:type rdf:resource="https://purl.org/cbam/EU_Third_Country"/>
+    <ontology-geo:countryCode>BR</ontology-geo:countryCode>
+    <ontology-geo:lat>-10</ontology-geo:lat>
+    <ontology-geo:long>-55</ontology-geo:long>
+    <ontology-geo:name>Federative Republic of Brazil</ontology-geo:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://data.com/cbam/cbamreport#Address_BRKJL">
+    <rdf:type rdf:resource="https://purl.org/cbam/cbamreport/Address"/>
+    <ontology-se-cbam-cbamreport:hasCity>Porto Alegre</ontology-se-cbam-cbamreport:hasCity>
+    <ontology-se-cbam-cbamreport:hasCountry rdf:resource="https://sws.geonames.org/3469034"/>
+    <ontology-se-cbam-cbamreport:hasNumber>230</ontology-se-cbam-cbamreport:hasNumber>
+    <ontology-se-cbam-cbamreport:hasPoBox>LMF</ontology-se-cbam-cbamreport:hasPoBox>
+    <ontology-se-cbam-cbamreport:hasPostCode>476208</ontology-se-cbam-cbamreport:hasPostCode>
+    <ontology-se-cbam-cbamreport:hasStreet>Furnace Street</ontology-se-cbam-cbamreport:hasStreet>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://data.com/cbam/emissionsqualifyingparameters#Ammonia_concentration_BRKJL2024010120241231_1">
+    <rdf:type rdf:resource="https://purl.org/cbam/emissionsqualifyingparameters/Ammonia_concentration"/>
+    <rdf:type rdf:resource="https://purl.org/cbam/emissionsqualifyingparameters/EmissionParameter"/>
+    <rdfs:label>Ammonia_concentration</rdfs:label>
+    <ontology-se-cbam_emissionsqualifyingparameters:code>QPD05</ontology-se-cbam_emissionsqualifyingparameters:code>
+    <ontology-se-cbam_emissionsqualifyingparameters:description>Ammonia concentration, expressed as mass %, if hydrous solution. 100%, if anhydrous ammonia.</ontology-se-cbam_emissionsqualifyingparameters:description>
+    <ontology-se-cbam_emissionsqualifyingparameters:typeOfEmissionValue>DIRECT</ontology-se-cbam_emissionsqualifyingparameters:typeOfEmissionValue>
+    <ontology-se-cbam_emissionsqualifyingparameters:typeOfParameterValue>PERCENTAGE</ontology-se-cbam_emissionsqualifyingparameters:typeOfParameterValue>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://data.com/cbam/cbamreport#GreenHouseGasEmissions_BRKJL2024010120241231_1">
+    <rdf:type rdf:resource="https://purl.org/cbam/cbamreport/GreenHouseGasEmissions"/>
+    <ontology-se-cbam-cbamreport:DirectEmbeddedEmissions rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.798122</ontology-se-cbam-cbamreport:DirectEmbeddedEmissions>
+    <ontology-se-cbam-cbamreport:IndirectEmbeddedEmissions rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.372957</ontology-se-cbam-cbamreport:IndirectEmbeddedEmissions>
+    <ontology-se-cbam-cbamreport:emissionsUnit>tCO2e/t</ontology-se-cbam-cbamreport:emissionsUnit>
+    <ontology-se-cbam-cbamreport:shareOfEmissionsByDefaultValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.1553</ontology-se-cbam-cbamreport:shareOfEmissionsByDefaultValue>
+    <ontology-se-cbam-cbamreport:total_Direct_Indirect_Embedded_Emission rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.171079</ontology-se-cbam-cbamreport:total_Direct_Indirect_Embedded_Emission>
+    <ontology-se-cbam-cbamreport:typeOfMeasurementUnitForEmissions>EMU1</ontology-se-cbam-cbamreport:typeOfMeasurementUnitForEmissions>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://data.com/cbam/emissionsqualifyingparameters#Nitric_acid_concentration_BRKJL2024010120241231_1">
+    <rdf:type rdf:resource="https://purl.org/cbam/emissionsqualifyingparameters/EmissionParameter"/>
+    <rdf:type rdf:resource="https://purl.org/cbam/emissionsqualifyingparameters/Nitric_acid_concentration"/>
+    <rdfs:label>Nitric_acid_concentration</rdfs:label>
+    <ontology-se-cbam_emissionsqualifyingparameters:code>QPD04</ontology-se-cbam_emissionsqualifyingparameters:code>
+    <ontology-se-cbam_emissionsqualifyingparameters:description>Nitric acid concentration expressed as mass %.</ontology-se-cbam_emissionsqualifyingparameters:description>
+    <ontology-se-cbam_emissionsqualifyingparameters:typeOfEmissionValue>DIRECT</ontology-se-cbam_emissionsqualifyingparameters:typeOfEmissionValue>
+    <ontology-se-cbam_emissionsqualifyingparameters:typeOfParameterValue>PERCENTAGE</ontology-se-cbam_emissionsqualifyingparameters:typeOfParameterValue>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://data.com/cbam/emissionsqualifyingparameters#Aluminium_scrap_usage_BRKJL2024010120241231_1">
+    <rdf:type rdf:resource="https://purl.org/cbam/emissionsqualifyingparameters/Aluminium_scrap_usage"/>
+    <rdf:type rdf:resource="https://purl.org/cbam/emissionsqualifyingparameters/EmissionParameter"/>
+    <rdfs:label>Aluminium_scrap_usage</rdfs:label>
+    <ontology-se-cbam_emissionsqualifyingparameters:code>QPD21</ontology-se-cbam_emissionsqualifyingparameters:code>
+    <ontology-se-cbam_emissionsqualifyingparameters:description>Tonnes scrap used for producing 1 t of the product (total scrap including post-consumer scrap)</ontology-se-cbam_emissionsqualifyingparameters:description>
+    <ontology-se-cbam_emissionsqualifyingparameters:typeOfEmissionValue>DIRECT</ontology-se-cbam_emissionsqualifyingparameters:typeOfEmissionValue>
+    <ontology-se-cbam_emissionsqualifyingparameters:typeOfParameterValue>NUMERIC</ontology-se-cbam_emissionsqualifyingparameters:typeOfParameterValue>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://data.com/cbam/emissionsqualifyingparameters#Steel_pre-consumer_scrap_BRKJL2024010120241231_1">
+    <rdf:type rdf:resource="https://purl.org/cbam/emissionsqualifyingparameters/EmissionParameter"/>
+    <rdf:type rdf:resource="https://purl.org/cbam/emissionsqualifyingparameters/Steel_pre-consumer_scrap"/>
+    <rdfs:label>Steel_pre-consumer_scrap</rdfs:label>
+    <ontology-se-cbam_emissionsqualifyingparameters:code>QPD18</ontology-se-cbam_emissionsqualifyingparameters:code>
+    <ontology-se-cbam_emissionsqualifyingparameters:description>% of scrap used that is pre-consumer scrap</ontology-se-cbam_emissionsqualifyingparameters:description>
+    <ontology-se-cbam_emissionsqualifyingparameters:typeOfEmissionValue>DIRECT</ontology-se-cbam_emissionsqualifyingparameters:typeOfEmissionValue>
+    <ontology-se-cbam_emissionsqualifyingparameters:typeOfParameterValue>PERCENTAGE</ontology-se-cbam_emissionsqualifyingparameters:typeOfParameterValue>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://data.com/cbam/CN#CN_25231000">
+    <rdf:type rdf:resource="https://purl.org/cbam/CN/252310000080"/>
+    <rdf:type rdf:resource="https://purl.org/cbam/CN/CN"/>
+    <rdfs:label>- Cement clinkers</rdfs:label>
+    <rdfs:comment>Cement clinkers</rdfs:comment>
+    <ontology-se-cbam-cn:cn_code>25231000</ontology-se-cbam-cn:cn_code>
+    <ontology-se-cbam-cn:hs6_code>252310</ontology-se-cbam-cn:hs6_code>
+    <ontology-se-cbam-cbam-goods:belongsToCategory rdf:resource="https://data.com/cbam/cbam_goods#AggregatedGoodsCategory_BRKJL2024010120241231_1"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://data.com/cbam/emissionsqualifyingparameters#Nitrate_Nitrogen_content_BRKJL2024010120241231_1">
+    <rdf:type rdf:resource="https://purl.org/cbam/emissionsqualifyingparameters/EmissionParameter"/>
+    <rdf:type rdf:resource="https://purl.org/cbam/emissionsqualifyingparameters/Nitrate_Nitrogen_content"/>
+    <rdfs:label>Nitrate_Nitrogen_content</rdfs:label>
+    <ontology-se-cbam_emissionsqualifyingparameters:code>QPD08</ontology-se-cbam_emissionsqualifyingparameters:code>
+    <ontology-se-cbam_emissionsqualifyingparameters:description>Mass % nitrogen bound in nitrate (NO3–), related to fertiliser or fertiliser solution as is, NOT on dry basis)</ontology-se-cbam_emissionsqualifyingparameters:description>
+    <ontology-se-cbam_emissionsqualifyingparameters:typeOfEmissionValue>DIRECT</ontology-se-cbam_emissionsqualifyingparameters:typeOfEmissionValue>
+    <ontology-se-cbam_emissionsqualifyingparameters:typeOfParameterValue>PERCENTAGE</ontology-se-cbam_emissionsqualifyingparameters:typeOfParameterValue>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://data.com/cbam/cbamreport#totalIndirectEmissions_BRKJL2024010120241231">
+    <rdf:type rdf:resource="https://purl.org/cbam/cbamreport/GreenHouseGasEmissions"/>
+    <rdf:type rdf:resource="https://purl.org/cbam/cbamreport/TotalIndirectEmissions"/>
+    <ontology-se-cbam-cbamreport:emissionsUnit>tCO2e</ontology-se-cbam-cbamreport:emissionsUnit>
+    <ontology-se-cbam-cbamreport:emissionsValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1165794.915</ontology-se-cbam-cbamreport:emissionsValue>
+    <ontology-se-cbam-cbamreport:isEmittedBy rdf:resource="https://data.com/cbam/cbamreport#Installation_BRKJL"/>
+    <ontology-se-cbam-cbamreport:isRegisteredIn rdf:resource="https://data.com/cbam/cbamreport#CommunicationReport_BRKJL2024010120241231"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://data.com/cbam/cbamreport#measurementBased_BRKJL2024010120241231">
+    <rdf:type rdf:resource="https://purl.org/cbam/cbamreport/GreenHouseGasEmissions"/>
+    <rdf:type rdf:resource="https://purl.org/cbam/cbamreport/MeasurementBasedEmissions"/>
+    <ontology-se-cbam-cbamreport:isEmittedBy rdf:resource="https://data.com/cbam/cbamreport#Installation_BRKJL"/>
+    <ontology-se-cbam-cbamreport:isRegisteredIn rdf:resource="https://data.com/cbam/cbamreport#CommunicationReport_BRKJL2024010120241231"/>
+    <ontology-se-cbam-cbamreport:measurementBasedUnit>tCO2e</ontology-se-cbam-cbamreport:measurementBasedUnit>
+    <ontology-se-cbam-cbamreport:measurementBasedValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</ontology-se-cbam-cbamreport:measurementBasedValue>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://data.com/cbam/emissionsqualifyingparameters#Steel_product_scrap_usage_BRKJL2024010120241231_1">
+    <rdf:type rdf:resource="https://purl.org/cbam/emissionsqualifyingparameters/EmissionParameter"/>
+    <rdf:type rdf:resource="https://purl.org/cbam/emissionsqualifyingparameters/Steel_product_scrap_usage"/>
+    <rdfs:label>Steel_product_scrap_usage</rdfs:label>
+    <ontology-se-cbam_emissionsqualifyingparameters:code>QPD19</ontology-se-cbam_emissionsqualifyingparameters:code>
+    <ontology-se-cbam_emissionsqualifyingparameters:description>Tonnes scrap used for producing 1 t of the product (total scrap including post-consumer scrap)</ontology-se-cbam_emissionsqualifyingparameters:description>
+    <ontology-se-cbam_emissionsqualifyingparameters:typeOfEmissionValue>DIRECT</ontology-se-cbam_emissionsqualifyingparameters:typeOfEmissionValue>
+    <ontology-se-cbam_emissionsqualifyingparameters:typeOfParameterValue>NUMERIC</ontology-se-cbam_emissionsqualifyingparameters:typeOfParameterValue>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://data.com/cbam/cbamreport#economic_activity_Manufacture%20of%20cement">
+    <rdf:type rdf:resource="https://purl.org/cbam/cbamreport/EconomicActivity"/>
+    <rdfs:label>Manufacture of cement</rdfs:label>
+    <foaf:name>Manufacture of cement</foaf:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://data.com/cbam/emissionsqualifyingparameters#Non_Aluminium_content_BRKJL2024010120241231_1">
+    <rdf:type rdf:resource="https://purl.org/cbam/emissionsqualifyingparameters/EmissionParameter"/>
+    <rdf:type rdf:resource="https://purl.org/cbam/emissionsqualifyingparameters/Non_Aluminium_content"/>
+    <rdfs:label>Non_Aluminium_content</rdfs:label>
+    <ontology-se-cbam_emissionsqualifyingparameters:code>QPD23</ontology-se-cbam_emissionsqualifyingparameters:code>
+    <ontology-se-cbam_emissionsqualifyingparameters:description>Mass % of materials contained which are not aluminium if their mass is more than 1% but less than 5% of the total goods’ mass</ontology-se-cbam_emissionsqualifyingparameters:description>
+    <ontology-se-cbam_emissionsqualifyingparameters:typeOfEmissionValue>DIRECT</ontology-se-cbam_emissionsqualifyingparameters:typeOfEmissionValue>
+    <ontology-se-cbam_emissionsqualifyingparameters:typeOfParameterValue>PERCENTAGE</ontology-se-cbam_emissionsqualifyingparameters:typeOfParameterValue>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://data.com/cbam/emissionsqualifyingparameters#Other_Nitrogen_content_BRKJL2024010120241231_1">
+    <rdf:type rdf:resource="https://purl.org/cbam/emissionsqualifyingparameters/EmissionParameter"/>
+    <rdf:type rdf:resource="https://purl.org/cbam/emissionsqualifyingparameters/Other_Nitrogen_content"/>
+    <rdfs:label>Other_Nitrogen_content</rdfs:label>
+    <ontology-se-cbam_emissionsqualifyingparameters:code>QPD09</ontology-se-cbam_emissionsqualifyingparameters:code>
+    <ontology-se-cbam_emissionsqualifyingparameters:description>Mass % nitrogen bound in other (organic) forms, related to fertiliser or fertiliser solution as is, NOT on dry basis)</ontology-se-cbam_emissionsqualifyingparameters:description>
+    <ontology-se-cbam_emissionsqualifyingparameters:typeOfEmissionValue>DIRECT</ontology-se-cbam_emissionsqualifyingparameters:typeOfEmissionValue>
+    <ontology-se-cbam_emissionsqualifyingparameters:typeOfParameterValue>PERCENTAGE</ontology-se-cbam_emissionsqualifyingparameters:typeOfParameterValue>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://data.com/cbam/cbamreport#TotalEmissions_BRKJL2024010120241231">
+    <rdf:type rdf:resource="https://purl.org/cbam/cbamreport/GreenHouseGasEmissions"/>
+    <rdf:type rdf:resource="https://purl.org/cbam/cbamreport/TotalEmissions"/>
+    <ontology-se-cbam-cbamreport:emissionsUnit>tCO2e</ontology-se-cbam-cbamreport:emissionsUnit>
+    <ontology-se-cbam-cbamreport:emissionsValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">7758742.651</ontology-se-cbam-cbamreport:emissionsValue>
+    <ontology-se-cbam-cbamreport:isEmittedBy rdf:resource="https://data.com/cbam/cbamreport#Installation_BRKJL"/>
+    <ontology-se-cbam-cbamreport:isRegisteredIn rdf:resource="https://data.com/cbam/cbamreport#CommunicationReport_BRKJL2024010120241231"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://data.com/cbam/emissionsqualifyingparameters#Precursor_reducing_Agent_BRKJL2024010120241231_1">
+    <rdf:type rdf:resource="https://purl.org/cbam/emissionsqualifyingparameters/EmissionParameter"/>
+    <rdf:type rdf:resource="https://purl.org/cbam/emissionsqualifyingparameters/Precursor_reducing_Agent"/>
+    <rdfs:label>Precursor_reducing_Agent</rdfs:label>
+    <ontology-se-cbam_emissionsqualifyingparameters:code>QPD10</ontology-se-cbam_emissionsqualifyingparameters:code>
+    <ontology-se-cbam_emissionsqualifyingparameters:code>QPD11</ontology-se-cbam_emissionsqualifyingparameters:code>
+    <ontology-se-cbam_emissionsqualifyingparameters:description>The main reducing agent used in the production of the precursor (pig iron or direct reduced iron), if known. If more than one is used, fill in the one which is predominant in the production process. (Possible values: "Coke"; "Coal"; "Fuel oil"; "Natural gas"; "Hydrogen"; "Charcoal or biomass"; "Other"; "Not applicable")</ontology-se-cbam_emissionsqualifyingparameters:description>
+    <ontology-se-cbam_emissionsqualifyingparameters:typeOfEmissionValue>DIRECT</ontology-se-cbam_emissionsqualifyingparameters:typeOfEmissionValue>
+    <ontology-se-cbam_emissionsqualifyingparameters:typeOfParameterValue>TEXT</ontology-se-cbam_emissionsqualifyingparameters:typeOfParameterValue>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://data.com/cbam/emissionsqualifyingparameters#Carbon_content_of_iron_or_steel_BRKJL2024010120241231_1">
+    <rdf:type rdf:resource="https://purl.org/cbam/emissionsqualifyingparameters/Carbon_content_of_iron_or_steel"/>
+    <rdf:type rdf:resource="https://purl.org/cbam/emissionsqualifyingparameters/EmissionParameter"/>
+    <rdfs:label>Carbon_content_of_iron_or_steel</rdfs:label>
+    <ontology-se-cbam_emissionsqualifyingparameters:code>QPD12</ontology-se-cbam_emissionsqualifyingparameters:code>
+    <ontology-se-cbam_emissionsqualifyingparameters:description>Mass % carbon contained in the iron, alloy or steel under consideration</ontology-se-cbam_emissionsqualifyingparameters:description>
+    <ontology-se-cbam_emissionsqualifyingparameters:typeOfEmissionValue>DIRECT</ontology-se-cbam_emissionsqualifyingparameters:typeOfEmissionValue>
+    <ontology-se-cbam_emissionsqualifyingparameters:typeOfParameterValue>PERCENTAGE</ontology-se-cbam_emissionsqualifyingparameters:typeOfParameterValue>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://data.com/cbam/emissionsqualifyingparameters#Non_Iron_content_BRKJL2024010120241231_1">
+    <rdf:type rdf:resource="https://purl.org/cbam/emissionsqualifyingparameters/EmissionParameter"/>
+    <rdf:type rdf:resource="https://purl.org/cbam/emissionsqualifyingparameters/Non_Iron_content"/>
+    <rdfs:label>Non_Iron_content</rdfs:label>
+    <ontology-se-cbam_emissionsqualifyingparameters:code>QPD20</ontology-se-cbam_emissionsqualifyingparameters:code>
+    <ontology-se-cbam_emissionsqualifyingparameters:description>Mass % of materials contained which are not iron or steel if their mass is more than 1% but less than 5% of the total goods’ mass</ontology-se-cbam_emissionsqualifyingparameters:description>
+    <ontology-se-cbam_emissionsqualifyingparameters:typeOfEmissionValue>DIRECT</ontology-se-cbam_emissionsqualifyingparameters:typeOfEmissionValue>
+    <ontology-se-cbam_emissionsqualifyingparameters:typeOfParameterValue>PERCENTAGE</ontology-se-cbam_emissionsqualifyingparameters:typeOfParameterValue>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://data.com/cbam/emissionsqualifyingparameters#Urea_purity_BRKJL2024010120241231_1">
+    <rdf:type rdf:resource="https://purl.org/cbam/emissionsqualifyingparameters/EmissionParameter"/>
+    <rdf:type rdf:resource="https://purl.org/cbam/emissionsqualifyingparameters/Urea_purity"/>
+    <rdfs:label>Urea_purity</rdfs:label>
+    <ontology-se-cbam_emissionsqualifyingparameters:code>QPD03</ontology-se-cbam_emissionsqualifyingparameters:code>
+    <ontology-se-cbam_emissionsqualifyingparameters:description>Purity (expressed as mass % urea contained)</ontology-se-cbam_emissionsqualifyingparameters:description>
+    <ontology-se-cbam_emissionsqualifyingparameters:typeOfEmissionValue>DIRECT</ontology-se-cbam_emissionsqualifyingparameters:typeOfEmissionValue>
+    <ontology-se-cbam_emissionsqualifyingparameters:typeOfParameterValue>PERCENTAGE</ontology-se-cbam_emissionsqualifyingparameters:typeOfParameterValue>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://data.com/cbam/Production_Method#BRKJL2024010120241231_1">
+    <rdf:type rdf:resource="https://purl.org/cbam/Production_Method/Production_Method"/>
+    <rdfs:label>Clinker cooling</rdfs:label>
+    <ontology-se-cbam-production-method:code>Clinker cooling</ontology-se-cbam-production-method:code>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://data.com/cbam/cbamreport#totalPfcEmissions_BRKJL2024010120241231">
+    <rdf:type rdf:resource="https://purl.org/cbam/cbamreport/GreenHouseGasEmissions"/>
+    <rdf:type rdf:resource="https://purl.org/cbam/cbamreport/TotalPfcEmissions"/>
+    <ontology-se-cbam-cbamreport:emissionsUnit>tCO2e</ontology-se-cbam-cbamreport:emissionsUnit>
+    <ontology-se-cbam-cbamreport:emissionsValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">217917.926</ontology-se-cbam-cbamreport:emissionsValue>
+    <ontology-se-cbam-cbamreport:isEmittedBy rdf:resource="https://data.com/cbam/cbamreport#Installation_BRKJL"/>
+    <ontology-se-cbam-cbamreport:isRegisteredIn rdf:resource="https://data.com/cbam/cbamreport#CommunicationReport_BRKJL2024010120241231"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://data.com/cbam/cbamreport#Rebate_BRKJL2024010120241231_1">
+    <rdf:type rdf:resource="https://purl.org/cbam/cbamreport/Rebate"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://data.com/cbam/cbam_goods#AggregatedGoodsCategory_BRKJL2024010120241231_1">
+    <rdf:type rdf:resource="https://purl.org/cbam/cbam_goods/AggregatedGoodsCategory"/>
+    <rdf:type rdf:resource="https://purl.org/cbam/cbam_goods/Cement"/>
+    <rdfs:label>Cement</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://data.com/cbam/Instrument#Instrument_BRKJL2024010120241231_1">
+    <rdf:type rdf:resource="https://purl.org/cbam/Instrument/Instrument"/>
+    <ontology-se-cbam-instrument:formOfCarbonPrice>Carbon tax and ETS</ontology-se-cbam-instrument:formOfCarbonPrice>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://data.com/cbam/Electricity_Determination#Electricity_Determination_BRKJL2024010120241231_1">
+    <rdf:type rdf:resource="https://purl.org/cbam/Electricity_Determination/Electricity_Determination"/>
+    <ontology-se-cbam-electricity-determination:code>PPA-specific factor</ontology-se-cbam-electricity-determination:code>
+    <ontology-se-cbam-cbamreport:total_Embedded_Emissions_of_Electricity_Imported rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.88026</ontology-se-cbam-cbamreport:total_Embedded_Emissions_of_Electricity_Imported>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://data.com/cbam/cbamreport#CarbonPrice_BRKJL2024010120241231_1">
+    <rdf:type rdf:resource="https://purl.org/cbam/cbamreport/CarbonPrice"/>
+    <ontology-se-cbam_emissionsqualifyingparameters:description>Mass % nitrogen bound in other (organic) forms, related to fertiliser or fertiliser solution as is, NOT on dry basis)</ontology-se-cbam_emissionsqualifyingparameters:description>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://data.com/cbam/cbamreport#steelMill_BRKJL2024010120241231_1">
+    <rdf:type rdf:resource="https://purl.org/cbam/cbamreport/SteelMill"/>
+  </rdf:Description>
+</rdf:RDF>
