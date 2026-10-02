@@ -1,0 +1,67 @@
+@prefix sh:    <http://www.w3.org/ns/shacl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix cbam:  <https://purl.org/cbam/cbamreport/> .
+@prefix cn:    <https://purl.org/cbam/CN/> .
+@prefix goods: <https://purl.org/cbam/cbam_goods/> .
+@prefix br:    <https://purl.org/cbam/business-rules/> .
+
+br: sh:declare [ sh:prefix "cbam" ; sh:namespace "https://purl.org/cbam/cbamreport/"^^xsd:anyURI ] ,
+               [ sh:prefix "cn" ; sh:namespace "https://purl.org/cbam/CN/"^^xsd:anyURI ] ,
+               [ sh:prefix "goods" ; sh:namespace "https://purl.org/cbam/cbam_goods/"^^xsd:anyURI ] .
+
+# BR1 Mandatory and single-valued fields of an imported good
+br:GoodShape a sh:NodeShape ;
+    sh:targetClass cbam:Good ;
+    sh:property [ sh:path cbam:hasCNCode ; sh:minCount 1 ; sh:maxCount 1 ;
+                  sh:message "BR1: each good must have exactly one CN code." ] ,
+                [ sh:path cbam:hasGreenHouseGasEmissions ; sh:minCount 1 ;
+                  sh:message "BR1: each good must report its embedded emissions." ] ,
+                [ sh:path cbam:isManufacturedAt ; sh:minCount 1 ;
+                  sh:message "BR1: each good must be linked to an installation." ] .
+
+# BR2 Embedded emissions are non-negative; BR3 share of default values is a percentage
+br:EmbeddedEmissionsShape a sh:NodeShape ;
+    sh:targetSubjectsOf cbam:DirectEmbeddedEmissions ;
+    sh:property [ sh:path cbam:DirectEmbeddedEmissions ; sh:minCount 1 ; sh:maxCount 1 ; sh:minInclusive 0 ;
+                  sh:message "BR2: direct embedded emissions must be a single non-negative value." ] ,
+                [ sh:path cbam:IndirectEmbeddedEmissions ; sh:minCount 1 ; sh:maxCount 1 ; sh:minInclusive 0 ;
+                  sh:message "BR2: indirect embedded emissions must be a single non-negative value." ] ,
+                [ sh:path cbam:total_Direct_Indirect_Embedded_Emission ; sh:minCount 1 ; sh:maxCount 1 ; sh:minInclusive 0 ;
+                  sh:message "BR2: total embedded emissions must be a single non-negative value." ] ,
+                [ sh:path cbam:shareOfEmissionsByDefaultValue ; sh:minInclusive 0 ; sh:maxInclusive 100 ;
+                  sh:message "BR3: the share of emissions based on default values must be between 0 and 100 %." ] ;
+# BR4 Cross-field rule: total = direct + indirect (relative tolerance 0.1 %)
+    sh:sparql [
+        sh:message "BR4: total embedded emissions ({?total}) differ from direct + indirect ({?sum})." ;
+        sh:prefixes br: ;
+        sh:select """
+            SELECT $this ?total ?sum WHERE {
+                $this cbam:DirectEmbeddedEmissions ?d ;
+                      cbam:IndirectEmbeddedEmissions ?i ;
+                      cbam:total_Direct_Indirect_Embedded_Emission ?total .
+                BIND(xsd:decimal(?d) + xsd:decimal(?i) AS ?sum)
+                FILTER(ABS(xsd:decimal(?total) - ?sum) > 0.001 * ?sum + 0.000001)
+            }""" ] .
+
+# BR5 Conditional rule: the CN chapter determines the admissible CBAM goods category
+br:CNCategoryShape a sh:NodeShape ;
+    sh:targetSubjectsOf cn:cn_code ;
+    sh:sparql [
+        sh:message "BR5: CN code {?code} is assigned to a goods category ({?cat}) that does not match its CN chapter." ;
+        sh:prefixes br: ;
+        sh:select """
+            SELECT $this ?code ?cat WHERE {
+                $this cn:cn_code ?code ;
+                      goods:belongsToCategory ?catNode .
+                ?catNode a ?cat .
+                FILTER(?cat != goods:AggregatedGoodsCategory)
+                FILTER(
+                    ((STRSTARTS(STR(?code), "72") || STRSTARTS(STR(?code), "73"))
+                      && !(?cat IN (<https://purl.org/cbam/cbam_goods#Iron_or_steel_products>,
+                                    <https://purl.org/cbam/cbam_goods#Pig_Iron>)))
+                    ||
+                    (STRSTARTS(STR(?code), "2523")
+                      && ?cat != <https://purl.org/cbam/cbam_goods#Cement>)
+                )
+            }""" ] .
