@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <rdf:RDF 
-         xml:base="https://www.geonames.org/ontology"
+         xml:base="https://www.geonames.org/ontology/ontology_v3.3.rdf"
          xmlns:skos="http://www.w3.org/2004/02/skos/core#"
          xmlns:foaf="http://xmlns.com/foaf/0.1/"
          xmlns:cc="https://creativecommons.org/ns#"
