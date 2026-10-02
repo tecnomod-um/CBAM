@@ -51,7 +51,6 @@
   <vann:preferredNamespacePrefix>gn</vann:preferredNamespacePrefix>
   <vann:preferredNamespaceUri>https://www.geonames.org/ontology#</vann:preferredNamespaceUri>
   <owl:imports rdf:resource="http://www.w3.org/2004/02/skos/core"/>
-  <owl:imports rdf:resource="http://geovocab.org/spatial"/>
   </owl:Ontology>
 
 <!-- Classes -->
