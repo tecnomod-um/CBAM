@@ -32,9 +32,7 @@
                                                  <https://purl.org/cbam/CountryPlus/1.0> ,
                                                  <https://purl.org/cbam/Currency/1.0> ,
                                                  <https://purl.org/cbam/Customs_Procedure/1.0> ,
-                                                  <https://purl.org/cbam/Source_of_electricity/1.0> ,
-                                                 <https://purl.org/cbam/cbam_goods/1.0> ,
-                                                 <https://purl.org/cbam/emissionsqualifyingparameters/1.0> ;
+                                                 <https://purl.org/cbam/Electricity_Determination/1.0> ;
                                                  
                                      terms:abstract "The Carbon Boarder Adjustment Mechanism report Ontology" ;
                                      terms:accessRights "This ontology is licensed under the Creative Commons Attribution-NonCommercial 4.0 International License (CC BY-NC 4.0). It allows non-commercial use, sharing, and adaptation of the ontology, as long as users provide clear credit to the creator by citing the ontology's title, creator, and license information. Commercial use is strictly prohibited." ;
