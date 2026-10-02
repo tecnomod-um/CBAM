@@ -22,7 +22,7 @@
 <https://purl.org/cbam/cbamreport/> rdf:type owl:Ontology ;
                                      owl:versionIRI <https://purl.org/cbam/cbamreport/1.0> ;
                                      owl:imports 
-                                                 <http://www.w3.org/ns/org> ,
+                                                 
                                                  <https://purl.org/cbam/Area_of_import/1.0> ,
                                                  <https://purl.org/cbam/CN/> ,
                                                  <https://purl.org/cbam/Coordinate_System/1.0> ,
