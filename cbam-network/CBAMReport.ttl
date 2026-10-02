@@ -32,10 +32,10 @@
                                                  <https://purl.org/cbam/CountryPlus/1.0> ,
                                                  <https://purl.org/cbam/Currency/1.0> ,
                                                  <https://purl.org/cbam/Customs_Procedure/1.0> ,
-                                                   <https://purl.org/cbam/Electricity_Determination/1.0> ,
-                                                 <https://purl.org/cbam/Emission_Report/1.0> ,
-                                                 <https://purl.org/cbam/Exchange_Rate/1.0> ,
-                                                 <https://purl.org/cbam/Flag/1.0> ;
+                                                  <https://purl.org/cbam/Goods_Document/1.0> ,
+                                                 <https://purl.org/cbam/Instrument/1.0> ,
+                                                 <https://purl.org/cbam/Parameter_Value_Type/1.0> ,
+                                                 <https://purl.org/cbam/Product_Covered/1.0> ;
                                                  
                                      terms:abstract "The Carbon Boarder Adjustment Mechanism report Ontology" ;
                                      terms:accessRights "This ontology is licensed under the Creative Commons Attribution-NonCommercial 4.0 International License (CC BY-NC 4.0). It allows non-commercial use, sharing, and adaptation of the ontology, as long as users provide clear credit to the creator by citing the ontology's title, creator, and license information. Commercial use is strictly prohibited." ;
