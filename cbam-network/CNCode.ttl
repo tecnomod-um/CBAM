@@ -386,94 +386,68 @@ xsd:date rdf:type rdfs:Datatype .
 #################################################################
 
 ###  http://purl.org/dc/terms/alternative
-dcterms:alternative rdf:type owl:DatatypeProperty ;
-                    rdfs:label "Alternative Title"@en ;
-                    rdfs:comment "An alternative name or title for the resource. This property can be used to provide additional names by which the resource may be known, such as abbreviations, translations, or informal names."@en ;
-                    rdfs:subPropertyOf dcterms:title .
+dcterms:alternative rdfs:label "Alternative Title"@en ;
+                    rdfs:comment "An alternative name or title for the resource. This property can be used to provide additional names by which the resource may be known, such as abbreviations, translations, or informal names."@en .
 
 
 ###  http://purl.org/dc/terms/available
-dcterms:available rdf:type owl:DatatypeProperty ;
-                  rdfs:label "Date Available"@en ;
-                  rdfs:comment "The date or date range on which the resource became or will become available for use or access."@en ;
-                  rdfs:subPropertyOf dcterms:date .
+dcterms:available rdfs:label "Date Available"@en ;
+                  rdfs:comment "The date or date range on which the resource became or will become available for use or access."@en .
 
 
 ###  http://purl.org/dc/terms/bibliographicCitation
-dcterms:bibliographicCitation rdf:type owl:DatatypeProperty ;
-                              rdfs:label "Bibliographic Citation"@en ;
-                              rdfs:comment "A bibliographic reference to the resource. Recommended practice is to include sufficient bibliographic detail to identify the resource as unambiguously as possible, including authors, title, publication venue, date, and persistent identifier (e.g., DOI or URL)."@en ;
-                              rdfs:subPropertyOf dcterms:identifier .
+dcterms:bibliographicCitation rdfs:label "Bibliographic Citation"@en ;
+                              rdfs:comment "A bibliographic reference to the resource. Recommended practice is to include sufficient bibliographic detail to identify the resource as unambiguously as possible, including authors, title, publication venue, date, and persistent identifier (e.g., DOI or URL)."@en .
 
 
 ###  http://purl.org/dc/terms/created
-dcterms:created rdf:type owl:DatatypeProperty ;
-                rdfs:label "Date Created"@en ;
-                rdfs:comment "The date of creation of the resource. Recommended practice is to describe the date, date/time, or period of time as recommended for the property Date, of which this is a subproperty."@en ;
-                rdfs:subPropertyOf dcterms:date .
+dcterms:created rdfs:label "Date Created"@en ;
+                rdfs:comment "The date of creation of the resource. Recommended practice is to describe the date, date/time, or period of time as recommended for the property Date, of which this is a subproperty."@en .
 
 
 ###  http://purl.org/dc/terms/date
-dcterms:date rdf:type owl:DatatypeProperty ;
-             rdfs:label "Date"@en ;
-             rdfs:comment "A point or period of time associated with an event in the lifecycle of the resource. Recommended practice is to express the date, date/time, or period of time using ISO 8601-1 (date and time) or ISO 8601-2 (extended date/time) date format."@en ;
-             rdfs:subPropertyOf dcterms:date .
+dcterms:date rdfs:label "Date"@en ;
+             rdfs:comment "A point or period of time associated with an event in the lifecycle of the resource. Recommended practice is to express the date, date/time, or period of time using ISO 8601-1 (date and time) or ISO 8601-2 (extended date/time) date format."@en .
 
 
 ###  http://purl.org/dc/terms/dateAccepted
-dcterms:dateAccepted rdf:type owl:DatatypeProperty ;
-                     rdfs:label "Date Accepted"@en ;
-                     rdfs:comment "The date of acceptance of the resource, for example by a publisher or funding body. Recommended practice is to describe the date using ISO 8601."@en ;
-                     rdfs:subPropertyOf dcterms:date .
+dcterms:dateAccepted rdfs:label "Date Accepted"@en ;
+                     rdfs:comment "The date of acceptance of the resource, for example by a publisher or funding body. Recommended practice is to describe the date using ISO 8601."@en .
 
 
 ###  http://purl.org/dc/terms/dateCopyrighted
-dcterms:dateCopyrighted rdf:type owl:DatatypeProperty ;
-                        rdfs:label "Date Copyrighted"@en ;
-                        rdfs:comment "The year of formal copyright of the resource, typically expressed as a 4-digit year. Used to indicate when intellectual property rights were first asserted."@en ;
-                        rdfs:subPropertyOf dcterms:date .
+dcterms:dateCopyrighted rdfs:label "Date Copyrighted"@en ;
+                        rdfs:comment "The year of formal copyright of the resource, typically expressed as a 4-digit year. Used to indicate when intellectual property rights were first asserted."@en .
 
 
 ###  http://purl.org/dc/terms/dateSubmitted
-dcterms:dateSubmitted rdf:type owl:DatatypeProperty ;
-                      rdfs:label "Date Submitted"@en ;
-                      rdfs:comment "The date of submission of the resource, for example to a journal or repository. Recommended practice is to describe the date using ISO 8601."@en ;
-                      rdfs:subPropertyOf dcterms:date .
+dcterms:dateSubmitted rdfs:label "Date Submitted"@en ;
+                      rdfs:comment "The date of submission of the resource, for example to a journal or repository. Recommended practice is to describe the date using ISO 8601."@en .
 
 
 ###  http://purl.org/dc/terms/identifier
-dcterms:identifier rdf:type owl:DatatypeProperty ;
-                   rdfs:label "Identifier"@en ;
-                   rdfs:comment "An unambiguous reference to the resource within a given context, such as a URI, DOI, ISBN, or other persistent identifier scheme. Recommended practice is to identify the resource using a string conforming to an established identification system."@en ;
-                   rdfs:subPropertyOf dcterms:identifier .
+dcterms:identifier rdfs:label "Identifier"@en ;
+                   rdfs:comment "An unambiguous reference to the resource within a given context, such as a URI, DOI, ISBN, or other persistent identifier scheme. Recommended practice is to identify the resource using a string conforming to an established identification system."@en .
 
 
 ###  http://purl.org/dc/terms/issued
-dcterms:issued rdf:type owl:DatatypeProperty ;
-               rdfs:label "Date Issued"@en ;
-               rdfs:comment "The date of formal issuance of the resource, such as publication by a standards body, official journal, or registry. Recommended practice is to describe the date using ISO 8601."@en ;
-               rdfs:subPropertyOf dcterms:date .
+dcterms:issued rdfs:label "Date Issued"@en ;
+               rdfs:comment "The date of formal issuance of the resource, such as publication by a standards body, official journal, or registry. Recommended practice is to describe the date using ISO 8601."@en .
 
 
 ###  http://purl.org/dc/terms/modified
-dcterms:modified rdf:type owl:DatatypeProperty ;
-                 rdfs:label "Date Modified"@en ;
-                 rdfs:comment "The date on which the resource was most recently changed or updated. When the resource has been revised, this property should be updated to reflect the date of the latest modification. Recommended practice is to use ISO 8601 date format."@en ;
-                 rdfs:subPropertyOf dcterms:date .
+dcterms:modified rdfs:label "Date Modified"@en ;
+                 rdfs:comment "The date on which the resource was most recently changed or updated. When the resource has been revised, this property should be updated to reflect the date of the latest modification. Recommended practice is to use ISO 8601 date format."@en .
 
 
 ###  http://purl.org/dc/terms/title
-dcterms:title rdf:type owl:DatatypeProperty ;
-              rdfs:label "Title"@en ;
-              rdfs:comment "A name given to the resource. Typically a title will be the name by which the resource is formally known. In the context of this ontology, this refers to the official name of the CN code list or ontology itself."@en ;
-              rdfs:subPropertyOf dcterms:title .
+dcterms:title rdfs:label "Title"@en ;
+              rdfs:comment "A name given to the resource. Typically a title will be the name by which the resource is formally known. In the context of this ontology, this refers to the official name of the CN code list or ontology itself."@en .
 
 
 ###  http://purl.org/dc/terms/valid
-dcterms:valid rdf:type owl:DatatypeProperty ;
-              rdfs:label "Date Valid"@en ;
-              rdfs:comment "The date or date range during which the resource is or was valid. For CN code entries, this represents the temporal scope of the nomenclature version in which the code is applicable. Recommended practice is to describe the date using ISO 8601."@en ;
-              rdfs:subPropertyOf dcterms:date .
+dcterms:valid rdfs:label "Date Valid"@en ;
+              rdfs:comment "The date or date range during which the resource is or was valid. For CN code entries, this represents the temporal scope of the nomenclature version in which the code is applicable. Recommended practice is to describe the date using ISO 8601."@en .
 
 
 #################################################################
