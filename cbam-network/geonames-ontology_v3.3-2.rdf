@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <rdf:RDF 
-         xml:base="https://www.geonames.org/ontology/ontology_v3.3.rdf"
+         xml:base="https://www.geonames.org/ontology"
          xmlns:skos="http://www.w3.org/2004/02/skos/core#"
          xmlns:foaf="http://xmlns.com/foaf/0.1/"
          xmlns:cc="https://creativecommons.org/ns#"
@@ -51,6 +51,7 @@
   <vann:preferredNamespacePrefix>gn</vann:preferredNamespacePrefix>
   <vann:preferredNamespaceUri>https://www.geonames.org/ontology#</vann:preferredNamespaceUri>
   <owl:imports rdf:resource="http://www.w3.org/2004/02/skos/core"/>
+  <owl:imports rdf:resource="http://geovocab.org/spatial"/>
   </owl:Ontology>
 
 <!-- Classes -->
