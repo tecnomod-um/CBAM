@@ -17,53 +17,47 @@
 @prefix cbamreport: <https://purl.org/cbam/cbamreport/> .
 @prefix vocabulary: <https://purl.org/cbam/cbam_goods/> .
 @prefix emissionsqualifyingparameters: <https://purl.org/emissionsqualifyingparameters#> .
-@base <https://purl.org/cbamreport> .
+@base <https://purl.org/cbam/cbamreport> .
 
 <https://purl.org/cbam/cbamreport> rdf:type owl:Ontology ;
-                                     owl:versionIRI <https://purl.org/cbam/cbamreport/1.0> ;
-                                     owl:imports <http://www.w3.org/2006/vcard/ns> ,
-                                                 <http://www.w3.org/ns/org>,
-                                                 <https://purl.org/cbam/Area_of_import/1.0> ,
-                                                 <https://purl.org/cbam/CN/> ,
-                                                 <https://purl.org/cbam/Coordinate_System/1.0> ,
-                                                 <https://purl.org/cbam/CountryPlus/1.0> ,
-                                                 <https://purl.org/cbam/CN/> ,
-                                                 <https://purl.org/cbam/Coordinate_System/1.0> ,
-                                                 <https://purl.org/cbam/CountryPlus/1.0> ,
-                                                 <https://purl.org/cbam/Currency/1.0> ,
-                                                 <https://purl.org/cbam/Customs_Procedure/1.0> ,
-                                                 <https://purl.org/cbam/Electricity_Determination/1.0> ,
-                                                 <https://purl.org/cbam/Emission_Report/1.0>,
-                                                 <https://purl.org/cbam/Exchange_Rate/1.0> ,
-                                                 <https://purl.org/cbam/Flag/1.0> ,
-                                                  <https://purl.org/cbam/Goods_Document/1.0> ,
-                                                 <https://purl.org/cbam/Instrument/1.0> ,
-                                                 <https://purl.org/cbam/Parameter_Value_Type/1.0> ,
-                                                 <https://purl.org/cbam/Product_Covered/1.0> ,
-
-                                                 <https://purl.org/cbam/Production_Method/1.0> ,
-                                                 <https://purl.org/cbam/Reporting_Rule/1.0> ,
-                                                 <https://purl.org/cbam/Reporting_period/1.0> ,
-                                                 <https://purl.org/cbam/Role/1.0> ,
-                                                 <https://purl.org/cbam/Source_of_electricity/1.0> ,
-                                                 <https://purl.org/cbam/cbam_goods/1.0> ,
-                                                 <https://purl.org/cbam/emissionsqualifyingparameters/1.0> ;
-                                                 
-                                     terms:abstract "The Carbon Boarder Adjustment Mechanism report Ontology" ;
-                                     terms:accessRights "This ontology is licensed under the Creative Commons Attribution-NonCommercial 4.0 International License (CC BY-NC 4.0). It allows non-commercial use, sharing, and adaptation of the ontology, as long as users provide clear credit to the creator by citing the ontology's title, creator, and license information. Commercial use is strictly prohibited." ;
-                                     terms:contributor [ foaf:name "Alexander Garcia Castro" ,
-                                                                   "Andreas Rathgeb" ,
-                                                                   "Astrid Duque Ramos" ,
-                                                                   "Francisco Abad" ,
-                                                                   "Jesualdo Tomás Fernández Breis" ,
-                                                                   "Lars Nissen"
-                                                       ] ;
-                                     terms:creator [ foaf:name "Astrid Duque Ramos"
-                                                   ] ;
-                                     terms:title "CBAM report"^^rdfs:Literal ;
-                                     vann:preferredNamespacePrefix "https://purl.org/cbam/cbamreport/" ;
-                                     rdfs:comment "Siemens Energy CBAMReport vocabulary" ;
-                                     schema:funder "Siemens Energy" .
+                                    owl:versionIRI <https://purl.org/cbam/cbamreport/1.0> ;
+                                    owl:imports <http://www.w3.org/2006/vcard/ns> ,
+                                                <http://www.w3.org/ns/org> ,
+                                                <https://purl.org/cbam/Area_of_import/1.0> ,
+                                                <https://purl.org/cbam/CN/> ,
+                                                <https://purl.org/cbam/Coordinate_System/1.0> ,
+                                                <https://purl.org/cbam/CountryPlus/1.0> ,
+                                                <https://purl.org/cbam/Currency/1.0> ,
+                                                <https://purl.org/cbam/Customs_Procedure/1.0> ,
+                                                <https://purl.org/cbam/Electricity_Determination/1.0> ,
+                                                <https://purl.org/cbam/Emission_Report/1.0> ,
+                                                <https://purl.org/cbam/Exchange_Rate/1.0> ,
+                                                <https://purl.org/cbam/Flag/1.0> ,
+                                                <https://purl.org/cbam/Goods_Document/1.0> ,
+                                                <https://purl.org/cbam/Instrument/1.0> ,
+                                                <https://purl.org/cbam/Parameter_Value_Type/1.0> ,
+                                                <https://purl.org/cbam/Product_Covered/1.0> ,
+                                                <https://purl.org/cbam/Production_Method/1.0> ,
+                                                <https://purl.org/cbam/Reporting_Rule/1.0> ,
+                                                <https://purl.org/cbam/Reporting_period/1.0> ,
+                                                <https://purl.org/cbam/Role/1.0> ,
+                                                <https://purl.org/cbam/Source_of_electricity/1.0> ,
+                                                <https://purl.org/cbam/cbam_goods/1.0> ,
+                                                <https://purl.org/cbam/emissionsqualifyingparameters/1.0> ;
+                                    terms:abstract "The Carbon Boarder Adjustment Mechanism report Ontology" ;
+                                    terms:accessRights "This ontology is licensed under the Creative Commons Attribution-NonCommercial 4.0 International License (CC BY-NC 4.0). It allows non-commercial use, sharing, and adaptation of the ontology, as long as users provide clear credit to the creator by citing the ontology's title, creator, and license information. Commercial use is strictly prohibited." ;
+                                    terms:contributor [ foaf:name "Alexander Garcia Castro" ,
+                                                                  "Andreas Rathgeb" ,
+                                                                  "Astrid Duque Ramos" ,
+                                                                  "Francisco Abad" ,
+                                                                  "Jesualdo Tomás Fernández Breis" ,
+                                                                  "Lars Nissen"
+                                                      ] ;
+                                    terms:creator [ foaf:name "Astrid Duque Ramos"
+                                                  ] ;
+                                    vann:preferredNamespacePrefix "https://purl.org/cbam/cbamreport/" ;
+                                    rdfs:comment "Siemens Energy CBAMReport vocabulary" ;
+                                    schema:funder "Siemens Energy" .
 
 #################################################################
 #    Annotation properties
@@ -1585,42 +1579,42 @@ org:FormalOrganization rdfs:comment "An Organization which is recognized in the 
 
 ###  https://purl.org/cbam/Country
 cbam:Country rdfs:comment "The Countries as defined by the Carbon Border Adjustment Mechanism (CBAM) Report" ;
-             rdfs:label "country" ,
-                        "Country" .
+             rdfs:label "Country" ,
+                        "country" .
 
 
 ###  https://purl.org/cbam/CN/CN
-<https://purl.org/cbam/CN/CN> rdfs:label "cn" ,
-                                         "CN" .
+<https://purl.org/cbam/CN/CN> rdfs:label "CN" ,
+                                         "cn" .
 
 
 ###  https://purl.org/cbam/Electricity_Determination/Electricity_Determination
 <https://purl.org/cbam/Electricity_Determination/Electricity_Determination> rdfs:comment "The type of determination of the direct embedded emissions. The possible values are: Actual data, Default value." ;
-                                                                            rdfs:label "electricity determination" ,
-                                                                                       "Electricity Determination" .
+                                                                            rdfs:label "Electricity Determination" ,
+                                                                                       "electricity determination" .
 
 
 ###  https://purl.org/cbam/Instrument/Instrument
 <https://purl.org/cbam/Instrument/Instrument> rdfs:comment "Form of carbon price (previous descrition:Type of instrument).  This element is used to describe the type of instrument (form of carbon price) used, as defined in the as defined by the Carbon Border Adjustment Mechanism (CBAM) Report" ;
-                                              rdfs:label "instrument" ,
-                                                         "Instrument" .
+                                              rdfs:label "Instrument" ,
+                                                         "instrument" .
 
 
 ###  https://purl.org/cbam/Production_Method/Production_Method
-<https://purl.org/cbam/Production_Method/Production_Method> rdfs:label "production method" ,
-                                                                       "Production Method" .
+<https://purl.org/cbam/Production_Method/Production_Method> rdfs:label "Production Method" ,
+                                                                       "production method" .
 
 
 ###  https://purl.org/cbam/Reporting_period/Reporting_period
 <https://purl.org/cbam/Reporting_period/Reporting_period> rdfs:comment "Defines the reporting period within the context of the Carbon Border Adjustment Mechanism (CBAM). This CBAM Local List specifies the quarters of a year, including 'Quarter 1,' 'Quarter 2,' 'Quarter 3,' and 'Quarter 4,' to structure reporting intervals." ;
-                                                          rdfs:label "reporting period" ,
-                                                                     "Reporting period" .
+                                                          rdfs:label "Reporting period" ,
+                                                                     "reporting period" .
 
 
 ###  https://purl.org/cbam/Role/Role
 <https://purl.org/cbam/Role/Role> rdfs:comment "Specifies the role of the declarant in the context of customs declarations. Indicates whether the declarant is acting as the importer or as an indirect customs representative." ;
-                                  rdfs:label "role" ,
-                                             "Role" .
+                                  rdfs:label "Role" ,
+                                             "role" .
 
 
 ###  https://purl.org/cbam/cbamreport/Address
@@ -2049,7 +2043,6 @@ cbamreport:SupportingDocumentsForGoods rdf:type owl:Class ;
 ###  https://purl.org/cbam/cbamreport/TotalDirectEmissions
 cbamreport:TotalDirectEmissions rdf:type owl:Class ;
                                 rdfs:subClassOf cbamreport:TotalEmissions ;
-                                owl:disjointWith cbamreport:TotalIndirectEmissions ;
                                 rdfs:label "TotalDirectEmissions" .
 
 
@@ -2084,20 +2077,23 @@ cbamreport:TypeOfMeasurementUnit rdf:type owl:Class ;
 
 ###  https://purl.org/cbam/emissionsqualifyingparameters/EmissionParameter
 <https://purl.org/cbam/emissionsqualifyingparameters/EmissionParameter> rdfs:comment "A class representing emission qualifying parameters." ;
-                                                                        rdfs:label "emission parameter" ,
-                                                                                   "EmissionParameter" ;
+                                                                        rdfs:label "EmissionParameter" ,
+                                                                                   "emission parameter" ;
                                                                         <https://purl.org/cbam/emissionsqualifyingparameters/validityDate> "25/09/2023" .
 
 
-[ foaf:name "Astrid Duque Ramos"
+[ foaf:name "Alexander Garcia Castro" ,
+            "Andreas Rathgeb" ,
+            "Astrid Duque Ramos" ,
+            "Francisco Abad" ,
+            "Jesualdo Tomás Fernández Breis" ,
+            "Lars Nissen"
 ] .
 
-[ foaf:name "Alexander Garcia Castro" ,
-             "Andreas Rathgeb" ,
-             "Astrid Duque Ramos" ,
-             "Francisco Abad" ,
-             "Jesualdo Tomás Fernández Breis" ,
-             "Lars Nissen"
+[ foaf:name "Astrid Duque Ramos"
+ ] .
+
+[ foaf:name "Astrid Duque Ramos"
  ] .
 
 [ foaf:name "Astrid Duque Ramos"
@@ -2112,12 +2108,6 @@ cbamreport:TypeOfMeasurementUnit rdf:type owl:Class ;
              "Francisco Abad" ,
              "Jesualdo Tomás Fernández Breis" ,
              "Lars Nissen"
- ] .
-
-[ foaf:name "Astrid Duque Ramos"
- ] .
-
-[ foaf:name "Astrid Duque Ramos"
  ] .
 
 [ foaf:name "Astrid Duque Ramos"
@@ -2148,22 +2138,6 @@ cbamreport:TypeOfMeasurementUnit rdf:type owl:Class ;
  ] .
 
 [ foaf:name "Astrid Duque Ramos"
- ] .
-
-[ foaf:name "Alexander Garcia Castro" ,
-             "Andreas Rathgeb" ,
-             "Astrid Duque Ramos" ,
-             "Francisco Abad" ,
-             "Jesualdo Tomás Fernández Breis" ,
-             "Lars Nissen"
- ] .
-
-[ foaf:name "Alexander Garcia Castro" ,
-             "Andreas Rathgeb" ,
-             "Astrid Duque Ramos" ,
-             "Francisco Abad" ,
-             "Jesualdo Tomás Fernández Breis" ,
-             "Lars Nissen"
  ] .
 
 [ foaf:name "Alexander Garcia Castro" ,
@@ -2176,32 +2150,50 @@ cbamreport:TypeOfMeasurementUnit rdf:type owl:Class ;
 [ foaf:name "Astrid Duque Ramos"
  ] .
 
+[ foaf:name "Alexander Garcia Castro" ,
+             "Andreas Rathgeb" ,
+             "Astrid Duque Ramos" ,
+             "Francisco Abad" ,
+             "Jesualdo Tomás Fernández Breis" ,
+             "Lars Nissen"
+ ] .
+
+[ foaf:name "Alexander Garcia Castro" ,
+             "Andreas Rathgeb" ,
+             "Astrid Duque Ramos" ,
+             "Francisco Abad" ,
+             "Jesualdo Tomás Fernández Breis" ,
+             "Lars Nissen"
+ ] .
+
+[ foaf:name "Alexander Garcia Castro" ,
+             "Andreas Rathgeb" ,
+             "Astrid Duque Ramos" ,
+             "Francisco Abad" ,
+             "Jesualdo Tomás Fernández Breis" ,
+             "Lars Nissen"
+ ] .
+
+[ foaf:name "Astrid Duque Ramos"
+ ] .
+
+[ foaf:name "Astrid Duque Ramos"
+ ] .
+
 #################################################################
 #    Annotations
 #################################################################
 
-cbamreport:Authorisation rdfs:comment "The Authorisation related to the inward processing" ;
-                          rdfs:label [ ] ,
-[ ] ,
-[ ] ,
-"Authorisation" .
+cbamreport:Authorisation rdfs:label [ ] ;
+rdfs:comment "The Authorisation related to the inward processing" ;
+rdfs:label "Authorisation" ,
+           [ ] ,
+[ ] .
 
 
 #################################################################
 #    General axioms
 #################################################################
-
-[ rdf:type owl:AllDisjointClasses ;
-  owl:members ( cbamreport:BasedExclPfcEmissions
-                cbamreport:DirectEmissions
-                cbamreport:EmissionsOfTheElectricityImported
-                cbamreport:IndirectEmissions
-                cbamreport:MeasurementBasedEmissions
-                cbamreport:OtherEmissions
-                cbamreport:TotalPfcEmissions
-              )
-] .
-
 
 [ rdf:type owl:AllDisjointClasses ;
   owl:members ( cbamreport:CompetentAuthority
@@ -2230,4 +2222,4 @@ cbamreport:Authorisation rdfs:comment "The Authorisation related to the inward p
 ] .
 
 
-###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
