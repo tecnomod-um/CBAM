@@ -17,9 +17,9 @@
 @prefix cbamreport: <https://purl.org/cbam/cbamreport/> .
 @prefix vocabulary: <https://purl.org/cbam/cbam_goods/> .
 @prefix emissionsqualifyingparameters: <https://purl.org/emissionsqualifyingparameters#> .
-@base <https://purl.org/cbamreport/> .
+@base <https://purl.org/cbamreport> .
 
-<https://purl.org/cbam/cbamreport/> rdf:type owl:Ontology ;
+<https://purl.org/cbam/cbamreport> rdf:type owl:Ontology ;
                                      owl:versionIRI <https://purl.org/cbam/cbamreport/1.0> ;
                                      owl:imports <http://www.w3.org/2006/vcard/ns> ,
                                                  <http://www.w3.org/ns/org>,
