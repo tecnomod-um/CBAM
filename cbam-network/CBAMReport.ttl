@@ -33,9 +33,9 @@
                                                  <https://purl.org/cbam/Currency/1.0> ,
                                                  <https://purl.org/cbam/Customs_Procedure/1.0> ,
                                                  <https://purl.org/cbam/Electricity_Determination/1.0> ,
-                                                 <https://purl.org/cbam/Emission_Report/1.0>
+                                                 <https://purl.org/cbam/Emission_Report/1.0>,
                                                  <https://purl.org/cbam/Exchange_Rate/1.0> ,
-                                                 <https://purl.org/cbam/Flag/1.0> ;
+                                                 <https://purl.org/cbam/Flag/1.0> ,
                                                   <https://purl.org/cbam/Goods_Document/1.0> ,
                                                  <https://purl.org/cbam/Instrument/1.0> ,
                                                  <https://purl.org/cbam/Parameter_Value_Type/1.0> ,
