@@ -39,6 +39,7 @@ The knowledge graph can also be queried with SPARQL for analysis beyond reportin
 | [`carboncomply_performance_test/`](carboncomply_performance_test) | Performance test with 1 to 50 synthetic templates, including results |
 | [`oquare-evaluation/`](oquare-evaluation) | OQuaRE ontology quality metrics, computed automatically on every push by a GitHub Action |
 | [`huron-evaluation/`](huron-evaluation) | HURON readability metrics for the ontology network |
+| [`Foops_Results/`](Foops_Results) | FOOPS! FAIRness reports (JSON), one per ontology |
 
 ## The ontology network
 
@@ -84,6 +85,7 @@ Ports and the server name are set in `carboncomply/.env`. The backend also expos
 - **Competency questions**: `usecase/competency_questions/` contains three SPARQL queries (lowest-emission installation per product family, carbon cost per installation, highest indirect emissions) and their results on the example knowledge graph.
 - **Performance**: see [`carboncomply_performance_test/README.md`](carboncomply_performance_test/README.md) to reproduce the runtime, memory and validation results.
 - **Ontology quality**: OQuaRE results are in `oquare-evaluation/results/`; HURON results are in `huron-evaluation/`.
+- **FAIRness**: the 23 ontologies were assessed with [FOOPS!](https://foops.linkeddata.es/). The reports in `Foops_Results/` give an overall score between 0.78 and 0.86 per ontology (mean 0.82), with the result of each individual check.
 
 ## Data
 
