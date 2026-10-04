@@ -99,7 +99,7 @@ The ontology network was first presented in:
 
 ## License
 
-CC BY-NC 4.0
+CC0-1.0
 
 ## Acknowledgements
 
