@@ -51,7 +51,7 @@ se-cbam-cbamreport:BasedExclPfcEmissions_TWXYZ2023010120231231 a ontology-se-cba
 se-cbam-cbamreport:Product_CNABC2023010120231231_1 a ontology-se-cbam-cbamreport:Good ;
     rdfs:label "Example name A" ;
     foaf:name "Example name A" ;
-    ontology-se-cbam-cbamreport:hasCNCode se-cbam-cn:72081000 ;
+    ontology-se-cbam-cbamreport:hasCNCode se-cbam-cn:CN_72081000 ;
     ontology-se-cbam-cbamreport:hasCarbonCharge se-cbam-cbamreport:CarbonPrice_CNABC2023010120231231_1 ;
     ontology-se-cbam-cbamreport:hasEmissionQualifyingParameter se-cbam-emissionsqualifyingparameters:Aluminium_pre-consumer_scrap_CNABC2023010120231231_1,
         se-cbam-emissionsqualifyingparameters:Aluminium_scrap_usage_CNABC2023010120231231_1,
@@ -89,7 +89,7 @@ se-cbam-cbamreport:Product_CNABC2023010120231231_1 a ontology-se-cbam-cbamreport
 se-cbam-cbamreport:Product_CNABC2023010120231231_2 a ontology-se-cbam-cbamreport:Good ;
     rdfs:label "Example name B" ;
     foaf:name "Example name B" ;
-    ontology-se-cbam-cbamreport:hasCNCode se-cbam-cn:72122000 ;
+    ontology-se-cbam-cbamreport:hasCNCode se-cbam-cn:CN_72122000 ;
     ontology-se-cbam-cbamreport:hasCarbonCharge se-cbam-cbamreport:CarbonPrice_CNABC2023010120231231_2 ;
     ontology-se-cbam-cbamreport:hasEmissionQualifyingParameter se-cbam-emissionsqualifyingparameters:Aluminium_pre-consumer_scrap_CNABC2023010120231231_2,
         se-cbam-emissionsqualifyingparameters:Aluminium_scrap_usage_CNABC2023010120231231_2,
@@ -127,7 +127,7 @@ se-cbam-cbamreport:Product_CNABC2023010120231231_2 a ontology-se-cbam-cbamreport
 se-cbam-cbamreport:Product_CNABC2023010120231231_3 a ontology-se-cbam-cbamreport:Good ;
     rdfs:label "Example name C" ;
     foaf:name "Example name C" ;
-    ontology-se-cbam-cbamreport:hasCNCode se-cbam-cn:72139120 ;
+    ontology-se-cbam-cbamreport:hasCNCode se-cbam-cn:CN_72139120 ;
     ontology-se-cbam-cbamreport:hasCarbonCharge se-cbam-cbamreport:CarbonPrice_CNABC2023010120231231_3 ;
     ontology-se-cbam-cbamreport:hasEmissionQualifyingParameter se-cbam-emissionsqualifyingparameters:Aluminium_pre-consumer_scrap_CNABC2023010120231231_3,
         se-cbam-emissionsqualifyingparameters:Aluminium_scrap_usage_CNABC2023010120231231_3,
@@ -165,7 +165,7 @@ se-cbam-cbamreport:Product_CNABC2023010120231231_3 a ontology-se-cbam-cbamreport
 se-cbam-cbamreport:Product_CNABC2023010120231231_4 a ontology-se-cbam-cbamreport:Good ;
     rdfs:label "Example name D" ;
     foaf:name "Example name D" ;
-    ontology-se-cbam-cbamreport:hasCNCode se-cbam-cn:73021028 ;
+    ontology-se-cbam-cbamreport:hasCNCode se-cbam-cn:CN_73021028 ;
     ontology-se-cbam-cbamreport:hasCarbonCharge se-cbam-cbamreport:CarbonPrice_CNABC2023010120231231_4 ;
     ontology-se-cbam-cbamreport:hasEmissionQualifyingParameter se-cbam-emissionsqualifyingparameters:Aluminium_pre-consumer_scrap_CNABC2023010120231231_4,
         se-cbam-emissionsqualifyingparameters:Aluminium_scrap_usage_CNABC2023010120231231_4,
@@ -203,7 +203,7 @@ se-cbam-cbamreport:Product_CNABC2023010120231231_4 a ontology-se-cbam-cbamreport
 se-cbam-cbamreport:Product_COCBA2023010120231231_1 a ontology-se-cbam-cbamreport:Good ;
     rdfs:label "Example name A" ;
     foaf:name "Example name A" ;
-    ontology-se-cbam-cbamreport:hasCNCode se-cbam-cn:72081000 ;
+    ontology-se-cbam-cbamreport:hasCNCode se-cbam-cn:CN_72081000 ;
     ontology-se-cbam-cbamreport:hasCarbonCharge se-cbam-cbamreport:CarbonPrice_COCBA2023010120231231_1 ;
     ontology-se-cbam-cbamreport:hasEmissionQualifyingParameter se-cbam-emissionsqualifyingparameters:Aluminium_pre-consumer_scrap_COCBA2023010120231231_1,
         se-cbam-emissionsqualifyingparameters:Aluminium_scrap_usage_COCBA2023010120231231_1,
@@ -241,7 +241,7 @@ se-cbam-cbamreport:Product_COCBA2023010120231231_1 a ontology-se-cbam-cbamreport
 se-cbam-cbamreport:Product_COCBA2023010120231231_2 a ontology-se-cbam-cbamreport:Good ;
     rdfs:label "Example name B" ;
     foaf:name "Example name B" ;
-    ontology-se-cbam-cbamreport:hasCNCode se-cbam-cn:72122000 ;
+    ontology-se-cbam-cbamreport:hasCNCode se-cbam-cn:CN_72122000 ;
     ontology-se-cbam-cbamreport:hasCarbonCharge se-cbam-cbamreport:CarbonPrice_COCBA2023010120231231_2 ;
     ontology-se-cbam-cbamreport:hasEmissionQualifyingParameter se-cbam-emissionsqualifyingparameters:Aluminium_pre-consumer_scrap_COCBA2023010120231231_2,
         se-cbam-emissionsqualifyingparameters:Aluminium_scrap_usage_COCBA2023010120231231_2,
@@ -279,7 +279,7 @@ se-cbam-cbamreport:Product_COCBA2023010120231231_2 a ontology-se-cbam-cbamreport
 se-cbam-cbamreport:Product_COCBA2023010120231231_3 a ontology-se-cbam-cbamreport:Good ;
     rdfs:label "Example name E" ;
     foaf:name "Example name E" ;
-    ontology-se-cbam-cbamreport:hasCNCode se-cbam-cn:73181100 ;
+    ontology-se-cbam-cbamreport:hasCNCode se-cbam-cn:CN_73181100 ;
     ontology-se-cbam-cbamreport:hasCarbonCharge se-cbam-cbamreport:CarbonPrice_COCBA2023010120231231_3 ;
     ontology-se-cbam-cbamreport:hasEmissionQualifyingParameter se-cbam-emissionsqualifyingparameters:Aluminium_pre-consumer_scrap_COCBA2023010120231231_3,
         se-cbam-emissionsqualifyingparameters:Aluminium_scrap_usage_COCBA2023010120231231_3,
@@ -317,7 +317,7 @@ se-cbam-cbamreport:Product_COCBA2023010120231231_3 a ontology-se-cbam-cbamreport
 se-cbam-cbamreport:Product_COCBA2023010120231231_4 a ontology-se-cbam-cbamreport:Good ;
     rdfs:label "Example name F" ;
     foaf:name "Example name F" ;
-    ontology-se-cbam-cbamreport:hasCNCode se-cbam-cn:73030010 ;
+    ontology-se-cbam-cbamreport:hasCNCode se-cbam-cn:CN_73030010 ;
     ontology-se-cbam-cbamreport:hasCarbonCharge se-cbam-cbamreport:CarbonPrice_COCBA2023010120231231_4 ;
     ontology-se-cbam-cbamreport:hasEmissionQualifyingParameter se-cbam-emissionsqualifyingparameters:Aluminium_pre-consumer_scrap_COCBA2023010120231231_4,
         se-cbam-emissionsqualifyingparameters:Aluminium_scrap_usage_COCBA2023010120231231_4,
@@ -355,7 +355,7 @@ se-cbam-cbamreport:Product_COCBA2023010120231231_4 a ontology-se-cbam-cbamreport
 se-cbam-cbamreport:Product_TRABC2023010120231231_1 a ontology-se-cbam-cbamreport:Good ;
     rdfs:label "Portland Cement Art. Nr. 1" ;
     foaf:name "Portland Cement Art. Nr. 1" ;
-    ontology-se-cbam-cbamreport:hasCNCode se-cbam-cn:25232900 ;
+    ontology-se-cbam-cbamreport:hasCNCode se-cbam-cn:CN_25232900 ;
     ontology-se-cbam-cbamreport:hasCarbonCharge se-cbam-cbamreport:CarbonPrice_TRABC2023010120231231_1 ;
     ontology-se-cbam-cbamreport:hasEmissionQualifyingParameter se-cbam-emissionsqualifyingparameters:Aluminium_pre-consumer_scrap_TRABC2023010120231231_1,
         se-cbam-emissionsqualifyingparameters:Aluminium_scrap_usage_TRABC2023010120231231_1,
@@ -393,7 +393,7 @@ se-cbam-cbamreport:Product_TRABC2023010120231231_1 a ontology-se-cbam-cbamreport
 se-cbam-cbamreport:Product_TWXYZ2023010120231231_1 a ontology-se-cbam-cbamreport:Good ;
     rdfs:label "Portland Cement Art. Nr. 1" ;
     foaf:name "Portland Cement Art. Nr. 1" ;
-    ontology-se-cbam-cbamreport:hasCNCode se-cbam-cn:25232900 ;
+    ontology-se-cbam-cbamreport:hasCNCode se-cbam-cn:CN_25232900 ;
     ontology-se-cbam-cbamreport:hasCarbonCharge se-cbam-cbamreport:CarbonPrice_TWXYZ2023010120231231_1 ;
     ontology-se-cbam-cbamreport:hasEmissionQualifyingParameter se-cbam-emissionsqualifyingparameters:Aluminium_pre-consumer_scrap_TWXYZ2023010120231231_1,
         se-cbam-emissionsqualifyingparameters:Aluminium_scrap_usage_TWXYZ2023010120231231_1,
@@ -596,7 +596,7 @@ se-cbam-cbamreport:totalPfcEmissions_TWXYZ2023010120231231 a ontology-se-cbam-cb
     ontology-se-cbam-cbamreport:isEmittedBy se-cbam-cbamreport:Installation_TWXYZ ;
     ontology-se-cbam-cbamreport:isRegisteredIn se-cbam-cbamreport:CommunicationReport_TWXYZ2023010120231231 .
 
-se-cbam-cn:72139120 a ontology-se-cbam-cn:721391200080,
+se-cbam-cn:CN_72139120 a ontology-se-cbam-cn:721391200080,
         ontology-se-cbam-cn:CN ;
     rdfs:label "--- Of a type used for tyre cord" ;
     rdfs:comment "Bars and rods, hot-rolled, of the type used for tyre cord, smooth, of iron or non-alloy steel, in irregularly wound coils" ;
@@ -604,7 +604,7 @@ se-cbam-cn:72139120 a ontology-se-cbam-cn:721391200080,
     ontology-se-cbam-cn:hs6_code "721391" ;
     ontology-se-cbam-cbam-goods:belongsToCategory se-cbam-cbam-goods:AggregatedGoodsCategory_CNABC2023010120231231_3 .
 
-se-cbam-cn:73021028 a ontology-se-cbam-cn:730210280080,
+se-cbam-cn:CN_73021028 a ontology-se-cbam-cn:730210280080,
         ontology-se-cbam-cn:CN ;
     rdfs:label "----- Of a weight per metre of less than 36 kg" ;
     rdfs:comment "Vignole rails of iron or steel, for railway or tramway track, new, of a weight of < 36 kg/m" ;
@@ -612,7 +612,7 @@ se-cbam-cn:73021028 a ontology-se-cbam-cn:730210280080,
     ontology-se-cbam-cn:hs6_code "730210" ;
     ontology-se-cbam-cbam-goods:belongsToCategory se-cbam-cbam-goods:AggregatedGoodsCategory_CNABC2023010120231231_4 .
 
-se-cbam-cn:73030010 a ontology-se-cbam-cn:730300100080,
+se-cbam-cn:CN_73030010 a ontology-se-cbam-cn:730300100080,
         ontology-se-cbam-cn:CN ;
     rdfs:label "- Tubes and pipes of a kind used in pressure systems" ;
     rdfs:comment "Tubes and pipes of a kind used in pressure systems, of cast iron" ;
@@ -620,7 +620,7 @@ se-cbam-cn:73030010 a ontology-se-cbam-cn:730300100080,
     ontology-se-cbam-cn:hs6_code "730300" ;
     ontology-se-cbam-cbam-goods:belongsToCategory se-cbam-cbam-goods:AggregatedGoodsCategory_COCBA2023010120231231_4 .
 
-se-cbam-cn:73181100 a ontology-se-cbam-cn:731811000080,
+se-cbam-cn:CN_73181100 a ontology-se-cbam-cn:731811000080,
         ontology-se-cbam-cn:CN ;
     rdfs:label "-- Coach screws" ;
     rdfs:comment "Coach screws of iron or steel" ;
@@ -728,44 +728,44 @@ se-cbam-production-method:TWXYZ2023010120231231_1 a ontology-se-cbam-production-
     rdfs:label "Cement Bubble" ;
     ontology-se-cbam-production-method:code "Cement Bubble" .
 
-se-cbam-cbam-goods:AggregatedGoodsCategory_CNABC2023010120231231_1 a <https://purl.org/cbam/cbam_goods#Iron_or_steel_products>,
-        ontology-se-cbam-cbam-goods:AggregatedGoodsCategory ;
+se-cbam-cbam-goods:AggregatedGoodsCategory_CNABC2023010120231231_1 a ontology-se-cbam-cbam-goods:AggregatedGoodsCategory,
+        ontology-se-cbam-cbam-goods:Iron_or_steel_products ;
     rdfs:label "Iron or steel products" .
 
-se-cbam-cbam-goods:AggregatedGoodsCategory_CNABC2023010120231231_2 a <https://purl.org/cbam/cbam_goods#Iron_or_steel_products>,
-        ontology-se-cbam-cbam-goods:AggregatedGoodsCategory ;
+se-cbam-cbam-goods:AggregatedGoodsCategory_CNABC2023010120231231_2 a ontology-se-cbam-cbam-goods:AggregatedGoodsCategory,
+        ontology-se-cbam-cbam-goods:Iron_or_steel_products ;
     rdfs:label "Iron or steel products" .
 
-se-cbam-cbam-goods:AggregatedGoodsCategory_CNABC2023010120231231_3 a <https://purl.org/cbam/cbam_goods#Iron_or_steel_products>,
-        ontology-se-cbam-cbam-goods:AggregatedGoodsCategory ;
+se-cbam-cbam-goods:AggregatedGoodsCategory_CNABC2023010120231231_3 a ontology-se-cbam-cbam-goods:AggregatedGoodsCategory,
+        ontology-se-cbam-cbam-goods:Iron_or_steel_products ;
     rdfs:label "Iron or steel products" .
 
-se-cbam-cbam-goods:AggregatedGoodsCategory_CNABC2023010120231231_4 a <https://purl.org/cbam/cbam_goods#Iron_or_steel_products>,
-        ontology-se-cbam-cbam-goods:AggregatedGoodsCategory ;
+se-cbam-cbam-goods:AggregatedGoodsCategory_CNABC2023010120231231_4 a ontology-se-cbam-cbam-goods:AggregatedGoodsCategory,
+        ontology-se-cbam-cbam-goods:Iron_or_steel_products ;
     rdfs:label "Iron or steel products" .
 
-se-cbam-cbam-goods:AggregatedGoodsCategory_COCBA2023010120231231_1 a <https://purl.org/cbam/cbam_goods#Pig_Iron>,
-        ontology-se-cbam-cbam-goods:AggregatedGoodsCategory ;
+se-cbam-cbam-goods:AggregatedGoodsCategory_COCBA2023010120231231_1 a ontology-se-cbam-cbam-goods:AggregatedGoodsCategory,
+        ontology-se-cbam-cbam-goods:Pig_Iron ;
     rdfs:label "Pig iron" .
 
-se-cbam-cbam-goods:AggregatedGoodsCategory_COCBA2023010120231231_2 a <https://purl.org/cbam/cbam_goods#Pig_Iron>,
-        ontology-se-cbam-cbam-goods:AggregatedGoodsCategory ;
+se-cbam-cbam-goods:AggregatedGoodsCategory_COCBA2023010120231231_2 a ontology-se-cbam-cbam-goods:AggregatedGoodsCategory,
+        ontology-se-cbam-cbam-goods:Pig_Iron ;
     rdfs:label "Pig iron" .
 
-se-cbam-cbam-goods:AggregatedGoodsCategory_COCBA2023010120231231_3 a <https://purl.org/cbam/cbam_goods#Iron_or_steel_products>,
-        ontology-se-cbam-cbam-goods:AggregatedGoodsCategory ;
+se-cbam-cbam-goods:AggregatedGoodsCategory_COCBA2023010120231231_3 a ontology-se-cbam-cbam-goods:AggregatedGoodsCategory,
+        ontology-se-cbam-cbam-goods:Iron_or_steel_products ;
     rdfs:label "Iron or steel products" .
 
-se-cbam-cbam-goods:AggregatedGoodsCategory_COCBA2023010120231231_4 a <https://purl.org/cbam/cbam_goods#Iron_or_steel_products>,
-        ontology-se-cbam-cbam-goods:AggregatedGoodsCategory ;
+se-cbam-cbam-goods:AggregatedGoodsCategory_COCBA2023010120231231_4 a ontology-se-cbam-cbam-goods:AggregatedGoodsCategory,
+        ontology-se-cbam-cbam-goods:Iron_or_steel_products ;
     rdfs:label "Iron or steel products" .
 
-se-cbam-cbam-goods:AggregatedGoodsCategory_TRABC2023010120231231_1 a <https://purl.org/cbam/cbam_goods#Cement>,
-        ontology-se-cbam-cbam-goods:AggregatedGoodsCategory ;
+se-cbam-cbam-goods:AggregatedGoodsCategory_TRABC2023010120231231_1 a ontology-se-cbam-cbam-goods:AggregatedGoodsCategory,
+        ontology-se-cbam-cbam-goods:Cement ;
     rdfs:label "Cement" .
 
-se-cbam-cbam-goods:AggregatedGoodsCategory_TWXYZ2023010120231231_1 a <https://purl.org/cbam/cbam_goods#Cement>,
-        ontology-se-cbam-cbam-goods:AggregatedGoodsCategory ;
+se-cbam-cbam-goods:AggregatedGoodsCategory_TWXYZ2023010120231231_1 a ontology-se-cbam-cbam-goods:AggregatedGoodsCategory,
+        ontology-se-cbam-cbam-goods:Cement ;
     rdfs:label "Cement" .
 
 se-cbam-cbamreport:Address_CNABC a ontology-se-cbam-cbamreport:Address ;
@@ -2878,7 +2878,7 @@ geo:3686110 a owl:NamedIndividual,
     ontology-geo:long "-73.25" ;
     ontology-geo:name "Republic of Colombia" .
 
-se-cbam-cn:25232900 a ontology-se-cbam-cn:252329000080,
+se-cbam-cn:CN_25232900 a ontology-se-cbam-cn:252329000080,
         ontology-se-cbam-cn:CN ;
     rdfs:label "-- Other" ;
     rdfs:comment "Portland cement (excl. white, whether or not artificially coloured)" ;
@@ -2887,7 +2887,7 @@ se-cbam-cn:25232900 a ontology-se-cbam-cn:252329000080,
     ontology-se-cbam-cbam-goods:belongsToCategory se-cbam-cbam-goods:AggregatedGoodsCategory_TRABC2023010120231231_1,
         se-cbam-cbam-goods:AggregatedGoodsCategory_TWXYZ2023010120231231_1 .
 
-se-cbam-cn:72081000 a ontology-se-cbam-cn:720810000080,
+se-cbam-cn:CN_72081000 a ontology-se-cbam-cn:720810000080,
         ontology-se-cbam-cn:CN ;
     rdfs:label "- In coils, not further worked than hot-rolled, with patterns in relief" ;
     rdfs:comment "Flat-rolled products of iron or non-alloy steel, of a width of >= 600 mm, in coils, simply hot-rolled, not clad, plated or coated, with patterns in relief directly due to the rolling process" ;
@@ -2896,7 +2896,7 @@ se-cbam-cn:72081000 a ontology-se-cbam-cn:720810000080,
     ontology-se-cbam-cbam-goods:belongsToCategory se-cbam-cbam-goods:AggregatedGoodsCategory_CNABC2023010120231231_1,
         se-cbam-cbam-goods:AggregatedGoodsCategory_COCBA2023010120231231_1 .
 
-se-cbam-cn:72122000 a ontology-se-cbam-cn:721220000080,
+se-cbam-cn:CN_72122000 a ontology-se-cbam-cn:721220000080,
         ontology-se-cbam-cn:CN ;
     rdfs:label "- Electrolytically plated or coated with zinc" ;
     rdfs:comment "Flat-rolled products of iron or non-alloy steel, of a width of < 600 mm, hot-rolled or cold-rolled \"cold-reduced\", electrolytically plated or coated with zinc" ;

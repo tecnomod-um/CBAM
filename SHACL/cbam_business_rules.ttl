@@ -59,10 +59,19 @@ br:CNCategoryShape a sh:NodeShape ;
                 FILTER(?cat != goods:AggregatedGoodsCategory)
                 FILTER(
                     ((STRSTARTS(STR(?code), "72") || STRSTARTS(STR(?code), "73"))
-                      && !(?cat IN (<https://purl.org/cbam/cbam_goods#Iron_or_steel_products>,
-                                    <https://purl.org/cbam/cbam_goods#Pig_Iron>)))
+                      && !(?cat IN (<https://purl.org/cbam/cbam_goods/Crude_steel>,
+                                    <https://purl.org/cbam/cbam_goods/Direct_reduced_iron>,
+                                    <https://purl.org/cbam/cbam_goods/FeCr>,
+                                    <https://purl.org/cbam/cbam_goods/FeMn>,
+                                    <https://purl.org/cbam/cbam_goods/FeNi>,
+                                    <https://purl.org/cbam/cbam_goods/Iron_or_steel_products>,
+                                    <https://purl.org/cbam/cbam_goods/Pig_Iron>,
+                                    <https://purl.org/cbam/cbam_goods/Sintered_Ore>)))
                     ||
                     (STRSTARTS(STR(?code), "2523")
-                      && ?cat != <https://purl.org/cbam/cbam_goods#Cement>)
+                      && !(?cat IN (<https://purl.org/cbam/cbam_goods/Aluminous_cement>,
+                                    <https://purl.org/cbam/cbam_goods/Calcinated_Clay>,
+                                    <https://purl.org/cbam/cbam_goods/Cement>,
+                                    <https://purl.org/cbam/cbam_goods/Cement_clinker>)))
                 )
             }""" ] .
