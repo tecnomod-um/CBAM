@@ -11,26 +11,33 @@
 
 <https://purl.org/cbam/Currency/> rdf:type owl:Ontology ;
                                    owl:versionIRI <https://purl.org/cbam/Currency/1.0> ;
+                                   owl:versionInfo "1.0" ;
+                                   <http://purl.org/ontology/bibo/status> <http://purl.org/ontology/bibo/status/published> ;
                                    <http://purl.org/dc/terms/abstract> "The Currency Code List in the CBAM Report" ;
                                    <http://purl.org/dc/terms/accessRights> "This ontology is licensed under the Creative Commons Attribution-NonCommercial 4.0 International License (CC BY-NC 4.0). It allows non-commercial use, sharing, and adaptation of the ontology, as long as users provide clear credit to the creator by citing the ontology's title, creator, and license information. Commercial use is strictly prohibited." ;
                                    <http://purl.org/dc/terms/bibliographicCitation> "OK4I - Ontologies and Knowledge Graphs for Industry, July 15–19, 2024, Enschede, Netherlands - <https://www.utwente.nl/en/eemcs/fois2024/resources/papers/duque-et-al-ontology-network-for-the-standardization-of-the-eu-cbam-report-data.pdf>" ;
-                                   <http://purl.org/dc/terms/contributor> [ <http://xmlns.com/foaf/0.1/name> "Astrid Duque Ramos"
-                                                                          ] ,
-                                                                          [ <http://xmlns.com/foaf/0.1/name> "Jesualdo Tomás Fernández Breis"
+                                   <http://purl.org/dc/terms/contributor> [ <http://xmlns.com/foaf/0.1/name> "Alexander Garcia Castro" ,
+                                                                                                             "Andreas Rathgeb" ,
+                                                                                                             "Astrid Duque Ramos" ,
+                                                                                                             "Francisco Abad" ,
+                                                                                                             "Jesualdo Tomás Fernández Breis" ,
+                                                                                                             "Lars Nissen"
                                                                           ] ;
-                                   <http://purl.org/dc/terms/created> "2024-06-01"^^rdfs:Literal ;
+                                   <http://purl.org/dc/terms/created> "2024-06-01"^^xsd:date ;
                                    <http://purl.org/dc/terms/creator> [ <http://xmlns.com/foaf/0.1/name> "Jesualdo Tomás Fernández Breis"
                                                                       ] ;
-                                   <http://purl.org/dc/terms/description> "This ontology represents the code list for the 'Currency' as defined by the Carbon Border Adjustment Mechanism (CBAM) Report. The type of coordinates (GPS/GNSS)." ;
-                                   <http://purl.org/dc/terms/hasVersion> "<https://purl.org/cbam/Currency/1.0>"^^xsd:anyURI ;
-                                   <http://purl.org/dc/terms/issued> "2024-11-21"^^xsd:date ;
-                                   <http://purl.org/dc/terms/license> "<http://creativecommons.org/licenses/by/4.0/>" ;
-                                   <http://purl.org/dc/terms/modified> "2024-11-21"^^xsd:date ;
+                                   <http://purl.org/dc/terms/description> "This ontology represents the code list for the 'Currency' as defined by the Carbon Border Adjustment Mechanism (CBAM) Report." ;
+                                   <http://purl.org/dc/terms/hasVersion> <https://purl.org/cbam/Currency/1.0> ;
+                                   <http://purl.org/dc/terms/issued> "2026-10-04"^^xsd:date ;
+                                   <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by-nc/4.0/> ;
+                                   <http://purl.org/dc/terms/rightsHolder> "Siemens Energy" ;
+                                   <http://purl.org/dc/terms/rights> "© 2024 Siemens Energy. Licensed under CC BY-NC 4.0. Commercial use is reserved to Siemens Energy."@en ;
+                                   <http://purl.org/dc/terms/modified> "2026-10-04"^^xsd:date ;
                                    <http://purl.org/dc/terms/publisher> "Siemens Energy" ;
                                    <http://purl.org/dc/terms/source> "Report Structure ver 18.0.xlsx  <https://taxation-customs.ec.europa.eu/carbon-border-adjustment-mechanism_en#where-to-report>" ;
                                    <http://purl.org/dc/terms/title> "Currency"^^rdfs:Literal ;
-                                   <http://purl.org/vocab/vann/preferredNamespacePrefix> "<https://purl.org/cbam/Currency/>" ;
-                                   <http://purl.org/vocab/vann/preferredNamespaceUri> "<https://purl.org/cbam/Currency/>" .
+                                   <http://purl.org/vocab/vann/preferredNamespacePrefix> "currency" ;
+                                   <http://purl.org/vocab/vann/preferredNamespaceUri> "https://purl.org/cbam/Currency/" .
 
 #################################################################
 #    Annotation properties
@@ -1889,3 +1896,9 @@ cbam:ZWL rdf:type owl:NamedIndividual ,
 
 
 ###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi
+
+###  http://purl.org/dc/terms/rightsHolder
+<http://purl.org/dc/terms/rightsHolder> rdf:type owl:AnnotationProperty .
+
+###  http://purl.org/ontology/bibo/status
+<http://purl.org/ontology/bibo/status> rdf:type owl:AnnotationProperty .
