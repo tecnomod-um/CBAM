@@ -8,7 +8,8 @@
 
 br: sh:declare [ sh:prefix "cbam" ; sh:namespace "https://purl.org/cbam/cbamreport/"^^xsd:anyURI ] ,
                [ sh:prefix "cn" ; sh:namespace "https://purl.org/cbam/CN/"^^xsd:anyURI ] ,
-               [ sh:prefix "goods" ; sh:namespace "https://purl.org/cbam/cbam_goods/"^^xsd:anyURI ] .
+               [ sh:prefix "goods" ; sh:namespace "https://purl.org/cbam/cbam_goods/"^^xsd:anyURI ] ,
+               [ sh:prefix "xsd" ; sh:namespace "http://www.w3.org/2001/XMLSchema#"^^xsd:anyURI ] .
 
 # BR1 Mandatory and single-valued fields of an imported good
 br:GoodShape a sh:NodeShape ;
